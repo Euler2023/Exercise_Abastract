@@ -1,13 +1,14 @@
 ---
-title: <% tp.file.title %>
+title: "{{title}}"
 topic:
 tags:
   - concept
   - definition
-created: <% tp.date.now("YYYY-MM-DD") %>
+created:
+  "{ date }":
 ---
 
-# <% tp.file.title %>
+# {{title}}
 
 ## Definition
 
@@ -45,8 +46,6 @@ Intuitive explanation of the concept.
 - [[Related Concept 2]]
 
 ## Exercises
-
-
 
 ```dataview
 LIST

@@ -1,13 +1,13 @@
 ---
-title: <% tp.file.title %>
+title: Module Homomorphisms
 topic:
 tags:
   - concept
   - definition
-created: <% tp.date.now("YYYY-MM-DD") %>
+created: 2026-01-19
 ---
 
-# <% tp.file.title %>
+# Module Homomorphisms
 
 ## Definition
 
@@ -45,8 +45,6 @@ Intuitive explanation of the concept.
 - [[Related Concept 2]]
 
 ## Exercises
-
-
 
 ```dataview
 LIST
