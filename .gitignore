@@ -16,3 +16,5 @@ eule_key_id.pub
 # OS junk files
 .DS_Store
 Thumbs.dbcopilot/
+.obsidian/copilot-index-*.json
+.obsidian/plugins/copilot/data.json
