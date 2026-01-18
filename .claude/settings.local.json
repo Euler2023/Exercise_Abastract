@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(obsidian-bases)",
+      "Skill(obsidian-markdown)",
+      "Skill(json-canvas)",
+      "Bash(find:*)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(if [ ! -f \"$f\" ])",
+      "Bash(then echo \"MISSING: $f\")",
+      "Bash(fi)",
+      "Bash(done)"
+    ]
+  }
+}
