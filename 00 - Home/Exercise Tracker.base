@@ -1,0 +1,63 @@
+summaries:
+  completion_rate: values.filter(value == "completed").length.toString() + "/" + values.length.toString()
+filters:
+  and:
+    - file.hasTag("exercise")
+formulas:
+  days_since_created: ((now() - file.ctime) / 86400000).round(0)
+  status_icon: if(status == "completed", "✅", if(status == "in-progress", "🔄", "⏳"))
+  difficulty_stars: if(difficulty == "beginner", "⭐", if(difficulty == "intermediate", "⭐⭐", "⭐⭐⭐"))
+properties:
+  status:
+    displayName: Status
+  difficulty:
+    displayName: Difficulty
+  topic:
+    displayName: Topic
+  source:
+    displayName: Source
+  formula.difficulty_stars:
+    displayName: Level
+views:
+  - type: table
+    name: All Exercises
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - formula.status_icon
+      - file.name
+      - topic
+      - formula.difficulty_stars
+      - source
+    summaries:
+      status: completion_rate
+  - type: table
+    name: Pending
+    filters:
+      and:
+        - status != "completed"
+    order:
+      - file.name
+      - topic
+      - formula.difficulty_stars
+      - source
+  - type: table
+    name: Completed
+    filters:
+      and:
+        - status == "completed"
+    order:
+      - file.name
+      - topic
+      - file.mtime
+  - type: table
+    name: By Difficulty
+    groupBy:
+      property: difficulty
+      direction: ASC
+    order:
+      - formula.status_icon
+      - file.name
+      - topic
+      - source

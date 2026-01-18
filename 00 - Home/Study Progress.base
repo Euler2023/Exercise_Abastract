@@ -1,0 +1,62 @@
+summaries:
+  avg_completion: values.filter(value.isType("number")).mean().round(0).toString() + "%"
+filters:
+  or:
+    - file.inFolder("01 - Group Theory/Exercises")
+    - file.inFolder("02 - Ring Theory/Exercises")
+    - file.inFolder("03 - Field Theory/Exercises")
+    - file.inFolder("04 - Module Theory/Exercises")
+    - file.inFolder("05 - Galois Theory/Exercises")
+    - file.inFolder("06 - Representation Theory/Exercises")
+formulas:
+  folder_topic: file.folder.split("/")[0]
+  completion: if(status == "completed", 100, if(status == "in-progress", 50, 0))
+  priority_score: if(difficulty == "beginner", 1, if(difficulty == "intermediate", 2, 3))
+properties:
+  status:
+    displayName: Status
+  difficulty:
+    displayName: Difficulty
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: Study Queue
+    filters:
+      and:
+        - status != "completed"
+    groupBy:
+      property: difficulty
+      direction: ASC
+    order:
+      - file.name
+      - difficulty
+      - source
+    limit: 20
+  - type: cards
+    name: Progress Cards
+    groupBy:
+      property: formula.folder_topic
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - difficulty
+  - type: table
+    name: Beginner Track
+    filters:
+      and:
+        - difficulty == "beginner"
+    order:
+      - file.name
+      - status
+      - source
+  - type: table
+    name: Advanced Track
+    filters:
+      and:
+        - difficulty == "advanced"
+    order:
+      - file.name
+      - status
+      - source

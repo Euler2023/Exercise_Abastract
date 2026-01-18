@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.hasTag("concept")
+formulas:
+  link_count: file.links.length
+  backlink_count: file.backlinks.length
+  last_updated: file.mtime.relative()
+properties:
+  topic:
+    displayName: Topic
+  formula.link_count:
+    displayName: Links
+  formula.backlink_count:
+    displayName: Referenced By
+  formula.last_updated:
+    displayName: Updated
+views:
+  - type: table
+    name: All Concepts
+    groupBy:
+      property: topic
+      direction: ASC
+    order:
+      - file.name
+      - topic
+      - formula.link_count
+      - formula.backlink_count
+      - formula.last_updated
+  - type: table
+    name: Most Referenced
+    order:
+      - file.name
+      - topic
+      - formula.backlink_count
+    limit: 20

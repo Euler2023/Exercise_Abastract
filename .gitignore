@@ -1,0 +1,18 @@
+# Copilot plugin settings (contains API keys)
+.obsidian/plugins/copilot/data.json
+
+# Excalidraw plugin settings (can contain API keys)
+.obsidian/plugins/obsidian-excalidraw-plugin/data.json
+
+# User workspace layout (changes constantly, creates merge conflicts)
+.obsidian/workspace.json
+
+# SSH Keys (Critical security)
+eule_key_id
+eule_key_id.pub
+**/*.pem
+**/*.key
+
+# OS junk files
+.DS_Store
+Thumbs.db

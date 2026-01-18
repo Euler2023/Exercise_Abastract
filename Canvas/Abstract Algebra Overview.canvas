@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"a1b2c3d4e5f67890","type":"text","x":400,"y":0,"width":300,"height":100,"text":"# Abstract Algebra\n\nA visual map of topics and their connections","color":"5"},
+		{"id":"b2c3d4e5f6789012","type":"file","x":0,"y":200,"width":280,"height":120,"file":"01 - Group Theory/Group Theory Hub.md","color":"1"},
+		{"id":"c3d4e5f678901234","type":"file","x":350,"y":200,"width":280,"height":120,"file":"02 - Ring Theory/Ring Theory Hub.md","color":"2"},
+		{"id":"d4e5f6789012345a","type":"file","x":700,"y":200,"width":280,"height":120,"file":"03 - Field Theory/Field Theory Hub.md","color":"3"},
+		{"id":"e5f67890123456ab","type":"file","x":0,"y":400,"width":280,"height":120,"file":"04 - Module Theory/Module Theory Hub.md","color":"4"},
+		{"id":"f67890123456789a","type":"file","x":350,"y":400,"width":280,"height":120,"file":"05 - Galois Theory/Galois Theory Hub.md","color":"6"},
+		{"id":"0123456789abcdef","type":"file","x":700,"y":400,"width":280,"height":120,"file":"06 - Representation Theory/Representation Theory Hub.md","color":"5"},
+		{"id":"1234567890abcdef","type":"text","x":0,"y":600,"width":450,"height":150,"text":"## Foundational Path\n\n1. **Groups** → Basic algebraic structure\n2. **Rings** → Add multiplication\n3. **Fields** → Division always works\n4. **Galois** → Connect fields and groups"},
+		{"id":"234567890abcdef1","type":"text","x":500,"y":600,"width":450,"height":150,"text":"## Linear Algebra Path\n\n1. **Fields** → Scalars\n2. **Vector Spaces** → Modules over fields\n3. **Modules** → Generalize to rings\n4. **Groups** → Symmetries, $GL_n$"}
+	],
+	"edges":[
+		{"id":"e1a2b3c4d5e6f7a8","fromNode":"b2c3d4e5f6789012","fromSide":"right","toNode":"c3d4e5f678901234","toSide":"left","label":"generalizes to"},
+		{"id":"e2b3c4d5e6f7a8b9","fromNode":"c3d4e5f678901234","fromSide":"right","toNode":"d4e5f6789012345a","toSide":"left","label":"special case"},
+		{"id":"e3c4d5e6f7a8b9c0","fromNode":"c3d4e5f678901234","fromSide":"bottom","toNode":"e5f67890123456ab","toSide":"top","label":"modules over"},
+		{"id":"e4d5e6f7a8b9c0d1","fromNode":"d4e5f6789012345a","fromSide":"bottom","toNode":"f67890123456789a","toSide":"top","label":"Galois theory"},
+		{"id":"e5e6f7a8b9c0d1e2","fromNode":"b2c3d4e5f6789012","fromSide":"bottom","toNode":"f67890123456789a","toSide":"left","label":"Galois groups","color":"6"},
+		{"id":"e6f7a8b9c0d1e2f3","fromNode":"d4e5f6789012345a","fromSide":"bottom","toNode":"0123456789abcdef","toSide":"top","label":"vector spaces"},
+		{"id":"e7a8b9c0d1e2f3a4","fromNode":"e5f67890123456ab","fromSide":"right","toNode":"0123456789abcdef","toSide":"left","label":"generalizes"}
+	]
+}
