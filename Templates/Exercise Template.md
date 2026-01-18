@@ -1,15 +1,16 @@
 ---
-title: "{{title}}"
+title: <% tp.file.title %>
 topic:
 difficulty:
 status: not-started
 tags:
   - exercise
 source:
-created: {{date}}
+created:
+  "{ date }":
 ---
 
-# {{title}}
+# <% tp.file.title %>
 
 ## Problem Statement
 
