@@ -1,8 +1,8 @@
 ---
-epoch: 1768835137483
+epoch: 1768835137000
 modelKey: "gemini-3-flash-preview|google"
 topic: "Fixing Content Errors"
-
+lastAccessedAt: 1768842064059
 
 
 tags:
@@ -82,7 +82,7 @@ $$\text{Fields} \subset \text{Euclidean Domains} \subset \text{PIDs} \subset \te
 - **格式提醒**：根据你的要求，公式已确保使用 `$` 符号包裹。
 [Timestamp: 2026/01/19 23:51:40]
 
-**user**: In english, please , give details 
+**user**: In english, please , give details
 [Timestamp: 2026/01/19 23:52:35]
 
 **ai**: In the context of [[Academic_Report]], the hierarchy of integral domains represents the increasing level of algebraic structure and "niceness" of a ring. Here is a detailed breakdown of each level in the chain:
@@ -233,3 +233,33 @@ To:
 - **Obsidian Syntax**: Obsidian uses `![[filename]]` to embed internal images.
 - **Pathing**: You do not need the `./` prefix inside the brackets; simply providing the path from the vault root (or just the filename if it is unique) is sufficient.
 [Timestamp: 2026/01/20 00:48:17]
+
+**user**: Can you use html strategy?
+[Context: Notes: README.md]
+[Timestamp: 2026/01/20 01:01:21]
+
+**ai**: Yes, you can use an HTML strategy in your [[README]] note. Using HTML is actually a great choice if you want to control the **alignment** (like centering) or the **exact size** of the image, which standard Markdown doesn't handle as easily.
+
+To fix the link using HTML, replace the current line with this:
+
+```html
+<img src="Attachments/cover.jpeg" alt="Abstract Algebra Cover" width="100%">
+```
+
+### Advanced HTML Options
+
+If you want to center the image or constrain its size (which often looks better in a README), you can use this snippet:
+
+```html
+<p align="center">
+  <img src="Attachments/cover.jpeg" alt="Abstract Algebra Cover" width="500">
+</p>
+```
+
+### Why use the HTML strategy?
+- **Resizing**: You can set `width="500"` or `width="50%"` directly in the tag.
+- **Alignment**: Wrapping it in `<p align="center">` or `<div align="center">` allows for professional-looking layouts.
+- **Compatibility**: HTML tags are standard across almost all Markdown editors, making your vault more portable if you ever view it outside of Obsidian (e.g., on GitHub).
+
+**Note on Paths**: In Obsidian, the `src` attribute in an HTML tag should point to the relative path from your vault root. Since your image is in `Attachments/cover.jpeg`, the code above will work perfectly.
+[Timestamp: 2026/01/20 01:01:32]

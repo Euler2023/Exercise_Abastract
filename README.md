@@ -2,7 +2,7 @@
 
 An Obsidian vault for studying abstract algebra, featuring exercises, concepts, and visual maps covering the major topics.
 
-![[./Attachments/cover.jpeg]]
+<img src="Attachments/cover.jpeg" alt="Abstract Algebra Cover" width="100%">
 
 ## Topics Covered
 

@@ -1,10 +1,12 @@
 ---
-epoch: 1768827040877
-modelKey: gemini-3-flash-preview|google
-topic: Mermaid Diagram Error Troubleshooting
+epoch: 1768827040000
+modelKey: "gemini-3-flash-preview|google"
+topic: "Mermaid Diagram Error Troubleshooting"
+lastAccessedAt: 1768842057674
+
+
 tags:
   - copilot-conversation
-lastAccessedAt: 1768841919437
 ---
 
 **user**: This mermaid has error?
