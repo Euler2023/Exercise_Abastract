@@ -69,8 +69,8 @@ created: 2025-01-19
 
 ## Related Concepts
 
-- [[06 - Representation Theory/Concepts/Vector Spaces|Vector Spaces]]
-- [[06 - Representation Theory/Concepts/Linear Transformations|Linear Transformations]]
+- [[Vector Spaces]]
+- [[Linear Transformations]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems]]
 
 ## Notes

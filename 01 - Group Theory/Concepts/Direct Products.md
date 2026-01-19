@@ -65,4 +65,4 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
-- [[04 - Module Theory/Concepts/Direct Sum|Direct Sum]]
+- [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]

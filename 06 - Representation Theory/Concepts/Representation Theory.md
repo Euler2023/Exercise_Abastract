@@ -12,7 +12,7 @@ created: 2025-01-19
 
 # Representation Theory
 
-Representation theory studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. It bridges [[01 - Group Theory/Group Theory Hub|Group Theory]] and [[06 - Representation Theory/Representation Theory Hub|Representation Theory]].
+Representation theory studies abstract algebraic structures by representing their elements as linear transformations of vector spaces. It bridges [[01 - Group Theory/Group Theory Hub|Group Theory]] and [[04 - Linear Algebra and Modules/Linear Algebra and Modules Hub|Linear Algebra]].
 
 ## Definition
 
@@ -82,12 +82,15 @@ A representation $\rho: G \to GL(V)$ makes $V$ into a **$G$-module** (or $FG$-mo
 > - Decomposes into trivial + standard representation
 
 > [!example] Example 4: $S_3$ over $\mathbb{C}$
+> 
 > Three irreducible representations:
 > | Name | Degree | Character values on $(e), (12), (123)$ |
 > |------|--------|----------------------------------------|
 > | Trivial | 1 | $1, 1, 1$ |
 > | Sign | 1 | $1, -1, 1$ |
 > | Standard | 2 | $2, 0, -1$ |
+
+
 
 ## Character Table
 
@@ -111,6 +114,6 @@ For finite group $G$ over $\mathbb{C}$:
 ## Related Concepts
 
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
-- [[06 - Representation Theory/Concepts/Vector Spaces|Vector Spaces]]
-- [[04 - Module Theory/Concepts/Module Definition|Module Definition]]
+- [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]]

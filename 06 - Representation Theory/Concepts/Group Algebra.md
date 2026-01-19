@@ -85,4 +85,4 @@ This transforms representation theory into module theory.
 
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
-- [[04 - Module Theory/Concepts/Module Definition|Module Definition]]
+- [[Module Definition]]

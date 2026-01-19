@@ -21,7 +21,7 @@ created: 2025-01-19
 ## Vector Space Structure
 
 > [!tip] Key Observation
-> If $K/F$ is a field extension, then $K$ is a [[06 - Representation Theory/Concepts/Vector Spaces|vector space]] over $F$.
+> If $K/F$ is a field extension, then $K$ is a [[Vector Spaces]] over $F$.
 
 > [!info] Definition (Degree)
 > The **degree** of $K/F$, written $[K:F]$, is the dimension of $K$ as an $F$-vector space:

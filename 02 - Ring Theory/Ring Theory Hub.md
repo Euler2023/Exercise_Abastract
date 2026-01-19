@@ -100,4 +100,4 @@ graph TD
 
 - [[01 - Group Theory/Group Theory Hub|Group Theory]] - $(R, +)$ is an abelian group
 - [[03 - Field Theory/Field Theory Hub|Field Theory]] - Fields are special rings
-- [[04 - Module Theory/Module Theory Hub|Module Theory]] - Modules generalize vector spaces
+- [[Linear Algebra and Modules Hub|Module Theory]] - Modules generalize vector spaces

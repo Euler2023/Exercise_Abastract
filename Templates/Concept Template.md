@@ -41,8 +41,10 @@ Intuitive explanation of the concept.
 
 ## Related Concepts
 
-- [[Related Concept 1]]
-- [[Related Concept 2]]
+
+- [[<% tp.file.cursor(1) %>]]
+- [[<% tp.file.cursor(2) %>]]
+
 
 ## Exercises
 

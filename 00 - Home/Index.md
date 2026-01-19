@@ -22,7 +22,7 @@ Welcome to the **Abstract Algebra Exercises** vault. This collection covers fund
 | [[01 - Group Theory/Group Theory Hub\|Group Theory]]                   | Groups, subgroups, homomorphisms, quotient groups | `$= dv.pages('"01 - Group Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"01 - Group Theory/Exercises"').length`                             |
 | [[02 - Ring Theory/Ring Theory Hub\|Ring Theory]]                      | Rings, ideals, quotient rings, polynomial rings   | `$= dv.pages('"02 - Ring Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"02 - Ring Theory/Exercises"').length`                               |
 | [[03 - Field Theory/Field Theory Hub\|Field Theory]]                   | Fields, field extensions, algebraic closures      | `$= dv.pages('"03 - Field Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"03 - Field Theory/Exercises"').length`                             |
-| [[04 - Module Theory/Module Theory Hub\|Module Theory]]                | Modules, exact sequences, tensor products         | `$= dv.pages('"04 - Module Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"04 - Module Theory/Exercises"').length`                           |
+| [[04 - Linear Algebra and Modules/Linear Algebra and Modules Hub\|Linear Algebra & Modules]]                | Vector spaces, modules, linear maps         | `$= dv.pages('"04 - Linear Algebra and Modules/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"04 - Linear Algebra and Modules/Exercises"').length`                           |
 | [[05 - Galois Theory/Galois Theory Hub\|Galois Theory]]                | Galois groups, solvability, fundamental theorem   | `$= dv.pages('"05 - Galois Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"05 - Galois Theory/Exercises"').length`                           |
 | [[06 - Representation Theory/Representation Theory Hub\|Representation Theory]] | Vector spaces, linear maps, canonical forms       | `$= dv.pages('"06 - Representation Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"06 - Representation Theory/Exercises"').length` |
 
@@ -39,7 +39,7 @@ Welcome to the **Abstract Algebra Exercises** vault. This collection covers fund
 
 ```dataview
 TABLE status, difficulty, topic
-FROM "01 - Group Theory/Exercises" OR "02 - Ring Theory/Exercises" OR "03 - Field Theory/Exercises" OR "04 - Module Theory/Exercises" OR "05 - Galois Theory/Exercises" OR "06 - Representation Theory/Exercises"
+FROM "01 - Group Theory/Exercises" OR "02 - Ring Theory/Exercises" OR "03 - Field Theory/Exercises" OR "04 - Linear Algebra and Modules/Exercises" OR "05 - Galois Theory/Exercises" OR "06 - Representation Theory/Exercises"
 SORT file.mtime DESC
 LIMIT 10
 ```

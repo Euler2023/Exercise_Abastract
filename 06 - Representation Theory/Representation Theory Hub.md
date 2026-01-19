@@ -22,9 +22,9 @@ Representation theory studies abstract algebraic structures by representing thei
 - [[06 - Representation Theory/Concepts/Characters|Characters]]
 
 ### Linear Algebra Prereqs
-- [[06 - Representation Theory/Concepts/Vector Spaces|Vector Spaces]]
-- [[06 - Representation Theory/Concepts/Linear Transformations|Linear Transformations]]
-- [[06 - Representation Theory/Concepts/Eigenvalues|Eigenvalues and Eigenvectors]]
+- [[Vector Spaces]]
+- [[Linear Transformations]]
+- [[Eigenvalues and Eigenvectors]]
 
 ## Exercises by Difficulty
 
@@ -78,5 +78,5 @@ SORT file.name ASC
 ## Related Areas
 
 - [[01 - Group Theory/Group Theory Hub|Group Theory]] - The source of symmetry
-- [[06 - Representation Theory/Concepts/Vector Spaces|Linear Algebra]] - The tool for analysis
-- [[04 - Module Theory/Module Theory Hub|Module Theory]] - Generalization to rings
+- [[Linear Algebra and Modules Hub|Linear Algebra]] - The tool for analysis
+- [[Linear Algebra and Modules Hub|Module Theory]] - Generalization to rings

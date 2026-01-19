@@ -25,7 +25,7 @@ exercise_abstract/
 ├── 01 - Group Theory/   # Concepts/ and Exercises/
 ├── 02 - Ring Theory/    # Concepts/ and Exercises/
 ├── 03 - Field Theory/   # Concepts/ and Exercises/
-├── 04 - Module Theory/  # Concepts/ and Exercises/
+├── 04 - Linear Algebra and Modules/  # Concepts/ and Exercises/
 ├── 05 - Galois Theory/  # Concepts/ and Exercises/
 ├── 06 - Representation Theory/  # Concepts/ and Exercises/
 ├── Canvas/              # .canvas files for visual maps
@@ -86,9 +86,8 @@ exercise_abstract/
 | Group Theory | `group-theory` |
 | Ring Theory | `ring-theory` |
 | Field Theory | `field-theory` |
-| Module Theory | `module-theory` |
+| Linear Algebra & Modules | `linear-algebra`, `module-theory` |
 | Galois Theory | `galois-theory` |
-| Linear Algebra | `linear-algebra` |
 | Representation Theory | `representation-theory` |
 
 ### 5. Base Files (.base)
@@ -112,9 +111,8 @@ Canvas files use JSON format. When creating:
 | Group Theory | G |
 | Ring Theory | R |
 | Field Theory | F |
-| Module Theory | M |
+| Linear Algebra & Modules | M, LA |
 | Galois Theory | Gal |
-| Linear Algebra | LA |
 | Representation Theory | Rep |
 
 ### 8. When Adding New Topics

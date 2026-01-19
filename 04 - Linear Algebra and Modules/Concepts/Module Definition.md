@@ -71,6 +71,6 @@ created: 2025-01-19
 
 ## Related Concepts
 
-- [[04 - Module Theory/Concepts/Submodules|Submodules]]
-- [[04 - Module Theory/Concepts/Module Homomorphisms|Module Homomorphisms]]
-- [[04 - Module Theory/Concepts/Free Modules|Free Modules]]
+- [[04 - Linear Algebra and Modules/Concepts/Submodules|Submodules]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]]
+- [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]

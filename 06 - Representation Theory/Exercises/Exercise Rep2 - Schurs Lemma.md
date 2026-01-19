@@ -85,4 +85,4 @@ created: 2025-01-19
 ## Related Concepts
 
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
-- [[04 - Module Theory/Concepts/Module Homomorphisms|Module Homomorphisms]]
+- [[Module Homomorphisms]]

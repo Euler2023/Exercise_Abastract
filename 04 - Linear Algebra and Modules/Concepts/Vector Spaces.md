@@ -89,6 +89,6 @@ This is exactly a module homomorphism when viewing $V, W$ as $F$-modules.
 
 ## Related Concepts
 
-- [[04 - Module Theory/Concepts/Module Definition|Module Definition]]
-- [[06 - Representation Theory/Concepts/Linear Transformations|Linear Transformations]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
+- [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]

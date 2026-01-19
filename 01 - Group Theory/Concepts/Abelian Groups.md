@@ -66,4 +66,4 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
-- [[04 - Module Theory/Concepts/Module Definition|Module Definition]]
+- [[Module Definition]]

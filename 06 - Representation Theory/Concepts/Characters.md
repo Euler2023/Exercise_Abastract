@@ -99,4 +99,4 @@ Let $\omega = e^{2\pi i/4} = i$.
 
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
-- [[06 - Representation Theory/Concepts/Eigenvalues|Eigenvalues]]
+- [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]

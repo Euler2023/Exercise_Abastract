@@ -58,7 +58,7 @@ created: 2025-01-19
 
 ## Related Concepts
 
-- [[04 - Module Theory/Concepts/Module Definition|Module Definition]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
 
 ## Notes

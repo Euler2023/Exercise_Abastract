@@ -41,8 +41,9 @@ Intuitive explanation of the concept.
 
 ## Related Concepts
 
-- [[Related Concept 1]]
-- [[Related Concept 2]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
+- [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
+- [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 
 ## Exercises
 
