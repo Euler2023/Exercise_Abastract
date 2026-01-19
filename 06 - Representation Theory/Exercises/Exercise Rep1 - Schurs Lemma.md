@@ -1,5 +1,5 @@
 ---
-title: "Exercise Rep2: Schur's Lemma"
+title: "Exercise Rep1: Schur's Lemma"
 topic: linear-algebra
 difficulty: intermediate
 status: not-started
@@ -12,7 +12,7 @@ source: "Serre, Linear Representations of Finite Groups"
 created: 2025-01-19
 ---
 
-# Exercise Rep2: Schur's Lemma
+# Exercise Rep1: Schur's Lemma
 
 ## Problem Statement
 

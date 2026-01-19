@@ -26,6 +26,25 @@ Representation theory studies abstract algebraic structures by representing thei
 - [[Linear Transformations]]
 - [[Eigenvalues and Eigenvectors]]
 
+### Lie Theory
+- [[06 - Representation Theory/Concepts/Lie Groups|Lie Groups]]
+- [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]
+- [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
+- [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
+- [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]
+- [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
+- [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
+- [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and Weight Spaces]]
+- [[06 - Representation Theory/Concepts/Weyl Character Formula|Weyl Character Formula]]
+
+### Infinite-Dimensional & Moonshine
+- [[06 - Representation Theory/Concepts/Kac-Moody Algebras|Kac-Moody Algebras]]
+- [[06 - Representation Theory/Concepts/Affine Lie Algebras|Affine Lie Algebras]]
+- [[06 - Representation Theory/Concepts/Vertex Operator Algebras|Vertex Operator Algebras]]
+- [[06 - Representation Theory/Concepts/Monstrous Moonshine|Monstrous Moonshine]]
+- [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
+- [[07 - Modular Forms/Concepts/j-Invariant|j-Invariant]]
+
 ## Exercises by Difficulty
 
 ### Beginner
@@ -64,6 +83,21 @@ SORT file.name ASC
 
 > [!abstract] Orthogonality Relations
 > Irreducible characters form an orthonormal basis for the space of class functions.
+
+> [!abstract] Weyl's Theorem (Lie Algebras)
+> Every finite-dimensional representation of a semisimple Lie algebra is completely reducible.
+
+> [!abstract] Highest Weight Classification
+> Finite-dimensional irreducible representations of semisimple Lie algebras are classified by dominant integral weights.
+
+> [!abstract] Weyl-Kac Character Formula
+> For integrable highest weight modules over Kac-Moody algebras, the character is given by a ratio involving the Weyl group.
+
+> [!abstract] Jacobi Triple Product (from Affine sl₂)
+> $\prod_{n=1}^\infty (1-q^n)(1-zq^{n-1})(1-z^{-1}q^n) = \sum_{m \in \mathbb{Z}}(-1)^m z^m q^{m(m+1)/2}$
+
+> [!abstract] Monstrous Moonshine (Borcherds, 1992)
+> The McKay-Thompson series $T_g(\tau)$ for each $g \in \mathbb{M}$ is a Hauptmodul for a genus-zero subgroup of $\text{SL}_2(\mathbb{R})$.
 
 ## Connection Summary
 

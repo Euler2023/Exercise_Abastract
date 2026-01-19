@@ -61,12 +61,12 @@ created: 2026-01-19
 
 ## Special Cases
 
-| Matrix Type | Eigenvalue Properties |
-|-------------|----------------------|
-| Symmetric/Hermitian | All real eigenvalues |
-| Orthogonal/Unitary | $|\lambda| = 1$ |
-| Positive definite | All $\lambda > 0$ |
-| Nilpotent | All $\lambda = 0$ |
+| Matrix Type         | Eigenvalue Properties |
+| ------------------- | --------------------- |
+| Symmetric/Hermitian | All real eigenvalues  |
+| Orthogonal/Unitary  | $\lambda=1$           |
+| Positive definite   | All $\lambda > 0$     |
+| Nilpotent           | All $\lambda = 0$     |
 
 ## Related Concepts
 

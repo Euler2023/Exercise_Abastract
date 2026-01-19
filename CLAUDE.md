@@ -17,7 +17,37 @@ Format:
 - Fixed: description of fixes
 ```
 
-### 2. File Organization
+### 2. Significant Updates Detection
+
+**When making significant changes, you MUST also update these files:**
+
+#### What counts as a "significant update":
+- Adding a new chapter/topic folder
+- Adding 5+ concept files or exercises
+- Restructuring existing folders
+- Changing topic names or paths
+- Adding major new features (e.g., new theorem, major concept)
+
+#### Required updates for significant changes:
+
+| Change Type | Update README.md | Update Canvas/ | Update Index.md |
+|-------------|------------------|----------------|-----------------|
+| New chapter | Topics + Structure sections | All 3 canvas files | Navigation table + dataview |
+| New topic area | Topics section | Overview + Relationships | Navigation table |
+| Major restructure | Structure section | All affected canvases | Navigation table |
+| 5+ new concepts | - | Topic Relationships | - |
+
+#### Canvas files to update (`Canvas/`):
+1. **Abstract Algebra Overview.canvas** - Add new topic nodes, connect to existing topics
+2. **Topic Relationships.canvas** - Add concept groups with internal hierarchy
+3. **Study Roadmap.canvas** - Add to appropriate learning phase
+
+#### README.md sections to update:
+1. **Topics Covered** - Add new topic with brief description
+2. **Structure** - Update folder tree if structure changes
+3. **Changelog** - Always add dated entry (required for ALL changes)
+
+### 3. File Organization
 
 ```
 exercise_abstract/
@@ -28,12 +58,14 @@ exercise_abstract/
 ├── 04 - Linear Algebra and Modules/  # Concepts/ and Exercises/
 ├── 05 - Galois Theory/  # Concepts/ and Exercises/
 ├── 06 - Representation Theory/  # Concepts/ and Exercises/
+├── 07 - Modular Forms/  # Concepts/ and Exercises/
+├── 08 - Arithmetic Geometry/  # Concepts/ and Exercises/
 ├── Canvas/              # .canvas files for visual maps
 ├── Templates/           # Templater templates
 └── Attachments/         # Images and files
 ```
 
-### 3. Content Standards
+### 4. Content Standards
 
 #### Exercise Files
 - Location: `[Topic]/Exercises/`
@@ -70,7 +102,7 @@ exercise_abstract/
 - One per topic folder: `[Topic] Hub.md`
 - Include: Overview, concept links, dataview exercise queries, key theorems
 
-### 4. Obsidian Syntax
+### 5. Obsidian Syntax
 
 #### Use These Features
 - **Callouts**: `> [!info]`, `> [!abstract]`, `> [!example]`, `> [!tip]`, `> [!warning]`
@@ -89,22 +121,24 @@ exercise_abstract/
 | Linear Algebra & Modules | `linear-algebra`, `module-theory` |
 | Galois Theory | `galois-theory` |
 | Representation Theory | `representation-theory` |
+| Modular Forms | `modular-forms` |
+| Arithmetic Geometry | `arithmetic-geometry` |
 
-### 5. Base Files (.base)
+### 6. Base Files (.base)
 
 Base files use YAML format for Obsidian Bases. When creating/editing:
 - Filters use expressions like `file.hasTag("exercise")`
 - Formulas define computed properties
 - Views can be `table`, `cards`, `list`, or `map`
 
-### 6. Canvas Files (.canvas)
+### 7. Canvas Files (.canvas)
 
 Canvas files use JSON format. When creating:
 - Generate unique 16-character hex IDs for nodes/edges
 - Use color presets "1"-"6" or hex colors
 - Position nodes with reasonable spacing (50-100px apart)
 
-### 7. Exercise Codes
+### 8. Exercise Codes
 
 | Topic | Code |
 |-------|------|
@@ -114,8 +148,10 @@ Canvas files use JSON format. When creating:
 | Linear Algebra & Modules | M, LA |
 | Galois Theory | Gal |
 | Representation Theory | Rep |
+| Modular Forms | MF |
+| Arithmetic Geometry | AG |
 
-### 8. When Adding New Topics
+### 9. When Adding New Topics
 
 1. Create folder with `Concepts/` and `Exercises/` subfolders
 2. Create `[Topic] Hub.md` with standard structure

@@ -10,7 +10,9 @@
       "Bash(if [ ! -f \"$f\" ])",
       "Bash(then echo \"MISSING: $f\")",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(do echo \"=== $dir ===\" find \"/mnt/e/project/leandojo/exercise_abstract/$dir\" -maxdepth 2 -type f)",
+      "Bash(wc:*)"
     ]
   }
 }

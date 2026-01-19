@@ -1,5 +1,5 @@
 ---
-title: "Exercise Rep3: Character Table of S3"
+title: "Exercise Rep2: Character Table of S3"
 topic: linear-algebra
 difficulty: beginner
 status: not-started
@@ -12,7 +12,7 @@ source: "Fulton & Harris, Representation Theory"
 created: 2025-01-19
 ---
 
-# Exercise Rep3: Character Table of S3
+# Exercise Rep2: Character Table of S3
 
 ## Problem Statement
 
