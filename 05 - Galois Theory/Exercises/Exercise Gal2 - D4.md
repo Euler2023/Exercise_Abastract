@@ -15,7 +15,7 @@ created:
 ## Problem Statement
 
 > [!question] Exercise
-> State the problem here.
+>  Prove that any Galois extension over $\mathbb{Q}$ whose Galois group is the dihedral group $D_4$ is the splitting field of a polynomial of the form $x^4+bx^2+c$.
 
 ## Hints
 
@@ -40,8 +40,8 @@ created:
 
 ## Related Concepts
 
-- [[<% tp.file.cursor(1) %>]]
-- [[<% tp.file.cursor(2) %>]]
+- [[Galois Group]]
+- [[Splitting Fields]]
 
 
 
