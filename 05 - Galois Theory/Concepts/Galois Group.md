@@ -87,3 +87,10 @@ For $K/F$ Galois:
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
+
+
+```dataview
+TABLE status, source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
