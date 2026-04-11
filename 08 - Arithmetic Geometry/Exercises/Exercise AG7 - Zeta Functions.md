@@ -99,5 +99,6 @@ created: 2026-01-19
 ## Related Concepts
 
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions of Varieties]]
+- [[Riemann Zeta Function]]
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]

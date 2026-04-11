@@ -190,3 +190,10 @@ $\zeta(s)$ is the L-function of:
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions of Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Periods|Periods]]
 - [[08 - Arithmetic Geometry/Concepts/Motives|Motives]]
+
+
+```dataview
+TABLE status, source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

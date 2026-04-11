@@ -7,6 +7,8 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
+status: not-started
+source: claude
 ---
 
 # L-functions
@@ -86,6 +88,9 @@ This factorization is key to the arithmetic significance of L-functions.
 > $$\text{ord}_{s=1} L(E, s) = \text{rank}(E(\mathbb{Q}))$$
 > and gives a formula for the leading coefficient.
 
+
+
+
 ## Related Concepts
 
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
@@ -93,3 +98,14 @@ This factorization is key to the arithmetic significance of L-functions.
 - [[07 - Modular Forms/Concepts/Cusp Forms|Cusp Forms]]
 - [[07 - Modular Forms/Concepts/Discriminant Function|Discriminant Function]]
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Elliptic Curves and Modularity]]
+
+
+## Exercises
+
+
+
+```dataview
+TABLE status, source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

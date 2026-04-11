@@ -1,10 +1,12 @@
 ---
 title: <% tp.file.title %>
-topic:
+topic: arithmetic-geometry
 tags:
   - concept
   - definition
 created: <% tp.date.now("YYYY-MM-DD") %>
+source:
+status: not-started
 ---
 
 # <% tp.file.title %>
@@ -51,7 +53,7 @@ Intuitive explanation of the concept.
 
 
 ```dataview
-LIST
+TABLE status, source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
