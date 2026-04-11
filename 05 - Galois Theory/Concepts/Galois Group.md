@@ -88,7 +88,7 @@ For $K/F$ Galois:
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 
-
+# Exercises
 ```dataview
 TABLE status, source
 FROM #exercise
