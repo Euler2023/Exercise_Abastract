@@ -37,6 +37,10 @@ Welcome to the **Abstract Algebra Exercises** vault. This collection covers fund
 
 ![[Exercise Tracker.base]]
 
+## Study Progress
+
+![[Study Progress.base]]
+
 ## Recent Activity
 
 ```dataview

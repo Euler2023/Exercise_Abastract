@@ -1,7 +1,7 @@
 ---
 title: Exercise Gal2 - D4
-topic:
-difficulty:
+topic: galois-theory
+difficulty: beginner
 status: not-started
 tags:
   - exercise

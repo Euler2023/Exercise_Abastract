@@ -1,17 +1,15 @@
 summaries:
   avg_completion: values.filter(value.isType("number")).mean().round(0).toString() + "%"
 filters:
-  or:
-    - file.inFolder("01 - Group Theory/Exercises")
-    - file.inFolder("02 - Ring Theory/Exercises")
-    - file.inFolder("03 - Field Theory/Exercises")
-    - file.inFolder("04 - Module Theory/Exercises")
-    - file.inFolder("05 - Galois Theory/Exercises")
-    - file.inFolder("06 - Representation Theory/Exercises")
+  and:
+    - file.hasTag("exercise")
 formulas:
   folder_topic: file.folder.split("/")[0]
   completion: if(status == "completed", 100, if(status == "in-progress", 50, 0))
   priority_score: if(difficulty == "beginner", 1, if(difficulty == "intermediate", 2, 3))
+  status_icon: if(status == "completed", "✅", if(status == "in-progress", "🔄", "⏳"))
+  difficulty_stars: if(difficulty == "beginner", "⭐", if(difficulty == "intermediate", "⭐⭐", if(difficulty == "advanced", "⭐⭐⭐", "—")))
+  metadata_status: if(topic, if(difficulty, if(status, "Ready", "Needs metadata"), "Needs metadata"), "Needs metadata")
 properties:
   status:
     displayName: Status
@@ -19,6 +17,16 @@ properties:
     displayName: Difficulty
   source:
     displayName: Source
+  formula.folder_topic:
+    displayName: Chapter
+  formula.completion:
+    displayName: Completion
+  formula.status_icon:
+    displayName: Progress
+  formula.difficulty_stars:
+    displayName: Level
+  formula.metadata_status:
+    displayName: Metadata
 views:
   - type: table
     name: Study Queue
@@ -29,8 +37,10 @@ views:
       property: difficulty
       direction: ASC
     order:
+      - formula.status_icon
       - file.name
-      - difficulty
+      - formula.folder_topic
+      - formula.difficulty_stars
       - source
     limit: 20
   - type: cards
@@ -40,8 +50,9 @@ views:
       direction: ASC
     order:
       - file.name
-      - status
-      - difficulty
+      - formula.status_icon
+      - formula.difficulty_stars
+      - formula.completion
   - type: table
     name: Beginner Track
     filters:
@@ -49,7 +60,7 @@ views:
         - difficulty == "beginner"
     order:
       - file.name
-      - status
+      - formula.status_icon
       - source
   - type: table
     name: Advanced Track
@@ -58,5 +69,16 @@ views:
         - difficulty == "advanced"
     order:
       - file.name
-      - status
+      - formula.status_icon
       - source
+  - type: table
+    name: Needs Metadata
+    filters:
+      and:
+        - formula.metadata_status == "Needs metadata"
+    order:
+      - file.name
+      - formula.folder_topic
+      - topic
+      - difficulty
+      - status

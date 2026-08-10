@@ -1,13 +1,44 @@
+<%*
+const topicLabels = [
+  "Group Theory",
+  "Ring Theory",
+  "Field Theory",
+  "Linear Algebra",
+  "Module Theory",
+  "Galois Theory",
+  "Representation Theory",
+  "Modular Forms",
+  "Arithmetic Geometry"
+];
+const topicValues = [
+  "group-theory",
+  "ring-theory",
+  "field-theory",
+  "linear-algebra",
+  "module-theory",
+  "galois-theory",
+  "representation-theory",
+  "modular-forms",
+  "arithmetic-geometry"
+];
+const topic = await tp.system.suggester(topicLabels, topicValues, true, "Select a topic");
+const difficulty = await tp.system.suggester(
+  ["Beginner", "Intermediate", "Advanced"],
+  ["beginner", "intermediate", "advanced"],
+  true,
+  "Select a difficulty"
+);
+-%>
 ---
-title: <% tp.file.title %>
-topic:
-difficulty:
+title: "<% tp.file.title %>"
+topic: <% topic %>
+difficulty: <% difficulty %>
 status: not-started
 tags:
   - exercise
+  - <% topic %>
 source:
-created:
-  "{ date }":
+created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
 # <% tp.file.title %>

@@ -77,6 +77,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-10 (Tracking and Template Fixes)
+- Fixed: **Study Progress** now discovers all exercise notes by tag, including Linear Algebra and Modules, Modular Forms, Arithmetic Geometry, and future chapters.
+- Added: A metadata-quality view and clearer progress/difficulty indicators to **Study Progress**.
+- Updated: Embedded **Study Progress** directly on the home dashboard.
+- Fixed: **Concept Template** now prompts for the topic instead of hard-coding Arithmetic Geometry.
+- Fixed: **Exercise Template** now prompts for topic and difficulty and generates a valid creation date.
+
 ### 2026-01-19 (Canvas Updates)
 - Updated: **Abstract Algebra Overview.canvas** with:
   - New nodes for Simple & Sporadic Groups, Solvable Groups, IGP-Faltings connections

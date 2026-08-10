@@ -1,6 +1,6 @@
 ---
 title: Exercise MF11 - Zeta Function
-topic:
+topic: modular-forms
 difficulty: beginner
 status: not-started
 tags:

@@ -1,9 +1,35 @@
+<%*
+const topicLabels = [
+  "Group Theory",
+  "Ring Theory",
+  "Field Theory",
+  "Linear Algebra",
+  "Module Theory",
+  "Galois Theory",
+  "Representation Theory",
+  "Modular Forms",
+  "Arithmetic Geometry"
+];
+const topicValues = [
+  "group-theory",
+  "ring-theory",
+  "field-theory",
+  "linear-algebra",
+  "module-theory",
+  "galois-theory",
+  "representation-theory",
+  "modular-forms",
+  "arithmetic-geometry"
+];
+const topic = await tp.system.suggester(topicLabels, topicValues, true, "Select a topic");
+-%>
 ---
-title: <% tp.file.title %>
-topic: arithmetic-geometry
+title: "<% tp.file.title %>"
+topic: <% topic %>
 tags:
   - concept
   - definition
+  - <% topic %>
 created: <% tp.date.now("YYYY-MM-DD") %>
 source:
 status: not-started
