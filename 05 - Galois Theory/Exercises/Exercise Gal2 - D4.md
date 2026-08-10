@@ -5,9 +5,8 @@ difficulty:
 status: not-started
 tags:
   - exercise
-source:
-created:
-  "{ date }":
+source: Algebra, 2nd M.Artin
+created: 2026-05-01
 ---
 
 # Exercise Gal2 - D4
