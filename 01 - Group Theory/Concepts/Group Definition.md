@@ -76,6 +76,16 @@ The group axioms ensure we can:
 
 ## Related Concepts
 
+- [[01 - Group Theory/Concepts/Binary Operations and Associativity|Binary Operations and Associativity]]
+- [[01 - Group Theory/Concepts/Semigroups Monoids and Units|Semigroups, Monoids, and Units]]
+- [[01 - Group Theory/Concepts/Symmetric Groups|Symmetric Groups]]
+- [[01 - Group Theory/Concepts/Opposite Groups|Opposite Groups]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
+
+## Exercises
+
+- [[01 - Group Theory/Exercises/Exercise G8 - Inverse Identities|Exercise G8: Inverse Identities]]
+- [[01 - Group Theory/Exercises/Exercise G12 - Solving Group Equations|Exercise G12: Solving Group Equations]]
+- [[01 - Group Theory/Exercises/Exercise G15 - Opposite Group|Exercise G15: Opposite Group]]

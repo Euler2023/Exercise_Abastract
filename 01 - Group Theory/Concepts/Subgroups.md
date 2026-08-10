@@ -79,3 +79,9 @@ H_2 \arrow[dr, dash] & & H_3 \arrow[dl, dash] \\
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
+
+## Exercises
+
+- [[01 - Group Theory/Exercises/Exercise G3 - Subgroup Test|Exercise G3: Subgroup Test]]
+- [[01 - Group Theory/Exercises/Exercise G13 - Subgroup Classification|Exercise G13: Subgroup Classification]]
+- [[01 - Group Theory/Exercises/Exercise G14 - Identity and Inverses in Subgroups|Exercise G14: Identity and Inverses in Subgroups]]

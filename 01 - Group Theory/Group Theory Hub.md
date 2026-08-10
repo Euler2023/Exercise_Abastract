@@ -16,8 +16,12 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 ## Core Concepts
 
 ### Foundations
+- [[01 - Group Theory/Concepts/Binary Operations and Associativity|Binary Operations and Associativity]]
+- [[01 - Group Theory/Concepts/Semigroups Monoids and Units|Semigroups, Monoids, and Units]]
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
+- [[01 - Group Theory/Concepts/Symmetric Groups|Symmetric Groups]]
+- [[01 - Group Theory/Concepts/Opposite Groups|Opposite Groups]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 
@@ -26,6 +30,12 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems]]
+
+### Symmetry and Plane Isometries
+- [[01 - Group Theory/Concepts/Symmetry Groups and Plane Isometries|Symmetry Groups and Plane Isometries]]
+- [[01 - Group Theory/Concepts/Rotations Reflections and Glide Reflections|Rotations, Reflections, and Glide Reflections]]
+- [[01 - Group Theory/Concepts/Orthogonal Transformations of the Plane|Orthogonal Transformations of the Plane]]
+- [[01 - Group Theory/Concepts/Dihedral Groups|Dihedral Groups]]
 
 ### Advanced Topics
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
@@ -41,7 +51,7 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 | Integers mod $n$ | $(\mathbb{Z}/n\mathbb{Z}, +)$ | Cyclic group of order $n$ |
 | Symmetric group | $S_n$ | Permutations of $n$ elements |
 | Alternating group | $A_n$ | Even permutations |
-| Dihedral group | $D_n$ | Symmetries of regular $n$-gon |
+| Dihedral group | [[01 - Group Theory/Concepts/Dihedral Groups|$D_n$]] | Symmetries of regular $n$-gon |
 | General linear group | $GL_n(F)$ | Invertible $n \times n$ matrices |
 
 ## Exercises by Difficulty
@@ -83,6 +93,9 @@ SORT file.name ASC
 > 1. Sylow $p$-subgroups exist
 > 2. All Sylow $p$-subgroups are conjugate
 > 3. The number $n_p$ of Sylow $p$-subgroups satisfies $n_p \equiv 1 \pmod{p}$ and $n_p | m$
+
+> [!abstract] Finite Subgroups of $O_2$
+> Every finite subgroup of the orthogonal group $O_2$ is either cyclic or dihedral.
 
 ## Related Areas
 

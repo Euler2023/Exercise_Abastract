@@ -77,6 +77,23 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-10 (Artin Chapter 6 Symmetry)
+- Added: Ten Group Theory exercise notes, **G16–G25**, covering plane-figure symmetries, composition and conjugation of plane isometries, complex-coordinate formulas, reflections, glide reflections, and dihedral-group calculations.
+- Added: Four concept notes on symmetry groups and plane isometries, rotations/reflections/glide reflections, orthogonal transformations of the plane, and dihedral groups.
+- Added: Source-faithful crops of Artin Figures 6.1.4, 6.1.6, and 6.1.7, indexed in G16 frontmatter and embedded beside the exercise.
+- Added: Complete classifications of the subgroups requested in $D_4$, $D_{15}$, and $D_6$, together with the cosets, quotient, and direct-product decomposition in $D_{10}$.
+- Updated: Group Theory Hub with a dedicated symmetry and plane-isometry section and the finite-subgroups-of-$O_2$ theorem.
+- Documented: Exact Artin printed/PDF page provenance and proof-status boundaries for the Chapter 6 source material.
+
+### 2026-08-10 (Foundations for Artin Chapter 2)
+- Added: Four Group Theory concept notes on binary operations and associativity, semigroups/monoids/units, symmetric groups, and opposite groups.
+- Added: Complete proofs for one-sided identity and inverse compatibility, the group of units, noncommutativity of $S_n$ for $n\ge3$, the opposite-group axioms, and the inversion isomorphism $G\cong G^{\mathrm{op}}$.
+- Updated: Group Theory Hub, Group Definition, Subgroups, and Exercises G7-G15 with integrated concept and exercise links.
+
+### 2026-08-10 (Artin Chapter 2 Exercises)
+- Added: Nine Group Theory exercise notes, **G7-G15**, covering Artin's laws of composition, one-sided inverses, $S_3$, units of a monoid, group equations, subgroup tests, inherited identities and inverses, and the opposite group.
+- Added: Progressive hints, complete proofs or exact finite computations, related-concept links, and precise Artin chapter/section/exercise provenance for all nine notes.
+
 ### 2026-08-10 (Tracking and Template Fixes)
 - Fixed: **Study Progress** now discovers all exercise notes by tag, including Linear Algebra and Modules, Modular Forms, Arithmetic Geometry, and future chapters.
 - Added: A metadata-quality view and clearer progress/difficulty indicators to **Study Progress**.
