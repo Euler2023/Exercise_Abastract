@@ -45,14 +45,14 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 
 ## Important Groups
 
-| Group | Notation | Description |
-|-------|----------|-------------|
-| Integers under addition | $(\mathbb{Z}, +)$ | Infinite cyclic group |
-| Integers mod $n$ | $(\mathbb{Z}/n\mathbb{Z}, +)$ | Cyclic group of order $n$ |
-| Symmetric group | $S_n$ | Permutations of $n$ elements |
-| Alternating group | $A_n$ | Even permutations |
-| Dihedral group | [[01 - Group Theory/Concepts/Dihedral Groups|$D_n$]] | Symmetries of regular $n$-gon |
-| General linear group | $GL_n(F)$ | Invertible $n \times n$ matrices |
+| Group                   | Notation                      | Description                      |
+| ----------------------- | ----------------------------- | -------------------------------- |
+| Integers under addition | $(\mathbb{Z}, +)$             | Infinite cyclic group            |
+| Integers mod $n$        | $(\mathbb{Z}/n\mathbb{Z}, +)$ | Cyclic group of order $n$        |
+| Symmetric group         | $S_n$                         | Permutations of $n$ elements     |
+| Alternating group       | $A_n$                         | Even permutations                |
+| Dihedral group          | $D_{n}$                       | Symmetries of regular $n$-gon    |
+| General linear group    | $GL_n(F)$                     | Invertible $n \times n$ matrices |
 
 ## Exercises by Difficulty
 

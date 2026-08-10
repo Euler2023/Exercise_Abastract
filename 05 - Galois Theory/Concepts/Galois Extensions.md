@@ -87,3 +87,8 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem of Galois Theory]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
+- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]

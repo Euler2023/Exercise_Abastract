@@ -33,6 +33,9 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 
 ## Core Arithmetic Geometry
 
+### Function Fields and Covers
+- [[08 - Arithmetic Geometry/Concepts/Branch Points and Monodromy|Branch Points and Monodromy]]
+
 ### Rational Points
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
 - [[08 - Arithmetic Geometry/Concepts/Heights|Heights]]

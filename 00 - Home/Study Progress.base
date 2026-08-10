@@ -42,6 +42,7 @@ views:
       - formula.folder_topic
       - formula.difficulty_stars
       - source
+    sort: []
     limit: 20
   - type: cards
     name: Progress Cards

@@ -91,3 +91,9 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
+
+## Exercises
+
+- [[03 - Field Theory/Exercises/Exercise F11 - Zero Derivative over a Finite Field|Exercise F11]]
+- [[03 - Field Theory/Exercises/Exercise F15 - Primitive Elements over Finite Fields|Exercise F15]]
+- [[03 - Field Theory/Exercises/Exercise F16 - Primitive Elements of a Biquadratic Field|Exercise F16]]

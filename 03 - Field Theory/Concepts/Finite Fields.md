@@ -87,3 +87,20 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
+
+## Exercises
+
+- [[03 - Field Theory/Exercises/Exercise F2 - Additive Group of F4|Exercise F2]]
+- [[03 - Field Theory/Exercises/Exercise F3 - Minimal Polynomials of Elements of F8|Exercise F3]]
+- [[03 - Field Theory/Exercises/Exercise F4 - A Thirteenth Root in F13|Exercise F4]]
+- [[03 - Field Theory/Exercises/Exercise F5 - Counting Irreducible Cubics|Exercise F5]]
+- [[03 - Field Theory/Exercises/Exercise F6 - Factoring Frobenius Polynomials over F3|Exercise F6]]
+- [[03 - Field Theory/Exercises/Exercise F7 - Factoring x16 Minus x over F4 and F8|Exercise F7]]
+- [[03 - Field Theory/Exercises/Exercise F8 - Product of Nonzero Elements of a Finite Field|Exercise F8]]
+- [[03 - Field Theory/Exercises/Exercise F9 - Explicit Isomorphisms Between Two Models of F8|Exercise F9]]
+- [[03 - Field Theory/Exercises/Exercise F10 - Constructing Fields of Order p2|Exercise F10]]
+- [[03 - Field Theory/Exercises/Exercise F11 - Zero Derivative over a Finite Field|Exercise F11]]
+- [[03 - Field Theory/Exercises/Exercise F12 - Divisibility of Frobenius Polynomials|Exercise F12]]
+- [[03 - Field Theory/Exercises/Exercise F13 - Finite Multiplicative Subgroups Are Cyclic|Exercise F13]]
+- [[03 - Field Theory/Exercises/Exercise F14 - Irreducible Polynomials and Euler Totient|Exercise F14]]
+- [[03 - Field Theory/Exercises/Exercise F15 - Primitive Elements over Finite Fields|Exercise F15]]

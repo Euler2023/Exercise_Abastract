@@ -30,6 +30,7 @@ views:
       - topic
       - formula.difficulty_stars
       - source
+    sort: []
     summaries:
       status: completion_rate
   - type: table

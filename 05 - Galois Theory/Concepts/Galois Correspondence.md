@@ -97,3 +97,10 @@ The Galois correspondence is the bijection between intermediate fields and subgr
 - [[05 - Galois Theory/Concepts/Fixed Fields|Fixed Fields]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal1 - Galois Group x4-2|Exercise Gal1]]
+- [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
+- [[05 - Galois Theory/Exercises/Exercise Gal6 - D4 Correspondence for x4 - 2x2 - 1|Exercise Gal6]]
+- [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]

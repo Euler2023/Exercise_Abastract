@@ -85,3 +85,13 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Algebraic Closure|Algebraic Closure]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal1 - Galois Group x4-2|Exercise Gal1]]
+- [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
+- [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
+- [[05 - Galois Theory/Exercises/Exercise Gal6 - D4 Correspondence for x4 - 2x2 - 1|Exercise Gal6]]
+- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
+- [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]
+- [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]

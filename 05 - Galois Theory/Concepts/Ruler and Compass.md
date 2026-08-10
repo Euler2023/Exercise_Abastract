@@ -102,3 +102,7 @@ Galois theory resolves the classical Greek problems about geometric construction
 - [[03 - Field Theory/Concepts/Minimal Polynomials|Minimal Polynomials]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]

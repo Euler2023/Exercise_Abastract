@@ -128,6 +128,10 @@ created: 2026-01-19
 
 ## Exercises
 
+- [[05 - Galois Theory/Exercises/Exercise Gal3 - Quadratic Fields Containing Roots of Unity|Exercise Gal3]]
+- [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
+- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
+
 ```dataview
 LIST
 FROM #exercise

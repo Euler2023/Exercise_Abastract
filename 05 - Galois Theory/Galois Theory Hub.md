@@ -31,6 +31,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Ruler and Compass|Ruler and Compass Constructions]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
+- [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]
 
 ## The Big Picture
 

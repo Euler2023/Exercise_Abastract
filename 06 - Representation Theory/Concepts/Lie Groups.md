@@ -39,7 +39,11 @@ Most important Lie groups arise as matrix groups:
 | $\text{SO}(n)$ | $A^T A = I$, $\det = 1$ | $\frac{n(n-1)}{2}$ | Yes |
 | $\text{U}(n)$ | $A^\dagger A = I$ | $n^2$ | Yes |
 | $\text{SU}(n)$ | $A^\dagger A = I$, $\det = 1$ | $n^2 - 1$ | Yes |
-| $\text{Sp}(n)$ | Symplectic matrices | $n(2n+1)$ | Yes |
+| $\text{SP}_{2n}(\mathbb{R})$ | $P^TJP=J$ | $n(2n+1)$ | No |
+| $\text{Sp}(n)$ | Compact quaternionic unitary group | $n(2n+1)$ | Yes |
+
+> [!warning] Notation
+> Artin writes $SP_{2n}$ for the noncompact real matrix group preserving a skew-symmetric form. Many Lie theory texts write $Sp(n)$ for the compact quaternionic unitary group. These are different real Lie groups; see [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]].
 
 ### Key Examples
 
@@ -124,4 +128,6 @@ For compact Lie groups:
 - [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]
+- [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]]
 - [[Group Theory Hub|Groups]]

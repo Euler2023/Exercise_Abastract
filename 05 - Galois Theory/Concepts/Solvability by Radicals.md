@@ -91,3 +91,8 @@ Galois theory provides a complete criterion for when a polynomial equation can b
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
+- [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]

@@ -77,6 +77,39 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-11 (Exercise LA8 Inductive Proof)
+- Expanded: Added a complete algebraic induction proof that every real symplectic matrix has determinant $1$, using a complex invariant plane and separate nondegenerate and isotropic cases.
+- Archived: Added three photographs from the user-supplied WeChat source, which presents them as a student-era assignment by 2026 Fields Medalist Hong Wang; the note links the direct image source, verifies her award through the official IMU announcement, and records the absence of an institutional archival check.
+- Clarified: Corrected the second manuscript branch to $\omega(y_1,y_2)=0$, supplied the omitted invariant-complement and block-matrix arguments, and distinguished Artin's exercise statement from the external manuscript and the independent rewrite.
+
+### 2026-08-11 (Artin Chapter 16 Quartic Equations)
+- Added: Seven new Galois Theory exercise notes, **Gal4–Gal10**, for Artin Exercises 9.10 and 9.12–9.17, and expanded the existing **Gal1** and **Gal2** notes to archive Exercises 9.11 and 9.18 without renumbering them.
+- Added: Complete quartic Galois-group classifications, two full $D_4$ subgroup–fixed-field correspondences, Kummer calculations for nested radicals over $\mathbb Q(\omega)$, an explicit nested-square-root recovery formula, the general resolvent cubic, and the constructibility criterion for real quartics.
+- Added: A source-grounded Quartic Resolvents and Galois Groups concept note, linked from the Galois Theory Hub and reciprocally connected to the prerequisite concepts and exercises.
+- Verified: The exercise statements on Artin printed p. 509 (PDF p. 521) and the quartic/resolvent conventions on printed pp. 493–496 (PDF pp. 505–508); exact SageMath checks independently confirmed the finite polynomial and nested-radical group computations.
+- Documented: The missing characteristic restrictions in Exercises 9.15 and 9.18, the external Pell-unit input in Exercise 9.14, and the boundary between Artin's proofs, independent derivations, and computational verification.
+
+### 2026-08-10 (Exercise AG12 Revision)
+- Revised: Reorganized Exercise AG12 as the source's progressive chain: part (a) classifies the seven isomorphism classes, part (b) assigns gluing data to those classes, and part (c) realizes the same labeled classes by explicit polynomials.
+- Clarified: Fixed the permutation ordering, the affine-plane role of monodromy at infinity, and the distinction between “ramified only at” and requiring both displayed points to be true branch points.
+- Corrected: Confirmed that the printed $F[t]/(f)$ in Exercise 9.3(c) should be $F[x]/(f)$, while preserving the source wording and recording the correction visibly in AG12.
+
+### 2026-08-10 (Artin Chapter 15 Fields)
+- Added: Twenty-nine source-verified exercise notes covering Artin Chapter 15 Exercises 6.3, 7.1–7.14, 8.1–8.2, 9.1–9.5, 10.1–10.4, and M.1–M.3, routed to Galois Theory, Ring Theory, Field Theory, and Arithmetic Geometry by their primary proof toolkit.
+- Added: Complete finite-field computations, primitive-element classifications, quadratic and rational-function arguments, function-field monodromy data, the quadratic Riemann Existence proof, and program listings for monodromy continuation and polynomial-circle visualization.
+- Generated: A reproducible six-panel SageMath visualization for Exercise F20, archived as a PNG and embedded in the note together with its WSL-compatible Sage Python generator.
+- Expanded: The Algebraic Closure concept note with Artin's circle-image proof outline of the Fundamental Theorem of Algebra, an explicit winding-number proof boundary, and an explanation of what the F20 Sage visualization represents.
+- Added: A Branch Points and Monodromy concept note with source-status boundaries, true-versus-false branch-point distinctions, and links to Exercises AG11–AG14.
+- Documented: The literal $n=1,2$ ambiguity in Exercise 6.3, the printed $F[t]/(f)$ notation issue and the alternative “at most” versus “exactly” interpretation in Exercise 9.3, and every external theorem or computational-verification boundary used by the solutions.
+- Updated: Arithmetic Geometry Hub and the Finite Fields, Algebraic Closure, Cyclotomic Extensions, Polynomial Rings, and Separable Extensions concept notes with the new bidirectional links.
+
+### 2026-08-10 (Codex Workflow and Artin Chapter 9)
+- Added: A project-level `AGENTS.md` defining Codex rules for tool-based topic routing, one-exercise-per-note archival, source verification, figure handling, concept linking, Study Progress metadata, and validation.
+- Updated: Translated the project-level Codex working rules in `AGENTS.md` into English without changing their scope or behavior.
+- Added: Seven Linear Algebra exercise notes, **LA2–LA8**, for Artin Chapter 9 Section 1, together with four concept notes on classical linear groups, Lorentz forms, symplectic groups, and matrix-group topology.
+- Documented: The apparent source issue in Artin Exercise 9.1.7(a), preserving the printed statement while proving transitivity on the nonzero vectors.
+- Updated: The Linear Algebra and Modules Hub and the Lie Groups notation distinction between real $SP_{2n}(\mathbb R)$ and compact $Sp(n)$.
+
 ### 2026-08-10 (Artin Chapter 6 Symmetry)
 - Added: Ten Group Theory exercise notes, **G16–G25**, covering plane-figure symmetries, composition and conjugation of plane isometries, complex-coordinate formulas, reflections, glide reflections, and dihedral-group calculations.
 - Added: Four concept notes on symmetry groups and plane isometries, rotations/reflections/glide reflections, orthogonal transformations of the plane, and dihedral groups.
