@@ -65,3 +65,7 @@ The quotient ring $R/I$ "collapses" all elements of $I$ to zero. Two elements $a
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Ring Homomorphisms|Ring Homomorphisms]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
+
+## Exercises
+
+- [[02 - Ring Theory/Exercises/Exercise R6 - Null Cauchy Sequences as a Maximal Ideal|Exercise R6: Null Cauchy Sequences as a Maximal Ideal]]

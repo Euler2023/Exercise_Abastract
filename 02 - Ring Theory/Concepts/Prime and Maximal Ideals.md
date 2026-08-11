@@ -69,3 +69,7 @@ created: 2026-01-19
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
+
+## Exercises
+
+- [[02 - Ring Theory/Exercises/Exercise R6 - Null Cauchy Sequences as a Maximal Ideal|Exercise R6: Null Cauchy Sequences as a Maximal Ideal]]

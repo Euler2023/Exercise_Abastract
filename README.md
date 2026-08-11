@@ -77,6 +77,12 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-11 (Exercise R6: Cauchy Sequence Ideal)
+- Added: A complete Ring Theory exercise proving that the rational Cauchy sequences converging to zero form a maximal ideal in the ring of rational Cauchy sequences.
+- Derived: Supplied an independent proof using boundedness, a finite-term modification, a uniform lower bound away from zero, and the Cauchy estimate for the reciprocal sequence.
+- Documented: Recorded Zou Ying's *Mathematical Analysis, Vol. I*, Chapter 2, Exercise 6 as the direct source, while labeling the Ramis–Deschamps–Odoux connection as a likely French-textbook influence rather than a verified literal translation.
+- Linked: Added reciprocal exercise links from the Ideals, Prime and Maximal Ideals, and Quotient Rings concept notes.
+
 ### 2026-08-11 (Exercise LA8 Inductive Proof)
 - Expanded: Added a complete algebraic induction proof that every real symplectic matrix has determinant $1$, using a complex invariant plane and separate nondegenerate and isotropic cases.
 - Archived: Added three photographs from the user-supplied WeChat source, which presents them as a student-era assignment by 2026 Fields Medalist Hong Wang; the note links the direct image source, verifies her award through the official IMU announcement, and records the absence of an institutional archival check.

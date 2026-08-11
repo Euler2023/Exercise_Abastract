@@ -93,3 +93,7 @@ created: 2025-01-19
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
+
+## Exercises
+
+- [[02 - Ring Theory/Exercises/Exercise R6 - Null Cauchy Sequences as a Maximal Ideal|Exercise R6: Null Cauchy Sequences as a Maximal Ideal]]
