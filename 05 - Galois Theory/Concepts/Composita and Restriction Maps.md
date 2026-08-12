@@ -64,6 +64,16 @@ Let $E/F$ be finite Galois and put $H_i=\operatorname{Gal}(E/L_i)$.
 > $$
 > This example explains why normality of only one factor yields a semidirect product rather than necessarily a direct product.
 
+> [!example] A mixed radical compositum and its Galois closure
+> In [[05 - Galois Theory/Exercises/Exercise Gal28 - A Primitive Element of a Compositum|Exercise Gal28]],
+>
+> $$
+> \mathbb Q(\sqrt[3]2,\sqrt3)
+> =\mathbb Q(\sqrt[3]2+\sqrt3)
+> $$
+>
+> is a degree-$6$ compositum with an explicit primitive element. Passing to splitting fields gives a second compositum whose trivial intersection yields the direct-product Galois group $S_3\times C_2$.
+
 > [!example] Two independent quadratic fields
 > If $a,b,ab$ are nonsquares in a field of characteristic different from $2$, then
 > $$

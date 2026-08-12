@@ -33,6 +33,8 @@ views:
       - status
       - difficulty
     sort:
+      - property: difficulty
+        direction: ASC
       - property: status
         direction: DESC
       - property: source

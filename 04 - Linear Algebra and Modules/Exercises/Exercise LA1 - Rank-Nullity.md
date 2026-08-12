@@ -2,12 +2,12 @@
 title: "Exercise LA1: Rank-Nullity Theorem"
 topic: linear-algebra
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - proof
-source: "Adapted as a proof exercise from Michael Artin, Algebra, 2nd ed., Ch. 4, §4.1, Theorem 4.1.6 (Dimension Formula), printed p. 103, PDF p. 115"
+source: Adapted as a proof exercise from Michael Artin, Algebra, 2nd ed., Ch. 4, §4.1, Theorem 4.1.6 (Dimension Formula), printed p. 103, PDF p. 115
 created: 2025-01-19
 ---
 
