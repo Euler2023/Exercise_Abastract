@@ -77,6 +77,14 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-12 (Artin Chapter 16 Exercise Archive)
+- Added: Archived 81 previously missing exercises from Michael Artin's *Algebra*, Chapter 16, with exact source-section and printed/PDF page provenance, progressive hints, and independently derived solutions.
+- Routed: Classified the exercises by their primary toolkit into Ring Theory (R7–R18), Field Theory (F24–F27), Group Theory (G26–G27), Linear Algebra (LA9), Galois Theory (Gal11–Gal71), and Representation Theory (Rep11).
+- Deduplicated: Reused the nine existing Chapter 16 exercises 9.10–9.18 instead of creating duplicate notes.
+- Added: Created concept notes for symmetric polynomials and Newton identities, polynomial discriminants, and Kummer extensions; updated the Ring Theory and Galois Theory hubs and reciprocal concept links.
+- Fixed: Converted every formula in the new Chapter 16 notes from LaTeX document delimiters to Obsidian-native `$...$` and `$$...$$` syntax, and added an enforceable formula-syntax rule to `AGENTS.md`.
+- Verified: Recorded characteristic restrictions, source ambiguities, external proof inputs, and computational-verification boundaries; corrected the reducible cubic in Exercise 8.2(b) and preserved the shifted denominator in M.8.
+
 ### 2026-08-11 (Exercise R6: Cauchy Sequence Ideal)
 - Added: A complete Ring Theory exercise proving that the rational Cauchy sequences converging to zero form a maximal ideal in the ring of rational Cauchy sequences.
 - Derived: Supplied an independent proof using boundedness, a finite-term modification, a uniform lower bound away from zero, and the Cauchy estimate for the reciprocal sequence.

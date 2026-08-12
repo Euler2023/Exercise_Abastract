@@ -30,6 +30,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]
 - [[05 - Galois Theory/Concepts/Ruler and Compass|Ruler and Compass Constructions]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
+- [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
 - [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]
 
@@ -84,7 +85,9 @@ SORT file.name ASC
 
 > [!abstract] Fundamental Theorem of Galois Theory
 > Let $K/F$ be a finite Galois extension with Galois group $G = \text{Gal}(K/F)$. There is a bijection:
-> $$\{\text{intermediate fields } F \subseteq L \subseteq K\} \leftrightarrow \{\text{subgroups } H \leq G\}$$
+> $$
+> \{\text{intermediate fields } F \subseteq L \subseteq K\} \leftrightarrow \{\text{subgroups } H \leq G\}
+> $$
 > given by $L \mapsto \text{Gal}(K/L)$ and $H \mapsto K^H$ (fixed field).
 >
 > Moreover:

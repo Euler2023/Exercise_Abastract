@@ -14,13 +14,17 @@ created: 2026-01-19
 
 > [!info] Definition (Roots of Unity)
 > The **$n$-th roots of unity** are the complex solutions to $x^n = 1$:
-> $$\zeta_n^k = e^{2\pi i k/n} \quad \text{for } k = 0, 1, \ldots, n-1$$
+> $$
+> \zeta_n^k = e^{2\pi i k/n} \quad \text{for } k = 0, 1, \ldots, n-1
+> $$
 >
 > A **primitive $n$-th root of unity** is $\zeta_n = e^{2\pi i/n}$, which generates all $n$-th roots.
 
 > [!info] Definition (Cyclotomic Extension)
 > The **$n$-th cyclotomic extension** of $\mathbb{Q}$ is:
-> $$\mathbb{Q}(\zeta_n) = \mathbb{Q}(e^{2\pi i/n})$$
+> $$
+> \mathbb{Q}(\zeta_n) = \mathbb{Q}(e^{2\pi i/n})
+> $$
 >
 > This is the splitting field of $x^n - 1$ over $\mathbb{Q}$.
 
@@ -28,10 +32,14 @@ created: 2026-01-19
 
 > [!info] Definition (Cyclotomic Polynomial)
 > The **$n$-th cyclotomic polynomial** $\Phi_n(x)$ is the minimal polynomial of $\zeta_n$ over $\mathbb{Q}$:
-> $$\Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} (x - \zeta_n^k)$$
+> $$
+> \Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} (x - \zeta_n^k)
+> $$
 >
 > Equivalently:
-> $$x^n - 1 = \prod_{d | n} \Phi_d(x)$$
+> $$
+> x^n - 1 = \prod_{d | n} \Phi_d(x)
+> $$
 
 ## Key Properties
 
@@ -44,10 +52,14 @@ created: 2026-01-19
 ## The Galois Group
 
 > [!abstract] Main Theorem
-> $$\text{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^*$$
+> $$
+> \text{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^*
+> $$
 >
 > The isomorphism is given by:
-> $$\sigma_k \leftrightarrow k \pmod{n}$$
+> $$
+> \sigma_k \leftrightarrow k \pmod{n}
+> $$
 > where $\sigma_k: \zeta_n \mapsto \zeta_n^k$ for $\gcd(k, n) = 1$.
 
 > [!tip] Structure of $(\mathbb{Z}/n\mathbb{Z})^*$
@@ -125,12 +137,22 @@ created: 2026-01-19
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[05 - Galois Theory/Concepts/Ruler and Compass|Ruler and Compass Constructions]]
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]
+- [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 
 ## Exercises
 
 - [[05 - Galois Theory/Exercises/Exercise Gal3 - Quadratic Fields Containing Roots of Unity|Exercise Gal3]]
 - [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
 - [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
+- [[05 - Galois Theory/Exercises/Exercise Gal43 - Degree of zeta7 over Q zeta3|Exercise Gal43]]
+- [[05 - Galois Theory/Exercises/Exercise Gal44 - A Generator for the Quartic Subfield of Q zeta17|Exercise Gal44]]
+- [[05 - Galois Theory/Exercises/Exercise Gal45 - Degrees of Sums of Seventh Roots|Exercise Gal45]]
+- [[05 - Galois Theory/Exercises/Exercise Gal46 - Degrees of Sums of Thirteenth Roots|Exercise Gal46]]
+- [[05 - Galois Theory/Exercises/Exercise Gal47 - Intermediate Fields of Prime Cyclotomic Fields|Exercise Gal47]]
+- [[05 - Galois Theory/Exercises/Exercise Gal48 - Quadratic Kronecker Weber|Exercise Gal48]]
+- [[05 - Galois Theory/Exercises/Exercise Gal49 - Galois Group of a General Cyclotomic Field|Exercise Gal49]]
+- [[05 - Galois Theory/Exercises/Exercise Gal50 - Galois Groups of xn Minus 1|Exercise Gal50]]
+- [[05 - Galois Theory/Exercises/Exercise Gal51 - Derivative Formula for Discriminants|Exercise Gal51]]
 
 ```dataview
 LIST

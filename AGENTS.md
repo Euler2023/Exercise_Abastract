@@ -97,6 +97,20 @@ Even when a note contains a full solution, keep its learning status as `not-star
 - Record the figure number, printed page, PDF page, and asset type—direct crop, redraw, reconstruction, or annotated derivative—in frontmatter or a `Source Figures` section.
 - After embedding, verify figure identity, crop boundaries, legibility, and the Obsidian link.
 
+## 7A. Obsidian Markdown and Formula Syntax
+
+- Write mathematics with Obsidian/MathJax delimiters only: `$...$` for inline mathematics and `$$...$$` for display mathematics.
+- Do not use LaTeX document delimiters `\(...\)` or `\[...\]` in Markdown notes. Do not place mathematical expressions in backticks unless the literal source text is being discussed.
+- Put each display-math delimiter on its own line. In a callout or blockquote, prefix the opening delimiter, every formula line, and the closing delimiter with `>` so the entire display remains inside the callout, for example:
+  ```markdown
+  > $$
+  > f(x)=x^2+1.
+  > $$
+  ```
+- Keep delimiters balanced within each Markdown file. Do not open inline mathematics on one line and close it on another; use display mathematics for multiline expressions.
+- Prefer inline mathematics inside Markdown tables because multiline `$$...$$` blocks can break table rendering.
+- Before delivery, scan every newly created or modified Markdown note for forbidden delimiters `\(`, `\)`, `\[`, and `\]`, and verify that all `$` and `$$` delimiters are balanced outside fenced code blocks.
+
 ## 8. Study Tracking and Base Files
 
 - Exercise tracking is driven by frontmatter and the `exercise` tag. Do not maintain a static exercise list manually.
@@ -131,6 +145,7 @@ Before delivery, verify at least:
 - all path-qualified Wikilinks resolve;
 - no obsolete paths, old numbers, or pre-move files remain;
 - display-math delimiters such as `$$` are balanced;
+- all formulas use Obsidian `$...$` or `$$...$$` delimiters, with no LaTeX document delimiters `\(...\)` or `\[...\]` remaining;
 - the problem statement, notation, and page anchors match the PDF;
 - external proof inputs and source ambiguities are explicitly labeled;
 - new exercises are discoverable by the Study Progress tag filter;
@@ -145,4 +160,3 @@ Before delivery, verify at least:
 - Report the validation actually performed and any remaining caveats.
 - State source errors, notation conflicts, and unproved dependencies directly.
 - Never claim that an unperformed check, an uncreated file, or an unverified conclusion is complete.
-

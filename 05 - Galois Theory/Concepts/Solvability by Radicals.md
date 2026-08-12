@@ -16,7 +16,9 @@ Galois theory provides a complete criterion for when a polynomial equation can b
 
 > [!info] Definition (Radical Extension)
 > A field extension $E/F$ is a **radical extension** if there exists a tower:
-> $$F = F_0 \subset F_1 \subset \cdots \subset F_n = E$$
+> $$
+> F = F_0 \subset F_1 \subset \cdots \subset F_n = E
+> $$
 > where each $F_{i+1} = F_i(\sqrt[n_i]{a_i})$ for some $a_i \in F_i$ and $n_i \in \mathbb{N}$.
 
 > [!info] Definition (Solvable by Radicals)
@@ -37,7 +39,9 @@ Galois theory provides a complete criterion for when a polynomial equation can b
 
 > [!info] Definition (Solvable Group)
 > A group $G$ is **solvable** if there exists a chain:
-> $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G$$
+> $$
+> \{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
+> $$
 > where each quotient $G_{i+1}/G_i$ is abelian.
 
 > [!tip] Key Facts About Solvable Groups
@@ -91,8 +95,14 @@ Galois theory provides a complete criterion for when a polynomial equation can b
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
+- [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 
 ## Exercises
 
 - [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
 - [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]
+- [[05 - Galois Theory/Exercises/Exercise Gal56 - Deriving Cardano Formula|Exercise Gal56]]
+- [[05 - Galois Theory/Exercises/Exercise Gal57 - Cardano Formula and Root Choices|Exercise Gal57]]
+- [[05 - Galois Theory/Exercises/Exercise Gal58 - Solvability of Degree Ten Galois Extensions|Exercise Gal58]]
+- [[05 - Galois Theory/Exercises/Exercise Gal62 - Nonabelian Simple Galois Groups Obstruct Radicals|Exercise Gal62]]
+- [[05 - Galois Theory/Exercises/Exercise Gal71 - Solvable Groups and Solvability by Radicals|Exercise Gal71]]

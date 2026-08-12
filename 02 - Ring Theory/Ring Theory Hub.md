@@ -32,6 +32,8 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains (UFDs)]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+- [[02 - Ring Theory/Concepts/Symmetric Polynomials and Newton Identities|Symmetric Polynomials and Newton Identities]]
+- [[02 - Ring Theory/Concepts/Polynomial Discriminants|Polynomial Discriminants]]
 
 ## Important Rings
 
@@ -80,7 +82,9 @@ SORT file.name ASC
 
 > [!abstract] Chinese Remainder Theorem
 > If $I, J$ are coprime ideals (i.e., $I + J = R$), then:
-> $$R/(I \cap J) \cong R/I \times R/J$$
+> $$
+> R/(I \cap J) \cong R/I \times R/J
+> $$
 
 ## Ring Hierarchy
 
