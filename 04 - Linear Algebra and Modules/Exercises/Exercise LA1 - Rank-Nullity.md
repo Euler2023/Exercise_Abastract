@@ -7,7 +7,7 @@ tags:
   - exercise
   - linear-algebra
   - proof
-source: "Axler, Linear Algebra Done Right"
+source: "Adapted as a proof exercise from Michael Artin, Algebra, 2nd ed., Ch. 4, §4.1, Theorem 4.1.6 (Dimension Formula), printed p. 103, PDF p. 115"
 created: 2025-01-19
 ---
 
@@ -16,8 +16,11 @@ created: 2025-01-19
 ## Problem Statement
 
 > [!question] Exercise
-> Let $V$ and $W$ be finite-dimensional vector spaces over field $F$, and let $T: V \to W$ be a linear transformation. Prove the **Rank-Nullity Theorem**:
-> $$\dim V = \dim \ker(T) + \dim \text{im}(T)$$
+> Let $V$ be a finite-dimensional vector space over a field $F$, let $W$ be any vector space over $F$, and let $T:V\to W$ be a linear transformation. Prove the **Rank–Nullity Theorem** (Artin's **Dimension Formula**):
+>
+> $$
+> \dim V=\dim(\ker T)+\dim(\operatorname{im}T).
+> $$
 
 ## Hints
 
@@ -25,54 +28,93 @@ created: 2025-01-19
 > Start with a basis $\{u_1, \ldots, u_k\}$ for $\ker(T)$ and extend it to a basis of $V$.
 
 > [!hint]- Hint 2
-> Show that $\{T(v_1), \ldots, T(v_n)\}$ is a basis for $\text{im}(T)$.
+> After extending the kernel basis to $\{u_1,\ldots,u_k,v_1,\ldots,v_r\}$, show that $\{T(v_1),\ldots,T(v_r)\}$ is a basis for $\operatorname{im}T$.
 
 > [!hint]- Hint 3
-> Use the linear independence of $\{u_1, \ldots, u_k, v_1, \ldots, v_n\}$ crucially.
+> Use the linear independence of $\{u_1,\ldots,u_k,v_1,\ldots,v_r\}$ crucially.
 
 ## Solution
 
 > [!success]- Solution
 > ### Proof
-> Let $\dim \ker(T) = k$ and choose a basis $\{u_1, \ldots, u_k\}$ for $\ker(T)$.
+> Let $\dim(\ker T)=k$ and choose a basis $\{u_1,\ldots,u_k\}$ for $\ker T$.
 >
-> Extend this to a basis of $V$: $\{u_1, \ldots, u_k, v_1, \ldots, v_n\}$.
+> Since $V$ is finite-dimensional, extend this to a basis
 >
-> Thus $\dim V = k + n$.
+> $$
+> \{u_1,\ldots,u_k,v_1,\ldots,v_r\}
+> $$
 >
-> **Claim:** $\{T(v_1), \ldots, T(v_n)\}$ is a basis for $\text{im}(T)$.
+> of $V$. Thus $\dim V=k+r$.
 >
-> **Spanning:** For any $T(v) \in \text{im}(T)$:
-> $$v = \sum_{i=1}^k a_i u_i + \sum_{j=1}^n b_j v_j$$
-> $$T(v) = \sum_{i=1}^k a_i T(u_i) + \sum_{j=1}^n b_j T(v_j) = 0 + \sum_{j=1}^n b_j T(v_j)$$
+> **Claim:** $\{T(v_1),\ldots,T(v_r)\}$ is a basis for $\operatorname{im}T$.
 >
-> **Linear Independence:** Suppose $\sum_{j=1}^n c_j T(v_j) = 0$.
+> **Spanning.** For any $T(v)\in\operatorname{im}T$, write
 >
-> Then $T\left(\sum_{j=1}^n c_j v_j\right) = 0$, so $\sum_{j=1}^n c_j v_j \in \ker(T)$.
+> $$
+> v=\sum_{i=1}^k a_i u_i+\sum_{j=1}^r b_jv_j.
+> $$
 >
-> Thus $\sum_{j=1}^n c_j v_j = \sum_{i=1}^k a_i u_i$ for some $a_i$.
+> Since $T(u_i)=0$ for every $i$,
 >
-> Rearranging: $\sum_{i=1}^k (-a_i) u_i + \sum_{j=1}^n c_j v_j = 0$
+> $$
+> T(v)=\sum_{j=1}^r b_jT(v_j).
+> $$
 >
-> Since $\{u_1, \ldots, u_k, v_1, \ldots, v_n\}$ is linearly independent, all coefficients are 0.
+> Hence the displayed images span $\operatorname{im}T$.
 >
-> In particular, $c_1 = \cdots = c_n = 0$.
+> **Linear independence.** Suppose
 >
-> **Conclusion:**
-> $$\dim \text{im}(T) = n = \dim V - \dim \ker(T)$$
-> $$\therefore \dim V = \dim \ker(T) + \dim \text{im}(T) \quad \square$$
+> $$
+> \sum_{j=1}^r c_jT(v_j)=0.
+> $$
+>
+> Then
+>
+> $$
+> T\left(\sum_{j=1}^r c_jv_j\right)=0,
+> $$
+>
+> so $\sum_{j=1}^r c_jv_j\in\ker T$. Therefore, for some scalars $a_i$,
+>
+> $$
+> \sum_{j=1}^r c_jv_j=\sum_{i=1}^k a_iu_i.
+> $$
+>
+> Rearranging gives a linear relation among the basis vectors of $V$:
+>
+> $$
+> \sum_{i=1}^k(-a_i)u_i+\sum_{j=1}^r c_jv_j=0.
+> $$
+>
+> Their linear independence implies $c_1=\cdots=c_r=0$. Thus the images are linearly independent and hence form a basis of $\operatorname{im}T$. Consequently,
+>
+> $$
+> \dim(\operatorname{im}T)=r=\dim V-\dim(\ker T),
+> $$
+>
+> which is equivalent to
+>
+> $$
+> \dim V=\dim(\ker T)+\dim(\operatorname{im}T).
+> $$
 
 ## Corollary
 
 > [!abstract] First Isomorphism Theorem for Vector Spaces
-> $V / \ker(T) \cong \text{im}(T)$
+> $V/\ker T\cong\operatorname{im}T$.
 
 ## Related Concepts
 
-- [[Vector Spaces]]
-- [[Linear Transformations]]
+- [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]
+- [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems]]
 
 ## Notes
 
-This is the linear algebra version of the First Isomorphism Theorem. The module theory generalization holds for modules over any ring.
+- **Source status:** Artin states and proves this result as Theorem 4.1.6, **Dimension Formula** [Michael Artin, *Algebra*, 2nd ed., Ch. 4, §4.1, printed p. 103, PDF p. 115]. The problem above is a proof-exercise adaptation rather than an exercise printed in Artin.
+- **Proof status:** The solution is independently written for this vault. It uses the same basis-extension strategy as Artin's proof.
+- Only the domain $V$ must be finite-dimensional; no finite-dimensionality assumption on $W$ is needed.
+- This is the dimension consequence of the First Isomorphism Theorem for vector spaces. The isomorphism $V/\ker T\cong\operatorname{im}T$ extends to modules over any ring, but a dimension formula requires an appropriate rank or length theory.

@@ -48,7 +48,7 @@ For matrix $A \in M_{m \times n}(F)$:
 
 ## Key Properties
 
-1. $\text{rank}(A) = $ number of pivots in row echelon form
+1. $\text{rank}(A)=$ number of pivots in row echelon form
 2. $\text{null}(A) = n - \text{rank}(A)$ (number of free variables)
 3. $\text{rank}(A) \leq \min(m, n)$
 4. $\text{rank}(AB) \leq \min(\text{rank}(A), \text{rank}(B))$
