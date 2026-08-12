@@ -2,7 +2,7 @@
 title: "Exercise Gal58: Solvability of Degree-Ten Galois Extensions"
 topic: galois-theory
 difficulty: intermediate
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

@@ -77,6 +77,10 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-13 (Dynamic Home Navigation)
+- Updated: Replaced the manually maintained Quick Navigation table in `Index.md` with a single Dataview query that discovers numbered topic folders, links their hub pages, and computes completed, total, and percentage progress automatically from the contents and status metadata of their `Exercises` directories.
+- Added: Included an automatically refreshed vault-wide exercise summary for total, not-started, in-progress, completed, metadata needing review, and overall completion rate; the directory-based query also counts legacy exercises that are still missing the `exercise` tag.
+
 ### 2026-08-13 (Hilbert 90 and Artin–Schreier Extensions)
 - Added: Created a source-grounded **Hilbert's Theorem 90** concept from Lang's *Algebra*, with complete proofs of both the multiplicative norm-one form and the additive trace-zero form.
 - Added: Created a source-grounded **Artin–Schreier Extensions** concept from Lang's *Algebra*, using additive Hilbert 90 to prove the degree-$p$ classification theorem.

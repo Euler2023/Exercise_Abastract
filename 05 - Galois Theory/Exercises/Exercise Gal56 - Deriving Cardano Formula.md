@@ -2,9 +2,13 @@
 title: "Exercise Gal56: Deriving Cardano's Formula"
 topic: galois-theory
 difficulty: advanced
-status: not-started
-tags: [exercise, galois-theory, cubic-polynomials, solvability-by-radicals]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 11, Ex. 11.4, printed p. 510, PDF p. 522"
+status: in-progress
+tags:
+  - exercise
+  - galois-theory
+  - cubic-polynomials
+  - solvability-by-radicals
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 11, Ex. 11.4, printed p. 510, PDF p. 522
 created: 2026-08-12
 ---
 

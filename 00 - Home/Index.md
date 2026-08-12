@@ -17,16 +17,45 @@ Welcome to the **Abstract Algebra Exercises** vault. This collection covers fund
 
 ## Quick Navigation
 
-| Topic                                                                                        | Description                                               | Progress                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[01 - Group Theory/Group Theory Hub\|Group Theory]]                                         | Groups, subgroups, homomorphisms, quotient groups         | `$= dv.pages('"01 - Group Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"01 - Group Theory/Exercises"').length`                             |
-| [[02 - Ring Theory/Ring Theory Hub\|Ring Theory]]                                            | Rings, ideals, quotient rings, polynomial rings           | `$= dv.pages('"02 - Ring Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"02 - Ring Theory/Exercises"').length`                               |
-| [[03 - Field Theory/Field Theory Hub\|Field Theory]]                                         | Fields, field extensions, algebraic closures              | `$= dv.pages('"03 - Field Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"03 - Field Theory/Exercises"').length`                             |
-| [[04 - Linear Algebra and Modules/Linear Algebra and Modules Hub\|Linear Algebra & Modules]] | Vector spaces, modules, linear maps                       | `$= dv.pages('"04 - Linear Algebra and Modules/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"04 - Linear Algebra and Modules/Exercises"').length` |
-| [[05 - Galois Theory/Galois Theory Hub\|Galois Theory]]                                      | Galois groups, solvability, fundamental theorem           | `$= dv.pages('"05 - Galois Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"05 - Galois Theory/Exercises"').length`                           |
-| [[06 - Representation Theory/Representation Theory Hub\|Representation Theory]]              | Vector spaces, linear maps, canonical forms               | `$= dv.pages('"06 - Representation Theory/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"06 - Representation Theory/Exercises"').length`           |
-| [[07 - Modular Forms/Modular Forms Hub\|Modular Forms]]                                      | Modular forms, L-functions, elliptic curves               | `$= dv.pages('"07 - Modular Forms/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"07 - Modular Forms/Exercises"').length`                           |
-| [[08 - Arithmetic Geometry/Arithmetic Geometry Hub\|Arithmetic Geometry]]                    | Elliptic curves, rational points, schemes, BSD conjecture | `$= dv.pages('"08 - Arithmetic Geometry/Exercises"').where(p => p.status == "completed").length` / `$= dv.pages('"08 - Arithmetic Geometry/Exercises"').length`               |
+```dataview
+TABLE WITHOUT ID
+  link(
+    key + "/" + regexreplace(key, "^[0-9]+ - ", "") + " Hub",
+    regexreplace(key, "^[0-9]+ - ", "")
+  ) AS Topic,
+  length(filter(rows.status, (s) => s = "completed")) AS Completed,
+  length(rows) AS Total,
+  round(
+    100 * length(filter(rows.status, (s) => s = "completed")) / length(rows),
+    1
+  ) + "%" AS Progress
+FROM ""
+FLATTEN regexreplace(file.folder, "/Exercises.*$", "") AS TopicFolder
+WHERE regexmatch("^[0-9]{2} - .+/Exercises(?:/.*)?$", file.folder)
+GROUP BY TopicFolder
+SORT key ASC
+```
+
+### Overall Exercise Statistics
+
+```dataview
+TABLE WITHOUT ID
+  length(rows) AS Total,
+  length(filter(rows.status, (s) => s = "not-started")) AS "Not Started",
+  length(filter(rows.status, (s) => s = "in-progress")) AS "In Progress",
+  length(filter(rows.status, (s) => s = "completed")) AS Completed,
+  length(rows)
+    - length(filter(rows.status, (s) => s = "not-started"))
+    - length(filter(rows.status, (s) => s = "in-progress"))
+    - length(filter(rows.status, (s) => s = "completed")) AS "Needs Review",
+  round(
+    100 * length(filter(rows.status, (s) => s = "completed")) / length(rows),
+    1
+  ) + "%" AS "Completion Rate"
+FROM ""
+WHERE regexmatch("^[0-9]{2} - .+/Exercises(?:/.*)?$", file.folder)
+GROUP BY true
+```
 
 ## Visual Maps
 

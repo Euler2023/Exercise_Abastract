@@ -2,12 +2,12 @@
 title: "Exercise G1: Prove Uniqueness of Identity"
 topic: group-theory
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - proof
-source: "Dummit & Foote, Ch. 1"
+source: Dummit & Foote, Ch. 1
 created: 2025-01-19
 ---
 
