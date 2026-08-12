@@ -35,13 +35,11 @@ created: 2026-08-11
 > so its two roots are $2\pm\sqrt2$. Regard the required field as the compositum of the corresponding cubic radical extensions.
 
 > [!hint]- Hint 2
-> In part (a), set $c=uv=\sqrt[3]2$ and $q=u/v$. Compare the splitting fields of
+> In part (a), set $c=uv=\sqrt[3]2$ and $q=u/v$. The element
 > $$
-> x^3-2
-> \quad\text{and}\quad
-> x^3-3x-6
+> \alpha=q+q^{-1}
 > $$
-> through their unique quadratic subfields.
+> satisfies a cubic equation. Use it to determine $[F(q):F]$, and then analyze the intersection $F(c)\cap F(q)$.
 
 > [!hint]- Hint 3
 > In part (b), put $t=x^2$. Then $(t-2)^3=2$, so one must take square roots of
@@ -64,12 +62,22 @@ created: 2026-08-11
 ## Solution
 
 > [!success]- Solution
-> **(a) Two cubic splitting fields.**
+> **(a) Product and quotient resolvents.**
 >
 > The element in the problem is a root of
 > $$
 > P(x)=x^6-4x^3+2.
 > $$
+> This polynomial is Eisenstein at $2$, so it is irreducible over $\mathbb Q$. If $u$ denotes the positive real root chosen below, then $\mathbb Q(u)\subset\mathbb R$, whereas $F=\mathbb Q(\sqrt{-3})$ is imaginary quadratic. Hence
+> $$
+> F\cap\mathbb Q(u)=\mathbb Q
+> $$
+> and
+> $$
+> [F(u):F]=[\mathbb Q(u):\mathbb Q]=6.
+> $$
+> Thus $P$ remains irreducible over $F$ and is the minimal polynomial of $u$ over $F$.
+>
 > Substituting $t=x^3$ gives
 > $$
 > t^2-4t+2=0,
@@ -86,6 +94,7 @@ created: 2026-08-11
 > $$
 > K=F(s,u,v).
 > $$
+> Indeed, the six roots of $P$ are $u,\omega u,\omega^2u,v,\omega v,\omega^2v$.
 >
 > Set
 > $$
@@ -93,93 +102,124 @@ created: 2026-08-11
 > \qquad
 > q=\frac uv.
 > $$
-> Let $A$ be the splitting field over $\mathbb Q$ of $x^3-2$. Thus
+> Then
 > $$
-> A=\mathbb Q(c,\omega).
-> $$
-> The polynomial $x^3-2$ is Eisenstein at $2$, and
-> $$
-> \Delta(x^3-2)=-108=-3\cdot6^2.
-> $$
-> Therefore
-> $$
-> \operatorname{Gal}(A/\mathbb Q)\cong S_3,
-> $$
-> and its unique quadratic subfield is $\mathbb Q(\sqrt{-3})=F$.
->
-> Furthermore,
-> $$
+> c^3=2,
+> \qquad
 > q^3=\frac{2+s}{2-s}=3+2s,
 > \qquad
 > q^{-3}=3-2s.
 > $$
-> Hence, if
+> In particular,
 > $$
-> \alpha=q+q^{-1},
+> q^3+q^{-3}=6,
 > $$
-> then
+> so $q$ is a root of
 > $$
-> \alpha^3-3\alpha=q^3+q^{-3}=6.
+> r(x)=x^6-6x^3+1.
 > $$
-> Thus $\alpha$ is a root of
-> $$
-> p(x)=x^3-3x-6.
-> $$
-> The rational-root test shows that $p$ is irreducible over $\mathbb Q$, and
-> $$
-> \Delta(p)=-864=-6\cdot12^2.
-> $$
-> Let $B$ be its splitting field. By Artin's cubic discriminant criterion,
-> $$
-> \operatorname{Gal}(B/\mathbb Q)\cong S_3,
-> $$
-> and the unique quadratic subfield of $B$ is $\mathbb Q(\sqrt{-6})$.
 >
-> The three roots of $p$ are
+> Define two subfields of $K$ by
 > $$
-> \alpha_0=q+q^{-1},
-> \quad
-> \alpha_1=\omega q+\omega^2q^{-1},
-> \quad
-> \alpha_2=\omega^2q+\omega q^{-1}.
+> A=F(c),
+> \qquad
+> B=F(q).
 > $$
-> Therefore $B\subset K$. Conversely, the inverse Fourier relation
+> Their compositum is $AB=F(c,q)$. We claim that it is the whole splitting field:
 > $$
-> q=\frac{\alpha_0+\omega^2\alpha_1+\omega\alpha_2}{3}
+> K=AB.
 > $$
-> shows that $q\in AB$. Since $c\in A$, we have
+> The inclusion $AB\subset K$ is immediate. Conversely,
 > $$
 > s=\frac{q^3-3}{2},
 > \qquad
+> u^2=cq,
+> \qquad
 > u=\frac{2+s}{cq},
 > \qquad
-> v=\frac cu.
+> v=\frac cu,
 > $$
-> Hence $K=AB$.
+> so $s,u,v\in AB$ and hence $K\subset AB$.
 >
-> The intersection $A\cap B$ is Galois over $\mathbb Q$. In an $S_3$-extension, the only nontrivial proper Galois intermediate field is its unique quadratic subfield. The quadratic subfields of $A$ and $B$ are respectively
+> We now determine the two Galois extensions $A/F$ and $B/F$, and then their intersection.
+> The polynomial $x^3-2$ is irreducible over $\mathbb Q$ by Eisenstein's criterion. Since $\mathbb Q(c)\subset\mathbb R$ whereas $F=\mathbb Q(\sqrt{-3})$ is imaginary quadratic,
 > $$
-> \mathbb Q(\sqrt{-3})
-> \quad\text{and}\quad
-> \mathbb Q(\sqrt{-6}),
+> F\cap\mathbb Q(c)=\mathbb Q.
 > $$
-> which are distinct. Also $A\ne B$, so
+> Therefore
 > $$
-> A\cap B=\mathbb Q.
+> [A:F]=[\mathbb Q(c):\mathbb Q]=3.
 > $$
-> Consequently,
+> Because $\omega\in F$, the field $A$ is the splitting field over $F$ of $x^3-2$, and
 > $$
-> \operatorname{Gal}(K/\mathbb Q)
-> \cong S_3\times S_3.
+> \operatorname{Gal}(A/F)\cong C_3.
 > $$
-> Since $F$ is the quadratic subfield of the first $S_3$ factor, fixing $F$ replaces that factor by $A_3$. Therefore
+>
+> To determine $[B:F]$, introduce the resolvent
+> $$
+> \alpha=q+q^{-1}.
+> $$
+> Since $q^3+q^{-3}=6$,
+> $$
+> \alpha^3-3\alpha-6=0.
+> $$
+> The polynomial $x^3-3x-6$ has no rational root and is therefore irreducible over $\mathbb Q$. Hence
+> $$
+> 3=[\mathbb Q(\alpha):\mathbb Q]
+> \mid[\mathbb Q(q):\mathbb Q].
+> $$
+> Also,
+> $$
+> s=\frac{q^3-3}{2}\in\mathbb Q(q),
+> $$
+> so
+> $$
+> 2=[\mathbb Q(s):\mathbb Q]
+> \mid[\mathbb Q(q):\mathbb Q].
+> $$
+> Since $q$ satisfies the degree-$6$ polynomial $r(x)$, these two divisibilities force
+> $$
+> [\mathbb Q(q):\mathbb Q]=6.
+> $$
+> The field $\mathbb Q(q)$ is real, so $F\cap\mathbb Q(q)=\mathbb Q$ and consequently
+> $$
+> [B:F]=6.
+> $$
+> Thus $r(x)$ is irreducible over $F$. Its six roots are
+> $$
+> q,\ \omega q,\ \omega^2q,
+> \ q^{-1},\ \omega q^{-1},\ \omega^2q^{-1},
+> $$
+> all of which belong to $B$. Hence $B/F$ is Galois. The automorphisms
+> $$
+> \sigma(q)=\omega q,
+> \qquad
+> \tau(q)=q^{-1}
+> $$
+> satisfy
+> $$
+> \sigma^3=\tau^2=1,
+> \qquad
+> \tau\sigma\tau^{-1}=\sigma^{-1}.
+> $$
+> Therefore
+> $$
+> \operatorname{Gal}(B/F)\cong S_3.
+> $$
+>
+> Finally, $A\cap B$ is Galois over $F$, because both $A/F$ and $B/F$ are Galois. If $A\cap B\ne F$, then the prime degree $[A:F]=3$ would imply $A\subset B$. This would give a degree-$3$ Galois intermediate field of the $S_3$-extension $B/F$. Such a field would correspond to a normal subgroup of order $2$ in $S_3$, but no such subgroup exists. Hence
+> $$
+> A\cap B=F.
+> $$
+> Since $K=AB$, restriction now gives
 > $$
 > \operatorname{Gal}(K/F)
-> \cong A_3\times S_3
+> \cong\operatorname{Gal}(A/F)
+> \times\operatorname{Gal}(B/F)
 > \cong C_3\times S_3.
 > $$
 >
-> **(b) Three quadratic extensions and their pairwise-product field.**
+> **(b) A quartic subfield and one remaining square root.**
 >
 > Here the element in the problem is a root of
 > $$
@@ -195,16 +235,14 @@ created: 2026-08-11
 > $$
 > a=\sqrt[3]2,
 > \qquad
-> E=F(a),
-> \qquad
 > U_j=2+\omega^j a
 > \quad(j=0,1,2),
 > $$
-> and choose $r_j$ with $r_j^2=U_j$. The required splitting field is
+> and choose $r_j$ with $r_j^2=U_j$. Since $F$ contains $\omega$, the required splitting field is
 > $$
-> K=E(r_0,r_1,r_2)
->   =E(r_0)E(r_1)E(r_2).
+> K=F(r_0,r_1,r_2).
 > $$
+> Indeed, $a=r_0^2-2\in F(r_0)$, so adjoining $a$ separately is unnecessary.
 >
 > Define the pairwise products
 > $$
@@ -241,7 +279,23 @@ created: 2026-08-11
 > $$
 > expanding the product of $x-\beta_i$ gives the displayed quartic.
 >
-> Let $H$ be the splitting field of $h$ over $\mathbb Q$. We first prove that $h$ is irreducible. After the invertible change of variable $x=2y$ and division by $16$, we obtain
+> Let
+> $$
+> H=\mathbb Q(\beta_0,\beta_1,\beta_2,\beta_3),
+> $$
+> the splitting field of $h$ over $\mathbb Q$. Since the displayed linear relations between the $\beta_i$ and the $x_j$ are invertible,
+> $$
+> H=\mathbb Q(x_0,x_1,x_2).
+> $$
+> We will show that
+> $$
+> \mathbb Q\subset F\subset H\subset K,
+> \qquad
+> K=H(\sqrt{10}).
+> $$
+> Thus $H$ contains the pairwise products of the three square roots, while adjoining their total product supplies the remaining quadratic step.
+>
+> We first prove that $h$ is irreducible. After the invertible change of variable $x=2y$ and division by $16$, we obtain
 > $$
 > \frac1{16}h(2y)=y^4-6y^2-10y-6.
 > $$
@@ -291,11 +345,11 @@ created: 2026-08-11
 > $$
 > \sqrt{\Delta(h)}=3840\sqrt{-3}\in H.
 > $$
-> Thus
+> Thus $a\in H$ and
 > $$
-> E=\mathbb Q(\omega,a)=F(a)\subset H.
+> \mathbb Q(\omega,a)=F(a)\subset H.
 > $$
-> As established in part (a), $E$ is the splitting field of $x^3-2$ and $[E:\mathbb Q]=6$. Therefore
+> As established in part (a), $F(a)$ is the splitting field of $x^3-2$ and has degree $6$ over $\mathbb Q$. Therefore
 > $$
 > 6\mid[H:\mathbb Q]
 >   =\left|\operatorname{Gal}(H/\mathbb Q)\right|.
@@ -330,7 +384,7 @@ created: 2026-08-11
 > \qquad
 > r_2=\frac{\sqrt{10}}{x_2}.
 > $$
-> The second method above already shows that $E=F(a)\subset H$. Therefore
+> The second method above already shows that $F(a)\subset H$. Therefore
 > $$
 > K=H(\sqrt{10}).
 > $$
@@ -348,6 +402,33 @@ created: 2026-08-11
 > \operatorname{Gal}(F(\sqrt{10})/F)
 > \cong A_4\times C_2.
 > $$
+>
+> The field diagram and degrees are now
+> $$
+> \mathbb Q\subset F\subset H\subset K,
+> $$
+> with
+> $$
+> [F:\mathbb Q]=2,
+> \qquad
+> [H:F]=12,
+> \qquad
+> [K:H]=2,
+> $$
+> and hence
+> $$
+> [H:\mathbb Q]=24,
+> \qquad
+> [K:F]=24.
+> $$
+> Equivalently, $H$ is the fixed field in $K$ of the simultaneous sign change
+> $$
+> r_0\longmapsto-r_0,
+> \qquad
+> r_1\longmapsto-r_1,
+> \qquad
+> r_2\longmapsto-r_2.
+> $$
 
 ## Related Concepts
 
@@ -360,4 +441,4 @@ created: 2026-08-11
 
 ## Notes
 
-The exercise statement is source material from [S1, Ch. 16, Section 9, Ex. 9.14, printed p. 509, PDF p. 521]. The solution is an independent derivation modeled on the compositum method used in [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]. Part (a) uses Artin's cubic discriminant criterion [S1, Ch. 16, Section 8, Thm. 16.8.5, printed p. 493, PDF p. 505]. Part (b) proves the quartic irreducible by a scaled Eisenstein argument and retains two proofs that its Galois group is $S_4$: Artin's resolvent-cubic criterion, and a compositum argument using the degree-$6$ subfield $F(\sqrt[3]2)$. The quartic resolvent and discriminant criteria are from [S1, Ch. 16, Section 9, Props. 16.9.5 and 16.9.8, printed pp. 495-496, PDF pp. 507-508]. No Pell-unit calculation, prime-ideal factorization, or general Kummer class-independence theorem is imported.
+The exercise statement is source material from [S1, Ch. 16, Section 9, Ex. 9.14, printed p. 509, PDF p. 521]. The solution is an independent derivation organized around composita and low-degree resolvents. Part (a) works entirely over $F$: the product and quotient resolvents decompose the splitting field into a disjoint $C_3$-extension and $S_3$-extension. Part (b) proves the quartic irreducible by a scaled Eisenstein argument and retains two proofs that its Galois group is $S_4$: Artin's resolvent-cubic criterion, and a compositum argument using the degree-$6$ subfield $F(\sqrt[3]2)$. The quartic resolvent and discriminant criteria are from [S1, Ch. 16, Section 9, Props. 16.9.5 and 16.9.8, printed pp. 495-496, PDF pp. 507-508]. No Pell-unit calculation, prime-ideal factorization, or general Kummer class-independence theorem is imported.
