@@ -14,7 +14,11 @@ created: 2025-01-19
 
 > [!info] Definition (External Direct Product)
 > The **direct product** of groups $G$ and $H$ is:
-> $$G \times H = \{(g, h) : g \in G, h \in H\}$$
+>
+> $$
+> G \times H = \{(g, h) : g \in G, h \in H\}.
+> $$
+>
 > with componentwise operation: $(g_1, h_1)(g_2, h_2) = (g_1 g_2, h_1 h_2)$
 
 ## Properties
@@ -39,10 +43,17 @@ created: 2025-01-19
 ## Generalization
 
 > [!info] Definition (Finite Direct Product)
-> $$\prod_{i=1}^n G_i = G_1 \times G_2 \times \cdots \times G_n$$
+>
+> $$
+> \prod_{i=1}^n G_i = G_1 \times G_2 \times \cdots \times G_n.
+> $$
 
 > [!info] Definition (Direct Sum - for [[01 - Group Theory/Concepts/Abelian Groups|abelian groups]])
-> $$\bigoplus_{i \in I} G_i = \{(g_i)_{i \in I} : g_i = 0 \text{ for all but finitely many } i\}$$
+>
+> $$
+> \bigoplus_{i \in I} G_i
+> =\{(g_i)_{i \in I}:g_i=0\text{ for all but finitely many }i\}.
+> $$
 
 ## Examples
 
@@ -54,6 +65,9 @@ created: 2025-01-19
 
 > [!example] Example 3: $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$
 > Different structures: one is cyclic, one is not.
+
+> [!example] Example 4: Complementary subgroups need not form a direct product
+> In [[05 - Galois Theory/Exercises/Exercise Gal78 - The Splitting Field of x7 Minus 8|Exercise Gal78]], a group of order $42$ contains complementary subgroups $C_7$ and $C_6$, but the $C_6$ factor acts nontrivially on $C_7$. The group is $C_7\rtimes C_6$, not $C_7\times C_6$.
 
 ## Criteria for Direct Products
 

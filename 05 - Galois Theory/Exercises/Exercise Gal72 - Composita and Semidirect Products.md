@@ -125,3 +125,5 @@ created: 2026-08-12
 ## Notes
 
 The displayed semidirect product is an internal decomposition inside $G$. The abstract isomorphism with an external semidirect product also requires recording the conjugation action of $H_2$ on $H_1$. The proof is an independent derivation from the user-provided statement.
+
+[[05 - Galois Theory/Exercises/Exercise Gal78 - The Splitting Field of x7 Minus 8|Exercise Gal78]] gives a concrete source-erratum example: $\mathbb Q(\sqrt[7]8,\zeta_7)$ satisfies the semidirect-product hypotheses, but the nonnormal radical subfield prevents the decomposition from being a direct product.

@@ -77,6 +77,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-13 (Exercise Gal78: Correcting a Compositum Galois Group)
+- Added: Archived Yu Pin's Example 5.26 as **Gal78**, preserving the printed claim that the splitting field of $x^7-8$ has cyclic direct-product Galois group while visibly marking that conclusion as a source error.
+- Corrected: Proved independently that the degree-$42$ Galois group is the nonabelian semidirect product $C_7\rtimes C_6\cong\operatorname{AGL}_1(\mathbb F_7)$, with explicit generators and conjugation relation $\tau\sigma\tau^{-1}=\sigma^3$.
+- Clarified: Recorded that $\mathbb Q(\zeta_7)/\mathbb Q$ is Galois whereas $\mathbb Q(\sqrt[7]8)/\mathbb Q$ is not, which is exactly why one complementary subgroup is nonnormal.
+- Linked: Connected Gal78 bidirectionally with composita, cyclotomic extensions, normal subgroups, direct products, and the general semidirect-product result in Gal72.
+- Maintained: Kept concept-to-exercise listings Dataview-driven; no manual Gal78 entries were added under concept `Exercises` sections.
+
 ### 2026-08-13 (Exercise Gal28 Compositum Classification)
 - Reclassified: Renamed **Gal28** as **A Primitive Element of a Compositum**, added explicit compositum and intersection calculations, derived the recovery formula for the primitive element, and connected the exercise bidirectionally with **Composita and Restriction Maps**.
 

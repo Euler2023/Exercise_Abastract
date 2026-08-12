@@ -74,6 +74,16 @@ Let $E/F$ be finite Galois and put $H_i=\operatorname{Gal}(E/L_i)$.
 >
 > is a degree-$6$ compositum with an explicit primitive element. Passing to splitting fields gives a second compositum whose trivial intersection yields the direct-product Galois group $S_3\times C_2$.
 
+> [!example] A compositum yielding a semidirect product
+> In [[05 - Galois Theory/Exercises/Exercise Gal78 - The Splitting Field of x7 Minus 8|Exercise Gal78]], the splitting field
+>
+> $$
+> \mathbb Q(\sqrt[7]8,\zeta_7)
+> =\mathbb Q(\sqrt[7]8)\mathbb Q(\zeta_7)
+> $$
+>
+> has Galois group $C_7\rtimes C_6$, not $C_7\times C_6$. The cyclotomic factor is Galois over $\mathbb Q$, but the real radical factor is not; the resulting nontrivial conjugation action obstructs a direct product.
+
 > [!example] Two independent quadratic fields
 > If $a,b,ab$ are nonsquares in a field of characteristic different from $2$, then
 > $$

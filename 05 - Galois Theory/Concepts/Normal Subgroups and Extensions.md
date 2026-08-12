@@ -20,7 +20,10 @@ The Galois correspondence relates normal subgroups to normal (Galois) intermedia
 > Then: **$K/F$ is a normal extension** $\iff$ **$H \trianglelefteq G$** (H is a normal subgroup)
 >
 > When this holds:
-> $$\text{Gal}(K/F) \cong G/H$$
+>
+> $$
+> \text{Gal}(K/F) \cong G/H.
+> $$
 
 ## Understanding the Connection
 
@@ -64,7 +67,9 @@ The Galois correspondence relates normal subgroups to normal (Galois) intermedia
 > [!abstract] Computing Galois Groups of Normal Intermediate Extensions
 > If $H \trianglelefteq G$ and $K = E^H$, then:
 >
-> $$\text{Gal}(K/F) \cong G/H$$
+> $$
+> \text{Gal}(K/F) \cong G/H.
+> $$
 >
 > The isomorphism is given by: $\sigma H \mapsto \sigma|_K$
 
