@@ -2,7 +2,7 @@
 title: "Exercise Gal50: Galois Groups of x8 - 1, x12 - 1, and x9 - 1"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

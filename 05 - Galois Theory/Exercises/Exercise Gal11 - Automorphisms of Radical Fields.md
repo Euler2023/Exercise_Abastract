@@ -2,7 +2,7 @@
 title: "Exercise Gal11: Automorphisms of Radical Fields"
 topic: galois-theory
 difficulty: intermediate
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

@@ -2,7 +2,7 @@
 title: "Exercise Gal74: Two S3 Splitting Fields and Their Compositum"
 topic: galois-theory
 difficulty: advanced
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

@@ -2,7 +2,7 @@
 title: "Exercise Gal68: Galois Orbit of a Regular Pentagon"
 topic: galois-theory
 difficulty: intermediate
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

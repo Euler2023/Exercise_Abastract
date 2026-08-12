@@ -2,7 +2,7 @@
 title: "Exercise Gal24: Minimal Polynomial and Basis for i + sqrt2"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

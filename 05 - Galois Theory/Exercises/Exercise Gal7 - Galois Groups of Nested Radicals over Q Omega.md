@@ -2,7 +2,7 @@
 title: "Exercise Gal7: Galois Groups of Nested Radicals over Q(omega)"
 topic: galois-theory
 difficulty: advanced
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

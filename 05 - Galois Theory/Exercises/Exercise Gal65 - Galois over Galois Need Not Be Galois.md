@@ -2,7 +2,7 @@
 title: "Exercise Gal65: Galois over Galois Need Not Be Galois"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

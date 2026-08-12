@@ -2,7 +2,7 @@
 title: "Exercise Gal66: Automorphisms of R and Continuous Automorphisms of C"
 topic: galois-theory
 difficulty: intermediate
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

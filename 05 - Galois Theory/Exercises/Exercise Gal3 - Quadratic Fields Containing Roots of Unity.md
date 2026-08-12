@@ -2,7 +2,7 @@
 title: "Exercise Gal3: Quadratic Fields Containing Roots of Unity"
 topic: galois-theory
 difficulty: intermediate
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

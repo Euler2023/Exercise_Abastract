@@ -2,7 +2,7 @@
 title: "Exercise Gal43: Degree of zeta7 over Q(zeta3)"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

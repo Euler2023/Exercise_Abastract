@@ -2,7 +2,7 @@
 title: "Exercise Gal18: Intermediate Fields of a Biquadratic Extension"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

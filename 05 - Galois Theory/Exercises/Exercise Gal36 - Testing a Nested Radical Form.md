@@ -2,7 +2,7 @@
 title: "Exercise Gal36: Testing a Nested Radical Form"
 topic: galois-theory
 difficulty: beginner
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory

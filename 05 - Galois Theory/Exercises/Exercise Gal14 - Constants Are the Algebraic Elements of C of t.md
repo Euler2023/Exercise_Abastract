@@ -2,7 +2,7 @@
 title: "Exercise Gal14: Constants Are the Algebraic Elements of C(t)"
 topic: galois-theory
 difficulty: advanced
-status: complete
+status: completed
 tags:
   - exercise
   - galois-theory
