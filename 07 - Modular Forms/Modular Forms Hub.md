@@ -46,7 +46,7 @@ Modular forms are complex analytic functions on the upper half-plane that satisf
 
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Elliptic Curves and Modularity]]
 - [[07 - Modular Forms/Concepts/Partition Function|Partition Function]]
-- [[07 - Modular Forms/Concepts/Quadratic Forms|Quadratic Forms and Theta Series]]
+- [[07 - Modular Forms/Concepts/Quadratic Forms and Theta Series|Quadratic Forms and Theta Series]]
 
 ## Key Relationships
 

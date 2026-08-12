@@ -167,6 +167,7 @@ created: 2026-08-12
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Submodules|Submodules]]

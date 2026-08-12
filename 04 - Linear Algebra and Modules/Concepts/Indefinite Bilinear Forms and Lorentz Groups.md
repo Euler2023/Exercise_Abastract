@@ -92,6 +92,7 @@ where $\delta,\varepsilon\in\{1,-1\}$ and $t\in\mathbb R$. The two discrete inva
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]

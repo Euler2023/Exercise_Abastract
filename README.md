@@ -77,6 +77,22 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-13 (Hilbert 90 and Artin–Schreier Extensions)
+- Added: Created a source-grounded **Hilbert's Theorem 90** concept from Lang's *Algebra*, with complete proofs of both the multiplicative norm-one form and the additive trace-zero form.
+- Added: Created a source-grounded **Artin–Schreier Extensions** concept from Lang's *Algebra*, using additive Hilbert 90 to prove the degree-$p$ classification theorem.
+- Expanded: Added the irreducibility criterion, parameter classification by $k/\wp(k)$, rational-function and finite-field trace examples, and a precise comparison with Kummer theory.
+- Linked: Connected Hilbert 90 and Artin–Schreier theory bidirectionally with Kummer extensions, Galois extensions, separability, finite fields, and the Galois Theory hub.
+
+### 2026-08-13 (Exercise Gal35 Referenced Example)
+- Expanded: Made **Gal35** self-contained by stating Artin's Example 16.9.2(a), including the quartic, its four roots, splitting field, biquadratic subfield, and $D_4$ Galois group.
+- Clarified: Replaced the vague reference to “other nested square roots” with the two explicit Galois families and proved that the second quartic has the same splitting field.
+
+### 2026-08-12 (Artin Chapter 8 Quadratic and Skew-Symmetric Forms)
+- Added: Archived and independently solved Artin Chapter 8 Exercises 7.1–7.4 and 8.1–8.4 as **LA11–LA18**, with exact printed/PDF page provenance.
+- Added: Created separate Linear Algebra concepts for general **Quadratic Forms** and **Skew-Symmetric Bilinear Forms**, including real quadric classification, symplectic standard form, and the Pfaffian determinant identity.
+- Refined: Renamed the Modular Forms concept to **Quadratic Forms and Theta Series** and explicitly limited it to positive-definite integral quadratic forms and their arithmetic theta-series applications.
+- Linked: Connected the two quadratic-form layers, the new exercises, LA8/LA10, Symplectic Groups, and the Linear Algebra and Modular Forms hubs bidirectionally.
+
 ### 2026-08-12 (Exercise LA1 Source Correction)
 - Corrected: Reclassified **LA1** as a proof-exercise adaptation of Artin's Theorem 4.1.6, *Dimension Formula*, with exact printed/PDF page provenance rather than the previous generic Axler attribution.
 - Refined: Removed the unnecessary finite-dimensionality assumption on the codomain, clarified the independent proof status, normalized the display mathematics, and connected the exercise to the Rank and Nullity and Basis and Dimension concepts.

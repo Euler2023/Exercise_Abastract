@@ -102,6 +102,8 @@ Finite fields have a particularly elegant Galois theory: all extensions are cycl
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
+- [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]

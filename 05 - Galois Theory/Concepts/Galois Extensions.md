@@ -83,6 +83,8 @@ created: 2026-01-19
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
+- [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]

@@ -98,6 +98,7 @@ An automorphism is a "symmetry" of the field that preserves its algebraic struct
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[05 - Galois Theory/Concepts/Fixed Fields|Fixed Fields]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]

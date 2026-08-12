@@ -37,6 +37,8 @@ A generator $\sigma$ of the cyclic Galois group acts $F$-linearly on $K$. Becaus
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
+- [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]

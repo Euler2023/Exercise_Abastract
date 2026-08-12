@@ -83,5 +83,5 @@ created: 2026-01-19
 ## Related Concepts
 
 - [[07 - Modular Forms/Concepts/Theta Functions|Theta Functions]]
-- [[07 - Modular Forms/Concepts/Quadratic Forms|Quadratic Forms and Theta Series]]
+- [[07 - Modular Forms/Concepts/Quadratic Forms and Theta Series|Quadratic Forms and Theta Series]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
