@@ -99,3 +99,11 @@ Key facts:
 - [[07 - Modular Forms/Concepts/Eisenstein Series|Eisenstein Series]]
 - [[07 - Modular Forms/Concepts/Modular Functions|Modular Functions]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

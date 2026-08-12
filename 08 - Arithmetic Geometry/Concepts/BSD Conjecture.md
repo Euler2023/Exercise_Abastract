@@ -107,3 +107,11 @@ BSD predicts: Yes! And gives its order.
 - [[08 - Arithmetic Geometry/Concepts/Heights|Heights]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

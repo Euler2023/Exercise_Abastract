@@ -106,3 +106,12 @@ where $\delta,\varepsilon\in\{1,-1\}$ and $t\in\mathbb R$. The two discrete inva
 ## Source and Proof Status
 
 The definition of $O_{3,1}$ and its extension to $O_{p,q}$ are **stated in the source**. [S1, Ch. 9, §9.1, formula (9.1.5), printed p. 262, PDF p. 274] The column criterion, boost calculation, and description of $O_{1,1}$ are proved directly above.
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

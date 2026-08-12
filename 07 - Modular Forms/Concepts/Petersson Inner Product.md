@@ -94,3 +94,11 @@ These periods appear in:
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -81,3 +81,11 @@ These satisfy: $\pi_i \circ \iota_i = \text{id}$ and $\iota_1 \circ \pi_1 + \iot
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]] (split sequences)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

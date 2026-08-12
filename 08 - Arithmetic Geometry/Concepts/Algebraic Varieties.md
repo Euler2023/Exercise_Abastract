@@ -90,3 +90,11 @@ In arithmetic geometry, the base field matters critically:
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

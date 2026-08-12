@@ -131,3 +131,11 @@ For compact Lie groups:
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]]
 - [[Group Theory Hub|Groups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

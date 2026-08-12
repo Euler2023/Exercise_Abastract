@@ -97,3 +97,11 @@ For binary forms $Q(x,y) = ax^2 + bxy + cy^2$ of discriminant $D = b^2 - 4ac < 0
 - [[07 - Modular Forms/Concepts/Eisenstein Series|Eisenstein Series]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
 - [[07 - Modular Forms/Concepts/Hecke Operators|Hecke Operators]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

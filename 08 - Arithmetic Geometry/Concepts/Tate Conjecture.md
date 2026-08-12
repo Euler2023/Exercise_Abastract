@@ -141,3 +141,11 @@ The Tate conjecture is part of the **standard conjectures** for algebraic cycles
 - [[08 - Arithmetic Geometry/Concepts/Abelian Varieties|Abelian Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
 - [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

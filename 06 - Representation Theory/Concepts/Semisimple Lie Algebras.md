@@ -170,3 +170,11 @@ For semisimple $\mathfrak{g}$, the **Casimir element** $\Omega \in Z(U(\mathfrak
 - [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and Weight Spaces]]
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -186,3 +186,11 @@ Weights of tensor product: $\Pi(V \otimes W) = \Pi(V) + \Pi(W)$ (with multiplici
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

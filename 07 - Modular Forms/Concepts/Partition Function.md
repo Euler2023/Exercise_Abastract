@@ -109,3 +109,11 @@ Ramanujan discovered **mock theta functions** which behave "almost" like modular
 - [[07 - Modular Forms/Concepts/Theta Functions|Theta Functions]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
 - [[07 - Modular Forms/Concepts/Hecke Operators|Hecke Operators]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

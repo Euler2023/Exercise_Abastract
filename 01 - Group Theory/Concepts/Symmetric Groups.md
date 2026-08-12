@@ -131,8 +131,12 @@ These relations provide a compact way to calculate the complete multiplication t
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G10 - Multiplication Table of S3|Exercise G10: Multiplication Table of S3]]
-- [[01 - Group Theory/Exercises/Exercise G12 - Solving Group Equations|Exercise G12: Solving Group Equations]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

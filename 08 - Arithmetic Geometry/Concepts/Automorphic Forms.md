@@ -197,3 +197,11 @@ The concepts here generalize:
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

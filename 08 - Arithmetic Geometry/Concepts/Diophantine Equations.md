@@ -146,3 +146,11 @@ Over $\mathbb{Q}$: Still open!
 - [[08 - Arithmetic Geometry/Concepts/Faltings Theorem|Faltings' Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
 - [[08 - Arithmetic Geometry/Concepts/Heights|Heights]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

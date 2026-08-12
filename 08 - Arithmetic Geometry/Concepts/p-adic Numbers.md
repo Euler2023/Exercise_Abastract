@@ -100,3 +100,11 @@ where $\mu_{p-1}$ is the $(p-1)$-th roots of unity.
 - [[08 - Arithmetic Geometry/Concepts/Local Fields|Local Fields]]
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

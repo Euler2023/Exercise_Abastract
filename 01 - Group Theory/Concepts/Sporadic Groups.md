@@ -244,3 +244,11 @@ No satisfying conceptual explanation exists. The number 26 emerges from the mass
 - [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
 - [[06 - Representation Theory/Concepts/Monstrous Moonshine|Monstrous Moonshine]]
 - [[08 - Arithmetic Geometry/Concepts/Inverse Galois Problem|Inverse Galois Problem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -79,3 +79,11 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Minimal Polynomials|Minimal Polynomials]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions|Algebraic Extensions]]
 - [[03 - Field Theory/Concepts/Algebraic Closure|Algebraic Closure]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

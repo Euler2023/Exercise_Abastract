@@ -2,9 +2,12 @@
 title: "Exercise Gal58: Solvability of Degree-Ten Galois Extensions"
 topic: galois-theory
 difficulty: intermediate
-status: not-started
-tags: [exercise, galois-theory, solvable-groups]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 12, Ex. 12.1, printed p. 510, PDF p. 522"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - solvable-groups
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 12, Ex. 12.1, printed p. 510, PDF p. 522
 created: 2026-08-12
 ---
 

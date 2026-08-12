@@ -72,3 +72,11 @@ The isomorphism theorems for rings parallel those for groups, providing fundamen
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems (Groups)]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

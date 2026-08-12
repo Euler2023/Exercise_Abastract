@@ -196,3 +196,11 @@ where $U$ is pro-unipotent, related to the Lie algebra of multiple zeta values.
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
 - [[08 - Arithmetic Geometry/Concepts/Tate Conjecture|Tate Conjecture]]
 - [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

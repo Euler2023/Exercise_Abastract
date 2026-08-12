@@ -191,7 +191,9 @@ The cubic was chosen because it makes both mechanisms visible in one manageable 
 
 ## Exercises
 
-- [[03 - Field Theory/Exercises/Exercise F17 - Algebraic Numbers Are Algebraically Closed|Exercise F17]]
-- [[03 - Field Theory/Exercises/Exercise F18 - Constructing an Algebraic Closure of Fp|Exercise F18]]
-- [[03 - Field Theory/Exercises/Exercise F19 - Loop Changes in Polynomial Images of Circles|Exercise F19]]
-- [[03 - Field Theory/Exercises/Exercise F20 - Visualizing Polynomial Images of Circles|Exercise F20]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+

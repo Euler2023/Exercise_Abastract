@@ -72,7 +72,7 @@ Let $E/F$ be finite Galois and put $H_i=\operatorname{Gal}(E/L_i)$.
 
 ## Related Concepts
 
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
@@ -80,11 +80,12 @@ Let $E/F$ be finite Galois and put $H_i=\operatorname{Gal}(E/L_i)$.
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
-- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
-- [[05 - Galois Theory/Exercises/Exercise Gal73 - Intermediate Fields of an S3 Times C2 Extension|Exercise Gal73]]
-- [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]
-- [[05 - Galois Theory/Exercises/Exercise Gal75 - Square Classes and Biquadratic Extensions|Exercise Gal75]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

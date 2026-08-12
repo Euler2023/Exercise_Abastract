@@ -127,9 +127,12 @@ D_{15}/\langle x^3\rangle\cong D_3.$$
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G23 - Word Reduction in Dihedral Groups|Exercise G23: Word Reduction in Dihedral Groups]]
-- [[01 - Group Theory/Exercises/Exercise G24 - Subgroups and Quotients of Dihedral Groups|Exercise G24: Subgroups and Quotients of Dihedral Groups]]
-- [[01 - Group Theory/Exercises/Exercise G25 - Cosets and Quotient of D10|Exercise G25: Cosets and Quotient of D10]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

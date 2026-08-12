@@ -140,3 +140,11 @@ The complexification $\mathfrak{su}_2 \otimes \mathbb{C} \cong \mathfrak{sl}_2(\
 - [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

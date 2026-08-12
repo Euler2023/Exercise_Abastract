@@ -105,3 +105,11 @@ Examples:
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Modularity Theorem]]
 - [[05 - Galois Theory/Galois Theory Hub|Galois Theory]]
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

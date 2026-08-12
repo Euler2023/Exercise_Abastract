@@ -90,3 +90,11 @@ For [[07 - Modular Forms/Concepts/Congruence Subgroups|congruence subgroups]] $\
 - [[07 - Modular Forms/Concepts/Discriminant Function|Discriminant Function]]
 - [[07 - Modular Forms/Concepts/j-Invariant|j-Invariant]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

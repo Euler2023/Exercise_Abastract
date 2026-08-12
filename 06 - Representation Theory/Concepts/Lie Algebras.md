@@ -149,3 +149,11 @@ Representations of $\mathfrak{g}$ correspond to $U(\mathfrak{g})$-modules.
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
 - [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

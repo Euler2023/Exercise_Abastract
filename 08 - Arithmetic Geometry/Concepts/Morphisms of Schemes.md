@@ -115,3 +115,11 @@ Separatedness is the scheme-theoretic analogue of Hausdorff.
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
 - [[08 - Arithmetic Geometry/Concepts/Etale Cohomology|Étale Cohomology]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

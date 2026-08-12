@@ -91,3 +91,11 @@ This "finiteness" property is crucial for Diophantine applications.
 - [[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theorem|Mordell-Weil Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves]]
 - [[08 - Arithmetic Geometry/Concepts/Faltings Theorem|Faltings' Theorem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

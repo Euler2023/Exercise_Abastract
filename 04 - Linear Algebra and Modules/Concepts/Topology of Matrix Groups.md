@@ -86,9 +86,11 @@ This proof uses the spectral theorem and the existence and uniqueness of positiv
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA4 - Orthogonal and Lorentz Groups Are Not Continuously Isomorphic|Exercise LA4]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA5 - Four Components of O11|Exercise LA5]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA8 - Structure of the Symplectic Group|Exercise LA8]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

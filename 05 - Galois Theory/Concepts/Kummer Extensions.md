@@ -44,12 +44,11 @@ A generator $\sigma$ of the cyclic Galois group acts $F$-linearly on $K$. Becaus
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal52 - A Nonzero Fourier Eigenvector|Exercise Gal52]]
-- [[05 - Galois Theory/Exercises/Exercise Gal53 - Nonsquare Cubic Discriminants and Cube Roots|Exercise Gal53]]
-- [[05 - Galois Theory/Exercises/Exercise Gal54 - Irreducibility of Prime Radical Polynomials|Exercise Gal54]]
-- [[05 - Galois Theory/Exercises/Exercise Gal55 - Cyclic Quartic Extensions over a Field Containing i|Exercise Gal55]]
-- [[05 - Galois Theory/Exercises/Exercise Gal56 - Deriving Cardano Formula|Exercise Gal56]]
-- [[05 - Galois Theory/Exercises/Exercise Gal71 - Solvable Groups and Solvability by Radicals|Exercise Gal71]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

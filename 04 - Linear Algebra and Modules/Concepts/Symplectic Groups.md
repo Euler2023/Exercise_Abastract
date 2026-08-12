@@ -117,9 +117,11 @@ $$
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA6 - Comparing SP2 SL2 SP4 and SL4|Exercise LA6]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA7 - Block Symplectic Matrices|Exercise LA7]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA8 - Structure of the Symplectic Group|Exercise LA8]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

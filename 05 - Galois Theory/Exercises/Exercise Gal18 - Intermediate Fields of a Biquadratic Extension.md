@@ -35,7 +35,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 
 ## Notes
 

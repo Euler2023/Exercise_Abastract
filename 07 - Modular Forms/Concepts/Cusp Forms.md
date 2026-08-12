@@ -95,3 +95,11 @@ This makes $S_k$ a finite-dimensional Hilbert space.
 - [[07 - Modular Forms/Concepts/Eisenstein Series|Eisenstein Series]]
 - [[07 - Modular Forms/Concepts/Hecke Operators|Hecke Operators]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

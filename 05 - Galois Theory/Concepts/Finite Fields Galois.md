@@ -104,5 +104,14 @@ Finite fields have a particularly elegant Galois theory: all extensions are cycl
 
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

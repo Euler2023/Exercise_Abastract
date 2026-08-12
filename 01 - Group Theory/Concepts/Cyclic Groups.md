@@ -85,3 +85,11 @@ graph TD
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

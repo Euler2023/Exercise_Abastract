@@ -200,3 +200,11 @@ Denominator identities for affine algebras give classical identities:
 - [[06 - Representation Theory/Concepts/Vertex Operator Algebras|Vertex Operator Algebras]]
 - [[06 - Representation Theory/Concepts/Monstrous Moonshine|Monstrous Moonshine]]
 - [[Modular Forms Hub|Modular Forms]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

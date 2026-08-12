@@ -141,3 +141,11 @@ $$L(A, s) = \prod_p L_p(A, s)^{-1}$$
 - [[08 - Arithmetic Geometry/Concepts/Curves over Number Fields|Curves over Number Fields]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
 - [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -78,3 +78,11 @@ Fields ⊂ Euclidean Domains ⊂ PIDs ⊂ UFDs ⊂ Integral Domains
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

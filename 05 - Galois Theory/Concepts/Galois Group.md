@@ -89,8 +89,9 @@ For $K/F$ Galois:
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 
 # Exercises
+
 ```dataview
-TABLE status, source
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

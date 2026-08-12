@@ -94,6 +94,8 @@ created: 2026-01-19
 
 ## Exercises
 
-- [[03 - Field Theory/Exercises/Exercise F11 - Zero Derivative over a Finite Field|Exercise F11]]
-- [[03 - Field Theory/Exercises/Exercise F15 - Primitive Elements over Finite Fields|Exercise F15]]
-- [[03 - Field Theory/Exercises/Exercise F16 - Primitive Elements of a Biquadratic Field|Exercise F16]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

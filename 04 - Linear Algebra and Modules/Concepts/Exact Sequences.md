@@ -89,3 +89,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

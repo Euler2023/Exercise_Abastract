@@ -48,7 +48,7 @@ Intuitive explanation of the concept.
 ## Exercises
 
 ```dataview
-LIST
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

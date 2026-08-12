@@ -83,3 +83,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated Modules]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]] (torsion $\mathbb{Z}$-modules)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

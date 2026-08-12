@@ -88,3 +88,12 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]] (projective)
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

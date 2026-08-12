@@ -131,22 +131,18 @@ reduces the quartic to two quadratic factors after adjoining square roots. This 
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]
 - [[05 - Galois Theory/Concepts/Ruler and Compass|Ruler and Compass Constructions]]
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal1 - Galois Group x4-2|Exercise Gal1]]
-- [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
-- [[05 - Galois Theory/Exercises/Exercise Gal4 - Quartic Galois Groups from Real Roots and Discriminant|Exercise Gal4]]
-- [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
-- [[05 - Galois Theory/Exercises/Exercise Gal6 - D4 Correspondence for x4 - 2x2 - 1|Exercise Gal6]]
-- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
-- [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]
-- [[05 - Galois Theory/Exercises/Exercise Gal9 - Resolvent Cubic of the General Quartic|Exercise Gal9]]
-- [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

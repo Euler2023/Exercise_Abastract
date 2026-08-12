@@ -143,7 +143,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[01 - Group Theory/Concepts/Quaternion Group|Quaternion Group]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Normal Subgroups and Extensions|Normal Subgroups and Extensions]]
 - [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
 

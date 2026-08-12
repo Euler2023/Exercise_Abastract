@@ -92,3 +92,11 @@ In $\mathbb{P}^n$:
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves]]
 - [[08 - Arithmetic Geometry/Concepts/Curves over Number Fields|Curves over Number Fields]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

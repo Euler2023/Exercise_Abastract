@@ -82,13 +82,13 @@ A representation $\rho: G \to GL(V)$ makes $V$ into a **$G$-module** (or $FG$-mo
 > - Decomposes into trivial + standard representation
 
 > [!example] Example 4: $S_3$ over $\mathbb{C}$
-> 
-> Three irreducible representations:
-> | Name | Degree | Character values on $(e), (12), (123)$ |
-> |------|--------|----------------------------------------|
-> | Trivial | 1 | $1, 1, 1$ |
-> | Sign | 1 | $1, -1, 1$ |
-> | Standard | 2 | $2, 0, -1$ |
+
+Three irreducible representations:
+| Name | Degree | Character values on $(e), (12), (123)$ |
+|------|--------|----------------------------------------|
+| Trivial | 1 | $1, 1, 1$ |
+| Sign | 1 | $1, -1, 1$ |
+| Standard | 2 | $2, 0, -1$ |
 
 
 
@@ -117,3 +117,11 @@ For finite group $G$ over $\mathbb{C}$:
 - [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

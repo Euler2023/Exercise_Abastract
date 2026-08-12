@@ -74,3 +74,11 @@ The Sylow theorems are powerful tools for analyzing the structure of finite grou
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

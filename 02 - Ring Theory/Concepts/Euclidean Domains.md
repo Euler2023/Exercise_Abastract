@@ -88,3 +88,12 @@ Each inclusion is proper.
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

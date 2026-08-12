@@ -114,6 +114,89 @@ created: 2026-01-19
 >
 > In particular: $\mathbb{Q}(\sqrt{d}) \subseteq \mathbb{Q}(\zeta_n)$ for suitable $n$.
 
+## The Quadratic Case of Kronecker-Weber
+
+> [!abstract] Theorem
+> Let $d\ne1$ be a squarefree integer, and let $D$ be the fundamental discriminant of the quadratic field $K=\mathbb Q(\sqrt d)$:
+> $$
+> D=
+> \begin{cases}
+> d,&d\equiv1\pmod4,\\
+> 4d,&d\equiv2,3\pmod4.
+> \end{cases}
+> $$
+> Then
+> $$
+> K\subseteq\mathbb Q(\zeta_{|D|}).
+> $$
+> In particular, every quadratic extension of $\mathbb Q$ is cyclotomic.
+
+### Proof
+
+For each odd prime $p$, put
+$$
+p^*=(-1)^{(p-1)/2}p
+$$
+and let $\chi(r)=\left(\frac rp\right)$ be the Legendre symbol, extended by $\chi(0)=0$. For a primitive $p$-th root of unity $\zeta_p$, define the quadratic Gauss sum
+$$
+\tau_p=\sum_{r\bmod p}\chi(r)\zeta_p^r.
+$$
+Complex conjugation gives
+$$
+\overline{\tau_p}
+=\sum_{r\bmod p}\chi(r)\zeta_p^{-r}
+=\chi(-1)\tau_p. \tag{1}
+$$
+On the other hand, substituting $r=us$ in the product and summing first over $s\ne0$ yields
+$$
+\begin{aligned}
+\tau_p\overline{\tau_p}
+&=\sum_{u\ne0}\chi(u)
+  \sum_{s\ne0}\zeta_p^{(u-1)s}\\
+&=(p-1)-\sum_{u\ne0,1}\chi(u)\\
+&=p,
+\end{aligned}
+$$
+because the sum of $\chi$ over the nonzero residue classes is zero. Combining this identity with (1) gives
+$$
+\tau_p^2=\chi(-1)p=p^*.
+$$
+Consequently,
+$$
+\sqrt{p^*}\in\mathbb Q(\zeta_p). \tag{2}
+$$
+
+The possible contributions from the prime $2$ are also explicit:
+$$
+\sqrt{-4}=2\zeta_4,
+\qquad
+\sqrt8=2(\zeta_8+\zeta_8^{-1}),
+\qquad
+\sqrt{-8}=2(\zeta_8-\zeta_8^{-1}). \tag{3}
+$$
+
+Every fundamental discriminant has a unique prime-discriminant factorization
+$$
+D=\delta_2\prod_{p\mid D,\ p\text{ odd}}p^*,
+\qquad
+\delta_2\in\{1,-4,8,-8\}. \tag{4}
+$$
+Indeed, every $p^*$ is congruent to $1$ modulo $4$, while the value of $\delta_2$ records exactly the $2$-part and sign required by the definition of a fundamental discriminant.
+
+Choose the square roots supplied by (2) and (3), and multiply them. Equations (2)–(4) produce an element of $\mathbb Q(\zeta_{|D|})$ whose square is $D$. Hence
+$$
+\sqrt D\in\mathbb Q(\zeta_{|D|}).
+$$
+Finally, $D/d$ is either $1$ or $4$, so
+$$
+\mathbb Q(\sqrt D)=\mathbb Q(\sqrt d)=K.
+$$
+This proves the theorem.
+
+### Source and Proof Status
+
+The odd-prime Gauss-sum construction agrees with Michael Artin's computation of the quadratic subfield of $\mathbb Q(\zeta_p)$ [S1, Ch. 16, §16.10, Thm. 16.10.12, printed p. 499, PDF p. 511]. Serge Lang proves that every quadratic extension of $\mathbb Q$ is cyclotomic by the same Gauss-sum route [S2, Ch. VI, §3, printed pp. 281–282, PDF pp. 296–297]. The proof above is a self-contained reconstruction in this vault. It proves only the quadratic case; the general Kronecker-Weber theorem requires stronger input.
+
 ## Galois Correspondence for Cyclotomic Fields
 
 > [!info] Subfields of $\mathbb{Q}(\zeta_n)$
@@ -143,7 +226,7 @@ created: 2026-01-19
 ## Exercises
 
 ```dataview
-LIST
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

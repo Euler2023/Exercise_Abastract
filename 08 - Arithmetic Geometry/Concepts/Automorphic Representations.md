@@ -211,3 +211,11 @@ where $L^2_{\text{disc}}$ decomposes discretely into irreducibles.
 - [[08 - Arithmetic Geometry/Concepts/Adeles and Ideles|Adeles and Ideles]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

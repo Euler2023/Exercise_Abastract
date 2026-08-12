@@ -73,3 +73,11 @@ For matrix $A \in M_n(F)$:
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]] (orthogonal diagonalization)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

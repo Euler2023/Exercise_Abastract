@@ -90,3 +90,11 @@ Checking local solubility:
 - [[08 - Arithmetic Geometry/Concepts/p-adic Numbers|p-adic Numbers]]
 - [[08 - Arithmetic Geometry/Concepts/Adeles and Ideles|Adeles and Ideles]]
 - [[08 - Arithmetic Geometry/Concepts/Diophantine Equations|Diophantine Equations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

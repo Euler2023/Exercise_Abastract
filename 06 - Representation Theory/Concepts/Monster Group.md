@@ -223,3 +223,11 @@ Alternative names: "Friendly Giant" (Griess's name), "$F_1$" (Fischer's notation
 - [[01 - Group Theory/Concepts/Sporadic Groups|Sporadic Groups]]
 - [[01 - Group Theory/Concepts/Simple Groups|Simple Groups]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

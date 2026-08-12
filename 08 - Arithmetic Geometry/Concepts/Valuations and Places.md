@@ -97,3 +97,11 @@ Examples:
 - [[08 - Arithmetic Geometry/Concepts/Local Fields|Local Fields]]
 - [[08 - Arithmetic Geometry/Concepts/Adeles and Ideles|Adeles and Ideles]]
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

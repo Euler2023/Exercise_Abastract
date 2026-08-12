@@ -216,3 +216,11 @@ Local LLC is a key ingredient in:
 - [[08 - Arithmetic Geometry/Concepts/L-Groups and Langlands Dual|L-Groups and Langlands Dual]]
 - [[08 - Arithmetic Geometry/Concepts/Local Fields|Local Fields]]
 - [[08 - Arithmetic Geometry/Concepts/p-adic Numbers|p-adic Numbers]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

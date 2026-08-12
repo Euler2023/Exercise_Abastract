@@ -91,3 +91,11 @@ The $j$-invariant is the Hauptmodul for $\text{SL}_2(\mathbb{Z})$.
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
 - [[03 - Field Theory/Field Theory Hub|Field Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

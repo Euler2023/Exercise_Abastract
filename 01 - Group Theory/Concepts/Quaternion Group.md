@@ -62,11 +62,16 @@ $$
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal76 - A Quaternion Galois Extension|Exercise Gal76]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

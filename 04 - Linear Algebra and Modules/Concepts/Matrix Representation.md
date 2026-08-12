@@ -75,3 +75,11 @@ Similar matrices share:
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]] (group homomorphisms to $GL(V)$)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -82,6 +82,9 @@ H_2 \arrow[dr, dash] & & H_3 \arrow[dl, dash] \\
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G3 - Subgroup Test|Exercise G3: Subgroup Test]]
-- [[01 - Group Theory/Exercises/Exercise G13 - Subgroup Classification|Exercise G13: Subgroup Classification]]
-- [[01 - Group Theory/Exercises/Exercise G14 - Identity and Inverses in Subgroups|Exercise G14: Identity and Inverses in Subgroups]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+

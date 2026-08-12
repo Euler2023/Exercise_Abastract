@@ -74,3 +74,11 @@ created: 2025-01-19
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

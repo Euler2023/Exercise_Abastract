@@ -59,6 +59,7 @@ created: 2026-08-10
 - [[01 - Group Theory/Concepts/Symmetry Groups and Plane Isometries|Symmetry Groups and Plane Isometries]]
 - [[01 - Group Theory/Concepts/Rotations Reflections and Glide Reflections|Rotations, Reflections, and Glide Reflections]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[Orthogonal Transformations of the Plane]]
 
 ## Notes
 

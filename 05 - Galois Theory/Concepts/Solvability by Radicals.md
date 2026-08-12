@@ -98,11 +98,8 @@ Galois theory provides a complete criterion for when a polynomial equation can b
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 
 ## Exercises
-
-- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
-- [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]
-- [[05 - Galois Theory/Exercises/Exercise Gal56 - Deriving Cardano Formula|Exercise Gal56]]
-- [[05 - Galois Theory/Exercises/Exercise Gal57 - Cardano Formula and Root Choices|Exercise Gal57]]
-- [[05 - Galois Theory/Exercises/Exercise Gal58 - Solvability of Degree Ten Galois Extensions|Exercise Gal58]]
-- [[05 - Galois Theory/Exercises/Exercise Gal62 - Nonabelian Simple Galois Groups Obstruct Radicals|Exercise Gal62]]
-- [[05 - Galois Theory/Exercises/Exercise Gal71 - Solvable Groups and Solvability by Radicals|Exercise Gal71]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

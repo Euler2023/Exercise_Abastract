@@ -88,3 +88,11 @@ Fields ⊂ Euclidean Domains ⊂ PIDs ⊂ UFDs ⊂ Integral Domains
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

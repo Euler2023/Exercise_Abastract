@@ -76,3 +76,11 @@ Integral domains are rings where multiplication behaves "nicely" like in the int
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

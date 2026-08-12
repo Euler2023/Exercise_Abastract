@@ -68,3 +68,12 @@ For vectors in $F^n$:
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Subspaces|Subspaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

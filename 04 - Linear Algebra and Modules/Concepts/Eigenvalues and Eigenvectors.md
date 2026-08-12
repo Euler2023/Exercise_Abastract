@@ -75,3 +75,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]] (trace of representation)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

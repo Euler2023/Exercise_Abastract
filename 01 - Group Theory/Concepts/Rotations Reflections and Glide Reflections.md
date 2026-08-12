@@ -120,10 +120,12 @@ z\longmapsto a+e^{i\theta}\overline z.$$
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G18 - Square of an Orientation-Reversing Isometry|Exercise G18: Square of an Orientation-Reversing Isometry]]
-- [[01 - Group Theory/Exercises/Exercise G19 - Linear Reflections of the Plane|Exercise G19: Linear Reflections of the Plane]]
-- [[01 - Group Theory/Exercises/Exercise G20 - Conjugates of Glide Reflections|Exercise G20: Conjugates of Glide Reflections]]
-- [[01 - Group Theory/Exercises/Exercise G22 - Rotations and Reflections by Conjugation|Exercise G22: Rotations and Reflections by Conjugation]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

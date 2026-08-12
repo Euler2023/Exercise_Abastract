@@ -91,3 +91,11 @@ For newforms, the Hecke algebra is semisimple and its structure determines the a
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[07 - Modular Forms/Concepts/Petersson Inner Product|Petersson Inner Product]]
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Elliptic Curves and Modularity]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

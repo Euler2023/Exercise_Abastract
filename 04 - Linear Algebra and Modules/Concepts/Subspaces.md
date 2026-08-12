@@ -66,3 +66,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[04 - Linear Algebra and Modules/Concepts/Submodules|Submodules]] (generalization)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

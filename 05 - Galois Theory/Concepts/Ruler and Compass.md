@@ -98,10 +98,11 @@ Galois theory resolves the classical Greek problems about geometric construction
 
 ## Related Concepts
 
-- [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
-- [[03 - Field Theory/Concepts/Minimal Polynomials|Minimal Polynomials]]
-- [[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]
-- [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Exercises
 

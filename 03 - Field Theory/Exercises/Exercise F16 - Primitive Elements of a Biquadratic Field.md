@@ -59,7 +59,7 @@ created: 2026-08-10
 
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 
 ## Notes
 

@@ -79,3 +79,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

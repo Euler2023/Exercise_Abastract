@@ -35,7 +35,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Fixed Fields|Fixed Fields]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 
 ## Notes
 

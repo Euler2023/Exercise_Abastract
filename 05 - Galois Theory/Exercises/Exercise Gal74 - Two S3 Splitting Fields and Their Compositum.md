@@ -218,7 +218,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[02 - Ring Theory/Concepts/Polynomial Discriminants|Polynomial Discriminants]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 

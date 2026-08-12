@@ -89,3 +89,11 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

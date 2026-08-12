@@ -135,3 +135,11 @@ where $\{P_1, \ldots, P_r\}$ is a basis for $J(K)/J(K)_{\text{tors}}$ and $\lang
 - [[08 - Arithmetic Geometry/Concepts/Faltings Theorem|Faltings' Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
 - [[08 - Arithmetic Geometry/Concepts/Heights|Heights]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

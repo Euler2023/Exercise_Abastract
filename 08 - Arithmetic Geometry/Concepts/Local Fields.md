@@ -133,3 +133,11 @@ This allows lifting solutions from $k$ to $K$!
 - [[08 - Arithmetic Geometry/Concepts/Adeles and Ideles|Adèles and Idèles]]
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

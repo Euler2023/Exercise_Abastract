@@ -72,3 +72,12 @@ created: 2026-01-19
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

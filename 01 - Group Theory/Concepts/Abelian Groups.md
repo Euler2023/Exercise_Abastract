@@ -67,3 +67,11 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
 - [[Module Definition]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -84,3 +84,11 @@ graph TD
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[02 - Ring Theory/Concepts/Isomorphism Theorems for Rings|Isomorphism Theorems for Rings]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

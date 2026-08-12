@@ -83,3 +83,11 @@ graph TB
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

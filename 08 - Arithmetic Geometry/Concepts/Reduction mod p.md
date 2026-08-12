@@ -101,3 +101,11 @@ This connects reduction theory to $p$-adic geometry.
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
 - [[08 - Arithmetic Geometry/Concepts/p-adic Numbers|p-adic Numbers]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

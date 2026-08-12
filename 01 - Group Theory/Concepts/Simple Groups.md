@@ -183,3 +183,12 @@ This justifies viewing simple groups as the building blocks of all finite groups
 - [[01 - Group Theory/Concepts/Solvable Groups|Solvable Groups]]
 - [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
 - [[08 - Arithmetic Geometry/Concepts/Inverse Galois Problem|Inverse Galois Problem]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -181,3 +181,11 @@ For affine $\widehat{\mathfrak{sl}}_2$, this gives the **Jacobi triple product i
 - [[06 - Representation Theory/Concepts/Affine Lie Algebras|Affine Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Vertex Operator Algebras|Vertex Operator Algebras]]
 - [[06 - Representation Theory/Concepts/Monstrous Moonshine|Monstrous Moonshine]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

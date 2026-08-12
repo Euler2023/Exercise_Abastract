@@ -74,3 +74,12 @@ created: 2025-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Submodules|Submodules]]
 - [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

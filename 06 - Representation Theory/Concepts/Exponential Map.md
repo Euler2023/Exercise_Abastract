@@ -138,3 +138,11 @@ Use $X^n = c_0 I + c_1 X + \cdots + c_{n-1} X^{n-1}$ to reduce infinite series.
 - [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

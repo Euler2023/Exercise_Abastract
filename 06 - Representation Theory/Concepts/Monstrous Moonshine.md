@@ -196,3 +196,11 @@ The term was coined by Conway, reflecting:
 - [[06 - Representation Theory/Concepts/Affine Lie Algebras|Affine Lie Algebras]]
 - [[07 - Modular Forms/Concepts/j-Invariant|j-Invariant]]
 - [[Modular Forms Hub|Modular Forms]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

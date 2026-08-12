@@ -105,3 +105,11 @@ Examples:
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[06 - Representation Theory/Concepts/Monstrous Moonshine|Monstrous Moonshine]]
 - [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

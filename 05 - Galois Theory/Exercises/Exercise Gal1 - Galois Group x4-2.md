@@ -101,7 +101,7 @@ created: 2025-01-19
 
 ## Related Concepts
 
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 - [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]

@@ -115,11 +115,12 @@ Only the orthogonal part $q$ changes the vector; hence its length is preserved.
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G16 - Symmetries of Plane Figures|Exercise G16: Symmetries of Plane Figures]]
-- [[01 - Group Theory/Exercises/Exercise G17 - Composition Rules for Plane Isometries|Exercise G17: Composition Rules for Plane Isometries]]
-- [[01 - Group Theory/Exercises/Exercise G18 - Square of an Orientation-Reversing Isometry|Exercise G18: Square of an Orientation-Reversing Isometry]]
-- [[01 - Group Theory/Exercises/Exercise G21 - Complex Formulas for Plane Isometries|Exercise G21: Complex Formulas for Plane Isometries]]
-- [[01 - Group Theory/Exercises/Exercise G22 - Rotations and Reflections by Conjugation|Exercise G22: Rotations and Reflections by Conjugation]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

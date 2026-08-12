@@ -76,3 +76,11 @@ The set of all submodules of $M$ forms a lattice under:
 - [[04 - Linear Algebra and Modules/Concepts/Quotient Modules|Quotient Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Subspaces|Subspaces]] (special case)
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]] (submodules of $R$)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

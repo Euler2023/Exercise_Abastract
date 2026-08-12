@@ -108,3 +108,11 @@ The finiteness of $\text{Ш}$ is a major open problem (part of BSD).
 - [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Modularity Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

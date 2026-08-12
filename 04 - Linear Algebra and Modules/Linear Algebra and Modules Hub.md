@@ -29,6 +29,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Eigenvalues and Eigenvectors|Eigenvalues and Eigenvectors]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]
 
 ### Matrix Theory
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]

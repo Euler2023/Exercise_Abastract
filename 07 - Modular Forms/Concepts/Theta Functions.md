@@ -94,3 +94,11 @@ $$\theta_4(q) = \eta(\tau/2)^2/\eta(\tau)$$
 - [[07 - Modular Forms/Concepts/Eta Function|Eta Function]]
 - [[07 - Modular Forms/Concepts/Partition Function|Partition Function]]
 - [[07 - Modular Forms/Concepts/Quadratic Forms|Quadratic Forms and Theta Series]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

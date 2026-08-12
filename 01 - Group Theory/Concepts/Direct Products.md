@@ -69,5 +69,8 @@ created: 2025-01-19
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
-- [[05 - Galois Theory/Exercises/Exercise Gal73 - Intermediate Fields of an S3 Times C2 Extension|Exercise Gal73]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

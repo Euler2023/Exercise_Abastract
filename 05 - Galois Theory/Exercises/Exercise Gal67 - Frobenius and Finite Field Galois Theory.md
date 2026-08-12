@@ -35,6 +35,7 @@ created: 2026-08-12
 
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
+- [[Finite Fields Galois]]
 
 ## Notes
 

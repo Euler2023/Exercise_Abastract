@@ -225,3 +225,11 @@ This can be verified by explicit computation.
 - [[08 - Arithmetic Geometry/Concepts/L-Groups and Langlands Dual|L-Groups and Langlands Dual]]
 - [[08 - Arithmetic Geometry/Concepts/Automorphic Representations|Automorphic Representations]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -90,8 +90,8 @@ created: 2026-01-19
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
-- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
-- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
-- [[05 - Galois Theory/Exercises/Exercise Gal73 - Intermediate Fields of an S3 Times C2 Extension|Exercise Gal73]]
-- [[05 - Galois Theory/Exercises/Exercise Gal75 - Square Classes and Biquadratic Extensions|Exercise Gal75]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

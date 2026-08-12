@@ -84,3 +84,12 @@ created: 2026-01-19
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

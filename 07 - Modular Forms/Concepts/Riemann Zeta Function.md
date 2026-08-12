@@ -192,8 +192,10 @@ $\zeta(s)$ is the L-function of:
 - [[08 - Arithmetic Geometry/Concepts/Motives|Motives]]
 
 
+## Exercises
+
 ```dataview
-TABLE status, source
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

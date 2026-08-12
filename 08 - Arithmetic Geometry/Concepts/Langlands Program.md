@@ -231,3 +231,11 @@ This connects to:
 - [[L-functions]]
 - [[08 - Arithmetic Geometry/Concepts/Motives|Motives]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

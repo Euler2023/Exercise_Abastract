@@ -1,7 +1,7 @@
 ---
 title: "Exercise R6: Null Cauchy Sequences as a Maximal Ideal"
 topic: ring-theory
-difficulty: intermediate
+difficulty: advanced
 status: not-started
 tags:
   - exercise
@@ -9,7 +9,7 @@ tags:
   - ideals
   - maximal-ideals
   - cauchy-sequences
-source: "Zou Ying, Mathematical Analysis, Vol. I (Chinese), Ch. 2, Exercise 6, printed pp. 39–40; user-supplied source-page image (physical PDF pages not retained in the image)"
+source: Zou Ying, Mathematical Analysis, Vol. I (Chinese), Ch. 2, Exercise 6, printed pp. 39–40; user-supplied source-page image (physical PDF pages not retained in the image)
 created: 2026-08-11
 ---
 

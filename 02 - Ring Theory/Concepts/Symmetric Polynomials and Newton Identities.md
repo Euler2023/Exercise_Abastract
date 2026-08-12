@@ -52,13 +52,12 @@ Symmetric expressions depend on an unordered collection of roots rather than a c
 
 ## Exercises
 
-- [[02 - Ring Theory/Exercises/Exercise R7 - Orbits and Symmetric Polynomials|Exercise R7]]
-- [[02 - Ring Theory/Exercises/Exercise R8 - Bases for Symmetric Polynomials|Exercise R8]]
-- [[02 - Ring Theory/Exercises/Exercise R9 - Newton Identities and Power Sums|Exercise R9]]
-- [[02 - Ring Theory/Exercises/Exercise R14 - Four Variable Discriminant|Exercise R14]]
-- [[02 - Ring Theory/Exercises/Exercise R16 - Alternating Orbit and Discriminant|Exercise R16]]
-- [[02 - Ring Theory/Exercises/Exercise R17 - Half Symmetric Polynomials|Exercise R17]]
-- [[05 - Galois Theory/Exercises/Exercise Gal60 - Generic Symmetric Functions and Inverse Galois|Exercise Gal60]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

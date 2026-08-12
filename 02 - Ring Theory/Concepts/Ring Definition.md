@@ -82,3 +82,11 @@ created: 2025-01-19
 - [[02 - Ring Theory/Concepts/Subrings|Subrings]]
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

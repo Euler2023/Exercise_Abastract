@@ -84,3 +84,11 @@ Examples of flat modules:
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions|Field Extensions]] (extension of scalars)
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -78,3 +78,12 @@ created: 2025-01-19
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

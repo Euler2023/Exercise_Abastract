@@ -67,3 +67,12 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Subspaces|Subspaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]] (generalization)
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

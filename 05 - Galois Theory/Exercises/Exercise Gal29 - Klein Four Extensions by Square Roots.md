@@ -31,7 +31,7 @@ created: 2026-08-12
 
 ## Related Concepts
 
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
 

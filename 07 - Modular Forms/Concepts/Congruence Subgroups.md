@@ -78,3 +78,11 @@ The groups $\Gamma_0(N)$ are also called **Hecke congruence groups** and are fun
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

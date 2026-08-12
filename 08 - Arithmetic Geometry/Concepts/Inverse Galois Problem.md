@@ -417,3 +417,11 @@ Given $G$, find an **explicit** polynomial $f(X) \in \mathbb{Q}[X]$ with $\text{
 - [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
 - [[01 - Group Theory/Concepts/Simple Groups|Simple Groups]]
 - [[08 - Arithmetic Geometry/Concepts/Faltings Theorem|Faltings' Theorem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

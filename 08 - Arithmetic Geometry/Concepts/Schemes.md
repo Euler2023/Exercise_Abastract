@@ -98,3 +98,11 @@ Classical varieties work well over algebraically closed fields, but arithmetic g
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[08 - Arithmetic Geometry/Concepts/Etale Cohomology|Étale Cohomology]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -54,18 +54,11 @@ The discriminant measures collisions among roots. It vanishes exactly when the p
 
 ## Exercises
 
-- [[02 - Ring Theory/Exercises/Exercise R10 - The Discriminant Is Symmetric|Exercise R10]]
-- [[02 - Ring Theory/Exercises/Exercise R11 - Signs of Real Discriminants|Exercise R11]]
-- [[02 - Ring Theory/Exercises/Exercise R12 - Tschirnhausen Substitution|Exercise R12]]
-- [[02 - Ring Theory/Exercises/Exercise R13 - Discriminants of Trinomials|Exercise R13]]
-- [[02 - Ring Theory/Exercises/Exercise R14 - Four Variable Discriminant|Exercise R14]]
-- [[02 - Ring Theory/Exercises/Exercise R15 - Translation Derivatives and Cubic Discriminant|Exercise R15]]
-- [[02 - Ring Theory/Exercises/Exercise R16 - Alternating Orbit and Discriminant|Exercise R16]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA9 - Vandermonde Determinant|Exercise LA9]]
-- [[05 - Galois Theory/Exercises/Exercise Gal15 - Discriminant Square Root in a Cubic Splitting Field|Exercise Gal15]]
-- [[05 - Galois Theory/Exercises/Exercise Gal30 - Galois Groups of Six Cubics|Exercise Gal30]]
-- [[05 - Galois Theory/Exercises/Exercise Gal51 - Derivative Formula for Discriminants|Exercise Gal51]]
-- [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

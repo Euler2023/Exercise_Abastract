@@ -88,3 +88,11 @@ $$L(\Delta, s) = \sum_{n=1}^{\infty} \frac{\tau(n)}{n^s} = \prod_p \frac{1}{1 - 
 - [[07 - Modular Forms/Concepts/Eta Function|Eta Function]]
 - [[07 - Modular Forms/Concepts/j-Invariant|j-Invariant]]
 - [[07 - Modular Forms/Concepts/Elliptic Curves and Modularity|Elliptic Curves and Modularity]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

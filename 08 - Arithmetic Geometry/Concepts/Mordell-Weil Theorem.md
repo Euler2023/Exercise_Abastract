@@ -111,3 +111,11 @@ So far proved only for rank 0 and 1 (Gross-Zagier, Kolyvagin).
 - [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
 - [[08 - Arithmetic Geometry/Concepts/Abelian Varieties|Abelian Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

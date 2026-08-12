@@ -78,3 +78,11 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Torsion Modules|Torsion Modules]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

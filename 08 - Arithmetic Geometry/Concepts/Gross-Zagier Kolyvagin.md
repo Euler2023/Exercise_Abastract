@@ -170,6 +170,15 @@ For rank $\geq 2$:
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
 
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
+
 ## Comment
 
 1. **Benedict Hyman Gross** (born June 22, 1950, died December 19, 2025) was an American mathematician who was a professor at the [University of California, San Diego](https://en.wikipedia.org/wiki/University_of_California,_San_Diego "University of California, San Diego"),(https://en.wikipedia.org/wiki/Benedict_Gross#cite_note-1) the George Vasmer Leverett Professor of Mathematics Emeritus at [Harvard University](https://en.wikipedia.org/wiki/Harvard_University "Harvard University"), and former [Dean](https://en.wikipedia.org/wiki/Dean_\(education\) "Dean (education)") of Harvard College https://en.wikipedia.org/wiki/Benedict_Gross

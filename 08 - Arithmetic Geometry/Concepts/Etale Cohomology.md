@@ -104,3 +104,11 @@ This gives [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois rep
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions of Varieties]]
 - [[05 - Galois Theory/Galois Theory Hub|Galois Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

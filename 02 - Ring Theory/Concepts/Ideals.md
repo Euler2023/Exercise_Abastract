@@ -96,4 +96,8 @@ created: 2025-01-19
 
 ## Exercises
 
-- [[02 - Ring Theory/Exercises/Exercise R6 - Null Cauchy Sequences as a Maximal Ideal|Exercise R6: Null Cauchy Sequences as a Maximal Ideal]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

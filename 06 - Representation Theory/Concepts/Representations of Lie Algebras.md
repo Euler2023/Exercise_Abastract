@@ -183,3 +183,11 @@ Characters are additive on direct sums and multiplicative on tensor products.
 - [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and Weight Spaces]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

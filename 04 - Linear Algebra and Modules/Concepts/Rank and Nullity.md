@@ -93,3 +93,12 @@ For $A \in M_{m \times n}(F)$:
 - [[04 - Linear Algebra and Modules/Concepts/Subspaces|Subspaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 - [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]] (generalization)
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -83,3 +83,13 @@ created: 2026-01-19
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]] (spectral theorem)
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]] (adjoint operators)
+- [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]
+
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

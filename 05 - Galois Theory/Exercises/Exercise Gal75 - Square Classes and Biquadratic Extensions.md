@@ -107,7 +107,7 @@ created: 2026-08-12
 
 - [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 
 ## Notes

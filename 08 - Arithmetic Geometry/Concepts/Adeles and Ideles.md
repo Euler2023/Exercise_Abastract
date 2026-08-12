@@ -124,3 +124,11 @@ $$\zeta_K(s) = \int_{\mathbb{I}_K} |x|^s d^\times x$$
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
 - [[08 - Arithmetic Geometry/Concepts/p-adic Numbers|p-adic Numbers]]
 - [[05 - Galois Theory/Galois Theory Hub|Galois Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

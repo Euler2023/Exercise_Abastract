@@ -102,9 +102,12 @@ $$ab=e\qquad\text{and}\qquad ba=e.$$
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G8 - Inverse Identities|Exercise G8: Inverse Identities]]
-- [[01 - Group Theory/Exercises/Exercise G9 - Shift Map and One-Sided Inverses|Exercise G9: Shift Map and One-Sided Inverses]]
-- [[01 - Group Theory/Exercises/Exercise G11 - Units of a Monoid|Exercise G11: Units of a Monoid]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

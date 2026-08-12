@@ -2,9 +2,13 @@
 title: "Exercise Gal68: Galois Orbit of a Regular Pentagon"
 topic: galois-theory
 difficulty: intermediate
-status: not-started
-tags: [exercise, galois-theory, cyclotomic-extensions, geometry]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.6, printed p. 511, PDF p. 523"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - cyclotomic-extensions
+  - geometry
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.6, printed p. 511, PDF p. 523
 created: 2026-08-12
 ---
 

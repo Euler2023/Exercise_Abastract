@@ -71,3 +71,11 @@ Examples of simple groups:
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

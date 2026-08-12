@@ -178,3 +178,11 @@ where $P$ is the **Kostant partition function**.
 - [[06 - Representation Theory/Concepts/Affine Lie Algebras|Affine Lie Algebras]]
 - [[07 - Modular Forms/Concepts/Theta Functions|Theta Functions]]
 - [[07 - Modular Forms/Concepts/Eta Function|Eta Function]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

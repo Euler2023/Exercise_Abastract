@@ -112,9 +112,11 @@ so the reversed operation is also associative. Applied to a group, this construc
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G7 - Left-Zero Law|Exercise G7: Left-Zero Law]]
-- [[01 - Group Theory/Exercises/Exercise G9 - Shift Map and One-Sided Inverses|Exercise G9: Shift Map and One-Sided Inverses]]
-- [[01 - Group Theory/Exercises/Exercise G15 - Opposite Group|Exercise G15: Opposite Group]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

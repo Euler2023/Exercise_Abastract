@@ -74,7 +74,9 @@ Cut the $t$-plane from each branch point to infinity. Above the cut plane, the m
 
 ## Exercises
 
-- [[08 - Arithmetic Geometry/Exercises/Exercise AG11 - Branch Points and Gluing Data|Exercise AG11]]
-- [[08 - Arithmetic Geometry/Exercises/Exercise AG12 - Cubic Function Fields with Two Branch Points|Exercise AG12]]
-- [[08 - Arithmetic Geometry/Exercises/Exercise AG13 - Riemann Existence for Quadratic Extensions|Exercise AG13]]
-- [[08 - Arithmetic Geometry/Exercises/Exercise AG14 - Computing Branch Points and Monodromy|Exercise AG14]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+

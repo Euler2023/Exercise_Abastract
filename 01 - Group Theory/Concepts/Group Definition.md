@@ -86,6 +86,8 @@ The group axioms ensure we can:
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G8 - Inverse Identities|Exercise G8: Inverse Identities]]
-- [[01 - Group Theory/Exercises/Exercise G12 - Solving Group Equations|Exercise G12: Solving Group Equations]]
-- [[01 - Group Theory/Exercises/Exercise G15 - Opposite Group|Exercise G15: Opposite Group]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

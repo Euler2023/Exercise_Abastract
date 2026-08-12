@@ -115,9 +115,12 @@ The final classification is **proved in the source** as Artin's Theorem 6.4.1. [
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G17 - Composition Rules for Plane Isometries|Exercise G17: Composition Rules for Plane Isometries]]
-- [[01 - Group Theory/Exercises/Exercise G19 - Linear Reflections of the Plane|Exercise G19: Linear Reflections of the Plane]]
-- [[01 - Group Theory/Exercises/Exercise G21 - Complex Formulas for Plane Isometries|Exercise G21: Complex Formulas for Plane Isometries]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

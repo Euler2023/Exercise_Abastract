@@ -242,3 +242,11 @@ $$\{e\} \triangleleft C_{p_1} \triangleleft \cdots \triangleleft G$$
 - [[01 - Group Theory/Concepts/Sylow Theorems|Sylow Theorems]]
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

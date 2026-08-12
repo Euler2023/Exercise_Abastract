@@ -91,3 +91,11 @@ This is $Z(\text{Spec}(\mathcal{O}_K), q^{-s})$ in some sense.
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

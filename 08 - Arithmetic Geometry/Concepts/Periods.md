@@ -142,3 +142,11 @@ These constrain relations among periods.
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves Arithmetic]]
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
 - [[07 - Modular Forms/Concepts/L-functions|L-functions]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

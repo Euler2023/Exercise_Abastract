@@ -165,3 +165,11 @@ Each root space $\mathfrak{g}_\alpha$ is one-dimensional.
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and Weight Spaces]]
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

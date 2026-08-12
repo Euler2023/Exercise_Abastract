@@ -2,14 +2,14 @@
 title: "Exercise Gal7: Galois Groups of Nested Radicals over Q(omega)"
 topic: galois-theory
 difficulty: advanced
-status: in-progress
+status: complete
 tags:
   - exercise
   - galois-theory
   - composita
   - quartic-resolvents
   - solvability-by-radicals
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 9, Ex. 9.14, printed p. 509, PDF p. 521"
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 9, Ex. 9.14, printed p. 509, PDF p. 521
 created: 2026-08-11
 ---
 

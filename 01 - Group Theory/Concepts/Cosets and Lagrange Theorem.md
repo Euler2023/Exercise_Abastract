@@ -77,3 +77,11 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

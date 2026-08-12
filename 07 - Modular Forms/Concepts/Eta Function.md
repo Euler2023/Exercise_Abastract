@@ -94,3 +94,11 @@ $$\left(\frac{\eta(\tau)}{\eta(2\tau)}\right)^{24} + 16\left(\frac{\eta(2\tau)}{
 - [[07 - Modular Forms/Concepts/Partition Function|Partition Function]]
 - [[07 - Modular Forms/Concepts/Theta Functions|Theta Functions]]
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -84,3 +84,11 @@ Equivalently: a [[01 - Group Theory/Concepts/Group Homomorphisms|homomorphism]] 
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
 - [[01 - Group Theory/Concepts/Sylow Theorems|Sylow Theorems]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

@@ -108,8 +108,12 @@ Thus an abelian group is literally equal to its opposite group as a group law, w
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G15 - Opposite Group|Exercise G15: Opposite Group]]
-- [[01 - Group Theory/Exercises/Exercise G8 - Inverse Identities|Exercise G8: Inverse Identities]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

@@ -70,3 +70,11 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems]]
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

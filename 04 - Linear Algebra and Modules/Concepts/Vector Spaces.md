@@ -92,3 +92,10 @@ This is exactly a module homomorphism when viewing $V, W$ as $F$-modules.
 - [[04 - Linear Algebra and Modules/Concepts/Module Definition|Module Definition]]
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
+
+## Exercises
+```dataview
+TABLE status, source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

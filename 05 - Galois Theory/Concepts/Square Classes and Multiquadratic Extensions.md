@@ -63,14 +63,16 @@ Multiplying a radicand by a square does not change the generated quadratic field
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal16 - The Galois Group of a Triradical Field|Exercise Gal16]]
-- [[05 - Galois Theory/Exercises/Exercise Gal18 - Intermediate Fields of a Biquadratic Extension|Exercise Gal18]]
-- [[05 - Galois Theory/Exercises/Exercise Gal29 - Klein Four Extensions by Square Roots|Exercise Gal29]]
-- [[05 - Galois Theory/Exercises/Exercise Gal75 - Square Classes and Biquadratic Extensions|Exercise Gal75]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
+
 
 ## Source and Proof Status
 

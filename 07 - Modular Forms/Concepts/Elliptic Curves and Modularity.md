@@ -102,3 +102,11 @@ The modularity theorem identifies this with the Tate module representation of $E
 - [[07 - Modular Forms/Concepts/Hecke Operators|Hecke Operators]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
 - [[05 - Galois Theory/Galois Theory Hub|Galois Theory]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

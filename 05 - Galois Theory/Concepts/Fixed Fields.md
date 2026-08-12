@@ -128,13 +128,12 @@ created: 2026-01-19
 
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[05 - Galois Theory/Concepts/Automorphisms|Automorphisms]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem]]
 
 ## Exercises
 
 ```dataview
-LIST
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

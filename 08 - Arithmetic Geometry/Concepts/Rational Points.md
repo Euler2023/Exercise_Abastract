@@ -85,3 +85,11 @@ For curves of genus $\geq 2$, $X(\mathbb{Q})$ is finite, so never Zariski dense.
 - [[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theorem|Mordell-Weil Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Faltings Theorem|Faltings' Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Diophantine Equations|Diophantine Equations]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

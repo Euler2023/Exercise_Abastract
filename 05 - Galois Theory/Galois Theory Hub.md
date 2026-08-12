@@ -23,7 +23,6 @@ Galois theory establishes a profound connection between field extensions and gro
 
 ### The Fundamental Theorem
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem of Galois Theory]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Normal Subgroups and Extensions|Normal Subgroups and Extensions]]
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
 

@@ -130,7 +130,7 @@ The eigenspace $E_\lambda = \ker(T - \lambda I)$ is the set of all eigenvectors 
 ## Exercises
 
 ```dataview
-LIST
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```

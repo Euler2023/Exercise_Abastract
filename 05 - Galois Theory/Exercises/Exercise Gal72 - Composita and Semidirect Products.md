@@ -118,7 +118,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Normal Subgroups and Extensions|Normal Subgroups and Extensions]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
 

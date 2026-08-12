@@ -181,3 +181,11 @@ Worldsheet CFT is described by VOAs; GSO projection, orbifolds, etc. have VOA in
 - [[06 - Representation Theory/Concepts/Monster Group|Monster Group]]
 - [[06 - Representation Theory/Concepts/Kac-Moody Algebras|Kac-Moody Algebras]]
 - [[Modular Forms Hub|Modular Forms]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

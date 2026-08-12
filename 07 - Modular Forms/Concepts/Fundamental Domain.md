@@ -97,3 +97,11 @@ $$\mathbb{H}^* / \text{PSL}_2(\mathbb{Z}) \cong \mathbb{P}^1(\mathbb{C})$$
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]
 - [[07 - Modular Forms/Concepts/j-Invariant|j-Invariant]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

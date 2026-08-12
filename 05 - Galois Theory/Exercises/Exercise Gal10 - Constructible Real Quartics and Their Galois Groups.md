@@ -89,7 +89,7 @@ created: 2026-08-11
 
 - [[05 - Galois Theory/Concepts/Ruler and Compass|Ruler and Compass Constructions]]
 - [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]
-- [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
+- [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 
 ## Notes

@@ -63,3 +63,11 @@ A subring is to a ring what a subgroup is to a group. It's a subset that inherit
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Ring Homomorphisms|Ring Homomorphisms]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```

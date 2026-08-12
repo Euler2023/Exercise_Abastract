@@ -117,13 +117,11 @@ and $\rho(A)=0$ only when $A=0$. Hence $\rho$ embeds $GL_n(\mathbb C)$ into $GL_
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA2 - Complex General Linear and Orthogonal Groups|Exercise LA2]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA3 - Columns of Lorentz Matrices|Exercise LA3]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA4 - Orthogonal and Lorentz Groups Are Not Continuously Isomorphic|Exercise LA4]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA5 - Four Components of O11|Exercise LA5]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA6 - Comparing SP2 SL2 SP4 and SL4|Exercise LA6]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA7 - Block Symplectic Matrices|Exercise LA7]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA8 - Structure of the Symplectic Group|Exercise LA8]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

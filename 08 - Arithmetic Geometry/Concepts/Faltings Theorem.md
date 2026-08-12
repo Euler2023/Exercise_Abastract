@@ -92,3 +92,11 @@ This is wide open in general!
 - [[08 - Arithmetic Geometry/Concepts/Abelian Varieties|Abelian Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Diophantine Equations|Diophantine Equations]]
 - [[08 - Arithmetic Geometry/Concepts/Inverse Galois Problem|Inverse Galois Problem]]
+
+## Exercises
+
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
