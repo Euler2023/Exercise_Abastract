@@ -2,9 +2,12 @@
 title: "Exercise Gal43: Degree of zeta7 over Q(zeta3)"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, cyclotomic-extensions]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.1, printed p. 509, PDF p. 521"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - cyclotomic-extensions
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.1, printed p. 509, PDF p. 521
 created: 2026-08-12
 ---
 

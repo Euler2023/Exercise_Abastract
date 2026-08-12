@@ -30,9 +30,18 @@ views:
       - topic
       - formula.difficulty_stars
       - source
-    sort: []
+      - status
+      - difficulty
+    sort:
+      - property: status
+        direction: DESC
+      - property: source
+        direction: ASC
     summaries:
       status: completion_rate
+    columnSize:
+      file.name: 185
+      note.source: 447
   - type: table
     name: Pending
     filters:

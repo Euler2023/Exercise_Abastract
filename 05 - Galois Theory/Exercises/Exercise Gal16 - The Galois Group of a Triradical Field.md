@@ -34,6 +34,7 @@ created: 2026-08-12
 
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
+- [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
 
 ## Notes
 

@@ -2,9 +2,12 @@
 title: "Exercise Gal24: Minimal Polynomial and Basis for i + sqrt2"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, minimal-polynomials]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.7, printed p. 507, PDF p. 519"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - minimal-polynomials
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.7, printed p. 507, PDF p. 519
 created: 2026-08-12
 ---
 

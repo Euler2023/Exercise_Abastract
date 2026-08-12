@@ -65,6 +65,7 @@ The discriminant measures collisions among roots. It vanishes exactly when the p
 - [[05 - Galois Theory/Exercises/Exercise Gal15 - Discriminant Square Root in a Cubic Splitting Field|Exercise Gal15]]
 - [[05 - Galois Theory/Exercises/Exercise Gal30 - Galois Groups of Six Cubics|Exercise Gal30]]
 - [[05 - Galois Theory/Exercises/Exercise Gal51 - Derivative Formula for Discriminants|Exercise Gal51]]
+- [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]
 
 ## Source and Proof Status
 

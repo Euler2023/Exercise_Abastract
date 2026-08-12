@@ -25,6 +25,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem of Galois Theory]]
 - [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
 - [[05 - Galois Theory/Concepts/Normal Subgroups and Extensions|Normal Subgroups and Extensions]]
+- [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
 
 ### Applications
 - [[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]
@@ -33,6 +34,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
 - [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]
+- [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
 
 ## The Big Picture
 

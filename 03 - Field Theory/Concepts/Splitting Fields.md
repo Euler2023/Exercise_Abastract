@@ -88,6 +88,9 @@ created: 2026-01-19
 
 ## Exercises
 
+- [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]
+- [[05 - Galois Theory/Exercises/Exercise Gal75 - Square Classes and Biquadratic Extensions|Exercise Gal75]]
+
 - [[05 - Galois Theory/Exercises/Exercise Gal1 - Galois Group x4-2|Exercise Gal1]]
 - [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
 - [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]

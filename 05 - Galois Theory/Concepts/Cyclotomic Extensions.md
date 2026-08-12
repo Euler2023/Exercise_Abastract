@@ -63,9 +63,10 @@ created: 2026-01-19
 > where $\sigma_k: \zeta_n \mapsto \zeta_n^k$ for $\gcd(k, n) = 1$.
 
 > [!tip] Structure of $(\mathbb{Z}/n\mathbb{Z})^*$
-> - Order: $|(\mathbb{Z}/n\mathbb{Z})^*| = \phi(n)$
+> - Order: $|(\mathbb{Z}/n\mathbb{Z})^*| = \varphi(n)$
 > - For prime $p$: $(\mathbb{Z}/p\mathbb{Z})^* \cong \mathbb{Z}/(p-1)\mathbb{Z}$ (cyclic)
 > - For prime power: $(\mathbb{Z}/p^k\mathbb{Z})^* \cong \mathbb{Z}/p^{k-1}(p-1)\mathbb{Z}$ (cyclic for odd $p$)
+> - $\varphi(p^k)=p^k(1-1/p)$
 > - General: Use Chinese Remainder Theorem
 
 ## Examples of Cyclotomic Polynomials
@@ -140,19 +141,6 @@ created: 2026-01-19
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 
 ## Exercises
-
-- [[05 - Galois Theory/Exercises/Exercise Gal3 - Quadratic Fields Containing Roots of Unity|Exercise Gal3]]
-- [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
-- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
-- [[05 - Galois Theory/Exercises/Exercise Gal43 - Degree of zeta7 over Q zeta3|Exercise Gal43]]
-- [[05 - Galois Theory/Exercises/Exercise Gal44 - A Generator for the Quartic Subfield of Q zeta17|Exercise Gal44]]
-- [[05 - Galois Theory/Exercises/Exercise Gal45 - Degrees of Sums of Seventh Roots|Exercise Gal45]]
-- [[05 - Galois Theory/Exercises/Exercise Gal46 - Degrees of Sums of Thirteenth Roots|Exercise Gal46]]
-- [[05 - Galois Theory/Exercises/Exercise Gal47 - Intermediate Fields of Prime Cyclotomic Fields|Exercise Gal47]]
-- [[05 - Galois Theory/Exercises/Exercise Gal48 - Quadratic Kronecker Weber|Exercise Gal48]]
-- [[05 - Galois Theory/Exercises/Exercise Gal49 - Galois Group of a General Cyclotomic Field|Exercise Gal49]]
-- [[05 - Galois Theory/Exercises/Exercise Gal50 - Galois Groups of xn Minus 1|Exercise Gal50]]
-- [[05 - Galois Theory/Exercises/Exercise Gal51 - Derivative Formula for Discriminants|Exercise Gal51]]
 
 ```dataview
 LIST

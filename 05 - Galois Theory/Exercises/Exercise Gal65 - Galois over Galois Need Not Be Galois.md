@@ -2,9 +2,12 @@
 title: "Exercise Gal65: Galois over Galois Need Not Be Galois"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, normal-extensions]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.2, printed p. 511, PDF p. 523"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - normal-extensions
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.2, printed p. 511, PDF p. 523
 created: 2026-08-12
 ---
 

@@ -143,6 +143,7 @@ reduces the quartic to two quadratic factors after adjoining square roots. This 
 - [[05 - Galois Theory/Exercises/Exercise Gal4 - Quartic Galois Groups from Real Roots and Discriminant|Exercise Gal4]]
 - [[05 - Galois Theory/Exercises/Exercise Gal5 - Galois Groups of Six Quartic Polynomials|Exercise Gal5]]
 - [[05 - Galois Theory/Exercises/Exercise Gal6 - D4 Correspondence for x4 - 2x2 - 1|Exercise Gal6]]
+- [[05 - Galois Theory/Exercises/Exercise Gal7 - Galois Groups of Nested Radicals over Q Omega|Exercise Gal7]]
 - [[05 - Galois Theory/Exercises/Exercise Gal8 - Recovering a Quartic Root from a Resolvent Root|Exercise Gal8]]
 - [[05 - Galois Theory/Exercises/Exercise Gal9 - Resolvent Cubic of the General Quartic|Exercise Gal9]]
 - [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]

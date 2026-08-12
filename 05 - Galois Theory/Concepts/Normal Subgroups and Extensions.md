@@ -88,3 +88,8 @@ The Galois correspondence relates normal subgroups to normal (Galois) intermedia
 - [[05 - Galois Theory/Concepts/Galois Correspondence|Galois Correspondence]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
+- [[05 - Galois Theory/Exercises/Exercise Gal76 - A Quaternion Galois Extension|Exercise Gal76]]

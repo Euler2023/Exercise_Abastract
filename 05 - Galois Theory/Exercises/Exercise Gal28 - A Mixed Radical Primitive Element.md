@@ -1,10 +1,13 @@
 ---
 title: "Exercise Gal28: A Mixed Radical Primitive Element"
 topic: galois-theory
-difficulty: advanced
+difficulty: complete
 status: not-started
-tags: [exercise, galois-theory, minimal-polynomials]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.11, printed p. 507, PDF p. 519"
+tags:
+  - exercise
+  - galois-theory
+  - minimal-polynomials
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.11, printed p. 507, PDF p. 519
 created: 2026-08-12
 ---
 

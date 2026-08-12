@@ -2,9 +2,12 @@
 title: "Exercise Gal50: Galois Groups of x8 - 1, x12 - 1, and x9 - 1"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, cyclotomic-extensions]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.8, printed p. 510, PDF p. 522"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - cyclotomic-extensions
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.8, printed p. 510, PDF p. 522
 created: 2026-08-12
 ---
 

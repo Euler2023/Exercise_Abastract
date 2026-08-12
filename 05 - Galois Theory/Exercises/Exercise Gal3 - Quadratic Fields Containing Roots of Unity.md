@@ -2,12 +2,12 @@
 title: "Exercise Gal3: Quadratic Fields Containing Roots of Unity"
 topic: galois-theory
 difficulty: intermediate
-status: not-started
+status: complete
 tags:
   - exercise
   - galois-theory
   - cyclotomic-extensions
-source: "Michael Artin, Algebra, 2nd ed., Ch. 15, Section 6, Ex. 6.3, printed p. 474, PDF p. 486"
+source: Michael Artin, Algebra, 2nd ed., Ch. 15, Section 6, Ex. 6.3, printed p. 474, PDF p. 486
 created: 2026-08-10
 ---
 

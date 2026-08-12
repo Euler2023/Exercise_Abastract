@@ -2,9 +2,12 @@
 title: "Exercise Gal11: Automorphisms of Radical Fields"
 topic: galois-theory
 difficulty: intermediate
-status: not-started
-tags: [exercise, galois-theory, automorphisms]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 4, Ex. 4.1, printed p. 506, PDF p. 518"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - automorphisms
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 4, Ex. 4.1, printed p. 506, PDF p. 518
 created: 2026-08-12
 ---
 

@@ -2,9 +2,12 @@
 title: "Exercise Gal18: Intermediate Fields of a Biquadratic Extension"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, intermediate-fields]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.1, printed p. 507, PDF p. 519"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - intermediate-fields
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.1, printed p. 507, PDF p. 519
 created: 2026-08-12
 ---
 

@@ -2,9 +2,12 @@
 title: "Exercise Gal36: Testing a Nested Radical Form"
 topic: galois-theory
 difficulty: beginner
-status: not-started
-tags: [exercise, galois-theory, nested-radicals]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 9, Ex. 9.3, printed p. 508, PDF p. 520"
+status: complete
+tags:
+  - exercise
+  - galois-theory
+  - nested-radicals
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 9, Ex. 9.3, printed p. 508, PDF p. 520
 created: 2026-08-12
 ---
 

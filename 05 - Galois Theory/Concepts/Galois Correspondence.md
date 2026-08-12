@@ -104,3 +104,8 @@ The Galois correspondence is the bijection between intermediate fields and subgr
 - [[05 - Galois Theory/Exercises/Exercise Gal2 - D4|Exercise Gal2]]
 - [[05 - Galois Theory/Exercises/Exercise Gal6 - D4 Correspondence for x4 - 2x2 - 1|Exercise Gal6]]
 - [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]
+- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
+- [[05 - Galois Theory/Exercises/Exercise Gal73 - Intermediate Fields of an S3 Times C2 Extension|Exercise Gal73]]
+- [[05 - Galois Theory/Exercises/Exercise Gal74 - Two S3 Splitting Fields and Their Compositum|Exercise Gal74]]
+- [[05 - Galois Theory/Exercises/Exercise Gal75 - Square Classes and Biquadratic Extensions|Exercise Gal75]]
+- [[05 - Galois Theory/Exercises/Exercise Gal76 - A Quaternion Galois Extension|Exercise Gal76]]

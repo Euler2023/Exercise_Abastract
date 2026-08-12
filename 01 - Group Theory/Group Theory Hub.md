@@ -42,6 +42,7 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 - [[01 - Group Theory/Concepts/Sylow Theorems|Sylow Theorems]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
+- [[01 - Group Theory/Concepts/Quaternion Group|Quaternion Group]]
 
 ## Important Groups
 
@@ -52,6 +53,7 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 | Symmetric group         | $S_n$                         | Permutations of $n$ elements     |
 | Alternating group       | $A_n$                         | Even permutations                |
 | Dihedral group          | $D_{n}$                       | Symmetries of regular $n$-gon    |
+| Quaternion group        | $Q_8$                         | Nonabelian group of order $8$    |
 | General linear group    | $GL_n(F)$                     | Invertible $n \times n$ matrices |
 
 ## Exercises by Difficulty

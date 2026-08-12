@@ -66,3 +66,8 @@ created: 2025-01-19
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
+
+## Exercises
+
+- [[05 - Galois Theory/Exercises/Exercise Gal72 - Composita and Semidirect Products|Exercise Gal72]]
+- [[05 - Galois Theory/Exercises/Exercise Gal73 - Intermediate Fields of an S3 Times C2 Extension|Exercise Gal73]]
