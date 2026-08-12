@@ -372,11 +372,11 @@ created: 2026-08-11
 > \operatorname{Gal}(H/F)\cong A_4.
 > $$
 >
-> It remains to recover the original square roots. We have
+> It remains to pass from $H$ to $K$. We have
 > $$
 > (r_0r_1r_2)^2=U_0U_1U_2=10.
 > $$
-> Choose the sign so that $r_0r_1r_2=\sqrt{10}$. Then
+> Put $L=F(\sqrt{10})$ and choose the sign so that $r_0r_1r_2=\sqrt{10}$. Since
 > $$
 > r_0=\frac{\sqrt{10}}{x_0},
 > \qquad
@@ -384,16 +384,16 @@ created: 2026-08-11
 > \qquad
 > r_2=\frac{\sqrt{10}}{x_2}.
 > $$
-> The second method above already shows that $F(a)\subset H$. Therefore
+> and the second method already shows that $F(a)\subset H$, we obtain
 > $$
-> K=H(\sqrt{10}).
+> K=HL=H(\sqrt{10}).
 > $$
 >
-> The $S_4$-extension $H/\mathbb Q$ has only one quadratic subfield, namely $F$. Since $\mathbb Q(\sqrt{10})\ne F$,
+> Now $H/\mathbb Q$ has the unique quadratic subfield $F$, whereas $\mathbb Q(\sqrt{10})\ne F$. Hence $L$ is not contained in $H$. Since $[L:F]=2$, it follows that
 > $$
-> H\cap F(\sqrt{10})=F.
+> H\cap L=F.
 > $$
-> Both extensions are Galois over $F$, so restriction gives
+> The extensions $H/F$ and $L/F$ are Galois and linearly disjoint. Therefore restriction gives
 > $$
 > \operatorname{Gal}(K/F)
 > \cong
@@ -403,32 +403,19 @@ created: 2026-08-11
 > \cong A_4\times C_2.
 > $$
 >
-> The field diagram and degrees are now
+> Thus the extension tower is
 > $$
 > \mathbb Q\subset F\subset H\subset K,
 > $$
-> with
+> where
 > $$
-> [F:\mathbb Q]=2,
-> \qquad
 > [H:F]=12,
 > \qquad
 > [K:H]=2,
-> $$
-> and hence
-> $$
-> [H:\mathbb Q]=24,
 > \qquad
 > [K:F]=24.
 > $$
-> Equivalently, $H$ is the fixed field in $K$ of the simultaneous sign change
-> $$
-> r_0\longmapsto-r_0,
-> \qquad
-> r_1\longmapsto-r_1,
-> \qquad
-> r_2\longmapsto-r_2.
-> $$
+> The tower organizes the construction; the direct product comes from the Galois compositum $K=HL$ together with $H\cap L=F$.
 
 ## Related Concepts
 
