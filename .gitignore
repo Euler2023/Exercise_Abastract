@@ -20,3 +20,9 @@ Thumbs.db
 # Copilot folder (conversations and local data)
 copilot/
 .obsidian/copilot-index-*.json
+
+# Literature/Exercise Manager 安装产物（开发仓库在 E:\project\tools）
+.obsidian/plugins/exercise_manager/
+lance_db/
+run.cmd
+run.ps1
