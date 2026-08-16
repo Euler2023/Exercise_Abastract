@@ -77,6 +77,17 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-13 (Exercise Manager plugin: fix notesDirs default wiping the vector DB)
+- Fixed: In `main.js` `spawnEnv`, `LIT_NOTES_DIRS` was only passed to Python when the setting differed from the plugin default; since `data.json` held exactly the default (the 8 math topic dirs), Python fell back to the leftover `Paper_reading` default in `common.py`, scanned an empty folder set, and `build_vector_db.py` deleted every row of the LanceDB table (0 rows left).
+- Fixed: `common.py` fallback default notes dirs changed from the Literature Manager leftover `Paper_reading` to the 8 math topic directories (`01 - Group Theory` … `08 - Arithmetic Geometry`), matching `main.js` defaults (documented as kept in sync); `main.js` now always forwards a non-empty `notesDirs` setting.
+- Cleaned: Remaining `Paper_reading` / `literature_manager` references in `common.py` docstrings replaced with the math-vault description.
+- Verified: vector DB rebuilt via `lm.cmd sync` (379 notes embedded into `lance_db/notes.lance`).
+
+### 2026-08-13 (Exercise Manager plugin: fix PS 5.1 parsing)
+- Fixed: Removed non-ASCII (UTF-8) Chinese comments and strings from `exercise_manager/tools/lm.ps1`, `run.ps1`, and `setup_vault.ps1`; under Windows PowerShell 5.1 the UTF-8 bytes were read as ANSI/GBK, swallowing the newline so `$dataJson = Join-Path ...` merged into the comment and `lm.cmd info` failed with `Test-Path $null`. All three files are pure ASCII again, matching their "ASCII only" header convention.
+- Cleaned: Replaced the leftover medical search example (`lm.cmd search "主动脉夹层 单细胞"`) copied from Literature Manager with a math example, and fixed the "Literature Manager" wording in `run.ps1`.
+- Verified: `lm.cmd info --json` and `lm.cmd topics --json` now run end-to-end against the vault (379 notes, 8 topic dirs, shared bge-m3 model detected).
+
 ### 2026-08-13 (Exercise Gal78: Correcting a Compositum Galois Group)
 - Added: Archived Yu Pin's Example 5.26 as **Gal78**, preserving the printed claim that the splitting field of $x^7-8$ has cyclic direct-product Galois group while visibly marking that conclusion as a source error.
 - Corrected: Proved independently that the degree-$42$ Galois group is the nonabelian semidirect product $C_7\rtimes C_6\cong\operatorname{AGL}_1(\mathbb F_7)$, with explicit generators and conjugation relation $\tau\sigma\tau^{-1}=\sigma^3$.
