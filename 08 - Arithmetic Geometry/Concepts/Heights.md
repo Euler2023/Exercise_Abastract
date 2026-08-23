@@ -6,8 +6,8 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Jean-Pierre Serre, Galois Cohomology, Ch. II, Appendix, §8, printed p. 117, PDF p. 125"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -54,9 +54,9 @@ Heights measure the "arithmetic complexity" of rational points. They are essenti
 ## Néron-Tate Height
 
 > [!info] Definition (Canonical Height)
-> On an elliptic curve $E$ (or abelian variety), the **Néron-Tate height** (or canonical height) is:
+> Let $L$ be a symmetric ample line bundle on an abelian variety and let $h_L$ be an associated Weil height. The **Néron–Tate height** is:
 > $$
-> \hat{h}(P) = \lim_{n \to \infty} \frac{h([n]P)}{n^2}
+> \hat h_L(P)=\lim_{m\to\infty}\frac{h_L([2^m]P)}{4^m}.
 > $$
 
 Properties:
@@ -85,17 +85,15 @@ This is key to proving the [[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theo
 > [!example] Example 2: Counting
 > $\#\{P \in \mathbb{P}^1(\mathbb{Q}) : H(P) \leq B\} \sim 12B^2/\pi^2$ as $B \to \infty$.
 
-> [!example] Example 3: Elliptic curve
-> On $E: y^2 = x^3 + 17$, the point $P = (2, 5)$ has:
-> - Naive height $h(P) = \log 5 \approx 1.61$
-> - Canonical height $\hat{h}(P) \approx 0.80$
+> [!example] Example 3: A projective point on an elliptic curve
+> On $E:y^2=x^3+17$, the rational point $(2,5)$ has projective coordinates $[2:5:1]$, hence the naive projective height of this chosen embedding is $H([2:5:1])=5$. A numerical Néron–Tate height would require a separately specified normalization and computation.
 
 ## Northcott Property
 
 > [!abstract] Theorem (Northcott)
 > For any bound $B$ and degree $d$:
 > $$
-> \#\{P \in \mathbb{P}^n(\bar{\mathbb{Q}}) : [K(P):\mathbb{Q}] \leq d, H(P) \leq B\} < \infty
+> \#\{P \in \mathbb{P}^n(\bar{\mathbb{Q}}) : [\mathbb Q(P):\mathbb{Q}] \leq d, H(P) \leq B\} < \infty
 > $$
 
 This "finiteness" property is crucial for Diophantine applications.
@@ -117,4 +115,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: searches for “Northcott” in Lang's *Algebra* lead to Northcott's commutative-algebra work, not the arithmetic Northcott finiteness theorem; occurrences of “height” likewise do not define projective or Weil heights. Neither Lang ANT nor Neukirch develops the Weil height machine, and Sorensen's modular-form/Galois chapters add no Northcott or Néron–Tate treatment. The basic normalization, Northcott property, canonical-height identities, and descent application therefore remain `unverified`.
+Eight-source audit: Serre defines $H([p:q])=\max(|p|,|q|)$ for coprime integers $p,q$ on $\mathbb P^1(\mathbb Q)$ and gives the asymptotic count $12H^2/\pi^2+O(H\log H)$ [S6, Ch. II, Appendix, §8, printed p. 117, PDF p. 125]. This directly verifies the one-dimensional naive-height normalization and the counting example. The extension to $\mathbb P^n$, logarithmic heights, the Weil height machine, Northcott's theorem in bounded degree, Néron–Tate limits and pairings, and the Mordell–Weil descent application are not supplied by the eight sources. The note is `partially-verified`, with those sections retained as labeled external standard inputs.

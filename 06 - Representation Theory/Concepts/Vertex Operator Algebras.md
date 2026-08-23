@@ -8,7 +8,7 @@ tags:
   - moonshine
   - infinite-dimensional
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
+source: "Eleven-source boundary audit completed; Kac Ch. 14 covers vertex-operator constructions, not the general VOA axioms"
 source_status: unverified
 status: not-started
 ---
@@ -31,7 +31,7 @@ VOAs arose from several sources:
 > [!info] Definition (Vertex Operator Algebra)
 > A **vertex operator algebra** (VOA) is a tuple $(V, Y, \mathbf{1}, \omega)$ where:
 >
-> - $V = \bigoplus_{n \in \mathbb{Z}} V_n$ is a $\mathbb{Z}$-graded vector space (with $\dim V_n < \infty$)
+> - $V = \bigoplus_{n \in \mathbb{Z}} V_n$ is a lower-truncated $\mathbb{Z}$-graded vector space: $V_n=0$ for all sufficiently negative $n$, and $\dim V_n < \infty$
 > - $Y: V \to \text{End}(V)[[z, z^{-1}]]$ is the **state-field correspondence**
 > - $\mathbf{1} \in V_0$ is the **vacuum vector**
 > - $\omega \in V_2$ is the **conformal vector**
@@ -48,7 +48,7 @@ where $a_{(n)} \in \text{End}(V)$ are the **modes**.
 ### Vacuum Axioms
 
 1. $Y(\mathbf{1}, z) = \text{id}_V$
-2. $Y(a, z)\mathbf{1}|_{z=0} = a$ (creation property)
+2. $Y(a,z)\mathbf{1}\in a+zV[[z]]$ (creation property)
 3. $a_{(n)}\mathbf{1} = 0$ for $n \geq 0$
 
 ### Translation
@@ -57,17 +57,14 @@ There exists $T: V \to V$ (translation operator) with:
 - $T\mathbf{1} = 0$
 - $[T, Y(a, z)] = \partial_z Y(a, z)$
 
-### Locality (Borcherds Identity)
+### Locality and the Borcherds Identity
 
 For $a, b \in V$, there exists $N \geq 0$ such that:
 $$
 (z - w)^N [Y(a, z), Y(b, w)] = 0
 $$
 
-Equivalently, the **Jacobi identity** (Borcherds identity):
-$$
-\sum_{i \geq 0} \binom{m}{i} (a_{(n+i)}b)_{(m+k-i)} = \sum_{i \geq 0} (-1)^i \binom{n}{i} \left( a_{(m+n-i)}b_{(k+i)} - (-1)^n b_{(n+k-i)}a_{(m+i)} \right)
-$$
+Together with truncation, the vacuum axiom, and translation covariance, locality can be repackaged as a Jacobi/Borcherds identity. Its mode formula is convention-sensitive and is omitted here until checked against a dedicated VOA source.
 
 ### Conformal Structure
 
@@ -92,7 +89,7 @@ Additionally:
 ### Heisenberg VOA
 
 > [!example] Free Boson
-> Built from one free boson $\phi(z)$ with OPE $\phi(z)\phi(w) \sim -\log(z-w)$.
+> Built from a Heisenberg current $\alpha(z)$ with OPE $\alpha(z)\alpha(w)\sim (z-w)^{-2}$. A logarithmic free field $\phi$ may be introduced formally with $\partial\phi=\alpha$, but $\phi$ itself is not a vertex operator in the ordinary Heisenberg VOA.
 >
 > The Fock space $V = \mathbb{C}[\alpha_{-1}, \alpha_{-2}, \ldots]$ with $c = 1$.
 
@@ -131,7 +128,7 @@ Additionally:
 > The **moonshine module** $V^\natural$ is a VOA with:
 > - $c = 24$
 > - $\text{Aut}(V^\natural) = \mathbb{M}$ (the Monster group)
-> - $V^\natural = \bigoplus_{n \geq -1} V_n$ with $\dim V_{-1} = 0$, $\dim V_0 = 1$, $\dim V_1 = 0$, $\dim V_2 = 196884$
+> - $V^\natural = \bigoplus_{n \geq 0} V_n$ with $\dim V_0 = 1$, $\dim V_1 = 0$, and $\dim V_2 = 196884$; the term $q^{-1}$ in its character comes from the shift $q^{L_0-c/24}$ with $c=24$
 >
 > This is the central object in monstrous moonshine.
 
@@ -150,27 +147,27 @@ Additionally:
 | Type | Grading | Finite-dimensional? |
 |------|---------|---------------------|
 | Ordinary | $M = \bigoplus_{n \in \mathbb{Z}_{\geq 0}} M_{\lambda + n}$ | $\dim M_n < \infty$ |
-| Admissible | Log terms allowed | $\dim M_n < \infty$ |
+| Admissible | $\mathbb{Z}_{\geq0}$-graded in the standard weak-module sense | Not required by the bare definition |
 | Twisted | $g$-twisted for $g \in \text{Aut}(V)$ | Depends |
+
+Logarithmic modules form a separate generalization in which $L_0$ need not act semisimply.
 
 ### Rationality
 
 > [!info] Definition
-> A VOA $V$ is **rational** if:
-> 1. Every admissible module is completely reducible
-> 2. There are finitely many irreducible modules
+> A VOA $V$ is called **rational** (in a common convention) if every admissible module is completely reducible. Finiteness of irreducible modules and categorical conclusions require additional hypotheses or theorems and should not be folded into the definition without specifying conventions.
 
-For rational VOAs, the representation category is a **modular tensor category**.
+Under suitable finiteness conditions—typically including rationality, $C_2$-cofiniteness, and standard grading assumptions—the category of ordinary modules can be a **modular tensor category**.
 
 ## Modular Properties
 
 > [!abstract] Theorem (Zhu)
-> For a rational VOA $V$, the characters:
+> Schematically, under rationality together with suitable cofiniteness and grading hypotheses, the irreducible characters
 > $$
 > \chi_M(\tau) = \text{tr}_M q^{L_0 - c/24}, \quad q = e^{2\pi i \tau}
 > $$
 >
-> span a representation of $\text{SL}_2(\mathbb{Z})$.
+> span a finite-dimensional space invariant under the modular group.
 
 This explains why characters in moonshine are modular forms.
 
@@ -215,4 +212,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: none of Artin, either Lang volume, Neukirch, or Sorensen defines vertex operators, the Borcherds identity, conformal vectors, VOA modules, rationality, or VOA modularity. Sorensen adds a substantial classical modular-form treatment, but adjacent modular forms do not verify a VOA definition or theorem. Every substantive assertion in this note therefore remains `unverified` pending a dedicated VOA source.
+Eleven-source boundary audit: Kac, Ch. 14 constructs vertex operators for basic representations of affine Lie algebras [S9, printed p. 292, PDF p. 315], but it does not supply the general VOA axioms, module definitions, rationality criteria, or Zhu-type modularity theorem used here. Hall contains no VOA theory, and Getz–Hahn [S11] is an automorphic-representation text with no VOA development. The grading, creation axiom, Heisenberg example, Monster grading, and rationality/modularity hypotheses above have been corrected conservatively, but every substantive VOA claim remains `unverified` pending a dedicated authoritative source.

@@ -7,149 +7,83 @@ tags:
   - arithmetic-geometry
   - conjecture
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "J. S. Milne, Lectures on Étale Cohomology, §23, printed/PDF pp. 138–143"
+source_status: partially-verified
 status: not-started
 ---
 
 # Tate Conjecture
 
+## Cycle Classes
+
+Let $X$ be a smooth projective variety. For codimension-$r$ algebraic cycles, étale cohomology supplies a cycle-class map
+$$
+\operatorname{cl}_\ell:\operatorname{CH}^r(X)\otimes\mathbb Q_\ell
+\longrightarrow H^{2r}_{\mathrm{ét}}(X_{\bar k},\mathbb Q_\ell(r)).
+$$
+
+The Tate twist makes a cycle class Galois-invariant when the cycle is defined over the base field. Milne constructs the cycle map first with finite coefficients and then allows $\mathbb Z_\ell$ and $\mathbb Q_\ell$ coefficients, with several Chern-class foundations referred externally [S8, §23, printed/PDF pp. 138–142].
+
 ## Statement
 
-> [!abstract] Tate Conjecture
-> Let $X$ be a smooth projective variety over a finitely generated field $k$. Let $\ell$ be a prime different from $\text{char}(k)$. Then:
->
-> **1. Tate Conjecture (Algebraic Cycles)**:
-> The cycle class map
+> [!abstract] Tate Conjecture (fixed-field formulation)
+> Let $X$ be smooth and projective over a field $k$ finitely generated over its prime field, and let $\ell\ne\operatorname{char}(k)$. The codimension-$r$ Tate conjecture predicts that
 > $$
-> \text{CH}^i(X) \otimes \mathbb{Q}_\ell \to H^{2i}_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(i))^{G_k}
+> \operatorname{cl}_\ell:\operatorname{CH}^r(X)\otimes\mathbb Q_\ell
+> \longrightarrow
+> H^{2r}_{\mathrm{ét}}(X_{\bar k},\mathbb Q_\ell(r))^{G_k}
 > $$
 > is surjective.
->
-> **2. Semisimplicity Conjecture**:
-> The Galois representation $H^i_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell)$ is semisimple.
 
-## Interpretation
+Milne gives an equivalent geometric formulation over a separably closed field: take the union of the invariant subspaces obtained from all models over finitely generated subfields, and conjecture that this union is exactly the span of algebraic cycle classes [S8, §23, printed/PDF p. 143].
 
-The Tate conjecture predicts that **algebraic cycles** account for all Galois-invariant classes in étale cohomology.
+> [!warning] Separate semisimplicity conjecture
+> The expected semisimplicity of $H^i_{\mathrm{ét}}(X_{\bar k},\mathbb Q_\ell)$ is closely related but is not part of every formulation of the Tate conjecture. It should be recorded as a separate conjectural assertion unless a source explicitly bundles the two.
 
-| Object | Meaning |
-|--------|---------|
-| $\text{CH}^i(X)$ | Chow group of codimension $i$ cycles modulo rational equivalence |
-| $H^{2i}_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(i))$ | Étale cohomology with Tate twist |
-| $(-)^{G_k}$ | Galois invariants |
+## Divisors
 
-## Special Cases
-
-### Divisors ($i = 1$)
-
-> [!abstract] Tate Conjecture for Divisors
-> $$
-> \text{NS}(X) \otimes \mathbb{Q}_\ell \xrightarrow{\sim} H^2_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(1))^{G_k}
-> $$
-> where $\text{NS}(X)$ is the Néron-Severi group.
-
-This is known for:
-- Abelian varieties over finite fields (Tate)
-- K3 surfaces over finite fields (recent work)
-- Many other special cases
-
-### For Abelian Varieties
-
-> [!abstract] Theorem (Tate, Faltings)
-> The Tate conjecture holds for abelian varieties over:
-> - Finite fields (Tate, 1966)
-> - Number fields (Faltings, 1983)
-
-**Consequence**: Abelian varieties $A, B$ over a number field $K$ satisfy:
+For $r=1$, the cycle map factors through the Néron–Severi group:
 $$
-\text{Hom}_K(A, B) \otimes \mathbb{Z}_\ell \xrightarrow{\sim} \text{Hom}_{G_K}(T_\ell(A), T_\ell(B))
+\operatorname{NS}(X)\otimes\mathbb Q_\ell
+\longrightarrow H^2_{\mathrm{ét}}(X_{\bar k},\mathbb Q_\ell(1))^{G_k}.
 $$
 
-## Relation to Other Conjectures
+The divisorial Tate conjecture says that this map is surjective; after the standard injectivity input, it is an isomorphism. Milne records that the $r=1$ case for abelian varieties was proved by Tate, Zarhin, and Faltings [S8, §23, printed/PDF p. 143]. This does **not** say that all higher-codimension cases for all abelian varieties over number fields are known.
 
-```mermaid
-graph TB
-    HC[Hodge Conjecture] -->|"char 0"| TC[Tate Conjecture]
-    TC -->|finite fields| WC[Weil Conjectures]
-    TC --> BSD[BSD Conjecture]
-    TC --> MM[Motivic Conjectures]
+## Tate Isogeny Theorem
 
-    style TC fill:#e1f5fe
-    style HC fill:#fff3e0
-    style BSD fill:#f3e5f5
-```
-
-### Hodge vs Tate
-
-| Setting | Conjecture | Invariants |
-|---------|------------|------------|
-| $\mathbb{C}$ | Hodge | $(p,p)$-classes in $H^{2p}(X, \mathbb{Q})$ |
-| Finite/Number fields | Tate | Galois-invariant classes in $H^{2p}_{\text{ét}}$ |
-
-## What's Known
-
-### Positive Results
-
-| Variety | Field | Status |
-|---------|-------|--------|
-| Abelian varieties | Finite fields | ✓ Tate |
-| Abelian varieties | Number fields | ✓ Faltings |
-| K3 surfaces | Finite fields | ✓ (various authors) |
-| Products of curves | Number fields | ✓ |
-| Fermat hypersurfaces | Finite fields | Partial |
-
-### Open Cases
-
-- General varieties over number fields
-- Higher codimension cycles ($i > 1$) in most cases
-- Varieties over function fields (some cases)
-
-## Implications
-
-### For Endomorphisms
-
-If Tate holds for $A \times A$ where $A$ is an abelian variety:
+For abelian varieties $A,B$ over the relevant finitely generated fields, Tate's and Faltings's isogeny theorems identify homomorphisms with Galois-equivariant maps of Tate modules in their respective settings:
 $$
-\text{End}(A) \otimes \mathbb{Q}_\ell \cong \text{End}_{G_k}(V_\ell(A))
+\operatorname{Hom}_k(A,B)\otimes\mathbb Z_\ell
+\longrightarrow
+\operatorname{Hom}_{G_k}(T_\ell A,T_\ell B).
 $$
 
-This determines $\text{End}(A)$ from Galois representations!
+This is a deep theorem closely tied to the divisorial Tate conjecture. The eight-source collection names the result and its authors but does not prove the isogeny theorem, so the displayed map is retained as an external standard input rather than as an internally verified theorem.
 
-### For Motives
+## What the Checked Source Actually Establishes
 
-The Tate conjecture is part of the **standard conjectures** for algebraic cycles, which would imply:
-- Existence of a good category of motives
-- Rationality and functional equation of zeta functions
-
-## The Tate-Shafarevich Perspective
-
-> [!info] Connection to Sha
-> For an abelian variety $A/K$:
-> $$
-> \text{Ш}(A/K)[\ell^\infty] \hookrightarrow H^1(K, T_\ell(A)) / \text{(image of Selmer)}
-> $$
->
-> The Tate conjecture relates to finiteness of Sha.
+- It defines algebraic cycles, Chow groups, and the cycle-class map.
+- It states the Tate conjecture as a characterization of algebraic classes.
+- It records the proved $r=1$ abelian-variety cases (Tate–Zarhin–Faltings).
+- It records that, for abelian varieties over $\mathbb C$, the Tate conjecture implies the Hodge conjecture, and that the Hodge conjecture for CM abelian varieties implies the Tate conjecture for abelian varieties over finite fields.
+- It does not turn the general conjecture into a theorem and does not imply the Weil conjectures merely from the existence of étale cohomology.
 
 ## Examples
 
-> [!example] Example 1: Elliptic Curve over $\mathbb{F}_p$
-> $E/\mathbb{F}_p$: Tate's theorem says
+> [!example] Divisor classes
+> A divisor $D$ on $X$ gives a class
 > $$
-> \text{End}(E) \otimes \mathbb{Z}_\ell \cong \text{End}_{G_{\mathbb{F}_p}}(T_\ell(E))
+> c_1(\mathcal O_X(D))\in H^2_{\mathrm{ét}}(X_{\bar k},\mathbb Q_\ell(1)).
 > $$
->
-> For ordinary $E$: $\text{End}(E) = \mathbb{Z}$ or an order in a quadratic field.
-> For supersingular $E$: $\text{End}(E)$ is a maximal order in a quaternion algebra.
+> The divisorial Tate conjecture asks whether every $G_k$-invariant class in this group is generated by divisor classes.
 
-> [!example] Example 2: Product $E \times E'$
-> For distinct elliptic curves, Tate implies:
-> $$
-> \text{Hom}(E, E') \otimes \mathbb{Z}_\ell \cong \text{Hom}_{G_K}(T_\ell(E), T_\ell(E'))
-> $$
->
-> If $E, E'$ are non-isogenous, both sides are 0.
+> [!example] Endomorphisms of an elliptic curve
+> The isogeny theorem detects endomorphisms of an elliptic curve from the commuting endomorphisms of its Tate module. Any finer claim about whether the endomorphism ring is $\mathbb Z$, an imaginary-quadratic order, or a quaternion order must specify the base field and whether geometric or base-defined endomorphisms are meant.
+
+## Open Boundary
+
+The Tate conjecture remains open in broad generality, especially in higher codimension. Statements about K3 surfaces, products of curves, Fermat varieties, or recent advances require a dedicated current source and are not certified by this eight-book audit.
 
 ## Related Concepts
 
@@ -157,7 +91,7 @@ The Tate conjecture is part of the **standard conjectures** for algebraic cycles
 - [[08 - Arithmetic Geometry/Concepts/Galois Representations|Galois Representations]]
 - [[08 - Arithmetic Geometry/Concepts/Abelian Varieties|Abelian Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Zeta Functions of Varieties|Zeta Functions]]
-- [[08 - Arithmetic Geometry/Concepts/BSD Conjecture|BSD Conjecture]]
+- [[08 - Arithmetic Geometry/Concepts/Motives|Motives]]
 
 ## Exercises
 
@@ -169,4 +103,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: the checked books discuss Tate modules, local/global Tate duality, Tate's thesis, and Tate cohomology in other contexts, but none states the Tate conjecture on algebraic cycles or defines the cycle-class map into $\ell$-adic cohomology. Sorensen's use of Tate modules and black-box étale cohomology does not change that boundary. These similarly named topics do not verify the divisorial/abelian-variety cases, Hodge comparison, endomorphism consequences, or known/open status claims in this note. It remains `unverified`.
+Eight-source audit: Milne defines the cycle map and states the Tate conjecture explicitly [S8, §23, printed/PDF pp. 138–143], so the note is now `partially-verified`. The original draft's unrestricted claim that “the Tate conjecture holds for abelian varieties over number fields” has been narrowed to the sourced $r=1$ result; its misleading implication diagram and unsupported Tate–Shafarevich formula were removed. Milne's cycle-map construction imports parts of intersection/Chern-class theory, and the general conjecture, semisimplicity, isogeny theorems, and all recent case-by-case status claims are not proved in the checked slice.

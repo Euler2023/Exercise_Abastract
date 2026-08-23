@@ -7,7 +7,7 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
+source: "Eleven-source boundary audit completed; eta-function context does not verify partition theory"
 source_status: unverified
 status: not-started
 ---
@@ -27,7 +27,9 @@ status: not-started
 |-----|---|---|---|---|---|---|---|---|---|---|---|
 | $p(n)$ | 1 | 1 | 2 | 3 | 5 | 7 | 11 | 15 | 22 | 30 | 42 |
 
-Example: $p(5) = 7$ because $5 = 5 = 4+1 = 3+2 = 3+1+1 = 2+2+1 = 2+1+1+1 = 1+1+1+1+1$.
+Example: $p(5) = 7$ because
+
+$5 = 5 = 4+1 = 3+2 = 3+1+1 = 2+2+1 = 2+1+1+1 = 1+1+1+1+1$.
 
 ## Generating Function
 
@@ -61,7 +63,7 @@ This shows the partition function is closely related to modular forms!
 > $$
 
 > [!tip] Proof via Modular Forms
-> These congruences can be proved using the theory of modular forms and Hecke operators!
+> Modular-form methods prove these congruences, but the precise proof and any use of Hecke operators depend on the chosen formulation and are not supplied by the present source set.
 
 ## Hardy-Ramanujan Asymptotic
 
@@ -141,4 +143,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: the five books contain substantial theta, zeta, and modular-form material, but Sorensen adds no treatment of integer partitions or the partition generating function. None of the checked sources establishes Ramanujan congruences, Hardy–Ramanujan asymptotics, Rademacher's exact series, rank/crank, or mock theta functions. The relation to $\eta^{-1}$ is not by itself a source for these statements. This note remains `unverified` and needs a partition-theory source.
+Eleven-source boundary audit: Diamond–Shurman verifies the Dedekind eta product and its basic modular transformation, and Kac uses partition-type formal products in representation-theoretic examples, but neither source develops integer partition theory. Hall and Getz–Hahn [S11] add no partition-theory treatment. None of the eleven sources proves the Euler generating function in its combinatorial role, the Ramanujan congruences, Hardy–Ramanujan asymptotics, Rademacher's exact series, rank/crank results, or mock-theta assertions. The formal relation to $\eta^{-1}$ does not verify those claims, so the note remains `unverified` pending a partition-theory source.

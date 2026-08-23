@@ -8,8 +8,8 @@ tags:
   - lie-theory
   - infinite-dimensional
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Victor G. Kac, Infinite-Dimensional Lie Algebras, 3rd ed., Chs. 6–13, especially Thms. 7.4, 10.4, 13.8"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -46,10 +46,10 @@ Elements are finite Laurent series $\sum_n X_n \otimes t^n$ with $X_n \in \mathf
 >
 > with bracket:
 > $$
-> [X \otimes t^m, Y \otimes t^n] = [X, Y] \otimes t^{m+n} + m \delta_{m+n,0} \kappa(X, Y) c
+> [X \otimes t^m, Y \otimes t^n] = [X, Y] \otimes t^{m+n} + m \delta_{m+n,0} (X\mid Y)c
 > $$
 >
-> where $\kappa$ is the Killing form and $c$ is central.
+> where $(\cdot\mid\cdot)$ is a fixed invariant symmetric bilinear form (with a declared normalization) and $c$ is central. Replacing the form by a scalar rescales the central element and the numerical notion of level.
 
 ### Full Affine Algebra
 
@@ -135,11 +135,12 @@ $$
 $$
 [h_0, e_0] = 2e_0, \quad [h_0, f_0] = -2f_0, \quad [e_0, f_0] = h_0
 $$
+The mixed Chevalley brackets satisfy $[e_0,f_1]=[e_1,f_0]=0$. In contrast, $[e_0,e_1]$ and $[f_0,f_1]$ are not zero. Since the Cartan matrix is $\begin{pmatrix}2&-2\\-2&2\end{pmatrix}$, the Serre relations are
 $$
-[e_0, e_1] = [f_0, f_1] = 0, \quad [e_0, f_1] = [e_1, f_0] = 0
+(\operatorname{ad}e_0)^3e_1=(\operatorname{ad}e_1)^3e_0=0,
+\qquad
+(\operatorname{ad}f_0)^3f_1=(\operatorname{ad}f_1)^3f_0=0.
 $$
-
-Plus Serre relations.
 
 ## Representation Theory
 
@@ -154,23 +155,24 @@ Plus Serre relations.
 ### Integrable Modules
 
 > [!abstract] Theorem
-> Integrable highest weight modules $L(\lambda)$ exist iff:
-> 1. $\lambda(c) = k \in \mathbb{Z}_{\geq 0}$ (non-negative integer level)
-> 2. $\langle \lambda, \alpha_i^\vee \rangle \in \mathbb{Z}_{\geq 0}$ for all simple roots
+> An irreducible highest-weight module $L(\lambda)$ is integrable exactly when $\lambda$ is dominant integral:
+> $$
+> \langle\lambda,\alpha_i^\vee\rangle\in\mathbb Z_{\geq0}
+> \quad\text{for every affine simple coroot }\alpha_i^\vee.
+> $$
+> Its level $k=\lambda(c)$ is then a nonnegative integer. Level alone is not sufficient.
 
 At level $k$, there are finitely many integrable modules.
 
 ### Characters and Modular Forms
 
 > [!abstract] Theorem
-> The characters of integrable highest weight modules at level $k$:
+> After Kac's anomaly/energy normalization, the characters of integrable highest-weight modules at fixed positive level do not generally transform one by one as scalar modular forms. In the affine types covered by Kac's theorem, their finite-dimensional span is invariant under a specified $SL_2(\mathbb Z)$ action:
 > $$
-> \chi_\lambda(\tau, z) = \text{tr}_{L(\lambda)} q^{L_0 - c/24} e^{2\pi i z \cdot h}
+> \chi_\lambda(\tau,z,u)=q^{m_\lambda}\operatorname{ch}L(\lambda).
 > $$
->
-> are **modular forms** (or weak modular forms) for a congruence subgroup.
 
-Here $q = e^{2\pi i \tau}$ and $L_0$ is the energy operator.
+Here $q=e^{2\pi i\tau}$; the remaining variables encode the Cartan, degree, and central directions. Converting this formal normalized character to a trace $q^{L_0-c/24}$ requires the corresponding conformal normalization.
 
 ## Connection to Physics
 
@@ -186,7 +188,7 @@ The **Wess-Zumino-Witten (WZW) model** has $\widehat{\mathfrak{g}}_k \oplus \wid
 > L_n = \frac{1}{2(k + h^\vee)} \sum_m \sum_a :J^a_m J^a_{n-m}:
 > $$
 >
-> with central charge:
+> with central charge (for the standard normalization and $k\neq-h^\vee$):
 > $$
 > c = \frac{k \dim \mathfrak{g}}{k + h^\vee}
 > $$
@@ -218,21 +220,18 @@ Examples: $A_n^{(2)}$, $D_n^{(2)}$, $E_6^{(2)}$, $D_4^{(3)}$.
 
 For integrable $L(\lambda)$:
 $$
-\chi_\lambda = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho)}}{\prod_{\alpha \in \widehat{\Delta}^+} (1 - e^{-\alpha})^{\text{mult}(\alpha)}}
+\operatorname{ch}L(\lambda)=\frac{\sum_{w\in W}\epsilon(w)e^{w(\lambda+\rho)-\rho}}{\prod_{\alpha\in\widehat\Delta^+}(1-e^{-\alpha})^{\operatorname{mult}(\alpha)}}
 $$
 
 ### Jacobi Triple Product (from $\widehat{\mathfrak{sl}}_2$)
 
 $$
-\prod_{n=1}^\infty (1 - q^n)(1 - zq^{n-1})(1 - z^{-1}q^n) = \sum_{m \in \mathbb{Z}} (-1)^m z^m q^{m(m+1)/2}
+\prod_{n=1}^\infty(1-q^n)(1-zq^{n-1})(1-z^{-1}q^n)=\sum_{m\in\mathbb Z}(-1)^m z^m q^{m(m-1)/2}
 $$
 
 ### Macdonald Identities
 
-Denominator identities for affine algebras give classical identities:
-- $\widehat{\mathfrak{sl}}_n$: Jacobi identities
-- $\widehat{\mathfrak{so}}_{2n}$: quintuple product
-- Others: new identities
+Specializations of affine denominator identities recover many classical product identities. The precise identity depends on the affine type, the specialization of the formal exponentials, and the normalization; no one-to-one type/product dictionary is asserted here.
 
 ## Related Concepts
 
@@ -252,4 +251,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), and Lang, Ch. XIII, Exercise 29, printed pp. 548–549 (PDF pp. 563–564), cover ordinary finite-dimensional Lie-algebra axioms and adjoint derivations only. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), adds the standard $\mathfrak{sl}_2$ presentation and Casimir operator, but no loop algebra or central extension. None of the five sources defines affine Cartan data, integrable highest-weight modules, Weyl–Kac formulas, or twisted affine algebras. The entire affine theory in this draft therefore still requires a Kac-style external source and remains `unverified`.
+Ten-source audit: Kac classifies affine generalized Cartan matrices, develops untwisted and twisted affine root systems, and proves that the untwisted algebra attached to a finite-dimensional simple complex Lie algebra is the central extension of its loop algebra together with the degree derivation. [S9, Chs. 6–8; Thm. 7.4, printed pp. 101–102, PDF pp. 124–125] He proves the Weyl–Kac formula for integrable highest-weight modules and the modular transformation law for normalized affine characters in the stated types and levels. [S9, Thm. 10.4, printed pp. 173–175, PDF pp. 196–198; Thm. 13.8, printed pp. 264–265, PDF pp. 287–288]
+
+The note is `partially-verified`: the core algebraic and representation-theoretic claims are source-supported, while the WZW/string-theory applications are contextual. The $\widehat{\mathfrak{sl}}_2$ relation $[e_0,e_1]=0$ was false and has been replaced by the cubic Serre relations. The character statement now records vector-valued $SL_2(\mathbb Z)$ invariance rather than claiming each character is a scalar modular form for a congruence subgroup. All level and central-charge formulas depend on the invariant-form normalization.

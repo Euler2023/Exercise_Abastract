@@ -16,6 +16,7 @@ status: not-started
 ## Definition
 
 > [!info] Definition (Group)
+> 
 > A **group** is a pair $(G, \cdot)$ where $G$ is a non-empty set and $\cdot: G \times G \to G$ is a binary operation satisfying:
 >
 > 1. **Closure**: $\forall a, b \in G$, $a \cdot b \in G$

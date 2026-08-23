@@ -8,8 +8,8 @@ tags:
   - langlands
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Getz–Hahn, An Introduction to Automorphic Representations, GTM 300 (2024), §§7.3–7.5 and 12.2"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -17,7 +17,14 @@ status: not-started
 
 ## Introduction
 
-The **L-group** (Langlands dual group) is a fundamental construction in the Langlands program. It provides the target for Langlands parameters and encodes deep relationships between representation theory and number theory.
+The **Langlands dual group** and the **L-group** are fundamental constructions in the Langlands program. The connected complex dual group is determined by the dual based root datum; the full L-group also records the Galois action and is the target of Langlands parameters.
+
+> [!note] Source convention
+> Getz–Hahn use the Galois-group convention
+> $$
+> {}^LG=\widehat G(\mathbb C)\rtimes \operatorname{Gal}_F.
+> $$
+> Local formulations often replace the Galois factor by the Weil group, or use the corresponding pullback along $W_F\to\operatorname{Gal}_F$. These conventions encode the same pinned action but should not be silently interchanged. [S11, §7.3, printed pp. 191–192, PDF pp. 204–205]
 
 ## Root Data
 
@@ -57,7 +64,7 @@ For a reductive group $G$ with maximal torus $T$:
 
 ### Key Properties
 
-1. $\widehat{\widehat{G}} = G$ (over $\mathbb{C}$)
+1. Dualizing twice recovers the original based root datum; the corresponding complex reductive group is recovered up to the chosen identification
 2. $\text{rank}(\widehat{G}) = \text{rank}(G)$
 3. Roots ↔ coroots are swapped
 4. Representations of $\widehat{G}$ ↔ "dual" objects for $G$
@@ -87,45 +94,49 @@ For a reductive group $G$ with maximal torus $T$:
 
 ### Exceptional Groups
 
-| $G$ | $\widehat{G}$ |
-|-----|---------------|
-| $G_2$ | $G_2$ |
-| $F_4$ | $F_4$ |
-| $E_6$ | $E_6$ |
-| $E_7$ | $E_7$ |
-| $E_8$ | $E_8$ |
+| $G$   | $\widehat{G}$ |
+| ----- | ------------- |
+| $G_2$ | $G_2$         |
+| $F_4$ | $F_4$         |
+| $E_6$ | $E_6$         |
+| $E_7$ | $E_7$         |
+| $E_8$ | $E_8$         |
 
-(All exceptional groups are self-dual!)
+The exceptional **root systems** are self-dual. The dual group still depends on the full root datum: in particular, simply connected and adjoint isogeny forms are interchanged.
 
 ## The L-Group
 
 ### Full L-Group
 
-> [!info] Definition (L-Group)
-> For $G$ defined over a field $K$, the **L-group** is:
+> [!info] Definition (L-Group: S11 convention)
+> For a reductive group $G$ over a local or global field $F$, choose the pinned action $\widehat\mu_G$ of $\operatorname{Gal}_F$ on the complex dual group. The **L-group** is
 > $$
-> {}^L G = \widehat{G} \rtimes \Gamma_K
+> {}^L G = \widehat{G}(\mathbb C) \rtimes_{\widehat\mu_G} \operatorname{Gal}_F.
 > $$
 >
-> where $\Gamma_K = \text{Gal}(\overline{K}/K)$ acts on $\widehat{G}$ via its action on the root datum.
+> A local Weil-group version is obtained by pulling this action back along $W_F\to\operatorname{Gal}_F$. [S11, §7.3, printed p. 192, PDF p. 205]
 
 ### Split Case
 
 If $G$ is **split** over $K$ (contains a split maximal torus):
-- $\Gamma_K$ acts trivially on $\widehat{G}$
-- ${}^L G = \widehat{G} \times \Gamma_K$
+- $W_K$ acts trivially on $\widehat{G}$
+- ${}^L G = \widehat{G} \times W_K$ in the Weil-group convention
 
 ### Non-Split Case
 
 For non-split $G$, the Galois action is non-trivial:
 
 > [!example] Quasi-split unitary groups
-> For $U_n$ (quasi-split unitary group for $E/F$):
+> For the standard quasi-split unitary group $U_n$ attached to a quadratic extension $M/F$:
 > $$
-> {}^L U_n = \text{GL}_n(\mathbb{C}) \rtimes \text{Gal}(E/F)
+> {}^L U_n \simeq \operatorname{GL}_n(\mathbb C)\rtimes\operatorname{Gal}_F,
 > $$
 >
-> where $\sigma \in \text{Gal}(E/F)$ acts by $g \mapsto J (g^t)^{-1} J^{-1}$.
+> where the action factors through $\operatorname{Gal}(M/F)$ and its nontrivial element acts by
+> $$
+> g\longmapsto (J_n')^{-1}g^{-t}J_n'.
+> $$
+> This is formula (7.20) in S11. See [[08 - Arithmetic Geometry/Concepts/Quasi-split Unitary Groups|Quasi-split Unitary Groups]]. [S11, Example 7.3, printed p. 193, PDF p. 206]
 
 ## Langlands Parameters
 
@@ -140,13 +151,13 @@ For non-split $G$, the Galois action is non-trivial:
 > where:
 > - $W_F$ is the Weil group
 > - $\text{SL}_2(\mathbb{C})$ captures monodromy
-> - Admissibility: $\phi|_{W_F}$ is continuous with bounded image; $\phi|_{\text{SL}_2}$ is algebraic
+> - Admissibility includes continuity on $W_F$, algebraicity on $\text{SL}_2$, compatibility with the projection to $W_F$, and a semisimplicity condition. Boundedness of the Weil-group image is the additional condition characterizing **tempered** parameters, not all L-parameters.
 
-### For GLₙ
+### For $GL_{n}$
 
 Parameters are simply $n$-dimensional representations:
 $$
-\phi: W_F \times \text{SL}_2(\mathbb{C}) \to \text{GL}_n(\mathbb{C})
+\phi: W_F \times \text{SL}_2(\mathbb{C}) \to \text{GL}_{n}(\mathbb{C})
 $$
 
 The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
@@ -181,7 +192,7 @@ The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 
 | L-homomorphism | Transfer |
 |----------------|----------|
-| ${}^L \text{GL}_1 \hookrightarrow {}^L \text{GL}_n$ | Hecke characters → $\text{GL}_n$ |
+| ${}^L(\operatorname{Res}_{E/F}\text{GL}_1) \to {}^L\text{GL}_{[E:F]}$ | Automorphic induction of Hecke characters, when established |
 | ${}^L \text{GL}_m \times {}^L \text{GL}_n \hookrightarrow {}^L \text{GL}_{mn}$ | Rankin-Selberg |
 | $\text{Sym}^k: {}^L \text{GL}_2 \to {}^L \text{GL}_{k+1}$ | Symmetric power |
 | Base change | Restriction of scalars |
@@ -200,6 +211,8 @@ The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 > - $\mathcal{H}(G(F), K)$ = spherical Hecke algebra
 > - $\widehat{T}$ = dual torus
 > - $\widehat{W}$ = Weyl group of $\widehat{G}$
+
+The displayed form suppresses normalization choices and, for nonsplit unramified groups, the Galois/Weil action and invariant form of the Satake isomorphism.
 
 ### Satake Parameters
 
@@ -228,11 +241,7 @@ This provides a geometric construction of $\widehat{G}$.
 
 ### Highest Weights
 
-| $G$ | $\widehat{G}$ | Duality |
-|-----|---------------|---------|
-| Weights of $G$ | Coweights of $\widehat{G}$ | |
-| Dominant weights | Dominant coweights | |
-| Irreps of $G(\mathbb{C})$ | Irreps of $\widehat{G}$ | Dimension formulas |
+The character lattice of $\widehat T$ is $X_*(T)$. Consequently, highest weights of $\widehat G$ correspond to coweights of $G$, and dominant highest weights of $\widehat G$ correspond to dominant coweights of $G$. There is no general term-by-term identification of irreducible representations of $G(\mathbb C)$ with those of $\widehat G$.
 
 ## Applications
 
@@ -257,6 +266,7 @@ $$
 - [[08 - Arithmetic Geometry/Concepts/Langlands Program|Langlands Program]]
 - [[08 - Arithmetic Geometry/Concepts/Local Langlands Correspondence|Local Langlands Correspondence]]
 - [[08 - Arithmetic Geometry/Concepts/Automorphic Representations|Automorphic Representations]]
+- [[08 - Arithmetic Geometry/Concepts/Quasi-split Unitary Groups|Quasi-split Unitary Groups]]
 - [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representations of Lie Algebras|Representations of Lie Algebras]]
@@ -271,4 +281,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin's classification remarks and introductory Lie algebra section do not develop based root data or reductive-group duality, while Lang and Neukirch mention Langlands conjectures/philosophy only at a high level. Sorensen says functoriality is organized by homomorphisms of $L$-groups but explicitly refers elsewhere for their definition [Ch. 6 introduction, printed p. 271, PDF p. 279]. None of the five sources defines the dual group, Weil-group semidirect product, $L$-parameters, Satake isomorphism, or geometric Satake. The note remains `unverified`.
+**Status: partially verified.** The dual-root-datum construction, pinned Galois action, semidirect-product definition of ${}^LG$, definition of an $L$-map, local-to-global map, and the quasi-split unitary example were checked against Getz–Hahn [S11, §7.3–§7.4, printed pp. 187–195, PDF pp. 200–208]. The definition of $L$-parameters and their local factors was checked against [S11, §12.2, printed pp. 324–325, PDF pp. 335–336].
+
+**External standard inputs.** S11 states the Satake theorems but refers out for the key algebra isomorphism; the geometric Satake theorem is not developed there. The functorial transfers in the examples table are established only in particular cases, while general Langlands functoriality remains conjectural. Consequently those sections are retained as orientation, not as source-contained proofs. The note is not `verified` because it combines S11-grounded definitions with these external results.

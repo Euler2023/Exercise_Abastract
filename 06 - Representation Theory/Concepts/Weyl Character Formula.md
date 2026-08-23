@@ -8,8 +8,8 @@ tags:
   - lie-theory
   - characters
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., §§10.4–10.8; Victor G. Kac, Infinite-Dimensional Lie Algebras, 3rd ed., Thm. 10.4"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -72,7 +72,7 @@ For $\mathfrak{sl}_2(\mathbb{C})$:
 - Single positive root $\alpha$
 - $\rho = \alpha/2$
 - $W = \{1, s_\alpha\} \cong \mathbb{Z}/2\mathbb{Z}$
-- Highest weight $\lambda = n\alpha/2$ for $n \in \mathbb{Z}_{\geq 0}$
+- Highest weight $\lambda=n\alpha/2$ for $n\in\mathbb Z_{\geq0}$; write the corresponding $(n+1)$-dimensional module as $L(n)$ to avoid conflict with the convention $V_m=$ “dimension $m$” in the linked $\mathfrak{sl}_2$ note
 
 ### Denominator Formula
 
@@ -87,9 +87,9 @@ $$
 
 ### Character Formula
 
-For the $(n+1)$-dimensional representation $V_n$:
+For the $(n+1)$-dimensional representation $L(n)$:
 $$
-\text{ch } V_n = \frac{e^{(n+1)\alpha/2} - e^{-(n+1)\alpha/2}}{e^{\alpha/2} - e^{-\alpha/2}} = \frac{z^{n+1} - z^{-(n+1)}}{z - z^{-1}}
+\text{ch }L(n)=\frac{e^{(n+1)\alpha/2}-e^{-(n+1)\alpha/2}}{e^{\alpha/2}-e^{-\alpha/2}}=\frac{z^{n+1}-z^{-(n+1)}}{z-z^{-1}}
 $$
 
 This equals $z^n + z^{n-2} + \cdots + z^{-n}$, confirming weights $n, n-2, \ldots, -n$.
@@ -123,7 +123,7 @@ $$
 ### Example for $\mathfrak{sl}_2$
 
 $$
-\dim V_n = \frac{\langle n\alpha/2 + \alpha/2, \alpha \rangle}{\langle \alpha/2, \alpha \rangle} = \frac{(n+1)\langle \alpha, \alpha \rangle / 2}{\langle \alpha, \alpha \rangle / 2} = n + 1
+\dim L(n)=\frac{\langle n\alpha/2+\alpha/2,\alpha\rangle}{\langle\alpha/2,\alpha\rangle}=n+1
 $$
 
 ## Connection to Infinite-Dimensional Algebras
@@ -154,7 +154,7 @@ The key difference: imaginary roots can have multiplicity $> 1$.
 From the denominator identity for $\widehat{\mathfrak{sl}}_2$:
 
 $$
-\prod_{n=1}^\infty (1 - q^n)(1 - zq^{n-1})(1 - z^{-1}q^n) = \sum_{m \in \mathbb{Z}} (-1)^m z^m q^{m(m+1)/2}
+\prod_{n=1}^\infty(1-q^n)(1-zq^{n-1})(1-z^{-1}q^n)=\sum_{m\in\mathbb Z}(-1)^m z^m q^{m(m-1)/2}
 $$
 
 ### Euler's Pentagonal Number Theorem
@@ -173,13 +173,15 @@ $$
 \prod_{n=1}^\infty (1 - q^{2n})(1 + zq^{2n-1})(1 + z^{-1}q^{2n-1}) = \sum_{m \in \mathbb{Z}} z^m q^{m^2}
 $$
 
-This is the **Jacobi theta function** $\theta_3(z, q)$.
+Up to the conventional replacement of the multiplicative variable $z$ by $e^{2iu}$, this is a standard Jacobi triple-product form of a theta function; the exact symbol $\theta_3$ depends on the chosen variables and normalization.
 
-## Proof Outline
+## One Proof Route (External to Hall's Proof)
 
 ### Key Steps
 
-1. **Verma modules**: Start with $M(\lambda) = U(\mathfrak{g}) \otimes_{U(\mathfrak{b})} \mathbb{C}_\lambda$
+The following BGG-resolution route is mathematically standard but is not the proof supplied by Hall in §10.8:
+
+1. **Verma modules**: Start with $M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda$
 2. **BGG resolution**: $L(\lambda)$ has a resolution by Verma modules
 3. **Character of Verma**: $\text{ch } M(\mu) = \frac{e^\mu}{\prod_{\alpha > 0}(1 - e^{-\alpha})}$
 4. **Alternating sum**: Use the resolution to get the Weyl formula
@@ -232,4 +234,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: no checked section of Artin, either Lang book, Neukirch, or Sorensen states the Weyl denominator, character, or dimension formulas. The theta and Eisenstein transformation formulas in the number-theory sources do not verify the Weyl–Kac, Macdonald, BGG, Freudenthal, or Kostant claims collected here. The apparent overlap through Jacobi identities is only contextual, so the note remains `unverified`.
+Ten-source audit: Hall states and proves the finite-dimensional Weyl character formula and derives the Weyl denominator, dimension, and Kostant multiplicity formulas in its complex semisimple setting. [S10, Thm. 10.14 and §§10.4–10.8, printed pp. 279–304, PDF pp. 285–310] Kac proves the Weyl–Kac formula and denominator identity for irreducible integrable highest-weight modules over symmetrizable Kac–Moody algebras. [S9, Thm. 10.4, printed pp. 173–175, PDF pp. 196–198]
+
+The note is `partially-verified`: Hall's proof is not the BGG-resolution route displayed above, so the BGG exact sequence remains an **External standard input** here. Kac's theorem requires symmetrizability, a dominant integral highest weight, integrability, root multiplicities, and a formal/convergence convention. The Jacobi and pentagonal identities require their own variable substitutions; the corrected triple product above uses exponent $m(m-1)/2$. Hall's compact-real-form convention and the distinction between finite Weyl and affine Weyl–Kac formulas remain in force.

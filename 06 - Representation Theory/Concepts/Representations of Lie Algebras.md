@@ -7,8 +7,8 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Chs. 4, 9–10, especially §4.6 and Thms. 9.10, 10.9, 10.14"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -77,9 +77,9 @@ These two definitions are equivalent.
 > Every finite-dimensional representation is completely reducible.
 
 > [!abstract] Schur's Lemma
-> If $V$, $W$ are irreducible and $\phi: V \to W$ is a morphism, then:
+> If $V$, $W$ are nonzero irreducible modules and $\phi: V \to W$ is a morphism, then:
 > - $\phi = 0$ or $\phi$ is an isomorphism
-> - If $V = W$ and the field is algebraically closed, then $\phi = \lambda \cdot \text{id}$
+> - If moreover $V=W$ is finite-dimensional and the field is algebraically closed, then $\phi=\lambda\operatorname{id}$
 
 ## Constructing New Representations
 
@@ -132,7 +132,7 @@ $\text{Hom}_\mathfrak{g}(V, W) = \{\phi : X \cdot \phi = 0\}$ is the space of mo
 > $V_\lambda$ is the **weight space** for $\lambda$.
 
 > [!abstract] Weight Space Decomposition
-> For semisimple $\mathfrak{g}$:
+> For a finite-dimensional representation of a complex semisimple $\mathfrak{g}$ in Hall's compact-real-form setting:
 > $$
 > V = \bigoplus_{\lambda \in \mathfrak{h}^*} V_\lambda
 > $$
@@ -175,10 +175,10 @@ For each such $\lambda$, we have:
 >
 > where $\mathfrak{b} = \mathfrak{h} \oplus \mathfrak{n}^+$ is a Borel subalgebra.
 
-Properties:
-- $M(\lambda)$ is infinite-dimensional (unless $\lambda$ is dominant integral)
-- Has unique maximal proper submodule
-- Quotient is the irreducible $L(\lambda)$
+Properties (for nonzero semisimple $\mathfrak g$):
+- $M(\lambda)$ is infinite-dimensional for every $\lambda$
+- It has a unique maximal proper submodule
+- Its simple quotient is $L(\lambda)$; this quotient is finite-dimensional exactly when $\lambda$ is dominant integral
 
 ## Character Theory
 
@@ -203,8 +203,7 @@ Characters are additive on direct sums and multiplicative on tensor products.
 > - $\rho(\exp(X)) = e^{d\rho(X)}$
 
 > [!abstract] Integration (Simply Connected Case)
-> If $G$ is simply connected:
-> Every $\mathfrak{g}$-representation integrates to a unique $G$-representation.
+> If $G$ is a connected, simply connected matrix Lie group with Lie algebra $\mathfrak g$, every finite-dimensional representation of $\mathfrak g$ integrates uniquely to a smooth representation of $G$.
 
 ## Related Concepts
 
@@ -225,4 +224,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), defines Lie algebras; his Exercise M.11 (printed p. 289, PDF p. 301) treats the adjoint representation of a linear group. Lang, Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564), constructs the adjoint Lie homomorphism into derivations, and Exercise XIII.36 (printed p. 552, PDF p. 567) treats conjugation on $\mathfrak{sl}_n$. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), differentiates right translations to an action of $\mathfrak{sl}_2$ on smooth functions and introduces the Casimir, but does not develop the general module theory used here. Complete reducibility, highest weights, Verma modules, and character theory remain unsupported, so the note stays `unverified`.
+Ten-source audit: Hall defines Lie-algebra representations, tensor and dual constructions, and the $\mathfrak{sl}_2$ model in Chapter 4; proves PBW and constructs Verma modules and their irreducible quotients in Chapter 9; and proves complete reducibility and the Weyl character, dimension, and Kostant multiplicity formulas in Chapter 10. [S10, §4.6, Thm. 4.32, printed pp. 96–99, PDF pp. 107–110; Thm. 9.10 and §9.4, printed pp. 249–253, PDF pp. 257–260; Thms. 10.9 and 10.14, printed pp. 275–279, PDF pp. 281–285]
+
+The status is `partially-verified`: Hall's semisimple theory uses a compact-real-form convention, whose equivalence with the usual radical/Killing-form definition is external there. The global integration statement also requires a connected, simply connected source group; Hall's broader Lie-third-theorem route imports Ado's theorem and a closed-embedding result. The displayed formal-character version is a translation of Hall's analytic character formula, while the BGG route mentioned in the linked Weyl note is not Hall's proof.

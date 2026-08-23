@@ -9,7 +9,7 @@ tags:
   - sporadic-groups
   - modular-forms
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
+source: "Eleven-source contextual audit completed; Kac mentions Borcherds and the Monster but does not prove moonshine"
 source_status: unverified
 status: not-started
 ---
@@ -51,10 +51,10 @@ Conway and Norton made the full "monstrous moonshine" conjecture:
 > [!abstract] Monstrous Moonshine Conjecture
 > For each element $g \in \mathbb{M}$, define the **McKay-Thompson series**:
 > $$
-> T_g(\tau) = \sum_{n \geq -1} \text{tr}(g|V_n) q^n
+> T_g(\tau)=\sum_{n\geq0}\operatorname{tr}(g\mid V_n^\natural)q^{n-1}
 > $$
 >
-> Then $T_g(\tau)$ is a **Hauptmodul** (principal modulus) for some genus-zero congruence subgroup $\Gamma_g \subset \text{SL}_2(\mathbb{R})$.
+> Then $T_g(\tau)$ is a **Hauptmodul** (principal modulus) for a specified genus-zero discrete group $\Gamma_g$ commensurable with $\text{SL}_2(\mathbb{Z})$; these groups need not themselves be congruence subgroups.
 
 ## The j-Invariant
 
@@ -76,7 +76,7 @@ The $j$-invariant parametrizes isomorphism classes of elliptic curves over $\mat
 > [!info] Theorem
 > There exists a vertex operator algebra $V^\natural$ (the **moonshine module**) such that:
 > 1. $\text{Aut}(V^\natural) = \mathbb{M}$
-> 2. $V^\natural = \bigoplus_{n \geq -1} V_n$ with graded dimension $j(\tau) - 744$
+> 2. $V^\natural = \bigoplus_{n \geq 0} V_n$, and its shifted graded character $\operatorname{tr}_{V^\natural}q^{L_0-1}$ equals $j(\tau)-744$
 > 3. $V^\natural$ has central charge $c = 24$
 
 ### Construction Steps
@@ -90,13 +90,12 @@ The $j$-invariant parametrizes isomorphism classes of elliptic curves over $\mat
 | Property | Value |
 |----------|-------|
 | Central charge | $c = 24$ |
-| $\dim V_{-1}$ | 0 |
 | $\dim V_0$ | 1 |
 | $\dim V_1$ | 0 |
 | $\dim V_2$ | 196884 |
 | Automorphism group | $\mathbb{M}$ |
 
-The vanishing of $V_1$ is crucial—it implies no Kac-Moody symmetry, explaining why the Monster is "sporadic."
+The vanishing of $V_1$ means that the weight-one Lie algebra is zero. It is an important structural feature, but by itself it does not explain the sporadicity of the Monster.
 
 ## Borcherds' Proof (1992)
 
@@ -132,7 +131,7 @@ where $c(n)$ are the coefficients of $j(\tau) - 744$.
 
 ### Genus Zero Property
 
-The remarkable fact is that for every $g \in \mathbb{M}$, the group $\Gamma_g$ has genus zero. This is highly non-trivial—there are only finitely many such groups!
+The remarkable fact is that for every $g \in \mathbb{M}$, the associated group $\Gamma_g$ has genus zero. The precise class of admissible groups and normalizations is part of the theorem and is not specified by this note.
 
 > [!example] Examples of McKay-Thompson Series
 > | Element | Order | $\Gamma_g$ | $T_g(\tau)$ |
@@ -148,12 +147,12 @@ The remarkable fact is that for every $g \in \mathbb{M}$, the group $\Gamma_g$ h
 > [!info] Conjecture (Norton)
 > For $g, h \in \mathbb{M}$ commuting, there exist functions $f(g, h; \tau)$ that are modular for groups depending on the centralizer $C_{\mathbb{M}}(\langle g, h \rangle)$.
 
-This was proved by Carnahan (2012).
+Substantial forms of generalized moonshine were proved by Carnahan; the exact theorem, hypotheses, and normalization require a dedicated source and are not asserted here.
 
 ### Umbral Moonshine
 
-> [!info] Theorem (Cheng-Duncan-Harvey, 2012)
-> There are 23 cases of "umbral moonshine" relating:
+> [!info] Umbral Moonshine Program
+> There are 23 cases associated with the 23 Niemeier root systems, relating:
 > - Niemeier lattices (even unimodular lattices of rank 24)
 > - Mock modular forms
 > - Finite groups
@@ -193,8 +192,8 @@ There are conjectured connections between:
 > [!abstract] Theorem (Frenkel-Lepowsky-Meurman)
 > The automorphism group of the moonshine module $V^\natural$ is exactly the Monster group $\mathbb{M}$.
 
-> [!abstract] Theorem (Dong-Li-Mason, 2000)
-> $V^\natural$ is the unique holomorphic VOA of central charge 24 with no weight-1 states.
+> [!warning] Uniqueness boundary
+> A blanket uniqueness statement saying that $V^\natural$ is the only holomorphic VOA of central charge $24$ with $V_1=0$ is not verified by the present source set and is therefore not asserted here.
 
 ## Why "Moonshine"?
 
@@ -222,4 +221,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin, Ch. 9, §9.8, printed p. 283 (PDF p. 295), verifies only that the Monster is the largest sporadic group; Lang's modular-connection pages verify the discriminant product, and Neukirch verifies the $j$-invariant, but none connects their coefficients to Monster representations. Sorensen's modular-form chapter treats Eisenstein series, $\Delta$, and modular $L$-functions, but contains no McKay coefficient identity, Monster module, or moonshine theorem. The genus-zero theorem, Borcherds proof, generalized moonshine, and physical interpretations therefore remain wholly external and `unverified`.
+Eleven-source boundary audit: Kac mentions Borcherds' generalized Kac–Moody work and the Monster in historical/contextual remarks [S9, printed p. 213, PDF p. 236; printed p. 290, PDF p. 313], but gives no construction of $V^\natural$, McKay–Thompson theorem, genus-zero proof, or generalized/umbral moonshine theorem. Hall and Getz–Hahn [S11] add no moonshine theory. The grading shift and the description of the moonshine groups have been corrected, while the substantive claims remain `unverified` pending dedicated moonshine and VOA sources.

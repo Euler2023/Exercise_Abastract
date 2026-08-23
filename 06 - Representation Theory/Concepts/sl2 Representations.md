@@ -7,8 +7,8 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., §4.6, printed pp. 96–104, PDF pp. 107–115; Appendix C"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -144,9 +144,9 @@ Given highest weight $\lambda \in \mathbb{Z}_{\geq 0}$:
 > - $V_3 \otimes V_2 \cong V_4 \oplus V_2$
 > - $V_3 \otimes V_3 \cong V_5 \oplus V_3 \oplus V_1$
 
-## Connection to SU(2) and Physics
+## Connection to $SU(2)$ and Physics
 
-The complexification $\mathfrak{su}_2 \otimes \mathbb{C} \cong \mathfrak{sl}_2(\mathbb{C})$.
+The complexification $\mathfrak{su}_2\otimes_{\mathbb R}\mathbb C\cong\mathfrak{sl}_2(\mathbb C)$.
 
 | Math notation | Physics notation |
 |---------------|-----------------|
@@ -174,4 +174,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Lang, Exercise XIII.36, printed p. 552 (PDF p. 567), treats the conjugation representation of $\mathrm{SL}_n$ on $\mathfrak{sl}_n$ and proves an irreducibility statement; Artin defines the matrix Lie algebra $\mathfrak{sl}_n$ in Ch. 9, §9.6. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), gives the basis $X,Y,H$, their commutator relations, and the Casimir element, but does not classify finite-dimensional $\mathfrak{sl}_2$-modules, construct highest-weight modules, compute Casimir eigenvalues, or prove Clebsch–Gordan. Those are the core claims here, so the note remains `unverified`.
+Ten-source audit: Hall gives the standard basis and commutators and proves the classification of all finite-dimensional irreducible complex $\mathfrak{sl}_2$-representations, including the weight string and explicit raising/lowering coefficients used above. [S10, §4.6, Thm. 4.32 and formula (4.16), printed pp. 96–99, PDF pp. 107–110] Hall's Appendix C develops Clebsch–Gordan theory. The Casimir normalization and eigenvalue above agree with the displayed choice $\Omega=ef+fe+h^2/2$.
+
+The status is `partially-verified`: the classification and tensor-product decomposition are source-supported, but the physics dictionary is contextual, and the precise integration to $SU(2)$ uses Hall's group-integration results and the simple-connectedness hypothesis. [S10, Ch. 5, especially Thm. 5.10, printed pp. 121–124, PDF pp. 131–134]

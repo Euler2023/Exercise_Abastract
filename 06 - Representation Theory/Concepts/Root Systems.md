@@ -7,10 +7,11 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Chs. 7–8, especially §§8.1–8.11, printed pp. 197–238, PDF pp. 204–245"
+source_status: partially-verified
 status: not-started
 ---
+
 
 # Root Systems
 
@@ -42,7 +43,7 @@ The integer $\langle \beta, \alpha^\vee \rangle$ is called a **Cartan integer**.
 ## Simple Roots and Positive Roots
 
 > [!info] Definition
-> Choose a hyperplane not containing any root. This divides $\Phi$ into:
+> Choose a linear functional that is nonzero on every root; its kernel hyperplane divides $\Phi$ into:
 > - **Positive roots** $\Phi^+$: roots on one side
 > - **Negative roots** $\Phi^- = -\Phi^+$: roots on the other side
 >
@@ -177,7 +178,7 @@ Each root space $\mathfrak{g}_\alpha$ is one-dimensional.
 ## Properties
 
 > [!abstract] Key Facts
-> 1. $[\mathfrak{g}_\alpha, \mathfrak{g}_\beta] = \mathfrak{g}_{\alpha+\beta}$ if $\alpha + \beta \in \Phi$
+> 1. $[\mathfrak{g}_\alpha, \mathfrak{g}_\beta] \subseteq \mathfrak{g}_{\alpha+\beta}$ if $\alpha + \beta \in \Phi$ (and equality uses the standard semisimple characteristic-zero hypotheses)
 > 2. $[\mathfrak{g}_\alpha, \mathfrak{g}_\beta] = 0$ if $\alpha + \beta \neq 0$ and $\alpha + \beta \notin \Phi$
 > 3. $[\mathfrak{g}_\alpha, \mathfrak{g}_{-\alpha}] \subset \mathfrak{h}$
 > 4. The Killing form is non-degenerate on $\mathfrak{h}$ and $\mathfrak{g}_\alpha \oplus \mathfrak{g}_{-\alpha}$
@@ -199,4 +200,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin remarks that the classification of simple complex algebraic groups rests on Lie-algebra classification (Ch. 9, §9.8, printed p. 283, PDF p. 295), but does not introduce roots, Weyl groups, Cartan matrices, Dynkin diagrams, or their classification. Sorensen uses $\mathfrak{sl}_2$ and the Casimir in Ch. 5, §5.7.2, but has no root-system development; no core treatment occurs in either Lang volume or Neukirch. The definitions, classical coordinate models, and classification theorem in this note thus remain `unverified` and need a dedicated Lie-theory source.
+Ten-source audit: Hall develops abstract reduced root systems, bases and positive roots, Weyl groups, Cartan matrices, Dynkin diagrams, and the classical coordinate models, then connects them to complex semisimple Lie algebras. [S10, Ch. 8, §§8.1–8.10, printed pp. 197–235, PDF pp. 204–242] This verifies the definitions and the $A$–$D$ examples above.
+
+The status is `partially-verified`, not `verified`, because Hall explicitly introduces §8.11 as a classification given **without proof**. Thus the exhaustive list of irreducible root systems and the existence/uniqueness correspondence with simple complex Lie algebras are **External standard inputs** in this source. [S10, §8.11, Thms. 8.49–8.51, printed pp. 236–238, PDF pp. 243–245] Hall also works through his compact-real-form convention for semisimple Lie algebras; that convention must not silently replace the radical/Killing-form definition used elsewhere.

@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
-source: "Five-source boundary audit completed; original Gross–Zagier and Kolyvagin sources require a dedicated audit"
+source: "Eleven-source boundary audit completed; original Gross–Zagier and Kolyvagin sources require a dedicated audit"
 source_status: unverified
 status: not-started
 ---
@@ -20,19 +20,18 @@ The Gross–Zagier theorem and Kolyvagin's Euler-system work establish central r
 
 ## The Gross-Zagier Theorem
 
-> [!abstract] Theorem (Gross-Zagier, 1986)
+> [!warning] Schematic Gross–Zagier formula (not a citable theorem statement)
 > Let $E/\mathbb{Q}$ be an elliptic curve of conductor $N$, and let $K$ be an imaginary quadratic field satisfying the **Heegner hypothesis**: every prime $p | N$ splits in $K$.
 >
-> Let $P_K \in E(K)$ be a **Heegner point**. Then:
+> Let $P_K \in E(K)$ be the trace to $K$ of the image of a suitable CM point under a modular parametrization. Then, after fixing all normalizations, a Gross–Zagier formula has the schematic form:
 > $$
-> L'(E/K, 1) = \frac{\Omega_E \cdot \hat{h}(P_K)}{u^2 \cdot \sqrt{|D_K|}} \cdot (\text{explicit constant})
+> L'(E/K,1)=C(E,K,\phi)\,\widehat h(P_K),
 > $$
 >
 > where:
 > - $L'(E/K, 1)$ is the derivative of the L-function at $s = 1$
 > - $\hat{h}(P_K)$ is the canonical (Néron-Tate) height of $P_K$
-> - $D_K$ is the discriminant of $K$
-> - $u = \#\mathcal{O}_K^\times / 2$
+> - $C(E,K,\phi)$ is an explicit nonzero factor depending on the modular parametrization, periods, discriminant, unit group, and local normalization conventions
 
 ## Heegner Points
 
@@ -42,11 +41,10 @@ The Gross–Zagier theorem and Kolyvagin's Euler-system work establish central r
 > - $C \subset E$ is a cyclic subgroup of order $N$
 > - The pair has CM by $\mathcal{O}$
 
-The modularity theorem gives a map $\phi: X_0(N) \to E$, and we define:
+The modularity theorem gives a map $\phi: X_0(N) \to E$. A CM point $x_K$ is generally defined over a Hilbert or ring class field $H$, not over $K$ itself; the $K$-rational Heegner point used in the rank argument is obtained, up to the chosen normalization, by
 $$
-P_K = \phi(x_K) \in E(K)
+P_K = \operatorname{Tr}_{H/K}\bigl(\phi(x_K)\bigr) \in E(K).
 $$
-where $x_K$ is a Heegner point on $X_0(N)$.
 
 ### Heegner Hypothesis
 
@@ -57,8 +55,8 @@ $$
 
 ## Kolyvagin's Theorem
 
-> [!abstract] Theorem (Kolyvagin, 1988-1990)
-> Let $E/\mathbb{Q}$ be an elliptic curve and $K$ an imaginary quadratic field satisfying the Heegner hypothesis. If the Heegner point $P_K$ has infinite order, then:
+> [!warning] Schematic Kolyvagin consequence
+> Under the precise modularity, Heegner, residual-representation, and local hypotheses of the relevant theorem, if the Heegner point $P_K$ has infinite order, then:
 >
 > 1. $\text{rank}(E(K)) = 1$
 > 2. $\text{Ш}(E/K)$ is finite
@@ -76,7 +74,7 @@ $$
 > - $\text{rank}(E(\mathbb{Q})) = 1$
 > - $\text{Ш}(E/\mathbb{Q})$ is finite
 
-This proves **BSD rank conjecture** for analytic rank 0 and 1!
+Together with the required auxiliary results and hypotheses, this proves the equality of analytic and algebraic ranks and finiteness of $\text{Ш}$ in analytic ranks $0$ and $1$; it does not by itself supply the full leading-term BSD formula.
 
 ## The Argument
 
@@ -144,7 +142,7 @@ graph TB
 > [!warning] Open Problem
 > For analytic rank $\geq 2$, we don't know how to prove BSD!
 >
-> The Heegner point $P_K$ is torsion when $\text{ord}_{s=1} L(E, s) \geq 2$.
+> The behavior of a chosen Heegner point is governed by the relevant base-change derivative $L'(E/K,1)$ and cannot be inferred solely from the order of vanishing of $L(E,s)$.
 
 ## Computational Aspects
 
@@ -156,21 +154,13 @@ Given $E/\mathbb{Q}$ with $L'(E, 1) \neq 0$:
 3. Find the CM point $x_K \in X_0(N)(H)$ where $H$ is the Hilbert class field
 4. Compute $P_K = \text{Tr}_{H/K}(\phi(x_K))$
 
-### Example Computation
-
-> [!example] $E: y^2 = x^3 - x$, $K = \mathbb{Q}(\sqrt{-7})$
-> - $N = 32$, and $(-7/2) = 1$ so Heegner hypothesis satisfied
-> - Heegner point computation gives a point of infinite order
-> - $L'(E/K, 1) \neq 0$ confirmed numerically
-
 ## What's NOT Known
 
-| Analytic Rank | Algebraic Rank | BSD Status |
-|---------------|----------------|------------|
-| 0 | 0 | ✓ Proved |
-| 1 | 1 | ✓ Proved |
-| 2 | 2 | Open |
-| $\geq 3$ | $\geq 3$ | Open |
+| Analytic Rank | Rank equality and finiteness of $\Sha$ | Full leading-term BSD formula |
+|---------------|------------------------------------------|-------------------------------|
+| 0 | Known for elliptic curves over $\mathbb Q$ | Not asserted here |
+| 1 | Known for elliptic curves over $\mathbb Q$ | Not asserted here |
+| $\geq 2$ | Open in general | Open in general |
 
 For rank $\geq 2$:
 - No known method to construct enough independent points
@@ -196,4 +186,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: none of Artin, either Lang volume, Neukirch, or Sorensen states the Gross–Zagier height formula or Kolyvagin's Euler-system theorem. Sorensen verifies the basic BSD rank conjecture only as a conjectural statement and supplies modular-form/Galois background, not these theorems. The displayed formula is schematic—the omitted local factors, normalizations, Heegner hypotheses, and precise analytic-rank assumptions are essential—and it must not be cited as a theorem statement. Rank-zero/rank-one BSD consequences and computational claims remain external; the note stays `unverified`.
+Eleven-source boundary audit: Diamond–Shurman says only that Gross and Zagier obtain points of infinite order when the conjectural rank is one [S7, §7.7, printed p. 298, PDF p. 311]; this is contextual and explicitly refers the reader elsewhere. Kac and Hall add no arithmetic input. Getz–Hahn [S11] discusses automorphic representations and trace formulae but does not state the normalized Gross–Zagier height formula or Kolyvagin's Euler-system theorem. The field of definition of the CM point has been corrected and the displayed results are explicitly schematic, with essential local factors and normalizations omitted; the note stays `unverified`.

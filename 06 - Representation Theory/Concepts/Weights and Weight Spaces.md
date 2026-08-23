@@ -7,8 +7,8 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Chs. 7–10, especially Ch. 9 and §§10.4–10.6"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -56,7 +56,7 @@ The dimension $\dim V_\lambda$ is called the **multiplicity** of $\lambda$ in $V
 
 > [!example] Example 3: Standard Representation of $\mathfrak{sl}_n$
 > $\mathfrak{sl}_n$ acts on $\mathbb{C}^n$.
-> - Weights: $\varepsilon_1, \varepsilon_2, \ldots, \varepsilon_n$ (coordinate functionals)
+> - Weights: the restrictions $\varepsilon_1|_{\mathfrak h},\ldots,\varepsilon_n|_{\mathfrak h}$ of the coordinate functionals to the diagonal traceless Cartan subalgebra; they satisfy $\sum_i\varepsilon_i|_{\mathfrak h}=0$
 > - Each standard basis vector $e_i$ has weight $\varepsilon_i$
 > - Multiplicities all equal 1
 
@@ -161,7 +161,7 @@ For low-rank algebras, we can visualize weights in $\mathfrak{h}^*_\mathbb{R}$.
 > ```
 
 > [!example] $\mathfrak{sl}_3$ weight diagram for adjoint
-> The 8 weights form a hexagon with one point at center (multiplicity 2).
+> The six nonzero roots form a hexagon; the zero weight is the center and has multiplicity $2$, giving total dimension $8$.
 
 ## Multiplicity
 
@@ -228,4 +228,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: the checked books cover ordinary eigenspaces and elementary group representations, and Artin/Lang give only introductory Lie-algebra material. Sorensen's use of the integer weight of a modular form is a different notion; his brief $\mathfrak{sl}_2$ discussion does not define Lie-representation weights. None of the five sources develops Cartan subalgebras, weight lattices, dominant or highest weights, weight diagrams, or highest-weight classification. The note remains `unverified` pending an external Lie-representation source.
+Ten-source audit: Hall develops weights and weight spaces, root and weight lattices, dominant integral weights, Verma modules, highest-weight classification, characters, and the Weyl dimension and Kostant multiplicity formulas. [S10, Chs. 8–10; Thm. 9.10 and §9.4, printed pp. 249–253, PDF pp. 257–260; Thm. 10.14 and §§10.4–10.6, printed pp. 279–293, PDF pp. 285–299] The $\mathfrak{sl}_2$ weight strings are proved separately in §4.6. [S10, printed pp. 96–99, PDF pp. 107–110]
+
+The status is `partially-verified`: Hall's finite-dimensional highest-weight theory uses its compact-real-form convention for complex semisimplicity. Freudenthal's recursion, Littlewood–Richardson, Klimyk, and PRV are not all proved in the bounded Hall slices and remain **External standard inputs**. The statement about tensor-product weights is understood as an equality of multisets with convolution of multiplicities, not merely a set-theoretic sum.

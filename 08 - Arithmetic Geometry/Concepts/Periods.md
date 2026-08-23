@@ -7,8 +7,8 @@ tags:
   - arithmetic-geometry
   - hodge-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Fred Diamond and Jerry Shurman, A First Course in Modular Forms, §6.1, printed pp. 215–219, PDF pp. 229–233"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -38,9 +38,9 @@ $$
 | de Rham $H^n_{\text{dR}}$ | $\mathbb{Q}$-vector space | Algebraic (Hodge filtration) |
 | Betti $H^n_B$ | $\mathbb{Q}$-vector space | Topological |
 
-The **period matrix** $P = (p_{ij})$ expresses a de Rham basis in terms of a Betti basis:
+For a de Rham basis $\omega_i$ and a homology basis $\gamma_j$, the **period matrix** is defined by:
 $$
-\omega_i = \sum_j p_{ij} \gamma_j
+p_{ij}=\int_{\gamma_j}\omega_i.
 $$
 
 The entries $p_{ij}$ are **periods**.
@@ -68,11 +68,11 @@ The entries $p_{ij}$ are **periods**.
 >
 > The period lattice $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ satisfies $E(\mathbb{C}) \cong \mathbb{C}/\Lambda$.
 
-> [!example] Example 4: Euler's Beta Function
+> [!example] Example 4: Euler's Beta Function (rational parameters)
 > $$
 > B(a, b) = \int_0^1 x^{a-1}(1-x)^{b-1} dx = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}
 > $$
-> Periods of $\mathbb{P}^1 \setminus \{0, 1, \infty\}$.
+> For rational $a,b>0$, this can be realized as a period after passing to a suitable algebraic cover. The unrestricted complex-parameter beta function is not, merely from this formula, a period.
 
 > [!example] Example 5: Multiple Zeta Values
 > $$
@@ -120,11 +120,7 @@ $$
 For a motive $M$, the **critical values** of $L(M, s)$ are (conjecturally) algebraic multiples of periods.
 
 > [!abstract] Deligne's Conjecture
-> For a critical integer $n$:
-> $$
-> \frac{L(M, n)}{(2\pi i)^{d^+ n} \cdot c^+(M)} \in \bar{\mathbb{Q}}
-> $$
-> where $c^+(M)$ is a **period** of the motive $M$.
+> At a critical integer, the appropriately completed motivic $L$-value is conjecturally an algebraic multiple of a Deligne period $c^\pm(M)$. The sign, power of $2\pi i$, and normalization depend on the motive and the critical point; the former one-line quotient suppressed this essential data.
 
 ### Example: Riemann Zeta
 
@@ -162,7 +158,7 @@ Variations of Hodge structure give **period maps** $\phi: S \to D/\Gamma$.
 > If $\alpha_1, \ldots, \alpha_n$ are algebraic and linearly independent over $\mathbb{Q}$, then $e^{\alpha_1}, \ldots, e^{\alpha_n}$ are algebraically independent.
 
 > [!abstract] Theorem (Baker)
-> If $\alpha_1, \ldots, \alpha_n$ are algebraic, then $\log \alpha_1, \ldots, \log \alpha_n$ are either all zero or linearly independent over $\bar{\mathbb{Q}}$.
+> If nonzero algebraic numbers $\alpha_1,\ldots,\alpha_n$ have chosen logarithms that are linearly independent over $\mathbb Q$, then those logarithms are linearly independent over $\bar{\mathbb Q}$.
 
 These constrain relations among periods.
 
@@ -184,4 +180,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: occurrences of “period” in the algebra texts refer to periodic elements or analytic periodicity and do not define Kontsevich–Zagier periods or comparison isomorphisms. Sorensen adds Mellin and contour integrals, gamma factors, and special $L$-values, but does not develop period algebras or comparison-period formalism. None of the five sources defines a period ring, Grothendieck's period conjecture, Deligne periods, BSD period factors, or period domains. These lexical matches are false friends, so the note remains `unverified`.
+Eight-source audit: Diamond–Shurman define path integration of holomorphic differentials on compact Riemann surfaces, identify loop integrals with the homology lattice, and construct $\operatorname{Jac}(X)=\Omega^1_{\mathrm{hol}}(X)^\vee/H_1(X,\mathbb Z)$; for $X=\mathbb C/\Lambda$ this recovers the elliptic period lattice [S7, §6.1, printed pp. 215–219, PDF pp. 229–233]. Several topological assertions and Abel's theorem are explicitly imported there. This verifies the classical elliptic/Riemann-surface period section only. The general Kontsevich–Zagier definition, Betti–de Rham comparison, period ring, motivic conjectures, Deligne periods, BSD normalization, period domains, and transcendence theorems remain external. The note is `partially-verified`.

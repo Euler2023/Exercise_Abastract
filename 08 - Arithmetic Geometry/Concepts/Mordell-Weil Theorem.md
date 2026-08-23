@@ -7,8 +7,8 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Fred Diamond and Jerry Shurman, A First Course in Modular Forms, §7.7, printed p. 298, PDF p. 311"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -71,30 +71,8 @@ Methods:
 
 ## Examples
 
-> [!example] Example 1: Rank 0
-> $E: y^2 = x^3 + 1$
-> $E(\mathbb{Q}) \cong \mathbb{Z}/6\mathbb{Z}$
-> Points: $\mathcal{O}, (2, 3), (0, 1), (-1, 0), (0, -1), (2, -3)$
-
-> [!example] Example 2: Rank 1
-> $E: y^2 = x^3 - 2$
-> $E(\mathbb{Q}) \cong \mathbb{Z}$
-> Generator: $P = (3, 5)$
-> Then $2P = (129/100, -383/1000)$, etc.
-
-> [!example] Example 3: Rank 2
-> $E: y^2 = x^3 - 5x$
-> $E(\mathbb{Q}) \cong \mathbb{Z}^2 \oplus \mathbb{Z}/2\mathbb{Z}$
-
-## Rank Records
-
-| Year | Record | Curve |
-|------|--------|-------|
-| 1938 | Rank 3 | Billing |
-| 1975 | Rank 7 | Penney-Pomerance |
-| 2006 | Rank 28 | Elkies |
-
-It's unknown whether ranks are unbounded!
+> [!example] Consequences of the decomposition
+> If $r=0$, then $A(K)$ is finite and equals its torsion subgroup. If $r=1$, then choosing one non-torsion point whose image generates the free quotient gives $A(K)\cong A(K)_{\mathrm{tors}}\oplus\mathbb Z$. Determining $r$ and proving that proposed points generate are separate arithmetic computations, not consequences of the abstract theorem alone.
 
 ## Connection to BSD
 
@@ -108,8 +86,7 @@ So far proved only for rank 0 and 1 (Gross-Zagier, Kolyvagin).
 ## Generalizations
 
 - **Number fields**: Mordell-Weil holds for $A(K)$ where $K$ is any number field
-- **Function fields**: Holds for abelian varieties over function fields
-- **Finitely generated fields**: Also true (Lang-Néron)
+- **Function fields / finitely generated extensions**: the Lang–Néron theorem asserts finite generation after quotienting by the rational points of the $K/k$-trace; extra hypotheses on the constant field are needed before simplifying this to finite generation of $A(K)$ itself.
 
 ## Related Concepts
 
@@ -129,4 +106,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), verifies that $E(K)$ is a group of rational points and discusses its torsion and Galois action, but does not state finite generation. Sorensen states BSD using $\operatorname{rank}E(K)$ and constructs modular abelian varieties, but does not prove Mordell–Weil or supply its height/descent argument. The five sources do not establish weak Mordell–Weil, height inequalities, rank algorithms, or the abelian-variety generalization. Because finite generation is the theorem's core, the note remains `unverified`.
+Eight-source audit: Diamond–Shurman explicitly state that for an elliptic curve $E/\mathbb Q$, the group of rational points has the form $T\oplus\mathbb Z^r$, with $T$ the torsion subgroup [S7, §7.7, printed p. 298, PDF p. 311]. This verifies the elliptic-curve-over-$\mathbb Q$ statement, but the book invokes rather than proves Mordell–Weil. The general abelian-variety/number-field theorem, weak Mordell–Weil, height descent, rank algorithms, and Lang–Néron refinement remain external. The note is `partially-verified`; no checked source proves its proof outline.

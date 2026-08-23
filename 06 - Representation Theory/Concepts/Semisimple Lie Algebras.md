@@ -7,8 +7,8 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Five-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Chs. 7–10, especially Thms. 10.9 and 10.14"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -57,12 +57,12 @@ Properties for semisimple $\mathfrak{g}$:
 ### Cartan Subalgebra
 
 > [!info] Definition
-> A **Cartan subalgebra** $\mathfrak{h} \subset \mathfrak{g}$ is a maximal abelian subalgebra consisting of semisimple elements.
+> For a finite-dimensional complex semisimple Lie algebra, a **Cartan subalgebra** $\mathfrak h\subset\mathfrak g$ may be characterized as a maximal abelian subalgebra consisting of semisimple elements. This simplified characterization is not the general definition for arbitrary Lie algebras or fields.
 
 Properties:
 - $\mathfrak{h}$ is unique up to conjugation
 - $\dim \mathfrak{h} = \text{rank}(\mathfrak{g})$
-- All elements of $\mathfrak{h}$ are simultaneously diagonalizable in any representation
+- In every finite-dimensional representation in the stated complex semisimple setting, the commuting operators from $\mathfrak h$ are simultaneously diagonalizable
 
 ### Root Space Decomposition
 
@@ -200,4 +200,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Five-source boundary audit: Artin defines Lie algebras in Ch. 9, §9.6 (printed pp. 275–277, PDF pp. 287–289) and his Exercises M.11–M.13 (printed p. 289, PDF p. 301) introduce the adjoint action and a trace form called the Killing form for classical matrix groups. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), introduces the Casimir only for $\mathfrak{sl}_2$. None of these pages proves the radical criterion, Cartan's criterion, root decomposition, classification, Weyl theory, complete reducibility, general Casimir theory, or Levi decomposition. The core semisimple structure theory remains `unverified`.
+Ten-source audit: Hall develops Cartan subalgebras, root-space decompositions, classical root systems, highest weights, PBW/Verma modules, and Casimir theory, and gives an algebraic proof that every finite-dimensional representation is completely reducible. [S10, Chs. 7–10; Thm. 10.9, printed pp. 275–276, PDF pp. 281–282] Hall also proves the Weyl character and dimension formulas. [S10, Thm. 10.14 and §§10.4–10.8, printed pp. 279–304, PDF pp. 285–310]
+
+The note is `partially-verified`. Hall defines a complex semisimple Lie algebra as the complexification of the Lie algebra of a compact matrix Lie group and explicitly does not prove equivalence with the usual zero-radical definition. [S10, Preface, printed p. xii, PDF p. 12] The radical criterion, Cartan's criterion in the generality stated here, and Levi decomposition therefore remain **External standard inputs**. Hall also states the final Dynkin classification without proof. [S10, §8.11, printed pp. 236–238, PDF pp. 243–245]
