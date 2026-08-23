@@ -7,7 +7,7 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -225,4 +225,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), defines Lie algebras; his Exercise M.11 (printed p. 289, PDF p. 301) treats the adjoint representation of a linear group. Lang, Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564), constructs the adjoint Lie homomorphism into derivations, and Exercise XIII.36 (printed p. 552, PDF p. 567) treats conjugation on $\mathfrak{sl}_n$. These do not supply the general representation definition and constructions, complete reducibility, highest weights, Verma modules, or character theory used here, so the note remains `unverified`.
+Five-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), defines Lie algebras; his Exercise M.11 (printed p. 289, PDF p. 301) treats the adjoint representation of a linear group. Lang, Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564), constructs the adjoint Lie homomorphism into derivations, and Exercise XIII.36 (printed p. 552, PDF p. 567) treats conjugation on $\mathfrak{sl}_n$. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), differentiates right translations to an action of $\mathfrak{sl}_2$ on smooth functions and introduces the Casimir, but does not develop the general module theory used here. Complete reducibility, highest weights, Verma modules, and character theory remain unsupported, so the note stays `unverified`.

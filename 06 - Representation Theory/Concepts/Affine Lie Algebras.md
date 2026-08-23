@@ -8,7 +8,7 @@ tags:
   - lie-theory
   - infinite-dimensional
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -252,4 +252,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), and Lang, Ch. XIII, Exercise 29, printed pp. 548–549 (PDF pp. 563–564), cover ordinary finite-dimensional Lie-algebra axioms and adjoint derivations only. They do not define loop algebras, central extensions, affine Cartan data, integrable highest-weight modules, Weyl–Kac formulas, or twisted affine algebras. The entire affine theory in this draft therefore still requires a Kac-style external source and remains `unverified`.
+Five-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), and Lang, Ch. XIII, Exercise 29, printed pp. 548–549 (PDF pp. 563–564), cover ordinary finite-dimensional Lie-algebra axioms and adjoint derivations only. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), adds the standard $\mathfrak{sl}_2$ presentation and Casimir operator, but no loop algebra or central extension. None of the five sources defines affine Cartan data, integrable highest-weight modules, Weyl–Kac formulas, or twisted affine algebras. The entire affine theory in this draft therefore still requires a Kac-style external source and remains `unverified`.

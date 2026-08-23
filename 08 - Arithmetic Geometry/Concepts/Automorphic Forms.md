@@ -8,8 +8,8 @@ tags:
   - langlands
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 5, §§5.7.2 and 5.7.5, printed pp. 223–227, 232–234, PDF pp. 232–236, 241–243"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -76,7 +76,7 @@ where $W_\xi$ are **Whittaker functions**.
 
 ### Hecke Operators
 
-Automorphic forms are eigenfunctions of **Hecke operators** $T_v$ at almost all places $v$:
+For a simultaneous Hecke eigenform, or a vector in an irreducible automorphic representation with unramified local component, the spherical **Hecke operators** $T_v$ act by eigenvalues at almost all places $v$:
 $$
 T_v \phi = \lambda_v \phi
 $$
@@ -93,8 +93,8 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 > $$
 >
 > These are **Hecke characters** (Größencharaktere).
-> - Finite-order characters ↔ Dirichlet characters
-> - Algebraic Hecke characters ↔ CM motives
+> - Over $\mathbb Q$, finite-order Hecke characters with the appropriate archimedean condition recover Dirichlet characters.
+> - Algebraic Hecke characters give geometric one-dimensional $p$-adic Galois characters in the forward direction treated by Sorensen; a full motivic or converse classification is an external input.
 
 ### GL₂ over ℚ
 
@@ -141,7 +141,7 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 > \Delta f = \lambda f
 > $$
 >
-> These correspond to automorphic representations with non-trivial archimedean component (principal series, not discrete series).
+> These lead to non-holomorphic archimedean representations, typically principal or complementary series rather than the holomorphic discrete-series picture.
 
 ## Eisenstein Series
 
@@ -243,4 +243,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Ch. VI, §15, printed p. 316 (PDF p. 331), states that Langlands formulated conjectures relating Galois groups to automorphic forms; the bibliography points to Shimura. This is a contextual mention, not a definition on adelic quotients, and it does not treat cuspidality, Fourier/Whittaker expansions, Eisenstein series, Rankin–Selberg integrals, or adelization. The note remains `unverified` pending a genuine automorphic-forms source.
+Sorensen constructs $\phi_f$ from a classical modular form, identifies it with a function on $\Gamma\backslash\mathrm{SL}_2(\mathbb R)$, and gives the smoothness, $K$-finiteness, $\mathfrak Z(\mathfrak g)$-finiteness, and moderate-growth template for automorphic forms on a semisimple real Lie group. He then adelizes $f$ to a function on the relevant $\mathrm{GL}_2(\mathbb A)$ quotient and records the resulting $L^2$ embedding. This verifies the classical-to-automorphic bridge and the real-group definition in the $\mathrm{SL}_2/\mathrm{GL}_2$ setting. Sorensen explicitly declines to give the precise general adelic definition; the arbitrary-reductive-group formulation, parabolic constant terms, Whittaker models, multiplicity one, Siegel/Hilbert/Maass examples, and general Rankin–Selberg integrals remain external. The note is `partially-verified`.

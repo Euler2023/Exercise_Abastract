@@ -8,7 +8,7 @@ tags:
   - lie-theory
   - infinite-dimensional
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -211,4 +211,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin's Lie-algebra section (Ch. 9, §9.6, printed pp. 275–277, PDF pp. 287–289) and Lang's Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564) stop at the ordinary Lie bracket, adjoint derivations, and matrix examples. None of the four books treats generalized Cartan matrices, Serre relations, Kac–Moody root systems, finite/affine/indefinite type, or the Weyl–Kac character formula. Those are the core of this note, so it remains `unverified` pending an external authoritative source.
+Five-source boundary audit: Artin's Lie-algebra section (Ch. 9, §9.6, printed pp. 275–277, PDF pp. 287–289) and Lang's Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564) stop at the ordinary Lie bracket, adjoint derivations, and matrix examples. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), likewise uses only $\mathfrak{sl}_2$ and its Casimir. None of the five books treats generalized Cartan matrices, Serre relations, Kac–Moody root systems, finite/affine/indefinite type, or the Weyl–Kac character formula. Those are the core of this note, so it remains `unverified` pending an external authoritative source.

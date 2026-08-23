@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -226,4 +226,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Neukirch's concluding discussion mentions “motives” and motivic cohomology only as an external framework for special zeta values and points to conference literature. It does not define correspondences, adequate equivalence relations, pure or mixed motives, realizations, Tate motives, standard conjectures, motivic Galois groups, or Voevodsky's categories. A contextual mention is insufficient for the definitions here; the note remains `unverified`.
+Five-source boundary audit: Neukirch's concluding discussion mentions “motives” and motivic cohomology only as an external framework for special zeta values. Sorensen invokes the expectation that geometric Galois representations come from algebraic geometry and cites literature connecting motives and automorphic forms, but supplies no definition of a motive. The five sources do not define correspondences, adequate equivalence relations, pure or mixed motives, realizations, Tate motives, standard conjectures, motivic Galois groups, or Voevodsky's categories. Contextual mentions are insufficient; the note remains `unverified`.

@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -129,4 +129,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), verifies that $E(K)$ is a group of rational points and discusses its torsion and Galois action, but does not state finite generation. The checked Lang ANT and Neukirch slices mention Faltings and elliptic curves without proving weak Mordell–Weil, descent, height inequalities, rank algorithms, or the abelian-variety generalization. Because finite generation is the theorem's core, the note remains `unverified`.
+Five-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), verifies that $E(K)$ is a group of rational points and discusses its torsion and Galois action, but does not state finite generation. Sorensen states BSD using $\operatorname{rank}E(K)$ and constructs modular abelian varieties, but does not prove Mordell–Weil or supply its height/descent argument. The five sources do not establish weak Mordell–Weil, height inequalities, rank algorithms, or the abelian-variety generalization. Because finite generation is the theorem's core, the note remains `unverified`.

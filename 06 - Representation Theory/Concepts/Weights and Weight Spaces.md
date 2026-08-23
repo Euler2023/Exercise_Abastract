@@ -7,7 +7,7 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -228,4 +228,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: the checked books cover ordinary eigenspaces and elementary group representations, and Artin/Lang give only introductory Lie-algebra material. They do not define Cartan subalgebras, weights, weight lattices, dominant or highest weights, weight diagrams, or highest-weight classification. Because those notions are the substance of this note, no source-level upgrade is justified; it remains `unverified` pending an external Lie-representation source.
+Five-source boundary audit: the checked books cover ordinary eigenspaces and elementary group representations, and Artin/Lang give only introductory Lie-algebra material. Sorensen's use of the integer weight of a modular form is a different notion; his brief $\mathfrak{sl}_2$ discussion does not define Lie-representation weights. None of the five sources develops Cartan subalgebras, weight lattices, dominant or highest weights, weight diagrams, or highest-weight classification. The note remains `unverified` pending an external Lie-representation source.

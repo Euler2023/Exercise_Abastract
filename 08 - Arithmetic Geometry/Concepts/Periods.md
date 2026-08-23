@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - hodge-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -184,4 +184,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: occurrences of “period” in the algebra texts refer to periodic elements or analytic periodicity and do not define Kontsevich–Zagier periods or comparison isomorphisms. The checked number-theory chapters contain gamma factors and special zeta values but no period ring, Grothendieck period conjecture, Deligne periods, BSD period factors, or period domains. These lexical matches are false friends, so the note remains `unverified`.
+Five-source boundary audit: occurrences of “period” in the algebra texts refer to periodic elements or analytic periodicity and do not define Kontsevich–Zagier periods or comparison isomorphisms. Sorensen adds Mellin and contour integrals, gamma factors, and special $L$-values, but does not develop period algebras or comparison-period formalism. None of the five sources defines a period ring, Grothendieck's period conjecture, Deligne periods, BSD period factors, or period domains. These lexical matches are false friends, so the note remains `unverified`.

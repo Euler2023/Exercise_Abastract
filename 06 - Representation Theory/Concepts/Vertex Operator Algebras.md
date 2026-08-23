@@ -8,7 +8,7 @@ tags:
   - moonshine
   - infinite-dimensional
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -215,4 +215,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: none of Artin, either Lang volume, or Neukirch defines vertex operators, the Borcherds identity, conformal vectors, VOA modules, rationality, or modularity. The corpus contains only separate background on group representations, Lie algebras, modular forms, and the size of the Monster. These adjacent topics do not verify a VOA definition or theorem, so every substantive assertion in this note remains `unverified` pending a VOA source.
+Five-source boundary audit: none of Artin, either Lang volume, Neukirch, or Sorensen defines vertex operators, the Borcherds identity, conformal vectors, VOA modules, rationality, or VOA modularity. Sorensen adds a substantial classical modular-form treatment, but adjacent modular forms do not verify a VOA definition or theorem. Every substantive assertion in this note therefore remains `unverified` pending a dedicated VOA source.

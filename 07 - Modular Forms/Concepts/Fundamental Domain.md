@@ -6,8 +6,8 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 5, §5.3, printed pp. 190–192, PDF pp. 199–201"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -54,7 +54,7 @@ The boundary of $\mathcal{F}$ is identified as follows:
 > [!tip] Elliptic Points
 > - $i$ has stabilizer of order 2 (fixed by $S$)
 > - $\rho = e^{2\pi i/3}$ has stabilizer of order 3 (fixed by $ST$)
-> - $\rho^2 = e^{4\pi i/3} = -\bar{\rho}$ is equivalent to $\rho$
+> - The other boundary representative is $\rho+1=e^{\pi i/3}=-\bar\rho$, which is $T$-equivalent to $\rho$. By contrast, $\rho^2=e^{4\pi i/3}=\bar\rho$ lies in the lower half-plane and is not a point of $\mathbb H$.
 
 ## Cusps
 
@@ -84,7 +84,7 @@ $$
 
 1. $\mathcal{F}$ has hyperbolic area $\pi/3$
 2. The quotient $\mathbb{H}/\Gamma$ has genus 0
-3. Every point in $\mathbb{H}$ has finitely many $\Gamma$-equivalent points with bounded imaginary part
+3. The action is properly discontinuous modulo finite stabilizers: for compact $A,B\subset\mathbb H$, only finitely many $\gamma\in\Gamma$ satisfy $A\cap\gamma B\ne\varnothing$
 
 ## Examples
 
@@ -117,4 +117,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Ch. VI, §15, printed pp. 318–319 (PDF pp. 333–334), defines the upper half-plane and the fractional-linear $\mathrm{SL}_2(\mathbb R)$ action used for modular forms. The checked corpus does not construct the standard fundamental domain, prove orbit existence/uniqueness modulo boundary identifications, analyze elliptic stabilizers and cusps, or compute its hyperbolic area. The geometric claims therefore remain `unverified`.
+Sorensen gives the closed standard region $\mathcal F=\{z\in\mathbb H:|z|\ge 1,\ |\operatorname{Re}z|\le \tfrac12\}$, locates the elliptic points $i$ and $\omega$ on its boundary, defines cusps as $\Gamma$-orbits in $\mathbb P^1(\mathbb Q)$, proves that $\mathrm{SL}_2(\mathbb Z)$ has one cusp, and constructs the compactification by adjoining cusps. This directly verifies the core domain/cusp picture. Sorensen refers the proof that this region is a fundamental domain to Serre; the exact boundary-identification theorem, hyperbolic area $\pi/3$, genus-$0$ assertion, and identification with $\mathbb P^1(\mathbb C)$ via $j$ are not proved in the checked pages. The note is therefore `partially-verified`, not fully verified.

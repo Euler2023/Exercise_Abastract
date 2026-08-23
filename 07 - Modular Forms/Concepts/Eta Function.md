@@ -6,7 +6,7 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -130,4 +130,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Ch. VI, §15, printed pp. 317–318 (PDF pp. 332–333), verifies the product $\Delta=q\prod_{n\ge1}(1-q^n)^{24}$, which is formally $\eta^{24}$ under the standard normalization. It does not define $\eta$ itself, choose the twenty-fourth-root multiplier, prove its transformation law, define Dedekind sums, or derive eta products and the pentagonal theorem. Those are essential to this note, so it remains `unverified`.
+Five-source boundary audit: Lang, Ch. VI, §15, printed pp. 317–318 (PDF pp. 332–333), verifies the product $\Delta=q\prod_{n\ge1}(1-q^n)^{24}$, which is formally $\eta^{24}$ under the standard normalization. Sorensen's Ch. 5 §5.6.2 also treats the modular discriminant, but does not define $\eta$, choose the twenty-fourth-root multiplier, prove its transformation law, define Dedekind sums, or derive eta products and the pentagonal theorem. Those are essential to this note, so it remains `unverified`.

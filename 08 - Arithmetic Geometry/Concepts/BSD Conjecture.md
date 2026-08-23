@@ -7,8 +7,8 @@ tags:
   - arithmetic-geometry
   - conjecture
 created: 2026-01-19
-source: "Unverified draft; a primary-source and computation-source audit is required"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 1, §1.3.3, Remark 1.88, printed p. 40, PDF p. 52"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -65,7 +65,7 @@ where $a_p = p + 1 - \#E(\mathbb{F}_p)$.
 > [!info] Functional Equation
 > $\Lambda(E, s) = w \cdot \Lambda(E, 2-s)$ where $w = \pm 1$ is the **root number**.
 
-The root number predicts the parity of the rank!
+The functional equation determines the parity of the **analytic** order of vanishing. BSD predicts that this is also the parity of the algebraic rank.
 
 ## Examples
 
@@ -131,4 +131,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang's finite-field elliptic zeta exercise and modular-connection pages supply adjacent background only; the appearances of the names Birch and Swinnerton-Dyer in references do not state the Birch–Swinnerton-Dyer conjecture. Neukirch's zeta/L-series chapters likewise do not formulate the elliptic-curve BSD leading-term formula. BSD is a conjecture, not a theorem; the Gross–Zagier–Kolyvagin rank-zero/rank-one claim, Tamagawa/Sha factors, examples, and numerical assertions all remain external and unrecomputed. The note remains `unverified`.
+Sorensen explicitly states the BSD rank conjecture $\operatorname{ord}_{s=1}L(s,E)=\operatorname{rank}E(K)$ for an elliptic curve over a number field, says the conjecture remains open even over $\mathbb Q$, and records that a conjectural leading Taylor coefficient involves arithmetic invariants including $\Sha(E)$, whose finiteness is not known in general. This verifies the basic rank formulation and its conjectural/open status. The exact leading-coefficient formula and normalization, the Gross–Zagier–Kolyvagin rank-$0/1$ theorem, root-number parity assertions, displayed numerical examples, and generalized BSD claims are not established by the checked page and remain external or unrecomputed. The note is `partially-verified`.

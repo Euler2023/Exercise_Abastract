@@ -9,7 +9,7 @@ tags:
   - representation-theory
   - p-adic
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -252,4 +252,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang ANT and Neukirch rigorously cover local fields and local class field theory, which supply the $n=1$ background, but none of the checked pages states local Langlands for $\mathrm{GL}_n$, defines Weil–Deligne representations, supercuspidals, $L$-packets, conductors/depth on both sides, or the archimedean correspondence. Local class field theory must not be silently promoted to the full local Langlands correspondence. The note remains `unverified`.
+Five-source boundary audit: Lang ANT and Neukirch rigorously cover local fields and local class field theory, which supply the $n=1$ background. Sorensen mentions the expected local compatibility for algebraic automorphic representations and points to results in $p$-adic local Langlands, but does not state or prove the classical local Langlands correspondence for $\mathrm{GL}_n$ [Ch. 3 introduction, printed pp. 126–127, PDF pp. 137–138]. The five sources do not define Weil–Deligne representations, supercuspidals, $L$-packets, conductors/depth on both sides, or the archimedean correspondence. Local class field theory and contextual mentions must not be promoted to full LLC; the note remains `unverified`.

@@ -6,7 +6,7 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -117,4 +117,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: searches for “Northcott” in Lang's *Algebra* lead to Northcott's commutative-algebra work, not the arithmetic Northcott finiteness theorem; occurrences of “height” likewise do not define projective or Weil heights. Neither Lang ANT nor Neukirch develops the Weil height machine or Néron–Tate height in the checked corpus. The basic normalization, Northcott property, canonical-height identities, and descent application therefore remain `unverified`.
+Five-source boundary audit: searches for “Northcott” in Lang's *Algebra* lead to Northcott's commutative-algebra work, not the arithmetic Northcott finiteness theorem; occurrences of “height” likewise do not define projective or Weil heights. Neither Lang ANT nor Neukirch develops the Weil height machine, and Sorensen's modular-form/Galois chapters add no Northcott or Néron–Tate treatment. The basic normalization, Northcott property, canonical-height identities, and descent application therefore remain `unverified`.

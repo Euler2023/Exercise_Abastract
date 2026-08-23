@@ -7,7 +7,7 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -174,4 +174,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Exercise XIII.36, printed p. 552 (PDF p. 567), treats the conjugation representation of $\mathrm{SL}_n$ on $\mathfrak{sl}_n$ and proves an irreducibility statement; Artin defines the matrix Lie algebra $\mathfrak{sl}_n$ in Ch. 9, §9.6. Neither source classifies finite-dimensional $\mathfrak{sl}_2$-modules, constructs highest-weight modules, computes the Casimir action, or proves Clebsch–Gordan. Those are the core claims here, so the note remains `unverified`.
+Five-source boundary audit: Lang, Exercise XIII.36, printed p. 552 (PDF p. 567), treats the conjugation representation of $\mathrm{SL}_n$ on $\mathfrak{sl}_n$ and proves an irreducibility statement; Artin defines the matrix Lie algebra $\mathfrak{sl}_n$ in Ch. 9, §9.6. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), gives the basis $X,Y,H$, their commutator relations, and the Casimir element, but does not classify finite-dimensional $\mathfrak{sl}_2$-modules, construct highest-weight modules, compute Casimir eigenvalues, or prove Clebsch–Gordan. Those are the core claims here, so the note remains `unverified`.

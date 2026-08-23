@@ -6,8 +6,8 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 5, §5.6.1, Prop. 5.32 and Cor. 5.33, printed pp. 204–210, PDF pp. 213–219"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -122,4 +122,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang's modular-connection section defines modular forms and mentions the Hecke algebra, while Lang ANT and Neukirch develop theta series and zeta/L-series. None of the checked pages defines holomorphic Eisenstein series, derives their Fourier expansions and Bernoulli coefficients, treats $E_2$ as quasimodular, or proves the structure theorem using $E_4,E_6$. The note therefore remains `unverified` despite verified adjacent modular-form background.
+Sorensen defines the lattice Eisenstein series $G_\kappa$ of weight $2\kappa$, proves its absolute/local-uniform convergence and modularity, derives its Fourier expansion, and normalizes it to $E_\kappa$ with Bernoulli-number coefficients [Prop. 5.32 and Cor. 5.33]. He also lists the first normalized series and records the decomposition $M_{2\kappa}=S_{2\kappa}\oplus\mathbb C E_\kappa$ for full level. This verifies the definition, modularity, normalized $q$-expansion, and examples after translating his $E_\kappa$ (weight $2\kappa$) to the present weight-indexed notation $E_k$. The quasimodular transformation of weight-$2$ $E_2$, the congruence-subgroup construction, and the full graded-ring theorem are not proved internally in the checked pages; Sorensen cites Serre for the latter. The note is `partially-verified`.

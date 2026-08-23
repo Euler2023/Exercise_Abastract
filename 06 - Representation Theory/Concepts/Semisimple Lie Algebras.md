@@ -7,7 +7,7 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -200,4 +200,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin defines Lie algebras in Ch. 9, §9.6 (printed pp. 275–277, PDF pp. 287–289) and his Exercises M.11–M.13 (printed p. 289, PDF p. 301) introduce the adjoint action and a trace form called the Killing form for classical matrix groups. These pages do not prove the radical criterion, Cartan's criterion, root decomposition, classification, Weyl theory, complete reducibility, Casimir theory, or Levi decomposition. The core semisimple structure theory remains `unverified`.
+Five-source boundary audit: Artin defines Lie algebras in Ch. 9, §9.6 (printed pp. 275–277, PDF pp. 287–289) and his Exercises M.11–M.13 (printed p. 289, PDF p. 301) introduce the adjoint action and a trace form called the Killing form for classical matrix groups. Sorensen, Ch. 5, §5.7.2, printed pp. 224–225 (PDF pp. 233–234), introduces the Casimir only for $\mathfrak{sl}_2$. None of these pages proves the radical criterion, Cartan's criterion, root decomposition, classification, Weyl theory, complete reducibility, general Casimir theory, or Levi decomposition. The core semisimple structure theory remains `unverified`.

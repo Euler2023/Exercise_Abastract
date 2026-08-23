@@ -8,7 +8,7 @@ tags:
   - langlands
   - endoscopy
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -251,4 +251,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: occurrences of “fundamental lemma” in the two number-theory books refer to unrelated technical lemmas, not the Langlands–Shelstad fundamental lemma. None of the four books defines orbital integrals, endoscopy, transfer factors, stable conjugacy, the Hitchin fibration, or Ngô's proof. Because title matching would be a false positive here, the entire note remains `unverified` pending the original or an authoritative expository source.
+Five-source boundary audit: occurrences of “fundamental lemma” in the algebraic-number-theory books refer to unrelated technical lemmas, not the Langlands–Shelstad fundamental lemma. Sorensen discusses special $\mathrm{GL}_2$ reciprocity and functoriality but never treats the Fundamental Lemma. None of the five books defines orbital integrals, endoscopy, transfer factors, stable conjugacy, the Hitchin fibration, or Ngô's proof. Because title matching would be a false positive here, the entire note remains `unverified` pending the original or an authoritative expository source.

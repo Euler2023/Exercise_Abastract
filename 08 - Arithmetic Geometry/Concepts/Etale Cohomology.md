@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -124,4 +124,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Neukirch's preface and later remarks say that étale cohomology is needed for the geometric interpretation of zeta functions and point to external references, but the book does not define the étale site, sheaves, cohomology functors, or $\ell$-adic limits in the checked pages. These mentions cannot verify the comparison, finiteness, Poincaré-duality, Weil-conjecture, or Galois-representation statements here. The note remains `unverified`.
+Five-source boundary audit: Neukirch's preface and later remarks say that étale cohomology is needed for the geometric interpretation of zeta functions and point to external references. Sorensen uses étale cohomology of modular curves in the external Deligne construction and explicitly says it will be treated mostly as a black box [Ch. 6, §§6.3–6.4, especially printed pp. 301–317, PDF pp. 309–325]. Neither source defines the étale site, sheaves, derived cohomology, or $\ell$-adic limits, and the checked pages do not prove comparison, finiteness, Poincaré duality, or the Weil conjectures. The note remains `unverified`.

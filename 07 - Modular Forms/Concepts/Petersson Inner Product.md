@@ -6,8 +6,8 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 5, §§5.7.2–5.7.3, Props. 5.57 and 5.59, printed pp. 225–228, PDF pp. 234–237; §5.9, Thm. 5.102, printed pp. 262–264, PDF pp. 271–273"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -35,23 +35,23 @@ The integrand $f(\tau)\overline{g(\tau)} y^k \cdot y^{-2}$ is:
 3. **Positive definite**: $\langle f, f \rangle > 0$ for $f \neq 0$
 4. Makes $S_k$ a **finite-dimensional Hilbert space**
 
-## Hecke Operators are Self-Adjoint
+## Hecke Adjointness Is Level-Dependent
 
-> [!abstract] Theorem
-> The [[07 - Modular Forms/Concepts/Hecke Operators|Hecke operators]] $T_n$ are self-adjoint:
+> [!abstract] Adjointness principle
+> The double-coset action satisfies an adjunction relation of the form
 > $$
-> \langle T_n f, g \rangle = \langle f, T_n g \rangle
+> \langle f|_k g, h\rangle=\langle f,h|_k g^{-1}\rangle.
 > $$
+> For full level this specializes to the usual self-adjointness of the standard Hecke operators. At general level and with nebentypus, the adjoint may involve the inverse double coset and character factors, so a blanket assertion that every $T_n$ is self-adjoint is too strong.
 
 > [!tip] Consequence
-> - Hecke eigenvalues are real
-> - Eigenspaces for distinct eigenvalues are orthogonal
-> - $S_k$ has an orthonormal basis of Hecke eigenforms
+> - In a genuinely self-adjoint setting, Hecke eigenvalues are real and eigenspaces for distinct eigenvalues are orthogonal.
+> - More generally, a commuting normal family can be simultaneously diagonalized.
 
 ## Orthogonality of Eigenforms
 
 > [!abstract] Theorem
-> If $f$ and $g$ are normalized Hecke eigenforms with different eigenvalues for some $T_n$, then:
+> In a setting where $T_n$ is normal (in particular, self-adjoint), if normalized Hecke eigenforms $f$ and $g$ have different $T_n$-eigenvalues, then:
 > $$
 > \langle f, g \rangle = 0
 > $$
@@ -64,19 +64,12 @@ The integrand $f(\tau)\overline{g(\tau)} y^k \cdot y^{-2}$ is:
 > \|f\|^2 = \langle f, f \rangle
 > $$
 
-For the [[07 - Modular Forms/Concepts/Discriminant Function|discriminant]]:
-$$
-\|\Delta\|^2 = \frac{\pi}{6} \cdot \frac{(10!)}{(4\pi)^{11}}
-$$
+The numerical value of a Petersson norm depends on the normalization of both the modular form and the quotient measure. No closed formula for $\|\Delta\|$ is asserted here without a separately checked normalization.
 
 ## Connection to L-functions
 
-> [!abstract] Theorem (Rankin-Selberg)
-> For normalized eigenforms $f, g \in S_k$:
-> $$
-> \langle f, g \rangle = \frac{(k-1)!}{(4\pi)^k} \cdot L(f \otimes \bar{g}, k)
-> $$
-> where $L(f \otimes \bar{g}, s)$ is the Rankin-Selberg L-function.
+> [!abstract] Rankin–Selberg relation
+> Unfolding an integral of $f(z)\overline{g(z)}y^k$ against a real-analytic Eisenstein series relates the Petersson pairing to a Rankin–Selberg Dirichlet series. In the diagonal case, the relevant Rankin–Selberg $L$-function has a simple pole whose residue is a normalization-dependent nonzero constant times $\langle f,f\rangle$.
 
 ## Period Integrals
 
@@ -124,4 +117,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang's modular-form section defines modular/cuspidal forms and mentions the Hecke algebra, but does not define the Petersson measure or inner product, prove convergence, establish Hecke adjointness, derive orthogonality, or connect norms to $L$-values. Neukirch's Haar-measure and theta integrals are different constructions and must not be conflated with Petersson theory. The note remains `unverified`.
+Sorensen defines a measure-normalized Petersson inner product, proves invariance and absolute convergence for cusp forms, identifies it isometrically with the corresponding automorphic $L^2$ pairing [Prop. 5.57], and proves the double-coset adjunction formula [Prop. 5.59]. His Rankin–Selberg chapter proves continuation and pole statements in its stated full-level normalization [Thm. 5.102]. The displayed definition in this note omits Sorensen's factor $1/\operatorname{meas}(\Gamma\backslash\mathbb H)$, an explicitly recorded normalization change. Claims about all levels/characters, exact Petersson norms, and general $L$-value formulas require additional hypotheses and sources. The note is `partially-verified`.

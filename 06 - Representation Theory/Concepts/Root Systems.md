@@ -7,7 +7,7 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -199,4 +199,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin remarks that the classification of simple complex algebraic groups rests on Lie-algebra classification (Ch. 9, §9.8, printed p. 283, PDF p. 295), but does not introduce roots, Weyl groups, Cartan matrices, Dynkin diagrams, or their classification. No core root-system treatment occurs in either Lang volume or Neukirch. The definitions, classical coordinate models, and classification theorem in this note thus remain `unverified` and need a dedicated Lie-theory source.
+Five-source boundary audit: Artin remarks that the classification of simple complex algebraic groups rests on Lie-algebra classification (Ch. 9, §9.8, printed p. 283, PDF p. 295), but does not introduce roots, Weyl groups, Cartan matrices, Dynkin diagrams, or their classification. Sorensen uses $\mathfrak{sl}_2$ and the Casimir in Ch. 5, §5.7.2, but has no root-system development; no core treatment occurs in either Lang volume or Neukirch. The definitions, classical coordinate models, and classification theorem in this note thus remain `unverified` and need a dedicated Lie-theory source.

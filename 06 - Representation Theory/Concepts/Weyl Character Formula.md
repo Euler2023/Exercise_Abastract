@@ -8,7 +8,7 @@ tags:
   - lie-theory
   - characters
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -232,4 +232,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: no checked section of Artin, either Lang book, or Neukirch states the Weyl denominator, character, or dimension formulas. Lang ANT and Neukirch do prove theta transformation formulas, but those do not verify the Weyl–Kac, Macdonald, BGG, Freudenthal, or Kostant claims collected here. The apparent overlap through Jacobi identities is only contextual, so the note remains `unverified`.
+Five-source boundary audit: no checked section of Artin, either Lang book, Neukirch, or Sorensen states the Weyl denominator, character, or dimension formulas. The theta and Eisenstein transformation formulas in the number-theory sources do not verify the Weyl–Kac, Macdonald, BGG, Freudenthal, or Kostant claims collected here. The apparent overlap through Jacobi identities is only contextual, so the note remains `unverified`.

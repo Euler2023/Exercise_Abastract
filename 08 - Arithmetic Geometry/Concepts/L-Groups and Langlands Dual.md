@@ -8,7 +8,7 @@ tags:
   - langlands
   - lie-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -271,4 +271,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin's classification remarks and introductory Lie algebra section do not develop based root data or reductive-group duality, while Lang and Neukirch mention Langlands conjectures/philosophy only at a high level. None defines the dual group, Weil-group semidirect product, $L$-parameters, $L$-homomorphisms, Satake isomorphism, or geometric Satake. The note remains `unverified`.
+Five-source boundary audit: Artin's classification remarks and introductory Lie algebra section do not develop based root data or reductive-group duality, while Lang and Neukirch mention Langlands conjectures/philosophy only at a high level. Sorensen says functoriality is organized by homomorphisms of $L$-groups but explicitly refers elsewhere for their definition [Ch. 6 introduction, printed p. 271, PDF p. 279]. None of the five sources defines the dual group, Weil-group semidirect product, $L$-parameters, Satake isomorphism, or geometric Satake. The note remains `unverified`.

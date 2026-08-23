@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - conjecture
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -169,4 +169,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: the checked books discuss Tate modules, local/global Tate duality, and Tate cohomology in other contexts, but none states the Tate conjecture on algebraic cycles or defines the cycle-class map into $\ell$-adic cohomology. These similarly named topics do not verify the divisorial/abelian-variety cases, Hodge comparison, endomorphism consequences, or known/open status claims in this note. It remains `unverified`.
+Five-source boundary audit: the checked books discuss Tate modules, local/global Tate duality, Tate's thesis, and Tate cohomology in other contexts, but none states the Tate conjecture on algebraic cycles or defines the cycle-class map into $\ell$-adic cohomology. Sorensen's use of Tate modules and black-box étale cohomology does not change that boundary. These similarly named topics do not verify the divisorial/abelian-variety cases, Hodge comparison, endomorphism consequences, or known/open status claims in this note. It remains `unverified`.

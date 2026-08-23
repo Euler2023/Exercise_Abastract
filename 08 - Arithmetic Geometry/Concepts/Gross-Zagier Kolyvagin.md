@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
-source: "Unverified draft; original Gross–Zagier and Kolyvagin sources require a dedicated audit"
+source: "Five-source boundary audit completed; original Gross–Zagier and Kolyvagin sources require a dedicated audit"
 source_status: unverified
 status: not-started
 ---
@@ -196,4 +196,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: none of Artin, either Lang volume, or Neukirch states the Gross–Zagier height formula or Kolyvagin's Euler-system theorem. The books provide only prerequisites such as Galois representations, modular-form connections, and zeta/L-series. The displayed formula is schematic—the omitted local factors, normalizations, Heegner hypotheses, and precise analytic-rank assumptions are essential—and it must not be cited as a theorem statement. Rank-zero/rank-one BSD consequences and computational claims remain external; the note stays `unverified`.
+Five-source boundary audit: none of Artin, either Lang volume, Neukirch, or Sorensen states the Gross–Zagier height formula or Kolyvagin's Euler-system theorem. Sorensen verifies the basic BSD rank conjecture only as a conjectural statement and supplies modular-form/Galois background, not these theorems. The displayed formula is schematic—the omitted local factors, normalizations, Heegner hypotheses, and precise analytic-rank assumptions are essential—and it must not be cited as a theorem statement. Rank-zero/rank-one BSD consequences and computational claims remain external; the note stays `unverified`.

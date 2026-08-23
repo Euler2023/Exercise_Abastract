@@ -7,7 +7,7 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -141,4 +141,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: the four books contain theta and modular-form material but no checked treatment of integer partitions, Euler's partition generating function, Ramanujan congruences, Hardy–Ramanujan asymptotics, Rademacher's exact series, rank/crank, or mock theta functions. The relation to $\eta^{-1}$ is not by itself a source for these statements. This note remains `unverified` and needs a partition-theory source.
+Five-source boundary audit: the five books contain substantial theta, zeta, and modular-form material, but Sorensen adds no treatment of integer partitions or the partition generating function. None of the checked sources establishes Ramanujan congruences, Hardy–Ramanujan asymptotics, Rademacher's exact series, rank/crank, or mock theta functions. The relation to $\eta^{-1}$ is not by itself a source for these statements. This note remains `unverified` and needs a partition-theory source.

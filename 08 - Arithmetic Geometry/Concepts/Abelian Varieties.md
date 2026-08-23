@@ -7,8 +7,8 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
-source_status: unverified
+source: "Claus Sorensen, From Classical L-Functions to Modern Reciprocity Laws, Ch. 6, §6.3.3, printed pp. 307–309, PDF pp. 315–317"
+source_status: partially-verified
 status: not-started
 ---
 
@@ -17,7 +17,7 @@ status: not-started
 ## Definition
 
 > [!info] Definition (Abelian Variety)
-> An **abelian variety** over a field $k$ is a complete algebraic variety $A$ with a group structure given by morphisms:
+> An **abelian variety** over a field $k$ is a complete, connected algebraic variety $A$ with a group structure given by morphisms:
 > - Multiplication: $m: A \times A \to A$
 > - Inverse: $i: A \to A$
 > - Identity: $e: \text{Spec}(k) \to A$
@@ -25,7 +25,7 @@ status: not-started
 > satisfying the group axioms.
 
 > [!tip] Key Fact
-> Completeness + group structure $\Rightarrow$ the group law is **commutative**!
+> Completeness + connected group-variety structure $\Rightarrow$ the group law is **commutative**.
 
 ## Basic Properties
 
@@ -81,7 +81,7 @@ There is a canonical isomorphism $(A^\vee)^\vee \cong A$.
 
 | Property | Description |
 |----------|-------------|
-| Degree | $\deg(\phi) = \#\ker(\phi)$ |
+| Degree | $\deg(\phi)$ is the length of the finite kernel group scheme; it equals the number of geometric kernel points when $\phi$ is separable |
 | Dual isogeny | $\phi^\vee: B^\vee \to A^\vee$ with $\deg(\phi) = \deg(\phi^\vee)$ |
 | Multiplication | $[n]: A \to A$ is an isogeny of degree $n^{2g}$ |
 
@@ -173,4 +173,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), discusses a general commutative algebraic group $A$, its torsion points, and associated Galois representations, beginning with elliptic curves. Lang ANT mentions applications to abelian varieties but does not define them. None of the bounded slices proves projectivity, complex-torus criteria, Mordell–Weil for abelian varieties, duality, polarizations, isogeny theory, endomorphism structure, Néron models, or their $L$-functions. The note therefore remains `unverified`.
+Sorensen constructs the Jacobian of a modular curve analytically as a complex torus, invokes Riemann's theorem to make it projective and hence an abelian variety over $\mathbb C$, records Abel's identification with $\operatorname{Pic}^0$, and defines the modular abelian variety $A_f$ as a quotient of the Jacobian with the expected product formula for its $L$-function. This directly verifies the Jacobian/complex-torus and modular-quotient examples, while the cited Riemann and Abel theorems are external inputs in Sorensen. The general definition, commutativity theorem, Riemann conditions, Mordell–Weil, torsion structure, duality, polarizations, isogenies, endomorphism classification, general BSD, and Néron models remain outside the checked source. The note is `partially-verified`.

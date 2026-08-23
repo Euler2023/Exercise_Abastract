@@ -9,7 +9,7 @@ tags:
   - sporadic-groups
   - modular-forms
 created: 2026-01-19
-source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source: "Five-source boundary audit completed; core topic requires an external authoritative source"
 source_status: unverified
 status: not-started
 ---
@@ -222,4 +222,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Four-source boundary audit: Artin, Ch. 9, §9.8, printed p. 283 (PDF p. 295), verifies only that the Monster is the largest sporadic group; Lang's modular-connection pages verify the discriminant product, and Neukirch verifies the $j$-invariant, but none connects their coefficients to Monster representations. The McKay observation, moonshine module, genus-zero theorem, Borcherds proof, generalized moonshine, and physical interpretations therefore remain wholly external and `unverified`.
+Five-source boundary audit: Artin, Ch. 9, §9.8, printed p. 283 (PDF p. 295), verifies only that the Monster is the largest sporadic group; Lang's modular-connection pages verify the discriminant product, and Neukirch verifies the $j$-invariant, but none connects their coefficients to Monster representations. Sorensen's modular-form chapter treats Eisenstein series, $\Delta$, and modular $L$-functions, but contains no McKay coefficient identity, Monster module, or moonshine theorem. The genus-zero theorem, Borcherds proof, generalized moonshine, and physical interpretations therefore remain wholly external and `unverified`.
