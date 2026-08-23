@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §15, printed p. 319, PDF p. 334"
+source_status: partially-verified
+status: not-started
 ---
 
 # Hecke Operators
@@ -14,11 +17,15 @@ created: 2026-01-19
 
 > [!info] Definition (Hecke Operator $T_n$)
 > For a [[07 - Modular Forms/Concepts/Modular Forms Definition|modular form]] $f \in M_k$ and positive integer $n$, the **Hecke operator** $T_n$ is defined by:
-> $$T_n f(\tau) = n^{k-1} \sum_{\substack{ad = n \\ 0 \leq b < d}} d^{-k} f\left(\frac{a\tau + b}{d}\right)$$
+> $$
+> T_n f(\tau) = n^{k-1} \sum_{\substack{ad = n \\ 0 \leq b < d}} d^{-k} f\left(\frac{a\tau + b}{d}\right)
+> $$
 
 > [!info] Definition (On Fourier Coefficients)
 > If $f(\tau) = \sum_{m=0}^{\infty} a_m q^m$, then:
-> $$(T_n f)(\tau) = \sum_{m=0}^{\infty} \left( \sum_{d | \gcd(m,n)} d^{k-1} a_{mn/d^2} \right) q^m$$
+> $$
+> (T_n f)(\tau) = \sum_{m=0}^{\infty} \left( \sum_{d | \gcd(m,n)} d^{k-1} a_{mn/d^2} \right) q^m
+> $$
 
 ## Key Properties
 
@@ -32,7 +39,9 @@ created: 2026-01-19
 
 > [!info] Definition (Hecke Eigenform)
 > A modular form $f \in M_k$ is a **Hecke eigenform** if it is a simultaneous eigenvector for all $T_n$:
-> $$T_n f = \lambda_n f$$
+> $$
+> T_n f = \lambda_n f
+> $$
 
 > [!abstract] Theorem (Normalized Eigenforms)
 > For a normalized eigenform $f = \sum a_n q^n$ (with $a_1 = 1$):
@@ -44,20 +53,26 @@ created: 2026-01-19
 
 > [!example] Example
 > For the [[07 - Modular Forms/Concepts/Eisenstein Series|Eisenstein series]] $E_k$:
-> $$T_n E_k = \sigma_{k-1}(n) E_k$$
+> $$
+> T_n E_k = \sigma_{k-1}(n) E_k
+> $$
 > So $E_k$ is an eigenform with eigenvalue $\sigma_{k-1}(n)$.
 
 ## Action on $\Delta$
 
 > [!example] Example
 > The [[07 - Modular Forms/Concepts/Discriminant Function|discriminant]] $\Delta$ is a Hecke eigenform:
-> $$T_n \Delta = \tau(n) \Delta$$
+> $$
+> T_n \Delta = \tau(n) \Delta
+> $$
 > where $\tau(n)$ is the Ramanujan tau function.
 
 ## Petersson Inner Product
 
 The Hecke operators are **self-adjoint** with respect to the [[07 - Modular Forms/Concepts/Petersson Inner Product|Petersson inner product]]:
-$$\langle T_n f, g \rangle = \langle f, T_n g \rangle$$
+$$
+\langle T_n f, g \rangle = \langle f, T_n g \rangle
+$$
 
 This implies eigenspaces for different eigenvalues are orthogonal.
 
@@ -74,7 +89,9 @@ This spectral decomposition is fundamental for:
 
 > [!info] Definition (Diamond Operator)
 > For [[07 - Modular Forms/Concepts/Congruence Subgroups|$\Gamma_1(N)$]], the **diamond operator** $\langle d \rangle$ for $d \in (\mathbb{Z}/N\mathbb{Z})^*$ acts by:
-> $$\langle d \rangle f(\tau) = f(\gamma_d \cdot \tau)$$
+> $$
+> \langle d \rangle f(\tau) = f(\gamma_d \cdot \tau)
+> $$
 > where $\gamma_d = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $a \equiv d^{-1}, d \equiv d \pmod{N}$.
 
 ## Hecke Algebra
@@ -99,3 +116,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang states that the space of modular forms of fixed type carries a Hecke algebra, singles out its eigenfunctions, and uses normalized Hecke eigenforms in the Deligne–Serre statement. The explicit double-coset or Fourier-coefficient formula for $T_n$, commutation relations, self-adjointness, multiplicativity, diamond operators, and spectral conclusions in this note are not established on that page and remain external.

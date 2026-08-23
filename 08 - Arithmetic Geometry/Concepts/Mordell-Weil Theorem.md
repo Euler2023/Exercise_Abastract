@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Mordell-Weil Theorem
@@ -15,7 +18,9 @@ created: 2026-01-19
 
 > [!abstract] Theorem (Mordell-Weil)
 > Let $A$ be an abelian variety over a number field $K$. Then the group of $K$-rational points $A(K)$ is **finitely generated**:
-> $$A(K) \cong \mathbb{Z}^r \oplus A(K)_{\text{tors}}$$
+> $$
+> A(K) \cong \mathbb{Z}^r \oplus A(K)_{\text{tors}}
+> $$
 > where $r \geq 0$ is the **rank** and $A(K)_{\text{tors}}$ is a finite group.
 
 For elliptic curves, this was proved by Mordell (1922) over $\mathbb{Q}$ and extended by Weil (1928) to abelian varieties over number fields.
@@ -94,7 +99,9 @@ It's unknown whether ranks are unbounded!
 ## Connection to BSD
 
 > [!abstract] BSD Conjecture (Analytic Rank)
-> $$\text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)$$
+> $$
+> \text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)
+> $$
 
 So far proved only for rank 0 and 1 (Gross-Zagier, Kolyvagin).
 
@@ -119,3 +126,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), verifies that $E(K)$ is a group of rational points and discusses its torsion and Galois action, but does not state finite generation. The checked Lang ANT and Neukirch slices mention Faltings and elliptic curves without proving weak Mordell–Weil, descent, height inequalities, rank algorithms, or the abelian-variety generalization. Because finite generation is the theorem's core, the note remains `unverified`.

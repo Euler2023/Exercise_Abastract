@@ -6,6 +6,9 @@ tags:
   - definition
   - group-theory
 created: 2025-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, §2.4, printed pp. 46–47, PDF pp. 58–59"
+source_status: partially-verified
+status: not-started
 ---
 
 # Cyclic Groups
@@ -93,3 +96,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

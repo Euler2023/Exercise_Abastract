@@ -13,6 +13,8 @@ tags:
   - norm-and-trace
 created: 2026-08-13
 source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §6, Theorems 6.1 and 6.3, printed pp. 288–290, PDF pp. 303–305"
+source_status: verified
+status: not-started
 ---
 
 # Hilbert's Theorem 90

@@ -8,7 +8,7 @@ tags:
   - group-theory
   - subgroups
   - proof
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.5"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.5, printed p. 70, PDF p. 82"
 created: 2026-08-10
 ---
 
@@ -59,4 +59,4 @@ created: 2026-08-10
 
 This proves that the usual subgroup definition does not add an independent requirement when it specifies the identity and inverses inherited from $G$.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.5]. The proof uses only the group axioms and uniqueness of inverses.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.5, printed p. 70, PDF p. 82]. The proof uses only the group axioms and uniqueness of inverses.

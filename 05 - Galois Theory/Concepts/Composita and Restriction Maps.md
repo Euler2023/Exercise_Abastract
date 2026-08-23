@@ -7,6 +7,9 @@ tags:
   - composita
   - restriction-maps
 created: 2026-08-12
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §1, printed pp. 261–269, PDF pp. 276–284"
+source_status: partially-verified
+status: not-started
 ---
 
 # Composita and Restriction Maps

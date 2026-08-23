@@ -13,6 +13,8 @@ tags:
   - rotations
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 3, printed pp. 159–163, PDF pp. 171–175"
+source_status: verified
+status: not-started
 ---
 
 # Rotations, Reflections, and Glide Reflections

@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. XII, §§1–6, printed pp. 465–491, PDF pp. 480–506; Serge Lang, Algebraic Number Theory, 2nd ed., Chs. II and V, printed pp. 31–56 and 99–122, PDF pp. 43–68 and 108–131"
+source_status: partially-verified
+status: not-started
 ---
 
 # Valuations and Places
@@ -85,7 +88,7 @@ For a number field $K$:
 ## Local Fields
 
 > [!info] Definition
-> A **local field** is a complete field with respect to a discrete valuation with finite residue field.
+> A **non-Archimedean local field** is a field complete with respect to a nontrivial discrete valuation and having finite residue field.
 
 Examples:
 - $\mathbb{Q}_p$ (characteristic 0)
@@ -105,3 +108,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang's *Algebra* supplies the abstract absolute-value, completion, and valuation framework; *Algebraic Number Theory* specializes it to number fields and the product formula. The two cited slices were checked for these core definitions. Ostrowski's theorem and every example have not been audited proof by proof, so the overall status remains partially verified.

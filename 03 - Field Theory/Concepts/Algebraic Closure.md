@@ -6,6 +6,9 @@ tags:
   - definition
   - field-theory
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 15, §15.10, Thm. 15.10.1, printed pp. 471–472, PDF pp. 483–484 (circle-image proof only)"
+source_status: partially-verified
+status: not-started
 figures:
   - "Attachments/artin-algebra-2e-ch15-ex10.4-polynomial-circle-images.png"
 ---
@@ -36,9 +39,9 @@ figures:
 
 1. Every field has an algebraic closure (requires Zorn's Lemma)
 2. The algebraic closure is unique up to isomorphism
-3. $\overline{F}$ is the smallest algebraically closed field containing $F$
+3. After fixing an embedding into an algebraically closed overfield, $\overline{F}$ may be identified with the subfield of elements algebraic over $F$; the phrase “smallest algebraically closed field containing $F$” is only meaningful relative to such a choice
 4. $\overline{\overline{F}} = \overline{F}$ (already closed)
-5. If $E/F$ is algebraic and $E$ is algebraically closed, then $E = \overline{F}$
+5. If $E/F$ is algebraic and $E$ is algebraically closed, then $E$ is an algebraic closure of $F$ and hence is $F$-isomorphic to $\overline{F}$; literal equality requires a chosen common overfield and identification
 
 ## Examples
 
@@ -197,3 +200,6 @@ FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
 
+## Source and Proof Status
+
+This note has a named source, but its current citation does not provide complete printed-page and physical-PDF-page provenance for every substantive claim. Treat the definitions and theorem statements as only partially source-verified until a bounded page-level audit is recorded.

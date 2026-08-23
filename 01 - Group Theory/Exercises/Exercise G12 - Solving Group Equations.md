@@ -8,7 +8,7 @@ tags:
   - group-theory
   - equations
   - proof
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.3"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.3, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -72,4 +72,4 @@ created: 2026-08-10
 
 The expression $x^{-1}w^{-1}z$ cannot be reordered unless additional commutativity hypotheses are given.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.3]. The negative answer in part (b) is proved by an explicit counterexample in $S_3$.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.3, printed p. 69, PDF p. 81]. The negative answer in part (b) is proved by an explicit counterexample in $S_3$.

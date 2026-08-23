@@ -7,6 +7,9 @@ tags:
   - group-theory
   - classification
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 7, §§7.4–7.5, printed pp. 199–202, PDF pp. 211–214; Ch. 9, §9.8, printed p. 283, PDF p. 295"
+source_status: partially-verified
+status: not-started
 ---
 
 # Simple Groups
@@ -39,7 +42,7 @@ Simple groups are the "atoms" of group theory—they cannot be broken down into 
 > Every finite simple group is isomorphic to one of the following:
 > 1. **Cyclic**: $\mathbb{Z}/p\mathbb{Z}$ for prime $p$
 > 2. **Alternating**: $A_n$ for $n \geq 5$
-> 3. **Groups of Lie type**: 16 infinite families
+> 3. **Groups of Lie type**: infinite families over finite fields
 > 4. **Sporadic groups**: 26 exceptional groups
 
 This theorem, completed around 2004, is one of the greatest achievements in mathematics. The proof spans thousands of pages across hundreds of papers.
@@ -50,7 +53,7 @@ This theorem, completed around 2004, is one of the greatest achievements in math
 |------|----------|-------|
 | Cyclic | $\mathbb{Z}_2, \mathbb{Z}_3, \mathbb{Z}_5, \ldots$ | Infinitely many |
 | Alternating | $A_5, A_6, A_7, \ldots$ | Infinitely many |
-| Lie type | $\text{PSL}_n(q)$, $\text{PSU}_n(q)$, $E_8(q)$, ... | 16 families |
+| Lie type | $\text{PSL}_n(q)$, $\text{PSU}_n(q)$, $E_8(q)$, ... | Several infinite families; the count depends on convention |
 | Sporadic | $M_{11}$, $M_{24}$, $\mathbb{M}$, ... | Exactly 26 |
 
 ## Examples
@@ -82,7 +85,9 @@ These are the **only** abelian simple groups.
 ### Groups of Lie Type
 
 > [!example] Projective Special Linear Groups
-> $$\text{PSL}_n(q) = \text{SL}_n(\mathbb{F}_q) / Z(\text{SL}_n(\mathbb{F}_q))$$
+> $$
+> \text{PSL}_n(q) = \text{SL}_n(\mathbb{F}_q) / Z(\text{SL}_n(\mathbb{F}_q))
+> $$
 >
 > Simple for $n \geq 2$, except:
 > - $\text{PSL}_2(\mathbb{F}_2) \cong S_3$ (not simple)
@@ -107,13 +112,17 @@ Important isomorphisms:
 > | $\mathbb{M}$ | $\approx 8 \times 10^{53}$ | Fischer, Griess |
 
 The **Monster group** $\mathbb{M}$ is the largest sporadic group, with order:
-$$|\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71$$
+$$
+|\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71
+$$
 
 ## Composition Series
 
 > [!info] Definition (Composition Series)
 > A **composition series** for a group $G$ is a chain:
-> $$\{e\} = G_0 \triangleleft G_1 \triangleleft \cdots \triangleleft G_n = G$$
+> $$
+> \{e\} = G_0 \triangleleft G_1 \triangleleft \cdots \triangleleft G_n = G
+> $$
 > where each quotient $G_{i+1}/G_i$ is simple.
 
 > [!abstract] Jordan-Hölder Theorem
@@ -124,7 +133,9 @@ This justifies viewing simple groups as the building blocks of all finite groups
 ### Example
 
 > [!example] Composition Series of $S_4$
-> $$\{e\} \triangleleft V_4 \triangleleft A_4 \triangleleft S_4$$
+> $$
+> \{e\} \triangleleft V_4 \triangleleft A_4 \triangleleft S_4
+> $$
 >
 > Composition factors:
 > - $V_4/\{e\} \cong V_4 \cong \mathbb{Z}_2 \times \mathbb{Z}_2$ (not simple, need refinement)
@@ -137,7 +148,7 @@ This justifies viewing simple groups as the building blocks of all finite groups
 > - $\mathbb{Z}_4$: has normal subgroup $\{0, 2\}$
 > - $S_n$ for $n \geq 3$: has $A_n \trianglelefteq S_n$
 > - $A_4$: has $V_4 \trianglelefteq A_4$ (Klein four-group)
-> - Any group with non-trivial center: $Z(G) \trianglelefteq G$
+> - Any group whose center is a nontrivial proper subgroup: $\{e\}\subsetneq Z(G)\subsetneq G$
 
 ## Importance in Mathematics
 
@@ -192,3 +203,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Artin supplies the definition of a simple group, proves $A_5$ simple from its class equation, proves $A_n$ simple for $n\ge 5$, and records the finite-simple-group taxonomy into prime-order cyclic, alternating, Lie-type, and 26 sporadic groups on the cited pages. The homomorphism characterization and the elementary examples are proved directly in this note. The full Classification of Finite Simple Groups, detailed Lie-type assertions, the sporadic data, Jordan–Hölder material, and the stated proof strategies were not proved in the checked slices and remain external inputs.

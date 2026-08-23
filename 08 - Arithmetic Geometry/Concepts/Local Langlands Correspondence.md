@@ -9,6 +9,9 @@ tags:
   - representation-theory
   - p-adic
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Local Langlands Correspondence
@@ -29,7 +32,9 @@ Let $F$ be a **local field**:
 
 > [!info] Definition (Weil Group)
 > The **Weil group** $W_F$ of a local field $F$ fits in:
-> $$1 \to I_F \to W_F \to \mathbb{Z} \to 0$$
+> $$
+> 1 \to I_F \to W_F \to \mathbb{Z} \to 0
+> $$
 >
 > where $I_F$ is the inertia group and $\mathbb{Z} \cong \text{Gal}(\overline{\mathbb{F}}_q / \mathbb{F}_q)$ via Frobenius.
 >
@@ -53,7 +58,9 @@ These capture the "motivic" Galois representations at a prime.
 > **(Harris-Taylor 2001, Henniart 2000)**
 >
 > There is a canonical bijection:
-> $$\text{rec}_F: \mathcal{A}_n(F) \xrightarrow{\sim} \mathcal{G}_n(F)$$
+> $$
+> \text{rec}_F: \mathcal{A}_n(F) \xrightarrow{\sim} \mathcal{G}_n(F)
+> $$
 >
 > where:
 > - $\mathcal{A}_n(F)$ = isomorphism classes of irreducible smooth representations of $\text{GL}_n(F)$
@@ -64,10 +71,14 @@ These capture the "motivic" Galois representations at a prime.
 The correspondence is uniquely characterized by:
 
 1. **L-function matching**:
-$$L(s, \pi \times \pi') = L(s, \text{rec}(\pi) \otimes \text{rec}(\pi'))$$
+$$
+L(s, \pi \times \pi') = L(s, \text{rec}(\pi) \otimes \text{rec}(\pi'))
+$$
 
 2. **ε-factor matching**:
-$$\varepsilon(s, \pi \times \pi', \psi) = \varepsilon(s, \text{rec}(\pi) \otimes \text{rec}(\pi'), \psi)$$
+$$
+\varepsilon(s, \pi \times \pi', \psi) = \varepsilon(s, \text{rec}(\pi) \otimes \text{rec}(\pi'), \psi)
+$$
 
 3. **Compatibility with class field theory** for $n = 1$
 
@@ -79,7 +90,9 @@ $$\varepsilon(s, \pi \times \pi', \psi) = \varepsilon(s, \text{rec}(\pi) \otimes
 
 > [!example] GL₁ case
 > The correspondence is the **local Artin map**:
-> $$F^\times \xrightarrow{\sim} W_F^{\text{ab}}$$
+> $$
+> F^\times \xrightarrow{\sim} W_F^{\text{ab}}
+> $$
 >
 > Characters of $F^\times$ ↔ 1-dimensional Weil representations
 
@@ -87,13 +100,17 @@ $$\varepsilon(s, \pi \times \pi', \psi) = \varepsilon(s, \text{rec}(\pi) \otimes
 
 > [!example] Unramified representations
 > For $\pi$ unramified (spherical), $\text{rec}(\pi)$ is unramified:
-> $$\text{rec}(\pi)(\text{Frob}) = \begin{pmatrix} \alpha & 0 \\ 0 & \beta \end{pmatrix}$$
+> $$
+> \text{rec}(\pi)(\text{Frob}) = \begin{pmatrix} \alpha & 0 \\ 0 & \beta \end{pmatrix}
+> $$
 >
 > where $\alpha, \beta$ are the Satake parameters of $\pi$.
 
 > [!example] Steinberg representation
 > The Steinberg representation $\text{St}$ corresponds to:
-> $$\text{rec}(\text{St}) = \left( \begin{pmatrix} |\cdot|^{1/2} & 0 \\ 0 & |\cdot|^{-1/2} \end{pmatrix}, N = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \right)$$
+> $$
+> \text{rec}(\text{St}) = \left( \begin{pmatrix} |\cdot|^{1/2} & 0 \\ 0 & |\cdot|^{-1/2} \end{pmatrix}, N = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \right)
+> $$
 
 > [!example] Supercuspidal representations
 > Supercuspidal $\pi$ ↔ irreducible Weil representations (no monodromy)
@@ -113,7 +130,9 @@ $$\varepsilon(s, \pi \times \pi', \psi) = \varepsilon(s, \text{rec}(\pi) \otimes
 
 > [!info] Definition (L-parameter)
 > A **Langlands parameter** (or L-parameter) for a reductive group $G$ over $F$ is a homomorphism:
-> $$\phi: W_F \times \text{SL}_2(\mathbb{C}) \to {}^L G$$
+> $$
+> \phi: W_F \times \text{SL}_2(\mathbb{C}) \to {}^L G
+> $$
 >
 > satisfying certain conditions (admissibility).
 
@@ -131,7 +150,9 @@ For other groups: L-packets can have multiple elements.
 
 > [!abstract] Local Langlands Conjecture (General)
 > There should be a partition:
-> $$\{\text{Irred. smooth reps of } G(F)\} = \bigsqcup_\phi \Pi_\phi$$
+> $$
+> \{\text{Irred. smooth reps of } G(F)\} = \bigsqcup_\phi \Pi_\phi
+> $$
 >
 > where $\phi$ ranges over L-parameters.
 
@@ -170,14 +191,18 @@ Supercuspidals are constructed via:
 
 > [!info] Definition
 > The **depth** of a representation $\pi$ measures its ramification:
-> $$\text{depth}(\pi) = \min\{r : \pi^{G_r} \neq 0\}$$
+> $$
+> \text{depth}(\pi) = \min\{r : \pi^{G_r} \neq 0\}
+> $$
 >
 > where $G_r$ is the Moy-Prasad filtration.
 
 ### Conductor
 
 Under LLC, depth corresponds to **Artin conductor**:
-$$\text{depth}(\pi) \leftrightarrow \text{conductor of } \text{rec}(\pi)$$
+$$
+\text{depth}(\pi) \leftrightarrow \text{conductor of } \text{rec}(\pi)
+$$
 
 ## Archimedean Case
 
@@ -224,3 +249,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang ANT and Neukirch rigorously cover local fields and local class field theory, which supply the $n=1$ background, but none of the checked pages states local Langlands for $\mathrm{GL}_n$, defines Weil–Deligne representations, supercuspidals, $L$-packets, conductors/depth on both sides, or the archimedean correspondence. Local class field theory must not be silently promoted to the full local Langlands correspondence. The note remains `unverified`.

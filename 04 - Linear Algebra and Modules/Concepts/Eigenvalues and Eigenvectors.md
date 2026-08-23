@@ -6,6 +6,9 @@ tags:
   - definition
   - linear-algebra
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 4, §§4.4–4.6, printed pp. 111–119, PDF pp. 123–131"
+source_status: verified
+status: not-started
 ---
 
 # Eigenvalues and Eigenvectors
@@ -25,8 +28,10 @@ created: 2026-01-19
 
 > [!info] Definition (Characteristic Polynomial)
 > For a matrix $A \in M_n(F)$:
-> $$p_A(\lambda) = \det(A - \lambda I)$$
-> Eigenvalues are the roots of $p_A(\lambda) = 0$.
+> $$
+> p_A(t) = \det(tI-A).
+> $$
+> Eigenvalues are the roots of $p_A(t)=0$. This is the sign convention used in Artin; the alternative convention $\det(A-tI)$ has the same roots but differs by the factor $(-1)^n$.
 
 > [!abstract] Cayley-Hamilton Theorem
 > Every matrix satisfies its own characteristic polynomial: $p_A(A) = 0$.
@@ -64,7 +69,7 @@ created: 2026-01-19
 | Matrix Type         | Eigenvalue Properties |
 | ------------------- | --------------------- |
 | Symmetric/Hermitian | All real eigenvalues  |
-| Orthogonal/Unitary  | $\lambda=1$           |
+| Orthogonal/Unitary  | Every complex eigenvalue satisfies $|\lambda|=1$ |
 | Positive definite   | All $\lambda > 0$     |
 | Nilpotent           | All $\lambda = 0$     |
 
@@ -83,3 +88,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+The definitions, characteristic-polynomial convention, and basic eigenvalue statements were checked against Artin, Chapter 4, §§4.4–4.6 [printed pp. 111–119, PDF pp. 123–131]. The short explanations and examples in this note are independent exposition. The row about orthogonal/unitary matrices uses the standard norm-preservation argument and is not stated in the cited Artin slice.

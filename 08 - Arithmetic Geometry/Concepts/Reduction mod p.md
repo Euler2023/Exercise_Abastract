@@ -6,6 +6,9 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. III, §2, printed p. 207, PDF p. 226"
+source_status: partially-verified
+status: not-started
 ---
 
 # Reduction mod p
@@ -18,18 +21,20 @@ For a variety $X$ defined over $\mathbb{Q}$ (or a number field), we can "reduce"
 
 > [!info] Definition
 > For $E: y^2 = x^3 + ax + b$ with $a, b \in \mathbb{Z}$, the **reduction mod $p$** is:
-> $$\tilde{E}_p: y^2 = x^3 + \bar{a}x + \bar{b}$$
+> $$
+> \tilde{E}_p: y^2 = x^3 + \bar{a}x + \bar{b}
+> $$
 > over $\mathbb{F}_p$, where $\bar{a}, \bar{b}$ are $a, b$ mod $p$.
 
 ## Types of Reduction
 
 | Type | Condition | $\tilde{E}_p$ | Terminology |
 |------|-----------|---------------|-------------|
-| Good | $p \nmid \Delta$ | Smooth elliptic curve | Good reduction |
-| Multiplicative | $p \| \Delta$, $p \nmid c_4$ | Nodal cubic | Semistable |
-| Additive | $p | \gcd(\Delta, c_4)$ | Cuspidal cubic | Unstable |
+| Good | $v_p(\Delta)=0$ | Smooth elliptic curve | Good reduction |
+| Multiplicative | $v_p(\Delta)>0$, $v_p(c_4)=0$ | Nodal cubic | Multiplicative; semistable |
+| Additive | $v_p(\Delta)>0$, $v_p(c_4)>0$ | More degenerate singular cubic | Additive |
 
-Here $\Delta$ is the discriminant and $c_4 = -48a$.
+Here $\Delta$ and $c_4$ are computed from a minimal integral Weierstrass model at $p$; for the short model above, $c_4=-48a$.
 
 ## Arithmetic Significance
 
@@ -57,7 +62,9 @@ Here $\Delta$ is the discriminant and $c_4 = -48a$.
 
 > [!info] Definition
 > For good reduction at $p$, there is a reduction map:
-> $$\text{red}_p: E(\mathbb{Q}) \to \tilde{E}_p(\mathbb{F}_p)$$
+> $$
+> \text{red}_p: E(\mathbb{Q}_p) \to \tilde{E}_p(\mathbb{F}_p)
+> $$
 > which is a group homomorphism.
 
 The kernel $E_1(\mathbb{Q}_p) = \ker(\text{red}_p)$ consists of points with "good $p$-adic properties."
@@ -66,7 +73,9 @@ The kernel $E_1(\mathbb{Q}_p) = \ker(\text{red}_p)$ consists of points with "goo
 
 > [!info] Definition (Special Fiber)
 > For a scheme $\mathcal{X}$ over $\mathbb{Z}$, the **special fiber** at $p$ is:
-> $$\mathcal{X}_p = \mathcal{X} \times_{\mathbb{Z}} \mathbb{F}_p$$
+> $$
+> \mathcal{X}_p = \mathcal{X} \times_{\mathbb{Z}} \mathbb{F}_p
+> $$
 
 For [[08 - Arithmetic Geometry/Concepts/Schemes|Spec($\mathbb{Z}$)]], each prime $p$ gives a point, and the fiber is the reduction mod $p$.
 
@@ -84,8 +93,7 @@ For [[08 - Arithmetic Geometry/Concepts/Schemes|Spec($\mathbb{Z}$)]], each prime
 
 > [!example] Example 3: Counting points
 > $E: y^2 = x^3 + 1$ over $\mathbb{F}_7$:
-> Points: $(0, \pm 1), (2, \pm 3), (6, 0), \mathcal{O}$
-> $\#\tilde{E}_7(\mathbb{F}_7) = 7$, so $a_7 = 7 + 1 - 7 = 1$
+> A direct count gives $\#\tilde{E}_7(\mathbb{F}_7)=12$, so $a_7=7+1-12=-4$.
 
 ## Serre-Tate Theory
 
@@ -109,3 +117,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch explicitly describes reduction modulo a prime for smooth proper curves over a number field and defines good reduction by smoothness of the reduced curve on the cited page. This verifies the general reduction/good-reduction idea only. The elliptic-curve reduction table, minimal and Néron models, local factors, conductor statements, point-counting example, special fibers in scheme language, and Serre–Tate theorem are not contained in that slice; they remain independent exposition or external inputs requiring their own sources.

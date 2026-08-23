@@ -7,6 +7,9 @@ tags:
   - linear-algebra
   - quadratic-forms
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.1–8.2 and §8.7, printed pp. 229–232 and 245–249, PDF pp. 241–244 and 257–261"
+source_status: partially-verified
+status: not-started
 ---
 
 # Quadratic Forms

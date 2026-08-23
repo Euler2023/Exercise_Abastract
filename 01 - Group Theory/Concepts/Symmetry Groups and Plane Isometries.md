@@ -12,6 +12,8 @@ tags:
   - plane-isometries
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Sections 1–3, printed pp. 154–163, PDF pp. 166–175"
+source_status: verified
+status: not-started
 ---
 
 # Symmetry Groups and Plane Isometries

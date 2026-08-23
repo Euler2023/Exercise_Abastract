@@ -6,6 +6,9 @@ tags:
   - group-theory
   - quaternion-group
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, §2.4, printed p. 47, PDF p. 59"
+source_status: partially-verified
+status: not-started
 ---
 
 # Quaternion Group
@@ -75,4 +78,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-The presentation and elementary group properties are standard. The Galois realization is the subject of J. S. Milne, *Fields and Galois Theory*, v5.10, Exercise 3-3, printed p. 46, PDF p. 46; the complete proof in Exercise Gal76 is independently derived.
+Artin gives the eight-matrix model, the generators $i,j$, and the multiplication rules for the quaternion group on the cited page. The presentation, central-extension interpretation, subgroup properties, and the displayed matrix consequences are independently derived from those rules. The Galois realization is attributed here to J. S. Milne, *Fields and Galois Theory*, v5.10, Exercise 3-3, printed p. 46, PDF p. 46, but that separate source was not reopened in this audit; the complete proof in Exercise Gal76 is independently derived.

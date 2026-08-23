@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. III, §2, printed p. 207, PDF p. 226"
+source_status: partially-verified
+status: not-started
 ---
 
 # Faltings' Theorem
@@ -14,7 +17,7 @@ created: 2026-01-19
 ## Statement
 
 > [!abstract] Theorem (Faltings, 1983)
-> Let $C$ be a smooth projective curve of genus $g \geq 2$ over a number field $K$. Then $C(K)$ is **finite**.
+> Let $C$ be a smooth projective geometrically integral curve of genus $g \geq 2$ over a number field $K$. Then $C(K)$ is **finite**.
 
 This was formerly known as the **Mordell Conjecture** (1922).
 
@@ -35,7 +38,7 @@ This is one of the most important finiteness results in Diophantine geometry:
 > (FLT says there are NO non-trivial solutions, which is stronger.)
 
 > [!example] Hyperelliptic Curves
-> $y^2 = f(x)$ with $\deg f \geq 5$ has genus $\geq 2$, so finitely many rational points.
+> If $f$ is squarefree and $\deg f\geq 5$, the smooth projective model of $y^2=f(x)$ has genus at least $2$, so it has finitely many rational points.
 
 ## Proof Ideas
 
@@ -52,7 +55,7 @@ Faltings' proof uses sophisticated techniques:
 > There are only finitely many abelian varieties of given dimension over $K$ with good reduction outside a finite set $S$.
 
 > [!abstract] Mordell-Lang Conjecture (Faltings)
-> For abelian variety $A$ and subvariety $X \subsetneq A$, the set $X \cap \Gamma$ is a finite union of cosets of subgroups, for any finitely generated subgroup $\Gamma \subseteq A(\bar{K})$.
+> For an abelian variety $A$ in characteristic $0$, a closed subvariety $X\subseteq A$, and a finitely generated subgroup $\Gamma\subseteq A(\bar K)$, the intersection $X(\bar K)\cap\Gamma$ is a finite union of cosets of subgroups of $\Gamma$.
 
 ## Effective Bounds?
 
@@ -64,23 +67,13 @@ Faltings' proof uses sophisticated techniques:
 - Chabauty's method when $\text{rank } J(K) < g$
 - Kim's non-abelian Chabauty
 
-## Example Computations
-
-> [!example] $y^2 = x^5 - x$
-> Genus 2 curve. By explicit computation:
-> $$C(\mathbb{Q}) = \{\infty_+, \infty_-, (0,0), (1,0), (-1,0)\}$$
-> Exactly 5 rational points.
-
-> [!example] $x^4 + y^4 = 1$
-> Genus 3 curve. The only rational points are:
-> $$(\pm 1, 0), (0, \pm 1)$$
-> (4 points, by explicit computation)
-
 ## Higher Dimensional Analogue
 
 > [!abstract] Lang's Conjecture
 > For a variety $X$ of general type over a number field $K$:
-> $$X(K) \text{ is not Zariski dense}$$
+> $$
+> X(K) \text{ is not Zariski dense}
+> $$
 
 This is wide open in general!
 
@@ -100,3 +93,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch states the Mordell conjecture in the form that a genus-$g>1$ algebraic equation over a number field has only finitely many solutions in that field, and explains that Faltings' proof proceeds from the Shafarevich finiteness result for curves with prescribed bad reduction. This verifies the core finiteness statement, not a proof. The proof-idea list, the abelian-variety Shafarevich formulation, Mordell–Lang, effectivity claims, Chabauty variants, and Lang's conjecture remain external inputs. Lang's *Algebraic Number Theory*, Ch. VIII, §5, printed pp. 170–172, PDF pp. 179–181, uses the same heading “Faltings' finiteness theorem” for a different theorem about semisimple $\ell$-adic representations; it is not evidence for the curve theorem recorded here.

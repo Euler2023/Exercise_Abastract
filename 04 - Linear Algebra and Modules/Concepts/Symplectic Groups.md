@@ -13,6 +13,8 @@ tags:
   - symplectic-groups
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 9, Section 1, printed pp. 261–262, PDF pp. 273–274"
+source_status: verified
+status: not-started
 ---
 
 # Symplectic Groups

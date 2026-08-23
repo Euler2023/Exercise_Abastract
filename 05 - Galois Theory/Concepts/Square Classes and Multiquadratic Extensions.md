@@ -7,6 +7,9 @@ tags:
   - square-classes
   - multiquadratic-extensions
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §§16.10–16.11, printed pp. 497–502, PDF pp. 509–514"
+source_status: partially-verified
+status: not-started
 ---
 
 # Square Classes and Multiquadratic Extensions

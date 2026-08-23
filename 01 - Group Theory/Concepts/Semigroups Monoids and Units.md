@@ -10,7 +10,9 @@ tags:
   - group-theory
   - monoids
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Sections 1-2"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, §§2.1–2.2, printed pp. 37–43, PDF pp. 49–55"
+source_status: partially-verified
+status: not-started
 ---
 
 # Semigroups, Monoids, and Units

@@ -6,6 +6,9 @@ tags:
   - definition
   - group-theory
 created: 2025-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 6, §§6.7–6.11, printed pp. 176–183, PDF pp. 188–195"
+source_status: partially-verified
+status: not-started
 ---
 
 # Group Actions
@@ -92,3 +95,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

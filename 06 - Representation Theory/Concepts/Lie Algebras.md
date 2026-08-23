@@ -7,6 +7,9 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 9, §9.6, printed pp. 275–277, PDF pp. 287–289"
+source_status: partially-verified
+status: not-started
 ---
 
 # Lie Algebras
@@ -157,3 +160,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

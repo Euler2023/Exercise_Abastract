@@ -8,6 +8,9 @@ tags:
   - lie-theory
   - characters
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Weyl Character Formula
@@ -30,28 +33,38 @@ Let $\mathfrak{g}$ be a semisimple Lie algebra with:
 
 > [!abstract] Theorem (Weyl Character Formula)
 > For a finite-dimensional irreducible representation $L(\lambda)$ with highest weight $\lambda$:
-> $$\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho)}}{\sum_{w \in W} \epsilon(w) e^{w(\rho)}}$$
+> $$
+> \text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho)}}{\sum_{w \in W} \epsilon(w) e^{w(\rho)}}
+> $$
 >
 > where $\epsilon(w) = (-1)^{\ell(w)}$ is the sign of $w$.
 
 ### Alternative Forms
 
 **Product form** (denominator identity):
-$$\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho)}}{\prod_{\alpha \in \Delta^+} (e^{\alpha/2} - e^{-\alpha/2})}$$
+$$
+\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho)}}{\prod_{\alpha \in \Delta^+} (e^{\alpha/2} - e^{-\alpha/2})}
+$$
 
 **Formal exponential notation**:
-$$\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho) - \rho}}{\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})}$$
+$$
+\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho) - \rho}}{\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})}
+$$
 
 ## The Weyl Denominator Formula
 
 > [!info] Theorem (Weyl Denominator Identity)
-> $$\sum_{w \in W} \epsilon(w) e^{w(\rho)} = e^\rho \prod_{\alpha \in \Delta^+} (1 - e^{-\alpha}) = \prod_{\alpha \in \Delta^+} (e^{\alpha/2} - e^{-\alpha/2})$$
+> $$
+> \sum_{w \in W} \epsilon(w) e^{w(\rho)} = e^\rho \prod_{\alpha \in \Delta^+} (1 - e^{-\alpha}) = \prod_{\alpha \in \Delta^+} (e^{\alpha/2} - e^{-\alpha/2})
+> $$
 
 This identity relates the Weyl group sum to a product over positive roots.
 
 ### Equivalent Form
 
-$$\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha}) = \sum_{w \in W} \epsilon(w) e^{w(\rho) - \rho}$$
+$$
+\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha}) = \sum_{w \in W} \epsilon(w) e^{w(\rho) - \rho}
+$$
 
 ## Example: $\mathfrak{sl}_2$
 
@@ -63,15 +76,21 @@ For $\mathfrak{sl}_2(\mathbb{C})$:
 
 ### Denominator Formula
 
-$$e^{\alpha/2} - e^{-\alpha/2} = e^{\rho} - e^{s_\alpha(\rho)} = e^{\rho}(1 - e^{-\alpha})$$
+$$
+e^{\alpha/2} - e^{-\alpha/2} = e^{\rho} - e^{s_\alpha(\rho)} = e^{\rho}(1 - e^{-\alpha})
+$$
 
 Setting $z = e^{\alpha/2}$:
-$$z - z^{-1}$$
+$$
+z - z^{-1}
+$$
 
 ### Character Formula
 
 For the $(n+1)$-dimensional representation $V_n$:
-$$\text{ch } V_n = \frac{e^{(n+1)\alpha/2} - e^{-(n+1)\alpha/2}}{e^{\alpha/2} - e^{-\alpha/2}} = \frac{z^{n+1} - z^{-(n+1)}}{z - z^{-1}}$$
+$$
+\text{ch } V_n = \frac{e^{(n+1)\alpha/2} - e^{-(n+1)\alpha/2}}{e^{\alpha/2} - e^{-\alpha/2}} = \frac{z^{n+1} - z^{-(n+1)}}{z - z^{-1}}
+$$
 
 This equals $z^n + z^{n-2} + \cdots + z^{-n}$, confirming weights $n, n-2, \ldots, -n$.
 
@@ -84,20 +103,28 @@ For $\mathfrak{sl}_3(\mathbb{C})$:
 
 ### Denominator
 
-$$\prod_{\alpha \in \Delta^+}(e^{\alpha/2} - e^{-\alpha/2}) = \sum_{w \in S_3} \epsilon(w) e^{w(\rho)}$$
+$$
+\prod_{\alpha \in \Delta^+}(e^{\alpha/2} - e^{-\alpha/2}) = \sum_{w \in S_3} \epsilon(w) e^{w(\rho)}
+$$
 
 Setting $x = e^{\alpha_1/2}$, $y = e^{\alpha_2/2}$:
-$$(x - x^{-1})(y - y^{-1})(xy - x^{-1}y^{-1})$$
+$$
+(x - x^{-1})(y - y^{-1})(xy - x^{-1}y^{-1})
+$$
 
 ## Weyl Dimension Formula
 
 > [!abstract] Corollary (Weyl Dimension Formula)
 > Taking the limit as formal exponentials approach 1:
-> $$\dim L(\lambda) = \prod_{\alpha \in \Delta^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}$$
+> $$
+> \dim L(\lambda) = \prod_{\alpha \in \Delta^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}
+> $$
 
 ### Example for $\mathfrak{sl}_2$
 
-$$\dim V_n = \frac{\langle n\alpha/2 + \alpha/2, \alpha \rangle}{\langle \alpha/2, \alpha \rangle} = \frac{(n+1)\langle \alpha, \alpha \rangle / 2}{\langle \alpha, \alpha \rangle / 2} = n + 1$$
+$$
+\dim V_n = \frac{\langle n\alpha/2 + \alpha/2, \alpha \rangle}{\langle \alpha/2, \alpha \rangle} = \frac{(n+1)\langle \alpha, \alpha \rangle / 2}{\langle \alpha, \alpha \rangle / 2} = n + 1
+$$
 
 ## Connection to Infinite-Dimensional Algebras
 
@@ -107,14 +134,18 @@ For Kac-Moody algebras, the formula generalizes:
 
 > [!abstract] Theorem (Weyl-Kac Character Formula)
 > For an integrable highest weight module $L(\lambda)$ over a Kac-Moody algebra:
-> $$\text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho) - \rho}}{\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})^{\text{mult}(\alpha)}}$$
+> $$
+> \text{ch } L(\lambda) = \frac{\sum_{w \in W} \epsilon(w) e^{w(\lambda + \rho) - \rho}}{\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})^{\text{mult}(\alpha)}}
+> $$
 
 The key difference: imaginary roots can have multiplicity $> 1$.
 
 ### Macdonald-Kac Denominator Identity
 
 > [!abstract] Theorem
-> $$\prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})^{\text{mult}(\alpha)} = \sum_{w \in W} \epsilon(w) e^{w(\rho) - \rho}$$
+> $$
+> \prod_{\alpha \in \Delta^+} (1 - e^{-\alpha})^{\text{mult}(\alpha)} = \sum_{w \in W} \epsilon(w) e^{w(\rho) - \rho}
+> $$
 
 ## Applications to Classical Identities
 
@@ -122,19 +153,25 @@ The key difference: imaginary roots can have multiplicity $> 1$.
 
 From the denominator identity for $\widehat{\mathfrak{sl}}_2$:
 
-$$\prod_{n=1}^\infty (1 - q^n)(1 - zq^{n-1})(1 - z^{-1}q^n) = \sum_{m \in \mathbb{Z}} (-1)^m z^m q^{m(m+1)/2}$$
+$$
+\prod_{n=1}^\infty (1 - q^n)(1 - zq^{n-1})(1 - z^{-1}q^n) = \sum_{m \in \mathbb{Z}} (-1)^m z^m q^{m(m+1)/2}
+$$
 
 ### Euler's Pentagonal Number Theorem
 
 Setting $z = 1$ in a related identity:
 
-$$\prod_{n=1}^\infty (1 - q^n) = \sum_{k \in \mathbb{Z}} (-1)^k q^{k(3k-1)/2}$$
+$$
+\prod_{n=1}^\infty (1 - q^n) = \sum_{k \in \mathbb{Z}} (-1)^k q^{k(3k-1)/2}
+$$
 
 The exponents $k(3k-1)/2$ are **pentagonal numbers**.
 
 ### Jacobi's Triple Product (Standard Form)
 
-$$\prod_{n=1}^\infty (1 - q^{2n})(1 + zq^{2n-1})(1 + z^{-1}q^{2n-1}) = \sum_{m \in \mathbb{Z}} z^m q^{m^2}$$
+$$
+\prod_{n=1}^\infty (1 - q^{2n})(1 + zq^{2n-1})(1 + z^{-1}q^{2n-1}) = \sum_{m \in \mathbb{Z}} z^m q^{m^2}
+$$
 
 This is the **Jacobi theta function** $\theta_3(z, q)$.
 
@@ -151,7 +188,9 @@ This is the **Jacobi theta function** $\theta_3(z, q)$.
 
 > [!info] Theorem (Bernstein-Gelfand-Gelfand)
 > There is an exact sequence:
-> $$0 \to \bigoplus_{w: \ell(w)=n} M(w \cdot \lambda) \to \cdots \to \bigoplus_{w: \ell(w)=1} M(w \cdot \lambda) \to M(\lambda) \to L(\lambda) \to 0$$
+> $$
+> 0 \to \bigoplus_{w: \ell(w)=n} M(w \cdot \lambda) \to \cdots \to \bigoplus_{w: \ell(w)=1} M(w \cdot \lambda) \to M(\lambda) \to L(\lambda) \to 0
+> $$
 >
 > where $w \cdot \lambda = w(\lambda + \rho) - \rho$ is the **dot action**.
 
@@ -160,11 +199,15 @@ This is the **Jacobi theta function** $\theta_3(z, q)$.
 ### Freudenthal Formula
 
 Recursively computes weight multiplicities:
-$$(\|\lambda + \rho\|^2 - \|\mu + \rho\|^2) m_\mu = 2\sum_{\alpha > 0} \sum_{k \geq 1} \langle \mu + k\alpha, \alpha \rangle m_{\mu + k\alpha}$$
+$$
+(\|\lambda + \rho\|^2 - \|\mu + \rho\|^2) m_\mu = 2\sum_{\alpha > 0} \sum_{k \geq 1} \langle \mu + k\alpha, \alpha \rangle m_{\mu + k\alpha}
+$$
 
 ### Kostant Multiplicity Formula
 
-$$m_\mu = \sum_{w \in W} \epsilon(w) P(w(\lambda + \rho) - (\mu + \rho))$$
+$$
+m_\mu = \sum_{w \in W} \epsilon(w) P(w(\lambda + \rho) - (\mu + \rho))
+$$
 
 where $P$ is the **Kostant partition function**.
 
@@ -186,3 +229,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: no checked section of Artin, either Lang book, or Neukirch states the Weyl denominator, character, or dimension formulas. Lang ANT and Neukirch do prove theta transformation formulas, but those do not verify the Weyl–Kac, Macdonald, BGG, Freudenthal, or Kostant claims collected here. The apparent overlap through Jacobi identities is only contextual, so the note remains `unverified`.

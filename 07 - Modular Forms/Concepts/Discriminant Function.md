@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §15, printed pp. 317–319, PDF pp. 332–334"
+source_status: partially-verified
+status: not-started
 ---
 
 # Discriminant Function
@@ -14,17 +17,23 @@ created: 2026-01-19
 
 > [!info] Definition (Modular Discriminant)
 > The **modular discriminant** $\Delta: \mathbb{H} \to \mathbb{C}$ is defined by:
-> $$\Delta(\tau) = q \prod_{n=1}^{\infty} (1 - q^n)^{24}$$
+> $$
+> \Delta(\tau) = q \prod_{n=1}^{\infty} (1 - q^n)^{24}
+> $$
 > where $q = e^{2\pi i \tau}$.
 
 ## Alternative Formulas
 
 > [!abstract] In terms of Eisenstein series
-> $$\Delta = \frac{E_4^3 - E_6^2}{1728} = \frac{g_2^3 - 27g_3^2}{(2\pi)^{12}}$$
+> $$
+> \Delta = \frac{E_4^3 - E_6^2}{1728} = \frac{g_2^3 - 27g_3^2}{(2\pi)^{12}}
+> $$
 > where $g_2 = 60G_4$ and $g_3 = 140G_6$.
 
 > [!abstract] Dedekind eta function
-> $$\Delta(\tau) = \eta(\tau)^{24}$$
+> $$
+> \Delta(\tau) = \eta(\tau)^{24}
+> $$
 > where $\eta(\tau) = q^{1/24} \prod_{n=1}^{\infty}(1-q^n)$ is the [[07 - Modular Forms/Concepts/Eta Function|Dedekind eta function]].
 
 ## Key Properties
@@ -38,7 +47,9 @@ created: 2026-01-19
 
 > [!info] Definition (Ramanujan Tau Function)
 > The Fourier coefficients of $\Delta$ define the **Ramanujan tau function**:
-> $$\Delta(\tau) = \sum_{n=1}^{\infty} \tau(n) q^n$$
+> $$
+> \Delta(\tau) = \sum_{n=1}^{\infty} \tau(n) q^n
+> $$
 
 First values:
 | $n$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
@@ -61,17 +72,23 @@ For an elliptic curve $E: y^2 = 4x^3 - g_2 x - g_3$ over $\mathbb{C}$:
 
 ## Transformation Property
 
-$$\Delta\left(\frac{a\tau + b}{c\tau + d}\right) = (c\tau + d)^{12} \Delta(\tau)$$
+$$
+\Delta\left(\frac{a\tau + b}{c\tau + d}\right) = (c\tau + d)^{12} \Delta(\tau)
+$$
 
 for all $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z})$.
 
 ## Examples
 
 > [!example] Example 1: Value at $i$
-> $$\Delta(i) = \frac{1}{1728} \left(\frac{\Gamma(1/4)^8}{(2\pi)^6}\right)$$
+> $$
+> \Delta(i) = \frac{1}{1728} \left(\frac{\Gamma(1/4)^8}{(2\pi)^6}\right)
+> $$
 
 > [!example] Example 2: Infinite product expansion
-> $$\Delta = q - 24q^2 + 252q^3 - 1472q^4 + 4830q^5 - \cdots$$
+> $$
+> \Delta = q - 24q^2 + 252q^3 - 1472q^4 + 4830q^5 - \cdots
+> $$
 
 > [!example] Example 3: No zeros
 > Since $\Delta(\tau) = \eta(\tau)^{24}$ and $\eta$ has no zeros in $\mathbb{H}$, neither does $\Delta$.
@@ -79,7 +96,9 @@ for all $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}
 ## L-function
 
 The [[07 - Modular Forms/Concepts/L-functions|L-function]] of $\Delta$ is:
-$$L(\Delta, s) = \sum_{n=1}^{\infty} \frac{\tau(n)}{n^s} = \prod_p \frac{1}{1 - \tau(p)p^{-s} + p^{11-2s}}$$
+$$
+L(\Delta, s) = \sum_{n=1}^{\infty} \frac{\tau(n)}{n^s} = \prod_p \frac{1}{1 - \tau(p)p^{-s} + p^{11-2s}}
+$$
 
 ## Related Concepts
 
@@ -96,3 +115,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang gives the product $\Delta(q)=q\prod_{n\geq1}(1-q^n)^{24}=\sum a_nq^n$, states that it is a modular form of weight $12$, and relates its coefficients to two-dimensional Galois representations. This verifies the product, weight, and the modular/Galois connection. The $E_4,E_6$ identities, divisor statement, Ramanujan tau properties and bounds, and the detailed $L$-function discussion are not proved in the bounded slice.

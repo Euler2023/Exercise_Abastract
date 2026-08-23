@@ -8,6 +8,9 @@ tags:
   - quartic-polynomials
   - resolvent-cubic
 created: 2026-08-11
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §16.9, printed pp. 493–497, PDF pp. 505–509"
+source_status: partially-verified
+status: not-started
 ---
 
 # Quartic Resolvents and Galois Groups

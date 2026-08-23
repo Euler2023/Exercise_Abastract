@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §15, printed pp. 318–319, PDF pp. 333–334"
+source_status: partially-verified
+status: not-started
 ---
 
 # Cusp Forms
@@ -16,10 +19,14 @@ created: 2026-01-19
 > A **cusp form** of weight $k$ for $\text{SL}_2(\mathbb{Z})$ is a [[07 - Modular Forms/Concepts/Modular Forms Definition|modular form]] $f \in M_k$ that vanishes at all cusps.
 >
 > Equivalently, in the $q$-expansion $f(\tau) = \sum_{n=0}^{\infty} a_n q^n$:
-> $$a_0 = 0$$
+> $$
+> a_0 = 0
+> $$
 
 > [!info] Definition (Space of Cusp Forms)
-> $$S_k = S_k(\text{SL}_2(\mathbb{Z})) = \{f \in M_k : a_0 = 0\}$$
+> $$
+> S_k = S_k(\text{SL}_2(\mathbb{Z})) = \{f \in M_k : a_0 = 0\}
+> $$
 
 ## Key Properties
 
@@ -32,12 +39,14 @@ created: 2026-01-19
 
 > [!abstract] Theorem
 > For $k \geq 2$ even:
-> $$\dim S_k = \begin{cases}
+> $$
+> \dim S_k = \begin{cases}
 > 0 & \text{if } k < 12 \\
 > 1 & \text{if } k = 12 \\
-> \lfloor k/12 \rfloor & \text{if } k \equiv 2 \pmod{12} \\
+> \lfloor k/12 \rfloor-1 & \text{if } k \geq 14 \text{ and } k \equiv 2 \pmod{12} \\
 > \lfloor k/12 \rfloor & \text{otherwise for } k \geq 14
-> \end{cases}$$
+> \end{cases}
+> $$
 
 | $k$ | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 | 20 | 22 | 24 |
 |-----|---|---|---|---|----|----|----|----|----|----|----|----|
@@ -47,24 +56,32 @@ created: 2026-01-19
 
 > [!example] The Discriminant
 > The [[07 - Modular Forms/Concepts/Discriminant Function|discriminant function]] $\Delta(\tau)$ is the unique (up to scalar) cusp form of weight 12:
-> $$\Delta(\tau) = q \prod_{n=1}^{\infty}(1-q^n)^{24} = \sum_{n=1}^{\infty} \tau(n) q^n$$
+> $$
+> \Delta(\tau) = q \prod_{n=1}^{\infty}(1-q^n)^{24} = \sum_{n=1}^{\infty} \tau(n) q^n
+> $$
 > where $\tau(n)$ is the **Ramanujan tau function**.
 
 ## Structure of Cusp Forms
 
 > [!abstract] Theorem
 > Every cusp form is divisible by $\Delta$:
-> $$S_k = \Delta \cdot M_{k-12}$$
+> $$
+> S_k = \Delta \cdot M_{k-12}
+> $$
 > for $k \geq 12$.
 
 This gives another proof of $\dim S_k$:
-$$\dim S_k = \dim M_{k-12} \text{ for } k \geq 12$$
+$$
+\dim S_k = \dim M_{k-12} \text{ for } k \geq 12
+$$
 
 ## Petersson Inner Product
 
 > [!info] Definition
 > The [[07 - Modular Forms/Concepts/Petersson Inner Product|Petersson inner product]] on $S_k$ is:
-> $$\langle f, g \rangle = \iint_{\mathcal{F}} f(\tau) \overline{g(\tau)} y^k \, \frac{dx \, dy}{y^2}$$
+> $$
+> \langle f, g \rangle = \iint_{\mathcal{F}} f(\tau) \overline{g(\tau)} y^k \, \frac{dx \, dy}{y^2}
+> $$
 > where $\tau = x + iy$ and $\mathcal{F}$ is the fundamental domain.
 
 This makes $S_k$ a finite-dimensional Hilbert space.
@@ -80,7 +97,9 @@ This makes $S_k$ a finite-dimensional Hilbert space.
 
 > [!example] Example 1: $\Delta(\tau)$
 > The unique normalized cusp form of weight 12:
-> $$\Delta = q - 24q^2 + 252q^3 - 1472q^4 + \cdots$$
+> $$
+> \Delta = q - 24q^2 + 252q^3 - 1472q^4 + \cdots
+> $$
 
 > [!example] Example 2: Weight 16
 > $S_{16}$ is 1-dimensional, spanned by $\Delta \cdot E_4$.
@@ -103,3 +122,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang defines holomorphy at every cusp through the transformed Fourier expansion and calls a modular form cuspidal when the corresponding power series has zero constant term. The same slice identifies the discriminant product as a weight-$12$ modular form and discusses normalized Hecke eigenforms. Dimension formulas, Petersson theory, basis assertions, and detailed examples are not proved there and remain external.

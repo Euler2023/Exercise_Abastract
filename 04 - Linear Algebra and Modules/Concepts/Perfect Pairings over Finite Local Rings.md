@@ -9,6 +9,9 @@ tags:
   - module-theory
   - bilinear-forms
 created: 2026-08-12
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. XIII, §5, printed p. 523, PDF p. 538"
+source_status: partially-verified
+status: not-started
 ---
 
 # Perfect Pairings over Finite Local Rings
@@ -108,7 +111,7 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-- The definitions and matrix criterion are standard finite free-module linear algebra and are proved directly from the adjoint map.
+- Lang defines the adjoint homomorphism $E\to\operatorname{Hom}_R(F,R)$ attached to a bilinear form and calls the form nonsingular on the left when this map is an isomorphism; he also warns that nondegeneracy need not imply nonsingularity over a ring.
+- The terminology “perfect,” the finite-free matrix criterion, and the determinant-unit equivalence are independently derived here from that adjoint map.
 - The reduction and derivative observations are independently derived here for use in Exercise LA10.
 - No classification of bilinear forms over arbitrary local rings is asserted.
-

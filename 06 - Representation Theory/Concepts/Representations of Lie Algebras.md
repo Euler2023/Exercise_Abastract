@@ -7,6 +7,9 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Representations of Lie Algebras
@@ -15,16 +18,22 @@ created: 2026-01-19
 
 > [!info] Definition (Representation)
 > A **representation** of a Lie algebra $\mathfrak{g}$ on a vector space $V$ is a Lie algebra homomorphism:
-> $$\rho: \mathfrak{g} \to \mathfrak{gl}(V)$$
+> $$
+> \rho: \mathfrak{g} \to \mathfrak{gl}(V)
+> $$
 >
 > That is, $\rho$ is linear and satisfies:
-> $$\rho([X, Y]) = \rho(X)\rho(Y) - \rho(Y)\rho(X) = [\rho(X), \rho(Y)]$$
+> $$
+> \rho([X, Y]) = \rho(X)\rho(Y) - \rho(Y)\rho(X) = [\rho(X), \rho(Y)]
+> $$
 
 We often write $X \cdot v$ or $Xv$ instead of $\rho(X)(v)$.
 
 > [!info] Alternative Definition ($\mathfrak{g}$-module)
 > A **$\mathfrak{g}$-module** is a vector space $V$ with a bilinear action $\mathfrak{g} \times V \to V$ satisfying:
-> $$[X, Y] \cdot v = X \cdot (Y \cdot v) - Y \cdot (X \cdot v)$$
+> $$
+> [X, Y] \cdot v = X \cdot (Y \cdot v) - Y \cdot (X \cdot v)
+> $$
 
 These two definitions are equivalent.
 
@@ -48,7 +57,9 @@ These two definitions are equivalent.
 
 > [!info] Definition (Morphism)
 > A **morphism** (or $\mathfrak{g}$-homomorphism) $\phi: V \to W$ between representations is a linear map satisfying:
-> $$\phi(X \cdot v) = X \cdot \phi(v)$$
+> $$
+> \phi(X \cdot v) = X \cdot \phi(v)
+> $$
 >
 > Equivalently: $\phi \circ \rho_V(X) = \rho_W(X) \circ \phi$ for all $X$.
 
@@ -74,17 +85,23 @@ These two definitions are equivalent.
 
 ### Direct Sum
 If $V$ and $W$ are $\mathfrak{g}$-modules:
-$$X \cdot (v, w) = (X \cdot v, X \cdot w)$$
+$$
+X \cdot (v, w) = (X \cdot v, X \cdot w)
+$$
 
 ### Tensor Product
-$$X \cdot (v \otimes w) = (X \cdot v) \otimes w + v \otimes (X \cdot w)$$
+$$
+X \cdot (v \otimes w) = (X \cdot v) \otimes w + v \otimes (X \cdot w)
+$$
 
 > [!warning] Note
 > This is the Leibniz rule! It comes from differentiating the group action.
 
 ### Dual Representation
 For $V^* = \text{Hom}(V, \mathbb{C})$:
-$$(X \cdot f)(v) = -f(X \cdot v)$$
+$$
+(X \cdot f)(v) = -f(X \cdot v)
+$$
 
 The negative sign ensures this is a representation.
 
@@ -96,7 +113,9 @@ Both inherit $\mathfrak{g}$-module structure from $V^{\otimes k}$.
 
 ### Hom Space
 For representations $V$ and $W$:
-$$(X \cdot \phi)(v) = X \cdot \phi(v) - \phi(X \cdot v)$$
+$$
+(X \cdot \phi)(v) = X \cdot \phi(v) - \phi(X \cdot v)
+$$
 
 $\text{Hom}_\mathfrak{g}(V, W) = \{\phi : X \cdot \phi = 0\}$ is the space of morphisms.
 
@@ -106,13 +125,17 @@ $\text{Hom}_\mathfrak{g}(V, W) = \{\phi : X \cdot \phi = 0\}$ is the space of mo
 > For a representation $V$ of $\mathfrak{g}$ with Cartan subalgebra $\mathfrak{h}$:
 >
 > A **weight** is $\lambda \in \mathfrak{h}^*$ such that:
-> $$V_\lambda = \{v \in V : H \cdot v = \lambda(H)v \ \forall H \in \mathfrak{h}\} \neq 0$$
+> $$
+> V_\lambda = \{v \in V : H \cdot v = \lambda(H)v \ \forall H \in \mathfrak{h}\} \neq 0
+> $$
 >
 > $V_\lambda$ is the **weight space** for $\lambda$.
 
 > [!abstract] Weight Space Decomposition
 > For semisimple $\mathfrak{g}$:
-> $$V = \bigoplus_{\lambda \in \mathfrak{h}^*} V_\lambda$$
+> $$
+> V = \bigoplus_{\lambda \in \mathfrak{h}^*} V_\lambda
+> $$
 
 See [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and Weight Spaces]] for details.
 
@@ -133,7 +156,9 @@ See [[06 - Representation Theory/Concepts/Weights and Weight Spaces|Weights and 
 
 > [!abstract] Main Theorem
 > Finite-dimensional irreducible representations of a semisimple $\mathfrak{g}$ are parameterized by dominant integral weights:
-> $$\{\lambda \in \mathfrak{h}^* : \langle \lambda, \alpha^\vee \rangle \in \mathbb{Z}_{\geq 0} \ \text{for all simple } \alpha\}$$
+> $$
+> \{\lambda \in \mathfrak{h}^* : \langle \lambda, \alpha^\vee \rangle \in \mathbb{Z}_{\geq 0} \ \text{for all simple } \alpha\}
+> $$
 
 For each such $\lambda$, we have:
 - A unique irreducible $L(\lambda)$
@@ -144,7 +169,9 @@ For each such $\lambda$, we have:
 
 > [!info] Definition
 > The **Verma module** $M(\lambda)$ is the universal highest weight module:
-> $$M(\lambda) = U(\mathfrak{g}) \otimes_{U(\mathfrak{b})} \mathbb{C}_\lambda$$
+> $$
+> M(\lambda) = U(\mathfrak{g}) \otimes_{U(\mathfrak{b})} \mathbb{C}_\lambda
+> $$
 >
 > where $\mathfrak{b} = \mathfrak{h} \oplus \mathfrak{n}^+$ is a Borel subalgebra.
 
@@ -157,12 +184,16 @@ Properties:
 
 > [!info] Definition
 > The **character** of a finite-dimensional representation is:
-> $$\text{ch}(V) = \sum_{\lambda} (\dim V_\lambda) e^\lambda$$
+> $$
+> \text{ch}(V) = \sum_{\lambda} (\dim V_\lambda) e^\lambda
+> $$
 
 Characters are additive on direct sums and multiplicative on tensor products.
 
 > [!abstract] Weyl Character Formula
-> $$\text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)}}$$
+> $$
+> \text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)}}
+> $$
 
 ## Connection to Lie Groups
 
@@ -191,3 +222,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Artin, Ch. 9, §9.6, printed pp. 275–277 (PDF pp. 287–289), defines Lie algebras; his Exercise M.11 (printed p. 289, PDF p. 301) treats the adjoint representation of a linear group. Lang, Exercise XIII.29 (printed pp. 548–549, PDF pp. 563–564), constructs the adjoint Lie homomorphism into derivations, and Exercise XIII.36 (printed p. 552, PDF p. 567) treats conjugation on $\mathfrak{sl}_n$. These do not supply the general representation definition and constructions, complete reducibility, highest weights, Verma modules, or character theory used here, so the note remains `unverified`.

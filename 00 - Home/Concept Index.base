@@ -26,6 +26,8 @@ views:
       - formula.link_count
       - formula.backlink_count
       - formula.last_updated
+      - source
+      - source_status
   - type: table
     name: Most Referenced
     order:

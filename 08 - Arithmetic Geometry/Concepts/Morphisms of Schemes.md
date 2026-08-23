@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. I, §§13–14, printed pp. 89–90, 96–97, PDF pp. 108–109, 115–116; Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §5, printed pp. 407–408, PDF pp. 422–423"
+source_status: partially-verified
+status: not-started
 ---
 
 # Morphisms of Schemes
@@ -50,7 +53,9 @@ created: 2026-01-19
 
 > [!info] Definition (Fiber)
 > The **fiber** of $f: X \to Y$ over a point $y \in Y$ is:
-> $$X_y = X \times_Y \text{Spec}(\kappa(y))$$
+> $$
+> X_y = X \times_Y \text{Spec}(\kappa(y))
+> $$
 > where $\kappa(y)$ is the residue field at $y$.
 
 ## Arithmetic Applications
@@ -112,6 +117,7 @@ Separatedness is the scheme-theoretic analogue of Hausdorff.
 ## Related Concepts
 
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
+- [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
 - [[08 - Arithmetic Geometry/Concepts/Etale Cohomology|Étale Cohomology]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
@@ -123,3 +129,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch constructs the structure sheaf on $\operatorname{Spec}(A)$, defines affine schemes and morphisms of affine schemes, and states the contravariant correspondence induced by ring homomorphisms. Lang independently verifies the continuous map $\operatorname{Spec}(B)\to\operatorname{Spec}(A)$ and functoriality. This supports the affine case and the direction of maps. The general locally ringed-space definition, fiber products and fibers, separated/proper/flat/étale/smooth morphisms, the valuative criterion, and Néron-model example are not established in those pages and remain external.

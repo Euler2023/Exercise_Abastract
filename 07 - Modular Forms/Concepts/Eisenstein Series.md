@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Eisenstein Series
@@ -14,21 +17,31 @@ created: 2026-01-19
 
 > [!info] Definition (Eisenstein Series $G_k$)
 > For even $k \geq 4$, the **Eisenstein series** of weight $k$ is:
-> $$G_k(\tau) = \sum_{\substack{(m,n) \in \mathbb{Z}^2 \\ (m,n) \neq (0,0)}} \frac{1}{(m\tau + n)^k}$$
+> $$
+> G_k(\tau) = \sum_{\substack{(m,n) \in \mathbb{Z}^2 \\ (m,n) \neq (0,0)}} \frac{1}{(m\tau + n)^k}
+> $$
 
 > [!info] Definition (Normalized Eisenstein Series $E_k$)
-> $$E_k(\tau) = \frac{G_k(\tau)}{2\zeta(k)} = 1 - \frac{2k}{B_k} \sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n$$
+> $$
+> E_k(\tau) = \frac{G_k(\tau)}{2\zeta(k)} = 1 - \frac{2k}{B_k} \sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n
+> $$
 > where $B_k$ is the $k$-th Bernoulli number and $\sigma_{k-1}(n) = \sum_{d|n} d^{k-1}$.
 
 ## Fourier Expansions
 
 > [!abstract] Theorem (q-expansion)
-> $$E_k(\tau) = 1 - \frac{2k}{B_k} \sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n$$
+> $$
+> E_k(\tau) = 1 - \frac{2k}{B_k} \sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n
+> $$
 
 Explicit formulas:
-$$E_4(\tau) = 1 + 240 \sum_{n=1}^{\infty} \sigma_3(n) q^n = 1 + 240q + 2160q^2 + \cdots$$
+$$
+E_4(\tau) = 1 + 240 \sum_{n=1}^{\infty} \sigma_3(n) q^n = 1 + 240q + 2160q^2 + \cdots
+$$
 
-$$E_6(\tau) = 1 - 504 \sum_{n=1}^{\infty} \sigma_5(n) q^n = 1 - 504q - 16632q^2 + \cdots$$
+$$
+E_6(\tau) = 1 - 504 \sum_{n=1}^{\infty} \sigma_5(n) q^n = 1 - 504q - 16632q^2 + \cdots
+$$
 
 ## Key Properties
 
@@ -40,20 +53,28 @@ $$E_6(\tau) = 1 - 504 \sum_{n=1}^{\infty} \sigma_5(n) q^n = 1 - 504q - 16632q^2 
 ## The Quasi-Modular $E_2$
 
 > [!warning] $E_2$ is Not Modular
-> $$E_2(\tau) = 1 - 24 \sum_{n=1}^{\infty} \sigma_1(n) q^n$$
+> $$
+> E_2(\tau) = 1 - 24 \sum_{n=1}^{\infty} \sigma_1(n) q^n
+> $$
 > satisfies:
-> $$E_2\left(\frac{a\tau+b}{c\tau+d}\right) = (c\tau+d)^2 E_2(\tau) + \frac{6c(c\tau+d)}{\pi i}$$
+> $$
+> E_2\left(\frac{a\tau+b}{c\tau+d}\right) = (c\tau+d)^2 E_2(\tau) + \frac{6c(c\tau+d)}{\pi i}
+> $$
 
 ## Structure Theorem
 
 > [!abstract] Theorem (Generators)
 > The graded ring of modular forms is:
-> $$M_* = \mathbb{C}[E_4, E_6]$$
+> $$
+> M_* = \mathbb{C}[E_4, E_6]
+> $$
 > with the relation that $E_4^3$ and $E_6^2$ both have weight 12.
 
 ## Relation to Discriminant
 
-$$\Delta = \frac{E_4^3 - E_6^2}{1728}$$
+$$
+\Delta = \frac{E_4^3 - E_6^2}{1728}
+$$
 
 This follows from dimension counting: both sides are cusp forms of weight 12.
 
@@ -98,3 +119,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang's modular-connection section defines modular forms and mentions the Hecke algebra, while Lang ANT and Neukirch develop theta series and zeta/L-series. None of the checked pages defines holomorphic Eisenstein series, derives their Fourier expansions and Bernoulli coefficients, treats $E_2$ as quasimodular, or proves the structure theorem using $E_4,E_6$. The note therefore remains `unverified` despite verified adjacent modular-form background.

@@ -8,7 +8,7 @@ tags:
   - group-theory
   - functions
   - inverses
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.3"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.3, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -70,4 +70,4 @@ If one uses $\mathbb N=\{1,2,3,\ldots\}$ instead, replace the exceptional input 
 
 This example illustrates the general facts that a map has a left inverse only if it is injective and a right inverse only if it is surjective.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 1, Ex. 1.3]. The explicit family $\{\ell_k\}$ proves the claim without an external result.
+**Source status:** Exercise statement from [S1, Ch. 2, §1, Ex. 1.3, printed p. 69, PDF p. 81]. The explicit family $\{\ell_k\}$ proves the claim without an external result.

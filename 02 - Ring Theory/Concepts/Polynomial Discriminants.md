@@ -7,6 +7,9 @@ tags:
   - ring-theory
   - discriminant
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §16.2, printed pp. 481–483, PDF pp. 493–495"
+source_status: partially-verified
+status: not-started
 ---
 
 # Polynomial Discriminants

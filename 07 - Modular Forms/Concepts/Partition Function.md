@@ -7,6 +7,9 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Partition Function
@@ -29,12 +32,16 @@ Example: $p(5) = 7$ because $5 = 5 = 4+1 = 3+2 = 3+1+1 = 2+2+1 = 2+1+1+1 = 1+1+1
 ## Generating Function
 
 > [!abstract] Theorem (Euler)
-> $$\sum_{n=0}^{\infty} p(n) q^n = \prod_{n=1}^{\infty} \frac{1}{1-q^n}$$
+> $$
+> \sum_{n=0}^{\infty} p(n) q^n = \prod_{n=1}^{\infty} \frac{1}{1-q^n}
+> $$
 
 ## Connection to Eta Function
 
 > [!info] Modular Forms Connection
-> $$\sum_{n=0}^{\infty} p(n) q^n = \frac{q^{1/24}}{\eta(\tau)}$$
+> $$
+> \sum_{n=0}^{\infty} p(n) q^n = \frac{q^{1/24}}{\eta(\tau)}
+> $$
 > where $\eta$ is the [[07 - Modular Forms/Concepts/Eta Function|Dedekind eta function]].
 
 This shows the partition function is closely related to modular forms!
@@ -43,9 +50,15 @@ This shows the partition function is closely related to modular forms!
 
 > [!abstract] Theorem (Ramanujan)
 > For all $n \geq 0$:
-> $$p(5n + 4) \equiv 0 \pmod{5}$$
-> $$p(7n + 5) \equiv 0 \pmod{7}$$
-> $$p(11n + 6) \equiv 0 \pmod{11}$$
+> $$
+> p(5n + 4) \equiv 0 \pmod{5}
+> $$
+> $$
+> p(7n + 5) \equiv 0 \pmod{7}
+> $$
+> $$
+> p(11n + 6) \equiv 0 \pmod{11}
+> $$
 
 > [!tip] Proof via Modular Forms
 > These congruences can be proved using the theory of modular forms and Hecke operators!
@@ -53,12 +66,16 @@ This shows the partition function is closely related to modular forms!
 ## Hardy-Ramanujan Asymptotic
 
 > [!abstract] Theorem (Hardy-Ramanujan, 1918)
-> $$p(n) \sim \frac{1}{4n\sqrt{3}} \exp\left(\pi\sqrt{\frac{2n}{3}}\right)$$
+> $$
+> p(n) \sim \frac{1}{4n\sqrt{3}} \exp\left(\pi\sqrt{\frac{2n}{3}}\right)
+> $$
 
 ## Exact Formula
 
 > [!abstract] Theorem (Rademacher, 1937)
-> $$p(n) = \frac{1}{\pi\sqrt{2}} \sum_{k=1}^{\infty} A_k(n) \sqrt{k} \cdot \frac{d}{dn}\left(\frac{\sinh\left(\frac{\pi}{k}\sqrt{\frac{2}{3}(n-\frac{1}{24})}\right)}{\sqrt{n - \frac{1}{24}}}\right)$$
+> $$
+> p(n) = \frac{1}{\pi\sqrt{2}} \sum_{k=1}^{\infty} A_k(n) \sqrt{k} \cdot \frac{d}{dn}\left(\frac{\sinh\left(\frac{\pi}{k}\sqrt{\frac{2}{3}(n-\frac{1}{24})}\right)}{\sqrt{n - \frac{1}{24}}}\right)
+> $$
 > where $A_k(n)$ involves Dedekind sums.
 
 This exact formula comes from the **circle method** and uses modularity of $1/\eta$.
@@ -76,10 +93,14 @@ This exact formula comes from the **circle method** and uses modularity of $1/\e
 
 > [!abstract] Euler's Identity
 > Partitions into distinct parts = Partitions into odd parts
-> $$\prod_{n=1}^{\infty}(1+q^n) = \prod_{n=1}^{\infty}\frac{1}{1-q^{2n-1}}$$
+> $$
+> \prod_{n=1}^{\infty}(1+q^n) = \prod_{n=1}^{\infty}\frac{1}{1-q^{2n-1}}
+> $$
 
 > [!abstract] Rogers-Ramanujan Identities
-> $$\sum_{n=0}^{\infty} \frac{q^{n^2}}{(q;q)_n} = \prod_{n=0}^{\infty}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})}$$
+> $$
+> \sum_{n=0}^{\infty} \frac{q^{n^2}}{(q;q)_n} = \prod_{n=0}^{\infty}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})}
+> $$
 
 ## Examples
 
@@ -117,3 +138,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: the four books contain theta and modular-form material but no checked treatment of integer partitions, Euler's partition generating function, Ramanujan congruences, Hardy–Ramanujan asymptotics, Rademacher's exact series, rank/crank, or mock theta functions. The relation to $\eta^{-1}$ is not by itself a source for these statements. This note remains `unverified` and needs a partition-theory source.

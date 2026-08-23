@@ -8,6 +8,9 @@ tags:
   - number-theory
   - l-functions
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. VIII, §§1–3, printed pp. 155–166, PDF pp. 164–175; Ch. XIII, §§1–3, printed pp. 245–259, PDF pp. 248–262; Ch. XV, printed pp. 303–320, PDF pp. 304–320"
+source_status: partially-verified
+status: not-started
 ---
 
 # Riemann Zeta Function
@@ -37,10 +40,20 @@ created: 2026-01-19
 
 > [!abstract] Theorem (Functional Equation)
 > Define the **completed zeta function**:
-> $$\xi(s) = \pi^{-s/2} \Gamma(s/2) \zeta(s)$$
+> $$
+> \Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s).
+> $$
 >
 > Then:
-> $$\xi(s) = \xi(1-s)$$
+> $$
+> \Lambda(s)=\Lambda(1-s).
+> $$
+>
+> The conventional entire Riemann xi function is
+> $$
+> \xi(s)=\frac12s(s-1)\Lambda(s),
+> $$
+> and it also satisfies $\xi(s)=\xi(1-s)$.
 >
 > Equivalently:
 > $$\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s)$$
@@ -62,14 +75,9 @@ All other zeros lie in the **critical strip** $0 < \text{Re}(s) < 1$.
 > [!abstract] Riemann Hypothesis (Millennium Problem)
 > All non-trivial zeros of $\zeta(s)$ have real part $\frac{1}{2}$.
 >
-> Equivalently: all zeros of $\xi(s)$ are real.
+> Equivalently, all zeros of the even function $\Xi(t)=\xi(\tfrac12+it)$ are real.
 
-| Known | Status |
-|-------|--------|
-| Infinitely many zeros on critical line | Hardy (1914) |
-| $> 40\%$ of zeros on critical line | Conrey (1989) |
-| First $10^{13}$ zeros on critical line | Numerical verification |
-| RH itself | **Open** |
+The Riemann Hypothesis remains open. Earlier unsourced percentage and numerical-verification bounds have been removed; any reinstatement must name the theorem or dataset and its version.
 
 ## Special Values
 
@@ -97,7 +105,7 @@ $$\zeta(-n) = -\frac{B_{n+1}}{n+1}$$
 | $\zeta(-2)$ | $0$ |
 | $\zeta(-3)$ | $\frac{1}{120}$ |
 
-The value $\zeta(-1) = -\frac{1}{12}$ appears in string theory (regularization of $1 + 2 + 3 + \cdots$).
+The identity $\zeta(-1)=-\frac{1}{12}$ is a value obtained by analytic continuation; it is not the ordinary sum of the divergent series $1+2+3+\cdots$.
 
 ### Odd Positive Integers
 
@@ -142,7 +150,11 @@ $$\zeta(2k) = \frac{(-1)^{k+1} (2\pi)^{2k} B_{2k}}{2(2k)!}$$
 $$\zeta(s) \Gamma(s) = \int_0^\infty \frac{t^{s-1}}{e^t - 1} dt$$
 
 The theta function $\theta(\tau) = \sum_{n \in \mathbb{Z}} e^{\pi i n^2 \tau}$ satisfies:
-$$\int_0^\infty \theta(it) t^{s/2} \frac{dt}{t} = \pi^{-s/2} \Gamma(s/2) \zeta(s)$$
+For $\operatorname{Re}(s)>1$,
+$$
+\int_0^\infty \bigl(\theta(it)-1\bigr)t^{s/2}\frac{dt}{t}
+=2\pi^{-s/2}\Gamma(s/2)\zeta(s).
+$$
 
 This gives another proof of the functional equation via $\theta(−1/\tau) = \sqrt{-i\tau} \theta(\tau)$.
 
@@ -157,7 +169,7 @@ $\zeta(s)$ is the L-function of:
 
 | L-function             | Definition                                 | Relation to $\zeta$                              |
 | ---------------------- | ------------------------------------------ | ------------------------------------------------ |
-| Dirichlet $L(s, \chi)$ | $\sum \chi(n) n^{-s}$                      | $L(s, \chi_0) = \zeta(s) \prod_{pq}(1 - p^{-s})$ |
+| Dirichlet $L(s, \chi)$ | $\sum \chi(n) n^{-s}$                      | For the principal character modulo $q$, $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ |
 | Dedekind $\zeta_K(s)$  | $\sum_{\mathfrak{a}} N(\mathfrak{a})^{-s}$ | $\zeta_\mathbb{Q}(s) = \zeta(s)$                 |
 | Hecke $L(s, \chi)$     | Over number fields                         | Generalizes Dirichlet                            |
 | Modular $L(f, s)$      | $\sum a_n n^{-s}$                          | Different object                                 |
@@ -199,3 +211,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang supplies the number-field zeta/L-series framework, analytic continuation and functional equation methods, and the Tauberian route to prime density in the cited bounded slices. The modular-form discussion, modern results on zeros, special-value results such as Apéry's theorem, and numerical approximations are outside those slices and remain external or unchecked inputs. No proof in this note should be attributed to Lang unless explicitly stated.

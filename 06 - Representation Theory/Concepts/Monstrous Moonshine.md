@@ -9,6 +9,9 @@ tags:
   - sporadic-groups
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Monstrous Moonshine
@@ -22,7 +25,9 @@ Monstrous moonshine is a deep and unexpected connection between the **Monster gr
 ### McKay's Observation (1978)
 
 John McKay noticed:
-$$196884 = 196883 + 1$$
+$$
+196884 = 196883 + 1
+$$
 
 where:
 - $196884$ is the first non-trivial coefficient of the $j$-invariant
@@ -33,7 +38,9 @@ where:
 
 John Thompson extended this, conjecturing that the coefficients of $j(\tau) - 744$ are dimensions of Monster representations:
 
-$$j(\tau) - 744 = q^{-1} + 196884q + 21493760q^2 + \cdots$$
+$$
+j(\tau) - 744 = q^{-1} + 196884q + 21493760q^2 + \cdots
+$$
 
 where $q = e^{2\pi i \tau}$, and each coefficient decomposes into Monster irreducibles.
 
@@ -43,7 +50,9 @@ Conway and Norton made the full "monstrous moonshine" conjecture:
 
 > [!abstract] Monstrous Moonshine Conjecture
 > For each element $g \in \mathbb{M}$, define the **McKay-Thompson series**:
-> $$T_g(\tau) = \sum_{n \geq -1} \text{tr}(g|V_n) q^n$$
+> $$
+> T_g(\tau) = \sum_{n \geq -1} \text{tr}(g|V_n) q^n
+> $$
 >
 > Then $T_g(\tau)$ is a **Hauptmodul** (principal modulus) for some genus-zero congruence subgroup $\Gamma_g \subset \text{SL}_2(\mathbb{R})$.
 
@@ -54,7 +63,9 @@ Conway and Norton made the full "monstrous moonshine" conjecture:
 > - A simple pole at infinity
 > - $j(i) = 1728$, $j(e^{2\pi i/3}) = 0$
 >
-> $$j(\tau) = \frac{E_4(\tau)^3}{\Delta(\tau)} = q^{-1} + 744 + 196884q + 21493760q^2 + \cdots$$
+> $$
+> j(\tau) = \frac{E_4(\tau)^3}{\Delta(\tau)} = q^{-1} + 744 + 196884q + 21493760q^2 + \cdots
+> $$
 
 The $j$-invariant parametrizes isomorphism classes of elliptic curves over $\mathbb{C}$.
 
@@ -106,7 +117,9 @@ Richard Borcherds proved the Conway-Norton conjecture using:
 > - $\mathbb{M}$ acts as automorphisms
 
 The denominator formula for $\mathfrak{m}$ is essentially:
-$$p^{-1} \prod_{m > 0, n \in \mathbb{Z}} (1 - p^m q^n)^{c(mn)} = j(p) - j(q)$$
+$$
+p^{-1} \prod_{m > 0, n \in \mathbb{Z}} (1 - p^m q^n)^{c(mn)} = j(p) - j(q)
+$$
 
 where $c(n)$ are the coefficients of $j(\tau) - 744$.
 
@@ -148,7 +161,9 @@ This was proved by Carnahan (2012).
 ### Mathieu Moonshine
 
 The Mathieu group $M_{24}$ appears in the elliptic genus of K3 surfaces:
-$$\chi(K3; q, y) = 24 \mu(\tau, z) + \text{(mock modular)}$$
+$$
+\chi(K3; q, y) = 24 \mu(\tau, z) + \text{(mock modular)}
+$$
 
 where coefficients relate to $M_{24}$ representations.
 
@@ -204,3 +219,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Artin, Ch. 9, §9.8, printed p. 283 (PDF p. 295), verifies only that the Monster is the largest sporadic group; Lang's modular-connection pages verify the discriminant product, and Neukirch verifies the $j$-invariant, but none connects their coefficients to Monster representations. The McKay observation, moonshine module, genus-zero theorem, Borcherds proof, generalized moonshine, and physical interpretations therefore remain wholly external and `unverified`.

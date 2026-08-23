@@ -9,6 +9,9 @@ tags:
   - group-theory
   - moonshine
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 9, §9.8, printed p. 283, PDF p. 295"
+source_status: partially-verified
+status: not-started
 ---
 
 # Monster Group
@@ -21,8 +24,12 @@ The **Monster group** $\mathbb{M}$ (also denoted $M$, $F_1$, or $M_1$) is the la
 
 > [!info] Definition
 > The **Monster group** $\mathbb{M}$ is the largest sporadic simple group, with order:
-> $$|\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71$$
-> $$\approx 8.08 \times 10^{53}$$
+> $$
+> |\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71
+> $$
+> $$
+> \approx 8.08 \times 10^{53}
+> $$
 
 ### Key Facts
 
@@ -56,7 +63,9 @@ The number $196883$ is crucial for monstrous moonshine.
 > There exists a commutative non-associative algebra $B$ of dimension 196884 such that $\text{Aut}(B) = \mathbb{M}$.
 
 The Griess algebra $B$ decomposes as $\mathbb{M}$-modules:
-$$B = \mathbb{C} \oplus V_{196883}$$
+$$
+B = \mathbb{C} \oplus V_{196883}
+$$
 
 The product structure satisfies certain axioms related to the Norton inequality.
 
@@ -88,7 +97,7 @@ Using the Leech lattice:
 
 ### Maximal Subgroups
 
-The Monster has exactly 44 conjugacy classes of maximal subgroups:
+The detailed classification and exact number of conjugacy classes of maximal subgroups require a current external ATLAS or primary-source audit. Some important subgroup shapes traditionally associated with the Monster are listed below.
 
 
 > [!example] Notable Maximal Subgroups
@@ -98,7 +107,6 @@ The Monster has exactly 44 conjugacy classes of maximal subgroups:
 | $2^{1+24}.\text{Co}_1$ | 2-local subgroup (centralizer of 2A involution) |
 | $3.\text{Fi}_{24}'$ | Triple cover of the derived Fischer group |
 | $2^2.{}^2\text{E}_6(2):S_3$ | Involves the exceptional group of Lie type |
-| $\text{M}_{24}$ | The largest Mathieu group |
 
 
 
@@ -111,7 +119,7 @@ The Monster has exactly 44 conjugacy classes of maximal subgroups:
 - Fischer groups $\text{Fi}_{24}'$, $\text{Fi}_{23}$, $\text{Fi}_{22}$
 - Conway groups $\text{Co}_1$, $\text{Co}_2$, $\text{Co}_3$
 - Mathieu groups $M_{24}$, $M_{23}$, $M_{22}$, $M_{12}$, $M_{11}$
-- Janko groups $J_1$, $J_2$
+- Janko group $J_2$
 - Held group $\text{He}$
 - Harada-Norton group $\text{HN}$
 - Thompson group $\text{Th}$
@@ -142,7 +150,9 @@ $J_1$, $J_3$, $J_4$, $\text{O'N}$, $\text{Ru}$, $\text{Ly}$
 ### McKay's Numerology
 
 The first few coefficients of $j(\tau) - 744$:
-$$q^{-1} + 196884q + 21493760q^2 + 864299970q^3 + \cdots$$
+$$
+q^{-1} + 196884q + 21493760q^2 + 864299970q^3 + \cdots
+$$
 
 Decompose into Monster irreducibles:
 - $196884 = 1 + 196883$
@@ -153,7 +163,9 @@ Decompose into Monster irreducibles:
 
 > [!abstract] Theorem
 > There exists a graded $\mathbb{M}$-module $V^\natural = \bigoplus_{n \geq -1} V_n$ such that:
-> $$\sum_{n \geq -1} (\dim V_n) q^n = j(\tau) - 744$$
+> $$
+> \sum_{n \geq -1} (\dim V_n) q^n = j(\tau) - 744
+> $$
 >
 > and $\text{Aut}(V^\natural) = \mathbb{M}$.
 
@@ -231,3 +243,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Artin verifies only the source-level boundary needed for the basic identification: the Monster is the largest of the 26 sporadic finite simple groups and has order roughly $10^{53}$. The exact factorization of its order, representation degrees, Griess algebra, maximal-subgroup and conjugacy-class data, character values, moonshine module, and historical assertions are not contained in the checked four-book corpus and remain external claims. The contradictory placement of $J_1$ in both the Happy Family and the pariahs has been corrected; exact subgroup enumeration is deliberately no longer asserted without a current external source.

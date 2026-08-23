@@ -10,6 +10,9 @@ tags:
   - bilinear-forms
   - symplectic-forms
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.1 and 8.8, printed pp. 229–231 and 249–252, PDF pp. 241–243 and 261–264"
+source_status: partially-verified
+status: not-started
 ---
 
 # Skew-Symmetric Bilinear Forms

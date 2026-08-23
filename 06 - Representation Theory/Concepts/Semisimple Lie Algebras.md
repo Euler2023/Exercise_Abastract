@@ -7,6 +7,9 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Semisimple Lie Algebras
@@ -20,7 +23,9 @@ created: 2026-01-19
 
 > [!info] Definition (Semisimple Lie Algebra)
 > A Lie algebra $\mathfrak{g}$ is **semisimple** if its radical is zero:
-> $$\text{rad}(\mathfrak{g}) = 0$$
+> $$
+> \text{rad}(\mathfrak{g}) = 0
+> $$
 >
 > Equivalently: $\mathfrak{g}$ has no non-zero solvable ideals.
 
@@ -38,7 +43,9 @@ created: 2026-01-19
 
 > [!info] Definition
 > The **Killing form** is the symmetric bilinear form:
-> $$\kappa(X, Y) = \text{tr}(\text{ad}_X \circ \text{ad}_Y)$$
+> $$
+> \kappa(X, Y) = \text{tr}(\text{ad}_X \circ \text{ad}_Y)
+> $$
 
 Properties for semisimple $\mathfrak{g}$:
 - Non-degenerate (by Cartan's criterion)
@@ -61,10 +68,14 @@ Properties:
 
 > [!abstract] Theorem
 > Every semisimple Lie algebra decomposes as:
-> $$\mathfrak{g} = \mathfrak{h} \oplus \bigoplus_{\alpha \in \Phi} \mathfrak{g}_\alpha$$
+> $$
+> \mathfrak{g} = \mathfrak{h} \oplus \bigoplus_{\alpha \in \Phi} \mathfrak{g}_\alpha
+> $$
 >
 > where $\Phi \subset \mathfrak{h}^*$ is the root system and:
-> $$\mathfrak{g}_\alpha = \{X \in \mathfrak{g} : [H, X] = \alpha(H)X \ \forall H \in \mathfrak{h}\}$$
+> $$
+> \mathfrak{g}_\alpha = \{X \in \mathfrak{g} : [H, X] = \alpha(H)X \ \forall H \in \mathfrak{h}\}
+> $$
 
 Each root space $\mathfrak{g}_\alpha$ is one-dimensional.
 
@@ -135,19 +146,25 @@ For each dominant integral weight $\lambda$, there is a unique irreducible repre
 
 > [!abstract] Theorem
 > The character of $L(\lambda)$ is:
-> $$\text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)}}$$
+> $$
+> \text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\rho)}}
+> $$
 >
 > where $\rho = \frac{1}{2}\sum_{\alpha \in \Phi^+} \alpha$.
 
 ### Weyl Dimension Formula
 
-$$\dim L(\lambda) = \prod_{\alpha \in \Phi^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}$$
+$$
+\dim L(\lambda) = \prod_{\alpha \in \Phi^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}
+$$
 
 ## Universal Enveloping Algebra
 
 > [!info] Definition
 > The **universal enveloping algebra** $U(\mathfrak{g})$ is the associative algebra:
-> $$U(\mathfrak{g}) = T(\mathfrak{g}) / \langle X \otimes Y - Y \otimes X - [X, Y] \rangle$$
+> $$
+> U(\mathfrak{g}) = T(\mathfrak{g}) / \langle X \otimes Y - Y \otimes X - [X, Y] \rangle
+> $$
 
 Representations of $\mathfrak{g}$ $\longleftrightarrow$ $U(\mathfrak{g})$-modules.
 
@@ -159,7 +176,9 @@ For semisimple $\mathfrak{g}$, the **Casimir element** $\Omega \in Z(U(\mathfrak
 
 > [!abstract] Theorem (Levi)
 > Every finite-dimensional Lie algebra $\mathfrak{g}$ decomposes as:
-> $$\mathfrak{g} = \text{rad}(\mathfrak{g}) \rtimes \mathfrak{s}$$
+> $$
+> \mathfrak{g} = \text{rad}(\mathfrak{g}) \rtimes \mathfrak{s}
+> $$
 >
 > where $\mathfrak{s}$ is a semisimple subalgebra (the **Levi factor**).
 
@@ -178,3 +197,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Artin defines Lie algebras in Ch. 9, §9.6 (printed pp. 275–277, PDF pp. 287–289) and his Exercises M.11–M.13 (printed p. 289, PDF p. 301) introduce the adjoint action and a trace form called the Killing form for classical matrix groups. These pages do not prove the radical criterion, Cartan's criterion, root decomposition, classification, Weyl theory, complete reducibility, Casimir theory, or Levi decomposition. The core semisimple structure theory remains `unverified`.

@@ -8,7 +8,7 @@ tags:
   - group-theory
   - monoids
   - proof
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.2"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.2, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -66,4 +66,4 @@ created: 2026-08-10
 
 The group $S^{\times}$ is called the **group of units** of the monoid $S$. For example, the units of the multiplicative monoid $\mathbb Z$ are $\{1,-1\}$.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.2]. The proof is complete from the monoid axioms and the inverse-of-a-product calculation.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.2, printed p. 69, PDF p. 81]. The proof is complete from the monoid axioms and the inverse-of-a-product calculation.

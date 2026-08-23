@@ -12,6 +12,8 @@ tags:
   - cyclic-extensions
 created: 2026-08-13
 source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §6, Theorems 6.3–6.4, printed pp. 290–291, PDF pp. 305–306"
+source_status: verified
+status: not-started
 ---
 
 # Artin–Schreier Extensions

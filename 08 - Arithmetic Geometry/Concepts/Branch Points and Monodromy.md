@@ -10,6 +10,7 @@ tags:
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 15, Section 9, printed pp. 464-470, PDF pp. 476-482"
 status: not-started
+source_status: verified
 ---
 
 # Branch Points and Monodromy
@@ -80,3 +81,6 @@ FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
 
+## Source and Proof Status
+
+The source record in the frontmatter includes printed and physical PDF pages and was checked against a bounded slice of the named source. Unless a proof is explicitly identified as source-contained, explanations and derivations in this note are independent exposition.

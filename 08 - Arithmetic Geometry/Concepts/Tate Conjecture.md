@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - conjecture
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Tate Conjecture
@@ -18,7 +21,9 @@ created: 2026-01-19
 >
 > **1. Tate Conjecture (Algebraic Cycles)**:
 > The cycle class map
-> $$\text{CH}^i(X) \otimes \mathbb{Q}_\ell \to H^{2i}_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(i))^{G_k}$$
+> $$
+> \text{CH}^i(X) \otimes \mathbb{Q}_\ell \to H^{2i}_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(i))^{G_k}
+> $$
 > is surjective.
 >
 > **2. Semisimplicity Conjecture**:
@@ -39,7 +44,9 @@ The Tate conjecture predicts that **algebraic cycles** account for all Galois-in
 ### Divisors ($i = 1$)
 
 > [!abstract] Tate Conjecture for Divisors
-> $$\text{NS}(X) \otimes \mathbb{Q}_\ell \xrightarrow{\sim} H^2_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(1))^{G_k}$$
+> $$
+> \text{NS}(X) \otimes \mathbb{Q}_\ell \xrightarrow{\sim} H^2_{\text{ét}}(X_{\bar{k}}, \mathbb{Q}_\ell(1))^{G_k}
+> $$
 > where $\text{NS}(X)$ is the Néron-Severi group.
 
 This is known for:
@@ -55,7 +62,9 @@ This is known for:
 > - Number fields (Faltings, 1983)
 
 **Consequence**: Abelian varieties $A, B$ over a number field $K$ satisfy:
-$$\text{Hom}_K(A, B) \otimes \mathbb{Z}_\ell \xrightarrow{\sim} \text{Hom}_{G_K}(T_\ell(A), T_\ell(B))$$
+$$
+\text{Hom}_K(A, B) \otimes \mathbb{Z}_\ell \xrightarrow{\sim} \text{Hom}_{G_K}(T_\ell(A), T_\ell(B))
+$$
 
 ## Relation to Other Conjectures
 
@@ -101,7 +110,9 @@ graph TB
 ### For Endomorphisms
 
 If Tate holds for $A \times A$ where $A$ is an abelian variety:
-$$\text{End}(A) \otimes \mathbb{Q}_\ell \cong \text{End}_{G_k}(V_\ell(A))$$
+$$
+\text{End}(A) \otimes \mathbb{Q}_\ell \cong \text{End}_{G_k}(V_\ell(A))
+$$
 
 This determines $\text{End}(A)$ from Galois representations!
 
@@ -115,7 +126,9 @@ The Tate conjecture is part of the **standard conjectures** for algebraic cycles
 
 > [!info] Connection to Sha
 > For an abelian variety $A/K$:
-> $$\text{Ш}(A/K)[\ell^\infty] \hookrightarrow H^1(K, T_\ell(A)) / \text{(image of Selmer)}$$
+> $$
+> \text{Ш}(A/K)[\ell^\infty] \hookrightarrow H^1(K, T_\ell(A)) / \text{(image of Selmer)}
+> $$
 >
 > The Tate conjecture relates to finiteness of Sha.
 
@@ -123,14 +136,18 @@ The Tate conjecture is part of the **standard conjectures** for algebraic cycles
 
 > [!example] Example 1: Elliptic Curve over $\mathbb{F}_p$
 > $E/\mathbb{F}_p$: Tate's theorem says
-> $$\text{End}(E) \otimes \mathbb{Z}_\ell \cong \text{End}_{G_{\mathbb{F}_p}}(T_\ell(E))$$
+> $$
+> \text{End}(E) \otimes \mathbb{Z}_\ell \cong \text{End}_{G_{\mathbb{F}_p}}(T_\ell(E))
+> $$
 >
 > For ordinary $E$: $\text{End}(E) = \mathbb{Z}$ or an order in a quadratic field.
 > For supersingular $E$: $\text{End}(E)$ is a maximal order in a quaternion algebra.
 
 > [!example] Example 2: Product $E \times E'$
 > For distinct elliptic curves, Tate implies:
-> $$\text{Hom}(E, E') \otimes \mathbb{Z}_\ell \cong \text{Hom}_{G_K}(T_\ell(E), T_\ell(E'))$$
+> $$
+> \text{Hom}(E, E') \otimes \mathbb{Z}_\ell \cong \text{Hom}_{G_K}(T_\ell(E), T_\ell(E'))
+> $$
 >
 > If $E, E'$ are non-isogenous, both sides are 0.
 
@@ -149,3 +166,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: the checked books discuss Tate modules, local/global Tate duality, and Tate cohomology in other contexts, but none states the Tate conjecture on algebraic cycles or defines the cycle-class map into $\ell$-adic cohomology. These similarly named topics do not verify the divisorial/abelian-variety cases, Hodge comparison, endomorphism consequences, or known/open status claims in this note. It remains `unverified`.

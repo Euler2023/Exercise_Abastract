@@ -8,6 +8,9 @@ tags:
   - classification
   - simple-groups
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 9, §9.8, printed p. 283, PDF p. 295"
+source_status: partially-verified
+status: not-started
 ---
 
 # Sporadic Groups
@@ -70,7 +73,9 @@ The Classification of Finite Simple Groups states every finite simple group is:
 
 > [!warning] The Pariahs
 > The 6 sporadic groups NOT involved in the Monster are called **Pariahs**:
-> $$J_1, J_3, J_4, \text{Ly}, \text{O'N}, \text{Ru}$$
+> $$
+> J_1, J_3, J_4, \text{Ly}, \text{O'N}, \text{Ru}
+> $$
 
 ```
                     Monster (M)
@@ -111,7 +116,9 @@ The Classification of Finite Simple Groups states every finite simple group is:
 > [!example] The Three Conway Groups (1968)
 > Discovered by John Conway as automorphisms of the **Leech lattice** $\Lambda_{24}$.
 >
-> $$\text{Co}_0 = \text{Aut}(\Lambda_{24})$$
+> $$
+> \text{Co}_0 = \text{Aut}(\Lambda_{24})
+> $$
 >
 > - $\text{Co}_1 = \text{Co}_0 / \{\pm 1\}$ (simple)
 > - $\text{Co}_2$ = stabilizer of a type-2 vector
@@ -136,7 +143,9 @@ The Leech lattice is the unique 24-dimensional even unimodular lattice with no r
 
 > [!success] The Monster $\mathbb{M}$
 > The largest sporadic group, with order:
-> $$|\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71$$
+> $$
+> |\mathbb{M}| = 2^{46} \cdot 3^{20} \cdot 5^9 \cdot 7^6 \cdot 11^2 \cdot 13^3 \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71
+> $$
 >
 > This is approximately $8.08 \times 10^{53}$.
 
@@ -252,3 +261,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Artin's classification summary verifies that finite simple groups consist of the prime-order cyclic groups, alternating groups, finite groups of Lie type, and exactly 26 sporadic groups; it also identifies $M_{11}$ as the smallest sporadic group of order $7920$ and the Monster as the largest, of order roughly $10^{53}$. The complete table of orders and discovery dates, Happy Family/pariah assertions, code and lattice constructions, automorphism and Schur-multiplier tables, Galois realizations, and historical timeline are not established on that page and remain external claims requiring an ATLAS- or primary-literature audit. No classification proof is reproduced here.

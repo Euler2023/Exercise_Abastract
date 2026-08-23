@@ -32,6 +32,7 @@ tags:
   - <% topic %>
 created: <% tp.date.now("YYYY-MM-DD") %>
 source:
+source_status: unverified
 status: not-started
 ---
 
@@ -83,3 +84,7 @@ TABLE status, source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Record which definitions and theorem statements were checked against the cited source, including printed and physical PDF pages where applicable. Distinguish source-contained proofs from independent derivations, external inputs, conjectures, heuristics, and computational checks. If no named source has been checked, keep `source_status: unverified` and say so explicitly.

@@ -8,6 +8,9 @@ tags:
   - representation-theory
   - group-theory
 created: 2025-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 10, §§10.1–10.8, printed pp. 290–311, PDF pp. 302–323; Serge Lang, Algebra, rev. 3rd ed., Ch. XVIII, §§1–8, printed pp. 663–702, PDF pp. 678–717"
+source_status: partially-verified
+status: not-started
 ---
 
 # Representation Theory
@@ -125,3 +128,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

@@ -6,6 +6,9 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. III, §2, printed p. 207, PDF p. 226"
+source_status: partially-verified
+status: not-started
 ---
 
 # Curves over Number Fields
@@ -21,7 +24,7 @@ The **genus** $g = g(C)$ is the key invariant determining the arithmetic behavio
 
 | Genus | Curve Type | $C(K)$ | Example |
 |-------|------------|--------|---------|
-| $g = 0$ | Conic | Empty, one point, or $\cong \mathbb{P}^1$ | $x^2 + y^2 = z^2$ |
+| $g = 0$ | Conic | Empty, or $\cong \mathbb{P}^1$ once a $K$-point exists | $x^2 + y^2 = z^2$ |
 | $g = 1$ | Elliptic (with point) | Finitely generated group | $y^2 = x^3 - x$ |
 | $g \geq 2$ | Higher genus | **Finite** (Faltings) | $y^2 = x^5 - x$ |
 
@@ -47,13 +50,17 @@ A genus 1 curve without a rational point is a **torsor** (principal homogeneous 
 
 > [!info] Definition (Selmer Group)
 > The $n$-Selmer group measures failures of the Hasse principle for $n$-coverings:
-> $$\text{Sel}_n(E/K) = \ker\left(H^1(K, E[n]) \to \prod_v H^1(K_v, E)\right)$$
+> $$
+> \text{Sel}_n(E/K) = \ker\left(H^1(K, E[n]) \to \prod_v H^1(K_v, E)\right)
+> $$
 
 ## Genus $\geq 2$ Curves
 
 > [!abstract] Faltings' Theorem (Mordell Conjecture)
 > For a curve $C/K$ of genus $g \geq 2$:
-> $$\#C(K) < \infty$$
+> $$
+> \#C(K) < \infty
+> $$
 
 ### Methods to Determine $C(K)$
 
@@ -68,12 +75,16 @@ A genus 1 curve without a rational point is a **torsor** (principal homogeneous 
 
 > [!info] Definition
 > The **Jacobian** $J = J(C)$ is an abelian variety of dimension $g$ satisfying:
-> $$J(K) = \text{Pic}^0(C)(K)$$
+> $$
+> J(K) = \text{Pic}^0(C)(K)
+> $$
 
 ### Abel-Jacobi Map
 
 Fixing a basepoint $P_0 \in C(K)$:
-$$\iota: C \hookrightarrow J, \quad P \mapsto [P - P_0]$$
+$$
+\iota: C \hookrightarrow J, \quad P \mapsto [P - P_0]
+$$
 
 This embeds $C$ into its Jacobian (if $C(K) \neq \emptyset$).
 
@@ -103,7 +114,9 @@ This embeds $C$ into its Jacobian (if $C(K) \neq \emptyset$).
 
 ### L-function
 
-$$L(C, s) = L(J(C), s) = \prod_p L_p(C, s)^{-1}$$
+$$
+L(C, s) = L(J(C), s) = \prod_p L_p(C, s)^{-1}
+$$
 
 where $L_p(C, s) = \det(1 - \text{Frob}_p \cdot p^{-s} | H^1_{\text{ét}})$.
 
@@ -114,7 +127,9 @@ The **conductor** $N$ encodes bad reduction primes with multiplicities.
 ### Regulator
 
 For $J(K)$ of rank $r$, the **regulator** is:
-$$\text{Reg}_{J/K} = \det(\langle P_i, P_j \rangle)$$
+$$
+\text{Reg}_{J/K} = \det(\langle P_i, P_j \rangle)
+$$
 where $\{P_1, \ldots, P_r\}$ is a basis for $J(K)/J(K)_{\text{tors}}$ and $\langle \cdot, \cdot \rangle$ is the canonical height pairing.
 
 ## Models and Reduction
@@ -143,3 +158,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch's cited discussion uses smooth proper curves over a number field, genus, reduction modulo primes, good reduction, Shafarevich finiteness, and the Mordell–Faltings finiteness statement. This verifies that central framework and the genus-$\ge2$ finiteness boundary, not the detailed theory. Genus-$0$ and genus-$1$ classifications, Hasse–Minkowski, Mordell–Weil, torsors and Selmer groups, Jacobians, effective methods, modular curves, étale $L$-functions, conductors, regulators, and semistable models remain external inputs.

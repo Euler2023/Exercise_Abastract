@@ -7,6 +7,9 @@ tags:
   - modular-forms
   - group-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §15, printed pp. 318–319, PDF pp. 333–334"
+source_status: partially-verified
+status: not-started
 ---
 
 # Congruence Subgroups
@@ -15,7 +18,9 @@ created: 2026-01-19
 
 > [!info] Definition (Principal Congruence Subgroup)
 > For a positive integer $N$, the **principal congruence subgroup** of level $N$ is:
-> $$\Gamma(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : \begin{pmatrix} a & b \\ c & d \end{pmatrix} \equiv \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \pmod{N} \right\}$$
+> $$
+> \Gamma(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : \begin{pmatrix} a & b \\ c & d \end{pmatrix} \equiv \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \pmod{N} \right\}
+> $$
 
 > [!info] Definition (Congruence Subgroup)
 > A subgroup $\Gamma \subseteq \text{SL}_2(\mathbb{Z})$ is a **congruence subgroup** if $\Gamma(N) \subseteq \Gamma$ for some $N$.
@@ -23,20 +28,30 @@ created: 2026-01-19
 ## Important Congruence Subgroups
 
 > [!info] Definition ($\Gamma_0(N)$)
-> $$\Gamma_0(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : c \equiv 0 \pmod{N} \right\}$$
+> $$
+> \Gamma_0(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : c \equiv 0 \pmod{N} \right\}
+> $$
 
 > [!info] Definition ($\Gamma_1(N)$)
-> $$\Gamma_1(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : a \equiv d \equiv 1, \, c \equiv 0 \pmod{N} \right\}$$
+> $$
+> \Gamma_1(N) = \left\{ \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z}) : a \equiv d \equiv 1, \, c \equiv 0 \pmod{N} \right\}
+> $$
 
 ## Containment Relations
 
-$$\Gamma(N) \subseteq \Gamma_1(N) \subseteq \Gamma_0(N) \subseteq \text{SL}_2(\mathbb{Z})$$
+$$
+\Gamma(N) \subseteq \Gamma_1(N) \subseteq \Gamma_0(N) \subseteq \text{SL}_2(\mathbb{Z})
+$$
 
 ## Index Formulas
 
 > [!abstract] Theorem (Index in $\text{SL}_2(\mathbb{Z})$)
-> $$[\text{SL}_2(\mathbb{Z}) : \Gamma(N)] = N^3 \prod_{p | N} \left(1 - \frac{1}{p^2}\right)$$
-> $$[\text{SL}_2(\mathbb{Z}) : \Gamma_0(N)] = N \prod_{p | N} \left(1 + \frac{1}{p}\right)$$
+> $$
+> [\text{SL}_2(\mathbb{Z}) : \Gamma(N)] = N^3 \prod_{p | N} \left(1 - \frac{1}{p^2}\right)
+> $$
+> $$
+> [\text{SL}_2(\mathbb{Z}) : \Gamma_0(N)] = N \prod_{p | N} \left(1 + \frac{1}{p}\right)
+> $$
 
 ## Cusps
 
@@ -86,3 +101,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang defines $\Gamma(N)\subseteq\Gamma_1(N)\subseteq\Gamma_0(N)$ by their matrix congruence conditions and uses subgroups containing $\Gamma(N)$ in the definition of modular forms. This verifies the core definitions and containment. Index formulas, cusp counts, widths, genus calculations, and the examples beyond those definitions are not derived in the checked pages and remain external inputs.

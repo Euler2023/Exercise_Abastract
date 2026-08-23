@@ -8,6 +8,9 @@ tags:
   - langlands
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Automorphic Forms
@@ -21,7 +24,9 @@ created: 2026-01-19
 ### Modular Forms as Automorphic Forms
 
 A classical modular form $f: \mathbb{H} \to \mathbb{C}$ of weight $k$ for $\text{SL}_2(\mathbb{Z})$ can be reinterpreted as a function:
-$$\phi_f: \text{GL}_2(\mathbb{Q}) \backslash \text{GL}_2(\mathbb{A}_\mathbb{Q}) \to \mathbb{C}$$
+$$
+\phi_f: \text{GL}_2(\mathbb{Q}) \backslash \text{GL}_2(\mathbb{A}_\mathbb{Q}) \to \mathbb{C}
+$$
 
 The transformation law $f(\gamma \tau) = (c\tau + d)^k f(\tau)$ becomes invariance under $\text{GL}_2(\mathbb{Q})$.
 
@@ -29,7 +34,9 @@ The transformation law $f(\gamma \tau) = (c\tau + d)^k f(\tau)$ becomes invarian
 
 > [!info] Definition (Automorphic Form)
 > An **automorphic form** on a reductive group $G$ over a number field $K$ is a function:
-> $$\phi: G(K) \backslash G(\mathbb{A}_K) \to \mathbb{C}$$
+> $$
+> \phi: G(K) \backslash G(\mathbb{A}_K) \to \mathbb{C}
+> $$
 >
 > satisfying:
 > 1. **Left $G(K)$-invariance**: $\phi(\gamma g) = \phi(g)$ for $\gamma \in G(K)$
@@ -52,21 +59,27 @@ The transformation law $f(\gamma \tau) = (c\tau + d)^k f(\tau)$ becomes invarian
 
 > [!info] Definition (Cusp Form)
 > $\phi$ is a **cusp form** if for every proper parabolic $P = MN$:
-> $$\phi_N(g) := \int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng)\, dn = 0$$
+> $$
+> \phi_N(g) := \int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng)\, dn = 0
+> $$
 
 ## Structure
 
 ### Fourier Expansion
 
 For $G = \text{GL}_2$, automorphic forms have Fourier expansions generalizing $q$-expansions:
-$$\phi(g) = \sum_{\xi} W_\xi(g)$$
+$$
+\phi(g) = \sum_{\xi} W_\xi(g)
+$$
 
 where $W_\xi$ are **Whittaker functions**.
 
 ### Hecke Operators
 
 Automorphic forms are eigenfunctions of **Hecke operators** $T_v$ at almost all places $v$:
-$$T_v \phi = \lambda_v \phi$$
+$$
+T_v \phi = \lambda_v \phi
+$$
 
 The eigenvalues $\lambda_v$ encode arithmetic information.
 
@@ -75,7 +88,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 ### GL₁: Hecke Characters
 
 > [!example] Automorphic forms on GL₁
-> $$\phi: K^\times \backslash \mathbb{A}_K^\times \to \mathbb{C}$$
+> $$
+> \phi: K^\times \backslash \mathbb{A}_K^\times \to \mathbb{C}
+> $$
 >
 > These are **Hecke characters** (Größencharaktere).
 > - Finite-order characters ↔ Dirichlet characters
@@ -87,7 +102,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 > For $f \in M_k(\Gamma_0(N), \chi)$:
 >
 > Define $\phi_f: \text{GL}_2(\mathbb{A}_\mathbb{Q}) \to \mathbb{C}$ by:
-> $$\phi_f(g) = f(g_\infty \cdot i) \cdot j(g_\infty, i)^{-k} \cdot \chi_{\text{fin}}(\det g_{\text{fin}})$$
+> $$
+> \phi_f(g) = f(g_\infty \cdot i) \cdot j(g_\infty, i)^{-k} \cdot \chi_{\text{fin}}(\det g_{\text{fin}})
+> $$
 >
 > where $j(g, z) = cz + d$ is the automorphy factor.
 
@@ -102,7 +119,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 > [!example] Genus 2
 > Automorphic forms on $\text{GSp}_4$ generalize to Siegel modular forms of degree 2.
 >
-> $$f: \mathbb{H}_2 \to \mathbb{C}$$
+> $$
+> f: \mathbb{H}_2 \to \mathbb{C}
+> $$
 >
 > where $\mathbb{H}_2 = \{Z \in M_2(\mathbb{C}) : Z = Z^t, \text{Im}(Z) > 0\}$ is the Siegel upper half-space.
 
@@ -110,13 +129,17 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 
 > [!example] Totally real fields
 > For a totally real field $K$ of degree $n$, automorphic forms on $\text{GL}_2/K$ give **Hilbert modular forms**:
-> $$f: \mathbb{H}^n \to \mathbb{C}$$
+> $$
+> f: \mathbb{H}^n \to \mathbb{C}
+> $$
 
 ### Maass Forms
 
 > [!example] Non-holomorphic forms
 > **Maass forms** are eigenfunctions of the hyperbolic Laplacian:
-> $$\Delta f = \lambda f$$
+> $$
+> \Delta f = \lambda f
+> $$
 >
 > These correspond to automorphic representations with non-trivial archimedean component (principal series, not discrete series).
 
@@ -124,7 +147,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 
 > [!info] Definition
 > For a parabolic $P = MN$ and a character $\chi$ of $M(\mathbb{A}_K)$:
-> $$E(g, \chi, s) = \sum_{\gamma \in P(K) \backslash G(K)} \chi(\gamma g) |\det(\gamma g)|^s$$
+> $$
+> E(g, \chi, s) = \sum_{\gamma \in P(K) \backslash G(K)} \chi(\gamma g) |\det(\gamma g)|^s
+> $$
 >
 > **Eisenstein series** are non-cuspidal automorphic forms.
 
@@ -137,7 +162,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 
 > [!info] Definition
 > A **Whittaker function** for $\pi$ with respect to a character $\psi$ of $N(\mathbb{A}_K)$ is:
-> $$W(g) = \int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng) \overline{\psi(n)}\, dn$$
+> $$
+> W(g) = \int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng) \overline{\psi(n)}\, dn
+> $$
 >
 > The space of Whittaker functions is the **Whittaker model** $\mathcal{W}(\pi, \psi)$.
 
@@ -145,7 +172,9 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 
 > [!abstract] Theorem
 > For $\text{GL}_n$, the Whittaker model is unique:
-> $$\dim \text{Hom}_{N(\mathbb{A})}(\pi, \psi) \leq 1$$
+> $$
+> \dim \text{Hom}_{N(\mathbb{A})}(\pi, \psi) \leq 1
+> $$
 >
 > Representations with non-zero Whittaker model are called **generic**.
 
@@ -154,18 +183,24 @@ The eigenvalues $\lambda_v$ encode arithmetic information.
 ### Standard L-Function
 
 For a cusp form $\phi$ generating $\pi$:
-$$L(s, \pi) = \prod_v L(s, \pi_v)$$
+$$
+L(s, \pi) = \prod_v L(s, \pi_v)
+$$
 
 ### Rankin-Selberg L-Functions
 
 For two automorphic representations $\pi, \pi'$ of $\text{GL}_n, \text{GL}_m$:
-$$L(s, \pi \times \pi') = \prod_v L(s, \pi_v \times \pi'_v)$$
+$$
+L(s, \pi \times \pi') = \prod_v L(s, \pi_v \times \pi'_v)
+$$
 
 ### Integral Representations
 
 > [!abstract] Rankin-Selberg Method
 > L-functions can often be expressed as integrals:
-> $$L(s, \pi \times \pi') = \int_{G(K) \backslash G(\mathbb{A}_K)} \phi(g) \phi'(g) E(g,s)\, dg$$
+> $$
+> L(s, \pi \times \pi') = \int_{G(K) \backslash G(\mathbb{A}_K)} \phi(g) \phi'(g) E(g,s)\, dg
+> $$
 >
 > This is fundamental for proving analytic properties.
 
@@ -205,3 +240,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Ch. VI, §15, printed p. 316 (PDF p. 331), states that Langlands formulated conjectures relating Galois groups to automorphic forms; the bibliography points to Shimura. This is a contextual mention, not a definition on adelic quotients, and it does not treat cuspidality, Fourier/Whittaker expansions, Eisenstein series, Rankin–Selberg integrals, or adelization. The note remains `unverified` pending a genuine automorphic-forms source.

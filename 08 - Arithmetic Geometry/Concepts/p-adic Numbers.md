@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. XII, §§1–7, printed pp. 465–495, PDF pp. 480–510; Serge Lang, Algebraic Number Theory, 2nd ed., Ch. II, printed pp. 31–56, PDF pp. 43–68"
+source_status: partially-verified
+status: not-started
 ---
 
 # p-adic Numbers
@@ -20,7 +23,7 @@ The real numbers $\mathbb{R}$ complete $\mathbb{Q}$ using the usual absolute val
 > [!info] Definition (p-adic Valuation)
 > For prime $p$, the **$p$-adic valuation** $v_p: \mathbb{Q}^* \to \mathbb{Z}$ is:
 > $$v_p\left(\frac{a}{b}\right) = \text{ord}_p(a) - \text{ord}_p(b)$$
-> where $\text{ord}_p(n)$ is the largest power of $p$ dividing $n$.
+> where $\operatorname{ord}_p(n)$ is the exponent of $p$ in the prime factorization of $n$.
 
 > [!info] Definition (p-adic Absolute Value)
 > $$|x|_p = p^{-v_p(x)}$$
@@ -39,7 +42,7 @@ This is **much stronger** than the triangle inequality!
 
 > [!tip] Consequences
 > - In $\mathbb{Q}_p$, a series $\sum a_n$ converges iff $a_n \to 0$
-> - All triangles are isoceles
+> - All triangles are isosceles
 > - Every point of a "disk" is its center
 
 ## The Ring of p-adic Integers
@@ -85,7 +88,7 @@ Properties:
 >
 > Then there exists unique $\alpha \in \mathbb{Z}_p$ with $f(\alpha) = 0$ and $\alpha \equiv a \pmod{p}$.
 
-This is "$p$-adic Newton's method always converges!"
+Under these hypotheses, Newton iteration gives a convergent lifting procedure; the statement does not assert convergence from an arbitrary starting value.
 
 ## Structure of $\mathbb{Q}_p^*$
 
@@ -108,3 +111,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+The definitions of $p$-adic absolute value, completion, discrete valuation, $p$-adic expansion, and the complete-field polynomial-lifting background were checked against the cited bounded slices of both Lang books. The examples and group decompositions are independent exposition and have not been checked claim by claim; the note therefore remains partially verified.

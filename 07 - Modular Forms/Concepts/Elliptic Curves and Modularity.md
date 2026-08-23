@@ -7,6 +7,9 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §§14–15, printed pp. 314–320, PDF pp. 329–335"
+source_status: partially-verified
+status: not-started
 ---
 
 # Elliptic Curves and Modularity
@@ -15,41 +18,51 @@ created: 2026-01-19
 
 > [!info] Definition (Elliptic Curve)
 > An **elliptic curve** over $\mathbb{Q}$ is a smooth projective curve of the form:
-> $$E: y^2 = x^3 + Ax + B$$
+> $$
+> E: y^2 = x^3 + Ax + B
+> $$
 > with $4A^3 + 27B^2 \neq 0$ (nonsingular).
 
 ## L-function of an Elliptic Curve
 
 > [!info] Definition
 > For $E/\mathbb{Q}$ with conductor $N$, the **Hasse-Weil L-function** is:
-> $$L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} L_p(E, s)^{-1}$$
+> $$
+> L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} L_p(E, s)^{-1}
+> $$
 > where $a_p = p + 1 - \#E(\mathbb{F}_p)$.
 
 ## The Modularity Theorem
 
 > [!abstract] Theorem (Taniyama-Shimura-Weil, proved by Wiles et al.)
 > For every elliptic curve $E/\mathbb{Q}$ of conductor $N$, there exists a weight 2 newform $f \in S_2(\Gamma_0(N))$ such that:
-> $$L(E, s) = L(f, s)$$
+> $$
+> L(E, s) = L(f, s)
+> $$
 > Equivalently, $a_p(E) = a_p(f)$ for all primes $p$.
 
 ## Historical Significance
 
 > [!tip] Fermat's Last Theorem
 > The Modularity Theorem, combined with work of Ribet, implies **Fermat's Last Theorem**:
-> $$x^n + y^n = z^n \text{ has no positive integer solutions for } n \geq 3$$
+> $$
+> x^n + y^n = z^n \text{ has no positive integer solutions for } n \geq 3
+> $$
 
 The proof strategy (Frey-Ribet-Wiles):
 1. Assume $a^p + b^p = c^p$ for odd prime $p > 2$
 2. Construct the Frey curve $E: y^2 = x(x-a^p)(x+b^p)$
 3. Show $E$ cannot be modular (Ribet)
-4. But all elliptic curves over $\mathbb{Q}$ are modular (Wiles)
+4. Wiles's semistable modularity theorem applies to the Frey curve
 5. Contradiction!
 
 ## Modular Parametrization
 
 > [!abstract] Theorem
 > If $E/\mathbb{Q}$ has conductor $N$, there exists a non-constant morphism:
-> $$\phi: X_0(N) \to E$$
+> $$
+> \phi: X_0(N) \to E
+> $$
 > where $X_0(N) = \mathbb{H}^*/\Gamma_0(N)$ is the modular curve.
 
 ## Connection to j-Invariant
@@ -57,13 +70,17 @@ The proof strategy (Frey-Ribet-Wiles):
 Every elliptic curve over $\mathbb{C}$ is isomorphic to $\mathbb{C}/(\mathbb{Z} + \mathbb{Z}\tau)$ for some $\tau \in \mathbb{H}$.
 
 The [[07 - Modular Forms/Concepts/j-Invariant|j-invariant]] satisfies:
-$$j(E) = j(\tau) = 1728 \frac{4A^3}{4A^3 + 27B^2}$$
+$$
+j(E) = j(\tau) = 1728 \frac{4A^3}{4A^3 + 27B^2}
+$$
 
 ## Galois Representations
 
 > [!info] Definition
 > For a newform $f = \sum a_n q^n$, there exists a 2-dimensional Galois representation:
-> $$\rho_f: \text{Gal}(\bar{\mathbb{Q}}/\mathbb{Q}) \to \text{GL}_2(\bar{\mathbb{Q}}_\ell)$$
+> $$
+> \rho_f: \text{Gal}(\bar{\mathbb{Q}}/\mathbb{Q}) \to \text{GL}_2(\bar{\mathbb{Q}}_\ell)
+> $$
 > with $\text{tr}(\rho_f(\text{Frob}_p)) = a_p$ for $p \nmid N\ell$.
 
 The modularity theorem identifies this with the Tate module representation of $E$.
@@ -93,7 +110,9 @@ The modularity theorem identifies this with the Tate module representation of $E
 
 > [!abstract] Theorem (proved 2011)
 > For a non-CM elliptic curve $E/\mathbb{Q}$, the normalized values $a_p/2\sqrt{p}$ are equidistributed according to the Sato-Tate distribution:
-> $$\frac{2}{\pi}\sqrt{1 - t^2} dt$$
+> $$
+> \frac{2}{\pi}\sqrt{1 - t^2} dt
+> $$
 
 ## Related Concepts
 
@@ -110,3 +129,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang defines the elliptic-curve rational-point group and its torsion Galois representations, presents the modular-form/Galois-representation connection, defines modular and cuspidal forms, and records that Ribet proved the Taniyama–Shimura conjecture would imply Fermat's last theorem. Because this edition predates the completed modularity theorem, it treats Taniyama–Shimura as a conjecture and does not verify the modern theorem statement for every elliptic curve over $\mathbb Q$. Conductors, modular parametrizations, explicit curve/form matches, and Sato–Tate remain external. The proof sketch has been corrected to use Wiles's semistable modularity theorem, which is the result needed for the Frey curve, rather than attributing full modularity to Wiles alone.

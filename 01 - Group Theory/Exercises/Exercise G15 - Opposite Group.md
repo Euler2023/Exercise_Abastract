@@ -8,7 +8,7 @@ tags:
   - group-theory
   - opposite-groups
   - proof
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.6"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.6, printed p. 70, PDF p. 82"
 created: 2026-08-10
 ---
 
@@ -73,4 +73,4 @@ Applying the construction twice restores the original multiplication:
 $$\left(G^{\mathrm{op}}\right)^{\mathrm{op}}=G.$$
 Moreover, $G^{\mathrm{op}}$ has the same multiplication as $G$ exactly when $G$ is abelian.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.6]. The group axioms are verified completely in this note.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.6, printed p. 70, PDF p. 82]. The group axioms are verified completely in this note.

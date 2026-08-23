@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Motives
@@ -46,11 +49,15 @@ A motive $M$ should be a single object with:
 
 > [!info] Definition (Correspondence)
 > For smooth projective varieties $X, Y$, a **correspondence** of degree $r$ is:
-> $$\text{Corr}^r(X, Y) = \text{CH}^{\dim X + r}(X \times Y) \otimes \mathbb{Q}$$
+> $$
+> \text{Corr}^r(X, Y) = \text{CH}^{\dim X + r}(X \times Y) \otimes \mathbb{Q}
+> $$
 > where $\text{CH}^*$ is the Chow group.
 
 Correspondences compose:
-$$(\alpha \circ \beta) = (p_{13})_* (p_{12}^* \alpha \cdot p_{23}^* \beta)$$
+$$
+(\alpha \circ \beta) = (p_{13})_* (p_{12}^* \alpha \cdot p_{23}^* \beta)
+$$
 
 ### Category of Pure Motives
 
@@ -121,7 +128,9 @@ we need **mixed motives**.
 
 > [!info] Definition
 > A **mixed motive** $M$ has a **weight filtration**:
-> $$0 = W_{-1} M \subset W_0 M \subset W_1 M \subset \cdots \subset M$$
+> $$
+> 0 = W_{-1} M \subset W_0 M \subset W_1 M \subset \cdots \subset M
+> $$
 > where $\text{gr}_n^W M = W_n M / W_{n-1} M$ is pure of weight $n$.
 
 ### Mixed Tate Motives
@@ -138,14 +147,18 @@ we need **mixed motives**.
 > The **motivic Galois group** $\mathcal{G}_{\text{mot}}(k)$ is the Tannakian fundamental group of the category of motives.
 
 For mixed Tate motives over $\mathbb{Q}$:
-$$\mathcal{G}_{\text{MT}}(\mathbb{Q}) = \mathbb{G}_m \ltimes U$$
+$$
+\mathcal{G}_{\text{MT}}(\mathbb{Q}) = \mathbb{G}_m \ltimes U
+$$
 where $U$ is pro-unipotent, related to the Lie algebra of multiple zeta values.
 
 ## L-functions of Motives
 
 > [!info] Definition
 > For a motive $M$ over $\mathbb{Q}$, the **L-function** is:
-> $$L(M, s) = \prod_p L_p(M, s)^{-1}$$
+> $$
+> L(M, s) = \prod_p L_p(M, s)^{-1}
+> $$
 > where $L_p(M, s) = \det(1 - \text{Frob}_p \cdot p^{-s} | H_\ell(M)^{I_p})$.
 
 ### Conjectures
@@ -165,12 +178,16 @@ where $U$ is pro-unipotent, related to the Lie algebra of multiple zeta values.
 > Projective space decomposes as Tate motives.
 
 > [!example] Example 3: $h(E)$ for Elliptic Curve
-> $$h(E) = \mathbb{Q}(0) \oplus h^1(E) \oplus \mathbb{Q}(-1)$$
+> $$
+> h(E) = \mathbb{Q}(0) \oplus h^1(E) \oplus \mathbb{Q}(-1)
+> $$
 > The "interesting part" $h^1(E)$ is 2-dimensional, weight 1.
 > $L(h^1(E), s) = L(E, s)$.
 
 > [!example] Example 4: $h(X)$ for Abelian Variety
-> $$h(A) = \bigoplus_{i=0}^{2g} h^i(A), \quad h^i(A) = \bigwedge^i h^1(A)$$
+> $$
+> h(A) = \bigoplus_{i=0}^{2g} h^i(A), \quad h^i(A) = \bigwedge^i h^1(A)
+> $$
 
 ## Voevodsky's Motives
 
@@ -185,7 +202,9 @@ where $U$ is pro-unipotent, related to the Lie algebra of multiple zeta values.
 
 > [!info] Definition
 > **Motivic cohomology** $H^{p,q}_{\text{mot}}(X, \mathbb{Z})$ is a bigraded theory satisfying:
-> $$H^{p,p}_{\text{mot}}(X, \mathbb{Z}) = \text{CH}^p(X)$$
+> $$
+> H^{p,p}_{\text{mot}}(X, \mathbb{Z}) = \text{CH}^p(X)
+> $$
 > and related to algebraic K-theory via the motivic spectral sequence.
 
 ## Related Concepts
@@ -204,3 +223,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Neukirch's concluding discussion mentions “motives” and motivic cohomology only as an external framework for special zeta values and points to conference literature. It does not define correspondences, adequate equivalence relations, pure or mixed motives, realizations, Tate motives, standard conjectures, motivic Galois groups, or Voevodsky's categories. A contextual mention is insufficient for the definitions here; the note remains `unverified`.

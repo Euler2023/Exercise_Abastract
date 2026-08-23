@@ -8,7 +8,7 @@ tags:
   - group-theory
   - symmetric-groups
   - computation
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.1"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.1, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -69,4 +69,4 @@ created: 2026-08-10
 
 The table is not symmetric across the main diagonal; for example, $rs=sr^2\ne sr$. This records the fact that $S_3$ is non-abelian.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.1]. The table is an exact finite computation, and the displayed relations verify all entries.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.1, printed p. 69, PDF p. 81]. The table is an exact finite computation, and the displayed relations verify all entries.

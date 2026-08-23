@@ -6,6 +6,9 @@ tags:
   - definition
   - module-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. III, §2, printed pp. 122–127, PDF pp. 137–142; Ch. XX, §§6–8, printed pp. 790–814, PDF pp. 805–829"
+source_status: partially-verified
+status: not-started
 ---
 
 # Hom Functor
@@ -97,3 +100,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. VI, §6, printed pp. 401–403, PDF pp. 420–422"
+source_status: partially-verified
+status: not-started
 ---
 
 # j-Invariant
@@ -14,10 +17,14 @@ created: 2026-01-19
 
 > [!info] Definition (j-Invariant)
 > The **j-invariant** (or **modular invariant**) is:
-> $$j(\tau) = 1728 \frac{E_4(\tau)^3}{\Delta(\tau)} = \frac{E_4(\tau)^3}{E_4(\tau)^3 - E_6(\tau)^2}$$
+> $$
+> j(\tau) = \frac{E_4(\tau)^3}{\Delta(\tau)} = 1728\frac{E_4(\tau)^3}{E_4(\tau)^3 - E_6(\tau)^2}
+> $$
 
 > [!info] Alternative Formula
-> $$j(\tau) = \frac{1}{q} + 744 + 196884q + 21493760q^2 + \cdots$$
+> $$
+> j(\tau) = \frac{1}{q} + 744 + 196884q + 21493760q^2 + \cdots
+> $$
 
 ## Key Properties
 
@@ -47,13 +54,17 @@ This means $j$ parametrizes elliptic curves up to isomorphism.
 ## Connection to Elliptic Curves
 
 For an elliptic curve $E: y^2 = x^3 + Ax + B$:
-$$j(E) = 1728 \frac{4A^3}{4A^3 + 27B^2}$$
+$$
+j(E) = 1728 \frac{4A^3}{4A^3 + 27B^2}
+$$
 
 Two elliptic curves over $\mathbb{C}$ are isomorphic iff they have the same $j$-invariant.
 
 ## Fourier Coefficients
 
-$$j(\tau) = \frac{1}{q} + 744 + \sum_{n=1}^{\infty} c(n) q^n$$
+$$
+j(\tau) = \frac{1}{q} + 744 + \sum_{n=1}^{\infty} c(n) q^n
+$$
 
 | $n$ | $c(n)$ |
 |-----|--------|
@@ -64,14 +75,18 @@ $$j(\tau) = \frac{1}{q} + 744 + \sum_{n=1}^{\infty} c(n) q^n$$
 
 > [!tip] Monstrous Moonshine
 > The coefficients $c(n)$ are related to dimensions of representations of the Monster group!
-> $$196884 = 1 + 196883$$
+> $$
+> 196884 = 1 + 196883
+> $$
 > where $196883$ is the dimension of the smallest non-trivial Monster representation.
 
 ## The j-function as a Hauptmodul
 
 > [!abstract] Theorem
 > $j$ generates the field of modular functions:
-> $$\mathbb{C}(\mathbb{H}/\text{PSL}_2(\mathbb{Z})) = \mathbb{C}(j)$$
+> $$
+> \mathbb{C}(\mathbb{H}/\text{PSL}_2(\mathbb{Z})) = \mathbb{C}(j)
+> $$
 
 Every modular function is a rational function of $j$.
 
@@ -113,3 +128,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch constructs $E=\mathbb C/\Lambda$, gives its Weierstrass equation and discriminant, defines $j(E)$, states that it determines the complex elliptic curve up to isomorphism, identifies $j(\tau)$ as an $\mathrm{SL}_2(\mathbb Z)$-invariant modular function, and proves the algebraicity/class-field role of CM values in Theorem 6.10. The $q$-expansion, special values, Hauptmodul statement, modular polynomials, and moonshine coefficients are not established in the checked pages. The inconsistent factor of $1728$ in the displayed $E_4,E_6,\Delta$ formula has been corrected.

@@ -6,6 +6,9 @@ tags:
   - application
   - galois-theory
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 15, §15.7, and Ch. 16, §16.6, printed pp. 459–462 and 488–489, PDF pp. 471–474 and 500–501"
+source_status: partially-verified
+status: not-started
 ---
 
 # Galois Theory of Finite Fields
@@ -117,3 +120,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

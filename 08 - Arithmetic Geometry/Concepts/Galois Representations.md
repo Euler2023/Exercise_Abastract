@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - galois-theory
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. VIII, §5, printed pp. 170–172, PDF pp. 179–181"
+source_status: partially-verified
+status: not-started
 ---
 
 # Galois Representations
@@ -15,8 +18,10 @@ created: 2026-01-19
 
 > [!info] Definition (Galois Representation)
 > A **Galois representation** is a continuous homomorphism:
-> $$\rho: G_K \to \text{GL}_n(F)$$
-> where $G_K = \text{Gal}(\bar{K}/K)$ is the absolute Galois group and $F$ is a topological field (usually $\mathbb{C}$, $\mathbb{Q}_\ell$, or $\overline{\mathbb{F}}_\ell$).
+> $$
+> \rho: G_K \to \text{GL}_n(F)
+> $$
+> where $G_K = \operatorname{Gal}(K^{\mathrm{sep}}/K)$ is the absolute Galois group and $F$ is a topological coefficient field (typically $\mathbb{C}$, $\mathbb{Q}_\ell$, or $\overline{\mathbb{F}}_\ell$, with the topology appropriate to the context).
 
 ## Types of Representations
 
@@ -30,10 +35,14 @@ created: 2026-01-19
 
 > [!info] Definition (Tate Module)
 > For an elliptic curve $E/K$:
-> $$T_\ell(E) = \varprojlim_n E[\ell^n](\bar{K}) \cong \mathbb{Z}_\ell^2$$
+> $$
+> T_\ell(E) = \varprojlim_n E[\ell^n](\bar{K}) \cong \mathbb{Z}_\ell^2
+> $$
 >
 > This gives a 2-dimensional $\ell$-adic representation:
-> $$\rho_{E,\ell}: G_K \to \text{GL}_2(\mathbb{Z}_\ell) \hookrightarrow \text{GL}_2(\mathbb{Q}_\ell)$$
+> $$
+> \rho_{E,\ell}: G_K \to \text{GL}_2(\mathbb{Z}_\ell) \hookrightarrow \text{GL}_2(\mathbb{Q}_\ell)
+> $$
 
 ## Key Properties
 
@@ -46,7 +55,7 @@ created: 2026-01-19
 ## Arithmetic Information
 
 For $E/\mathbb{Q}$ and $\rho_{E,\ell}$:
-- $\rho_{E,\ell}$ is unramified at $p$ iff $E$ has good reduction at $p$
+- For $p\neq\ell$, $\rho_{E,\ell}$ is unramified at $p$ iff $E$ has good reduction at $p$ (Néron–Ogg–Shafarevich)
 - $\text{tr}(\text{Frob}_p) = a_p = p + 1 - \#E(\mathbb{F}_p)$
 - $\det(\text{Frob}_p) = p$
 
@@ -61,7 +70,9 @@ This means $\text{tr}(\rho_{E,\ell}(\text{Frob}_p)) = a_p(f)$ for $p \nmid N\ell
 
 > [!info] Theorem
 > For smooth proper $X/K$:
-> $$H^i(X_{\bar{K}}, \mathbb{Q}_\ell)$$
+> $$
+> H^i(X_{\bar{K}}, \mathbb{Q}_\ell)
+> $$
 > is an $\ell$-adic Galois representation.
 
 Examples:
@@ -72,7 +83,9 @@ Examples:
 
 > [!abstract] Theorem (Khare-Wintenberger, 2008)
 > Every odd, irreducible 2-dimensional mod $\ell$ representation:
-> $$\bar{\rho}: G_\mathbb{Q} \to \text{GL}_2(\overline{\mathbb{F}}_\ell)$$
+> $$
+> \bar{\rho}: G_\mathbb{Q} \to \text{GL}_2(\overline{\mathbb{F}}_\ell)
+> $$
 > is modular (arises from a modular form).
 
 ## Langlands Program
@@ -95,8 +108,8 @@ Examples:
 > $\rho: \text{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \to \text{GL}_1(\mathbb{C}) = \mathbb{C}^*$
 > Dirichlet characters are 1-dimensional Artin representations.
 
-> [!example] Example 3: Elliptic curve
-> $E: y^2 = x^3 - x$ gives a 2-dimensional representation factoring through $\text{Gal}(\mathbb{Q}(i)/\mathbb{Q})$.
+> [!warning] CM does not imply finite image
+> The curve $E:y^2=x^3-x$ has complex multiplication by $\mathbb Z[i]$, but its full $\ell$-adic Tate-module representation does **not** thereby factor through the finite group $\operatorname{Gal}(\mathbb Q(i)/\mathbb Q)$. Complex multiplication constrains the image after restricting to the CM field; it does not make the full $\ell$-adic image finite.
 
 ## Related Concepts
 
@@ -113,3 +126,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang defines continuous $\ell$-adic representations of an absolute Galois group, decomposition and inertia groups, unramifiedness, and Frobenius conjugacy on the cited pages; he then proves a finiteness theorem for semisimple representations with restricted ramification and Frobenius traces. This verifies the basic $\ell$-adic vocabulary only. Tate modules of elliptic curves, étale cohomology, Néron–Ogg–Shafarevich, modularity, Serre's theorem, the Artin-representation row, and the Langlands interpretation remain external inputs for this note.

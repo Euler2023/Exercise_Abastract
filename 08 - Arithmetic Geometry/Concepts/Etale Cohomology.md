@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Étale Cohomology
@@ -46,7 +49,9 @@ Key examples:
 
 > [!info] Definition
 > For an étale sheaf $\mathcal{F}$ on $X$:
-> $$H^i_{\text{ét}}(X, \mathcal{F}) = R^i \Gamma(X_{\text{ét}}, \mathcal{F})$$
+> $$
+> H^i_{\text{ét}}(X, \mathcal{F}) = R^i \Gamma(X_{\text{ét}}, \mathcal{F})
+> $$
 > (right derived functors of global sections)
 
 ## Key Properties
@@ -61,8 +66,12 @@ Key examples:
 
 > [!info] Definition
 > For prime $\ell \neq \text{char}(k)$:
-> $$H^i(X, \mathbb{Z}_\ell) = \varprojlim_n H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})$$
-> $$H^i(X, \mathbb{Q}_\ell) = H^i(X, \mathbb{Z}_\ell) \otimes_{\mathbb{Z}_\ell} \mathbb{Q}_\ell$$
+> $$
+> H^i(X, \mathbb{Z}_\ell) = \varprojlim_n H^i_{\text{ét}}(X, \mathbb{Z}/\ell^n\mathbb{Z})
+> $$
+> $$
+> H^i(X, \mathbb{Q}_\ell) = H^i(X, \mathbb{Z}_\ell) \otimes_{\mathbb{Z}_\ell} \mathbb{Q}_\ell
+> $$
 
 These are **$\ell$-adic Galois representations**!
 
@@ -112,3 +121,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Neukirch's preface and later remarks say that étale cohomology is needed for the geometric interpretation of zeta functions and point to external references, but the book does not define the étale site, sheaves, cohomology functors, or $\ell$-adic limits in the checked pages. These mentions cannot verify the comparison, finiteness, Poincaré-duality, Weil-conjecture, or Galois-representation statements here. The note remains `unverified`.

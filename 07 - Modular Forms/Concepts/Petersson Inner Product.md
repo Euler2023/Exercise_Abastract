@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Petersson Inner Product
@@ -14,7 +17,9 @@ created: 2026-01-19
 
 > [!info] Definition (Petersson Inner Product)
 > For [[07 - Modular Forms/Concepts/Cusp Forms|cusp forms]] $f, g \in S_k(\Gamma)$, the **Petersson inner product** is:
-> $$\langle f, g \rangle = \iint_{\mathcal{F}_\Gamma} f(\tau) \overline{g(\tau)} y^k \, \frac{dx \, dy}{y^2}$$
+> $$
+> \langle f, g \rangle = \iint_{\mathcal{F}_\Gamma} f(\tau) \overline{g(\tau)} y^k \, \frac{dx \, dy}{y^2}
+> $$
 > where $\tau = x + iy$ and $\mathcal{F}_\Gamma$ is a [[07 - Modular Forms/Concepts/Fundamental Domain|fundamental domain]] for $\Gamma$.
 
 ## Well-Definedness
@@ -34,7 +39,9 @@ The integrand $f(\tau)\overline{g(\tau)} y^k \cdot y^{-2}$ is:
 
 > [!abstract] Theorem
 > The [[07 - Modular Forms/Concepts/Hecke Operators|Hecke operators]] $T_n$ are self-adjoint:
-> $$\langle T_n f, g \rangle = \langle f, T_n g \rangle$$
+> $$
+> \langle T_n f, g \rangle = \langle f, T_n g \rangle
+> $$
 
 > [!tip] Consequence
 > - Hecke eigenvalues are real
@@ -45,28 +52,38 @@ The integrand $f(\tau)\overline{g(\tau)} y^k \cdot y^{-2}$ is:
 
 > [!abstract] Theorem
 > If $f$ and $g$ are normalized Hecke eigenforms with different eigenvalues for some $T_n$, then:
-> $$\langle f, g \rangle = 0$$
+> $$
+> \langle f, g \rangle = 0
+> $$
 
 ## Petersson Norm
 
 > [!info] Definition
 > The **Petersson norm** of $f$ is:
-> $$\|f\|^2 = \langle f, f \rangle$$
+> $$
+> \|f\|^2 = \langle f, f \rangle
+> $$
 
 For the [[07 - Modular Forms/Concepts/Discriminant Function|discriminant]]:
-$$\|\Delta\|^2 = \frac{\pi}{6} \cdot \frac{(10!)}{(4\pi)^{11}}$$
+$$
+\|\Delta\|^2 = \frac{\pi}{6} \cdot \frac{(10!)}{(4\pi)^{11}}
+$$
 
 ## Connection to L-functions
 
 > [!abstract] Theorem (Rankin-Selberg)
 > For normalized eigenforms $f, g \in S_k$:
-> $$\langle f, g \rangle = \frac{(k-1)!}{(4\pi)^k} \cdot L(f \otimes \bar{g}, k)$$
+> $$
+> \langle f, g \rangle = \frac{(k-1)!}{(4\pi)^k} \cdot L(f \otimes \bar{g}, k)
+> $$
 > where $L(f \otimes \bar{g}, s)$ is the Rankin-Selberg L-function.
 
 ## Period Integrals
 
 The Petersson inner product relates to **period integrals**:
-$$\int_0^{i\infty} f(\tau) \tau^j d\tau$$
+$$
+\int_0^{i\infty} f(\tau) \tau^j d\tau
+$$
 
 These periods appear in:
 - Algebraicity results for [[07 - Modular Forms/Concepts/L-functions|L-values]]
@@ -76,7 +93,9 @@ These periods appear in:
 
 > [!abstract] Theorem (Spectral Decomposition)
 > The space $S_k$ decomposes as an orthogonal direct sum:
-> $$S_k = \bigoplus_f \mathbb{C} \cdot f$$
+> $$
+> S_k = \bigoplus_f \mathbb{C} \cdot f
+> $$
 > where $f$ runs over normalized Hecke eigenforms.
 
 ## Examples
@@ -102,3 +121,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang's modular-form section defines modular/cuspidal forms and mentions the Hecke algebra, but does not define the Petersson measure or inner product, prove convergence, establish Hecke adjointness, derive orthogonality, or connect norms to $L$-values. Neukirch's Haar-measure and theta integrals are different constructions and must not be conflated with Petersson theory. The note remains `unverified`.

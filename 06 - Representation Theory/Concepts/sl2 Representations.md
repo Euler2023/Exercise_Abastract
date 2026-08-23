@@ -7,6 +7,9 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # sl₂ Representations
@@ -17,10 +20,14 @@ created: 2026-01-19
 > $\mathfrak{sl}_2(\mathbb{C})$ is the Lie algebra of $2 \times 2$ traceless complex matrices.
 >
 > **Standard basis**:
-> $$e = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad f = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad h = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
+> $$
+> e = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad f = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad h = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+> $$
 >
 > **Bracket relations**:
-> $$[h, e] = 2e, \quad [h, f] = -2f, \quad [e, f] = h$$
+> $$
+> [h, e] = 2e, \quad [h, f] = -2f, \quad [e, f] = h
+> $$
 
 ## Finite-Dimensional Representations
 
@@ -32,13 +39,17 @@ created: 2026-01-19
 ### The Standard Representation ($V_2$)
 
 The **defining representation** on $\mathbb{C}^2$:
-$$\rho(e) = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad \rho(f) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad \rho(h) = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
+$$
+\rho(e) = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad \rho(f) = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad \rho(h) = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+$$
 
 ### Weight Space Decomposition
 
 > [!info] Definition (Weight)
 > A **weight** of a representation $V$ is an eigenvalue of $h$:
-> $$V_\lambda = \{v \in V : h \cdot v = \lambda v\}$$
+> $$
+> V_\lambda = \{v \in V : h \cdot v = \lambda v\}
+> $$
 > is the **weight space** for weight $\lambda$.
 
 > [!abstract] Key Properties
@@ -56,9 +67,15 @@ The irreducible representation $V_n$ has:
 - **Basis**: $v_0, v_1, \ldots, v_{n-1}$ where $v_k = f^k \cdot v_0$
 
 **Actions**:
-$$h \cdot v_k = (n-1-2k) v_k$$
-$$f \cdot v_k = v_{k+1} \quad (v_n = 0)$$
-$$e \cdot v_k = k(n-k) v_{k-1} \quad (v_{-1} = 0)$$
+$$
+h \cdot v_k = (n-1-2k) v_k
+$$
+$$
+f \cdot v_k = v_{k+1} \quad (v_n = 0)
+$$
+$$
+e \cdot v_k = k(n-k) v_{k-1} \quad (v_{-1} = 0)
+$$
 
 ## Examples
 
@@ -103,16 +120,22 @@ Given highest weight $\lambda \in \mathbb{Z}_{\geq 0}$:
 
 > [!info] Definition
 > The **Casimir element** of $\mathfrak{sl}_2$ is:
-> $$\Omega = ef + fe + \frac{h^2}{2} = 2ef + h + \frac{h^2}{2} = 2fe - h + \frac{h^2}{2}$$
+> $$
+> \Omega = ef + fe + \frac{h^2}{2} = 2ef + h + \frac{h^2}{2} = 2fe - h + \frac{h^2}{2}
+> $$
 
 > [!abstract] Property
 > $\Omega$ commutes with all of $\mathfrak{sl}_2$ and acts on $V_n$ by the scalar:
-> $$\Omega|_{V_n} = \frac{(n-1)(n+1)}{2} = \frac{n^2 - 1}{2}$$
+> $$
+> \Omega|_{V_n} = \frac{(n-1)(n+1)}{2} = \frac{n^2 - 1}{2}
+> $$
 
 ## Tensor Products
 
 > [!abstract] Clebsch-Gordan Decomposition
-> $$V_m \otimes V_n \cong V_{m+n-1} \oplus V_{m+n-3} \oplus \cdots \oplus V_{|m-n|+1}$$
+> $$
+> V_m \otimes V_n \cong V_{m+n-1} \oplus V_{m+n-3} \oplus \cdots \oplus V_{|m-n|+1}
+> $$
 >
 > (All irreducibles from $m+n-1$ down to $|m-n|+1$ in steps of 2)
 
@@ -148,3 +171,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Exercise XIII.36, printed p. 552 (PDF p. 567), treats the conjugation representation of $\mathrm{SL}_n$ on $\mathfrak{sl}_n$ and proves an irreducibility statement; Artin defines the matrix Lie algebra $\mathfrak{sl}_n$ in Ch. 9, §9.6. Neither source classifies finite-dimensional $\mathfrak{sl}_2$-modules, constructs highest-weight modules, computes the Casimir action, or proves Clebsch–Gordan. Those are the core claims here, so the note remains `unverified`.

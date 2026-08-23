@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
+source: "Jürgen Neukirch, Algebraic Number Theory, Ch. I, §§13–14, printed pp. 85–90, 96–97, PDF pp. 104–109, 115–116; Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §5, printed pp. 405–409, PDF pp. 420–424"
+source_status: partially-verified
+status: not-started
 ---
 
 # Schemes
@@ -45,7 +48,8 @@ Classical varieties work well over algebraically closed fields, but arithmetic g
 
 > [!example] Example 3: $\text{Spec}(\mathbb{Z}[x])$
 > - Generic point: $(0)$
-> - "Horizontal" curves: $(f(x))$ for irreducible $f$
+> - "Horizontal" curves: $(f(x))$ for primitive irreducible $f\in\mathbb Z[x]$
+> - "Vertical" curves: $(p)$ for primes $p$
 > - Closed points: $(p, f(x))$ for prime $p$ and $f$ irreducible mod $p$
 >
 > This is the "arithmetic plane."
@@ -70,7 +74,9 @@ Classical varieties work well over algebraically closed fields, but arithmetic g
 
 > [!info] Definition (Base Change)
 > For schemes $X \to S$ and $S' \to S$, the **fiber product** $X \times_S S'$ represents:
-> $$\text{Hom}(T, X \times_S S') = \text{Hom}(T, X) \times_{\text{Hom}(T,S)} \text{Hom}(T, S')$$
+> $$
+> \text{Hom}(T, X \times_S S') = \text{Hom}(T, X) \times_{\text{Hom}(T,S)} \text{Hom}(T, S')
+> $$
 
 > [!tip] Fibers
 > For $X \to \text{Spec}(\mathbb{Z})$, the fiber over $(p)$ is $X_{\mathbb{F}_p} = X \times_{\mathbb{Z}} \mathbb{F}_p$, the **reduction mod $p$**.
@@ -85,14 +91,15 @@ Classical varieties work well over algebraically closed fields, but arithmetic g
 
 ## Arithmetic Schemes
 
-> [!info] Definition (Arithmetic Variety)
-> An **arithmetic variety** is a scheme $X$ of finite type over $\text{Spec}(\mathbb{Z})$.
+> [!info] Definition (Arithmetic Scheme)
+> An **arithmetic scheme** is a scheme $X$ of finite type over $\text{Spec}(\mathbb{Z})$. The term “arithmetic variety” often adds integrality, flatness, or other hypotheses, depending on the author.
 >
 > For each prime $p$: fiber $X_{\mathbb{F}_p}$ is a variety over $\mathbb{F}_p$.
 > Generic fiber $X_\mathbb{Q}$ is a variety over $\mathbb{Q}$.
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Morphisms of Schemes|Morphisms of Schemes]]
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
@@ -106,3 +113,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Neukirch defines $\operatorname{Spec}(R)$ as the prime spectrum with the Zariski topology, constructs the structure sheaf with stalks $R_{\mathfrak p}$, defines affine schemes and affine-scheme morphisms, and then defines a general scheme by an affine open cover on the cited pages. He also treats $\operatorname{Spec}(\mathbb Z)$, generic and closed points, discrete valuation rings, Dedekind schemes, singularities, and the projective line over a finite field. Lang independently verifies the prime-spectrum topology, contravariant functoriality, field-valued points, and irreducible closed subsets. Fiber products, smoothness, properness, general arithmetic schemes, and the detailed $\operatorname{Spec}(\mathbb Z[x])$ description are not established in those bounded slices and remain external inputs.

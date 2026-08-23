@@ -12,6 +12,8 @@ tags:
   - symmetry
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 4, printed pp. 163–166, PDF pp. 175–178"
+source_status: verified
+status: not-started
 ---
 
 # Dihedral Groups

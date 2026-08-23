@@ -8,7 +8,7 @@ tags:
   - group-theory
   - inverses
   - proof
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.2"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.2, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -75,4 +75,4 @@ created: 2026-08-10
 
 The order reverses in $(ab)^{-1}$ because the factor $b$ must be undone before the factor $a$.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 1, Ex. 1.2]. The solution above derives the inverse identities from associativity and the identity axioms.
+**Source status:** Exercise statement from [S1, Ch. 2, §1, Ex. 1.2, printed p. 69, PDF p. 81]. The solution above derives the inverse identities from associativity and the identity axioms.

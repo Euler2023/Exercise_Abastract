@@ -9,6 +9,9 @@ tags:
   - modular-forms
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. XIII, §2, printed pp. 251–253, PDF pp. 254–256; Jürgen Neukirch, Algebraic Number Theory, Ch. VII, §3, printed pp. 443–452, PDF pp. 462–471"
+source_status: partially-verified
+status: not-started
 ---
 
 # Quadratic Forms and Theta Series
@@ -102,13 +105,12 @@ For binary forms $Q(x,y) = ax^2 + bxy + cy^2$ of discriminant $D = b^2 - 4ac < 0
 - the theta series has weight $1$ with an appropriate level and character;
 - genus or class averages are related to class numbers and Eisenstein series.
 
-## 15 and 290 Theorems
+## Universality Criteria
 
 > [!abstract] Theorem (Conway-Schneeberger)
 > A positive definite quadratic form represents all positive integers if and only if it represents 1, 2, 3, 5, 6, 7, 10, 14, 15.
 
-> [!abstract] Theorem (Bhargava-Hanke)
-> A positive definite quadratic form represents all **odd** positive integers if and only if it represents 1, 3, 5, 7, 11, 15, 33.
+The Bhargava–Hanke 290-theorem and later odd-universality criteria are not stated here: their exact test sets and hypotheses require an external source audit and should not be conflated.
 
 ## Related Concepts
 
@@ -128,6 +130,6 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-- The elementary definitions and examples are explained in the note; their modular transformation laws are not consequences of Artin Chapter 8.
-- Theta-series modularity, Siegel's genus-average theorem, and the 15- and 290-theorems are **external standard inputs** here. Their exact versions require parity, level, character, and normalization hypotheses beyond the present concept note.
+- Lang applies Poisson summation to the exponential of a positive-definite quadratic form and proves Hecke's theta formula. Neukirch defines theta series for complete lattices and proves the general theta transformation formula on the relevant upper half-space. These sources verify the lattice-series construction and analytic transformation mechanism.
+- The precise congruence subgroup, level, character, Siegel genus-average formula, root-lattice identities, representation-number formulas, and universality criteria remain **external inputs** here. The previous heading incorrectly advertised the 290-theorem while stating a different odd-universality criterion; that unsupported conflation has been removed.
 - Artin's real quadratic forms and quadrics are handled separately in [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]].

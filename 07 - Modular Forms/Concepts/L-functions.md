@@ -8,7 +8,8 @@ tags:
   - number-theory
 created: 2026-01-19
 status: not-started
-source: claude
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. VIII, §3, printed pp. 162–166, PDF pp. 171–175; Ch. XII, printed pp. 229–242, PDF pp. 235–248; Chs. XIII–XIV, printed pp. 245–302, PDF pp. 248–303 (general number-field, Artin, Hecke, and Tate L-series background only)"
+source_status: partially-verified
 ---
 
 # L-functions
@@ -16,7 +17,7 @@ source: claude
 ## Definition
 
 > [!info] Definition (L-function of a Modular Form)
-> For a [[07 - Modular Forms/Concepts/Modular Forms Definition|modular form]] $f(\tau) = \sum_{n=1}^{\infty} a_n q^n \in S_k$, the **L-function** is:
+> For a cusp form $f(\tau)=\sum_{n=1}^{\infty}a_nq^n$ in $S_k(\mathrm{SL}_2(\mathbb Z))$, the **L-function** is:
 > $$L(f, s) = \sum_{n=1}^{\infty} \frac{a_n}{n^s}$$
 > This converges for $\text{Re}(s)$ sufficiently large.
 
@@ -41,6 +42,8 @@ This integral representation connects the L-function to the modular form directl
 > $$\Lambda(f, s) = (2\pi)^{-s} \Gamma(s) L(f, s)$$
 > Then:
 > $$\Lambda(f, s) = (-1)^{k/2} \Lambda(f, k-s)$$
+
+This displayed sign is for the full modular group. For higher level, the functional equation involves the level and a root number, so it must not be reused unchanged.
 
 ## Euler Product
 
@@ -81,6 +84,8 @@ This factorization is key to the arithmetic significance of L-functions.
 > [!abstract] Modularity Theorem
 > For every elliptic curve $E/\mathbb{Q}$, there exists $f \in S_2(\Gamma_0(N))$ with $L(E, s) = L(f, s)$.
 
+This is an external theorem, not proved in this note.
+
 ## Birch and Swinnerton-Dyer Conjecture
 
 > [!warning] Millennium Problem
@@ -109,3 +114,7 @@ TABLE status, source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang's *Algebraic Number Theory* was checked for general L-series, Artin L-series, and Hecke/Tate functional-equation background. It does not by itself source the modular-form-specific Mellin transform, eigenform Euler product, Manin–Shimura algebraicity theorem, or Modularity Theorem used here; those remain external inputs and are not proved in this note. The level-one hypotheses above prevent the displayed sign from being incorrectly applied at general level, but a dedicated modular-forms source audit must still check all normalizations.

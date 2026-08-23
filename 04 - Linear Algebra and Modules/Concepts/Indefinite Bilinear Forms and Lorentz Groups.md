@@ -12,7 +12,9 @@ tags:
   - bilinear-forms
   - lorentz-groups
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 8, Section 2 and Ch. 9, Section 1, printed p. 262, PDF p. 274"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §8.2, and Ch. 9, §9.1, printed pp. 231–232 and 261–262, PDF pp. 243–244 and 273–274"
+source_status: partially-verified
+status: not-started
 ---
 
 # Indefinite Bilinear Forms and Lorentz Groups
@@ -104,15 +106,12 @@ where $\delta,\varepsilon\in\{1,-1\}$ and $t\in\mathbb R$. The two discrete inva
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA4 - Orthogonal and Lorentz Groups Are Not Continuously Isomorphic|Exercise LA4]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA5 - Four Components of O11|Exercise LA5]]
 
-## Source and Proof Status
-
-The definition of $O_{3,1}$ and its extension to $O_{p,q}$ are **stated in the source**. [S1, Ch. 9, §9.1, formula (9.1.5), printed p. 262, PDF p. 274] The column criterion, boost calculation, and description of $O_{1,1}$ are proved directly above.
-
-
-## Exercises
-
 ```dataview
 TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+The definition of $O_{3,1}$ and its extension to $O_{p,q}$ are **stated in the source**. [S1, Ch. 9, §9.1, formula (9.1.5), printed p. 262, PDF p. 274] The column criterion, boost calculation, and description of $O_{1,1}$ are proved directly above.

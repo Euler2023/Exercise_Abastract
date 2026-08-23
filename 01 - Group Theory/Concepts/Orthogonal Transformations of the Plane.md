@@ -12,6 +12,8 @@ tags:
   - orthogonal-groups
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 5, Section 1 and Ch. 6, Sections 2–4"
+source_status: partially-verified
+status: not-started
 ---
 
 # Orthogonal Transformations of the Plane

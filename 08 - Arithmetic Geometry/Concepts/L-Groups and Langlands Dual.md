@@ -8,6 +8,9 @@ tags:
   - langlands
   - lie-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # L-Groups and Langlands Dual
@@ -43,7 +46,9 @@ For a reductive group $G$ with maximal torus $T$:
 
 > [!info] Definition (Dual Root Datum)
 > The **dual root datum** is:
-> $$(X^\vee, \Phi^\vee, X, \Phi)$$
+> $$
+> (X^\vee, \Phi^\vee, X, \Phi)
+> $$
 >
 > (swap $X \leftrightarrow X^\vee$ and $\Phi \leftrightarrow \Phi^\vee$).
 
@@ -74,7 +79,9 @@ For a reductive group $G$ with maximal torus $T$:
 
 > [!example] Dual of a Torus
 > For a torus $T$ with character lattice $X$:
-> $$\widehat{T} = X \otimes_\mathbb{Z} \mathbb{C}^\times = \text{Hom}(X^\vee, \mathbb{C}^\times)$$
+> $$
+> \widehat{T} = X \otimes_\mathbb{Z} \mathbb{C}^\times = \text{Hom}(X^\vee, \mathbb{C}^\times)
+> $$
 >
 > Characters of $T$ ↔ cocharacters of $\widehat{T}$.
 
@@ -96,7 +103,9 @@ For a reductive group $G$ with maximal torus $T$:
 
 > [!info] Definition (L-Group)
 > For $G$ defined over a field $K$, the **L-group** is:
-> $${}^L G = \widehat{G} \rtimes \Gamma_K$$
+> $$
+> {}^L G = \widehat{G} \rtimes \Gamma_K
+> $$
 >
 > where $\Gamma_K = \text{Gal}(\overline{K}/K)$ acts on $\widehat{G}$ via its action on the root datum.
 
@@ -112,7 +121,9 @@ For non-split $G$, the Galois action is non-trivial:
 
 > [!example] Quasi-split unitary groups
 > For $U_n$ (quasi-split unitary group for $E/F$):
-> $${}^L U_n = \text{GL}_n(\mathbb{C}) \rtimes \text{Gal}(E/F)$$
+> $$
+> {}^L U_n = \text{GL}_n(\mathbb{C}) \rtimes \text{Gal}(E/F)
+> $$
 >
 > where $\sigma \in \text{Gal}(E/F)$ acts by $g \mapsto J (g^t)^{-1} J^{-1}$.
 
@@ -122,7 +133,9 @@ For non-split $G$, the Galois action is non-trivial:
 
 > [!info] Definition (L-parameter)
 > A **Langlands parameter** for $G$ over a local field $F$ is an admissible homomorphism:
-> $$\phi: W_F \times \text{SL}_2(\mathbb{C}) \to {}^L G$$
+> $$
+> \phi: W_F \times \text{SL}_2(\mathbb{C}) \to {}^L G
+> $$
 >
 > where:
 > - $W_F$ is the Weil group
@@ -132,7 +145,9 @@ For non-split $G$, the Galois action is non-trivial:
 ### For GLₙ
 
 Parameters are simply $n$-dimensional representations:
-$$\phi: W_F \times \text{SL}_2(\mathbb{C}) \to \text{GL}_n(\mathbb{C})$$
+$$
+\phi: W_F \times \text{SL}_2(\mathbb{C}) \to \text{GL}_n(\mathbb{C})
+$$
 
 The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 
@@ -153,10 +168,14 @@ The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 
 > [!abstract] Langlands Functoriality
 > An L-homomorphism ${}^L \eta: {}^L H \to {}^L G$ should induce a **transfer** of automorphic representations:
-> $$\eta_*: \{\text{automorphic reps of } H\} \to \{\text{automorphic reps of } G\}$$
+> $$
+> \eta_*: \{\text{automorphic reps of } H\} \to \{\text{automorphic reps of } G\}
+> $$
 >
 > compatible with L-functions:
-> $$L(s, \eta_*(\pi), r) = L(s, \pi, r \circ {}^L\eta)$$
+> $$
+> L(s, \eta_*(\pi), r) = L(s, \pi, r \circ {}^L\eta)
+> $$
 
 ### Examples of Functoriality
 
@@ -173,7 +192,9 @@ The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 
 > [!abstract] Theorem (Satake)
 > For an unramified reductive group $G$ over a $p$-adic field $F$:
-> $$\mathcal{H}(G(F), K) \cong \mathbb{C}[\widehat{T}]^{\widehat{W}}$$
+> $$
+> \mathcal{H}(G(F), K) \cong \mathbb{C}[\widehat{T}]^{\widehat{W}}
+> $$
 >
 > where:
 > - $\mathcal{H}(G(F), K)$ = spherical Hecke algebra
@@ -183,17 +204,23 @@ The $\text{SL}_2$ factor gives the Weil-Deligne monodromy operator $N$.
 ### Satake Parameters
 
 Unramified representations $\pi$ of $G(F)$ are parametrized by **Satake parameters**:
-$$s(\pi) \in \widehat{T}/\widehat{W}$$
+$$
+s(\pi) \in \widehat{T}/\widehat{W}
+$$
 
 Under local Langlands, this corresponds to the unramified L-parameter:
-$$\phi: W_F \to {}^L G, \quad \phi(\text{Frob}) = s(\pi)$$
+$$
+\phi: W_F \to {}^L G, \quad \phi(\text{Frob}) = s(\pi)
+$$
 
 ## Dual Groups and Representation Theory
 
 ### Geometric Satake
 
 > [!abstract] Theorem (Ginzburg, Mirković-Vilonen)
-> $$\text{Rep}(\widehat{G}) \cong \text{Perv}_{G(\mathcal{O})}(\text{Gr}_G)$$
+> $$
+> \text{Rep}(\widehat{G}) \cong \text{Perv}_{G(\mathcal{O})}(\text{Gr}_G)
+> $$
 >
 > Representations of $\widehat{G}$ ↔ perverse sheaves on the affine Grassmannian.
 
@@ -212,14 +239,18 @@ This provides a geometric construction of $\widehat{G}$.
 ### L-Functions
 
 The dual group determines L-function factors:
-$$L(s, \pi, r) = \det(1 - r(\phi(\text{Frob})) q^{-s})^{-1}$$
+$$
+L(s, \pi, r) = \det(1 - r(\phi(\text{Frob})) q^{-s})^{-1}
+$$
 
 where $r: {}^L G \to \text{GL}(V)$ is a representation.
 
 ### Standard L-Function
 
 For the standard representation $\text{std}: {}^L \text{GL}_n \to \text{GL}_n(\mathbb{C})$:
-$$L(s, \pi, \text{std}) = \text{standard L-function}$$
+$$
+L(s, \pi, \text{std}) = \text{standard L-function}
+$$
 
 ## Related Concepts
 
@@ -237,3 +268,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Artin's classification remarks and introductory Lie algebra section do not develop based root data or reductive-group duality, while Lang and Neukirch mention Langlands conjectures/philosophy only at a high level. None defines the dual group, Weil-group semidirect product, $L$-parameters, $L$-homomorphisms, Satake isomorphism, or geometric Satake. The note remains `unverified`.

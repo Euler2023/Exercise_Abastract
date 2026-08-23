@@ -8,6 +8,9 @@ tags:
   - galois-theory
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §7, printed p. 293, PDF p. 308; Ch. VI, §15, printed pp. 315–319, PDF pp. 330–334"
+source_status: partially-verified
+status: not-started
 ---
 
 # Inverse Galois Problem
@@ -85,7 +88,9 @@ This is a deep result using class field theory and embedding problems.
 
 > [!abstract] Theorem (Hilbert)
 > If $f(t, X) \in \mathbb{Q}(t)[X]$ is irreducible with Galois group $G$ over $\mathbb{Q}(t)$, then for "most" $t_0 \in \mathbb{Q}$:
-> $$\text{Gal}(f(t_0, X)/\mathbb{Q}) = G$$
+> $$
+> \text{Gal}(f(t_0, X)/\mathbb{Q}) = G
+> $$
 >
 > ("Most" = all but a thin set)
 
@@ -168,7 +173,9 @@ Regular extensions correspond to:
 ### Role in IGP
 
 Building up groups via central extensions:
-$$1 \to A \to G \to H \to 1$$
+$$
+1 \to A \to G \to H \to 1
+$$
 
 If we can solve embedding problems, we can build $G$ from smaller pieces.
 
@@ -194,7 +201,9 @@ If we can solve embedding problems, we can build $G$ from smaller pieces.
 ### Covers and Fundamental Groups
 
 The algebraic fundamental group:
-$$\pi_1^{\text{ét}}(\mathbb{P}^1_\mathbb{Q} \setminus \{0, 1, \infty\})$$
+$$
+\pi_1^{\text{ét}}(\mathbb{P}^1_\mathbb{Q} \setminus \{0, 1, \infty\})
+$$
 
 is extremely rich and encodes solutions to IGP.
 
@@ -202,7 +211,9 @@ is extremely rich and encodes solutions to IGP.
 
 > [!info] Anabelian Geometry
 > Grothendieck proposed studying $\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ through its action on:
-> $$\pi_1^{\text{ét}}(\mathbb{P}^1_{\overline{\mathbb{Q}}} \setminus \{0, 1, \infty\})$$
+> $$
+> \pi_1^{\text{ét}}(\mathbb{P}^1_{\overline{\mathbb{Q}}} \setminus \{0, 1, \infty\})
+> $$
 >
 > The Inverse Galois Problem is deeply connected to understanding this action.
 
@@ -227,7 +238,9 @@ This connects covers of $\mathbb{P}^1 \setminus \{0, 1, \infty\}$ to arithmetic.
 
 ### What We Know
 
-$$\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q}) \twoheadrightarrow G$$
+$$
+\text{Gal}(\overline{\mathbb{Q}}/\mathbb{Q}) \twoheadrightarrow G
+$$
 
 exists for all groups $G$ that have been realized.
 
@@ -257,17 +270,23 @@ The Inverse Galois Problem and [[08 - Arithmetic Geometry/Concepts/Faltings Theo
 #### Riemann-Hurwitz Formula
 
 For a $G$-Galois cover $X \to \mathbb{P}^1$ branched at $r$ points:
-$$2g(X) - 2 = |G| \left( -2 + \sum_{i=1}^r \left(1 - \frac{1}{e_i}\right) \right)$$
+$$
+2g(X) - 2 = |G| \left( -2 + \sum_{i=1}^r \left(1 - \frac{1}{e_i}\right) \right)
+$$
 
 where $e_i$ are ramification indices.
 
 > [!example] Genus Computation
 > A cover with $|G| = 60$ ($A_5$) branched at 3 points with ramification $(2, 3, 5)$:
-> $$2g - 2 = 60 \left( -2 + \frac{1}{2} + \frac{2}{3} + \frac{4}{5} \right) = 60 \cdot \frac{-1}{30} = -2$$
+> $$
+> 2g - 2 = 60 \left( -2 + \frac{1}{2} + \frac{2}{3} + \frac{4}{5} \right) = 60 \cdot \frac{-1}{30} = -2
+> $$
 > So $g = 0$. The cover is $\mathbb{P}^1 \to \mathbb{P}^1$.
 >
 > But with ramification $(2, 4, 5)$:
-> $$2g - 2 = 60 \left( -2 + \frac{1}{2} + \frac{3}{4} + \frac{4}{5} \right) = 60 \cdot \frac{1}{20} = 3$$
+> $$
+> 2g - 2 = 60 \left( -2 + \frac{1}{2} + \frac{3}{4} + \frac{4}{5} \right) = 60 \cdot \frac{1}{20} = 3
+> $$
 > So $g = \frac{5}{2}$... impossible! No such cover exists.
 
 ### Finiteness Interplay
@@ -306,7 +325,9 @@ Grothendieck's **anabelian program** provides the conceptual framework unifying 
 
 > [!abstract] The Section Conjecture
 > For a hyperbolic curve $X$ over $\mathbb{Q}$ (genus $\geq 2$, or genus 1 with points removed, etc.):
-> $$X(\mathbb{Q}) \longleftrightarrow \left\{ \text{sections of } 1 \to \pi_1^{\text{ét}}(X_{\bar{\mathbb{Q}}}) \to \pi_1^{\text{ét}}(X) \to \text{Gal}(\bar{\mathbb{Q}}/\mathbb{Q}) \to 1 \right\}$$
+> $$
+> X(\mathbb{Q}) \longleftrightarrow \left\{ \text{sections of } 1 \to \pi_1^{\text{ét}}(X_{\bar{\mathbb{Q}}}) \to \pi_1^{\text{ét}}(X) \to \text{Gal}(\bar{\mathbb{Q}}/\mathbb{Q}) \to 1 \right\}
+> $$
 >
 > Rational points correspond to splittings of the fundamental group sequence.
 
@@ -402,7 +423,9 @@ For which $G$ does the minimal polynomial have degree exactly $|G|$?
 ### Malle's Conjecture
 
 Asymptotic count of number fields with given Galois group:
-$$N(G, X) \sim c_G X^{1/a(G)} (\log X)^{b(G)}$$
+$$
+N(G, X) \sim c_G X^{1/a(G)} (\log X)^{b(G)}
+$$
 
 ### Constructive Aspects
 
@@ -425,3 +448,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang explicitly formulates the question whether a given finite group occurs as $\operatorname{Gal}(K/\mathbb Q)$, points to the abelian case, and cites Shafarevich's theorem that every finite solvable group occurs over $\mathbb Q$. This verifies the basic problem and one major positive family. The regular problem, Hilbert irreducibility, rigidity, Noether's problem, specific simple/sporadic realizations, embedding problems, Hurwitz spaces, Belyi theory, Malle's conjecture, and the extended Faltings discussion are not proved in the checked slices and remain external.

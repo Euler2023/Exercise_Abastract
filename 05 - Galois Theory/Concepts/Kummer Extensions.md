@@ -7,6 +7,9 @@ tags:
   - galois-theory
   - kummer-extensions
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §16.11, printed pp. 500–502, PDF pp. 512–514"
+source_status: partially-verified
+status: not-started
 ---
 
 # Kummer Extensions

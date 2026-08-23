@@ -8,6 +8,9 @@ tags:
   - langlands
   - endoscopy
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Fundamental Lemma
@@ -24,7 +27,9 @@ Despite its modest name, the Fundamental Lemma is a deep and difficult result th
 
 > [!info] Definition (Orbital Integral)
 > For a reductive group $G$ over a local field $F$, an element $\gamma \in G(F)$, and a test function $f \in C_c^\infty(G(F))$:
-> $$O_\gamma(f) = \int_{G_\gamma(F) \backslash G(F)} f(g^{-1}\gamma g)\, dg$$
+> $$
+> O_\gamma(f) = \int_{G_\gamma(F) \backslash G(F)} f(g^{-1}\gamma g)\, dg
+> $$
 >
 > where $G_\gamma$ is the centralizer of $\gamma$.
 
@@ -65,7 +70,9 @@ Let:
 
 > [!abstract] Fundamental Lemma (Ngô, 2008)
 > For matching regular semisimple elements $\gamma_H \in H(F)$ and $\gamma \in G(F)$:
-> $$SO_{\gamma_H}(\mathbf{1}_{K_H}) = \Delta(\gamma_H, \gamma) \cdot O_\gamma^{\kappa}(\mathbf{1}_K)$$
+> $$
+> SO_{\gamma_H}(\mathbf{1}_{K_H}) = \Delta(\gamma_H, \gamma) \cdot O_\gamma^{\kappa}(\mathbf{1}_K)
+> $$
 >
 > where:
 > - $SO$ = stable orbital integral
@@ -76,7 +83,9 @@ Let:
 
 > [!info] Definition
 > The **stable orbital integral** sums over the stable conjugacy class:
-> $$SO_\gamma(f) = \sum_{\gamma' \sim_{\text{st}} \gamma} e(\gamma') O_{\gamma'}(f)$$
+> $$
+> SO_\gamma(f) = \sum_{\gamma' \sim_{\text{st}} \gamma} e(\gamma') O_{\gamma'}(f)
+> $$
 >
 > where $\gamma' \sim_{\text{st}} \gamma$ means $\gamma'$ is stably conjugate to $\gamma$ (conjugate over $\overline{F}$), and $e(\gamma')$ are signs.
 
@@ -86,7 +95,9 @@ Let:
 
 The **Arthur-Selberg trace formula** expresses spectral data (automorphic representations) in terms of geometric data (orbital integrals):
 
-$$\sum_\pi m(\pi) \text{tr } \pi(f) = \sum_{\gamma} \text{vol} \cdot O_\gamma(f) + \cdots$$
+$$
+\sum_\pi m(\pi) \text{tr } \pi(f) = \sum_{\gamma} \text{vol} \cdot O_\gamma(f) + \cdots
+$$
 
 To compare trace formulas for $G$ and $H$, one needs:
 1. **Transfer**: A map $f \mapsto f^H$ on test functions
@@ -158,7 +169,9 @@ This "purity" result implies the Fundamental Lemma.
 
 > [!info] Waldspurger's Reduction
 > The group version reduces to a **Lie algebra** Fundamental Lemma:
-> $$SO_X(\mathbf{1}_{\mathfrak{g}(\mathcal{O})}) = \Delta(X_H, X) \cdot O_X^\kappa(\mathbf{1}_{\mathfrak{g}(\mathcal{O})})$$
+> $$
+> SO_X(\mathbf{1}_{\mathfrak{g}(\mathcal{O})}) = \Delta(X_H, X) \cdot O_X^\kappa(\mathbf{1}_{\mathfrak{g}(\mathcal{O})})
+> $$
 >
 > for regular semisimple elements $X \in \mathfrak{g}(F)$.
 
@@ -197,7 +210,9 @@ For $G = \text{SL}_2$ over $\mathbb{Q}_p$:
 ### The Matching
 
 For elliptic $\gamma$ with eigenvalues in $E$:
-$$SO_\gamma^{\text{SL}_2}(\mathbf{1}_K) = \Delta(\gamma_T, \gamma) \cdot O_{\gamma_T}^{T_E}(\mathbf{1}_{T(\mathcal{O})})$$
+$$
+SO_\gamma^{\text{SL}_2}(\mathbf{1}_K) = \Delta(\gamma_T, \gamma) \cdot O_{\gamma_T}^{T_E}(\mathbf{1}_{T(\mathcal{O})})
+$$
 
 This can be verified by explicit computation.
 
@@ -233,3 +248,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: occurrences of “fundamental lemma” in the two number-theory books refer to unrelated technical lemmas, not the Langlands–Shelstad fundamental lemma. None of the four books defines orbital integrals, endoscopy, transfer factors, stable conjugacy, the Hitchin fibration, or Ngô's proof. Because title matching would be a false positive here, the entire note remains `unverified` pending the original or an authoritative expository source.

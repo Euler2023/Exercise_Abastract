@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. II, printed pp. 31–56, PDF pp. 43–68; Ch. XI, §4, printed pp. 219–224, PDF pp. 226–230"
+source_status: partially-verified
+status: not-started
 ---
 
 # Local Fields
@@ -14,19 +17,18 @@ created: 2026-01-19
 ## Definition
 
 > [!info] Definition (Local Field)
-> A **local field** is a field $K$ that is complete with respect to a discrete valuation and has finite residue field.
+> A **non-Archimedean local field** is a field $K$ complete for a nontrivial discrete valuation and having finite residue field.
 
-Equivalently: a locally compact, non-discrete topological field.
+A local field in the broader sense is a nondiscrete locally compact topological field; this also includes the Archimedean fields $\mathbb R$ and $\mathbb C$. The remainder of this note concerns the non-Archimedean case.
 
 ## Classification
 
 > [!abstract] Theorem (Classification of Local Fields)
-> Every local field is isomorphic to one of:
+> Every non-Archimedean local field is isomorphic to one of:
 > 1. **Characteristic 0**: Finite extension of $\mathbb{Q}_p$ (p-adic fields)
 > 2. **Characteristic $p > 0$**: $\mathbb{F}_q((t))$ (formal Laurent series)
 
-Also included (by convention):
-- $\mathbb{R}$ and $\mathbb{C}$ (Archimedean local fields)
+Together with $\mathbb R$ and $\mathbb C$, these give the local fields in the broader locally compact sense.
 
 ## Structure
 
@@ -62,10 +64,11 @@ Also included (by convention):
 > - Residue field: $\mathbb{F}_p$ (unchanged)
 > - Ramification index $e = 2$
 
-> [!example] Example 3: $\mathbb{Q}_p(\zeta_{p-1})$ (unramified)
-> - Degree $\varphi(p-1)$ over $\mathbb{Q}_p$
+> [!example] Example 3: An unramified extension of degree $f$
+> - One model is $K_f=\mathbb Q_p(\zeta_{p^f-1})$
+> - Degree $f$ over $\mathbb{Q}_p$
 > - Uniformizer: $\pi = p$
-> - Residue field: $\mathbb{F}_{p^{[K:\mathbb{Q}_p]}}$
+> - Residue field: $\mathbb{F}_{p^f}$
 > - Ramification index $e = 1$
 
 > [!example] Example 4: $\mathbb{F}_p((t))$
@@ -106,9 +109,15 @@ For $L/K$ a finite extension of local fields:
 ### Local Class Field Theory
 
 > [!abstract] Theorem (Local Artin Map)
-> There is a canonical isomorphism:
-> $$K^\times \xrightarrow{\sim} G_K^{\text{ab}}$$
-> sending uniformizers to (lifts of) Frobenius.
+> Local reciprocity gives a continuous homomorphism
+> $$
+> \operatorname{rec}_K:K^\times\longrightarrow G_K^{\mathrm{ab}}
+> $$
+> with dense image, normalized so that a uniformizer maps to arithmetic or geometric Frobenius according to convention. It induces
+> $$
+> \widehat{K^\times}\xrightarrow{\sim}G_K^{\mathrm{ab}},
+> $$
+> and, for each finite abelian extension $L/K$, an isomorphism $K^\times/N_{L/K}(L^\times)\cong\operatorname{Gal}(L/K)$.
 
 ## Hensel's Lemma
 
@@ -141,3 +150,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang Chapter II supports the completion, ramification, and Hensel-style background, while Chapter XI §4 supplies the local class-field-theoretic boundary. Lang explicitly treats local fields only incidentally, so the classification theorem, the full absolute-Galois-group structure, and later arithmetic-geometric applications remain external inputs unless separately sourced. The reciprocity statement above records the necessary profinite-completion distinction.

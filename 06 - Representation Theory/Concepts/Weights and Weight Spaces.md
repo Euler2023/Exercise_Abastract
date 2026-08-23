@@ -7,6 +7,9 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Weights and Weight Spaces
@@ -17,7 +20,9 @@ created: 2026-01-19
 > Let $\mathfrak{g}$ be a semisimple Lie algebra with Cartan subalgebra $\mathfrak{h}$.
 >
 > For a representation $V$ of $\mathfrak{g}$, a **weight** is a linear functional $\lambda \in \mathfrak{h}^*$ such that:
-> $$V_\lambda = \{v \in V : H \cdot v = \lambda(H)v \text{ for all } H \in \mathfrak{h}\} \neq 0$$
+> $$
+> V_\lambda = \{v \in V : H \cdot v = \lambda(H)v \text{ for all } H \in \mathfrak{h}\} \neq 0
+> $$
 >
 > $V_\lambda$ is called the **weight space** for $\lambda$.
 
@@ -27,7 +32,9 @@ The set of all weights of $V$ is denoted $\Pi(V)$ or $\text{wt}(V)$.
 
 > [!abstract] Theorem
 > Every finite-dimensional representation $V$ of a semisimple Lie algebra decomposes as:
-> $$V = \bigoplus_{\lambda \in \mathfrak{h}^*} V_\lambda$$
+> $$
+> V = \bigoplus_{\lambda \in \mathfrak{h}^*} V_\lambda
+> $$
 >
 > This is called the **weight space decomposition**.
 
@@ -57,11 +64,15 @@ The dimension $\dim V_\lambda$ is called the **multiplicity** of $\lambda$ in $V
 
 > [!abstract] Key Properties
 > 1. **Root action**: If $\alpha \in \Phi$ and $X_\alpha \in \mathfrak{g}_\alpha$, then:
->    $$X_\alpha: V_\lambda \to V_{\lambda + \alpha}$$
+>    $$
+>    X_\alpha: V_\lambda \to V_{\lambda + \alpha}
+>    $$
 >    (Root vectors shift weights)
 >
 > 2. **Integrality**: For finite-dimensional representations:
->    $$\langle \lambda, \alpha^\vee \rangle \in \mathbb{Z} \quad \text{for all } \lambda \in \Pi(V), \alpha \in \Phi$$
+>    $$
+>    \langle \lambda, \alpha^\vee \rangle \in \mathbb{Z} \quad \text{for all } \lambda \in \Pi(V), \alpha \in \Phi
+>    $$
 >
 > 3. **Weyl group symmetry**: $\Pi(V)$ is invariant under the Weyl group $W$.
 
@@ -69,10 +80,14 @@ The dimension $\dim V_\lambda$ is called the **multiplicity** of $\lambda$ in $V
 
 > [!info] Definition
 > The **weight lattice** is:
-> $$P = \{\lambda \in \mathfrak{h}^* : \langle \lambda, \alpha^\vee \rangle \in \mathbb{Z} \text{ for all } \alpha \in \Phi\}$$
+> $$
+> P = \{\lambda \in \mathfrak{h}^* : \langle \lambda, \alpha^\vee \rangle \in \mathbb{Z} \text{ for all } \alpha \in \Phi\}
+> $$
 >
 > The **root lattice** is:
-> $$Q = \mathbb{Z}\Phi = \sum_{\alpha \in \Delta} \mathbb{Z}\alpha$$
+> $$
+> Q = \mathbb{Z}\Phi = \sum_{\alpha \in \Delta} \mathbb{Z}\alpha
+> $$
 
 We have $Q \subset P$.
 
@@ -80,7 +95,9 @@ We have $Q \subset P$.
 
 > [!info] Definition
 > The **fundamental weights** $\omega_1, \ldots, \omega_n$ are defined by:
-> $$\langle \omega_i, \alpha_j^\vee \rangle = \delta_{ij}$$
+> $$
+> \langle \omega_i, \alpha_j^\vee \rangle = \delta_{ij}
+> $$
 >
 > They form a $\mathbb{Z}$-basis of $P$.
 
@@ -90,7 +107,9 @@ Every weight is a $\mathbb{Z}$-linear combination of fundamental weights.
 
 > [!info] Definition
 > A weight $\lambda \in P$ is **dominant** if:
-> $$\langle \lambda, \alpha^\vee \rangle \geq 0 \quad \text{for all simple roots } \alpha$$
+> $$
+> \langle \lambda, \alpha^\vee \rangle \geq 0 \quad \text{for all simple roots } \alpha
+> $$
 >
 > Equivalently: $\lambda = \sum_{i} n_i \omega_i$ with $n_i \geq 0$.
 
@@ -115,12 +134,18 @@ The set of dominant integral weights is $P^+ = P \cap \overline{C}$ where $C$ is
 
 > [!abstract] Theorem (Highest Weight Classification)
 > There is a bijection:
-> $$\{\text{dominant integral weights}\} \longleftrightarrow \{\text{finite-dim irreducibles of } \mathfrak{g}\}$$
-> $$\lambda \longmapsto L(\lambda)$$
+> $$
+> \{\text{dominant integral weights}\} \longleftrightarrow \{\text{finite-dim irreducibles of } \mathfrak{g}\}
+> $$
+> $$
+> \lambda \longmapsto L(\lambda)
+> $$
 
 ### Weyl Dimension Formula
 
-$$\dim L(\lambda) = \prod_{\alpha \in \Phi^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}$$
+$$
+\dim L(\lambda) = \prod_{\alpha \in \Phi^+} \frac{\langle \lambda + \rho, \alpha \rangle}{\langle \rho, \alpha \rangle}
+$$
 
 where $\rho = \frac{1}{2}\sum_{\alpha \in \Phi^+} \alpha = \sum_i \omega_i$.
 
@@ -148,13 +173,17 @@ For low-rank algebras, we can visualize weights in $\mathfrak{h}^*_\mathbb{R}$.
 
 > [!abstract] Freudenthal's Formula
 > For $\mu \in \Pi(L(\lambda))$ with $\mu \neq \lambda$:
-> $$(\|\lambda + \rho\|^2 - \|\mu + \rho\|^2) \dim L(\lambda)_\mu = 2\sum_{\alpha \in \Phi^+} \sum_{j \geq 1} (\mu + j\alpha, \alpha) \dim L(\lambda)_{\mu + j\alpha}$$
+> $$
+> (\|\lambda + \rho\|^2 - \|\mu + \rho\|^2) \dim L(\lambda)_\mu = 2\sum_{\alpha \in \Phi^+} \sum_{j \geq 1} (\mu + j\alpha, \alpha) \dim L(\lambda)_{\mu + j\alpha}
+> $$
 
 ## Characters
 
 > [!info] Definition
 > The **character** of $V$ is:
-> $$\text{ch}(V) = \sum_{\lambda \in P} (\dim V_\lambda) e^\lambda$$
+> $$
+> \text{ch}(V) = \sum_{\lambda \in P} (\dim V_\lambda) e^\lambda
+> $$
 >
 > This is a formal sum in the group ring $\mathbb{Z}[P]$.
 
@@ -164,7 +193,9 @@ Properties:
 - $\text{ch}(V^*) = \text{ch}(V)^*$ (apply $\lambda \mapsto -\lambda$)
 
 > [!abstract] Weyl Character Formula
-> $$\text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\prod_{\alpha \in \Phi^+}(e^{\alpha/2} - e^{-\alpha/2})}$$
+> $$
+> \text{ch}(L(\lambda)) = \frac{\sum_{w \in W} (-1)^{\ell(w)} e^{w(\lambda + \rho)}}{\prod_{\alpha \in \Phi^+}(e^{\alpha/2} - e^{-\alpha/2})}
+> $$
 
 ## Tensor Product Decomposition
 
@@ -194,3 +225,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: the checked books cover ordinary eigenspaces and elementary group representations, and Artin/Lang give only introductory Lie-algebra material. They do not define Cartan subalgebras, weights, weight lattices, dominant or highest weights, weight diagrams, or highest-weight classification. Because those notions are the substance of this note, no source-level upgrade is justified; it remains `unverified` pending an external Lie-representation source.

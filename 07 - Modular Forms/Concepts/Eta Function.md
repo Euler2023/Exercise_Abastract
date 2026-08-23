@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Eta Function
@@ -14,7 +17,9 @@ created: 2026-01-19
 
 > [!info] Definition (Dedekind Eta Function)
 > The **Dedekind eta function** is:
-> $$\eta(\tau) = q^{1/24} \prod_{n=1}^{\infty} (1 - q^n) = q^{1/24} \sum_{n=-\infty}^{\infty} (-1)^n q^{n(3n-1)/2}$$
+> $$
+> \eta(\tau) = q^{1/24} \prod_{n=1}^{\infty} (1 - q^n) = q^{1/24} \sum_{n=-\infty}^{\infty} (-1)^n q^{n(3n-1)/2}
+> $$
 > where $q = e^{2\pi i \tau}$.
 
 The second expression is the **pentagonal number theorem**.
@@ -30,28 +35,36 @@ The second expression is the **pentagonal number theorem**.
 
 > [!abstract] Theorem (Full Transformation)
 > For $\gamma = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \text{SL}_2(\mathbb{Z})$ with $c > 0$:
-> $$\eta(\gamma \tau) = \varepsilon(a,b,c,d) \sqrt{c\tau + d} \cdot \eta(\tau)$$
+> $$
+> \eta(\gamma \tau) = \varepsilon(a,b,c,d) \sqrt{c\tau + d} \cdot \eta(\tau)
+> $$
 > where $\varepsilon$ is a 24th root of unity (Dedekind sum).
 
 ## Dedekind Sum
 
 > [!info] Definition
 > The **Dedekind sum** is:
-> $$s(d, c) = \sum_{r=1}^{c-1} \frac{r}{c}\left(\frac{dr}{c} - \left\lfloor\frac{dr}{c}\right\rfloor - \frac{1}{2}\right)$$
+> $$
+> s(d, c) = \sum_{r=1}^{c-1} \frac{r}{c}\left(\frac{dr}{c} - \left\lfloor\frac{dr}{c}\right\rfloor - \frac{1}{2}\right)
+> $$
 >
 > The multiplier $\varepsilon$ involves $e^{\pi i s(d,c)}$.
 
 ## Connection to Partition Function
 
 > [!abstract] Theorem
-> $$\frac{1}{\eta(\tau)} = q^{-1/24} \sum_{n=0}^{\infty} p(n) q^n$$
+> $$
+> \frac{1}{\eta(\tau)} = q^{-1/24} \sum_{n=0}^{\infty} p(n) q^n
+> $$
 > where $p(n)$ is the [[07 - Modular Forms/Concepts/Partition Function|partition function]].
 
 ## Eta Products
 
 > [!info] Definition (Eta Product)
 > An **eta product** is a function of the form:
-> $$f(\tau) = \prod_{d | N} \eta(d\tau)^{r_d}$$
+> $$
+> f(\tau) = \prod_{d | N} \eta(d\tau)^{r_d}
+> $$
 > where $r_d \in \mathbb{Z}$.
 
 > [!abstract] Theorem (Ligozat)
@@ -64,29 +77,41 @@ The second expression is the **pentagonal number theorem**.
 ## Examples
 
 > [!example] Example 1: Discriminant
-> $$\Delta(\tau) = \eta(\tau)^{24} = q \prod_{n=1}^{\infty}(1-q^n)^{24}$$
+> $$
+> \Delta(\tau) = \eta(\tau)^{24} = q \prod_{n=1}^{\infty}(1-q^n)^{24}
+> $$
 
 > [!example] Example 2: Weight 1/2 form
 > $\eta(\tau)$ itself is a modular form of weight $1/2$ for a metaplectic double cover.
 
 > [!example] Example 3: Euler's product
-> $$\eta(\tau) = q^{1/24}(1-q)(1-q^2)(1-q^3)\cdots$$
+> $$
+> \eta(\tau) = q^{1/24}(1-q)(1-q^2)(1-q^3)\cdots
+> $$
 
 > [!example] Example 4: Generating function
-> $$\frac{1}{\eta(24\tau)} = \sum_{n=0}^{\infty} p(n) q^{24n-1}$$
+> $$
+> \frac{1}{\eta(24\tau)} = \sum_{n=0}^{\infty} p(n) q^{24n-1}
+> $$
 
 ## Pentagonal Number Theorem
 
 > [!abstract] Theorem (Euler)
-> $$\prod_{n=1}^{\infty}(1-q^n) = \sum_{k=-\infty}^{\infty} (-1)^k q^{k(3k-1)/2}$$
-> $$= 1 - q - q^2 + q^5 + q^7 - q^{12} - q^{15} + \cdots$$
+> $$
+> \prod_{n=1}^{\infty}(1-q^n) = \sum_{k=-\infty}^{\infty} (-1)^k q^{k(3k-1)/2}
+> $$
+> $$
+> = 1 - q - q^2 + q^5 + q^7 - q^{12} - q^{15} + \cdots
+> $$
 
 The exponents $k(3k-1)/2$ are **generalized pentagonal numbers**.
 
 ## Modular Equations
 
 Eta quotients satisfy remarkable identities. For example:
-$$\left(\frac{\eta(\tau)}{\eta(2\tau)}\right)^{24} + 16\left(\frac{\eta(2\tau)}{\eta(\tau)}\right)^{24} = \left(\frac{\eta(\tau/2)}{\eta(\tau)}\right)^{24}$$
+$$
+\left(\frac{\eta(\tau)}{\eta(2\tau)}\right)^{24} + 16\left(\frac{\eta(2\tau)}{\eta(\tau)}\right)^{24} = \left(\frac{\eta(\tau/2)}{\eta(\tau)}\right)^{24}
+$$
 
 ## Related Concepts
 
@@ -102,3 +127,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Ch. VI, §15, printed pp. 317–318 (PDF pp. 332–333), verifies the product $\Delta=q\prod_{n\ge1}(1-q^n)^{24}$, which is formally $\eta^{24}$ under the standard normalization. It does not define $\eta$ itself, choose the twenty-fourth-root multiplier, prove its transformation law, define Dedekind sums, or derive eta products and the pentagonal theorem. Those are essential to this note, so it remains `unverified`.

@@ -8,6 +8,9 @@ tags:
   - theorem
   - galois-theory
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §16.7, printed pp. 489–492, PDF pp. 501–504"
+source_status: partially-verified
+status: not-started
 ---
 
 # Fundamental Theorem of Galois Theory

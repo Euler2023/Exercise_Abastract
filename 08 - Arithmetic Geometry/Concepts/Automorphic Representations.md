@@ -8,6 +8,9 @@ tags:
   - langlands
   - representation-theory
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Automorphic Representations
@@ -22,17 +25,23 @@ created: 2026-01-19
 
 > [!info] Definition (Adeles)
 > The **adele ring** of a number field $K$ is:
-> $$\mathbb{A}_K = \prod'_{v} K_v$$
+> $$
+> \mathbb{A}_K = \prod'_{v} K_v
+> $$
 >
 > the restricted product over all places $v$ of $K$, where almost all components lie in the ring of integers $\mathcal{O}_v$.
 
 For $K = \mathbb{Q}$:
-$$\mathbb{A}_\mathbb{Q} = \mathbb{R} \times \prod'_p \mathbb{Q}_p$$
+$$
+\mathbb{A}_\mathbb{Q} = \mathbb{R} \times \prod'_p \mathbb{Q}_p
+$$
 
 ### The Adelic Group
 
 For a reductive algebraic group $G$ over $K$:
-$$G(\mathbb{A}_K) = \prod'_v G(K_v)$$
+$$
+G(\mathbb{A}_K) = \prod'_v G(K_v)
+$$
 
 with $G(\mathcal{O}_v)$ as the local compact subgroups for almost all $v$.
 
@@ -40,7 +49,9 @@ with $G(\mathcal{O}_v)$ as the local compact subgroups for almost all $v$.
 
 > [!info] Definition (Automorphic Representation)
 > An **automorphic representation** of $G(\mathbb{A}_K)$ is an irreducible constituent of the right regular representation of $G(\mathbb{A}_K)$ on:
-> $$L^2(G(K) \backslash G(\mathbb{A}_K))$$
+> $$
+> L^2(G(K) \backslash G(\mathbb{A}_K))
+> $$
 >
 > or more generally, on the space of automorphic forms $\mathcal{A}(G)$.
 
@@ -48,7 +59,9 @@ with $G(\mathcal{O}_v)$ as the local compact subgroups for almost all $v$.
 
 > [!info] Definition (Cuspidal)
 > An automorphic representation $\pi$ is **cuspidal** if for every proper parabolic subgroup $P = MN$:
-> $$\int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng)\, dn = 0$$
+> $$
+> \int_{N(K) \backslash N(\mathbb{A}_K)} \phi(ng)\, dn = 0
+> $$
 >
 > for all $\phi$ in the space of $\pi$ and all $g \in G(\mathbb{A}_K)$.
 
@@ -58,7 +71,9 @@ Cuspidal representations are the "atoms" from which other automorphic representa
 
 > [!abstract] Theorem (Flath)
 > Every irreducible admissible representation $\pi$ of $G(\mathbb{A}_K)$ decomposes as a **restricted tensor product**:
-> $$\pi = \bigotimes'_v \pi_v$$
+> $$
+> \pi = \bigotimes'_v \pi_v
+> $$
 >
 > where $\pi_v$ is an irreducible admissible representation of $G(K_v)$, and $\pi_v$ is **unramified** for almost all $v$.
 
@@ -77,7 +92,9 @@ Cuspidal representations are the "atoms" from which other automorphic representa
 
 > [!example] Automorphic representations of GL₁
 > These are exactly **Hecke characters** (or Größencharaktere):
-> $$\chi: K^\times \backslash \mathbb{A}_K^\times \to \mathbb{C}^\times$$
+> $$
+> \chi: K^\times \backslash \mathbb{A}_K^\times \to \mathbb{C}^\times
+> $$
 >
 > - Dirichlet characters are examples over $\mathbb{Q}$
 > - Class field theory: these correspond to 1-dimensional Galois representations
@@ -102,7 +119,9 @@ Cuspidal representations are the "atoms" from which other automorphic representa
 
 > [!example] Non-cuspidal automorphic representations
 > General automorphic representations of $\text{GL}_n$ are **isobaric sums**:
-> $$\pi = \pi_1 \boxplus \pi_2 \boxplus \cdots \boxplus \pi_k$$
+> $$
+> \pi = \pi_1 \boxplus \pi_2 \boxplus \cdots \boxplus \pi_k
+> $$
 >
 > where $\pi_i$ are cuspidal representations of $\text{GL}_{n_i}$ with $\sum n_i = n$.
 
@@ -112,17 +131,23 @@ Cuspidal representations are the "atoms" from which other automorphic representa
 
 > [!info] Definition
 > The **standard L-function** of an automorphic representation $\pi = \otimes' \pi_v$ is:
-> $$L(s, \pi) = \prod_v L(s, \pi_v)$$
+> $$
+> L(s, \pi) = \prod_v L(s, \pi_v)
+> $$
 >
 > where the local factors $L(s, \pi_v)$ are defined via the Langlands classification.
 
 ### For GL₂
 
 For a newform $f$ with $\pi_f$:
-$$L(s, \pi_f) = \sum_{n=1}^\infty \frac{a_n}{n^s} = \prod_p L_p(s, \pi_{f,p})$$
+$$
+L(s, \pi_f) = \sum_{n=1}^\infty \frac{a_n}{n^s} = \prod_p L_p(s, \pi_{f,p})
+$$
 
 where for unramified $p$:
-$$L_p(s, \pi_{f,p}) = \frac{1}{1 - a_p p^{-s} + p^{k-1-2s}}$$
+$$
+L_p(s, \pi_{f,p}) = \frac{1}{1 - a_p p^{-s} + p^{k-1-2s}}
+$$
 
 ### Analytic Properties
 
@@ -138,7 +163,9 @@ $$L_p(s, \pi_{f,p}) = \frac{1}{1 - a_p p^{-s} + p^{k-1-2s}}$$
 
 > [!abstract] Theorem (Langlands)
 > Irreducible admissible representations of $G(F)$ (local field) are classified by:
-> $$\pi \longleftrightarrow (M, \sigma, \nu)$$
+> $$
+> \pi \longleftrightarrow (M, \sigma, \nu)
+> $$
 >
 > - $M$: Levi subgroup
 > - $\sigma$: tempered representation of $M$
@@ -180,7 +207,9 @@ This fails for other groups, leading to Arthur's work on **endoscopy**.
 
 ### Decomposition
 
-$$L^2(G(K) \backslash G(\mathbb{A}_K)) = L^2_{\text{disc}} \oplus L^2_{\text{cont}}$$
+$$
+L^2(G(K) \backslash G(\mathbb{A}_K)) = L^2_{\text{disc}} \oplus L^2_{\text{cont}}
+$$
 
 where $L^2_{\text{disc}}$ decomposes discretely into irreducibles.
 
@@ -190,7 +219,9 @@ where $L^2_{\text{disc}}$ decomposes discretely into irreducibles.
 
 > [!abstract] Langlands Reciprocity (for GLₙ)
 > There should be a bijection:
-> $$\{\text{Cuspidal automorphic } \pi \text{ of } \text{GL}_n(\mathbb{A}_K)\} \longleftrightarrow \{\text{$n$-dim irreducible motives over } K\}$$
+> $$
+> \{\text{Cuspidal automorphic } \pi \text{ of } \text{GL}_n(\mathbb{A}_K)\} \longleftrightarrow \{\text{$n$-dim irreducible motives over } K\}
+> $$
 >
 > matching L-functions: $L(s, \pi) = L(s, M)$.
 
@@ -219,3 +250,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang's modular-connection discussion mentions automorphic forms in the Langlands conjectures but does not define automorphic representations or the right-regular representation on $G(F)\backslash G(\mathbb A_F)$. No checked slice establishes restricted tensor products, local components, cuspidality, automorphic spectra, multiplicity one, Langlands classification, or standard $L$-functions. The entire representation-theoretic framework here remains `unverified`.

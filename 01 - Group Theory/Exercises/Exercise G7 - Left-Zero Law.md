@@ -7,7 +7,7 @@ tags:
   - exercise
   - group-theory
   - foundations
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.1"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 1, Ex. 1.1, printed p. 69, PDF p. 81"
 created: 2026-08-10
 ---
 
@@ -60,4 +60,4 @@ created: 2026-08-10
 
 This operation is often called the **left-zero law**. The proof uses only the definition of associativity and identity.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 1, Ex. 1.1]. The solution above is proved directly in this note; no external theorem is used.
+**Source status:** Exercise statement from [S1, Ch. 2, §1, Ex. 1.1, printed p. 69, PDF p. 81]. The solution above is proved directly in this note; no external theorem is used.

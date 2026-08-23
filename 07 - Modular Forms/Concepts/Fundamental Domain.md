@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Fundamental Domain
@@ -21,7 +24,9 @@ created: 2026-01-19
 
 > [!info] Definition (Standard Fundamental Domain)
 > The standard fundamental domain for $\text{PSL}_2(\mathbb{Z})$ is:
-> $$\mathcal{F} = \left\{ \tau \in \mathbb{H} : |\tau| > 1, \, -\frac{1}{2} < \text{Re}(\tau) < \frac{1}{2} \right\}$$
+> $$
+> \mathcal{F} = \left\{ \tau \in \mathbb{H} : |\tau| > 1, \, -\frac{1}{2} < \text{Re}(\tau) < \frac{1}{2} \right\}
+> $$
 > with appropriate boundary identifications.
 
 ```
@@ -64,11 +69,15 @@ For $\text{PSL}_2(\mathbb{Z})$, there is only **one cusp**: all rational points 
 ## Compactification
 
 > [!info] Definition (Extended Upper Half-Plane)
-> $$\mathbb{H}^* = \mathbb{H} \cup \mathbb{Q} \cup \{i\infty\}$$
+> $$
+> \mathbb{H}^* = \mathbb{H} \cup \mathbb{Q} \cup \{i\infty\}
+> $$
 > The quotient $\mathbb{H}^* / \Gamma$ is a compact Riemann surface.
 
 For $\text{PSL}_2(\mathbb{Z})$:
-$$\mathbb{H}^* / \text{PSL}_2(\mathbb{Z}) \cong \mathbb{P}^1(\mathbb{C})$$
+$$
+\mathbb{H}^* / \text{PSL}_2(\mathbb{Z}) \cong \mathbb{P}^1(\mathbb{C})
+$$
 (the Riemann sphere, via the [[07 - Modular Forms/Concepts/j-Invariant|j-invariant]])
 
 ## Key Properties
@@ -105,3 +114,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Ch. VI, §15, printed pp. 318–319 (PDF pp. 333–334), defines the upper half-plane and the fractional-linear $\mathrm{SL}_2(\mathbb R)$ action used for modular forms. The checked corpus does not construct the standard fundamental domain, prove orbit existence/uniqueness modulo boundary identifications, analyze elliptic stabilizers and cusps, or compute its hyperbolic area. The geometric claims therefore remain `unverified`.

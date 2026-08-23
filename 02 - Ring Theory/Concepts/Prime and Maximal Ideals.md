@@ -6,6 +6,9 @@ tags:
   - definition
   - ring-theory
 created: 2026-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 11, §§11.3 and 11.8, printed pp. 328–334 and 344–347, PDF pp. 340–346 and 356–359"
+source_status: partially-verified
+status: not-started
 ---
 
 # Prime and Maximal Ideals
@@ -69,6 +72,7 @@ created: 2026-01-19
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
+- [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 
 ## Exercises
 
@@ -78,3 +82,6 @@ FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
 
+## Source and Proof Status
+
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.

@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. VII, printed pp. 137–154, PDF pp. 146–163; Chs. X–XI, printed pp. 197–228, PDF pp. 204–233"
+source_status: partially-verified
+status: not-started
 ---
 
 # Adèles and Idèles
@@ -50,7 +53,10 @@ An adèle $(x_\infty, x_2, x_3, x_5, \ldots)$ satisfies $x_p \in \mathbb{Z}_p$ f
 $$K \hookrightarrow \mathbb{A}_K, \quad x \mapsto (x, x, x, \ldots)$$
 
 > [!abstract] Theorem (Strong Approximation)
-> $K$ is dense in $\mathbb{A}_K^S = \prod_{v \notin S} K_v$ for any finite set $S$ of places.
+> If $S$ is a nonempty finite set of places, then the diagonal image of $K$ is dense in the restricted adèle ring away from $S$,
+> $$
+> \mathbb A_K^S=\prod_{v\notin S}'K_v.
+> $$
 
 ## Class Field Theory
 
@@ -61,9 +67,11 @@ $$K \hookrightarrow \mathbb{A}_K, \quad x \mapsto (x, x, x, \ldots)$$
 > $$C_K = \mathbb{I}_K / K^\times$$
 
 > [!abstract] Theorem (Global Artin Map)
-> There is a canonical surjection:
-> $$\text{Art}: C_K \twoheadrightarrow \text{Gal}(K^{\text{ab}}/K)$$
-> with kernel the connected component of the identity.
+> Global reciprocity induces a canonical topological isomorphism
+> $$
+> C_K/C_K^0\xrightarrow{\sim}\operatorname{Gal}(K^{\mathrm{ab}}/K),
+> $$
+> where $C_K^0$ is the identity component. Equivalently, the reciprocity map on $C_K$ has kernel $C_K^0$.
 
 ### Relationship to Classical Objects
 
@@ -77,8 +85,11 @@ $$K \hookrightarrow \mathbb{A}_K, \quad x \mapsto (x, x, x, \ldots)$$
 
 > [!info] Definition (Adèlic Points)
 > For a variety $X/K$:
-> $$X(\mathbb{A}_K) = \prod_v{}' X(K_v)$$
-> where the restricted product requires $x_v \in X(\mathcal{O}_v)$ for almost all $v$.
+> After choosing an integral model at almost all finite places, one writes
+> $$
+> X(\mathbb{A}_K) = \prod_v{}' X(K_v),
+> $$
+> with $x_v\in X(\mathcal O_v)$ for almost all $v$.
 
 ### Local-Global Principle
 
@@ -99,15 +110,18 @@ $$X(K) \neq \emptyset \stackrel{?}{\iff} X(\mathbb{A}_K) \neq \emptyset$$
 > This is in $\mathbb{A}_\mathbb{Q}$ but NOT of the form $(x, x, x, \ldots)$.
 
 > [!example] Example 3: Idèle Class Group of $\mathbb{Q}$
-> $$C_\mathbb{Q} = \mathbb{I}_\mathbb{Q} / \mathbb{Q}^\times \cong \mathbb{R}_{>0} \times \prod_p \mathbb{Z}_p^\times / \{\pm 1\}$$
-> The quotient by the connected component gives the trivial group (since $\mathbb{Q}$ has class number 1).
+> Splitting off the idèlic norm gives an identification
+> $$
+> C_\mathbb Q\cong \mathbb R_{>0}\times\widehat{\mathbb Z}^{\times}.
+> $$
+> Hence $C_\mathbb Q/C_\mathbb Q^0\cong\widehat{\mathbb Z}^{\times}$, not the trivial group. Class number one concerns a different quotient and does not make the full idèle class group trivial.
 
-## Tamagawa Measures
+## Haar and Tamagawa Measures
 
 > [!info] Definition
-> The **Tamagawa measure** on $\mathbb{A}_K$ is the product of local Haar measures, normalized so that $\mathcal{O}_v$ has measure 1 for finite places.
+> A standard additive Haar measure on $\mathbb A_K$ is assembled from local Haar measures, often normalized by $\operatorname{vol}(\mathcal O_v)=1$ at almost all finite places.
 
-This leads to **Tamagawa numbers** measuring the volume of $G(\mathbb{A}_K)/G(K)$ for algebraic groups.
+Tamagawa measures on algebraic groups require compatible invariant differential forms and convergence factors; their normalization is not exhausted by the preceding additive convention. Tamagawa numbers measure the resulting volume of $G(\mathbb A_K)/G(K)$ when defined.
 
 ## L-functions
 
@@ -115,7 +129,11 @@ Adèlic methods unify L-functions:
 - Tate's thesis: $\zeta(s)$ via adèlic integrals
 - Automorphic representations: functions on $G(\mathbb{A}_K)$
 
-$$\zeta_K(s) = \int_{\mathbb{I}_K} |x|^s d^\times x$$
+For a Schwartz–Bruhat function $\Phi$ on $\mathbb A_K$, Tate's zeta integral has the form
+$$
+Z(\Phi,s)=\int_{\mathbb A_K^\times}\Phi(x)|x|^s\,d^\times x.
+$$
+Suitable choices and factorizations recover completed zeta and Hecke $L$-functions; the integral without the test function generally diverges.
 
 ## Related Concepts
 
@@ -132,3 +150,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+The restricted-product definitions, idèle classes, and class-field-theoretic framework were checked against Lang's Chapters VII and X–XI. The sections on varieties, Brauer–Manin obstructions, automorphic representations, and Tamagawa numbers go beyond those bounded slices and remain external inputs. The displayed reciprocity statements are summaries, not source-contained proofs.

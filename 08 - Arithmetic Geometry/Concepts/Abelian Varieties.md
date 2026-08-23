@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Abelian Varieties
@@ -38,14 +41,18 @@ created: 2026-01-19
 
 > [!abstract] Theorem
 > Every abelian variety over $\mathbb{C}$ is isomorphic to:
-> $$A(\mathbb{C}) \cong \mathbb{C}^g / \Lambda$$
+> $$
+> A(\mathbb{C}) \cong \mathbb{C}^g / \Lambda
+> $$
 > where $\Lambda \cong \mathbb{Z}^{2g}$ is a lattice satisfying the **Riemann conditions**.
 
 ## Mordell-Weil for Abelian Varieties
 
 > [!abstract] Theorem (Mordell-Weil, General)
 > For an abelian variety $A$ over a number field $K$:
-> $$A(K) \cong \mathbb{Z}^r \oplus A(K)_{\text{tors}}$$
+> $$
+> A(K) \cong \mathbb{Z}^r \oplus A(K)_{\text{tors}}
+> $$
 > where $r \geq 0$ is the **rank** and the torsion subgroup is finite.
 
 ## Important Constructions
@@ -54,7 +61,9 @@ created: 2026-01-19
 
 > [!info] Definition
 > For a smooth projective curve $C$ of genus $g$, the **Jacobian** $J(C)$ is the abelian variety of dimension $g$ satisfying:
-> $$J(C) = \text{Pic}^0(C) = \frac{\text{degree 0 divisors}}{\text{principal divisors}}$$
+> $$
+> J(C) = \text{Pic}^0(C) = \frac{\text{degree 0 divisors}}{\text{principal divisors}}
+> $$
 
 The curve $C$ embeds into $J(C)$ via $P \mapsto [P - P_0]$ for a basepoint $P_0$.
 
@@ -80,11 +89,15 @@ There is a canonical isomorphism $(A^\vee)^\vee \cong A$.
 
 > [!info] Definition
 > The $n$-torsion is:
-> $$A[n] = \ker([n]: A \to A)$$
+> $$
+> A[n] = \ker([n]: A \to A)
+> $$
 
 > [!abstract] Theorem
 > Over $\bar{k}$ (characteristic 0 or coprime to $n$):
-> $$A[n] \cong (\mathbb{Z}/n\mathbb{Z})^{2g}$$
+> $$
+> A[n] \cong (\mathbb{Z}/n\mathbb{Z})^{2g}
+> $$
 
 ## Polarizations
 
@@ -96,7 +109,9 @@ Jacobians of curves have canonical principal polarizations (Theta divisor).
 
 ## Endomorphism Ring
 
-$$\text{End}(A) = \{\text{morphisms } \phi: A \to A\}$$
+$$
+\text{End}(A) = \{\text{morphisms } \phi: A \to A\}
+$$
 
 | Type | $\text{End}(A) \otimes \mathbb{Q}$ | Example |
 |------|-----------------------------------|---------|
@@ -109,10 +124,14 @@ $$\text{End}(A) = \{\text{morphisms } \phi: A \to A\}$$
 
 For $A/\mathbb{Q}$ an abelian variety of dimension $g$:
 
-$$L(A, s) = \prod_p L_p(A, s)^{-1}$$
+$$
+L(A, s) = \prod_p L_p(A, s)^{-1}
+$$
 
 > [!abstract] BSD Conjecture (for Abelian Varieties)
-> $$\text{rank}(A(\mathbb{Q})) = \text{ord}_{s=1} L(A, s)$$
+> $$
+> \text{rank}(A(\mathbb{Q})) = \text{ord}_{s=1} L(A, s)
+> $$
 
 ## Examples
 
@@ -132,7 +151,9 @@ $$L(A, s) = \prod_p L_p(A, s)^{-1}$$
 > [!info] Definition
 > For $A/K$ (number field), the **Néron model** $\mathcal{A}/\mathcal{O}_K$ is a smooth group scheme extending $A$ with the **Néron mapping property**:
 > For any smooth $S$-scheme $Y$:
-> $$\text{Hom}_S(Y, \mathcal{A}) \cong \text{Hom}_K(Y_K, A)$$
+> $$
+> \text{Hom}_S(Y, \mathcal{A}) \cong \text{Hom}_K(Y_K, A)
+> $$
 
 ## Related Concepts
 
@@ -149,3 +170,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang, Ch. VI, §14, printed p. 314 (PDF p. 329), discusses a general commutative algebraic group $A$, its torsion points, and associated Galois representations, beginning with elliptic curves. Lang ANT mentions applications to abelian varieties but does not define them. None of the bounded slices proves projectivity, complex-torus criteria, Mordell–Weil for abelian varieties, duality, polarizations, isogeny theory, endomorphism structure, Néron models, or their $L$-functions. The note therefore remains `unverified`.

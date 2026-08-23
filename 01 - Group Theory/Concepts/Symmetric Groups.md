@@ -10,7 +10,9 @@ tags:
   - group-theory
   - symmetric-groups
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 1, §1.5, and Ch. 2, §2.2, printed pp. 24–27 and 40–43, PDF pp. 36–39 and 52–55"
+source_status: partially-verified
+status: not-started
 ---
 
 # Symmetric Groups

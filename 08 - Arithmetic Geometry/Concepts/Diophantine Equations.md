@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - number-theory
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §2, printed p. 386, PDF p. 401; Jürgen Neukirch, Algebraic Number Theory, Ch. II, §1, printed pp. 104–105, PDF pp. 123–124"
+source_status: partially-verified
+status: not-started
 ---
 
 # Diophantine Equations
@@ -29,7 +32,9 @@ Named after Diophantus of Alexandria (~250 AD).
 
 ### Linear Equations
 
-$$a_1 x_1 + \cdots + a_n x_n = c$$
+$$
+a_1 x_1 + \cdots + a_n x_n = c
+$$
 
 > [!abstract] Theorem (Linear Diophantine)
 > $ax + by = c$ has integer solutions iff $\gcd(a, b) | c$.
@@ -53,9 +58,9 @@ $$a_1 x_1 + \cdots + a_n x_n = c$$
 
 | Equation | Solutions | Method |
 |----------|-----------|--------|
-| $x^3 + y^3 = z^3$ | $(0,0,0)$ only (nontrivial) | Descent (Euler) |
-| $x^4 + y^4 = z^2$ | $(0,0,0)$ only | Descent (Fermat) |
-| $x^n + y^n = z^n$, $n \geq 3$ | $(0,0,0)$ only | FLT (Wiles) |
+| $x^3 + y^3 = z^3$ | No integer solutions with $xyz\neq0$ | Descent (Euler) |
+| $x^4 + y^4 = z^2$ | No positive integer solutions with $xyz\neq0$ | Descent (Fermat) |
+| $x^n + y^n = z^n$, $n \geq 3$ | No integer solutions with $xyz\neq0$ | FLT |
 | $y^2 = x^3 + ax + b$ | Finitely generated | Mordell-Weil |
 
 ## The Geometric Viewpoint
@@ -67,8 +72,8 @@ $$a_1 x_1 + \cdots + a_n x_n = c$$
 
 | Genus | $C(\mathbb{Q})$ | Example |
 |-------|-----------------|---------|
-| 0 | $\emptyset$, finite, or $\infty$ | Conics |
-| 1 | Finitely generated group | Elliptic curves |
+| 0 | For a smooth projective conic: empty or infinite; a rational point identifies it with $\mathbb P^1$ | Conics |
+| 1 | After choosing a rational point, a smooth projective genus-$1$ curve is an elliptic curve and its rational points are finitely generated | Elliptic curves |
 | $\geq 2$ | Finite (Faltings) | $x^n + y^n = 1$, $n \geq 4$ |
 
 ## Famous Diophantine Problems
@@ -126,7 +131,9 @@ Connect to modular forms via Galois representations.
 
 > [!abstract] Roth's Theorem
 > For algebraic $\alpha$ and $\epsilon > 0$:
-> $$\left|\alpha - \frac{p}{q}\right| > \frac{1}{q^{2+\epsilon}}$$
+> $$
+> \left|\alpha - \frac{p}{q}\right| > \frac{1}{q^{2+\epsilon}}
+> $$
 > for all but finitely many $p/q$.
 
 ## Hilbert's 10th Problem
@@ -154,3 +161,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang identifies Diophantine questions with systems of polynomial equations over $\mathbb Z$ and the search for integer, rational, or reduced-mod-$p$ solutions. Neukirch independently defines an integer-coefficient Diophantine equation and proves that compatible solvability modulo every $p^\nu$ is equivalent to a solution in $\mathbb Z_p$. These sources verify the definition and the local $p$-adic viewpoint. Pell equations, sums of squares, Fermat/Catalan, Mordell–Weil, congruent numbers, Hasse-principle counterexamples, Roth, modularity lifting, and Hilbert's tenth problem are external claims. The higher-degree and genus tables have been corrected so that “trivial solutions” and the hypotheses on genus-$0$ and genus-$1$ curves are stated accurately.

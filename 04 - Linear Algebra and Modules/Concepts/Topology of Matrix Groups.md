@@ -12,6 +12,8 @@ tags:
   - topology
 created: 2026-08-10
 source: "Michael Artin, Algebra, 2nd ed., Ch. 9, Section 1, printed p. 262, PDF p. 274"
+source_status: verified
+status: not-started
 ---
 
 # Topology of Matrix Groups

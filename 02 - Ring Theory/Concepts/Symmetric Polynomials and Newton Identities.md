@@ -7,6 +7,9 @@ tags:
   - ring-theory
   - symmetric-polynomials
 created: 2026-08-12
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §16.1, printed pp. 477–481, PDF pp. 489–493"
+source_status: partially-verified
+status: not-started
 ---
 
 # Symmetric Polynomials and Newton Identities

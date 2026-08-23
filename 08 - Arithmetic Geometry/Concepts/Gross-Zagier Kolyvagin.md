@@ -7,13 +7,16 @@ tags:
   - arithmetic-geometry
   - theorem
 created: 2026-01-19
+source: "Unverified draft; original Gross–Zagier and Kolyvagin sources require a dedicated audit"
+source_status: unverified
+status: not-started
 ---
 
 # Gross-Zagier and Kolyvagin Theorem
 
 ## Overview
 
-The Gross-Zagier theorem and Kolyvagin's work together provide the strongest evidence for the Birch and Swinnerton-Dyer conjecture, proving it when the analytic rank is at most 1.
+The Gross–Zagier theorem and Kolyvagin's Euler-system work establish central rank-zero and rank-one cases of the Birch and Swinnerton-Dyer conjecture, subject to their precise modularity, Heegner, and local hypotheses.
 
 ## The Gross-Zagier Theorem
 
@@ -21,7 +24,9 @@ The Gross-Zagier theorem and Kolyvagin's work together provide the strongest evi
 > Let $E/\mathbb{Q}$ be an elliptic curve of conductor $N$, and let $K$ be an imaginary quadratic field satisfying the **Heegner hypothesis**: every prime $p | N$ splits in $K$.
 >
 > Let $P_K \in E(K)$ be a **Heegner point**. Then:
-> $$L'(E/K, 1) = \frac{\Omega_E \cdot \hat{h}(P_K)}{u^2 \cdot \sqrt{|D_K|}} \cdot (\text{explicit constant})$$
+> $$
+> L'(E/K, 1) = \frac{\Omega_E \cdot \hat{h}(P_K)}{u^2 \cdot \sqrt{|D_K|}} \cdot (\text{explicit constant})
+> $$
 >
 > where:
 > - $L'(E/K, 1)$ is the derivative of the L-function at $s = 1$
@@ -38,13 +43,17 @@ The Gross-Zagier theorem and Kolyvagin's work together provide the strongest evi
 > - The pair has CM by $\mathcal{O}$
 
 The modularity theorem gives a map $\phi: X_0(N) \to E$, and we define:
-$$P_K = \phi(x_K) \in E(K)$$
+$$
+P_K = \phi(x_K) \in E(K)
+$$
 where $x_K$ is a Heegner point on $X_0(N)$.
 
 ### Heegner Hypothesis
 
 The Heegner hypothesis ensures that suitable Heegner points exist. It requires:
-$$\left(\frac{D_K}{p}\right) = 1 \quad \text{for all primes } p | N$$
+$$
+\left(\frac{D_K}{p}\right) = 1 \quad \text{for all primes } p | N
+$$
 
 ## Kolyvagin's Theorem
 
@@ -73,12 +82,16 @@ This proves **BSD rank conjecture** for analytic rank 0 and 1!
 
 ### Step 1: Gross-Zagier Formula
 
-$$L'(E/K, 1) \neq 0 \iff \hat{h}(P_K) \neq 0 \iff P_K \text{ has infinite order}$$
+$$
+L'(E/K, 1) \neq 0 \iff \hat{h}(P_K) \neq 0 \iff P_K \text{ has infinite order}
+$$
 
 ### Step 2: Kolyvagin's Euler System
 
 Kolyvagin constructs an **Euler system** of cohomology classes:
-$$\kappa_n \in H^1(K, E[p^m])$$
+$$
+\kappa_n \in H^1(K, E[p^m])
+$$
 indexed by squarefree products $n$ of "Kolyvagin primes."
 
 These classes satisfy:
@@ -88,7 +101,9 @@ These classes satisfy:
 ### Step 3: Bounding Selmer Groups
 
 The Euler system machinery bounds the Selmer group:
-$$\text{Sel}_{p^\infty}(E/K) \text{ has } \mathbb{Z}_p\text{-corank } 1$$
+$$
+\text{Sel}_{p^\infty}(E/K) \text{ has } \mathbb{Z}_p\text{-corank } 1
+$$
 
 This implies $\text{rank}(E(K)) = 1$ and finiteness of Ш.
 
@@ -179,7 +194,6 @@ WHERE contains(file.outlinks, this.file.link)
 ```
 
 
-## Comment
+## Source and Proof Status
 
-1. **Benedict Hyman Gross** (born June 22, 1950, died December 19, 2025) was an American mathematician who was a professor at the [University of California, San Diego](https://en.wikipedia.org/wiki/University_of_California,_San_Diego "University of California, San Diego"),(https://en.wikipedia.org/wiki/Benedict_Gross#cite_note-1) the George Vasmer Leverett Professor of Mathematics Emeritus at [Harvard University](https://en.wikipedia.org/wiki/Harvard_University "Harvard University"), and former [Dean](https://en.wikipedia.org/wiki/Dean_\(education\) "Dean (education)") of Harvard College https://en.wikipedia.org/wiki/Benedict_Gross
-2. Don Zagier：https://people.mpim-bonn.mpg.de/zagier/
+Four-source boundary audit: none of Artin, either Lang volume, or Neukirch states the Gross–Zagier height formula or Kolyvagin's Euler-system theorem. The books provide only prerequisites such as Galois representations, modular-form connections, and zeta/L-series. The displayed formula is schematic—the omitted local factors, normalizations, Heegner hypotheses, and precise analytic-rank assumptions are essential—and it must not be cited as a theorem statement. Rank-zero/rank-one BSD consequences and computational claims remain external; the note stays `unverified`.

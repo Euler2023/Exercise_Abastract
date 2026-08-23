@@ -6,6 +6,9 @@ tags:
   - definition
   - galois-theory
 created: 2025-01-19
+source: "Michael Artin, Algebra, 2nd ed., Ch. 16, §§16.4–16.6, printed pp. 484–489, PDF pp. 496–501"
+source_status: partially-verified
+status: not-started
 ---
 
 # Galois Group
@@ -88,10 +91,14 @@ For $K/F$ Galois:
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 
-# Exercises
+## Exercises
 
 ```dataview
 TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+This note is an unverified overview. The definitions and examples are standard, but they have not yet been checked against a named source with page-level provenance; the assertions should therefore not be treated as source-verified.

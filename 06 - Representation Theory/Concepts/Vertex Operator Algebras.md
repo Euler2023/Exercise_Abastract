@@ -8,6 +8,9 @@ tags:
   - moonshine
   - infinite-dimensional
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Vertex Operator Algebras
@@ -34,7 +37,9 @@ VOAs arose from several sources:
 > - $\omega \in V_2$ is the **conformal vector**
 
 For $a \in V$, we write:
-$$Y(a, z) = \sum_{n \in \mathbb{Z}} a_{(n)} z^{-n-1}$$
+$$
+Y(a, z) = \sum_{n \in \mathbb{Z}} a_{(n)} z^{-n-1}
+$$
 
 where $a_{(n)} \in \text{End}(V)$ are the **modes**.
 
@@ -55,18 +60,26 @@ There exists $T: V \to V$ (translation operator) with:
 ### Locality (Borcherds Identity)
 
 For $a, b \in V$, there exists $N \geq 0$ such that:
-$$(z - w)^N [Y(a, z), Y(b, w)] = 0$$
+$$
+(z - w)^N [Y(a, z), Y(b, w)] = 0
+$$
 
 Equivalently, the **Jacobi identity** (Borcherds identity):
-$$\sum_{i \geq 0} \binom{m}{i} (a_{(n+i)}b)_{(m+k-i)} = \sum_{i \geq 0} (-1)^i \binom{n}{i} \left( a_{(m+n-i)}b_{(k+i)} - (-1)^n b_{(n+k-i)}a_{(m+i)} \right)$$
+$$
+\sum_{i \geq 0} \binom{m}{i} (a_{(n+i)}b)_{(m+k-i)} = \sum_{i \geq 0} (-1)^i \binom{n}{i} \left( a_{(m+n-i)}b_{(k+i)} - (-1)^n b_{(n+k-i)}a_{(m+i)} \right)
+$$
 
 ### Conformal Structure
 
 The conformal vector $\omega$ satisfies:
-$$Y(\omega, z) = \sum_{n \in \mathbb{Z}} L_n z^{-n-2}$$
+$$
+Y(\omega, z) = \sum_{n \in \mathbb{Z}} L_n z^{-n-2}
+$$
 
 where $L_n$ satisfy the **Virasoro algebra**:
-$$[L_m, L_n] = (m - n)L_{m+n} + \frac{c}{12}(m^3 - m)\delta_{m+n,0}$$
+$$
+[L_m, L_n] = (m - n)L_{m+n} + \frac{c}{12}(m^3 - m)\delta_{m+n,0}
+$$
 
 with central charge $c$.
 
@@ -87,7 +100,9 @@ Additionally:
 
 > [!example] Lattice Construction
 > For an even lattice $L$, construct:
-> $$V_L = S(\mathfrak{h}^-) \otimes \mathbb{C}[L]$$
+> $$
+> V_L = S(\mathfrak{h}^-) \otimes \mathbb{C}[L]
+> $$
 >
 > where $\mathfrak{h}^- = \bigoplus_{n < 0} \mathfrak{h} \otimes t^n$ and $\mathfrak{h} = L \otimes \mathbb{C}$.
 >
@@ -97,7 +112,9 @@ Additionally:
 
 > [!example] WZW Models
 > For affine Lie algebra $\widehat{\mathfrak{g}}_k$ at level $k$, the vacuum module:
-> $$V_k(\mathfrak{g}) = U(\widehat{\mathfrak{g}}) \otimes_{U(\mathfrak{g}[t] \oplus \mathbb{C}c)} \mathbb{C}_k$$
+> $$
+> V_k(\mathfrak{g}) = U(\widehat{\mathfrak{g}}) \otimes_{U(\mathfrak{g}[t] \oplus \mathbb{C}c)} \mathbb{C}_k
+> $$
 >
 > is a VOA with $c = \frac{k \dim \mathfrak{g}}{k + h^\vee}$.
 
@@ -122,7 +139,9 @@ Additionally:
 
 > [!info] Definition (V-module)
 > A **module** over VOA $V$ is a graded vector space $M = \bigoplus_n M_n$ with:
-> $$Y_M: V \to \text{End}(M)[[z, z^{-1}]]$$
+> $$
+> Y_M: V \to \text{End}(M)[[z, z^{-1}]]
+> $$
 >
 > satisfying appropriate axioms (Jacobi identity, vacuum, etc.).
 
@@ -147,7 +166,9 @@ For rational VOAs, the representation category is a **modular tensor category**.
 
 > [!abstract] Theorem (Zhu)
 > For a rational VOA $V$, the characters:
-> $$\chi_M(\tau) = \text{tr}_M q^{L_0 - c/24}, \quad q = e^{2\pi i \tau}$$
+> $$
+> \chi_M(\tau) = \text{tr}_M q^{L_0 - c/24}, \quad q = e^{2\pi i \tau}
+> $$
 >
 > span a representation of $\text{SL}_2(\mathbb{Z})$.
 
@@ -156,7 +177,9 @@ This explains why characters in moonshine are modular forms.
 ## Operator Product Expansion
 
 The OPE encodes the algebraic structure:
-$$Y(a, z)Y(b, w) \sim \sum_{n \geq 0} \frac{Y(a_{(n)}b, w)}{(z-w)^{n+1}}$$
+$$
+Y(a, z)Y(b, w) \sim \sum_{n \geq 0} \frac{Y(a_{(n)}b, w)}{(z-w)^{n+1}}
+$$
 
 For $a, b \in V_1$ (currents), this gives the Lie algebra structure.
 
@@ -189,3 +212,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: none of Artin, either Lang volume, or Neukirch defines vertex operators, the Borcherds identity, conformal vectors, VOA modules, rationality, or modularity. The corpus contains only separate background on group representations, Lie algebras, modular forms, and the size of the Monster. These adjacent topics do not verify a VOA definition or theorem, so every substantive assertion in this note remains `unverified` pending a VOA source.

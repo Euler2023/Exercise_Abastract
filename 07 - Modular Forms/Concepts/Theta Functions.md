@@ -6,6 +6,9 @@ tags:
   - definition
   - modular-forms
 created: 2026-01-19
+source: "Serge Lang, Algebraic Number Theory, 2nd ed., Ch. XIII, §§1–3, printed pp. 249–253, 257, PDF pp. 252–256, 260; Jürgen Neukirch, Algebraic Number Theory, Ch. VII, §§1–3, printed pp. 422–434, 443–452, PDF pp. 441–453, 462–471"
+source_status: partially-verified
+status: not-started
 ---
 
 # Theta Functions
@@ -14,32 +17,57 @@ created: 2026-01-19
 
 > [!info] Definition (Jacobi Theta Function)
 > The **Jacobi theta function** is:
-> $$\theta(\tau) = \sum_{n=-\infty}^{\infty} q^{n^2} = 1 + 2\sum_{n=1}^{\infty} q^{n^2}$$
+> $$
+> \theta(\tau) = \sum_{n=-\infty}^{\infty} q^{n^2} = 1 + 2\sum_{n=1}^{\infty} q^{n^2}
+> $$
 > where $q = e^{\pi i \tau}$ (note: sometimes $q = e^{2\pi i \tau}$).
 
 > [!info] Definition (General Theta Function)
 > For a positive definite quadratic form $Q$ on $\mathbb{Z}^n$:
-> $$\theta_Q(\tau) = \sum_{v \in \mathbb{Z}^n} q^{Q(v)}$$
+> $$
+> \theta_Q(\tau) = \sum_{v \in \mathbb{Z}^n} q^{Q(v)}
+> $$
 
 ## Jacobi's Four Theta Functions
 
-$$\theta_1(\tau) = \sum_{n=-\infty}^{\infty} (-1)^n q^{(n+1/2)^2}$$
-$$\theta_2(\tau) = \sum_{n=-\infty}^{\infty} q^{(n+1/2)^2}$$
-$$\theta_3(\tau) = \sum_{n=-\infty}^{\infty} q^{n^2}$$
-$$\theta_4(\tau) = \sum_{n=-\infty}^{\infty} (-1)^n q^{n^2}$$
+With $q=e^{\pi i\tau}$, the four functions depend on both $z$ and $\tau$:
+
+$$
+\theta_1(z,\tau)=-i\sum_{n\in\mathbb Z}(-1)^n q^{(n+1/2)^2}e^{2\pi i(n+1/2)z},
+$$
+
+$$
+\theta_2(z,\tau)=\sum_{n\in\mathbb Z}q^{(n+1/2)^2}e^{2\pi i(n+1/2)z},
+$$
+
+$$
+\theta_3(z,\tau)=\sum_{n\in\mathbb Z}q^{n^2}e^{2\pi inz},
+$$
+
+$$
+\theta_4(z,\tau)=\sum_{n\in\mathbb Z}(-1)^nq^{n^2}e^{2\pi inz}.
+$$
+
+The one-variable theta constant defined above is $\theta_3(0,\tau)$. In particular $\theta_1(0,\tau)=0$; omitting the elliptic variable $z$ from all four formulas would lose essential information.
 
 ## Modular Properties
 
 > [!abstract] Theorem (Transformation)
-> $$\theta(-1/\tau) = \sqrt{-i\tau} \cdot \theta(\tau)$$
-> $$\theta(\tau + 2) = \theta(\tau)$$
+> $$
+> \theta(-1/\tau) = \sqrt{-i\tau} \cdot \theta(\tau)
+> $$
+> $$
+> \theta(\tau + 2) = \theta(\tau)
+> $$
 
 The theta function is a modular form of weight $1/2$ for a certain congruence subgroup.
 
 ## Jacobi Triple Product
 
 > [!abstract] Theorem (Jacobi Triple Product)
-> $$\sum_{n=-\infty}^{\infty} z^n q^{n^2} = \prod_{n=1}^{\infty} (1-q^{2n})(1+zq^{2n-1})(1+z^{-1}q^{2n-1})$$
+> $$
+> \sum_{n=-\infty}^{\infty} z^n q^{n^2} = \prod_{n=1}^{\infty} (1-q^{2n})(1+zq^{2n-1})(1+z^{-1}q^{2n-1})
+> $$
 
 This connects theta functions to infinite products and the [[07 - Modular Forms/Concepts/Eta Function|eta function]].
 
@@ -53,19 +81,27 @@ This connects theta functions to infinite products and the [[07 - Modular Forms/
 > **Proof idea**: Study $\theta(\tau)^4 = \sum_{n=0}^{\infty} r_4(n) q^n$ where $r_4(n)$ counts representations as sum of 4 squares.
 
 > [!abstract] Theorem (Jacobi)
-> $$r_4(n) = 8 \sum_{d|n, 4 \nmid d} d$$
+> $$
+> r_4(n) = 8 \sum_{d|n, 4 \nmid d} d
+> $$
 
 ### Two Squares
 
-$$\theta(\tau)^2 = \sum_{n=0}^{\infty} r_2(n) q^n$$
-$$r_2(n) = 4 \sum_{d|n} \chi_{-4}(d) = 4(d_1(n) - d_3(n))$$
+$$
+\theta(\tau)^2 = \sum_{n=0}^{\infty} r_2(n) q^n
+$$
+$$
+r_2(n) = 4 \sum_{d|n} \chi_{-4}(d) = 4(d_1(n) - d_3(n))
+$$
 where $d_i(n)$ counts divisors congruent to $i \pmod 4$.
 
 ## Theta Functions and Quadratic Forms
 
 > [!info] Definition (Theta Series of Lattice)
 > For a lattice $\Lambda$ with quadratic form $Q$:
-> $$\Theta_\Lambda(\tau) = \sum_{v \in \Lambda} q^{Q(v)}$$
+> $$
+> \Theta_\Lambda(\tau) = \sum_{v \in \Lambda} q^{Q(v)}
+> $$
 
 > [!abstract] Theorem
 > If $Q$ is a positive definite quadratic form of rank $n$ and level $N$, then $\Theta_Q$ is a modular form of weight $n/2$ for $\Gamma_0(N)$ with character.
@@ -84,9 +120,15 @@ where $d_i(n)$ counts divisors congruent to $i \pmod 4$.
 
 ## Relation to Eta Function
 
-$$\theta_2(q) = 2\eta(2\tau)^2/\eta(\tau)$$
-$$\theta_3(q) = \eta(\tau)^5/(\eta(\tau/2)^2\eta(2\tau)^2)$$
-$$\theta_4(q) = \eta(\tau/2)^2/\eta(\tau)$$
+$$
+\theta_2(q) = 2\eta(2\tau)^2/\eta(\tau)
+$$
+$$
+\theta_3(q) = \eta(\tau)^5/(\eta(\tau/2)^2\eta(2\tau)^2)
+$$
+$$
+\theta_4(q) = \eta(\tau/2)^2/\eta(\tau)
+$$
 
 ## Related Concepts
 
@@ -102,3 +144,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang derives the one-dimensional theta functional equation from Poisson summation and then gives Hecke's higher-dimensional theta formula for positive-definite quadratic forms. Neukirch defines lattice theta series, proves convergence and the theta transformation formula, and identifies Jacobi's theta function as a modular form of half-integral weight. These sources verify the main theta definition, Poisson mechanism, and transformation law. The four theta functions with elliptic variable, triple product, representation-number formulas, eta identities, and the full level/character theorem are not proved in the bounded slices and remain external. The former formula for $\theta_1$ omitted $z$ and therefore defined the zero theta constant; it has been corrected.

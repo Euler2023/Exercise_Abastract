@@ -8,7 +8,7 @@ tags:
   - group-theory
   - subgroups
   - matrix-groups
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.4"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.4, printed p. 70, PDF p. 82"
 created: 2026-08-10
 ---
 
@@ -82,4 +82,4 @@ created: 2026-08-10
 
 Part (e) emphasizes that the condition $H\subseteq G$ must be checked before applying any subgroup criterion.
 
-**Source status:** Exercise statement from [S1, Ch. 2, Section 2, Ex. 2.4]. Each classification is justified directly from the subgroup axioms.
+**Source status:** Exercise statement from [S1, Ch. 2, §2, Ex. 2.4, printed p. 70, PDF p. 82]. Each classification is justified directly from the subgroup axioms.

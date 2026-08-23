@@ -6,6 +6,9 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
+source: "Four-source boundary audit completed; core topic requires an external authoritative source"
+source_status: unverified
+status: not-started
 ---
 
 # Heights
@@ -21,10 +24,14 @@ Heights measure the "arithmetic complexity" of rational points. They are essenti
 
 > [!info] Definition (Naive Height on $\mathbb{P}^n$)
 > For $P = [a_0 : \cdots : a_n] \in \mathbb{P}^n(\mathbb{Q})$ with $a_i \in \mathbb{Z}$, $\gcd(a_0, \ldots, a_n) = 1$:
-> $$H(P) = \max(|a_0|, \ldots, |a_n|)$$
+> $$
+> H(P) = \max(|a_0|, \ldots, |a_n|)
+> $$
 
 > [!info] Definition (Logarithmic Height)
-> $$h(P) = \log H(P)$$
+> $$
+> h(P) = \log H(P)
+> $$
 
 ## Properties
 
@@ -36,7 +43,9 @@ Heights measure the "arithmetic complexity" of rational points. They are essenti
 
 > [!abstract] Theorem (Weil Height Machine)
 > For each divisor class $D$ on a variety $X$ over a number field, there exists a **height function**:
-> $$h_D: X(\bar{K}) \to \mathbb{R}$$
+> $$
+> h_D: X(\bar{K}) \to \mathbb{R}
+> $$
 > satisfying:
 > 1. **Additivity**: $h_{D_1 + D_2} = h_{D_1} + h_{D_2} + O(1)$
 > 2. **Functoriality**: $h_{\phi^* D} = h_D \circ \phi + O(1)$
@@ -46,7 +55,9 @@ Heights measure the "arithmetic complexity" of rational points. They are essenti
 
 > [!info] Definition (Canonical Height)
 > On an elliptic curve $E$ (or abelian variety), the **Néron-Tate height** (or canonical height) is:
-> $$\hat{h}(P) = \lim_{n \to \infty} \frac{h([n]P)}{n^2}$$
+> $$
+> \hat{h}(P) = \lim_{n \to \infty} \frac{h([n]P)}{n^2}
+> $$
 
 Properties:
 - $\hat{h}(P) = 0 \iff P$ is torsion
@@ -57,7 +68,9 @@ Properties:
 
 > [!abstract] Theorem
 > The Néron-Tate pairing:
-> $$\langle P, Q \rangle = \frac{1}{2}(\hat{h}(P+Q) - \hat{h}(P) - \hat{h}(Q))$$
+> $$
+> \langle P, Q \rangle = \frac{1}{2}(\hat{h}(P+Q) - \hat{h}(P) - \hat{h}(Q))
+> $$
 > is a positive-definite bilinear form on $E(K)/E(K)_{\text{tors}} \otimes \mathbb{R}$.
 
 This is key to proving the [[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theorem|Mordell-Weil theorem]]!
@@ -81,7 +94,9 @@ This is key to proving the [[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theo
 
 > [!abstract] Theorem (Northcott)
 > For any bound $B$ and degree $d$:
-> $$\#\{P \in \mathbb{P}^n(\bar{\mathbb{Q}}) : [K(P):\mathbb{Q}] \leq d, H(P) \leq B\} < \infty$$
+> $$
+> \#\{P \in \mathbb{P}^n(\bar{\mathbb{Q}}) : [K(P):\mathbb{Q}] \leq d, H(P) \leq B\} < \infty
+> $$
 
 This "finiteness" property is crucial for Diophantine applications.
 
@@ -99,3 +114,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: searches for “Northcott” in Lang's *Algebra* lead to Northcott's commutative-algebra work, not the arithmetic Northcott finiteness theorem; occurrences of “height” likewise do not define projective or Weil heights. Neither Lang ANT nor Neukirch develops the Weil height machine or Néron–Tate height in the checked corpus. The basic normalization, Northcott property, canonical-height identities, and descent application therefore remain `unverified`.

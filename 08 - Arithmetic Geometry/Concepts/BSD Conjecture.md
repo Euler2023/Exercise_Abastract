@@ -7,6 +7,9 @@ tags:
   - arithmetic-geometry
   - conjecture
 created: 2026-01-19
+source: "Unverified draft; a primary-source and computation-source audit is required"
+source_status: unverified
+status: not-started
 ---
 
 # Birch and Swinnerton-Dyer Conjecture
@@ -17,10 +20,14 @@ created: 2026-01-19
 > For an elliptic curve $E/\mathbb{Q}$:
 >
 > **Part 1 (Rank):**
-> $$\text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)$$
+> $$
+> \text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)
+> $$
 >
 > **Part 2 (Leading coefficient):**
-> $$\lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}_E \cdot \prod_p c_p \cdot \#\text{Ш}(E/\mathbb{Q})}{(\#E(\mathbb{Q})_{\text{tors}})^2}$$
+> $$
+> \lim_{s \to 1} \frac{L(E, s)}{(s-1)^r} = \frac{\Omega_E \cdot \text{Reg}_E \cdot \prod_p c_p \cdot \#\text{Ш}(E/\mathbb{Q})}{(\#E(\mathbb{Q})_{\text{tors}})^2}
+> $$
 
 ## The Terms
 
@@ -36,7 +43,9 @@ created: 2026-01-19
 
 > [!abstract] Theorem (Gross-Zagier, Kolyvagin)
 > If $\text{ord}_{s=1} L(E, s) \leq 1$, then:
-> $$\text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)$$
+> $$
+> \text{rank}(E(\mathbb{Q})) = \text{ord}_{s=1} L(E, s)
+> $$
 > and $\text{Ш}(E/\mathbb{Q})$ is finite.
 
 | Analytic rank | Algebraic rank | Status |
@@ -47,7 +56,9 @@ created: 2026-01-19
 
 ## The L-function
 
-$$L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} (\text{local factors})$$
+$$
+L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} (\text{local factors})
+$$
 
 where $a_p = p + 1 - \#E(\mathbb{F}_p)$.
 
@@ -70,20 +81,22 @@ The root number predicts the parity of the rank!
 
 > [!example] Example 3: Congruent number curve
 > $E_n: y^2 = x^3 - n^2 x$
-> $n$ is a congruent number iff $\text{rank}(E_n) \geq 1$ iff $L(E_n, 1) = 0$.
+> For a positive integer $n$, the classical congruent-number criterion gives
+> $$
+> n\text{ is congruent}\iff\operatorname{rank}E_n(\mathbb Q)>0.
+> $$
+> BSD predicts that these conditions are also equivalent to $L(E_n,1)=0$; the second equivalence must not be presented here as an unconditional consequence of the definition.
 
 ## Computational Evidence
 
-BSD has been verified numerically for millions of curves:
-- All curves of conductor $N \leq 130000$
-- Many curves of higher conductor
-
-The leading coefficient formula has been verified to many decimal places.
+Large databases and numerical calculations provide extensive evidence for BSD, but this note previously stated a conductor cutoff and curve count without a traceable dataset, version, or citation. Those numerical bounds have been removed pending a reproducible computation source.
 
 ## Sha (Tate-Shafarevich Group)
 
 > [!info] Definition
-> $$\text{Ш}(E/K) = \ker\left(H^1(K, E) \to \prod_v H^1(K_v, E)\right)$$
+> $$
+> \text{Ш}(E/K) = \ker\left(H^1(K, E) \to \prod_v H^1(K_v, E)\right)
+> $$
 
 This measures the failure of local-global principle for torsors.
 
@@ -115,3 +128,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Four-source boundary audit: Lang's finite-field elliptic zeta exercise and modular-connection pages supply adjacent background only; the appearances of the names Birch and Swinnerton-Dyer in references do not state the Birch–Swinnerton-Dyer conjecture. Neukirch's zeta/L-series chapters likewise do not formulate the elliptic-curve BSD leading-term formula. BSD is a conjecture, not a theorem; the Gross–Zagier–Kolyvagin rank-zero/rank-one claim, Tamagawa/Sha factors, examples, and numerical assertions all remain external and unrecomputed. The note remains `unverified`.

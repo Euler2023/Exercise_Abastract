@@ -6,6 +6,9 @@ tags:
   - definition
   - arithmetic-geometry
 created: 2026-01-19
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. V, Exercise 23, printed p. 255, PDF p. 270; Ch. VI, §14, printed p. 314, PDF p. 329; Jürgen Neukirch, Algebraic Number Theory, Ch. VI, §6, printed pp. 401–403, PDF pp. 420–422"
+source_status: partially-verified
+status: not-started
 ---
 
 # Elliptic Curves (Arithmetic)
@@ -16,7 +19,9 @@ created: 2026-01-19
 > An **elliptic curve** over a field $K$ is a smooth projective curve of genus 1 with a specified point $\mathcal{O} \in E(K)$.
 >
 > Standard form (Weierstrass):
-> $$E: y^2 = x^3 + ax + b, \quad \Delta = -16(4a^3 + 27b^2) \neq 0$$
+> $$
+> E: y^2 = x^3 + ax + b, \quad \Delta = -16(4a^3 + 27b^2) \neq 0
+> $$
 
 ## Group Law
 
@@ -30,13 +35,19 @@ created: 2026-01-19
 
 ### Discriminant and j-invariant
 
-$$\Delta = -16(4a^3 + 27b^2)$$
-$$j(E) = -1728 \frac{(4a)^3}{\Delta} = 1728 \frac{4a^3}{4a^3 + 27b^2}$$
+$$
+\Delta = -16(4a^3 + 27b^2)
+$$
+$$
+j(E) = -1728 \frac{(4a)^3}{\Delta} = 1728 \frac{4a^3}{4a^3 + 27b^2}
+$$
 
 ### Conductor
 
 The **conductor** $N$ measures bad reduction:
-$$N = \prod_{p} p^{f_p}$$
+$$
+N = \prod_{p} p^{f_p}
+$$
 where $f_p$ depends on the type of reduction at $p$.
 
 ## Reduction Types
@@ -53,15 +64,21 @@ For $E/\mathbb{Q}$ and prime $p$:
 
 > [!abstract] Theorem ([[08 - Arithmetic Geometry/Concepts/Mordell-Weil Theorem|Mordell-Weil]])
 > For $E$ over a number field $K$:
-> $$E(K) \cong \mathbb{Z}^r \oplus E(K)_{\text{tors}}$$
+> $$
+> E(K) \cong \mathbb{Z}^r \oplus E(K)_{\text{tors}}
+> $$
 > where $r \geq 0$ is the **rank** and $E(K)_{\text{tors}}$ is finite.
 
 ## Torsion Structure
 
 > [!abstract] Mazur's Theorem (1977)
 > For $E/\mathbb{Q}$, the torsion subgroup is one of:
-> $$\mathbb{Z}/n\mathbb{Z} \text{ for } n \in \{1,2,3,4,5,6,7,8,9,10,12\}$$
-> $$\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2n\mathbb{Z} \text{ for } n \in \{1,2,3,4\}$$
+> $$
+> \mathbb{Z}/n\mathbb{Z} \text{ for } n \in \{1,2,3,4,5,6,7,8,9,10,12\}
+> $$
+> $$
+> \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2n\mathbb{Z} \text{ for } n \in \{1,2,3,4\}
+> $$
 
 ## Rank
 
@@ -73,7 +90,9 @@ The rank $r$ is much more mysterious:
 ## L-function
 
 > [!info] Definition
-> $$L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} (\text{local factors})$$
+> $$
+> L(E, s) = \prod_{p \nmid N} \frac{1}{1 - a_p p^{-s} + p^{1-2s}} \cdot \prod_{p | N} (\text{local factors})
+> $$
 > where $a_p = p + 1 - \#E(\mathbb{F}_p)$.
 
 By modularity: $L(E, s) = L(f, s)$ for some weight 2 newform $f$.
@@ -97,7 +116,9 @@ By modularity: $L(E, s) = L(f, s)$ for some weight 2 newform $f$.
 
 > [!info] Definition
 > The **Selmer group** $\text{Sel}^{(n)}(E/K)$ and **Tate-Shafarevich group** $\text{Ш}(E/K)$ fit in:
-> $$0 \to E(K)/nE(K) \to \text{Sel}^{(n)}(E/K) \to \text{Ш}(E/K)[n] \to 0$$
+> $$
+> 0 \to E(K)/nE(K) \to \text{Sel}^{(n)}(E/K) \to \text{Ш}(E/K)[n] \to 0
+> $$
 
 The finiteness of $\text{Ш}$ is a major open problem (part of BSD).
 
@@ -116,3 +137,7 @@ TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
+
+## Source and Proof Status
+
+Lang gives a nonsingular Weierstrass equation, the rational-point group $E(K)$, $p^r$-torsion and its two-dimensional Galois representation; Exercise V.23 treats point counts over finite fields, the elliptic zeta function, rationality, and the Hasse bound. Neukirch constructs $E=\mathbb C/\Lambda$, its Weierstrass equation and $j$-invariant, and discusses complex multiplication. This verifies the basic equation, group/torsion viewpoint, finite-field counts, and complex uniformization. The explicit chord-tangent formulas, conductor and reduction classification, Mordell–Weil theorem, torsion classifications, ranks, Selmer groups, Sha, and numerical examples remain external.
