@@ -28,7 +28,9 @@ Representation theory studies abstract algebraic structures by representing thei
 
 ### Lie Theory
 - [[06 - Representation Theory/Concepts/Lie Groups|Lie Groups]]
+- [[06 - Representation Theory/Concepts/SU2 Quaternions and the Spin Cover|SU2, Quaternions, and the Spin Cover]]
 - [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]
+- [[06 - Representation Theory/Concepts/Adjoint Representation and Invariant Trace Forms|Adjoint Representation and Invariant Trace Forms]]
 - [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
 - [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]

@@ -1,0 +1,28 @@
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}[scale=1.25,>=stealth]
+  \draw[->,thin] (-2.45,0) -- (2.45,0) node[right] {$x$};
+  \draw[->,thin] (0,-2.45) -- (0,2.45) node[above] {$y$};
+  \draw (0,0) circle[radius=1.8pt];
+  \node[below left] at (0,0) {$0$};
+
+  % At (x,y), the vector is (x-y,x+y); scale all arrows uniformly.
+  \foreach \x in {-1.5,-0.75,0.75,1.5}{
+    \foreach \y in {-1.5,-0.75,0.75,1.5}{
+      \draw[->,gray] (\x,\y) -- ++({0.16*(\x-\y)},{0.16*(\x+\y)});
+    }
+  }
+  \foreach \x in {-1.5,-0.75,0.75,1.5}{
+    \draw[->,gray] (\x,0) -- ++({0.16*\x},{0.16*\x});
+    \draw[->,gray] (0,\x) -- ++({-0.16*\x},{0.16*\x});
+  }
+
+  % Exact integral curve z(t)=0.8 exp((1+i)t).
+  \draw[very thick,domain=-1.7:1.05,samples=120]
+    plot ({0.8*exp(\x)*cos(\x r)},{0.8*exp(\x)*sin(\x r)});
+  \draw[->,very thick,domain=0.35:0.58,samples=20]
+    plot ({0.8*exp(\x)*cos(\x r)},{0.8*exp(\x)*sin(\x r)});
+  \node[above left] at (1.62,1.35) {$z_0e^{(1+i)t}$};
+\end{tikzpicture}
+\end{document}

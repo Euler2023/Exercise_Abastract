@@ -22,7 +22,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise (as printed)
+> [!question] Exercise 1.7 (as printed)
 > Prove that:
 >
 > **(a)** the symplectic group $SP_{2n}$ operates transitively on $\mathbb R^{2n}$;

@@ -27,6 +27,7 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 
 ### Structure Theory
 - [[01 - Group Theory/Concepts/Cosets and Lagrange Theorem|Cosets and Lagrange's Theorem]]
+- [[01 - Group Theory/Concepts/Conjugacy Classes Centralizers and the Class Equation|Conjugacy Classes, Centralizers, and the Class Equation]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Concepts/Isomorphism Theorems|Isomorphism Theorems]]
@@ -36,6 +37,8 @@ Group theory is the study of algebraic structures called **groups**. A group $(G
 - [[01 - Group Theory/Concepts/Rotations Reflections and Glide Reflections|Rotations, Reflections, and Glide Reflections]]
 - [[01 - Group Theory/Concepts/Orthogonal Transformations of the Plane|Orthogonal Transformations of the Plane]]
 - [[01 - Group Theory/Concepts/Dihedral Groups|Dihedral Groups]]
+- [[01 - Group Theory/Concepts/Discrete Isometry Groups and Frieze Groups|Discrete Isometry Groups and Frieze Groups]]
+- [[01 - Group Theory/Concepts/Discrete and Dense Subgroups|Discrete and Dense Subgroups]]
 
 ### Advanced Topics
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]

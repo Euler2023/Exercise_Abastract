@@ -149,6 +149,7 @@ Representations of $\mathfrak{g}$ correspond to $U(\mathfrak{g})$-modules.
 
 - [[06 - Representation Theory/Concepts/Lie Groups|Lie Groups]]
 - [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
+- [[06 - Representation Theory/Concepts/Adjoint Representation and Invariant Trace Forms|Adjoint Representation and Invariant Trace Forms]]
 - [[06 - Representation Theory/Concepts/sl2 Representations|sl₂ Representations]]
 - [[06 - Representation Theory/Concepts/Root Systems|Root Systems]]
 - [[06 - Representation Theory/Concepts/Semisimple Lie Algebras|Semisimple Lie Algebras]]

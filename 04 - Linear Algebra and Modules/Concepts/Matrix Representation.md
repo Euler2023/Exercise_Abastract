@@ -73,6 +73,8 @@ Similar matrices share:
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Centralizers and Similarity|Matrix Centralizers and Similarity]]
+
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]

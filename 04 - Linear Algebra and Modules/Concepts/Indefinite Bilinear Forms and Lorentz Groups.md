@@ -75,7 +75,7 @@ P=\begin{pmatrix}a&b\\c&d\end{pmatrix},
 $$
 the equation $P^{\mathsf T}I_{1,1}P=I_{1,1}$ is equivalent to
 $$
-a^2-c^2=1,qquad d^2-b^2=1,qquad ab-cd=0.
+a^2-c^2=1,\qquad d^2-b^2=1,\qquad ab-cd=0.
 $$
 If $\delta=\det P\in\{1,-1\}$, comparison of the two formulas for $P^{-1}$ gives
 $$

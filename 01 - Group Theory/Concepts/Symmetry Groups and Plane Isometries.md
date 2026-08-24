@@ -111,6 +111,7 @@ Only the orthogonal part $q$ changes the vector; hence its length is preserved.
 - [[01 - Group Theory/Concepts/Rotations Reflections and Glide Reflections|Rotations, Reflections, and Glide Reflections]]
 - [[01 - Group Theory/Concepts/Orthogonal Transformations of the Plane|Orthogonal Transformations of the Plane]]
 - [[01 - Group Theory/Concepts/Dihedral Groups|Dihedral Groups]]
+- [[01 - Group Theory/Concepts/Discrete Isometry Groups and Frieze Groups|Discrete Isometry Groups and Frieze Groups]]
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
@@ -127,4 +128,3 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 The decomposition of isometries, the homomorphism $M\to O_2$, and the plane-isometry classification are **proved in the source**. [S1, Ch. 6, Sections 2–3, printed pp. 156–163, PDF pp. 168–175] The periodic-pattern classifications in the linked exercises are derived in those notes.
-

@@ -17,7 +17,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.2
 > A matrix $P$ is orthogonal if and only if its columns form an orthonormal basis. Describe the properties of the columns of a matrix in the Lorentz group $O_{3,1}$.
 
 ## Hints

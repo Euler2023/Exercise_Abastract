@@ -26,15 +26,19 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 
 ### Core Topics
 - [[04 - Linear Algebra and Modules/Concepts/Linear Independence|Linear Independence]]
+- [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
+- [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Skew-Symmetric Bilinear Forms|Skew-Symmetric Bilinear Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Eigenvalues and Eigenvectors|Eigenvalues and Eigenvectors]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem|Normal Operators and the Spectral Theorem]]
 - [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]
 
 ### Matrix Theory
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Centralizers and Similarity|Matrix Centralizers and Similarity]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]
 

@@ -19,7 +19,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.4
 > Describe the group $O_{1,1}$ by equations and show that it has four path-connected components.
 
 ## Hints

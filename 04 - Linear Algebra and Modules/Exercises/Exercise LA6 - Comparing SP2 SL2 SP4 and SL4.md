@@ -18,7 +18,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.5
 > Prove that $SP_2=SL_2$, but that $SP_4\ne SL_4$.
 
 ## Hints
@@ -91,4 +91,3 @@ created: 2026-08-10
 The identity $P^{\mathsf T}JP=(\det P)J$ is special to $2\times2$ matrices. In higher dimension, determinant $1$ is necessary but not sufficient for preserving the symplectic form.
 
 **Source status:** The exercise is stated in [S1, Ch. 9, Exercises §1, Ex. 1.5, printed p. 283, PDF p. 295]. The equality and explicit counterexample are complete independent derivations.
-

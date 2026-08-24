@@ -1,0 +1,22 @@
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}[scale=1.15,>=stealth]
+  \draw[->,thin] (-2.8,0) -- (2.8,0) node[right] {$x_1$};
+  \draw[->,thin] (0,-2.8) -- (0,2.8) node[above] {$x_2$};
+  \node[below left] at (0,0) {$0$};
+
+  % Null directions for q(x)=x_1^2-x_2^2.
+  \draw[dashed,gray] (-2.5,-2.5) -- (2.5,2.5)
+    node[above right,black] {$x_2=x_1$};
+  \draw[dashed,gray] (-2.5,2.5) -- (2.5,-2.5)
+    node[below right,black] {$x_2=-x_1$};
+
+  % The map (a,b) -> (b,a) gives an orthogonal direction.
+  \draw[->,very thick] (0,0) -- (2,1) node[right] {$u=(2,1)$};
+  \draw[->,very thick] (0,0) -- (1,2) node[above] {$v=(1,2)$};
+  \node at (-1.35,1.65) {$\langle u,v\rangle_{1,1}=0$};
+
+  \fill (0,0) circle[radius=1.2pt];
+\end{tikzpicture}
+\end{document}

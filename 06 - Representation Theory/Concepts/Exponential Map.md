@@ -48,7 +48,7 @@ For matrix Lie groups, this coincides with the matrix exponential.
 > [!warning] Important
 > In general, $e^X e^Y \neq e^{X+Y}$!
 >
-> Equality holds if and only if $[X, Y] = 0$.
+> If $[X,Y]=0$, then equality holds. The converse is false globally because the matrix exponential is not injective; exceptional equalities can occur for noncommuting matrices. Under additional local logarithm hypotheses, the Baker–Campbell–Hausdorff expansion can supply converse statements.
 
 ### Baker-Campbell-Hausdorff Formula
 

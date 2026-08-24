@@ -77,6 +77,51 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-24 (Artin Chapter 9 Complete Exercise Archive)
+- Added: Archived all 67 previously missing exercises from Chapter 9 of Michael Artin's *Algebra* (2nd ed.) as **LA282–LA295**, **G130–G147**, and **Rep13–Rep47**, with exact printed/PDF provenance, progressive hints, and complete independent solutions; together with the seven audited Section 1 notes **LA2–LA8**, the chapter's complete 74-exercise sequence is now archived.
+- Audited: Rechecked the seven existing Section 1 notes **LA2–LA8**, restored their source exercise numbers, corrected a broken subgroup symbol in LA2, and retained the printed false transitivity claim in Ex. 1.7 with its established correction to nonzero vectors.
+- Connected: Added **SU2, Quaternions, and the Spin Cover** and **Adjoint Representation and Invariant Trace Forms**, linking the quaternion/spin model, adjoint actions, trace forms, standard Killing-form terminology, Lorentz representations, and $PSL_2(\mathbb C)\cong SO_3(\mathbb C)$.
+- Illustrated: Constructed, compiled outside the sandbox, and visually verified editable TikZ/PDF/PNG figures for diagonal one-parameter groups, positive-affine flows, and the tangent field $z\mapsto z(1+i)$ on $\mathbb C^{\times}$.
+- Flagged: Preserved and explained the signature reversal in printed Ex. 4.8, the missing half-turn nonuniqueness in Ex. 4.9, the duplicated symbol in Ex. 8.10, and both the nonstandard Killing-form name and missing prime in M.11; clarified right-coset orientation in Ex. 5.8, repaired a malformed Lorentz-form formula, and removed a false global converse about matrix exponentials from the existing concept note.
+
+### 2026-08-24 (Artin Chapter 8, Miscellaneous Exercise Archive)
+- Added: Archived all 15 miscellaneous exercises in Chapter 8 of Michael Artin's *Algebra* (2nd ed.) as **LA267–LA281**, completing the chapter's 81-exercise sequence **LA201–LA281** with exact printed/PDF provenance, progressive hints, and complete independent solutions.
+- Illustrated: Constructed, compiled outside the sandbox, and visually verified an editable TikZ/PDF/PNG orbit diagram for M.1, separating the six real-congruence classes of symmetric $2\times2$ matrices.
+- Flagged: Preserved the missing “nonreal” hypothesis in printed M.12 as a visible source issue; explicitly labeled the supporting-hyperplane theorem in M.9 and the quadratic Gauss-sum evaluation in M.10 as external standard inputs.
+- Covered: Added the singular-value and polar decompositions, Fourier interpolation, real orthogonal block form, projection for a general symmetric form, the sharp $n+1$ pairwise-obtuse bound, and the Fischer inner product decomposition of polynomial space.
+
+### 2026-08-24 (Artin Chapter 8, Sections 7–8 Exercise Archive)
+- Added: Archived all 8 exercises in Chapter 8, Sections 7–8 of Michael Artin's *Algebra* (2nd ed.) as **LA259–LA266**, covering affine classification of conics and quadrics, skew-form projection, the Cayley transform, and determinant arithmetic.
+- Classified: Identified Exercise 7.1 as a one-sheeted hyperboloid centered at $(0,-1/2,-1/2)$ and recorded coefficient-level criteria for circles and degenerate quadrics.
+- Bounded: Proved the integral skew-symmetric determinant square using rational standard form, explicitly avoiding an unproved Pfaffian dependency.
+
+### 2026-08-24 (Artin Chapter 8, Sections 5–6 Exercise Archive)
+- Added: Archived all 28 exercises in Chapter 8, Sections 5–6 of Michael Artin's *Algebra* (2nd ed.) as **LA231–LA258**, with exact source pages, progressive hints, and complete independent solutions.
+- Added: Created **Normal Operators and the Spectral Theorem**, linked it bidirectionally to all 22 spectral-theorem exercises, and added it to the Linear Algebra and Modules hub.
+- Covered: Recorded Euclidean and Hermitian identities, Householder reflections, symmetric projections, Fourier modes and matrices, normality tests, simultaneous diagonalization, cyclic shifts, circulants, and positive square-root factorization; visibly preserved the stray printed “5.” in Exercise 6.13 as a source issue.
+
+### 2026-08-24 (Artin Chapter 8, Section 4 Exercise Archive)
+- Added: Archived all 21 exercises in Chapter 8, Section 4 of Michael Artin's *Algebra* (2nd ed.) as **LA210–LA230**, covering orthogonal complements and projections, Gram–Schmidt, trace forms, congruence diagonalization, positive-definiteness criteria, and Sylvester's Law.
+- Illustrated: Constructed, compiled outside the sandbox, and visually verified an editable TikZ/PDF/PNG diagram for Exercise 4.4, showing orthogonal vectors and null directions for the indefinite form $x_1y_1-x_2y_2$.
+- Expanded: Added the general projection formula and direct exercise links to **Inner Product Spaces**; retained `not-started` status and exact printed/PDF provenance for every exercise.
+
+### 2026-08-24 (Artin Chapter 8, Sections 1–3 Exercise Archive)
+- Added: Archived all 9 exercises in Chapter 8, Sections 1–3 of Michael Artin's *Algebra* (2nd ed.) as **LA201–LA209**, with the exact printed statement at printed p. 254/PDF p. 266, progressive hints, and complete independent solutions.
+- Added: Created **Bilinear and Hermitian Forms**, linked it bidirectionally to the new exercises, and added it to the Linear Algebra and Modules hub.
+- Clarified: Separated congruence from similarity, proved the quadratic-form reality criterion for Hermitian matrices directly, and recorded that $A^2$, $A^{-1}$, and $A+B$ preserve positive-definite Hermitian structure while $AB$ need not be Hermitian.
+
+### 2026-08-24 (Artin Chapter 7, Sections 1–2 Exercise Archive)
+- Added: Archived all 20 exercises in Chapter 7, Sections 1–2 of Michael Artin's *Algebra* (2nd ed.) as **G116–G129** and **LA195–LA200**, with exact printed/PDF provenance, progressive hints, and complete independent solutions.
+- Added: Created **Conjugacy Classes, Centralizers, and the Class Equation** and **Matrix Centralizers and Similarity**, linked them bidirectionally to the new exercises, and added them to the Group Theory and Linear Algebra hubs.
+- Illustrated: Constructed, compiled, and visually verified an editable TikZ/PDF/PNG conjugacy-class sketch for Exercise 2.5, separating the vertical classes $x\ne1$, the two rays at $x=1$, and the identity.
+- Flagged: Preserved the printed $GL_n/SL_n$ ambient groups in Exercise 2.18, visibly recorded their incompatibility with the displayed $2\times2$ matrices, and solved the evident intended $GL_2/SL_2$ problem.
+
+### 2026-08-24 (Artin Chapter 6, Section 5 Exercise Archive)
+- Added: Archived all 12 exercises in Chapter 6, Section 5 of Michael Artin's *Algebra* (2nd ed.) as **G107–G115** and **LA192–LA194**, with exact printed/PDF provenance, progressive hints, and complete independent solutions.
+- Added: Created **Discrete Isometry Groups and Frieze Groups**, **Discrete and Dense Subgroups**, and **Lattices in Euclidean Space**, with bidirectional exercise links and placement in the Group Theory and Linear Algebra hubs.
+- Preserved: Added direct source crops for the frieze patterns in Exercises 5.5 and 5.6; classified the latter's full point group as $D_2$ and its translation subgroup as index $4$ after visual verification.
+- Bounded: Distinguished source statements from vault derivations and labeled the countability, pigeonhole, and finitely generated abelian-group inputs used in the solutions.
+
 ### 2026-08-24 (Artin Chapter 5 Exercise Archive)
 - Added: Archived all 29 numbered exercises in Chapter 5 of Michael Artin's *Algebra* (2nd ed.) as **LA163–LA191**, with exact section, printed-page, and physical-PDF provenance, collapsed hints, and complete independent solutions.
 - Covered: Added exercises on orthogonal matrices and spatial rotations, simultaneous diagonalization, matrix-valued differentiation, constant-coefficient differential systems, matrix exponentials and trigonometric functions, finite-rank integral operators, recurrences, and matrix convergence.

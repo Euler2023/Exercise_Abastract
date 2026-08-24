@@ -18,7 +18,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.3
 > Prove that there is no continuous isomorphism from the orthogonal group $O_4$ to the Lorentz group $O_{3,1}$.
 
 ## Hints

@@ -17,7 +17,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.6
 > Prove that the following matrices are symplectic, where all displayed blocks are $n\times n$:
 > $$
 > \begin{pmatrix}0&-I\\I&0\end{pmatrix},
@@ -104,4 +104,3 @@ created: 2026-08-10
 These matrices are basic building blocks for symplectic changes of coordinates: the first exchanges the two coordinate halves, the second changes a basis together with its dual basis, and the third is a shear determined by a symmetric matrix.
 
 **Source status:** The three matrices and their hypotheses are stated in [S1, Ch. 9, Exercises §1, Ex. 1.6, printed p. 283, PDF p. 295]. All three block computations are complete.
-

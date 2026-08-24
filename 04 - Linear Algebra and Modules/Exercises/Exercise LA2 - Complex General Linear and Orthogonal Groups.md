@@ -17,7 +17,7 @@ created: 2026-08-10
 
 ## Problem Statement
 
-> [!question] Exercise
+> [!question] Exercise 1.1
 > **(a)** Is $GL_n(\mathbb C)$ isomorphic to a subgroup of $GL_{2n}(\mathbb R)$?
 >
 > **(b)** Is $SO_2(\mathbb C)$ a bounded subset of $\mathbb C^{2\times2}$?
@@ -53,7 +53,7 @@ created: 2026-08-10
 > $$
 > hence $\rho(A)\in GL_{2n}(\mathbb R)$. Thus
 > $$
-> GL_n(\mathbb C)\cong \rho\bigl(GL_n(\mathbb C)\bigr)le GL_{2n}(\mathbb R).
+> GL_n(\mathbb C)\cong \rho\bigl(GL_n(\mathbb C)\bigr)\le GL_{2n}(\mathbb R).
 > $$
 > Therefore the answer is **yes**.
 >
