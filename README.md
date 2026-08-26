@@ -77,6 +77,12 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-24 (Infinite Matrices Concept)
+- Added: Created **Infinite Matrices**, distinguishing row-finite and column-finite matrices, proving their exact actions on the full sequence space and the finite-support space, and recording the composition, transpose, and endomorphism conventions.
+- Expanded: Added Artin's concrete subspaces $C$, $\ell^1$, and $Z$ of $\mathbb R^\infty$, the standard rows $e_i$, the non-finite-support vector $(1,1,\ldots)$, and the resulting basis distinction; labeled Propositions 1–3 locally as independent vault derivations rather than textbook propositions.
+- Connected: Linked the concept bidirectionally with Artin Exercise LA157, Matrix Representation, and the Linear Algebra and Modules Hub.
+- Compared: Added source-verified perspectives from Artin's algebraic sequence spaces, Lang's infinite relation matrices and finite-minor Fitting ideals, and Kac's finite Cartan matrices for infinite-dimensional Lie algebras.
+
 ### 2026-08-24 (Artin Chapter 9 Complete Exercise Archive)
 - Added: Archived all 67 previously missing exercises from Chapter 9 of Michael Artin's *Algebra* (2nd ed.) as **LA282–LA295**, **G130–G147**, and **Rep13–Rep47**, with exact printed/PDF provenance, progressive hints, and complete independent solutions; together with the seven audited Section 1 notes **LA2–LA8**, the chapter's complete 74-exercise sequence is now archived.
 - Audited: Rechecked the seven existing Section 1 notes **LA2–LA8**, restored their source exercise numbers, corrected a broken subgroup symbol in LA2, and retained the printed false transitivity claim in Ex. 1.7 with its established correction to nonzero vectors.

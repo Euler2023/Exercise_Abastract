@@ -73,6 +73,7 @@ Similar matrices share:
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Infinite Matrices|Infinite Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Centralizers and Similarity|Matrix Centralizers and Similarity]]
 
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
