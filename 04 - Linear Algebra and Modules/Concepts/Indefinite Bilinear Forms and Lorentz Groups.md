@@ -102,10 +102,6 @@ where $\delta,\varepsilon\in\{1,-1\}$ and $t\in\mathbb R$. The two discrete inva
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA3 - Columns of Lorentz Matrices|Exercise LA3]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA4 - Orthogonal and Lorentz Groups Are Not Continuously Isomorphic|Exercise LA4]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA5 - Four Components of O11|Exercise LA5]]
-
 ```dataview
 TABLE status,difficulty,source
 FROM #exercise

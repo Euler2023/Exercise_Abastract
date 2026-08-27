@@ -78,14 +78,11 @@ $$
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA195 - Centralizers over Finite Fields|Exercise LA195]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA196 - Conjugacy Classes in the Positive Affine Group|Exercise LA196]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA197 - Centralizers of a Half-Turn and a Reflection|Exercise LA197]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA198 - Centralizers of Five Real Three by Three Matrices|Exercise LA198]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA199 - Class Equation of SL2 over F3|Exercise LA199]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA200 - Conjugacy of Two Companion-Type Matrices|Exercise LA200]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA297 - Matrix Orbits under Left Multiplication and Conjugation|Exercise LA297]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA299 - Conjugacy Orbit of a Diagonal Two by Two Matrix|Exercise LA299]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

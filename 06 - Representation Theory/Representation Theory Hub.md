@@ -20,6 +20,7 @@ Representation theory studies abstract algebraic structures by representing thei
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory Definition]]
 - [[06 - Representation Theory/Concepts/Group Algebra|Group Algebra]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]]
+- [[06 - Representation Theory/Concepts/Induced Representations and Frobenius Reciprocity|Induced Representations and Frobenius Reciprocity]]
 
 ### Linear Algebra Prereqs
 - [[Vector Spaces]]

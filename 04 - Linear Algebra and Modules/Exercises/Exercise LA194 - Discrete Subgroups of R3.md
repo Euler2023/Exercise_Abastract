@@ -51,6 +51,7 @@ created: 2026-08-24
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
+- [[01 - Group Theory/Concepts/Discrete and Dense Subgroups|Discrete and Dense Subgroups]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
@@ -60,4 +61,3 @@ created: 2026-08-24
 - Artin's notation $\mathbb R^{3+}$ means the additive group of $\mathbb R^3$.
 - **External standard input:** the structure theorem for finitely generated abelian groups is used after finite generation is proved.
 - **Source status:** [S1, Ch. 6, §5, Ex. 5.12, printed p. 189, PDF p. 201]; independent proof.
-

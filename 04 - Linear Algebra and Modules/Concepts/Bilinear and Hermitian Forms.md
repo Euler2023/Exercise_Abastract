@@ -126,16 +126,11 @@ For a Hermitian form $H=R+iI$, restriction of scalars from $\mathbb C$ to $\math
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA201 - Symmetric and Skew Decomposition|Exercise LA201]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA202 - Maximal Entries of a Positive Definite Matrix|Exercise LA202]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA203 - Rank under Congruence|Exercise LA203]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA204 - Reality Criterion for Hermitian Matrices|Exercise LA204]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA205 - Real and Imaginary Parts of a Hermitian Form|Exercise LA205]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA206 - A Basis for Hermitian Matrices|Exercise LA206]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA207 - Positivity of the Gram Matrix A Star A|Exercise LA207]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA208 - Operations on Positive Definite Hermitian Matrices|Exercise LA208]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA209 - Eigenvalues of a Two by Two Hermitian Matrix|Exercise LA209]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA300 - Congruence as a GLn Action|Exercise LA300]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

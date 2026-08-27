@@ -23,6 +23,9 @@ copilot/
 
 # Literature/Exercise Manager 安装产物（开发仓库在 E:\project\tools）
 .obsidian/plugins/exercise_manager/
+.obsidian/exercise-manager-daily-state.json
+.obsidian/exercise-manager-daily-state.json.bak
+.obsidian/exercise-manager-daily-state.json.tmp-*
 lance_db/
 run.cmd
 run.ps1

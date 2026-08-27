@@ -90,11 +90,6 @@ $$
 
 For an orthonormal basis this simplifies to $\pi_W(v)=\sum_i w_i\langle w_i,v\rangle$. The Gram-Schmidt process repeatedly subtracts such projections to construct an orthogonal or orthonormal basis.
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA211 - Projection onto an Orthogonal Hyperplane|Exercise LA211]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA216 - Gram-Schmidt in R3|Exercise LA216]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA224 - Projection onto a Plane in R3|Exercise LA224]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA228 - Orthonormal Rows of a Plane Projection|Exercise LA228]]
-
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]

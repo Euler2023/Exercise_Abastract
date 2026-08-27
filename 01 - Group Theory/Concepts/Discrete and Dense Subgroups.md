@@ -58,8 +58,11 @@ Subgroup structure makes “intermediate spacing” unstable. On the real line, 
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G115 - Discrete and Dense Subgroups|Exercise G115]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA194 - Discrete Subgroups of R3|Exercise LA194]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

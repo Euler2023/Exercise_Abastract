@@ -77,6 +77,28 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-27 (Automatic Concept–Exercise Backlinks)
+- Standardized: Replaced static exercise-link blocks in twelve concept notes with Dataview queries driven by exercise outlinks, covering 98 formerly manual associations.
+- Preserved: Audited every former association and added the two missing exercise-to-concept links before conversion, so no relationship was lost.
+- Updated: Synchronized `Templates/Concept Template.md` with the canonical `status`, `difficulty`, and `source` Dataview columns; `Templates/Exercise Template.md` continues to provide explicit `Related Concepts` links.
+
+### 2026-08-27 (Artin Chapter 11 Complete Exercise Archive)
+- Added: Archived all **72** exercises in Chapter 11 of Michael Artin's *Algebra* as **R37–R105**, **F32–F33**, and **G266**, with one note per numbered source exercise, exact printed/PDF provenance, progressive hints, and independent solutions.
+- Routed: Classified the two algebraic-number exercises under Field Theory and the cancellative-semigroup completion under Group Theory; routed the remaining 69 exercises by their primary ring-theoretic toolkit, including the polynomial and affine-variety exercises.
+- Added: Created concept notes for **Formal Power Series**, **Localization and Laurent Polynomials**, **Product Rings and the Chinese Remainder Theorem**, and **Nilpotent and Idempotent Elements**, linked them bidirectionally to the active exercises through Dataview backlinks, and added them to the Ring Theory hub.
+- Standardized: Required every new concept note to populate its `Exercises` section dynamically from exercise outlinks with Dataview instead of maintaining a manual exercise list.
+- Flagged: Preserved visible source issues in Exercises 9.6, 9.11, and 9.12, and recorded the boundary-inclusive “upper half plane” convention needed in Exercise 8.4.
+- Verified: Reconciled all 72 Chapter 11 source labels one-to-one, with zero omissions, duplicate mappings, unexpected labels, or unparsed locators; found no exact or high-similarity problem-statement duplicates against the pre-existing exercise archive.
+- Cleaned: Removed the completed Chapter 11 source checklist and in-progress wording from the archive dashboard after reconciliation.
+
+### 2026-08-27 (Artin Chapter 10 Complete Exercise Archive)
+- Added: Archived all **68** exercises in Chapter 10 of Michael Artin's *Algebra* as **Rep48–Rep115**, covering finite-group representations, invariant forms, character tables, regular and permutation representations, Schur's lemma, $SU_2$/$SO_3$, induced representations, and Frobenius reciprocity, with exact printed/PDF provenance, progressive hints, and independent solutions.
+- Corrected: Re-audited the original exercise pages and corrected the Chapter 10 source total from **63** to **68**: 53 section exercises plus **M.1–M.15** on printed pp. 314–322/PDF pp. 326–334.
+- Added: Created **Induced Representations and Frobenius Reciprocity**, linked it bidirectionally to M.9–M.12, and added it to the Representation Theory hub.
+- Standardized: Added a full-chapter archival protocol that registers an exact source manifest before note creation and requires post-archive checks for missing labels, duplicate mappings, unexpected labels, and unparsed locators before a chapter can be marked complete.
+- Cleaned: Removed the completed Chapter 10 batch's temporary manifest, active-batch wording, and one-off reconciliation code from the permanent archive dashboard after recording the final result.
+- Verified: Reconciled all 68 Chapter 10 source labels one-to-one, with zero omissions, duplicate mappings, or unexpected labels; also found no exact or high-similarity problem-statement duplicates against the pre-existing exercise archive.
+
 ### 2026-08-27 (Artin Exercise Archive Dashboard)
 - Added: Created a Home dashboard for Artin's *Algebra* exercise archive, with live chapter-by-chapter note counts and audited source-coverage totals.
 - Expanded: Added all 16 chapter scopes and an outline-visible, live source-exercise-to-note index, with ordinary exercises sorted numerically by section and problem number and miscellaneous exercises placed afterward; chapters without archived exercises remain visible.

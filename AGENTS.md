@@ -67,7 +67,7 @@ Even when a note contains a full solution, keep its learning status as `not-star
 - Add only concepts that are genuinely required by the active exercises and are not already present. Search aliases and existing content before creating a note.
 - Store concept notes in the existing `Concepts/` directory of the selected topic. Do not create textbook-specific subfolders.
 - Include at least a definition, intuition or explanation, key properties, examples, related concepts, related exercises, and source/proof status.
-- Link concepts and exercises in both directions: exercises link to prerequisites, and the concept's `Exercises` section links back to the exercises.
+- Link concepts and exercises in both directions: exercises link explicitly to their prerequisite concepts, and every new concept note's `Exercises` section must use a Dataview query to list exercise notes whose `file.outlinks` contain `this.file.link`. Do not maintain a manual exercise list in a concept note.
 - Add new concepts to the appropriate location in the target topic hub.
 - Explicitly distinguish notation for cross-disciplinary objects, such as Artin's noncompact real symplectic group `SP_{2n}(\mathbb R)` and the compact Lie group `Sp(n)`.
 
@@ -130,6 +130,16 @@ Even when a note contains a full solution, keep its learning status as `not-star
 - Do not create a directory solely for a single batch, textbook chapter, or temporary render.
 
 ## 10. Editing and Validation Workflow
+
+### Full-chapter source archive protocol
+
+For every full textbook-chapter exercise batch, use the archive dashboard as a two-sided source ledger rather than updating it only after note creation:
+
+1. **Pre-archive source audit:** inspect the bounded exercise pages in the original PDF, record the exact ordered source-label set, the verified total, and the printed/PDF page range in `00 - Home/Artin Exercise Archive.md`. Mark the chapter as source-audited but not complete.
+2. **One-to-one archival pass:** create one note for each numbered source exercise, preserving multipart structure, exact source locators, and visible source issues. Do not infer completeness from the number of files alone.
+3. **Post-archive reconciliation:** compare the expected source-label set with parsed note provenance. Report missing labels, duplicate mappings, unexpected labels, and Artin-based notes whose locators cannot be parsed. Mark a chapter `Complete` only when all four exception sets are empty and the verified total matches the source audit.
+4. **Archive cleanup:** after recording the successful reconciliation in the permanent chapter coverage/status and README Changelog, remove temporary planning prose, active-batch notices, one-off source manifests, and temporary reconciliation code from `Artin Exercise Archive.md`. Keep only durable totals, source anchors, final status notes, and the next-batch pointer.
+5. **Final consistency pass:** rerun the ordinary metadata, link, formula-delimiter, tracker, and Git-status checks after that cleanup.
 
 Before writing:
 

@@ -91,31 +91,13 @@ $$
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA237 - Intrinsic Tests for Hermitian and Unitary Operators|LA237]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA238 - Vanishing under a Symmetric Square|LA238]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA239 - Symmetric Orthogonal Matrices in Dimension Three|LA239]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA240 - Matrices with Diagonal Gram Matrix|LA240]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA241 - Spectral Structure of Real Skew-Symmetric Matrices|LA241]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA242 - A Normality Test using A Star A Inverse|LA242]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA243 - Real Normal Matrices with Real Spectrum|LA243]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA244 - Fourier Modes on the Unit Circle|LA244]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA245 - Diagonalizing the Exchange Matrix|LA245]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA246 - A Hermitian Form Induced by an Operator|LA246]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA247 - Orthogonality of Hermitian Eigenspaces|LA247]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA248 - Unitary Diagonalization of a Two by Two Hermitian Matrix|LA248]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA249 - Orthogonal Diagonalization of Three Real Matrices|LA249]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA250 - Positive Eigenvalues and Positive Definiteness|LA250]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA251 - Kernels and Orthogonal Images|LA251]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA252 - Unitarity of the Fourier Matrix|LA252]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA253 - Simultaneous Diagonalization of Commuting Hermitian Matrices|LA253]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA254 - Square Root Factorization of a Positive Matrix|LA254]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA255 - Diagonalization of the Cyclic Shift|LA255]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA256 - Normality of Circulant Matrices|LA256]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA257 - Spectral Tests for Hermitian and Unitary Matrices|LA257]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA258 - Spectral Theorem for Symmetric Operators|LA258]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 
 - The adjoint characterizations are Proposition 8.6.3; the normal, Hermitian, unitary, and real symmetric spectral theorems are Theorems 8.6.6–8.6.10 in [S1, Ch. 8, §8.6, printed pp. 242–245, PDF pp. 254–257].
 - The consequences above are independently derived in Exercises LA237–LA258.
-

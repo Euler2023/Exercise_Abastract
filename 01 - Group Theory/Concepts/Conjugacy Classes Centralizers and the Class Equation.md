@@ -105,23 +105,12 @@ where the second sum uses one representative from each noncentral class.
 
 ## Exercises
 
-- [[01 - Group Theory/Exercises/Exercise G118 - Element Order from a Conjugacy Class|Exercise G118]]
-- [[01 - Group Theory/Exercises/Exercise G119 - Trivial Center from a Class of Order Four|Exercise G119]]
-- [[01 - Group Theory/Exercises/Exercise G120 - Power Maps on Conjugacy Classes|Exercise G120]]
-- [[01 - Group Theory/Exercises/Exercise G121 - Conjugacy Classes of Plane Isometries|Exercise G121]]
-- [[01 - Group Theory/Exercises/Exercise G122 - Candidate Class Equations of Order Ten|Exercise G122]]
-- [[01 - Group Theory/Exercises/Exercise G123 - Class Equations in Orders Eight and Twenty-One|Exercise G123]]
-- [[01 - Group Theory/Exercises/Exercise G124 - Class Equations of Four Concrete Groups|Exercise G124]]
-- [[01 - Group Theory/Exercises/Exercise G125 - Finite Groups with at Most Three Conjugacy Classes|Exercise G125]]
-- [[01 - Group Theory/Exercises/Exercise G126 - A Normal Subgroup of Order Five Is Central|Exercise G126]]
-- [[01 - Group Theory/Exercises/Exercise G127 - Subgroups Forced by a Class Equation of Order Twenty|Exercise G127]]
-- [[01 - Group Theory/Exercises/Exercise G128 - Conjugacy Classes under a Surjective Homomorphism|Exercise G128]]
-- [[01 - Group Theory/Exercises/Exercise G129 - Prime Order Elements from the Class Equation|Exercise G129]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA195 - Centralizers over Finite Fields|Exercise LA195]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA196 - Conjugacy Classes in the Positive Affine Group|Exercise LA196]]
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA199 - Class Equation of SL2 over F3|Exercise LA199]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 
 The definitions, orbit–stabilizer formula, center criterion, and class equation are proved or derived in Artin §7.2. [S1, Ch. 7, formulas (7.2.1)–(7.2.8), printed pp. 195–197, PDF pp. 207–209] The linked exercise solutions are independent applications rather than solutions printed in the source.
-

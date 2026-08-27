@@ -77,6 +77,7 @@ created: 2026-08-27
 - [[01 - Group Theory/Exercises/Exercise G151 - Wallpaper Groups with Point Group D1|Exercise G151]]
 - [[01 - Group Theory/Exercises/Exercise G152 - Wallpaper Groups with Sixfold Point Symmetry|Exercise G152]]
 - [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
+- [[01 - Group Theory/Concepts/Discrete Isometry Groups and Frieze Groups|Discrete Isometry Groups and Frieze Groups]]
 
 ## Notes
 

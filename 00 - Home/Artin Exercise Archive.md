@@ -79,7 +79,8 @@ const auditedCoverage = new Map([
   [7,  { covered: 96, total: 96, status: "Complete" }],
   [8,  { covered: 81, total: 81, status: "Complete" }],
   [9,  { covered: 74, total: 74, status: "Complete" }],
-  [10, { covered: 0, total: 63, status: "Ready for archival planning" }],
+  [10, { covered: 68, total: 68, status: "Complete" }],
+  [11, { covered: 72, total: 72, status: "Complete" }],
   [15, { covered: 29, total: 60, status: "Partial — 31 missing" }],
   [16, { covered: 90, total: 90, status: "Complete" }],
 ]);
@@ -109,8 +110,8 @@ dv.table(
 > [!note] Counting boundary
 > “Archived source exercises” and “Note files” are calculated live from exercise tags and source metadata. They need not be equal: one note can carry provenance from more than one source exercise, while several notes may archive the same source exercise. “Verified source coverage” is asserted only for chapters whose full exercise list has been audited against the original PDF.
 
-> [!success] Pre-Chapter 10 remediation complete
-> Chapters 6–9 have been re-audited against the source metadata. Each now has complete one-to-one source-exercise coverage with no duplicate mappings. Chapter 10 is ready for its archival plan. The Chapter 15 partial archive is recorded accurately but is not part of this chronological cleanup.
+> [!success] Chapter 11 archival audit complete
+> All 72 source exercises—65 section exercises and M.1–M.7 on printed pp. 354–358 / PDF pp. 366–370—are mapped one-to-one to 72 notes: R37–R105, F32–F33, and G266. The reconciliation found no omissions, duplicate mappings, unexpected labels, or unparsed exercise locators.
 
 ## Chapter Scope Notes
 
@@ -125,15 +126,15 @@ dv.table(
 | 7 | All 96 source exercises | Complete; all numbered and miscellaneous exercises are represented once |
 | 8 | All 81 source exercises | Complete; the eight former duplicate pairs were consolidated into LA11–LA18 |
 | 9 | All 74 source exercises | Complete; source-label audit found no gaps or duplicates |
-| 10 | No exercise notes yet | Ready for the next archival plan |
-| 11 | No exercise notes yet | Not archived |
+| 10 | All 68 source exercises: 53 section exercises and M.1–M.15 | Complete; source exercise labels reconciled with no omissions, duplicates, unexpected labels, or unparsed exercise locators |
+| 11 | All 72 source exercises: 65 section exercises and M.1–M.7 | Complete; all source labels map one-to-one to 72 notes with no omissions or duplicates |
 | 12 | No exercise notes yet | Not archived |
 | 13 | No exercise notes yet | Not archived |
 | 14 | No exercise notes yet | Not archived |
 | 15 | 29 of 60: Exercises 6.3, 7.1–7.14, 8.1–8.2, 9.1–9.5, 10.1–10.4, and M.1–M.3 | Partial; 31 source exercises remain |
 | 16 | All 90 source exercises | Complete |
 
-Source-total audit anchors: [S1, Ch. 6, Exercises, printed pp. 188–194, PDF pp. 200–206]; [S1, Ch. 7, Exercises, printed pp. 221–227, PDF pp. 233–239]; [S1, Ch. 15, Exercises, printed pp. 472–476, PDF pp. 484–488].
+Source-total audit anchors: [S1, Ch. 6, Exercises, printed pp. 188–194, PDF pp. 200–206]; [S1, Ch. 7, Exercises, printed pp. 221–227, PDF pp. 233–239]; [S1, Ch. 10, Exercises, printed pp. 314–322, PDF pp. 326–334]; [S1, Ch. 11, Exercises, printed pp. 354–358, PDF pp. 366–370]; [S1, Ch. 15, Exercises, printed pp. 472–476, PDF pp. 484–488].
 
 ## Source Exercise to Archived Note Mapping
 
@@ -595,4 +596,4 @@ SORT exercise_group ASC, section_order ASC, exercise_order ASC, file.name ASC
 
 ## Next Archival Batch
 
-The Chapter 6–9 remediation and re-audit are complete. Chapter 10 is the next archival batch; prepare its source-grounded outline before creating notes.
+Chapters 6–11 are complete and reconciled against their source metadata. Chapter 12 is the next chronological archival batch; audit and record its exact source exercise labels before creating notes.

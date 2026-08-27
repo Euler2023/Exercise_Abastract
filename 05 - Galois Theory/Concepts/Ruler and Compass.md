@@ -109,7 +109,11 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Exercises
 
-- [[05 - Galois Theory/Exercises/Exercise Gal10 - Constructible Real Quartics and Their Galois Groups|Exercise Gal10]]
+```dataview
+TABLE status,difficulty,source
+FROM #exercise
+WHERE contains(file.outlinks, this.file.link)
+```
 
 ## Source and Proof Status
 

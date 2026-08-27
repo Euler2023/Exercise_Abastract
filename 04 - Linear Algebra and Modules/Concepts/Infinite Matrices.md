@@ -332,8 +332,6 @@ Kac's Kac–Moody algebra $\mathfrak g(A)$ can be infinite-dimensional, but the 
 
 ## Exercises
 
-- [[04 - Linear Algebra and Modules/Exercises/Exercise LA157 - When Infinite Matrix Multiplication Is Defined|Exercise LA157: When Infinite Matrix Multiplication Is Defined]]
-
 ```dataview
 TABLE status,difficulty,source
 FROM #exercise

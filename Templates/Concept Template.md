@@ -70,17 +70,13 @@ Intuitive explanation of the concept.
 
 ## Related Concepts
 
-
 - [[<% tp.file.cursor(1) %>]]
 - [[<% tp.file.cursor(2) %>]]
 
-
 ## Exercises
 
-
-
 ```dataview
-TABLE status, source
+TABLE status,difficulty,source
 FROM #exercise
 WHERE contains(file.outlinks, this.file.link)
 ```
