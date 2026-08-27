@@ -28,6 +28,7 @@ exercise_abstract/
 ├── 06 - Representation Theory/  # Concepts and exercises
 ├── 07 - Modular Forms/  # Concepts and exercises
 ├── 08 - Arithmetic Geometry/  # Concepts and exercises
+├── 09 - Daily Exercise Lists/  # Daily Markdown todo lists
 ├── Canvas/              # Visual topic maps
 ├── Templates/           # Exercise and concept templates
 └── Attachments/         # Images and files
@@ -76,6 +77,16 @@ Each exercise includes:
 ---
 
 ## Changelog
+
+### 2026-08-28 (Daily Exercise List Export)
+- Added: Upgraded the local Exercise Manager to 0.3.0 with automatic and manual export of each daily batch to a dated Markdown todo list under the new top-level `09 - Daily Exercise Lists/` directory.
+- Preserved: Re-exporting the same date updates one managed checklist, retains completed boxes for exercises still in the batch, keeps user notes outside that checklist untouched, and does not alter source exercise statuses or no-repeat history.
+- Verified: Covered initial export, same-date idempotency, checkbox preservation, replacement synchronization, user-note preservation, and plugin lifecycle compatibility in the existing 29-test suite.
+
+### 2026-08-28 (Exercise Manager Module-Loading Hotfix)
+- Fixed: Changed the local Exercise Manager to load its daily sampler and state modules from validated absolute plugin paths after Obsidian initialization, avoiding Electron's incorrect `renderer_init` resolution of top-level relative imports.
+- Hardened: Preserved failure isolation for the pre-existing search, vector-sync, link, and gap-scan features while loading the daily modules only after the plugin directory is known.
+- Verified: Re-ran the complete 29-test suite, syntax checks, and diff checks with coverage for the relative-module failure in the plugin lifecycle smoke test.
 
 ### 2026-08-27 (Local Daily Exercise Draw Plugin)
 - Added: Extended the local **Exercise Manager 0.2.0** plugin with a Chinese daily-exercise sidebar, source/chapter selection, configurable daily count, deterministic no-replacement sampling, replacement/undo controls, and explicit cycle resets.

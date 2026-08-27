@@ -2,14 +2,14 @@
 title: "Exercise F28: The Quadratic Subfield $\\mathbb Q(\\sqrt2)$"
 topic: field-theory
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - field-theory
   - subfields
   - quadratic-fields
   - field-axioms
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.1, printed p. 98, PDF p. 110"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.1, printed p. 98, PDF p. 110
 created: 2026-08-23
 ---
 
