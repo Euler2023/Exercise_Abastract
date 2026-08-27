@@ -77,6 +77,12 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-27 (Local Daily Exercise Draw Plugin)
+- Added: Extended the local **Exercise Manager 0.2.0** plugin with a Chinese daily-exercise sidebar, source/chapter selection, configurable daily count, deterministic no-replacement sampling, replacement/undo controls, and explicit cycle resets.
+- Added: Introduced stable S1–S11 source IDs, legacy Artin locator parsing, and structured `source_refs` support for later book archives; multi-locator notes are consumed as one exercise unit across all selected chapters.
+- Safeguarded: Stored daily settings and draw history in an atomic, backed-up, per-vault state file under `.obsidian`, while leaving exercise-note learning statuses unchanged and refusing to overwrite corrupt or future-schema state.
+- Verified: Parsed 869 current Artin exercise units (853 `not-started`) and exhausted all 72 Chapter 11 units in daily batches without repeating a unit or source reference; automated sampler/state/workflow tests all passed.
+
 ### 2026-08-27 (Automatic Concept–Exercise Backlinks)
 - Standardized: Replaced static exercise-link blocks in twelve concept notes with Dataview queries driven by exercise outlinks, covering 98 formerly manual associations.
 - Preserved: Audited every former association and added the two missing exercise-to-concept links before conversion, so no relationship was lost.

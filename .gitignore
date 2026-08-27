@@ -25,7 +25,7 @@ copilot/
 .obsidian/plugins/exercise_manager/
 .obsidian/exercise-manager-daily-state.json
 .obsidian/exercise-manager-daily-state.json.bak
-.obsidian/exercise-manager-daily-state.json.tmp-*
+.obsidian/exercise-manager-daily-state.json*.tmp-*
 lance_db/
 run.cmd
 run.ps1
