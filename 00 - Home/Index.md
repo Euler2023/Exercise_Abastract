@@ -66,6 +66,10 @@ GROUP BY true
 
 ![[Exercise Tracker.base]]
 
+### Textbook Archive Coverage
+
+- [[00 - Home/Artin Exercise Archive|Artin Exercise Archive]]
+
 ## Study Progress
 
 ![[Study Progress.base]]

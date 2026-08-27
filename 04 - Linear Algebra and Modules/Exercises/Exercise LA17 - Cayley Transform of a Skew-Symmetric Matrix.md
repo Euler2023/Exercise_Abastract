@@ -76,5 +76,5 @@ created: 2026-08-12
 
 ## Notes
 
-- **Source status:** The statement is [S1, Ch. 8, Exercises §8, Ex. 8.3, printed p. 258, PDF p. 270]. The solution is an independent derivation.
+- **Source status:** The statement, including the precise order $(I-S)(I+S)^{-1}$, was visually verified at [S1, Ch. 8, Exercises §8, Ex. 8.3, printed p. 258, PDF p. 270]. The solution is an independent derivation.
 - This rational map is the Cayley transform. Its image excludes orthogonal matrices having $-1$ as an eigenvalue.

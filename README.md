@@ -77,6 +77,19 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-27 (Artin Exercise Archive Dashboard)
+- Added: Created a Home dashboard for Artin's *Algebra* exercise archive, with live chapter-by-chapter note counts and audited source-coverage totals.
+- Expanded: Added all 16 chapter scopes and an outline-visible, live source-exercise-to-note index, with ordinary exercises sorted numerically by section and problem number and miscellaneous exercises placed afterward; chapters without archived exercises remain visible.
+- Distinguished: Counted unique source exercises separately from note files, exposing the eight duplicate Chapter 8 mappings without deleting or merging user notes and excluding the theorem-adapted Rank–Nullity note from numbered-exercise coverage.
+- Verified: Re-audited all 74 Chapter 9 source labels against Artin's printed pp. 283–289/PDF pp. 295–301; confirmed 74 unique archived exercises with no omissions, duplicates, or unexpected labels and no required-structure defects.
+- Fixed: Audited Chapter 6 as 22/77, Chapter 7 as 20/96, and Chapter 15 as 29/60 against the original PDF and the full cross-topic vault; deferred Chapter 10 until the Chapter 6–8 remediation is complete.
+- Added: Archived all 55 previously missing Chapter 6 exercises as **G148–G194** and **LA296–LA303**, including direct crops of Figure 6.6.2 and the four Exercise 6.3 patterns, exact page provenance, the full seventeen-wallpaper-group classification, polyhedral and permutation actions, fundamental domains, Burnside counting, and visible source boundaries for Exercise 7.10 and M.6; Chapter 6 is now complete at 77/77 with one note per source exercise.
+- Added: Archived all 76 previously missing Chapter 7 exercises as **G195–G265** and **LA304–LA308**, covering finite $p$-groups, class equations, symmetric-group conjugacy, normalizers, Sylow theory, groups of small order, free groups, presentations, Todd–Coxeter enumeration, triangle groups, double cosets, and the isomorphism theorems; Chapter 7 is now complete at 96/96 with one note per source exercise.
+- Verified: Reconciled the complete Chapter 7 source-label set against Artin's printed pp. 221–227/PDF pp. 233–239, with 96 unique mappings, no gaps or duplicates, valid exercise metadata, resolving Wikilinks, and Obsidian-compatible mathematics; preserved the duplicated part label in Exercise 10.8 and the OCR-only misreading of Exercise 11.8.
+- Consolidated: Merged the unique methods and provenance details from the eight duplicate Chapter 8 notes **LA259–LA266** into the canonical notes **LA11–LA18**, then removed the duplicate files; Chapter 8 now has 81 source exercises mapped one-to-one to 81 notes.
+- Verified: Re-audited Chapters 6–9 after cleanup: Chapter 6 is 77/77, Chapter 7 is 96/96, Chapter 8 is 81/81, and Chapter 9 is 74/74, with no missing or duplicate source labels. The pre-Chapter 10 remediation boundary is now cleared.
+- Connected: Linked the new Artin archive dashboard from the main Home index while preserving the distinction between archival coverage and each note's learning status.
+
 ### 2026-08-24 (Infinite Matrices Concept)
 - Added: Created **Infinite Matrices**, distinguishing row-finite and column-finite matrices, proving their exact actions on the full sequence space and the finite-support space, and recording the composition, transpose, and endomorphism conventions.
 - Expanded: Added Artin's concrete subspaces $C$, $\ell^1$, and $Z$ of $\mathbb R^\infty$, the standard rows $e_i$, the non-finite-support vector $(1,1,\ldots)$, and the resulting basis distinction; labeled Propositions 1–3 locally as independent vault derivations rather than textbook propositions.

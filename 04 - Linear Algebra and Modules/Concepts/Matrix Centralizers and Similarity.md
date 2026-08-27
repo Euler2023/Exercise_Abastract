@@ -84,8 +84,9 @@ $$
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA198 - Centralizers of Five Real Three by Three Matrices|Exercise LA198]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA199 - Class Equation of SL2 over F3|Exercise LA199]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA200 - Conjugacy of Two Companion-Type Matrices|Exercise LA200]]
+- [[04 - Linear Algebra and Modules/Exercises/Exercise LA297 - Matrix Orbits under Left Multiplication and Conjugation|Exercise LA297]]
+- [[04 - Linear Algebra and Modules/Exercises/Exercise LA299 - Conjugacy Orbit of a Diagonal Two by Two Matrix|Exercise LA299]]
 
 ## Source and Proof Status
 
 Artin explicitly recommends solving $PA=AP$ to compute a matrix centralizer and demonstrates the method in $SL_2(\mathbb F_3)$. [S1, Ch. 7, §2, printed p. 197, PDF p. 209] The general eigenspace and Jordan-block descriptions are standard linear-algebra extensions and are verified in the linked concrete exercises; therefore the overall note is marked `partially-verified` rather than fully source-contained.
-

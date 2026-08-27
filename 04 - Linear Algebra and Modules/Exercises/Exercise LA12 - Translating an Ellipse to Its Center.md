@@ -80,3 +80,4 @@ created: 2026-08-12
 
 - **Source status:** The statement is [S1, Ch. 8, Exercises §7, Ex. 7.2, printed p. 258, PDF p. 270]. The solution is independently derived.
 - The assumption that the equation represents an ellipse guarantees the invertibility needed for $A^{-1}$.
+- The formula $h=-\frac12A^{-1}b$ applies to every quadric with invertible quadratic matrix, not only to ellipses; equation (8.7.1) was cross-checked at [S1, Ch. 8, §7, printed p. 245, PDF p. 257].

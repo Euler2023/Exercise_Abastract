@@ -80,8 +80,10 @@ created: 2026-08-12
 - [[04 - Linear Algebra and Modules/Concepts/Skew-Symmetric Bilinear Forms|Skew-Symmetric Bilinear Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 
 ## Notes
 
 - **Source status:** The statement is [S1, Ch. 8, Exercises §8, Ex. 8.2, printed p. 258, PDF p. 270]. The solution is independently derived from Artin's Theorem 8.8.6.
 - Here “orthogonal” refers to the skew form $\omega$, not to the Euclidean inner product.
+- Unlike the symmetric one-vector projection formula, a skew form always has $\omega(w,w)=0$; the inverse Gram matrix in the solution replaces division by a squared length.

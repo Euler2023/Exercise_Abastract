@@ -116,3 +116,4 @@ created: 2026-08-12
 
 - **Source status:** The statement is [S1, Ch. 8, Exercises §8, Ex. 8.4, printed p. 258, PDF p. 270]. Artin marks the exercise with an asterisk. The solution is independently derived.
 - **Proof boundary:** The real skew-symmetric normal form is the spectral-theorem version of Artin's standard-form result. The Pfaffian identity is proved in the note through its exterior-algebra definition rather than merely imported.
+- **Alternative proof merged from the duplicate archive:** over $\mathbb Q$, skew-symmetric standard form gives $P^{\mathsf T}AP=J$ and $\det A=(\det P)^{-2}$, so $\det A$ is a rational square; an integral rational square is an integer square. This avoids importing the Pfaffian identity, while the main proof above supplies its stronger explicit square root.

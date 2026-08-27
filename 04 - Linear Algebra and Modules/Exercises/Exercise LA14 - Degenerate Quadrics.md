@@ -76,3 +76,4 @@ created: 2026-08-12
 
 - **Source status:** The statement is [S1, Ch. 8, Exercises §7, Ex. 7.4, printed p. 258, PDF p. 270]. The rank-by-rank classification is an independent derivation from Artin's diagonalization and translation method.
 - Artin uses “degenerate” geometrically for the types outside his listed nondegenerate conics and quadrics; it is not merely the matrix condition $\det A=0$.
+- Artin's homogeneous quadratic cones are discussed at [S1, Ch. 8, §7, printed pp. 248–249, PDF pp. 260–261]; the classification here also uses the framework of Theorems 8.7.5 and 8.7.14.

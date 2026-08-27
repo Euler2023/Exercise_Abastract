@@ -135,9 +135,9 @@ For a Hermitian form $H=R+iI$, restriction of scalars from $\mathbb C$ to $\math
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA207 - Positivity of the Gram Matrix A Star A|Exercise LA207]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA208 - Operations on Positive Definite Hermitian Matrices|Exercise LA208]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA209 - Eigenvalues of a Two by Two Hermitian Matrix|Exercise LA209]]
+- [[04 - Linear Algebra and Modules/Exercises/Exercise LA300 - Congruence as a GLn Action|Exercise LA300]]
 
 ## Source and Proof Status
 
 - The definitions, coordinate matrices, change-of-basis laws, and positivity conventions are stated and developed in [S1, Ch. 8, §§8.1–8.3, printed pp. 229–234, PDF pp. 241–246].
 - The decomposition formulas and the listed matrix consequences are elementary derivations from those definitions. Their applications are proved independently in Exercises LA201–LA209.
-

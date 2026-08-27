@@ -92,3 +92,4 @@ created: 2026-08-12
 
 - **Source status:** The statement is [S1, Ch. 8, Exercises §7, Ex. 7.1, printed p. 258, PDF p. 270]. The solution is an independent derivation.
 - No source figure is needed: the exercise and its classification are completely determined by the displayed equation.
+- **Alternative inertia check merged from the duplicate archive:** the leading principal determinants $1,-4,-4$ give $LDL^{\mathsf T}$-pivot signs $+,-,+$, hence signature $(2,1)$, agreeing with the explicit change of variables above.

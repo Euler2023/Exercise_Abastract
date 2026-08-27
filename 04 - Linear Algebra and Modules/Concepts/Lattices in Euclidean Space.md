@@ -80,6 +80,14 @@ Every vector in $\operatorname{span}_{\mathbb R}(L)$ has a unique expression $\e
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA193 - Changes of Lattice Basis|Exercise LA193]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA194 - Discrete Subgroups of R3|Exercise LA194]]
 - [[01 - Group Theory/Exercises/Exercise G112 - Classification of Frieze Groups|Exercise G112]]
+- [[01 - Group Theory/Exercises/Exercise G148 - Point Groups of the Seventeen Wallpaper Patterns|Exercise G148]]
+- [[01 - Group Theory/Exercises/Exercise G149 - Symmetries of the Equilateral Triangular Lattice|Exercise G149]]
+- [[01 - Group Theory/Exercises/Exercise G151 - Wallpaper Groups with Point Group D1|Exercise G151]]
+- [[01 - Group Theory/Exercises/Exercise G152 - Wallpaper Groups with Sixfold Point Symmetry|Exercise G152]]
+- [[01 - Group Theory/Exercises/Exercise G153 - Exhaustion of the Seventeen Wallpaper Groups|Exercise G153]]
+- [[04 - Linear Algebra and Modules/Exercises/Exercise LA303 - Three-Dimensional Crystallographic Restriction|Exercise LA303]]
+- [[01 - Group Theory/Exercises/Exercise G187 - Fixed-Point-Free Plane Crystallographic Groups|Exercise G187]]
+- [[01 - Group Theory/Exercises/Exercise G191 - Areas and Fundamental Domains of Wallpaper Patterns|Exercise G191]]
 
 ## Source and Proof Status
 
