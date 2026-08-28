@@ -85,6 +85,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 75-82 / PDF pp. 90-97",
   }],
+  ["II", {
+    covered: 19,
+    total: 19,
+    status: "Complete",
+    pages: "printed pp. 114-116 / PDF pp. 129-131",
+  }],
 ]);
 
 const rows = [];
@@ -127,7 +133,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | Chapter / appendix | Original title | Verified source scope | Status note |
 |---:|---|---|---|
 | I | Groups | All 57 exercises I.1-I.57; printed pp. 75-82 / PDF pp. 90-97 | Complete; 46 new notes and 11 existing cross-source notes |
-| II | Rings | Pending source-total audit | Not archived |
+| II | Rings | All 19 exercises II.1-II.19; printed pp. 114-116 / PDF pp. 129-131 | Complete; 18 Ring Theory notes and 1 Group Theory note |
 | III | Modules | Pending source-total audit | Not archived |
 | IV | Polynomials | Pending source-total audit | Not archived |
 | V | Algebraic Extensions | Pending source-total audit | Not archived |
@@ -155,8 +161,11 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | Chapter | Verified labels | Source pages | Archived notes | Missing | Duplicate | Unexpected | Unparsed | Status |
 |---:|---|---|---:|---:|---:|---:|---:|---|
 | I | I.1-I.57 | printed pp. 75-82 / PDF pp. 90-97 | 57 | 0 | 0 | 0 | 0 | Complete |
+| II | II.1-II.19 | printed pp. 114-116 / PDF pp. 129-131 | 19 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
+
+Chapter II was reconciled against the ordered source labels on all three exercise pages. Every source exercise has exactly one parsed note mapping: 18 are routed to Ring Theory and II.8 is routed to Group Theory because finite-group structure supplies its primary computational toolkit. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -182,13 +191,40 @@ dv.table(
 );
 ```
 
+### Chapter II — Rings
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*II\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["II." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
 - **I.52:** “$f,g$ as above” gives the wrong arrow orientation for a pushout; the note preserves the mismatch and uses the orientation forced by the printed quotient formula.
 - **I.55:** Scalar matrices contradict the printed “at most two fixed points” conclusion; the note records the counterexample and proves the corrected non-scalar statement.
 - **I.56:** The unnumbered ping-pong-domain diagram on printed p. 82 / PDF p. 97 is preserved as a direct crop in `Attachments/lang-algebra-3e-ch01-ex56-ping-pong-domains.png`.
+- **Chapter II cross-reference:** Printed p. 114 / PDF p. 129 says the Dedekind-ring definition is in the exercises of Chapter III. The definition is actually in Chapter II §1 on printed p. 88 / PDF p. 103, while the Chapter III exercises explicitly depend on the preceding chapter.
+- **II.11:** The printed trigonometric-degree definition assigns no value to the zero function although the product formula is stated without a nonzero qualification. The note preserves the statement and proves the identity for nonzero factors.
+- **II.16:** “Only one prime ideal” uses the chapter's convention that ideals are nonzero; the note makes this explicit because $(0)$ is also prime in a domain under modern unrestricted terminology.
+- **II.18-II.19:** Exercise II.18 ends with “Use this to prove:” and II.19 supplies the separate numbered target. The archive keeps two notes and records the dependency.
+- **Chapter II figure audit:** No exercise depends on a source figure, diagram, or labeled geometric configuration, so no attachment was created.
 
 ## Next Archive Target
 
-Chapter II, **Rings**, remains pending a bounded source-page and source-total audit.
+Chapter III, **Modules**, is the next unaudited chapter.

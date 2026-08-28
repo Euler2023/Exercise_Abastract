@@ -27,6 +27,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[02 - Ring Theory/Concepts/Isomorphism Theorems for Rings|Isomorphism Theorems]]
+- [[02 - Ring Theory/Concepts/Local Rings|Local Rings]]
 
 ### Special Rings
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
@@ -44,6 +45,9 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Symmetric Polynomials and Newton Identities|Symmetric Polynomials and Newton Identities]]
 - [[02 - Ring Theory/Concepts/Polynomial Discriminants|Polynomial Discriminants]]
 - [[02 - Ring Theory/Concepts/Partial Fraction Decomposition|Partial Fraction Decomposition]]
+- [[02 - Ring Theory/Concepts/Trigonometric Polynomials and Fourier Degree|Trigonometric Polynomials and Fourier Degree]]
+- [[02 - Ring Theory/Concepts/Dirichlet Convolution and Mobius Inversion|Dirichlet Convolution and Möbius Inversion]]
+- [[02 - Ring Theory/Concepts/Dedekind Rings and Fractional Ideals|Dedekind Rings and Fractional Ideals]]
 
 ## Important Rings
 

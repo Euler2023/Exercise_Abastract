@@ -78,6 +78,12 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-28 (Lang Chapter II Complete Exercise Archive)
+- Added: Archived all **19** exercises in Chapter II, *Rings*, as **R206–R223** and **G326**, with II.8 routed to Group Theory because its main task is the structure classification of a finite unit group.
+- Added: Created the necessary concept notes `Local Rings`, `Trigonometric Polynomials and Fourier Degree`, `Dirichlet Convolution and Mobius Inversion`, and `Dedekind Rings and Fractional Ideals`, and linked them from the Ring Theory Hub.
+- Flagged: Recorded the incorrect Chapter III cross-reference for the Dedekind-ring definition, II.11's missing zero-degree convention, II.16's nonzero-prime convention, and the II.18-to-II.19 continuation boundary.
+- Verified: Reconciled II.1–II.19 one-to-one with no missing, duplicate, unexpected, or unparsed source labels; checked metadata, required sections, path-qualified links, Obsidian formula delimiters, tracker tags, and confirmed that all three exercise pages contain no figure-dependent tasks.
+
 ### 2026-08-28 (Lang Chapter I Complete Exercise Archive)
 - Added: Created `00 - Home/Lang Algebra Exercise Archive.md` and archived all **57** exercises in Chapter I, *Groups*, using **45** new Group Theory notes (**G281–G325**) and **LA351** for the matrix-dynamics exercise.
 - Reused: Added exact Lang provenance and any missing clauses to **11** existing Artin exercise notes, so mathematically duplicate tasks remain single notes and cannot be sampled twice under separate filenames.
