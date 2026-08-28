@@ -6,7 +6,7 @@ status: not-started
 tags:
   - exercise
   - group-theory
-source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Miscellaneous Problems, Ex. M.8, printed p. 227, PDF p. 239"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Miscellaneous Problems, Ex. M.8, printed p. 227, PDF p. 239; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 10, printed p. 75, PDF p. 90"
 created: 2026-08-27
 ---
 
@@ -16,6 +16,9 @@ created: 2026-08-27
 
 > [!question] Exercise M.8
 > Prove that the numbers of left and right cosets of $H\le G$ are equal even when $G$ is infinite.
+
+> [!question] Lang Exercise 10
+> Let $H$ be a finite-index subgroup of $G$. Prove that there are finitely many right cosets and that their number equals the number of left cosets.
 
 ## Hints
 
@@ -43,3 +46,4 @@ created: 2026-08-27
 ## Notes
 
 - **Source status:** [S1, Ch. 7, Misc., Ex. M.8, printed p. 227, PDF p. 239]; source PDF checked; solution independently derived.
+- **Additional source:** [S2, Ch. I, Ex. 10, printed p. 75, PDF p. 90]; Lang's finite-index statement is the finite special case of the displayed bijection.

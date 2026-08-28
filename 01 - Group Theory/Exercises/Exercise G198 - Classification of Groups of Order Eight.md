@@ -6,7 +6,7 @@ status: not-started
 tags:
   - exercise
   - group-theory
-source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 3, Ex. 3.4, printed p. 222, PDF p. 234"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 3, Ex. 3.4, printed p. 222, PDF p. 234; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 35, printed p. 78, PDF p. 93"
 created: 2026-08-27
 ---
 
@@ -16,6 +16,9 @@ created: 2026-08-27
 
 > [!question] Exercise 3.4
 > Classify groups of order $8$.
+
+> [!question] Lang Exercise 35
+> Show that there are exactly two nonisomorphic nonabelian groups of order $8$: the dihedral group with relations $\sigma^4=1$, $\tau^2=1$, $\tau\sigma\tau=\sigma^3$, and the quaternion group.
 
 ## Hints
 
@@ -42,3 +45,4 @@ created: 2026-08-27
 ## Notes
 
 - **Source status:** [S1, Ch. 7, §3, Ex. 3.4, printed p. 222, PDF p. 234]; problem checked against the source PDF; solution independently derived for this vault.
+- **Additional source:** [S2, Ch. I, Ex. 35, printed p. 78, PDF p. 93]; the two nonabelian cases and the displayed dihedral relations are exactly the final two cases of the classification.

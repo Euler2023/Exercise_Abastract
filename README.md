@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-28 (Lang Chapter I Complete Exercise Archive)
+- Added: Created `00 - Home/Lang Algebra Exercise Archive.md` and archived all **57** exercises in Chapter I, *Groups*, using **45** new Group Theory notes (**G281–G325**) and **LA351** for the matrix-dynamics exercise.
+- Reused: Added exact Lang provenance and any missing clauses to **11** existing Artin exercise notes, so mathematically duplicate tasks remain single notes and cannot be sampled twice under separate filenames.
+- Illustrated: Preserved Exercise I.56's unnumbered ping-pong-domain diagram as a verified direct crop in `Attachments/lang-algebra-3e-ch01-ex56-ping-pong-domains.png`.
+- Flagged: Kept visible source-issue records for I.48's omitted finiteness hypotheses, I.52's reversed pushout-arrow reference, and I.55's scalar-matrix counterexample.
+- Verified: Reconciled I.1–I.57 one-to-one with no missing, duplicate, unexpected, or unparsed labels; checked all 57 mapped notes for required metadata, exercise tags, exact printed/PDF locators, required sections, path-qualified links, Obsidian math delimiters, and the Exercise I.56 image link.
+
 ### 2026-08-28 (Artin Figure and Archive Cleanup)
 - Cleaned: Removed the obsolete `Next Archival Batch` section and the redundant per-chapter `archival audit complete` callouts from the Artin archive; durable totals, source anchors, mappings, and the Appendix A.7 source warning remain in the permanent tables.
 - Cleaned: Removed the locked `.aux` and `.log` build artifacts for the Chapter 13 Exercise 8.5 lattice-shape figure while preserving its editable TeX, vector PDF, and Obsidian PNG outputs.

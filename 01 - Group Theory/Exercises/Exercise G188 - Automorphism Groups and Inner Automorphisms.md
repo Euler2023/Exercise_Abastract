@@ -8,7 +8,7 @@ tags:
   - group-theory
   - automorphisms
   - normal-subgroups
-source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Miscellaneous Ex. M.2, printed p. 193, PDF p. 205"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Miscellaneous Ex. M.2, printed p. 193, PDF p. 205; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 6, printed p. 75, PDF p. 90"
 created: 2026-08-27
 ---
 
@@ -22,6 +22,9 @@ created: 2026-08-27
 > (b) Prove that the map $\varphi:G\to\operatorname{Aut}G$ defined by $g\mapsto$ conjugation by $g$ is a homomorphism, and determine its kernel.
 >
 > (c) The automorphisms obtained as conjugation by a group element are called inner automorphisms. Prove that the set of inner automorphisms, the image of $\varphi$, is a normal subgroup of $\operatorname{Aut}G$.
+
+> [!question] Lang Exercise 6
+> Prove that the group of inner automorphisms of a group $G$ is normal in $\operatorname{Aut}(G)$.
 
 ## Hints
 
@@ -72,4 +75,4 @@ created: 2026-08-27
 
 - Part (c) proves normality directly, not merely because the inner automorphisms are an image.
 - **Source status:** [S1, Ch. 6, M.2, printed p. 193, PDF p. 205]; independent proof.
-
+- **Additional source:** [S2, Ch. I, Ex. 6, printed p. 75, PDF p. 90]; this is exactly the assertion proved in part (c).

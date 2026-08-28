@@ -8,7 +8,7 @@ tags:
   - group-theory
   - burnside-lemma
   - counting
-source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Miscellaneous Ex. M.7, printed p. 194, PDF p. 206"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Miscellaneous Ex. M.7, printed p. 194, PDF p. 206; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 19, printed p. 77, PDF p. 92"
 created: 2026-08-27
 ---
 
@@ -24,6 +24,19 @@ created: 2026-08-27
 > (b) Prove $\sum_{s\in S}|G_s|=\sum_{g\in G}|S^g|$.
 >
 > (c) Prove Burnside's Formula: $|G|\cdot(\text{number of orbits})=\sum_{g\in G}|S^g|$.
+
+> [!question] Lang Exercise 19
+> Let a finite group $G$ act on a finite set $S$.
+>
+> (a) For every $s\in S$, prove
+>
+> $$
+> \sum_{t\in Gs}\frac1{|Gt|}=1,
+> $$
+>
+> where $Gt$ denotes the orbit of $t$.
+>
+> (b) If $f(x)$ is the number of fixed points of $x\in G$, prove that the number of orbits is $|G|^{-1}\sum_{x\in G}f(x)$.
 
 ## Hints
 
@@ -49,6 +62,8 @@ created: 2026-08-27
 >
 > **(b)** Let $X=\{(g,s)\in G\times S:gs=s\}$. Counting by $s$ gives $|X|=\sum_s|G_s|$; counting by $g$ gives $|X|=\sum_g|S^g|$.
 >
+> **Lang (a).** If $t\in Gs$, then $Gt=Gs$. Hence every term in the sum is $1/|Gs|$, and there are $|Gs|$ terms. The sum is therefore $1$.
+>
 > **(c)** On an orbit $O$, orbit–stabilizer gives $|G_s|=|G|/|O|$. Therefore
 >
 > $$
@@ -72,4 +87,4 @@ created: 2026-08-27
 
 - The common form $|S/G|=|G|^{-1}\sum_g|S^g|$ is Burnside's lemma.
 - **Source status:** The notation $S^g$, table request, and both formulas were visually checked at [S1, Ch. 6, M.7, printed p. 194, PDF p. 206]. The double count is independent.
-
+- **Additional source:** [S2, Ch. I, Ex. 19, printed p. 77, PDF p. 92]; Lang's orbit-reciprocal identity and fixed-point formula were visually checked and reconciled with the same proof.

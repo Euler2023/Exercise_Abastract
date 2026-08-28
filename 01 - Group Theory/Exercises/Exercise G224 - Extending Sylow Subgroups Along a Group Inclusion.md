@@ -6,7 +6,7 @@ status: not-started
 tags:
   - exercise
   - group-theory
-source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 7, Ex. 7.2, printed p. 224, PDF p. 236"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 7, Ex. 7.2, printed p. 224, PDF p. 236; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 21, printed p. 77, PDF p. 92"
 created: 2026-08-27
 ---
 
@@ -16,6 +16,9 @@ created: 2026-08-27
 
 > [!question] Exercise 7.2
 > Let $G_1\subset G_2$, and let $H_1$ be a Sylow $p$-subgroup of $G_1$. Prove that some Sylow $p$-subgroup $H_2$ of $G_2$ satisfies $H_1=H_2\cap G_1$.
+
+> [!question] Lang Exercise 21
+> Let $H\le G$ be finite groups and let $P_H$ be a Sylow $p$-subgroup of $H$. Prove that some Sylow $p$-subgroup $P$ of $G$ satisfies $P_H=P\cap H$.
 
 ## Hints
 
@@ -34,4 +37,4 @@ created: 2026-08-27
 ## Notes
 
 - **Source status:** [S1, Ch. 7, §7, Ex. 7.2, printed p. 224, PDF p. 236]; source PDF checked; solution independently derived.
-
+- **Additional source:** [S2, Ch. I, Ex. 21, printed p. 77, PDF p. 92]; the statement is identical after renaming the groups.

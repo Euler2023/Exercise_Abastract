@@ -69,6 +69,7 @@ GROUP BY true
 ### Textbook Archive Coverage
 
 - [[00 - Home/Artin Exercise Archive|Artin Exercise Archive]]
+- [[00 - Home/Lang Algebra Exercise Archive|Lang Algebra Exercise Archive]]
 
 ## Study Progress
 

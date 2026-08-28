@@ -6,7 +6,7 @@ status: not-started
 tags:
   - exercise
   - group-theory
-source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 6, Ex. 6.4, printed p. 224, PDF p. 236"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 7, Section 6, Ex. 6.4, printed p. 224, PDF p. 236; Serge Lang, Algebra, rev. 3rd ed., Ch. I, Groups, Exercise 20, printed p. 77, PDF p. 92"
 created: 2026-08-27
 ---
 
@@ -16,6 +16,9 @@ created: 2026-08-27
 
 > [!question] Exercise 6.4
 > Let $H\trianglelefteq G$ have prime order $p$, where $p$ is the smallest prime dividing $|G|$. Prove $H\subseteq Z(G)$.
+
+> [!question] Lang Exercise 20
+> Let $P$ be a finite $p$-group and let $A\trianglelefteq P$ have order $p$. Prove that $A\subseteq Z(P)$.
 
 ## Hints
 
@@ -35,4 +38,4 @@ created: 2026-08-27
 ## Notes
 
 - **Source status:** [S1, Ch. 7, §6, Ex. 6.4, printed p. 224, PDF p. 236]; source PDF checked; solution independently derived.
-
+- **Additional source:** [S2, Ch. I, Ex. 20, printed p. 77, PDF p. 92]; this is the $p$-group specialization of the same conjugation argument.
