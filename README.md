@@ -78,6 +78,61 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-28 (Artin Figure and Archive Cleanup)
+- Cleaned: Removed the obsolete `Next Archival Batch` section and the redundant per-chapter `archival audit complete` callouts from the Artin archive; durable totals, source anchors, mappings, and the Appendix A.7 source warning remain in the permanent tables.
+- Cleaned: Removed the locked `.aux` and `.log` build artifacts for the Chapter 13 Exercise 8.5 lattice-shape figure while preserving its editable TeX, vector PDF, and Obsidian PNG outputs.
+- Verified: Recompiled the figure in an isolated working directory with no LaTeX diagnostics; confirmed that the fresh and archived PDF renders are pixel-identical and visually free of clipping or label collisions.
+
+### 2026-08-28 (Artin Chapter 16 Final Reconciliation)
+- Verified: Audited the original Chapter 16 exercise pages, establishing an exact source set of **90** exercises—**77** section exercises from 1.1 through 12.8 and **M.1–M.13**—on printed pp. 505–512 / PDF pp. 517–524.
+- Reconciled: Matched all 90 labels one-to-one to the existing archive with no omissions, duplicate mappings, unexpected labels, unparsed locators, or page-anchor mismatches.
+- Completed: Closed the approved Chapter 12–Appendix archival scope after confirming that Chapters 12–16 and all 15 Appendix exercises are fully represented.
+
+### 2026-08-28 (Artin Appendix Complete Exercise Archive)
+- Added: Archived all **15** exercises A.1–A.15 in the Appendix, *Background Material*, as **R194–R205**, **G280**, and **AG15–AG16**, preserving the four original section titles and exact printed/PDF provenance.
+- Added: Created concept notes for **Mathematical Induction and Peano Arithmetic**, **Partially Ordered Sets and Zorn's Lemma**, and the **Implicit Function Theorem for Complex Polynomials**, with links from the Ring Theory and Arithmetic Geometry hubs.
+- Routed: Placed proof induction, Peano arithmetic, polynomial factorization, order theory, and maximal ideals in Ring Theory; finite-set surjections in Group Theory; and the complex-polynomial implicit-function exercises in Arithmetic Geometry.
+- Flagged: Preserved Exercise A.7's literal zero-polynomial boundary as a visible source issue and proved the intended nonzero statement rather than silently changing the source.
+- Verified: Reconciled A.1–A.15 one-to-one with no omissions, duplicate mappings, unexpected labels, or unparsed locators; checked all 15 notes for required metadata, exercise tags, page anchors, path-qualified links, and Obsidian math delimiters.
+
+### 2026-08-28 (Artin Chapter 15 Complete Exercise Archive)
+- Added: Archived the **31** previously missing exercises in Chapter 15, *Fields*, as **F39–F61**, **Gal79–Gal84**, and **G278–G279**, bringing the chapter to all **60** numbered source exercises.
+- Routed: Placed field extensions, minimal polynomials, finite fields, and rational functions in Field Theory; ruler-and-compass problems in Galois Theory; and the two arithmetic matrix-group problems in Group Theory, while preserving the existing Ring Theory and Arithmetic Geometry mappings.
+- Solved: Supplied complete independent arguments for all missing exercises, including the six cyclotomic minimal-polynomial computations, pure-radical membership tests, constructibility questions, universal modular reducibility, $PGL_2(\mathbb C)$ automorphisms, and surjectivity of reduction to $SL_2(\mathbb F_p)$.
+- Verified: Reconciled all 60 source labels one-to-one with no omissions, duplicate mappings, unexpected labels, or unparsed locators; checked the 31 new notes for required metadata, exercise tags, exact page anchors, path-qualified links, filenames, Obsidian math delimiters, and selected symbolic identities.
+
+### 2026-08-28 (Artin Chapter 14 Complete Exercise Archive)
+- Added: Archived all **55** exercises in Chapter 14, *Linear Algebra in a Ring*, as **LA312–LA350**, **R188–R193**, **G269–G277**, and **F38**, preserving one note per numbered source exercise and exact printed/PDF provenance.
+- Added: Created the **Cyclic Vectors and Companion Matrices** and **Jordan Canonical Form** concept notes, linked them from the Linear Algebra and Modules hub, and supplied an editable TikZ/PDF/PNG lattice diagram for Exercise 4.1.
+- Routed: Classified exercises by their primary toolkit across Linear Algebra and Modules, Ring Theory, Group Theory, and Field Theory rather than routing mechanically by chapter title.
+- Flagged: Preserved the source qualifications or notation issues in Exercises 1.3, 8.3, 8.4, 9.5, and M.7, including the printed rank-drop example in 9.5, without silently rewriting the source.
+- Verified: Reconciled all 55 source labels one-to-one with no omissions, duplicate mappings, unexpected labels, or unparsed locators; checked metadata, exercise tags, page anchors, path-qualified links, filenames, Obsidian math delimiters, figure compilation, and visual legibility.
+
+### 2026-08-28 (Artin Chapter 13 Complete Exercise Archive)
+- Added: Archived all **44** exercises in Chapter 13, *Quadratic Number Fields*, as **F34–F37**, **R151–R187**, and **LA309–LA311**, with one note per numbered source exercise, exact printed/PDF provenance, progressive hints, and independent solutions.
+- Added: Created **Quadratic Number Fields and Rings of Integers**, **Prime Splitting in Quadratic Fields**, **Ideal Classes and Class Groups**, and **Units in Real Quadratic Fields**, linked from the relevant topic hubs and active exercises.
+- Illustrated: Supplied four reproducible TikZ/PDF/PNG assets covering the Section 3 ideal shapes, all twelve Section 8.5 class representatives, the ideal $(\sqrt2)$ under the two real embeddings, and the units of $\mathbb Z[\sqrt3]$ on the norm hyperbolas.
+- Computed: Completed the ideal products, splitting criteria, norm relations, class groups, real-quadratic unit groups, Euclidean algorithm, lattice-index arguments, quadratic-order classification, split-prime ellipse test, polynomial-ring prime ideals, and Pick's Theorem requested across Sections 4–10 and M.1–M.4.
+- Flagged: Preserved Exercise 1.3(c)'s missing minimal-polynomial hypothesis and Exercise 10.2's incompatible basis-order wording, with explicit counterexample or corrected formulation rather than silent repair.
+- Verified: Reconciled all 44 source labels one-to-one with no omissions, duplicate mappings, unexpected labels, or unparsed exercise locators; checked required metadata, exercise tags, path-qualified links, filenames, Obsidian math delimiters, finite norm/form computations, figure compilation, and visual legibility.
+
+### 2026-08-28 (Artin Chapter 12 Complete Exercise Archive)
+- Added: Archived all **47** exercises in Chapter 12, *Factoring*, as **R106–R150** and **G267–G268**, with one note per numbered source exercise, exact printed/PDF provenance, progressive hints, and independent solutions.
+- Routed: Kept the 45 polynomial, factorization, and quadratic-integer exercises in Ring Theory; routed M.1–M.2 to the existing cancellative-semigroup sequence in Group Theory.
+- Added: Created the **Partial Fraction Decomposition** concept note and two reproducible TikZ prime-lattice diagrams for Exercises 5.4 and 5.8, with editable TeX, vector PDF, and Obsidian-ready PNG outputs.
+- Flagged: Preserved the literal issue in Exercise 3.2 and the hypotheses required in Exercise 4.15; recorded counterexamples to both unqualified printed conclusions in Exercise 5.10 and proved the corrected unit-normalized and even-leg versions.
+- Verified: Reconciled all 47 source labels one-to-one with no omissions, duplicates, unexpected labels, or unparsed locators; checked metadata, exercise tags, path-qualified links, filenames, Obsidian math delimiters, exact computational certificates, and both diagrams by compile and visual inspection.
+
+### 2026-08-28 (Artin Chapters 12–Appendix Source Audit)
+- Audited: Fixed the exact ordered source-label sets and printed/PDF page ranges for Chapters 12–15 and the Appendix of Artin's *Algebra*, second edition.
+- Scoped: Registered 192 remaining notes—47 from Chapter 12, 44 from Chapter 13, 55 from Chapter 14, 31 missing from Chapter 15, and 15 from the Appendix—while preserving Chapter 16 as an already complete reconciliation target.
+- Status: Marked Chapters 12–14 and the Appendix as source-audited but not complete; no chapter will be marked complete until source labels reconcile one-to-one with note provenance.
+
+### 2026-08-28 (Artin Archive Titles and Appendix)
+- Updated: Added the original English titles of all sixteen chapters and the `Appendix — Background Material` source unit from Artin's *Algebra*, second edition, to the archive coverage table, scope ledger, mapping headings, and next-batch pointer.
+- Audited: Registered all 15 appendix exercises, A.1–A.15 across Sections A.1–A.4, as source-audited but not yet archived.
+- Verified: Checked the title transcription against the original contents pages (printed pp. v–ix / PDF pp. 1–5) and the appendix exercise set against printed pp. 521–522 / PDF pp. 533–534 without changing existing chapter counts, mappings, or statuses.
+
 ### 2026-08-28 (Daily Exercise List Export)
 - Added: Upgraded the local Exercise Manager to 0.3.0 with automatic and manual export of each daily batch to a dated Markdown todo list under the new top-level `09 - Daily Exercise Lists/` directory.
 - Preserved: Re-exporting the same date updates one managed checklist, retains completed boxes for exercises still in the batch, keeps user notes outside that checklist untouched, and does not alter source exercise statuses or no-repeat history.

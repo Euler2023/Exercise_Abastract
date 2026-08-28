@@ -18,13 +18,27 @@ tags:
 
 ## Notes
 
+1. 
+
 > [!question] Exercise M.10
 > Let $H\le G$. Show that the double cosets $HgH$ are the left cosets $gH$ if and only if $H$ is normal.
 
-
+2. 
 > [!question] Exercise 8.9
 > For a finite group $G$, determine when $\varphi(x)=x^2$ is an automorphism.
 
-
+3. 
 > [!question] Exercise 3.2
 > Let $A,B$ be symmetric $n\times n$ matrices. Prove that $AB$ is symmetric if and only if $AB=BA$.
+
+4. 
+Chapter 3 Vector spaces
+
+> [!question] Exercise 1.1
+> Prove that the numbers of the form $a+b\sqrt2$, where $a,b\in\mathbb Q$, form a subfield of $\mathbb C$.
+
+5. 
+
+> [!question] Exercise 1.2
+> Find the inverse of $5$ modulo $p$, for $p=7,11,13,17$.
+

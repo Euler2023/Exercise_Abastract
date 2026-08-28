@@ -29,6 +29,7 @@ Field theory studies algebraic structures where every non-zero element has a mul
 
 ### Special Topics
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
+- [[03 - Field Theory/Concepts/Quadratic Number Fields and Rings of Integers|Quadratic Number Fields and Rings of Integers]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 

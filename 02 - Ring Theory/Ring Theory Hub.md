@@ -16,6 +16,8 @@ Ring theory studies algebraic structures with two operations: addition and multi
 ## Core Concepts
 
 ### Foundations
+- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[02 - Ring Theory/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Subrings|Subrings]]
 - [[02 - Ring Theory/Concepts/Ring Homomorphisms|Ring Homomorphisms]]
@@ -35,9 +37,13 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Formal Power Series|Formal Power Series]]
 - [[02 - Ring Theory/Concepts/Localization and Laurent Polynomials|Localization and Laurent Polynomials]]
 - [[02 - Ring Theory/Concepts/Product Rings and the Chinese Remainder Theorem|Product Rings and the Chinese Remainder Theorem]]
+- [[02 - Ring Theory/Concepts/Prime Splitting in Quadratic Fields|Prime Splitting in Quadratic Fields]]
+- [[02 - Ring Theory/Concepts/Ideal Classes and Class Groups|Ideal Classes and Class Groups]]
+- [[02 - Ring Theory/Concepts/Units in Real Quadratic Fields|Units in Real Quadratic Fields]]
 - [[02 - Ring Theory/Concepts/Nilpotent and Idempotent Elements|Nilpotent and Idempotent Elements]]
 - [[02 - Ring Theory/Concepts/Symmetric Polynomials and Newton Identities|Symmetric Polynomials and Newton Identities]]
 - [[02 - Ring Theory/Concepts/Polynomial Discriminants|Polynomial Discriminants]]
+- [[02 - Ring Theory/Concepts/Partial Fraction Decomposition|Partial Fraction Decomposition]]
 
 ## Important Rings
 

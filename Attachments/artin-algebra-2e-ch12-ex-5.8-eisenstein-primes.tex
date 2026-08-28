@@ -1,0 +1,50 @@
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{tikzpicture}[scale=0.38,>=stealth]
+  % Cartesian embedding a+b omega -> (a-b/2, sqrt(3)b/2), with norm <= 100.
+  \draw[->,thin] (-10.7,0) -- (10.7,0) node[right] {$\operatorname{Re}$};
+  \draw[->,thin] (0,-10.7) -- (0,10.7) node[above] {$\operatorname{Im}$};
+  \draw[dashed,gray] (0,0) circle[radius=10];
+
+  \foreach \t in {-10,-5,5,10} {
+    \draw[thin] (\t,0.13) -- (\t,-0.13) node[below=2pt] {\scriptsize $\t$};
+    \draw[thin] (0.13,\t) -- (-0.13,\t) node[left=2pt] {\scriptsize $\t$};
+  }
+
+  % Background Eisenstein lattice points.
+  \foreach \a in {-12,...,12} {
+    \foreach \b in {-12,...,12} {
+      \pgfmathtruncatemacro{\N}{\a*\a-\a*\b+\b*\b}
+      \ifnum\N<101\relax
+        \fill[gray!50]
+          ({\a-0.5*\b},{0.8660254038*\b})
+          circle[radius=0.75pt];
+      \fi
+    }
+  }
+
+  % Prime norms <= 100: represented rational primes, plus 2^2 and 5^2.
+  \foreach \a in {-12,...,12} {
+    \foreach \b in {-12,...,12} {
+      \pgfmathtruncatemacro{\N}{\a*\a-\a*\b+\b*\b}
+      \pgfmathtruncatemacro{\isprime}{
+        (\N==3)||(\N==4)||(\N==7)||(\N==13)||
+        (\N==19)||(\N==25)||(\N==31)||(\N==37)||
+        (\N==43)||(\N==61)||(\N==67)||(\N==73)||
+        (\N==79)||(\N==97)
+      }
+      \ifnum\isprime=1\relax
+        \fill[black]
+          ({\a-0.5*\b},{0.8660254038*\b})
+          circle[radius=1.55pt];
+      \fi
+    }
+  }
+
+  \fill[black] (-9.8,-11.5) circle[radius=1.55pt]
+    node[right=4pt] {\small Eisenstein prime};
+  \fill[gray!50] (1.8,-11.5) circle[radius=0.75pt]
+    node[black,right=4pt] {\small Eisenstein integer};
+\end{tikzpicture}
+\end{document}

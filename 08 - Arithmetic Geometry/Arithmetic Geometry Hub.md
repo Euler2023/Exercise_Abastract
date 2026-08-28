@@ -22,6 +22,7 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 ### Varieties and Schemes
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
+- [[08 - Arithmetic Geometry/Concepts/Implicit Function Theorem for Complex Polynomials|Implicit Function Theorem for Complex Polynomials]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
 - [[08 - Arithmetic Geometry/Concepts/Morphisms of Schemes|Morphisms of Schemes]]
