@@ -2,14 +2,14 @@
 title: "Exercise G75: When Squaring Is a Group Automorphism"
 topic: group-theory
 difficulty: advanced
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - automorphisms
   - abelian-groups
   - finite-groups
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.9, printed p. 73, PDF p. 85"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.9, printed p. 73, PDF p. 85
 created: 2026-08-23
 ---
 

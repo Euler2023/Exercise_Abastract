@@ -62,6 +62,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 ### Structure Theory
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated Modules]]
+- [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups|Projective Modules and Grothendieck Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Torsion Modules|Torsion Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]
 
@@ -70,6 +71,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]
+- [[04 - Linear Algebra and Modules/Concepts/Localization of Modules|Localization of Modules]]
+- [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]
 
 ## Relationship: Vector Spaces vs Modules
 
@@ -136,11 +139,15 @@ SORT file.name ASC
 
 > [!abstract] Dimension Theorem (Rank-Nullity)
 > For a linear transformation $T: V \to W$:
-> $$\dim V = \dim(\ker T) + \dim(\text{im } T)$$
+> $$
+> \dim V = \dim(\ker T) + \dim(\text{im } T)
+> $$
 
 > [!abstract] Fundamental Theorem for Finitely Generated Modules over PID
 > Let $R$ be a PID and $M$ a finitely generated $R$-module. Then:
-> $$M \cong R^r \oplus R/(a_1) \oplus R/(a_2) \oplus \cdots \oplus R/(a_n)$$
+> $$
+> M \cong R^r \oplus R/(a_1) \oplus R/(a_2) \oplus \cdots \oplus R/(a_n)
+> $$
 > where $r \geq 0$ and $a_1 | a_2 | \cdots | a_n$ (invariant factors).
 
 > [!abstract] Spectral Theorem

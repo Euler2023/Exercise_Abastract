@@ -147,25 +147,25 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 
 ## Chapter Scope Notes
 
-| Chapter / appendix | Original title | Current archive scope | Status note |
-|---:|---|---|---|
-| 1 | Matrices | All 53 source exercises | Complete |
-| 2 | Groups | All 101 source exercises | Complete |
-| 3 | Vector Spaces | All 39 source exercises | Complete |
-| 4 | Linear Operators | All 62 source exercises | Complete; two exercises reuse notes carrying Chapter 1 provenance |
-| 5 | Applications of Linear Operators | All 29 source exercises | Complete |
-| 6 | Symmetry | All 77 source exercises | Complete; all numbered and miscellaneous exercises are represented once |
-| 7 | More Group Theory | All 96 source exercises | Complete; all numbered and miscellaneous exercises are represented once |
-| 8 | Bilinear Forms | All 81 source exercises | Complete; the eight former duplicate pairs were consolidated into LA11–LA18 |
-| 9 | Linear Groups | All 74 source exercises | Complete; source-label audit found no gaps or duplicates |
-| 10 | Group Representations | All 68 source exercises: 53 section exercises and M.1–M.15 | Complete; source exercise labels reconciled with no omissions, duplicates, unexpected labels, or unparsed exercise locators |
-| 11 | Rings | All 72 source exercises: 65 section exercises and M.1–M.7 | Complete; all source labels map one-to-one to 72 notes with no omissions or duplicates |
-| 12 | Factoring | All 47 source exercises: 45 section exercises and M.1–M.2 | Complete; all source labels map one-to-one to R106–R150 and G267–G268 |
-| 13 | Quadratic Number Fields | All 44 source exercises: 40 section exercises and M.1–M.4 | Complete; all source labels map one-to-one to F34–F37, R151–R187, and LA309–LA311 |
-| 14 | Linear Algebra in a Ring | All 55 source exercises: 45 section exercises and M.1–M.10 | Complete; all source labels map one-to-one to LA312–LA350, R188–R193, G269–G277, and F38 |
-| 15 | Fields | All 60 source exercises: 53 section exercises and M.1–M.7 | Complete; all source labels map one-to-one to 60 notes across Field, Galois, Group, Ring, and Arithmetic Geometry topics |
-| 16 | Galois Theory | All 90 source exercises: 77 section exercises and M.1–M.13 | Complete; all source labels and page anchors reconcile one-to-one with 90 notes |
-| Appendix | Background Material | All 15 source exercises, A.1–A.15 | Complete; all source labels map one-to-one to R194–R205, G280, and AG15–AG16; Exercise A.7's zero-polynomial boundary is visibly flagged in R199 |
+| Chapter / appendix | Original title                   | Current archive scope                                      | Status note                                                                                                                                      |
+| -----------------: | -------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+|                  1 | Matrices                         | All 53 source exercises                                    | Complete                                                                                                                                         |
+|                  2 | Groups                           | All 101 source exercises                                   | Complete                                                                                                                                         |
+|                  3 | Vector Spaces                    | All 39 source exercises                                    | Complete                                                                                                                                         |
+|                  4 | Linear Operators                 | All 62 source exercises                                    | Complete; two exercises reuse notes carrying Chapter 1 provenance                                                                                |
+|                  5 | Applications of Linear Operators | All 29 source exercises                                    | Complete                                                                                                                                         |
+|                  6 | Symmetry                         | All 77 source exercises                                    | Complete; all numbered and miscellaneous exercises are represented once                                                                          |
+|                  7 | More Group Theory                | All 96 source exercises                                    | Complete; all numbered and miscellaneous exercises are represented once                                                                          |
+|                  8 | Bilinear Forms                   | All 81 source exercises                                    | Complete; the eight former duplicate pairs were consolidated into LA11–LA18                                                                      |
+|                  9 | Linear Groups                    | All 74 source exercises                                    | Complete; source-label audit found no gaps or duplicates                                                                                         |
+|                 10 | Group Representations            | All 68 source exercises: 53 section exercises and M.1–M.15 | Complete; source exercise labels reconciled with no omissions, duplicates, unexpected labels, or unparsed exercise locators                      |
+|                 11 | Rings                            | All 72 source exercises: 65 section exercises and M.1–M.7  | Complete; all source labels map one-to-one to 72 notes with no omissions or duplicates                                                           |
+|                 12 | Factoring                        | All 47 source exercises: 45 section exercises and M.1–M.2  | Complete; all source labels map one-to-one to R106–R150 and G267–G268                                                                            |
+|                 13 | Quadratic Number Fields          | All 44 source exercises: 40 section exercises and M.1–M.4  | Complete; all source labels map one-to-one to F34–F37, R151–R187, and LA309–LA311                                                                |
+|                 14 | Linear Algebra in a Ring         | All 55 source exercises: 45 section exercises and M.1–M.10 | Complete; all source labels map one-to-one to LA312–LA350, R188–R193, G269–G277, and F38                                                         |
+|                 15 | Fields                           | All 60 source exercises: 53 section exercises and M.1–M.7  | Complete; all source labels map one-to-one to 60 notes across Field, Galois, Group, Ring, and Arithmetic Geometry topics                         |
+|                 16 | Galois Theory                    | All 90 source exercises: 77 section exercises and M.1–M.13 | Complete; all source labels and page anchors reconcile one-to-one with 90 notes                                                                  |
+|           Appendix | Background Material              | All 15 source exercises, A.1–A.15                          | Complete; all source labels map one-to-one to R194–R205, G280, and AG15–AG16; Exercise A.7's zero-polynomial boundary is visibly flagged in R199 |
 
 
 ## Source Exercise to Archived Note Mapping

@@ -8,7 +8,7 @@ tags:
   - field-theory
   - integral-domains
   - finite-dimensional-algebras
-source: "Michael Artin, Algebra, 2nd ed., Ch. 15, Fields, Section 1, Examples of Fields, Ex. 1.1, printed p. 472, PDF p. 484"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 15, Fields, Section 1, Examples of Fields, Ex. 1.1, printed p. 472, PDF p. 484; Serge Lang, Algebra, rev. 3rd ed., Ch. III, Modules, Exercise 3, printed p. 165, PDF p. 180"
 created: 2026-08-28
 ---
 
@@ -18,6 +18,9 @@ created: 2026-08-28
 
 > [!question] Exercise 1.1
 > Let $R$ be an integral domain that contains a field $F$ as subring and that is finite-dimensional when viewed as vector space over $F$. Prove that $R$ is a field.
+
+> [!question] Lang, Chapter III, Exercise 3
+> Let $R$ be an entire ring containing a field $k$ as a subring. Suppose that $R$ is a finite-dimensional vector space over $k$ under the ring multiplication. Show that $R$ is a field.
 
 ## Hints
 
@@ -52,3 +55,4 @@ created: 2026-08-28
 - **Routing:** Field Theory is primary because the conclusion characterizes when a finite-dimensional algebra is a field.
 - **Hypothesis boundary:** The domain assumption is essential; a finite-dimensional $F$-algebra may have zero divisors.
 - **Source status:** [S1, Ch. 15, §15.1, Ex. 1.1, printed p. 472, PDF p. 484]. The proof is independent.
+- **Lang source:** [S2, Ch. III, Ex. 3, printed p. 165, PDF p. 180]. Lang's term “entire ring” means integral domain; the independent multiplication-map proof above applies verbatim.

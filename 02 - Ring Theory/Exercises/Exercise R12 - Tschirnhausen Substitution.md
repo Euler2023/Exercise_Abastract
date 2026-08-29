@@ -2,9 +2,12 @@
 title: "Exercise R12: Tschirnhausen Substitution for a Cubic"
 topic: ring-theory
 difficulty: intermediate
-status: not-started
-tags: [exercise, ring-theory, discriminant]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 2, Ex. 2.3, printed p. 506, PDF p. 518"
+status: completed
+tags:
+  - exercise
+  - ring-theory
+  - discriminant
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 2, Ex. 2.3, printed p. 506, PDF p. 518
 created: 2026-08-12
 ---
 

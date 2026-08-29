@@ -2,13 +2,13 @@
 title: "Exercise LA45: When a Product of Symmetric Matrices Is Symmetric"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - matrices
   - symmetric-matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Section 3, Ex. 3.2, printed p. 33, PDF p. 45"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Section 3, Ex. 3.2, printed p. 33, PDF p. 45
 created: 2026-08-23
 ---
 

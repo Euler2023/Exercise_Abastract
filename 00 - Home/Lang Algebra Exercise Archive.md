@@ -91,6 +91,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 114-116 / PDF pp. 129-131",
   }],
+  ["III", {
+    covered: 29,
+    total: 29,
+    status: "Complete",
+    pages: "printed pp. 165-172 / PDF pp. 180-187",
+  }],
 ]);
 
 const rows = [];
@@ -134,7 +140,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 |---:|---|---|---|
 | I | Groups | All 57 exercises I.1-I.57; printed pp. 75-82 / PDF pp. 90-97 | Complete; 46 new notes and 11 existing cross-source notes |
 | II | Rings | All 19 exercises II.1-II.19; printed pp. 114-116 / PDF pp. 129-131 | Complete; 18 Ring Theory notes and 1 Group Theory note |
-| III | Modules | Pending source-total audit | Not archived |
+| III | Modules | All 29 exercises III.1-III.29; printed pp. 165-172 / PDF pp. 180-187 | Complete; 27 new notes and 2 existing cross-source notes |
 | IV | Polynomials | Pending source-total audit | Not archived |
 | V | Algebraic Extensions | Pending source-total audit | Not archived |
 | VI | Galois Theory | Pending source-total audit | Not archived |
@@ -162,10 +168,13 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 |---:|---|---|---:|---:|---:|---:|---:|---|
 | I | I.1-I.57 | printed pp. 75-82 / PDF pp. 90-97 | 57 | 0 | 0 | 0 | 0 | Complete |
 | II | II.1-II.19 | printed pp. 114-116 / PDF pp. 129-131 | 19 | 0 | 0 | 0 | 0 | Complete |
+| III | III.1-III.29 | printed pp. 165-172 / PDF pp. 180-187 | 29 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
 Chapter II was reconciled against the ordered source labels on all three exercise pages. Every source exercise has exactly one parsed note mapping: 18 are routed to Ring Theory and II.8 is routed to Group Theory because finite-group structure supplies its primary computational toolkit. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
+
+Chapter III was reconciled against the ordered labels III.1-III.29 on all eight exercise pages. Every source exercise has exactly one parsed note mapping: the archive adds 27 notes—22 in Linear Algebra and Modules, 3 in Ring Theory, 1 in Group Theory, and 1 in Representation Theory—and reuses 2 existing cross-source notes. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -213,6 +222,28 @@ dv.table(
 );
 ```
 
+### Chapter III — Modules
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*III\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["III." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -224,7 +255,12 @@ dv.table(
 - **II.16:** “Only one prime ideal” uses the chapter's convention that ideals are nonzero; the note makes this explicit because $(0)$ is also prime in a domain under modern unrestricted terminology.
 - **II.18-II.19:** Exercise II.18 ends with “Use this to prove:” and II.19 supplies the separate numbered target. The archive keeps two notes and records the dependency.
 - **Chapter II figure audit:** No exercise depends on a source figure, diagram, or labeled geometric configuration, so no attachment was created.
+- **III.6:** The printed full-rank-sublattice claim is false even after adding $G$-invariance. The note preserves it, supplies a counterexample, and labels the finite-index replacement theorem from Lang's *Algebraic Number Theory* as an external input.
+- **III.18(b):** The printed $T_p(A)$ is preserved and visibly corrected to $T_p(M)$, the inverse limit defined by the displayed module system.
+- **III.23:** Both displayed Hom identities involve inverse limits; the source page was rechecked and no direct-limit correction is needed.
+- **III.29(a):** The printed $x_{nn}$ is impossible for a strictly upper-triangular matrix; the note preserves it and uses the intended last-diagonal entry $x_{1n}$.
+- **Chapter III figure audit:** The diagrams required by III.14, III.15, III.18(a), and III.26 are preserved as verified direct crops in `Attachments/lang-algebra-3e-ch03-ex14-snake-diagram.png`, `Attachments/lang-algebra-3e-ch03-ex15-five-lemma-diagram.png`, `Attachments/lang-algebra-3e-ch03-ex18-inverse-module-system.png`, and `Attachments/lang-algebra-3e-ch03-ex26-hom-limit-diagram.png`.
 
 ## Next Archive Target
 
-Chapter III, **Modules**, is the next unaudited chapter.
+Chapter IV, **Polynomials**, is the next unaudited chapter.

@@ -6,7 +6,7 @@ tags:
   - definition
   - module-theory
 created: 2026-01-19
-source: "Michael Artin, Algebra, 2nd ed., Ch. 14, §§14.1–14.2 and §14.5, printed pp. 412–417 and 423–426, PDF pp. 424–429 and 435–438"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 14, §§14.1–14.2 and §14.5, printed pp. 412–417 and 423–426, PDF pp. 424–429 and 435–438; Serge Lang, Algebra, rev. 3rd ed., Ch. III, Exercises 24–26, printed p. 171, PDF p. 186"
 source_status: partially-verified
 status: not-started
 ---
@@ -17,7 +17,9 @@ status: not-started
 
 > [!info] Definition (Finitely Generated Module)
 > An $R$-[[04 - Linear Algebra and Modules/Concepts/Module Definition|module]] $M$ is **finitely generated** if there exist elements $m_1, \ldots, m_n \in M$ such that:
-> $$M = Rm_1 + Rm_2 + \cdots + Rm_n = \langle m_1, \ldots, m_n \rangle$$
+> $$
+> M = Rm_1 + Rm_2 + \cdots + Rm_n = \langle m_1, \ldots, m_n \rangle
+> $$
 > The elements $\{m_1, \ldots, m_n\}$ are called **generators**.
 
 ## Key Properties
@@ -38,11 +40,15 @@ status: not-started
 
 > [!abstract] Fundamental Theorem (over PID)
 > If $R$ is a [[02 - Ring Theory/Concepts/Principal Ideal Domains|PID]] and $M$ is a finitely generated $R$-module, then:
-> $$M \cong R^r \oplus R/(a_1) \oplus R/(a_2) \oplus \cdots \oplus R/(a_k)$$
+> $$
+> M \cong R^r \oplus R/(a_1) \oplus R/(a_2) \oplus \cdots \oplus R/(a_k)
+> $$
 > where $a_1 | a_2 | \cdots | a_k$ (**invariant factors**).
 >
 > Alternatively (elementary divisors):
-> $$M \cong R^r \oplus \bigoplus_{i} R/(p_i^{e_i})$$
+> $$
+> M \cong R^r \oplus \bigoplus_{i} R/(p_i^{e_i})
+> $$
 > where $p_i$ are primes.
 
 ## Special Cases
@@ -71,8 +77,31 @@ status: not-started
 
 > [!info] Definition (Presentation)
 > A **presentation** of $M$ is an [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|exact sequence]]:
-> $$R^m \xrightarrow{\phi} R^n \xrightarrow{\pi} M \to 0$$
+> $$
+> R^m \xrightarrow{\phi} R^n \xrightarrow{\pi} M \to 0
+> $$
 > The matrix of $\phi$ is called a **presentation matrix**.
+
+> [!info] Definition (Finitely Presented Module)
+> An $R$-module $M$ is **finitely presented** if there is an exact sequence
+>
+> $$
+> F_1\longrightarrow F_0\longrightarrow M\longrightarrow0
+> $$
+>
+> in which both $F_0$ and $F_1$ are free with finite bases. Equivalently, $M$ has finitely many generators and the submodule of relations among those generators is finitely generated.
+
+Every finitely presented module is finitely generated, but the converse can fail over a non-Noetherian ring. Over a Noetherian ring, every finitely generated module is finitely presented.
+
+Finite presentation is detected categorically by directed limits. For every directed system $(N_i)$, the natural map
+
+$$
+\varinjlim_i\operatorname{Hom}_R(M,N_i)
+\longrightarrow
+\operatorname{Hom}_R\left(M,\varinjlim_iN_i\right)
+$$
+
+is an isomorphism when $M$ is finitely presented. Finite generation alone guarantees injectivity. See [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]].
 
 ## Related Concepts
 
@@ -80,6 +109,7 @@ status: not-started
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Torsion Modules|Torsion Modules]]
+- [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
 
 ## Exercises
@@ -92,4 +122,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
+This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. The finite-presentation and Hom/direct-limit criteria were additionally checked against Lang, Chapter III, Exercises 24-26, printed p. 171 / PDF p. 186; their proofs are supplied independently in the linked exercise notes. Because the note also contains independent exposition beyond those slices, its overall status remains partially verified.

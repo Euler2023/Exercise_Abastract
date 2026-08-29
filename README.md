@@ -78,6 +78,21 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-29 (Artin Archive Metadata Fix)
+- Fixed: Repaired the YAML title of **LA199** so Obsidian and Dataview can parse its `exercise` tag and Artin Chapter 7 source locator; the live archive counts now reconcile with the verified **96/96** coverage.
+
+### 2026-08-29 (Lang Chapter III Complete Exercise Archive)
+- Added: Archived all **29** exercises in Chapter III, *Modules*, using **27** new notes—**LA352–LA373**, **R224–R226**, **G327**, and **Rep116**—and exact Lang provenance on the existing **LA107** and **F39** notes.
+- Added: Created the required concept notes for module localization, projective modules and Grothendieck groups, direct and inverse limits, and filtered/graded algebras; expanded the existing exact-sequence, finite-presentation, and Hom notes and linked the concepts from their topic hubs.
+- Illustrated: Preserved the source diagrams required by III.14, III.15, III.18(a), and III.26 as four verified direct crops in `Attachments/`.
+- Flagged: Preserved III.6's false full-rank-sublattice claim with a counterexample and an explicitly external Artin–Tate correction; also recorded III.18(b)'s $T_p(A)$/$T_p(M)$ and III.29(a)'s $x_{nn}$/$x_{1n}$ misprints, while confirming that III.23 correctly uses inverse limits in both identities.
+- Verified: Reconciled III.1–III.29 one-to-one with no missing, duplicate, unexpected, or unparsed labels; checked source anchors, metadata, required sections, path-qualified links, Obsidian formula delimiters, tracker tags, and all four figure crops.
+
+### 2026-08-28 (Dedekind Ring Hierarchy and Artin Comparison)
+- Updated: Expanded `Dedekind Rings and Fractional Ideals` with the inclusion diagram from fields and Euclidean domains through PIDs, UFDs, and Dedekind domains, including the exact intersection $\mathrm{UFD}\cap\mathrm{Dedekind}=\mathrm{PID}$.
+- Clarified: Recorded that Artin does not introduce “Dedekind domain” as a named general definition, but his imaginary-quadratic Main Lemma gives fractional-ideal inverses and his Chapter 13 proves the corresponding unique ideal factorization.
+- Verified: Checked the relevant Artin and Lang source pages visually and distinguished quoted source results from the independent hierarchy deductions.
+
 ### 2026-08-28 (Lang Chapter II Complete Exercise Archive)
 - Added: Archived all **19** exercises in Chapter II, *Rings*, as **R206–R223** and **G326**, with II.8 routed to Group Theory because its main task is the structure classification of a finite unit group.
 - Added: Created the necessary concept notes `Local Rings`, `Trigonometric Polynomials and Fourier Degree`, `Dirichlet Convolution and Mobius Inversion`, and `Dedekind Rings and Fractional Ideals`, and linked them from the Ring Theory Hub.

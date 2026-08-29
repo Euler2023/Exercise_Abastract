@@ -2,14 +2,14 @@
 title: "Exercise G104: Double Cosets and Normality"
 topic: group-theory
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - double-cosets
   - normal-subgroups
   - cosets
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Miscellaneous Problems, Ex. M.10, printed p. 76, PDF p. 88"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Miscellaneous Problems, Ex. M.10, printed p. 76, PDF p. 88
 created: 2026-08-23
 ---
 

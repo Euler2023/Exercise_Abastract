@@ -1,5 +1,5 @@
 ---
-title: "Exercise LA199: Class Equation of $SL_2(\mathbb F_3)$"
+title: 'Exercise LA199: Class Equation of $SL_2(\mathbb F_3)$'
 topic: linear-algebra
 difficulty: advanced
 status: not-started
@@ -67,4 +67,3 @@ created: 2026-08-24
 ## Notes
 
 - **Source status:** Artin states (7.2.10) and computes one representative centralizer at [S1, Ch. 7, §2, printed p. 197, PDF p. 209]. The complete verification above is independent.
-

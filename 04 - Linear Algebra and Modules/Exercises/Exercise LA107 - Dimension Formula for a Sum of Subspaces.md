@@ -9,7 +9,7 @@ tags:
   - product-spaces
   - subspace-sums
   - rank-nullity
-source: "Michael Artin, Algebra, 2nd ed., Ch. 4, §1, Ex. 1.5, printed p. 126, PDF p. 138"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 4, §1, Ex. 1.5, printed p. 126, PDF p. 138; Serge Lang, Algebra, rev. 3rd ed., Ch. III, Modules, Exercise 1, printed p. 165, PDF p. 180"
 created: 2026-08-23
 ---
 
@@ -23,6 +23,13 @@ created: 2026-08-23
 > (b) If $U,W$ are subspaces of $V$, show that $T:U\times W\to V$, $T(u,w)=u+w$, is linear.
 >
 > (c) Express the dimension formula for $T$ in terms of dimensions of subspaces of $V$.
+
+> [!question] Lang, Chapter III, Exercise 1
+> Let $V$ be a vector space over a field $K$, and let $U,W$ be subspaces. Show that
+>
+> $$
+> \dim U+\dim W=\dim(U+W)+\dim(U\cap W).
+> $$
 
 ## Hints
 
@@ -51,4 +58,4 @@ created: 2026-08-23
 ## Notes
 
 - **Source status:** [S1, Ch. 4, §1, Ex. 1.5, printed p. 126, PDF p. 138]; independent solution.
-
+- **Lang source:** [S2, Ch. III, Ex. 1, printed p. 165, PDF p. 180]. Lang's exercise is the dimension identity isolated in part (c), so the existing rank-nullity argument is also an independent solution of III.1.
