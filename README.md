@@ -78,6 +78,14 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-29 (Daily Exercise Workflow)
+- Added: Exercise Manager 0.4.0 now maintains an independent `Systematic Progress` queue, defaulting to two Artin exercises per day from Chapter 3 onward in exact source order, with complete-and-advance, skip, and undo controls that do not affect the random-review cycle.
+- Updated: Refined the daily Markdown export from two days of actual use: random and systematic items include numbered Todos, exact source citations, and copied problem statements, while handwritten content outside the two managed regions remains untouched.
+- Migrated: Existing random-batch dates reserve the corresponding sequential Chapter 3 assignments on first load, preventing an upgraded vault from restarting systematic progress at Exercise 1.1.
+- Fixed: Exercise Manager 0.4.1 defers systematic migration until Obsidian metadata and the sequential candidate pool are ready, and adds a guarded repair for the initial empty-batch migration; repair runs only when every systematic batch is empty and no completion/skip action exists.
+- Fixed: Re-export all historical daily files affected by systematic migration, so the repaired assignments appear in both state and their original dated Markdown lists rather than only in the current day.
+- Verified: Audited the live vault ordering across 770 eligible Artin exercises and confirmed the Chapter 3 sequence begins 1.1, 1.2, …, 1.10, 1.11, 2.1; added regression coverage for ordering, independent state, migration, completion, skipping, undo, export rendering, idempotence, replacements, and handwritten-note preservation.
+
 ### 2026-08-29 (Artin Archive Metadata Fix)
 - Fixed: Repaired the YAML title of **LA199** so Obsidian and Dataview can parse its `exercise` tag and Artin Chapter 7 source locator; the live archive counts now reconcile with the verified **96/96** coverage.
 
