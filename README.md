@@ -78,6 +78,10 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-30 (Relationship-Aware Exercise Retrieval)
+- Added: Exercise Manager 0.5.0 can find exercises related to the active exercise or concept note, prioritizing direct concept links and shared `Related Concepts` before shared tags, topic, and full-note semantic similarity.
+- Added: Search results now explain the relationship—such as a direct concept reference, shared concepts, or shared tags—and show a composite relevance score alongside semantic similarity; results can still be opened or added to the reading list.
+
 ### 2026-08-29 (Daily Exercise Workflow)
 - Added: Exercise Manager 0.4.0 now maintains an independent `Systematic Progress` queue, defaulting to two Artin exercises per day from Chapter 3 onward in exact source order, with complete-and-advance, skip, and undo controls that do not affect the random-review cycle.
 - Updated: Refined the daily Markdown export from two days of actual use: random and systematic items include numbered Todos, exact source citations, and copied problem statements, while handwritten content outside the two managed regions remains untouched.
