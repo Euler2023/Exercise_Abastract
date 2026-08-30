@@ -78,6 +78,10 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-08-30 (Heisenberg Group Concept)
+- Added: A source-grounded Heisenberg group concept note covering the matrix model, group law, commutators, center, quotient, class-$2$ nilpotence, and Lie algebra perspective, with related exercises discovered through Dataview.
+- Updated: Linked Exercise G95 and the Group Theory Hub to the new concept, reclassified G95 as intermediate, and recorded Hall's terminology alongside Artin's exercise provenance.
+
 ### 2026-08-30 (Relationship-Aware Exercise Retrieval)
 - Added: Exercise Manager 0.5.0 can find exercises related to the active exercise or concept note, prioritizing direct concept links and shared `Related Concepts` before shared tags, topic, and full-note semantic similarity.
 - Added: Search results now explain the relationship—such as a direct concept reference, shared concepts, or shared tags—and show a composite relevance score alongside semantic similarity; results can still be opened or added to the reading list.

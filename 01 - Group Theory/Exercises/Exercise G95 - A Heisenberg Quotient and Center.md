@@ -1,13 +1,14 @@
 ---
 title: "Exercise G95: A Heisenberg Quotient and Center"
 topic: group-theory
-difficulty: advanced
+difficulty: intermediate
 status: not-started
 tags:
   - exercise
   - group-theory
   - quotient-groups
   - matrix-groups
+  - heisenberg-groups
   - center
 source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 12, Ex. 12.2, printed p. 75, PDF p. 87"
 created: 2026-08-23
@@ -49,7 +50,7 @@ created: 2026-08-23
 > The map
 > 
 > $$
-> \pi:H\to\mathbb R^2,qquad(a,b,c)\mapsto(a,c)
+> \pi:H\to\mathbb R^2,\qquad(a,b,c)\mapsto(a,c)
 > $$
 > 
 > is a surjective homomorphism to the additive group, with kernel $K$. Thus
@@ -66,6 +67,8 @@ created: 2026-08-23
 
 ## Related Concepts
 
+- [[01 - Group Theory/Concepts/Heisenberg Group|Heisenberg Group]]
+- [[01 - Group Theory/Concepts/Conjugacy Classes Centralizers and the Class Equation|Conjugacy Classes, Centralizers, and the Class Equation]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]
@@ -73,3 +76,4 @@ created: 2026-08-23
 ## Notes
 
 - **Source status:** The problem statement is transcribed from [S1, Ch. 2, §12, Ex. 12.2, printed p. 75, PDF p. 87]. The solution is an independent derivation for this vault, not a solution printed in Artin.
+- **Terminology:** Artin's exercise does not name $H$. Hall explicitly identifies the same matrix group as the Heisenberg group. [S10, Ch. 1, §1.2.6, printed pp. 11-12, PDF pp. 23-24]
