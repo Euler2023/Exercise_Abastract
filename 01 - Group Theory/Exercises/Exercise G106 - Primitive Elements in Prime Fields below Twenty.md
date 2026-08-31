@@ -2,14 +2,14 @@
 title: "Exercise G106: Primitive Elements in Prime Fields below $20$"
 topic: group-theory
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - cyclic-groups
   - finite-fields
   - primitive-elements
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.7, printed p. 99, PDF p. 111"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.7, printed p. 99, PDF p. 111
 created: 2026-08-23
 ---
 

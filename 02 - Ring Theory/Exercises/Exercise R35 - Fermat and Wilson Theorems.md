@@ -2,14 +2,14 @@
 title: "Exercise R35: Fermat and Wilson Theorems"
 topic: ring-theory
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - ring-theory
   - modular-arithmetic
   - fermat-theorem
   - wilson-theorem
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.8, printed p. 99, PDF p. 111"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.8, printed p. 99, PDF p. 111
 created: 2026-08-23
 ---
 
