@@ -2,13 +2,13 @@
 title: "Exercise G58: A Group Is Isomorphic to Its Opposite"
 topic: group-theory
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - opposite-groups
   - isomorphisms
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 6, Ex. 6.9, printed p. 72, PDF p. 84"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 6, Ex. 6.9, printed p. 72, PDF p. 84
 created: 2026-08-23
 ---
 

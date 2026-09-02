@@ -2,13 +2,13 @@
 title: "Exercise G34: The Group and Product of $n$th Roots of Unity"
 topic: group-theory
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - cyclic-groups
   - roots-of-unity
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.2, printed p. 70, PDF p. 82"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.2, printed p. 70, PDF p. 82
 created: 2026-08-23
 ---
 

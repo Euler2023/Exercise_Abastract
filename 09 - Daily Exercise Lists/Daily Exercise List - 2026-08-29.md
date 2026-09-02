@@ -18,7 +18,7 @@ tags:
    > [!question] Exercise 12.4
    > Let $H=\{\pm1,\pm i\}\le\mathbb C^\times$. Describe its cosets explicitly. Is $\mathbb C^\times/H\cong\mathbb C^\times$?
 
-2. [ ] [[01 - Group Theory/Exercises/Exercise G34 - The Group and Product of nth Roots of Unity|Exercise G34: The Group and Product of $n$th Roots of Unity]] <!-- exercise-manager:unit 1b8ad97d6f33c08b1a5275e22abcb43072e34dc6e9ba7b83af5db9d4622fcb48 -->
+2. [x] [[01 - Group Theory/Exercises/Exercise G34 - The Group and Product of nth Roots of Unity|Exercise G34: The Group and Product of $n$th Roots of Unity]] <!-- exercise-manager:unit 1b8ad97d6f33c08b1a5275e22abcb43072e34dc6e9ba7b83af5db9d4622fcb48 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.2, printed p. 70, PDF p. 82
 
@@ -34,7 +34,7 @@ tags:
    > [!question] Exercise 8.7
    > Let $|G|=22$, $x\ne1$, and let $y$ not be a power of $x$. Prove $\langle x,y\rangle=G$.
 
-4. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA48 - Four Determinant Computations|Exercise LA48: Four Determinant Computations]] <!-- exercise-manager:unit ac5142c0849256b38be63969a656d889a373d860363498b72c6a1aa37150fbfb -->
+4. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA48 - Four Determinant Computations|Exercise LA48: Four Determinant Computations]] <!-- exercise-manager:unit ac5142c0849256b38be63969a656d889a373d860363498b72c6a1aa37150fbfb -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 4, Ex. 4.1, printed p. 33, PDF p. 45
 

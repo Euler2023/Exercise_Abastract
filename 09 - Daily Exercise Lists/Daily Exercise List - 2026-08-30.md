@@ -18,7 +18,7 @@ tags:
    > [!question] Exercise 5.3
    > Let $U$ be the group of invertible upper-triangular matrices $A=\begin{bmatrix}a&b\\0&d\end{bmatrix}$. Prove $\varphi(A)=a^2$ is a homomorphism $U\to\mathbb R^\times$, and find its kernel and image.
 
-2. [ ] [[01 - Group Theory/Exercises/Exercise G95 - A Heisenberg Quotient and Center|Exercise G95: A Heisenberg Quotient and Center]] <!-- exercise-manager:unit a4bf762a0d93edfd431811f4c4bdffefab659ceba179b87adb946f67c7bd9297 -->
+2. [x] [[01 - Group Theory/Exercises/Exercise G95 - A Heisenberg Quotient and Center|Exercise G95: A Heisenberg Quotient and Center]] <!-- exercise-manager:unit a4bf762a0d93edfd431811f4c4bdffefab659ceba179b87adb946f67c7bd9297 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 12, Ex. 12.2, printed p. 75, PDF p. 87
 

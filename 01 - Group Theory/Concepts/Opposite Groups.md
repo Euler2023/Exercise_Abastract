@@ -9,9 +9,9 @@ tags:
   - group-theory
   - opposite-groups
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.6"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 2, Ex. 2.6
 source_status: partially-verified
-status: not-started
+status: completed
 ---
 
 # Opposite Groups

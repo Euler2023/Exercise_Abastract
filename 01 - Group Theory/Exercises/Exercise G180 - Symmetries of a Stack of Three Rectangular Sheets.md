@@ -33,7 +33,7 @@ created: 2026-08-27
 > Each individual rectangular sheet has symmetry group $D_2\cong C_2\times C_2$ of order $4$. The choices on the three sheets are independent, giving a normal subgroup
 >
 > $$
-> K\cong D_2^3,qquad |K|=4^3=64.
+> K\cong D_2^3,\qquad |K|=4^3=64.
 > $$
 >
 > Every permutation of the three sheets is allowed and conjugates $K$ by permuting its three factors. Hence
@@ -45,7 +45,7 @@ created: 2026-08-27
 > The natural map $G\to S_3$ is surjective, has kernel $K$, and therefore
 >
 > $$
-> |G|=64\cdot6=384,qquad \ker(G\to S_3)=D_2^3.
+> |G|=64\cdot6=384,\qquad \ker(G\to S_3)=D_2^3.
 > $$
 >
 > $\square$

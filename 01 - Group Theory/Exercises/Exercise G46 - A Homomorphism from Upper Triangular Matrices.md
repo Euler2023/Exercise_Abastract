@@ -2,14 +2,14 @@
 title: "Exercise G46: A Homomorphism from Upper-Triangular Matrices"
 topic: group-theory
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - homomorphisms
   - matrix-groups
   - kernel
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 5, Ex. 5.3, printed p. 71, PDF p. 83"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 5, Ex. 5.3, printed p. 71, PDF p. 83
 created: 2026-08-23
 ---
 
