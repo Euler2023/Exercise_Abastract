@@ -18,7 +18,7 @@ tags:
    > [!question] Exercise 1.10
    > Let $D=\operatorname{diag}(d_1,\ldots,d_n)$ and $A=(a_{ij})$. Compute $DA$ and $AD$.
 
-2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA21 - Inner and Outer Products|Exercise LA21: Inner and Outer Products]] <!-- exercise-manager:unit 2f231983694ced2eae02654d02ed5bc10a31fa3488cceac742774628c5c9e29c -->
+2. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA21 - Inner and Outer Products|Exercise LA21: Inner and Outer Products]] <!-- exercise-manager:unit 2f231983694ced2eae02654d02ed5bc10a31fa3488cceac742774628c5c9e29c -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.3, printed p. 31, PDF p. 43
 
