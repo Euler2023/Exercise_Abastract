@@ -2,14 +2,14 @@
 title: "Exercise LA81: Independence of $x^2$, $\\cos x$, and $e^x$"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - linear-independence
   - function-spaces
   - derivatives
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 3, Ex. 3.3, printed p. 99, PDF p. 111"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 3, Ex. 3.3, printed p. 99, PDF p. 111
 created: 2026-08-23
 ---
 

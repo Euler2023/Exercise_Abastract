@@ -2,14 +2,14 @@
 title: "Exercise LA34: Elementary Matrices in a Row Reduction"
 topic: linear-algebra
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - matrices
   - row-reduction
   - elementary-matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Section 2, Ex. 2.1, printed p. 32, PDF p. 44; referenced reduction printed p. 12, PDF p. 24"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Section 2, Ex. 2.1, printed p. 32, PDF p. 44; referenced reduction printed p. 12, PDF p. 24
 created: 2026-08-23
 ---
 
