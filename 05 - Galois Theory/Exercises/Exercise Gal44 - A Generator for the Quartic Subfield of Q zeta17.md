@@ -2,9 +2,12 @@
 title: "Exercise Gal44: A Generator for the Quartic Subfield of Q(zeta17)"
 topic: galois-theory
 difficulty: advanced
-status: not-started
-tags: [exercise, galois-theory, cyclotomic-extensions]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.2, printed p. 509, PDF p. 521"
+status: completed
+tags:
+  - exercise
+  - galois-theory
+  - cyclotomic-extensions
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.2, printed p. 509, PDF p. 521
 created: 2026-08-12
 ---
 

@@ -2,13 +2,13 @@
 title: "Exercise G38: Generators of a Finite Cyclic Group"
 topic: group-theory
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - cyclic-groups
   - euler-totient
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.6, printed p. 70, PDF p. 82"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.6, printed p. 70, PDF p. 82
 created: 2026-08-23
 ---
 

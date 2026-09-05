@@ -2,9 +2,12 @@
 title: "Exercise Gal30: Galois Groups of Six Cubics"
 topic: galois-theory
 difficulty: advanced
-status: not-started
-tags: [exercise, galois-theory, cubic-polynomials]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 16, Section 8, Ex. 8.2, printed p. 508, PDF p. 520"
+status: completed
+tags:
+  - exercise
+  - galois-theory
+  - cubic-polynomials
+source: Michael Artin, Algebra, 2nd ed., Ch. 16, Section 8, Ex. 8.2, printed p. 508, PDF p. 520
 created: 2026-08-12
 ---
 
