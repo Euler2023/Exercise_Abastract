@@ -31,6 +31,7 @@ Field theory studies algebraic structures where every non-zero element has a mul
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 - [[03 - Field Theory/Concepts/Quadratic Number Fields and Rings of Integers|Quadratic Number Fields and Rings of Integers]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
+- [[03 - Field Theory/Concepts/Purely Inseparable Extensions|Purely Inseparable Extensions]]
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
 
 ## Important Fields
@@ -74,7 +75,9 @@ SORT file.name ASC
 
 > [!abstract] Tower Law
 > If $K/F$ and $L/K$ are field extensions, then:
-> $$[L:F] = [L:K][K:F]$$
+> $$
+> [L:F] = [L:K][K:F]
+> $$
 
 > [!abstract] Primitive Element Theorem
 > If $K/F$ is a finite separable extension, then $K = F(\alpha)$ for some $\alpha \in K$.

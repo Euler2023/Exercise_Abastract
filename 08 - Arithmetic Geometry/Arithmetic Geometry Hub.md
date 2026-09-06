@@ -40,6 +40,7 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 
 ### Rational Points
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
+- [[08 - Arithmetic Geometry/Concepts/C1 Fields and Cyclotomic Zeros|C1 Fields and Cyclotomic Zeros]]
 - [[08 - Arithmetic Geometry/Concepts/Heights|Heights]]
 - [[08 - Arithmetic Geometry/Concepts/Reduction mod p|Reduction mod p]]
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
@@ -130,7 +131,9 @@ graph TB
 
 > [!abstract] Mordell-Weil Theorem
 > For an elliptic curve $E$ over a number field $K$:
-> $$E(K) \cong \mathbb{Z}^r \oplus E(K)_{\text{tors}}$$
+> $$
+> E(K) \cong \mathbb{Z}^r \oplus E(K)_{\text{tors}}
+> $$
 > where $r \geq 0$ is the **rank** and the torsion subgroup is finite.
 
 > [!abstract] Faltings' Theorem (1983)
@@ -138,11 +141,15 @@ graph TB
 
 > [!abstract] Hasse Principle
 > A variety $X/\mathbb{Q}$ satisfies the **Hasse principle** if:
-> $$X(\mathbb{Q}) \neq \emptyset \iff X(\mathbb{R}) \neq \emptyset \text{ and } X(\mathbb{Q}_p) \neq \emptyset \text{ for all } p$$
+> $$
+> X(\mathbb{Q}) \neq \emptyset \iff X(\mathbb{R}) \neq \emptyset \text{ and } X(\mathbb{Q}_p) \neq \emptyset \text{ for all } p
+> $$
 
 > [!abstract] Weil Conjectures (proved by Deligne)
 > For a smooth projective variety $X$ over $\mathbb{F}_q$, the zeta function
-> $$Z(X, t) = \exp\left(\sum_{n=1}^{\infty} \#X(\mathbb{F}_{q^n}) \frac{t^n}{n}\right)$$
+> $$
+> Z(X, t) = \exp\left(\sum_{n=1}^{\infty} \#X(\mathbb{F}_{q^n}) \frac{t^n}{n}\right)
+> $$
 > is rational, satisfies a functional equation, and its zeros have absolute value $q^{-i/2}$.
 
 > [!abstract] Langlands Reciprocity (Vision)

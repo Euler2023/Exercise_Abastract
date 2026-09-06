@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-06 (Lang Chapter V Exercise Archive)
+- Added: Archived all 34 exercises V.1-V.34 from Lang's Algebra, revised third edition, printed pp. 253-259 / PDF pp. 268-274: 33 new notes (F63-F86, R251-R254, LA376-LA379, AG17) and the reused F24.
+- Added: Three prerequisite concepts—purely inseparable extensions, Vandermonde interpolation, and C1 fields—with topic-hub links and dynamic exercise backlinks.
+- Fixed: Repaired F24's characteristic-free splitting-field induction; preserved and explained the source issues in V.23, V.27, V.29, V.32-V.34, with explicit base-field and index conventions.
+- Clarified: V.30 remains a conjecture with proved low-degree special cases; V.34 separates the source-contained Howe proof from independently supplied completeness details. All exercise learning statuses remain not-started.
+- Verified: Reconciled 166 source labels across Chapters I-V with no missing, duplicate, unexpected, or unparsed mappings; checked the active batch's metadata, links, formula syntax, and tracker filter, with targeted exact arithmetic checks.
+
 ### 2026-09-06 (Lang Chapter IV Exercise Archive)
 - Verified: Reconciled all 105 Lang Chapter I-III source labels with current exercise-note provenance; no missing, duplicate, unexpected, or unparsed mappings were found.
 - Added: All 27 Chapter IV exercise notes (R227-R250, F62, LA374-LA375), with complete multipart statements, progressive hints, independent proofs, and the exact exercise-template solution title and subsections; all learning statuses remain `not-started`.

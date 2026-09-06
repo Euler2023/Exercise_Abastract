@@ -79,6 +79,12 @@ for (const page of pages) {
 }
 
 const auditedCoverage = new Map([
+  ["V", {
+    covered: 34,
+    total: 34,
+    status: "Complete",
+    pages: "printed pp. 253-259 / PDF pp. 268-274",
+  }],
   ["I", {
     covered: 57,
     total: 57,
@@ -148,7 +154,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | II | Rings | All 19 exercises II.1-II.19; printed pp. 114-116 / PDF pp. 129-131 | Complete; 18 Ring Theory notes and 1 Group Theory note |
 | III | Modules | All 29 exercises III.1-III.29; printed pp. 165-172 / PDF pp. 180-187 | Complete; 27 new notes and 2 existing cross-source notes |
 | IV | Polynomials | All 27 exercises IV.1-IV.27; printed pp. 213-219 / PDF pp. 228-234 | Complete; 24 Ring Theory notes, 1 Field Theory note, and 2 Linear Algebra and Modules notes |
-| V | Algebraic Extensions | Pending source-total audit | Not archived |
+| V | Algebraic Extensions | All 34 exercises V.1-V.34; printed pp. 253-259 / PDF pp. 268-274 | Complete; 33 new notes and 1 reused note; V.30 retains conjectural proof status |
 | VI | Galois Theory | Pending source-total audit | Not archived |
 | VII | Extensions of Rings | Pending source-total audit | Not archived |
 | VIII | Transcendental Extensions | Pending source-total audit | Not archived |
@@ -176,6 +182,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | II | II.1-II.19 | printed pp. 114-116 / PDF pp. 129-131 | 19 | 0 | 0 | 0 | 0 | Complete |
 | III | III.1-III.29 | printed pp. 165-172 / PDF pp. 180-187 | 29 | 0 | 0 | 0 | 0 | Complete |
 | IV | IV.1-IV.27 | printed pp. 213-219 / PDF pp. 228-234 | 27 | 0 | 0 | 0 | 0 | Complete |
+| V | V.1-V.34 | printed pp. 253-259 / PDF pp. 268-274 | 34 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -187,7 +194,9 @@ On 2026-09-06, the current source metadata was rechecked for Chapters I-III: 105
 
 Chapter IV was reconciled on 2026-09-06 against the ordered source labels IV.1-IV.27 on all seven exercise pages, printed pp. 213-219 / PDF pp. 228-234. Every numbered exercise has exactly one note mapping: 24 in Ring Theory, IV.10 in Field Theory, and IV.16 and IV.19 in Linear Algebra and Modules. The reconciliation found no missing, duplicate, unexpected, or unparsed labels. Seven prerequisite concept notes are linked from the exercises and the existing topic hubs, with dynamic exercise backlinks. All 27 notes follow the exercise template and retain learning status `not-started`.
 
-Chapters I-IV now cover **132 verified source exercises** (57 + 19 + 29 + 27). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries were checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
+Chapter V was reconciled on 2026-09-06 against all 34 labels V.1-V.34, verified on printed pp. 253-259 / PDF pp. 268-274 before note creation. Every label has exactly one parsed note mapping: 25 in Field Theory (24 new notes and the reused F24), 4 in Ring Theory, 4 in Linear Algebra and Modules, and 1 in Arithmetic Geometry. The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. The three new prerequisite concepts have dynamic exercise backlinks and are linked from their topic hubs. All 34 exercise notes retain learning status `not-started`. V.30 is archived as a conjecture with proved low-degree special cases, and V.34 distinguishes its source-contained argument from independently supplied details.
+
+Chapters I-V now cover **166 verified source exercises** (57 + 19 + 29 + 27 + 34). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries were checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -279,6 +288,28 @@ dv.table(
 );
 ```
 
+### Chapter V — Algebraic Extensions
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*V\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["V." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -307,6 +338,16 @@ dv.table(
 - **IV.26-IV.27:** The notes make the index ranges for the leading-two-terms and division-by-$k$ formulas explicit. IV.27's unspecified value ring is taken to be a commutative $\mathbb Q$-algebra, so its factorial and period denominators are defined.
 - **Chapter IV figure audit:** No exercise depends on a source figure, diagram, or labeled geometric configuration; no attachment was created. Temporary source-page renders were removed after checking.
 
+- **V.8 / F24:** The reused Artin note's previous induction incorrectly discarded an entire irreducible factor after adjoining only one root. The corrected proof splits the full factor before removing it, and handles arbitrary characteristic.
+- **V.23 source remark:** The exercise's Euler product and asymptotic are proved independently. Its unnumbered elliptic-curve remark prematurely builds rationality into its definition and unnecessarily excludes real Frobenius roots; an exact 625-pair enumeration gives a counterexample to the latter restriction.
+- **V.27:** The converse requires positive degree in the final variable. The note retains the printed wording and gives the counterexample in which an irreducible polynomial becomes a fraction-field unit.
+- **V.29:** The literal printed exponent pair must be made primitive and given the kernel signs. The note computes the Laurent kernel and supplies a counterexample to using nonprimitive exponents unchanged.
+- **V.30:** The source explicitly calls this Artin conjecture unknown. The note records the conjectural boundary and proves only degree-one and degree-two cases, naming the quadratic cyclotomic input.
+- **V.31–V.32:** Root-sequence and partial-fraction assertions require a field containing the characteristic roots. V.32 prints an extra factor $t$ in $vtX^2$; the recurrence requires $vX^2$. Zero roots and initial-value conventions are handled explicitly.
+- **V.33:** The coefficient indexed by $j$ corresponds to the column for $T^j$, namely column $j+1$ under one-based numbering. Division by a nonzero Vandermonde determinant takes place in a fraction field unless it is a unit.
+- **V.34:** The printed coefficient ring uses $z_1$ instead of $x_1$, one determinant uses $x_n$ instead of $x_d$, and the proof's exponential numerator prints $k+d+1$ instead of $k+d-1$. The note records the source-contained Howe argument and corrects these notational slips visibly.
+- **Chapter V figure audit:** All seven exercise pages were inspected. No numbered exercise depends on a figure or geometric diagram; formulas and determinant matrices are transcribed as searchable mathematics. No attachment was created.
+
 ## Next Archive Target
 
-Chapter V, **Algebraic Extensions**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter VI, **Galois Theory**, is the next archive target. Its complete source-label set and total have not yet been audited.
