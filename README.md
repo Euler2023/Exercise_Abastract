@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-06 (Lang Chapter IV Exercise Archive)
+- Verified: Reconciled all 105 Lang Chapter I-III source labels with current exercise-note provenance; no missing, duplicate, unexpected, or unparsed mappings were found.
+- Added: All 27 Chapter IV exercise notes (R227-R250, F62, LA374-LA375), with complete multipart statements, progressive hints, independent proofs, and the exact exercise-template solution title and subsections; all learning statuses remain `not-started`.
+- Added: Seven prerequisite concepts on derivations, resultants, Mason-Stothers, abc/Szpiro, integer-valued polynomials, lambda/gamma operations, and Bernoulli polynomials, with dynamic exercise backlinks and links from the existing topic hubs.
+- Verified: Reconciled all 27 Chapter IV labels with the original exercise pages (printed pp. 213-219 / PDF pp. 228-234); missing, duplicate, unexpected, and unparsed mappings are all zero. Metadata, exact template structure, multipart coverage, page anchors, links, formula delimiters, and tracker discovery pass. Source issues and conditional-proof boundaries remain visible in the notes.
+- Updated: Marked Chapter IV complete in the Lang archive, bringing Chapters I-IV to 132 verified source exercises; removed the temporary plan and source renders, and set Chapter V as the next unaudited target.
+
 ### 2026-08-30 (Heisenberg Group Concept)
 - Added: A source-grounded Heisenberg group concept note covering the matrix model, group law, commutators, center, quotient, class-$2$ nilpotence, and Lie algebra perspective, with related exercises discovered through Dataview.
 - Updated: Linked Exercise G95 and the Group Theory Hub to the new concept, reclassified G95 as intermediate, and recorded Hall's terminology alongside Artin's exercise provenance.

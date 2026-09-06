@@ -97,6 +97,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 165-172 / PDF pp. 180-187",
   }],
+  ["IV", {
+    covered: 27,
+    total: 27,
+    status: "Complete",
+    pages: "printed pp. 213-219 / PDF pp. 228-234",
+  }],
 ]);
 
 const rows = [];
@@ -141,7 +147,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | I | Groups | All 57 exercises I.1-I.57; printed pp. 75-82 / PDF pp. 90-97 | Complete; 46 new notes and 11 existing cross-source notes |
 | II | Rings | All 19 exercises II.1-II.19; printed pp. 114-116 / PDF pp. 129-131 | Complete; 18 Ring Theory notes and 1 Group Theory note |
 | III | Modules | All 29 exercises III.1-III.29; printed pp. 165-172 / PDF pp. 180-187 | Complete; 27 new notes and 2 existing cross-source notes |
-| IV | Polynomials | Pending source-total audit | Not archived |
+| IV | Polynomials | All 27 exercises IV.1-IV.27; printed pp. 213-219 / PDF pp. 228-234 | Complete; 24 Ring Theory notes, 1 Field Theory note, and 2 Linear Algebra and Modules notes |
 | V | Algebraic Extensions | Pending source-total audit | Not archived |
 | VI | Galois Theory | Pending source-total audit | Not archived |
 | VII | Extensions of Rings | Pending source-total audit | Not archived |
@@ -169,12 +175,19 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | I | I.1-I.57 | printed pp. 75-82 / PDF pp. 90-97 | 57 | 0 | 0 | 0 | 0 | Complete |
 | II | II.1-II.19 | printed pp. 114-116 / PDF pp. 129-131 | 19 | 0 | 0 | 0 | 0 | Complete |
 | III | III.1-III.29 | printed pp. 165-172 / PDF pp. 180-187 | 29 | 0 | 0 | 0 | 0 | Complete |
+| IV | IV.1-IV.27 | printed pp. 213-219 / PDF pp. 228-234 | 27 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
 Chapter II was reconciled against the ordered source labels on all three exercise pages. Every source exercise has exactly one parsed note mapping: 18 are routed to Ring Theory and II.8 is routed to Group Theory because finite-group structure supplies its primary computational toolkit. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
 
 Chapter III was reconciled against the ordered labels III.1-III.29 on all eight exercise pages. Every source exercise has exactly one parsed note mapping: the archive adds 27 notes—22 in Linear Algebra and Modules, 3 in Ring Theory, 1 in Group Theory, and 1 in Representation Theory—and reuses 2 existing cross-source notes. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
+
+On 2026-09-06, the current source metadata was rechecked for Chapters I-III: 105 distinct source labels have exactly one note mapping each, with no missing, duplicate, unexpected, or unparsed Lang exercise locators. This is a provenance reconciliation, not a fresh audit of all existing solutions.
+
+Chapter IV was reconciled on 2026-09-06 against the ordered source labels IV.1-IV.27 on all seven exercise pages, printed pp. 213-219 / PDF pp. 228-234. Every numbered exercise has exactly one note mapping: 24 in Ring Theory, IV.10 in Field Theory, and IV.16 and IV.19 in Linear Algebra and Modules. The reconciliation found no missing, duplicate, unexpected, or unparsed labels. Seven prerequisite concept notes are linked from the exercises and the existing topic hubs, with dynamic exercise backlinks. All 27 notes follow the exercise template and retain learning status `not-started`.
+
+Chapters I-IV now cover **132 verified source exercises** (57 + 19 + 29 + 27). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries were checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -244,6 +257,28 @@ dv.table(
 );
 ```
 
+### Chapter IV — Polynomials
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*IV\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["IV." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -261,6 +296,17 @@ dv.table(
 - **III.29(a):** The printed $x_{nn}$ is impossible for a strictly upper-triangular matrix; the note preserves it and uses the intended last-diagonal entry $x_{1n}$.
 - **Chapter III figure audit:** The diagrams required by III.14, III.15, III.18(a), and III.26 are preserved as verified direct crops in `Attachments/lang-algebra-3e-ch03-ex14-snake-diagram.png`, `Attachments/lang-algebra-3e-ch03-ex15-five-lemma-diagram.png`, `Attachments/lang-algebra-3e-ch03-ex18-inverse-module-system.png`, and `Attachments/lang-algebra-3e-ch03-ex26-hom-limit-diagram.png`.
 
+- **IV.9:** The printed classification omits the requirement to fix the coefficient ring. The note supplies a coefficient-conjugation counterexample and proves the intended algebra-automorphism statement.
+- **IV.11(c):** The logarithmic derivative requires the printed scalar $c$ to be nonzero.
+- **IV.13:** The exercise omits nonconstant and nonzero boundaries needed for its degree bounds. The note gives counterexamples to the unrestricted versions and proves the corrected statements. The chapter prints a weaker Davenport bound with $-1$ on printed p. 195 / PDF p. 210, while IV.13(a) prints the stronger $+1$ bound; the solution proves the exercise's version.
+- **IV.14-IV.15:** These are conditional implications under the specified generalized Szpiro or abc hypothesis. The scaled Frey polynomial in the supporting text, printed p. 199 / PDF p. 214, has a sign inconsistent with its claimed discriminant; IV.14 visibly corrects that sign. No unconditional conjecture or prime-infinitude claim is made.
+- **IV.16:** The estimate includes nonzero constant polynomials. The note handles them explicitly and states the empty-determinant and $0^0$ convention when both degrees are zero.
+- **IV.17:** The displayed product ends at $b_{d-1}$ although the preceding line defines only $b_1,\ldots,b_{d-2}$ and requires degree $d$. The note preserves the printed product and uses the corrected endpoint $b_{d-2}$.
+- **IV.19-IV.20:** IV.19's printed degree threshold $n(n-1)$ is preserved; the solution establishes the stronger $n(n-1)/2$ bound. IV.20 prints a monomial ending at $a_n$ although $f$ ends at $a_m$; its coefficient range is visibly clarified.
+- **IV.21-IV.24:** The printed additive lambda axioms do not impose $\lambda_t(1)=1+t$. IV.23(b)-(c) and IV.24 require that additional normalization. The notes provide an explicit formal-exponential counterexample and prove the normalized statements.
+- **IV.26-IV.27:** The notes make the index ranges for the leading-two-terms and division-by-$k$ formulas explicit. IV.27's unspecified value ring is taken to be a commutative $\mathbb Q$-algebra, so its factorial and period denominators are defined.
+- **Chapter IV figure audit:** No exercise depends on a source figure, diagram, or labeled geometric configuration; no attachment was created. Temporary source-page renders were removed after checking.
+
 ## Next Archive Target
 
-Chapter IV, **Polynomials**, is the next unaudited chapter.
+Chapter V, **Algebraic Extensions**, is the next archive target. Its complete source-label set and total have not yet been audited.
