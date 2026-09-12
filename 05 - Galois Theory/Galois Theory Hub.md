@@ -20,6 +20,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[05 - Galois Theory/Concepts/Fixed Fields|Fixed Fields]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
+- [[05 - Galois Theory/Concepts/Cyclic Extensions|Cyclic Extensions]]
 
 ### The Fundamental Theorem
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Fundamental Theorem of Galois Theory]]
@@ -36,6 +37,9 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
 - [[05 - Galois Theory/Concepts/Quartic Resolvents and Galois Groups|Quartic Resolvents and Galois Groups]]
 - [[05 - Galois Theory/Concepts/Square Classes and Multiquadratic Extensions|Square Classes and Multiquadratic Extensions]]
+- [[05 - Galois Theory/Concepts/Normal Basis Theorem|Normal Basis Theorem]]
+- [[05 - Galois Theory/Concepts/Infinite Galois Extensions and Krull Topology|Infinite Galois Extensions and Krull Topology]]
+- [[05 - Galois Theory/Concepts/Witt Vectors and Artin-Schreier-Witt Theory|Witt Vectors and Artin-Schreier-Witt Theory]]
 
 ## The Big Picture
 

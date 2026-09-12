@@ -251,6 +251,7 @@ or $\sigma(\alpha)=\alpha+1$. It follows that $\alpha^p-\alpha\in k$, producing 
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Cyclic Extensions|Cyclic Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 - [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]

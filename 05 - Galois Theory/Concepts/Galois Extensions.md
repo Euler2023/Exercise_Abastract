@@ -86,6 +86,7 @@ status: not-started
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Cyclic Extensions|Cyclic Extensions]]
 - [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
 - [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]

@@ -34,8 +34,8 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
+- [[05 - Galois Theory/Concepts/Cyclic Extensions|Cyclic Extensions]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
-- [[Finite Fields Galois]]
 
 ## Notes
 

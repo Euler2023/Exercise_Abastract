@@ -109,6 +109,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 213-219 / PDF pp. 228-234",
   }],
+  ["VI", {
+    covered: 51,
+    total: 51,
+    status: "Complete",
+    pages: "printed pp. 320-332 / PDF pp. 335-347",
+  }],
 ]);
 
 const rows = [];
@@ -155,7 +161,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | III | Modules | All 29 exercises III.1-III.29; printed pp. 165-172 / PDF pp. 180-187 | Complete; 27 new notes and 2 existing cross-source notes |
 | IV | Polynomials | All 27 exercises IV.1-IV.27; printed pp. 213-219 / PDF pp. 228-234 | Complete; 24 Ring Theory notes, 1 Field Theory note, and 2 Linear Algebra and Modules notes |
 | V | Algebraic Extensions | All 34 exercises V.1-V.34; printed pp. 253-259 / PDF pp. 268-274 | Complete; 33 new notes and 1 reused note; V.30 retains conjectural proof status |
-| VI | Galois Theory | Pending source-total audit | Not archived |
+| VI | Galois Theory | All 51 exercises VI.1-VI.51; printed pp. 320-332 / PDF pp. 335-347 | Complete; 51 new Galois Theory notes |
 | VII | Extensions of Rings | Pending source-total audit | Not archived |
 | VIII | Transcendental Extensions | Pending source-total audit | Not archived |
 | IX | Algebraic Spaces | Pending source-total audit | Not archived |
@@ -183,6 +189,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | III | III.1-III.29 | printed pp. 165-172 / PDF pp. 180-187 | 29 | 0 | 0 | 0 | 0 | Complete |
 | IV | IV.1-IV.27 | printed pp. 213-219 / PDF pp. 228-234 | 27 | 0 | 0 | 0 | 0 | Complete |
 | V | V.1-V.34 | printed pp. 253-259 / PDF pp. 268-274 | 34 | 0 | 0 | 0 | 0 | Complete |
+| VI | VI.1-VI.51 | printed pp. 320-332 / PDF pp. 335-347 | 51 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -196,7 +203,9 @@ Chapter IV was reconciled on 2026-09-06 against the ordered source labels IV.1-I
 
 Chapter V was reconciled on 2026-09-06 against all 34 labels V.1-V.34, verified on printed pp. 253-259 / PDF pp. 268-274 before note creation. Every label has exactly one parsed note mapping: 25 in Field Theory (24 new notes and the reused F24), 4 in Ring Theory, 4 in Linear Algebra and Modules, and 1 in Arithmetic Geometry. The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. The three new prerequisite concepts have dynamic exercise backlinks and are linked from their topic hubs. All 34 exercise notes retain learning status `not-started`. V.30 is archived as a conjecture with proved low-degree special cases, and V.34 distinguishes its source-contained argument from independently supplied details.
 
-Chapters I-V now cover **166 verified source exercises** (57 + 19 + 29 + 27 + 34). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries were checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
+Chapter VI was reconciled on 2026-09-12 against all 51 labels VI.1-VI.51, verified on printed pp. 320-332 / PDF pp. 335-347 before note creation. Every numbered exercise has exactly one parsed note mapping in Galois Theory (Exercise Gal85 to Exercise Gal135). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Three prerequisite concept notes (Normal Basis Theorem, Infinite Galois Extensions and Krull Topology, and Witt Vectors and Artin-Schreier-Witt Theory) have dynamic exercise backlinks and are linked from Galois Theory Hub. All 51 exercise notes retain learning status `not-started`.
+
+Chapters I-VI cover **217 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -310,6 +319,28 @@ dv.table(
 );
 ```
 
+### Chapter VI — Galois Theory
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*VI\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["VI." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -348,6 +379,8 @@ dv.table(
 - **V.34:** The printed coefficient ring uses $z_1$ instead of $x_1$, one determinant uses $x_n$ instead of $x_d$, and the proof's exponential numerator prints $k+d+1$ instead of $k+d-1$. The note records the source-contained Howe argument and corrects these notational slips visibly.
 - **Chapter V figure audit:** All seven exercise pages were inspected. No numbered exercise depends on a figure or geometric diagram; formulas and determinant matrices are transcribed as searchable mathematics. No attachment was created.
 
+- **Chapter VI figure audit:** All thirteen exercise pages (printed pp. 320–332 / PDF pp. 335–347) were inspected via direct high-resolution PDF page renders. No exercise depends on a source figure, diagram, or labeled geometric configuration; all equations, tables, and polynomials are transcribed as searchable LaTeX/Markdown. No image attachment is required.
+
 ## Next Archive Target
 
-Chapter VI, **Galois Theory**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter VII, **Extensions of Rings**, is the next archive target. Its complete source-label set and total have not yet been audited.

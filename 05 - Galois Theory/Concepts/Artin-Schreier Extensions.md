@@ -258,6 +258,7 @@ In characteristic $p$, the polynomial $X^p-a$ has derivative zero and cannot des
 
 ## Related Concepts
 
+- [[05 - Galois Theory/Concepts/Cyclic Extensions|Cyclic Extensions]]
 - [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
 - [[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]

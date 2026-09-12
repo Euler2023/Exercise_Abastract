@@ -78,6 +78,22 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-12 (Cyclic Extensions Concept Note & Vault Integration)
+- Added: Created foundational concept note [`Cyclic Extensions`](file:///e:/project/leandojo/exercise_abstract/05%20-%20Galois%20Theory/Concepts/Cyclic%20Extensions.md) in `05 - Galois Theory/Concepts/`, covering formal definition, Jordan–Hölder building-block role in solvable Galois theory, classifications via Kummer theory ($\boldsymbol{\mu}_n \subset k$), Artin–Schreier theory ($\operatorname{char} k = p$), Artin–Schreier–Witt theory ($p^m$), finite fields (Frobenius automorphism), Kronecker–Weber for abelian number fields, cohomological characterization via Hilbert 90, normal basis theorem, examples, and non-examples.
+- Linked: Added `Cyclic Extensions` under `Foundations` in `05 - Galois Theory/Galois Theory Hub.md`, linked to related concept notes (`Galois Extensions`, `Hilbert's Theorem 90`, `Kummer Extensions`, `Artin-Schreier Extensions`), and connected relevant exercise notes (`Exercise Gal67`, `Gal88`, `Gal90`, `Gal109`, `Gal110`, `Gal111`, `Gal113`, `Gal114`, `Gal134`) so that the dynamic Dataview query discovers them.
+
+### 2026-09-12 (Lang Chapter VI Exercise Archive Complete: Exercises VI.1–VI.51)
+- Added: Completed archiving all 51 numbered exercises VI.1–VI.51 from Serge Lang's *Algebra* (rev. 3rd ed.), Ch. VI (*Galois Theory*), printed pp. 320–332 / PDF pp. 335–347, as 51 new exercise notes `Exercise Gal85` through `Exercise Gal135` in `05 - Galois Theory/Exercises/`.
+- Added: Three prerequisite concept notes—`Normal Basis Theorem`, `Infinite Galois Extensions and Krull Topology`, and `Witt Vectors and Artin-Schreier-Witt Theory`—in `05 - Galois Theory/Concepts/` with definitions, detailed theorems, dynamic Dataview exercise backlinks, and integrated links in `Galois Theory Hub.md`.
+- Fixed: Audited and repaired all `Related Concepts` Wikilinks across all 51 Chapter VI exercise notes (including `Exercise Gal124`, `Exercise Gal114`–`Gal134`, and `Gal95`–`Gal97`), converting bare or non-existent concept targets to exact path-qualified vault concept notes (e.g., `[[05 - Galois Theory/Concepts/Kummer Extensions|Kummer Extensions]]`, `[[05 - Galois Theory/Concepts/Cyclotomic Extensions|Cyclotomic Extensions]]`, `[[05 - Galois Theory/Concepts/Solvability by Radicals|Solvability by Radicals]]`, `[[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]`). This ensures concept note Dataview tables (`WHERE contains(file.outlinks, this.file.link)`) discover all prerequisite exercises automatically.
+- Verified: Complete 1-to-1 provenance reconciliation across all 13 exercise pages (51/51 covered, 0 missing, 0 duplicate, 0 unexpected, 0 unparsed). Every note features full multipart problem statements, progressive collapsible hints, rigorous derivations, strictly balanced Obsidian math delimiters (`$...$` and `$$...$$` with zero forbidden LaTeX document delimiters), valid frontmatter, and learning status `not-started`.
+- Updated: Reconciled and marked Chapter VI `Complete` in `00 - Home/Lang Algebra Exercise Archive.md`, bringing total verified coverage across Chapters I–VI to **217 exercises** (57 + 19 + 29 + 27 + 34 + 51). Cleaned up temporary page renders.
+
+### 2026-09-12 (Lang Chapter VI Source Audit)
+- Audited: Inspected all thirteen exercise pages of Serge Lang's *Algebra* (rev. 3rd ed.), Chapter VI, *Galois Theory*, via direct high-resolution PDF page renders (printed pp. 320–332 / PDF pp. 335–347).
+- Scoped: Registered the exact ordered source-label set of 51 exercises (VI.1–VI.51) in `00 - Home/Lang Algebra Exercise Archive.md`, confirming that Exercise 11 is printed as Arabic numeral 11 and that all thirteen pages contain zero figure-dependent tasks.
+- Planned: Formulated topic routing across Galois Theory (`Gal85`+), Field Theory (`F87`+), and Ring Theory (`R255`+), with required prerequisite concepts for infinite Galois extensions with Krull topology and Witt vectors / Artin–Schreier–Witt theory.
+
 ### 2026-09-06 (Lang Chapter V Exercise Archive)
 - Added: Archived all 34 exercises V.1-V.34 from Lang's Algebra, revised third edition, printed pp. 253-259 / PDF pp. 268-274: 33 new notes (F63-F86, R251-R254, LA376-LA379, AG17) and the reused F24.
 - Added: Three prerequisite concepts—purely inseparable extensions, Vandermonde interpolation, and C1 fields—with topic-hub links and dynamic exercise backlinks.

@@ -88,6 +88,7 @@ graph TD
 - [[01 - Group Theory/Concepts/Group Definition|Group Definition]]
 - [[01 - Group Theory/Concepts/Subgroups|Subgroups]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
+- [[Cyclic Extensions|Cyclic Extension]]
 
 ## Exercises
 
