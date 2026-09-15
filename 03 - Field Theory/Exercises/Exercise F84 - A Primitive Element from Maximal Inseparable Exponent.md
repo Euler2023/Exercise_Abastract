@@ -28,9 +28,9 @@ created: 2026-09-06
 > [!hint]- Hint 2
 > Write $S=k(\beta)$ and choose $c\in k$ so that $(\alpha+c\beta)^{p^r}$ generates $S$.
 
-## Solution
+## Solution 
 
-> [!success]- Solution and proof status
+> [!success]- Solution 
 > Let $S$ be the subfield of elements of $E$ separable over $k$. Lang's decomposition theorem says $S/k$ is finite separable, $E/S$ is purely inseparable, and
 > $$
 > [E:S]=[E:k]_i=p^r.

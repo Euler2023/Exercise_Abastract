@@ -115,6 +115,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 320-332 / PDF pp. 335-347",
   }],
+  ["VII", {
+    covered: 12,
+    total: 12,
+    status: "Complete",
+    pages: "printed pp. 352-354 / PDF pp. 367-369",
+  }],
 ]);
 
 const rows = [];
@@ -162,7 +168,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | IV | Polynomials | All 27 exercises IV.1-IV.27; printed pp. 213-219 / PDF pp. 228-234 | Complete; 24 Ring Theory notes, 1 Field Theory note, and 2 Linear Algebra and Modules notes |
 | V | Algebraic Extensions | All 34 exercises V.1-V.34; printed pp. 253-259 / PDF pp. 268-274 | Complete; 33 new notes and 1 reused note; V.30 retains conjectural proof status |
 | VI | Galois Theory | All 51 exercises VI.1-VI.51; printed pp. 320-332 / PDF pp. 335-347 | Complete; 51 new Galois Theory notes |
-| VII | Extensions of Rings | Pending source-total audit | Not archived |
+| VII | Extensions of Rings | All 12 exercises VII.1-VII.12; printed pp. 352-354 / PDF pp. 367-369 | Complete; 6 Ring Theory notes, 4 Linear Algebra and Modules notes, and 2 Galois Theory notes |
 | VIII | Transcendental Extensions | Pending source-total audit | Not archived |
 | IX | Algebraic Spaces | Pending source-total audit | Not archived |
 | X | Noetherian Rings and Modules | Pending source-total audit | Not archived |
@@ -190,6 +196,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | IV | IV.1-IV.27 | printed pp. 213-219 / PDF pp. 228-234 | 27 | 0 | 0 | 0 | 0 | Complete |
 | V | V.1-V.34 | printed pp. 253-259 / PDF pp. 268-274 | 34 | 0 | 0 | 0 | 0 | Complete |
 | VI | VI.1-VI.51 | printed pp. 320-332 / PDF pp. 335-347 | 51 | 0 | 0 | 0 | 0 | Complete |
+| VII | VII.1-VII.12 | printed pp. 352-354 / PDF pp. 367-369 | 12 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -205,7 +212,9 @@ Chapter V was reconciled on 2026-09-06 against all 34 labels V.1-V.34, verified 
 
 Chapter VI was reconciled on 2026-09-12 against all 51 labels VI.1-VI.51, verified on printed pp. 320-332 / PDF pp. 335-347 before note creation. Every numbered exercise has exactly one parsed note mapping in Galois Theory (Exercise Gal85 to Exercise Gal135). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Three prerequisite concept notes (Normal Basis Theorem, Infinite Galois Extensions and Krull Topology, and Witt Vectors and Artin-Schreier-Witt Theory) have dynamic exercise backlinks and are linked from Galois Theory Hub. All 51 exercise notes retain learning status `not-started`.
 
-Chapters I-VI cover **217 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
+Chapter VII was reconciled on 2026-09-15 against all 12 labels VII.1-VII.12, verified on printed pp. 352-354 / PDF pp. 367-369 before note creation. Every numbered exercise has exactly one parsed note mapping: 6 in Ring Theory (`Exercise R255` to `Exercise R260`), 4 in Linear Algebra and Modules (`Exercise LA380` to `Exercise LA383`), and 2 in Galois Theory (`Exercise Gal136` and `Exercise Gal137`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Two prerequisite concept notes (`Integral Ring Extensions and Integrally Closed Domains` and `Decomposition and Inertia Groups`) have dynamic exercise backlinks and are linked from their respective topic hubs. All 12 exercise notes retain learning status `not-started`.
+
+Chapters I-VII cover **229 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -341,6 +350,28 @@ dv.table(
 );
 ```
 
+### Chapter VII — Extensions of Rings
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!/Ch\.\s*VII\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["VII." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -381,6 +412,11 @@ dv.table(
 
 - **Chapter VI figure audit:** All thirteen exercise pages (printed pp. 320–332 / PDF pp. 335–347) were inspected via direct high-resolution PDF page renders. No exercise depends on a source figure, diagram, or labeled geometric configuration; all equations, tables, and polynomials are transcribed as searchable LaTeX/Markdown. No image attachment is required.
 
+- **Chapter VII figure audit:** All three exercise pages (printed pp. 352–354 / PDF pp. 367–369) were inspected. No exercise depends on a source figure, diagram, or labeled geometric configuration; all equations, lattices, and polynomials are transcribed as searchable LaTeX/Markdown. No image attachment is required.
+- **VII.4:** The map embeds $\mathfrak o_L$ into Euclidean space via conjugates $\alpha \mapsto (\sigma_1(\alpha), \dots, \sigma_n(\alpha))$; the finiteness of elements in bounded regions deduces that $\mathfrak o_L$ is a free $\mathbb Z$-module of rank $n$.
+- **VII.5:** The map $l: U \to \mathbb R^n$ maps $u \mapsto (\log |\sigma_1(u)|, \dots, \log |\sigma_n(u)|)$; its kernel is the finite cyclic group of roots of unity in $E$, and the image is a discrete subgroup of $\mathbb R^n$, proving $U$ is a finitely generated abelian group.
+- **VII.10(b):** The printed condition 'divisible by at least two primes' holds for all $n \ge 6$ that are not prime powers; the unit property follows from $\Phi_n(1) = 1$.
+
 ## Next Archive Target
 
-Chapter VII, **Extensions of Rings**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter VIII, **Transcendental Extensions**, is the next archive target. Its complete source-label set and total have not yet been audited.

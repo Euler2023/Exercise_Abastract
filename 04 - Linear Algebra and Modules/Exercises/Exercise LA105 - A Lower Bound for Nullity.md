@@ -2,13 +2,13 @@
 title: "Exercise LA105: A Lower Bound for Nullity"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - rank-nullity
   - homogeneous-systems
-source: "Michael Artin, Algebra, 2nd ed., Ch. 4, §1, Ex. 1.3, printed p. 125, PDF p. 137"
+source: Michael Artin, Algebra, 2nd ed., Ch. 4, §1, Ex. 1.3, printed p. 125, PDF p. 137
 created: 2026-08-23
 ---
 

@@ -2,14 +2,14 @@
 title: "Exercise G68: Solution Sets as Additive Cosets"
 topic: group-theory
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - group-theory
   - cosets
   - linear-systems
   - additive-groups
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.2, printed p. 72, PDF p. 84"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.2, printed p. 72, PDF p. 84
 created: 2026-08-23
 ---
 

@@ -11,7 +11,7 @@ tags:
 ## Random Review
 
 <!-- exercise-manager:exercises:start -->
-1. [ ] [[05 - Galois Theory/Exercises/Exercise Gal19 - Counting Intermediate Fields for C2 Times C12|Exercise Gal19: Counting Intermediate Fields for C2 x C12]] <!-- exercise-manager:unit 603166fa2053b89e2cd534649ed85563995567fa68ba3498812e5eec648c58c8 -->
+1. [x] [[05 - Galois Theory/Exercises/Exercise Gal19 - Counting Intermediate Fields for C2 Times C12|Exercise Gal19: Counting Intermediate Fields for C2 x C12]] <!-- exercise-manager:unit 603166fa2053b89e2cd534649ed85563995567fa68ba3498812e5eec648c58c8 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Section 7, Ex. 7.2, printed p. 507, PDF p. 519
 
@@ -23,16 +23,33 @@ tags:
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.10, printed p. 510, PDF p. 522
 
    > [!question] Exercise 10.10
-   > For the eigenvectors $\gamma_i=\alpha_1+\zeta^i\alpha_2+\cdots+\zeta^{(p-1)i}\alpha_p$, prove at least one $\gamma_i\ne0$.
+   > With regard to the eigenvector $\gamma$ described at the end of Section 16.11, show that at least one of the elements $\gamma_i = \alpha_1 + \zeta^i \alpha_2 + \cdots + \zeta^{(p-1)i}\alpha_p$ isn't zero.
+   
+   > [!info] Relevant Text from Section 16.11 (Kummer Extensions, printed pp. 500–501, PDF pp. 512–513)
+   > **Setting (Theorem 16.11.1):**
+   > Let $F$ be a subfield of $\mathbb{C}$ that contains the $p$th root of unity $\zeta = e^{2\pi i/p}$ ($p$ prime), and let $K/F$ be a Galois extension of degree $p$.
+   > We view $K$ as a vector space over $F$, and a generator $\sigma$ of the cyclic Galois group $G(K/F)$ as a linear operator on $K$. Since $\sigma^p = 1$, any eigenvalue $\lambda$ of $\sigma$ satisfies $\lambda^p = 1$, so $\lambda$ is a power of $\zeta$.
+   >
+   > **Construction of the Eigenvector $\beta$ (Artin, p. 501, formula 16.11.3):**
+   > > "With notation as in Theorem 16.11.1, say that $K$ is the splitting field over $F$ of an irreducible polynomial $f$ of degree $p$. There is a simple expression in the roots of $f$ that often yields an eigenvector for the operator $\sigma$. The permutation of the roots $\alpha_1, \dots, \alpha_p$ of $f$ that is defined by $\sigma$ will be cyclic, so if we number the roots appropriately, $\sigma$ will be the permutation $(1\, 2\, \cdots\, p)$. Let $\lambda$ be an eigenvalue of $\sigma$, and let
+   > > > $$
+   > > > \beta = \alpha_1 + \lambda \alpha_2 + \cdots + \lambda^{p-1}\alpha_p. \tag{16.11.3}
+   > > > $$
+   > > Then $\sigma(\beta) = \alpha_2 + \lambda \alpha_3 + \cdots + \lambda^{p-2}\alpha_p + \lambda^{p-1}\alpha_1 = \lambda^{-1}\beta$. So unless $\beta$ happens to be zero, it will be an eigenvector with eigenvalue $\lambda^{-1}$."
+   >
+   > In Exercise 10.10, Artin labels these elements $\gamma$ (or $\gamma_i$), corresponding to setting the eigenvalue parameter $\lambda = \zeta^i$ for $i = 0, 1, \dots, p-1$:
+   > > $$
+   > > \gamma_i = \alpha_1 + \zeta^i \alpha_2 + \cdots + \zeta^{(p-1)i}\alpha_p.
+   > > $$
 
-3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA36 - Solution Set of One Linear Equation|Exercise LA36: Solution Set of One Linear Equation]] <!-- exercise-manager:unit 2d33d81902fff7c488c791b9126760b61f1cd0245309ed914129a7798ded0fa1 -->
+3. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA36 - Solution Set of One Linear Equation|Exercise LA36: Solution Set of One Linear Equation]] <!-- exercise-manager:unit 2d33d81902fff7c488c791b9126760b61f1cd0245309ed914129a7798ded0fa1 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 2, Ex. 2.3, printed p. 32, PDF p. 44
 
    > [!question] Exercise 2.3
    > Find all solutions of $x_1+x_2+2x_3-x_4=3$.
 
-4. [ ] [[01 - Group Theory/Exercises/Exercise G68 - Solution Sets as Additive Cosets|Exercise G68: Solution Sets as Additive Cosets]] <!-- exercise-manager:unit 93762b42e4534ccf64c1655c28e79033382ef8ae83084cce8bd51a7746ba61b9 -->
+4. [x] [[01 - Group Theory/Exercises/Exercise G68 - Solution Sets as Additive Cosets|Exercise G68: Solution Sets as Additive Cosets]] <!-- exercise-manager:unit 93762b42e4534ccf64c1655c28e79033382ef8ae83084cce8bd51a7746ba61b9 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.2, printed p. 72, PDF p. 84
 

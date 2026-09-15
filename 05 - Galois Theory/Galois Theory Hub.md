@@ -40,6 +40,7 @@ Galois theory establishes a profound connection between field extensions and gro
 - [[05 - Galois Theory/Concepts/Normal Basis Theorem|Normal Basis Theorem]]
 - [[05 - Galois Theory/Concepts/Infinite Galois Extensions and Krull Topology|Infinite Galois Extensions and Krull Topology]]
 - [[05 - Galois Theory/Concepts/Witt Vectors and Artin-Schreier-Witt Theory|Witt Vectors and Artin-Schreier-Witt Theory]]
+- [[05 - Galois Theory/Concepts/Decomposition and Inertia Groups|Decomposition and Inertia Groups]]
 
 ## The Big Picture
 
