@@ -26,8 +26,13 @@ created: 2026-08-12
 > Write
 > $$
 > G\cong(C_2\times C_4)\times C_3.
+> |G|=24
 > $$
-> By Galois correspondence, (a) asks for subgroups of index $4$, hence order $6$. Such a subgroup is $C_3$ times an order-two subgroup of $C_2\times C_4$; there are three, so the answer is $3$.
+> By Galois correspondence,  
+> $$L \leftrightarrow H = G(K/L).[L:F] = [G:H].$$
+> Let's denote $A = <a> \cong C_{2}, B=<b>\cong C_{4},C=<3>\cong C_{3}$
+> 
+> (a) $[L:F] = 4 \Rightarrow |H| = \frac{|G|}{|G:H|} = 24/4 = 6$., because $G$ is abelian, thus $H\cong C_{6} \cong C_{2}\times C_{3}$
 >
 > (b) Index $9$ would require a subgroup of order $24/9$, impossible; answer $0$.
 >
@@ -37,7 +42,14 @@ created: 2026-08-12
 
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
 - [[01 - Group Theory/Concepts/Direct Products|Direct Products]]
+- [[Abelian Groups]]
+- [[Cyclic Extensions|Cyclic Extension]]
 
 ## Notes
 
-All subgroup counts are explicit.
+
+1. According  to Fundamental Theorem of Finitely Generated Abelian Groups in [[Abelian Groups]], $C_{12} = C_{4}\times C_{3}$
+
+2. [[Direct Products]]
+> [!abstract] Chinese Remainder Theorem (for groups)
+> $\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ iff $\gcd(m, n) = 1$.

@@ -16,7 +16,7 @@ created: 2026-08-12
 
 ## Problem Statement
 
-> [!question] 2023 Peking University problem
+> [!question] 2023 Peking University doctoral-qualification abstract algebra problem
 > Let
 > $$
 > K=\mathbb Q(\sqrt2,\sqrt{-3},\sqrt[3]5).

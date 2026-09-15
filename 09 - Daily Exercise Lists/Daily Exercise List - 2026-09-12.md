@@ -31,6 +31,22 @@ tags:
 
    > [!question] Exercise 12.3
    > Let $P$ be a partition of $G$ such that the product of any two blocks lies in one block. If $N$ is the block containing $1$, prove $N\triangleleft G$ and $P$ is its coset partition.
+
+4. [ ] [[05 - Galois Theory/Exercises/Exercise Gal70 - Distinguishing C4 and D4 Quartic Groups|Exercise Gal70: Distinguishing C4 and D4 Quartic Groups]] <!-- exercise-manager:unit 068a1f9e522ee1fd20a89dcfe23e35eecd4c0101a5fd41e789a4d016a127db64 -->
+
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.11, printed p. 512, PDF p. 524
+
+   > [!question] Exercise M.11
+   > For an irreducible quartic whose resolvent has $\beta=\alpha_1\alpha_2+\alpha_3\alpha_4\in F$ and nonsquare discriminant, determine the stabilizer of $\beta$; prove $\gamma^2,\epsilon^2\in F$ for $\gamma=\alpha_1\alpha_2-\alpha_3\alpha_4$, $\epsilon=\alpha_1+\alpha_2-\alpha_3-\alpha_4$; and give square tests distinguishing $C_4$ from $D_4$.
+
+5. [ ] [[01 - Group Theory/Exercises/Exercise G40 - Elementary Generators of GLn and SLn|Exercise G40: Elementary Generators of $GL_n$ and $SL_n$]] <!-- exercise-manager:unit 6b3cd65628d1c3d44a69f7705450540f0ea52099070a2d811719ccbd409e931d -->
+
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.8, printed p. 71, PDF p. 83
+
+   > [!question] Exercise 4.8
+   > **(a)** Prove that elementary matrices of the first and third types generate $GL_n(\mathbb R)$.
+   >
+   > **(b)** Prove that first-type elementary matrices generate $SL_n(\mathbb R)$, doing $2\times2$ first.
 <!-- exercise-manager:exercises:end -->
 
 ## Systematic Progress

@@ -1,10 +1,12 @@
 ---
 title: "Exercise Rep75: Irreducible Characters of a Cyclic Group"
 topic: representation-theory
-difficulty: beginner
+difficulty: advanced
 status: not-started
-tags: [exercise, representation-theory]
-source: "Michael Artin, Algebra, 2nd ed., Ch. 10, Section 5, Ex. 5.6, printed p. 318, PDF p. 330"
+tags:
+  - exercise
+  - representation-theory
+source: Michael Artin, Algebra, 2nd ed., Ch. 10, Section 5, Ex. 5.6, printed p. 318, PDF p. 330
 created: 2026-08-27
 ---
 

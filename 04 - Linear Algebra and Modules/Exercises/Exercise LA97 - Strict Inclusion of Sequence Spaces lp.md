@@ -2,14 +2,14 @@
 title: "Exercise LA97: Strict Inclusion $\\ell^p\\subsetneq\\ell^{p+1}$"
 topic: linear-algebra
 difficulty: intermediate
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - sequence-spaces
   - infinite-dimensional-spaces
   - lp-spaces
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 6, Ex. 6.3, printed p. 101, PDF p. 113"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 6, Ex. 6.3, printed p. 101, PDF p. 113
 created: 2026-08-23
 ---
 
