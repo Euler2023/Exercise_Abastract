@@ -1,15 +1,15 @@
 ---
 title: "Exercise LA62: Vandermonde Determinants and Polynomial Interpolation"
 topic: linear-algebra
-difficulty: advanced
-status: not-started
+difficulty: intermediate
+status: completed
 tags:
   - exercise
   - linear-algebra
   - determinants
   - vandermonde
   - polynomial-interpolation
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Miscellaneous Ex. M.7, printed p. 35, PDF p. 47"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Miscellaneous Ex. M.7, printed p. 35, PDF p. 47
 created: 2026-08-23
 ---
 
@@ -65,6 +65,8 @@ created: 2026-08-23
 
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Exercises/Exercise LA9 - Vandermonde Determinant|Exercise LA9: Vandermonde Determinant]]
+- [[Exercise LA276 - Fourier Interpolation and Fourier Eigenvalues]]
+- [[Exercise Gal52 - A Nonzero Fourier Eigenvector]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 
 ## Notes

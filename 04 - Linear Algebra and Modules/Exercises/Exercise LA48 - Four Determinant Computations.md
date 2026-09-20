@@ -2,12 +2,12 @@
 title: "Exercise LA48: Four Determinant Computations"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - determinants
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Section 4, Ex. 4.1, printed p. 33, PDF p. 45"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Section 4, Ex. 4.1, printed p. 33, PDF p. 45
 created: 2026-08-23
 ---
 

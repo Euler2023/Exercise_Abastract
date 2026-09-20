@@ -11,7 +11,7 @@ tags:
 ## Random Review
 
 <!-- exercise-manager:exercises:start -->
-1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA28 - Multiplication by a Diagonal Matrix|Exercise LA28: Multiplication by a Diagonal Matrix]] <!-- exercise-manager:unit 07261a5dd834a055942cdcbd5fa76b1ea9168ae6c47e2234aade528dfa2e5598 -->
+1. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA28 - Multiplication by a Diagonal Matrix|Exercise LA28: Multiplication by a Diagonal Matrix]] <!-- exercise-manager:unit 07261a5dd834a055942cdcbd5fa76b1ea9168ae6c47e2234aade528dfa2e5598 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.10, printed p. 32, PDF p. 44
 
@@ -49,7 +49,7 @@ tags:
    >
    > **(c)** Upper-triangular matrices.
 
-2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA79 - Basis of Symmetric Matrices|Exercise LA79: A Basis of the Symmetric Matrices]] <!-- exercise-manager:systematic-unit 41bb5142ce5075b43ef9d0476d7cf64004c8e854b8e0f71ba1d53bb275d2e9ef -->
+2. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA79 - Basis of Symmetric Matrices|Exercise LA79: A Basis of the Symmetric Matrices]] <!-- exercise-manager:systematic-unit 41bb5142ce5075b43ef9d0476d7cf64004c8e854b8e0f71ba1d53bb275d2e9ef -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 3, Section 3, Ex. 3.1, printed p. 99, PDF p. 111
 

@@ -69,6 +69,7 @@ const sourceExercises = new Map([...unitTitles.keys()].map(unit => [unit, new Se
 
 for (const page of pages) {
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     const unit = parseSourceUnit(segment);
     if (unit !== null) noteFiles.get(unit)?.add(page.file.path);
     const locator = parseExerciseLocator(segment);
@@ -121,6 +122,18 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 352-354 / PDF pp. 367-369",
   }],
+  ["VIII", {
+    covered: 10,
+    total: 10,
+    status: "Complete",
+    pages: "printed pp. 374-375 / PDF pp. 389-390",
+  }],
+  ["IX", {
+    covered: 19,
+    total: 19,
+    status: "Complete",
+    pages: "printed pp. 410-412 / PDF pp. 425-427",
+  }],
 ]);
 
 const rows = [];
@@ -154,7 +167,7 @@ dv.table(
 ```
 
 > [!note] Counting boundary
-> “Archived source exercises” and “Note files” are calculated live from exercise tags and source metadata. “Verified source coverage” is asserted only after the source-label set has been checked against the original PDF and reconciled with parsed note provenance.
+> “Archived source exercises” and “Note files” are calculated live from exercise tags and source metadata. Each semicolon-separated source segment must itself identify this edition of *Algebra*; chapter references belonging to another book on the same note are excluded. “Verified source coverage” is asserted only after the source-label set has been checked against the original PDF and reconciled with parsed note provenance.
 
 Chapter and appendix titles are transcribed from the original contents pages. [S2, Contents, printed pp. xi-xv, PDF pp. 11-15]
 
@@ -169,8 +182,8 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | V | Algebraic Extensions | All 34 exercises V.1-V.34; printed pp. 253-259 / PDF pp. 268-274 | Complete; 33 new notes and 1 reused note; V.30 retains conjectural proof status |
 | VI | Galois Theory | All 51 exercises VI.1-VI.51; printed pp. 320-332 / PDF pp. 335-347 | Complete; 51 new Galois Theory notes |
 | VII | Extensions of Rings | All 12 exercises VII.1-VII.12; printed pp. 352-354 / PDF pp. 367-369 | Complete; 6 Ring Theory notes, 4 Linear Algebra and Modules notes, and 2 Galois Theory notes |
-| VIII | Transcendental Extensions | Pending source-total audit | Not archived |
-| IX | Algebraic Spaces | Pending source-total audit | Not archived |
+| VIII | Transcendental Extensions | All 10 exercises VIII.1-VIII.10; printed pp. 374-375 / PDF pp. 389-390 | Complete; 9 Field Theory notes and 1 Ring Theory note |
+| IX | Algebraic Spaces | All 19 exercises IX.1-IX.19; printed pp. 410-412 / PDF pp. 425-427 | Complete; 19 Ring Theory notes |
 | X | Noetherian Rings and Modules | Pending source-total audit | Not archived |
 | XI | Real Fields | Pending source-total audit | Not archived |
 | XII | Absolute Values | Pending source-total audit | Not archived |
@@ -197,6 +210,8 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | V | V.1-V.34 | printed pp. 253-259 / PDF pp. 268-274 | 34 | 0 | 0 | 0 | 0 | Complete |
 | VI | VI.1-VI.51 | printed pp. 320-332 / PDF pp. 335-347 | 51 | 0 | 0 | 0 | 0 | Complete |
 | VII | VII.1-VII.12 | printed pp. 352-354 / PDF pp. 367-369 | 12 | 0 | 0 | 0 | 0 | Complete |
+| VIII | VIII.1-VIII.10 | printed pp. 374-375 / PDF pp. 389-390 | 10 | 0 | 0 | 0 | 0 | Complete |
+| IX | IX.1-IX.19 | printed pp. 410-412 / PDF pp. 425-427 | 19 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -214,7 +229,13 @@ Chapter VI was reconciled on 2026-09-12 against all 51 labels VI.1-VI.51, verifi
 
 Chapter VII was reconciled on 2026-09-15 against all 12 labels VII.1-VII.12, verified on printed pp. 352-354 / PDF pp. 367-369 before note creation. Every numbered exercise has exactly one parsed note mapping: 6 in Ring Theory (`Exercise R255` to `Exercise R260`), 4 in Linear Algebra and Modules (`Exercise LA380` to `Exercise LA383`), and 2 in Galois Theory (`Exercise Gal136` and `Exercise Gal137`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Two prerequisite concept notes (`Integral Ring Extensions and Integrally Closed Domains` and `Decomposition and Inertia Groups`) have dynamic exercise backlinks and are linked from their respective topic hubs. All 12 exercise notes retain learning status `not-started`.
 
-Chapters I-VII cover **229 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12). The unnumbered Chapter IV closing note continues on printed p. 220 / PDF p. 235 and adds no exercise label. Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
+Chapter VIII was reconciled on 2026-09-15 against all 10 labels VIII.1-VIII.10, verified on printed pp. 374-375 / PDF pp. 389-390 before note creation. Every numbered exercise has exactly one parsed note mapping: 9 in Field Theory (`Exercise F87` to `Exercise F95`) and 1 in Ring Theory (`Exercise R261`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Two prerequisite concept notes (`Transcendence Bases and Transcendence Degree` and `Derivations and Differentials on Fields`) have dynamic exercise backlinks and are linked from Field Theory Hub. All 10 exercise notes retain learning status `not-started`.
+
+Chapter IX was reconciled on 2026-09-15 against all 19 labels IX.1-IX.19, verified on printed pp. 410-412 / PDF pp. 425-427 before note creation. Every numbered exercise has exactly one parsed note mapping in Ring Theory (`Exercise R262` to `Exercise R280`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Three prerequisite concept notes (`Hilbert Nullstellensatz`, `Krull Dimension and Catenarity`, and `Multivariate Resultants and Resultant Systems`) have dynamic exercise backlinks and are linked from Ring Theory Hub. All 19 exercise notes retain learning status `not-started`.
+
+On 2026-09-20, the 29 exercises in Chapters VIII–IX and their five prerequisite concepts were reviewed against the bounded original source pages and revised for proof completeness, hypotheses, signs, source references, and links. Source discrepancies and external proof inputs remain explicit, particularly VIII.6(a), IX.17, and the dimension theorems used in IX.18–19. A fresh provenance reconciliation of Chapters I–IX found 258 distinct exercise labels, each mapped to exactly one note, with all four exception sets empty. The dashboard now filters each source segment separately, preventing references to Lang's *Algebraic Number Theory* from being counted as *Algebra* exercises. All 29 learning statuses remain `not-started`.
+
+Chapters I-IX cover **258 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19). Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -227,6 +248,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*I\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -249,6 +271,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*II\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -271,6 +294,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*III\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -293,6 +317,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*IV\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -315,6 +340,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*V\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -337,6 +363,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*VI\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -359,6 +386,7 @@ const rows = [];
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
   for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
     if (!/Ch\.\s*VII\b/i.test(segment)) continue;
     const match = segment.match(/Exercise\s*(\d+)/i);
     if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
@@ -369,6 +397,52 @@ rows.sort((a, b) => a[0] - b[0]);
 dv.table(
   ["Source exercise", "Archived note", "Learning status", "Difficulty"],
   rows.map(row => ["VII." + row[0], row[1], row[2], row[3]])
+);
+```
+
+### Chapter VIII — Transcendental Extensions
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*VIII\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["VIII." + row[0], row[1], row[2], row[3]])
+);
+```
+
+### Chapter IX — Algebraic Spaces
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*IX\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["IX." + row[0], row[1], row[2], row[3]])
 );
 ```
 
@@ -417,6 +491,19 @@ dv.table(
 - **VII.5:** The map $l: U \to \mathbb R^n$ maps $u \mapsto (\log |\sigma_1(u)|, \dots, \log |\sigma_n(u)|)$; its kernel is the finite cyclic group of roots of unity in $E$, and the image is a discrete subgroup of $\mathbb R^n$, proving $U$ is a finitely generated abelian group.
 - **VII.10(b):** The printed condition 'divisible by at least two primes' holds for all $n \ge 6$ that are not prime powers; the unit property follows from $\Phi_n(1) = 1$.
 
+- **Chapter VIII figure audit:** Both exercise pages (printed pp. 374–375 / PDF pp. 389–390) were inspected via direct high-resolution PDF page renders. No exercise depends on a source figure, diagram, or labeled geometric configuration; all equations, operators, and polynomials are transcribed as searchable LaTeX/Markdown. No image attachment is required.
+- **VIII.2:** The printed text reads "and $L$ is separable over $k$ or $K$ is separable over $k$"; OCR errors turning "$K$" into "1)." are clarified.
+- **VIII.6(a):** The printed target field is $k(y)$, which omits the parameter $u$ appearing in the proposed basis elements. The note preserves that wording, gives a counterexample to the literal formulation, and proves the intended statement over $k_u(y)$.
+- **VIII.8(b):** The definition of a logarithmic derivative presupposes $x\in F$; this implicit condition is stated explicitly.
+- **VIII.9:** The original PDF supports $z_1,\ldots,z_r$; the earlier claim of a printed subscript error was unsupported and has been removed. Proposition 5.5 is located at printed p. 372 / PDF p. 387.
+
+- **Chapter IX figure audit:** All three exercise pages (printed pp. 410–412 / PDF pp. 425–427) were inspected via direct high-resolution PDF page renders. No exercise depends on a source figure, diagram, or labeled geometric configuration; all equations and structures are transcribed as searchable LaTeX/Markdown. No image attachment is required.
+- **IX.1:** Generic point $(x)$ and forms $f_1, \ldots, f_r$; the note proves $V \cap \mathfrak{A} = \{0\} \iff x_i$ integral over $k[f(x)]$ via the homogeneous Nullstellensatz and Chapter VII Theorem 3.7.
+- **IX.5–IX.9 shared setup:** The regularity assumption on $k(x)/k$ printed before Exercise 5 applies throughout this group. It is now repeated in the relevant notes; in IX.9 it supplies $I_0=k$.
+- **IX.11:** Up to a nonzero scalar, the gcd of the chosen resultant system factors as $\prod_j L_u(x^{(j)})^{m_j}$ with positive exponents. These exponents depend on the system: squaring every member doubles them. The exercise alone does not define intrinsic intersection multiplicities.
+- **IX.17:** General localization fractions are allowed. Agreement “as functions” must mean equality in $A_{f_if_j}$ (equality of local sections); pointwise equality in residue fields is insufficient for nonreduced rings. The note preserves the printed wording and records the dual-number counterexample.
+- **IX.18–IX.19 proof boundary:** The revised solutions separately establish maximal-ideal heights and use catenarity for chains with fixed endpoints. Universal catenarity and the dimension formula are explicitly imported from Stacks Tags 00NM and 02IJ. IX.19 also states the characteristic-zero hypothesis implicit in $\mathbf Q(x_1,\ldots,x_n)$.
+
 ## Next Archive Target
 
-Chapter VIII, **Transcendental Extensions**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter X, **Noetherian Rings and Modules**, is the next archive target. Its complete source-label set and total have not yet been audited.

@@ -49,6 +49,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Symmetric Polynomials and Newton Identities|Symmetric Polynomials and Newton Identities]]
 - [[02 - Ring Theory/Concepts/Polynomial Discriminants|Polynomial Discriminants]]
 - [[04 - Linear Algebra and Modules/Concepts/Polynomial Resultants|Polynomial Resultants]]
+- [[02 - Ring Theory/Concepts/Multivariate Resultants and Resultant Systems|Multivariate Resultants and Resultant Systems]]
 - [[02 - Ring Theory/Concepts/Mason-Stothers Theorem|Mason-Stothers Theorem]]
 - [[02 - Ring Theory/Concepts/abc and Generalized Szpiro Conjectures|abc and Generalized Szpiro Conjectures]]
 - [[02 - Ring Theory/Concepts/Partial Fraction Decomposition|Partial Fraction Decomposition]]
@@ -57,6 +58,8 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Dedekind Rings and Fractional Ideals|Dedekind Rings and Fractional Ideals]]
 - [[02 - Ring Theory/Concepts/Integral Ring Extensions and Integrally Closed Domains|Integral Ring Extensions and Integrally Closed Domains]]
 - [[02 - Ring Theory/Concepts/Filtered and Graded Algebras|Filtered and Graded Algebras]]
+- [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
+- [[02 - Ring Theory/Concepts/Krull Dimension and Catenarity|Krull Dimension and Catenarity]]
 
 ## Important Rings
 

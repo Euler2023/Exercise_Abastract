@@ -2,14 +2,14 @@
 title: "Exercise LA78: Three Matrix Subspace Tests"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - subspaces
   - matrix-spaces
   - symmetric-matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 3, Section 2, Ex. 2.2, printed p. 99, PDF p. 111"
+source: Michael Artin, Algebra, 2nd ed., Ch. 3, Section 2, Ex. 2.2, printed p. 99, PDF p. 111
 created: 2026-08-23
 ---
 

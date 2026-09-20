@@ -2,12 +2,12 @@
 title: "Exercise LA19: Reading Matrix Entries"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.1, printed p. 31, PDF p. 43"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.1, printed p. 31, PDF p. 43
 created: 2026-08-23
 ---
 

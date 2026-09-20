@@ -1,0 +1,136 @@
+---
+title: "Exercise R266: Affine Charts of Normal Projective Coordinate Rings"
+topic: ring-theory
+difficulty: intermediate
+status: not-started
+tags:
+  - exercise
+  - ring-theory
+  - commutative-algebra
+  - graded-rings
+  - localization
+  - integrally-closed
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, Exercises, Exercise 5, printed p. 410, PDF p. 425"
+created: 2026-09-15
+---
+
+# Exercise R266: Affine Charts of Normal Projective Coordinate Rings
+
+## Problem Statement
+
+> [!question]
+> For the next exercises, we let $R = k[x] = k[X]/\mathfrak{p}$, where $\mathfrak{p}$ is a homogeneous prime ideal. Then $(x)$ is a homogeneous generic point for a $k$-variety $V$. We let $I$ be the integral closure of $R$ in $k(x)$. We assume for simplicity that $k(x)$ is a regular extension of $k$.
+> 
+> Let $z = \sum c_i x_i$ with $c_i \in k$, and $z \neq 0$. If $k[x]$ is integrally closed, prove that $k[x/z]$ is integrally closed.
+
+## Hints
+
+> [!hint]- Hint 1
+> Note that $z$ is a non-zero homogeneous element of degree $1$ in the graded domain $R = k[x]$.
+> 
+> Consider the localization $R_z = k[x]_z$, obtained by inverting the powers of $z$.
+> Since $R$ is integrally closed, what can you say about the localization $R_z$? (Recall Exercise 3 or standard localization properties).
+
+> [!hint]- Hint 2
+> The ring $R_z$ is naturally a $\mathbf{Z}$-graded ring: if $f$ is homogeneous, then $f/z^m$ has degree $\deg(f)-m$.
+> 
+> What is the degree zero subring $(R_z)_0$? Check that $(R_z)_0 = k[x/z] = k[x_1/z, \ldots, x_n/z]$.
+> 
+> If an element of degree zero in the quotient field is integral over $(R_z)_0$, it is integral over $R_z$. What does the grading tell you about its homogeneous degree?
+
+## Solution
+
+> [!success]- Solution
+> Let $R = k[x] = k[x_1, \ldots, x_n] = k[X]/\mathfrak{p}$ be the coordinate ring of the homogeneous affine variety in the statement, where $\mathfrak{p}$ is a homogeneous prime ideal of $k[X] = k[X_1, \ldots, X_n]$.
+> The ring $R$ is an integral domain equipped with its standard $\mathbf{N}$-grading:
+> $$
+> R = \bigoplus_{m=0}^\infty R_m,
+> $$
+> where $R_m$ consists of the homogeneous elements of degree $m$. In particular, each coordinate $x_i$ has degree $1$, and $R_0 = k$.
+>
+> The linear combination $z = \sum_{i=1}^n c_i x_i$ with $c_i \in k$ is non-zero, so $z \in R_1 \setminus \{0\}$.
+> We are given that $R = k[x]$ is integrally closed in its field of fractions $k(x)$.
+>
+> ### Step 1: Localization at $z$ is Integrally Closed
+>
+> Consider the multiplicative subset $S = \{1, z, z^2, z^3, \ldots\} \subset R$.
+> The localized ring is
+> $$
+> R_z = S^{-1} R = \left\{ \frac{f}{z^m} : f \in R, m \ge 0 \right\} \subset k(x).
+> $$
+> Both $R$ and $R_z$ have the same field of fractions, namely $k(x) = \operatorname{Frac}(R) = \operatorname{Frac}(R_z)$.
+>
+> We know from general localization theory (and Exercise 3) that localization preserves the property of being integrally closed:
+> Let $u \in k(x)$ be integral over $R_z$. Then $u$ satisfies
+> $$
+> u^r + \frac{a_{r-1}}{z^{m_{r-1}}} u^{r-1} + \cdots + \frac{a_0}{z^{m_0}} = 0, \qquad a_j \in R.
+> $$
+> Choosing $M = \max_j m_j$, we multiply through by $z^{Mr}$:
+> $$
+> (z^M u)^r + (z^M \frac{a_{r-1}}{z^{m_{r-1}}}) (z^M u)^{r-1} + \cdots + z^{Mr} \frac{a_0}{z^{m_0}} = 0.
+> $$
+> The coefficient of $(z^Mu)^j$ is $z^{M(r-j)-m_j}a_j$. Its exponent is nonnegative because $r-j\ge1$ and $M\ge m_j$. Thus all coefficients in this monic relation lie in $R$.
+> Thus $z^M u$ is integral over $R$.
+> Since $R$ is integrally closed in $k(x)$, we have $z^M u \in R$, which implies
+> $$
+> u = \frac{z^M u}{z^M} \in R_z.
+> $$
+> Hence, $R_z$ is integrally closed in $k(x)$.
+>
+> ### Step 2: The Degree-Zero Subring is $k[x/z]$
+>
+> The localization $R_z$ carries a natural $\mathbf{Z}$-grading:
+> For a homogeneous element $f \in R_d$, we define the degree of $f/z^m$ to be
+> $$
+> \deg\left(\frac{f}{z^m}\right) = d - m \in \mathbf{Z}.
+> $$
+> Equality of two such nonzero fractions can be checked after multiplication by a power of $z$, so their degrees agree. Every element has a finite decomposition obtained by splitting its numerator into homogeneous pieces. Any finite relation among pieces of distinct degrees, after multiplication by a common power of $z$, is a relation among distinct degrees in $R$, and each piece must vanish. Thus, with $R_e=0$ for $e<0$,
+> $$
+> R_z = \bigoplus_{d \in \mathbf{Z}} (R_z)_d, \qquad (R_z)_d = \left\{ \frac{f}{z^m} : f \in R_{m+d}, m \ge 0 \right\}.
+> $$
+> The degree-zero component is
+> $$
+> (R_z)_0 = \left\{ \frac{f}{z^m} : f \in R_m, m \ge 0 \right\}.
+> $$
+> Since $R_m$ is spanned as a $k$-vector space by monomials of degree $m$ in $x_1, \ldots, x_n$, any element of $(R_z)_0$ is a $k$-linear combination of terms of the form
+> $$
+> \frac{x_1^{i_1} \cdots x_n^{i_n}}{z^m} = \left(\frac{x_1}{z}\right)^{i_1} \cdots \left(\frac{x_n}{z}\right)^{i_n}, \qquad \sum_{j=1}^n i_j = m.
+> $$
+> Therefore, $(R_z)_0$ is precisely the $k$-algebra generated by the ratios $x_1/z, \ldots, x_n/z$:
+> $$
+> (R_z)_0 = k\left[\frac{x}{z}\right] = k\left[\frac{x_1}{z}, \ldots, \frac{x_n}{z}\right].
+> $$
+>
+> Write $A=(R_z)_0=k[x/z]$ and let $K_0$ be its fraction field:
+> $$
+> K_0=\operatorname{Frac}(A)\subseteq k(x).
+> $$
+> Every $u\in K_0$ has a representation $u=a/b$ with $a,b\in(R_z)_0$ and $b\ne0$.
+>
+> ### Step 3: $(R_z)_0 = k[x/z]$ is Integrally Closed in $K_0$
+>
+> Let $u \in K_0$ be an element integral over $k[x/z] = (R_z)_0$.
+> 1. Since $(R_z)_0 \subset R_z$, $u$ is integral over $R_z$.
+> 2. Since $R_z$ is integrally closed in $k(x)$ (by Step 1), and $u \in K_0 \subset k(x)$, we must have
+>    $$
+>    u \in R_z.
+>    $$
+> 3. Choose $a,b\in(R_z)_0$ with $b\ne0$ and $bu=a$. Write the finite graded decomposition $u=\sum_d u_d$ in $R_z$. Because multiplication by $b$ preserves degree, comparison with $a$ gives $bu_d=0$ for every $d\ne0$.
+> 4. The ring $R_z$ is a domain, so $u_d=0$ for $d\ne0$. Therefore
+>    $$
+>    u\in(R_z)_0=k\left[\frac{x}{z}\right].
+>    $$
+>
+> Therefore, $k[x/z]$ is integrally closed in its fraction field $K_0$.
+
+## Related Concepts
+
+- [[02 - Ring Theory/Concepts/Integral Ring Extensions and Integrally Closed Domains|Integral Ring Extensions and Integrally Closed Domains]]
+- [[02 - Ring Theory/Concepts/Filtered and Graded Algebras|Filtered and Graded Algebras]]
+- [[02 - Ring Theory/Concepts/Localization and Laurent Polynomials|Localization and Laurent Polynomials]]
+- [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
+
+## Notes
+
+- **Geometric significance:** The integral closedness of $R$ means that the affine cone $\operatorname{Spec}R$ is normal. Its vertex is not a point of $\operatorname{Proj}R$. The exercise proves that the linear standard affine charts $D_+(z)=\operatorname{Spec}(k[x/z])$ of $\operatorname{Proj}R$ are normal.
+- **Independent derivation and source scope:** The shared setup and Exercise 5 are checked at [S2, Ch. IX, printed p. 410, PDF p. 425]. The clearing-denominators argument proves localization preserves integral closedness, and degree comparison proves $(R_z)_0$ is integrally closed in its own fraction field. No grading on the entire field $k(x)$ is assumed.

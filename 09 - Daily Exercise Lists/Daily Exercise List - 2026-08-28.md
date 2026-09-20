@@ -25,7 +25,7 @@ tags:
    > [!question] Exercise 8.9
    > For a finite group $G$, determine when $\varphi(x)=x^2$ is an automorphism.
 
-3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA45 - When a Product of Symmetric Matrices Is Symmetric|Exercise LA45: When a Product of Symmetric Matrices Is Symmetric]] <!-- exercise-manager:unit a82ff1a63e30baa5d39c430ec4681d4656afc38824286e09de0d74f89b7c04a1 -->
+3. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA45 - When a Product of Symmetric Matrices Is Symmetric|Exercise LA45: When a Product of Symmetric Matrices Is Symmetric]] <!-- exercise-manager:unit a82ff1a63e30baa5d39c430ec4681d4656afc38824286e09de0d74f89b7c04a1 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 3, Ex. 3.2, printed p. 33, PDF p. 45
 

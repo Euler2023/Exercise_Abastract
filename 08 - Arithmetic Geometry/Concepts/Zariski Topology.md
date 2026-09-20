@@ -20,7 +20,7 @@ status: not-started
 ## Definition
 
 > [!info] Definition
-> Let $A$ be a commutative ring. For an ideal $mathfrak a\subseteq A$, put
+> Let $A$ be a commutative ring. For an ideal $\mathfrak{a}\subseteq A$, put
 > $$
 > V(\mathfrak a)=\{\mathfrak p\in\operatorname{Spec}(A):\mathfrak a\subseteq\mathfrak p\}.
 > $$

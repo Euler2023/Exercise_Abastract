@@ -74,7 +74,7 @@ Even when a note contains a full solution, keep its learning status as `not-star
 ## 6. Textbooks and Mathematical Sources
 
 - When the user names Artin, Lang, or another local mathematics source, use the applicable mathematics skill and resolve the original PDF through that skill's source ledger.
-- Exact exercises, definitions, formulas, theorems, figures, and page citations must be checked against a bounded slice of the original PDF. OCR is a search aid, not an authoritative source.
+- Exact exercises, definitions, formulas, theorems, figures, and page citations must be checked against a bounded slice of the original PDF. OCR is a search aid, not an authoritative source. Use TeX Live's `pdftoppm` utility (e.g. `pdftoppm -png -r 200 -f <first> -l <last> <pdf> <scratch_prefix>`) to export high-resolution single-page PNG images to the scratch directory, and inspect them directly with `view_file` to calibrate all mathematical symbols, formulas, subscripts, and line breaks before drafting notes. Never substitute web searches or unverified guesses for rendered page images.
 - Record both the printed page and the physical PDF page, for example:
   `[S1, Ch. 9, §9.1, printed p. 283, PDF p. 295]`.
 - Distinguish clearly among:

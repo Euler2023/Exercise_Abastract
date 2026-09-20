@@ -78,6 +78,40 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-20 (Exercise R8: Corrected Statement and Detailed Symmetric-Polynomial Bases)
+
+- Corrected: Restored Artin §16.1 Exercise 1.2 using the original PDF: $R$ is the coefficient ring, and the exercise asks for two $R$-module bases of the symmetric polynomial ring. The previous finite Artin-basis solution addressed a different module.
+- Expanded: Proved the monomial orbit-sum basis and the basis of all products of elementary symmetric polynomials, including spanning, independence, termination of leading-term reduction, and a three-variable degree-three change-of-basis example. Recorded exact source pages and the arbitrary-characteristic coefficient-ring scope.
+
+### 2026-09-20 (Lang Chapters VIII–IX Proof and Source Corrections)
+
+- Revised: Audited all 29 latest exercises and repaired the affected proofs, including relative algebraic closure, finite generation of integral closures, graded normalization, resultant signs and degrees, and prime-chain lengths. Updated the five linked concept notes and corrected seven broken links.
+- Clarified: Preserved printed source statements while visibly recording the correction in VIII.6(a), the localization-equality interpretation in IX.17, shared hypotheses, and the external catenarity and dimension-formula inputs in IX.18–19.
+- Corrected: Archive queries now match the book identity within each source segment, excluding cross-references to Lang's *Algebraic Number Theory* from the *Algebra* totals.
+- Verified: Chapters I–IX have 258 distinct source labels with exactly one note per label and no missing, duplicate, unexpected, or unparsed mappings. The 29 active exercises and five concepts pass metadata, path-link, formula-delimiter, dynamic-backlink, and tracker-discovery checks. Learning statuses remain unchanged.
+
+### 2026-09-16 (Lang Chapter IX Exercise Archive Complete: Exercises IX.1–IX.19)
+- Added: Completed archiving all 19 numbered exercises IX.1–IX.19 from Serge Lang's *Algebra* (rev. 3rd ed.), Ch. IX (*Algebraic Spaces*), printed pp. 410–412 / PDF pp. 425–427, all routed to Ring Theory by primary computational toolkit (`Exercise R262` to `Exercise R280`):
+  - Integrality (IX.1–IX.9): [`Exercise R262`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R262%20-%20Hilbert-Zariski%20Theorem%20on%20Zeros%20of%20Forms%20and%20Integrality.md) to [`Exercise R270`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R270%20-%20Veronese%20Subrings%20Normalization%20and%20Projective%20Function%20Fields.md);
+  - Resultants (IX.10–IX.13): [`Exercise R271`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R271%20-%20Consistency%20of%20Multivariable%20and%20Sylvester%20Resultants.md) to [`Exercise R274`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R274%20-%20Base%20Change%20and%20Absolute%20Irreducibility%20of%20the%20Generic%20Resultant.md);
+  - Spec of a Ring (IX.14–IX.19): [`Exercise R275`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R275%20-%20Connectedness%20of%20Spec%20and%20Idempotents%20in%20Commutative%20Rings.md) to [`Exercise R280`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R280%20-%20Dimension%20and%20Catenarity%20of%20Affine%20Domains%20over%20the%20Integers.md).
+- Added: Created three foundational prerequisite concept notes:
+  - [`Hilbert Nullstellensatz`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Concepts/Hilbert%20Nullstellensatz.md) in `02 - Ring Theory/Concepts/`, linked in `Ring Theory Hub.md`;
+  - [`Krull Dimension and Catenarity`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Concepts/Krull%20Dimension%20and%20Catenarity.md) in `02 - Ring Theory/Concepts/`, linked in `Ring Theory Hub.md`;
+  - [`Multivariate Resultants and Resultant Systems`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Concepts/Multivariate%20Resultants%20and%20Resultant%20Systems.md) in `02 - Ring Theory/Concepts/`, linked in `Ring Theory Hub.md`.
+- Verified: Complete 1-to-1 provenance reconciliation across all 3 exercise pages (19/19 covered, 0 missing, 0 duplicate, 0 unexpected, 0 unparsed). Every note features full multipart problem statements, progressive collapsible hints, rigorous derivations, strictly balanced Obsidian math delimiters (`$...$` and `$$...$$` with zero forbidden LaTeX document delimiters), valid frontmatter, and learning status `not-started`.
+- Updated: Reconciled and marked Chapter IX `Complete` in `00 - Home/Lang Algebra Exercise Archive.md`, bringing total verified coverage across Chapters I–IX to **258 exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19). Next archive target set to Chapter X (*Noetherian Rings and Modules*).
+
+### 2026-09-15 (Lang Chapter VIII Exercise Archive Complete: Exercises VIII.1–VIII.10)
+- Added: Completed archiving all 10 numbered exercises VIII.1–VIII.10 from Serge Lang's *Algebra* (rev. 3rd ed.), Ch. VIII (*Transcendental Extensions*), printed pp. 374–375 / PDF pp. 389–390:
+  - 9 notes in Field Theory: [`Exercise F87`](file:///e:/project/leandojo/exercise_abstract/03%20-%20Field%20Theory/Exercises/Exercise%20F87%20-%20Transcendence%20Bases%20and%20Automorphisms%20of%20the%20Complex%20Numbers.md) to [`Exercise F95`](file:///e:/project/leandojo/exercise_abstract/03%20-%20Field%20Theory/Exercises/Exercise%20F95%20-%20Differentials%20of%20Rational%20Functions%20and%20the%20Logarithmic%20Differential.md);
+  - 1 note in Ring Theory: [`Exercise R261`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R261%20-%20Finite%20Generation%20of%20Integral%20Closures%20over%20Affine%20Domains.md).
+- Added: Created two foundational prerequisite concept notes:
+  - [`Transcendence Bases and Transcendence Degree`](file:///e:/project/leandojo/exercise_abstract/03%20-%20Field%20Theory/Concepts/Transcendence%20Bases%20and%20Transcendence%20Degree.md) in `03 - Field Theory/Concepts/`, linked in `Field Theory Hub.md`;
+  - [`Derivations and Differentials on Fields`](file:///e:/project/leandojo/exercise_abstract/03%20-%20Field%20Theory/Concepts/Derivations%20and%20Differentials%20on%20Fields.md) in `03 - Field Theory/Concepts/`, linked in `Field Theory Hub.md`.
+- Verified: Complete 1-to-1 provenance reconciliation across all 2 exercise pages (10/10 covered, 0 missing, 0 duplicate, 0 unexpected, 0 unparsed). Every note features full multipart problem statements, progressive collapsible hints, rigorous derivations, strictly balanced Obsidian math delimiters (`$...$` and `$$...$$` with zero forbidden LaTeX document delimiters), valid frontmatter, and learning status `not-started`.
+- Updated: Reconciled and marked Chapter VIII `Complete` in `00 - Home/Lang Algebra Exercise Archive.md`, bringing total verified coverage across Chapters I–VIII to **239 exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10). Next archive target set to Chapter IX (*Algebraic Spaces*).
+
 ### 2026-09-15 (Lang Chapter VII Exercise Archive Complete: Exercises VII.1–VII.12)
 - Added: Completed archiving all 12 numbered exercises VII.1–VII.12 from Serge Lang's *Algebra* (rev. 3rd ed.), Ch. VII (*Extensions of Rings*), printed pp. 352–354 / PDF pp. 367–369:
   - 6 notes in Ring Theory: [`Exercise R255`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R255%20-%20Polynomial%20Rings%20over%20Integrally%20Closed%20Domains%20Are%20Integrally%20Closed.md) to [`Exercise R260`](file:///e:/project/leandojo/exercise_abstract/02%20-%20Ring%20Theory/Exercises/Exercise%20R260%20-%20Total%20Ramification%20and%20Prime%20Powers%20in%20Prime%20Cyclotomic%20Rings.md);
