@@ -259,6 +259,7 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[04 - Linear Algebra and Modules/Concepts/Skew-Symmetric Bilinear Forms|Skew-Symmetric Bilinear Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]

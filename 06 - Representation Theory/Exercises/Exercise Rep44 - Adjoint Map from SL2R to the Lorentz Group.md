@@ -67,7 +67,21 @@ created: 2026-08-24
 > q_{33}^2=1+q_{13}^2+q_{23}^2.
 > $$
 >
-> The two sheets of the unit timelike hyperboloid are connected, and over each sheet fixing the determinant leaves a connected $SO_2$ fibre. Thus these two signs label exactly four connected components.
+> To prove that each sign class is path connected, first suppose $q_{33}>0$ and write $Qe_3=(u,s)$, with $u\in\mathbb R^2$ and $s=\sqrt{1+\lVert u\rVert^2}$. Define
+>
+> $$
+> B(u)=
+> \begin{pmatrix}
+> I_2+\dfrac{uu^{\mathsf T}}{1+s}&u\\
+> u^{\mathsf T}&s
+> \end{pmatrix}.
+> $$
+>
+> Put $M=I_2+uu^{\mathsf T}/(1+s)$. The identities $Mu=su$ and $M^2=I_2+uu^{\mathsf T}$ show by block multiplication that $B(u)^{\mathsf T}I_{2,1}B(u)=I_{2,1}$. Also $B(u)e_3=(u,s)$ and $B(0)=I$. Thus $t\mapsto B(tu)$ is a path in $O_{2,1}$ from $I$ to $B(u)$; its determinant is constantly $1$.
+>
+> The matrix $B(u)^{-1}Q$ fixes $e_3$ and preserves its orthogonal complement, so it has the form $\operatorname{diag}(R,1)$ with $R\in O_2$ and $\det R=\det Q$. Within $O_2$, each determinant class is path connected: $SO_2$ is parametrized by rotations, and the determinant-negative class is its translate by a fixed reflection. Combining such a path with $t\mapsto B(tu)\operatorname{diag}(R,1)$ joins $Q$ to a fixed representative of its sign class.
+>
+> Left multiplication by $\operatorname{diag}(1,1,-1)$ transports the time-negative sign classes to the time-positive ones, so they too are path connected. All four pairs $(\delta,\varepsilon)$ occur, for example at $\operatorname{diag}(\delta\varepsilon,1,\varepsilon)$. Since the two signs are locally constant, no connected subset can cross between these four classes. They are therefore exactly the four connected components, and also the four path components.
 >
 > The group $SL_2(\mathbb R)$ is connected, so $\operatorname{im}\varphi$ lies in the identity component. The differential is the injective adjoint map between two three-dimensional Lie algebras, so the image contains a neighborhood of the identity and is open in that component. An open subgroup of a connected group is the whole group. Hence $\operatorname{im}\varphi$ is exactly the identity component of $O_{2,1}$.
 >
@@ -75,6 +89,7 @@ created: 2026-08-24
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[06 - Representation Theory/Concepts/Adjoint Representation and Invariant Trace Forms|Adjoint Representation and Invariant Trace Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Indefinite Bilinear Forms and Lorentz Groups|Indefinite Bilinear Forms and Lorentz Groups]]
 - [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]

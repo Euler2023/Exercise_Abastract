@@ -78,6 +78,14 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-20 (Path Connectedness and Exercise Connections)
+
+- Added: A dedicated Path Connectedness and Path Components concept with path constructions, component proofs, the local path-connectedness criterion, topological-group applications, and matrix-group methods. Grounded the discussion in visually checked Artin M.6–M.8 and Hall's definitions, proofs, and manifold discussion.
+- Linked: Connected 16 relevant exercises across Linear Algebra, Group Theory, and Representation Theory through explicit prerequisites and a dynamic exercise query; added the topic-hub entry and links from the existing matrix-topology and connectedness concepts.
+- Clarified: Distinguished identity path components from connected components in LA68; repaired two formula commands in LA5; replaced Rep44's incomplete connected-fiber argument with explicit Lorentz boost paths.
+- Preserved: Existing learning statuses and user edits, including the connectedness note's metadata changes.
+- Verified: Reviewed the path and Lorentz-component arguments; checked formula delimiters, metadata, links, all 16 dynamic exercise backlinks, and preservation of the original problem statements.
+
 ### 2026-09-20 (Topology Concepts from Lang, Neukirch, and Stacks)
 
 - Added: Three concept notes covering compactness/quasi-compactness, connectedness and connected components, and topological irreducibility and irreducible components, with definitions, proofs, examples, and dynamic exercise backlinks.

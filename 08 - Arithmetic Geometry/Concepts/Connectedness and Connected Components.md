@@ -4,9 +4,6 @@ aliases:
   - Connectedness
   - Connected Components
   - Connected Spaces
-  - 连通性
-  - 连通空间
-  - 连通分支
 topic: arithmetic-geometry
 tags:
   - concept
@@ -16,7 +13,7 @@ tags:
   - topology
   - connected-space
 created: 2026-09-20
-source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, Exercise 14, printed p. 411, PDF p. 426; The Stacks Project, Topology §5.7, Definition 5.7.1 and Lemmas 5.7.2–5.7.3, Tags 004S, 0376, 004T"
+source: Serge Lang, Algebra, rev. 3rd ed., Ch. IX, Exercise 14, printed p. 411, PDF p. 426; The Stacks Project, Topology §5.7, Definition 5.7.1 and Lemmas 5.7.2–5.7.3, Tags 004S, 0376, 004T
 source_status: verified
 status: not-started
 ---
@@ -109,6 +106,8 @@ For the zero ring, $\operatorname{Spec}(A)=\varnothing$ and $0=1$, so the displa
 
 ## Connectedness, Path Connectedness, and Irreducibility
 
+For path concatenation, path components, the local path-connectedness criterion, and matrix-group constructions, see [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]].
+
 A nonempty space $X$ is **path connected** if, for every $x,y\in X$, there is a continuous map $\gamma:[0,1]\to X$ with $\gamma(0)=x$ and $\gamma(1)=y$. Every path connected space is connected: a separation would pull back along a path joining its two pieces to a separation of $[0,1]$. This uses the elementary real-analysis fact that intervals are connected.
 
 Connectedness alone does not guarantee paths; the sine-curve example below explains the obstruction. In algebraic geometry, connectedness of a spectrum refers to its Zariski topology, and does not assert the existence of paths in an associated Euclidean space of rational or complex points.
@@ -144,6 +143,7 @@ An [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Compon
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]]
 - [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]

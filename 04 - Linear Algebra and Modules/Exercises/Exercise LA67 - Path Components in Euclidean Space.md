@@ -45,6 +45,7 @@ created: 2026-08-23
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]
 
 ## Notes

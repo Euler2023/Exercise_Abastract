@@ -63,6 +63,7 @@ created: 2026-08-24
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[06 - Representation Theory/Concepts/Adjoint Representation and Invariant Trace Forms|Adjoint Representation and Invariant Trace Forms]]
 - [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory Definition]]

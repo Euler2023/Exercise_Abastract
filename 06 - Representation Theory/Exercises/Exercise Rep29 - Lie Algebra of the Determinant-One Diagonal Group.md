@@ -37,6 +37,7 @@ created: 2026-08-24
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]]
 - [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
 

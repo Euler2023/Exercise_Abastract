@@ -2,7 +2,6 @@
 title: Topology of Matrix Groups
 aliases:
   - Topological Properties of Matrix Groups
-  - 矩阵群的拓扑
 topic: linear-algebra
 tags:
   - concept
@@ -11,7 +10,7 @@ tags:
   - matrix-groups
   - topology
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 9, Section 1, printed p. 262, PDF p. 274"
+source: Michael Artin, Algebra, 2nd ed., Ch. 9, Section 1, printed p. 262, PDF p. 274
 source_status: verified
 status: not-started
 ---
@@ -34,7 +33,7 @@ Thus a matrix group is naturally a topological group.
 > A map $f:X\to Y$ is a **homeomorphism** if it is continuous, bijective, and has continuous inverse.
 
 > [!info] Path-Connectedness
-> A space $X$ is **path-connected** if for every $x,y\in X$ there is a continuous map $\gamma:[0,1]\to X$ with $\gamma(0)=x$ and $\gamma(1)=y$.
+> A nonempty space $X$ is **path-connected** if for every $x,y\in X$ there is a continuous map $\gamma:[0,1]\to X$ with $\gamma(0)=x$ and $\gamma(1)=y$.
 
 > [!info] Compactness
 > In finite-dimensional Euclidean space, a subset is compact exactly when it is closed and bounded.
@@ -80,6 +79,7 @@ This proof uses the spectral theorem and the existence and uniqueness of positiv
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]
 - [[08 - Arithmetic Geometry/Concepts/Connectedness and Connected Components|Connectedness and Connected Components]]
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]

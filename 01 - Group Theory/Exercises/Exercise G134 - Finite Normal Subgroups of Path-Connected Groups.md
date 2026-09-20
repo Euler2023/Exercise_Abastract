@@ -38,6 +38,7 @@ created: 2026-08-24
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
 

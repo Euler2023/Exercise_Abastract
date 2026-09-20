@@ -44,7 +44,7 @@ created: 2026-08-10
 > $$
 > Multiplying out $P^{\mathsf T}I_{1,1}P=I_{1,1}$ gives
 > $$
-> a^2-c^2=1,\qquad b^2-d^2=-1,qquad ab-cd=0.
+> a^2-c^2=1,\qquad b^2-d^2=-1,\qquad ab-cd=0.
 > $$
 > Taking determinants shows $(\det P)^2=1$. Put $\delta=\det P\in\{1,-1\}$. The defining equation also gives
 > $$
@@ -53,7 +53,7 @@ created: 2026-08-10
 > $$
 > Comparing this with the usual inverse formula yields
 > $$
-> c=\delta b,qquad d=\delta a.
+> c=\delta b,\qquad d=\delta a.
 > $$
 > Hence $a^2-b^2=1$, and every element of $O_{1,1}$ can be written uniquely as
 > $$
@@ -82,6 +82,7 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[04 - Linear Algebra and Modules/Concepts/Indefinite Bilinear Forms and Lorentz Groups|Indefinite Bilinear Forms and Lorentz Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]

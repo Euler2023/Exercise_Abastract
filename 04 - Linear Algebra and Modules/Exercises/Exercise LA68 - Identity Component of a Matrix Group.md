@@ -41,9 +41,11 @@ created: 2026-08-23
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]
 - [[01 - Group Theory/Concepts/Normal Subgroups|Normal Subgroups]]
 
 ## Notes
 
+- **Component terminology:** The set denoted $G^0$ in this solution is the identity **path component**, defined by paths to $I$. Artin M.7 calls it the connected component. In general topology, the identity connected component is instead the maximal connected subset containing $I$; the two coincide when $G$ is locally path connected, in particular for Lie groups. No such additional hypothesis is needed for the normal-subgroup proof here.
 - **Source status:** The problem statement is transcribed from [S1, Ch. 2, Misc. Problems, Ex. M.7, printed p. 76, PDF p. 88]. The solution is an independent derivation for this vault, not a solution printed in Artin.
