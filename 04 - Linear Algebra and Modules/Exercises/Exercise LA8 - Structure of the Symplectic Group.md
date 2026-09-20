@@ -266,6 +266,7 @@ created: 2026-08-10
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Eigenvalues and Eigenvectors|Eigenvalues and Eigenvectors]]
+- [[Connectedness and Connected Components|Connectedness]]
 
 ## Notes
 

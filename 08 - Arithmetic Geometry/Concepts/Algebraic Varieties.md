@@ -94,6 +94,7 @@ In arithmetic geometry, the base field matters critically:
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]

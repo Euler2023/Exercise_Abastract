@@ -137,6 +137,7 @@ created: 2026-09-15
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
 - [[02 - Ring Theory/Concepts/Localization and Laurent Polynomials|Localization and Laurent Polynomials]]
@@ -146,3 +147,4 @@ created: 2026-09-15
 
 - **Independent derivation:** The solution provides the explicit localization correspondence and the ideal inclusion argument $\mathfrak{a} \not\subseteq \mathfrak{p} \implies \exists f \in \mathfrak{a} \setminus \mathfrak{p}$.
 - **Standard open affines:** In scheme theory, the distinguished open sets $D(f) \cong \operatorname{Spec}(A_f)$ are called the standard (or principal) affine open subsets. They form the basic building blocks for defining sheaves and schemes.
+- **Quasi-compactness:** Applying [[02 - Ring Theory/Exercises/Exercise R276 - Quasi-Compactness of the Zariski Topology|R276]] to $A_f$ shows that each $D(f)$ is quasi-compact. Thus an open subset of $\operatorname{Spec}(A)$ is quasi-compact exactly when it is a finite union of distinguished opens.

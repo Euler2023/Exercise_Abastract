@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-20 (Topology Concepts from Lang, Neukirch, and Stacks)
+
+- Added: Three concept notes covering compactness/quasi-compactness, connectedness and connected components, and topological irreducibility and irreducible components, with definitions, proofs, examples, and dynamic exercise backlinks.
+- Grounded: Used the original Lang pages on spectra, Exercises IX.14–16, and Krull topology, together with Neukirch's generic-point discussion and the complementary Stacks topology references. Distinguished book proofs, exercises, independently supplied arguments, and imported results; recorded printed/PDF page anchors and differing empty-space conventions.
+- Integrated: Linked the concepts from R275–R277 and relevant curve exercises, the Arithmetic Geometry hub, and the existing topology, scheme, variety, and Galois notes. Corrected R276's compactness terminology while preserving the user's Rising Sea reading pointer and all learning statuses.
+- Verified: Checked mathematical arguments, concept/exercise metadata, path-qualified links, Obsidian formula delimiters, dynamic exercise backlinks, tracker tags, and the scope of the final changes.
+
 ### 2026-09-20 (Exercise R8: Corrected Statement and Detailed Symmetric-Polynomial Bases)
 
 - Corrected: Restored Artin §16.1 Exercise 1.2 using the original PDF: $R$ is the coefficient ring, and the exercise asks for two $R$-module bases of the symmetric polynomial ring. The previous finite Artin-basis solution addressed a different module.

@@ -30,7 +30,7 @@ created: 2026-09-15
 ## Hints
 
 > [!hint]- Hint 1
-> A topological space is compact (in modern terminology, quasi-compact, since the Zariski topology is generally not Hausdorff) if every open cover has a finite subcover.
+> The property to prove is that every open cover has a finite subcover. Lang calls this **compactness** here; the Stacks convention calls it **quasi-compactness**, with no Hausdorff assumption in this definition.
 > 
 > Pass to the closed complements: if $U_i = \operatorname{spec}(A) \setminus V(\mathfrak{a}_i)$, what is $\bigcap_{i \in I} V(\mathfrak{a}_i)$?
 
@@ -121,10 +121,11 @@ created: 2026-09-15
 > $$
 > 
 > Thus, the finite subcollection $\{U_{i_1}, \ldots, U_{i_n}\}$ covers $\operatorname{spec}(A)$.
-> This proves that the topological space $\operatorname{spec}(A)$ is compact (quasi-compact).
+> This proves that $\operatorname{spec}(A)$ is quasi-compact, or compact in the terminology of Lang's statement.
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
@@ -133,4 +134,5 @@ created: 2026-09-15
 ## Notes
 
 - **Independent derivation:** The proof follows Lang's hint directly, using the duality between ideal sums and intersections of closed sets, together with the unit representation $1 = \sum_{j=1}^n x_{i_j}$.
-- **Terminology (Compact vs. Quasi-compact):** In Bourbaki and modern algebraic geometry (e.g. Hartshorne, EGA), "compact" is reserved for Hausdorff spaces, and non-Hausdorff spaces satisfying the Heine-Borel finite subcover property are called **quasi-compact**. Serge Lang uses the classical terminology "compact" without assuming the Hausdorff separation axiom.
+- **Terminology:** Lang's printed Exercise 15 uses "compact" for the finite-subcover property. The [Stacks Project, §5.12](https://stacks.math.columbia.edu/tag/0059), calls that property "quasi-compact" and reserves "compact" for quasi-compact Hausdorff spaces. These are different author conventions, not a universal old-versus-modern distinction. Quasi-compact spaces may be Hausdorff; the term does not mean "non-Hausdorff compact." See the linked concept for a side-by-side comparison.
+- **Further reading:** The user's additional reading pointer is *The Rising Sea*, §3.6. This pointer is retained for study; its edition and section content have not been independently checked in this revision.

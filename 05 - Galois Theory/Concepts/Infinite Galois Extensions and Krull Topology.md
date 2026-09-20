@@ -113,6 +113,8 @@ $$
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]
+- [[08 - Arithmetic Geometry/Concepts/Connectedness and Connected Components|Connectedness and Connected Components]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[05 - Galois Theory/Concepts/Fixed Fields|Fixed Fields]]

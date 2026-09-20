@@ -56,6 +56,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 

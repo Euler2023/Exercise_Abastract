@@ -173,6 +173,7 @@ created: 2026-09-15
 
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Connectedness and Connected Components|Connectedness and Connected Components]]
 - [[02 - Ring Theory/Concepts/Nilpotent and Idempotent Elements|Nilpotent and Idempotent Elements]]
 - [[02 - Ring Theory/Concepts/Product Rings and the Chinese Remainder Theorem|Product Rings and the Chinese Remainder Theorem]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]

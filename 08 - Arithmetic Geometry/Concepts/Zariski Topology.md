@@ -10,7 +10,7 @@ tags:
   - algebraic-geometry
   - topology
 created: 2026-08-23
-source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §5, printed pp. 406–409, PDF pp. 421–424; Jürgen Neukirch, Algebraic Number Theory, Ch. I, §13, printed pp. 85–86, PDF pp. 104–105"
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §5, printed pp. 406–409, PDF pp. 421–424, and Exercises 14–16, printed pp. 411–412, PDF pp. 426–427; Jürgen Neukirch, Algebraic Number Theory, Ch. I, §13, printed pp. 85–86, PDF pp. 104–105"
 source_status: partially-verified
 status: not-started
 ---
@@ -100,8 +100,21 @@ A nonempty closed subset is **irreducible** if it is not the union of two proper
 
 If $A$ is Noetherian, every closed subset is a finite union of irreducible closed subsets; after removing redundant inclusions, the irreducible components are unique.
 
+The detailed proofs, nonempty-space convention, and minimal-prime description of components are developed in [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]].
+
+## Quasi-Compactness and Connectedness
+
+For any commutative ring $A$ with identity, $\operatorname{Spec}(A)$ is quasi-compact: every open cover has a finite subcover. Lang calls this property "compact" in Exercise IX.15; it does not imply Hausdorffness. The proof turns a covering into an ideal sum containing $1$, then extracts a finite sum. See [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]] for the terminology comparison and the proof.
+
+Connectedness asks instead whether the spectrum has a nonempty proper subset that is both open and closed. By Lang's Exercise IX.14, this happens exactly when $A$ has a nontrivial idempotent, equivalently when it is a product of two nonzero rings. See [[08 - Arithmetic Geometry/Concepts/Connectedness and Connected Components|Connectedness and Connected Components]] for the proof and the empty-spectrum convention.
+
+Irreducibility implies connectedness, but the converse fails: $\operatorname{Spec}(k[x,y]/(xy))$ has two intersecting irreducible components and one connected component.
+
 ## Related Concepts
 
+- [[08 - Arithmetic Geometry/Concepts/Compactness and Quasi-Compactness|Compactness and Quasi-Compactness]]
+- [[08 - Arithmetic Geometry/Concepts/Connectedness and Connected Components|Connectedness and Connected Components]]
+- [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]]
 - [[08 - Arithmetic Geometry/Concepts/Schemes|Schemes]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
@@ -121,3 +134,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 Lang defines $\operatorname{Spec}(A)$, the closed sets $V(\mathfrak a)$, the topology axioms, non-Hausdorff behavior, contravariant functoriality, Noetherian decomposition into irreducible closed sets, and the characterization $V(\mathfrak p)$ of irreducible closed subsets on the cited pages. Neukirch independently defines the Zariski topology on $\operatorname{Spec}(\mathfrak o)$ and verifies the closed-point/generic-point picture for $\operatorname{Spec}(\mathbb Z)$. The distinguished-open basis and the displayed closure formula are standard deductions supplied in this note; they were not separately proved in the bounded slices, so the note is `partially-verified` rather than fully verified.
+
+The additional compactness and connectedness summary follows Lang, Ch. IX, Exercises 14–16, printed pp. 411–412 / PDF pp. 426–427; those original pages were visually checked for the linked concept notes. The expanded proofs are independent solutions, and the irreducibility/connectedness counterexample is derived in those notes.
