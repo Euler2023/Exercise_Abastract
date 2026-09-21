@@ -127,7 +127,7 @@ $$
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin-Schreier Extensions]]
-- [[05 - Galois Theory/Concepts/Cyclic Extension|Cyclic Extension]] 
+- [[Cyclic Extensions|Cyclic Field Extension]] 
 - [[05 - Galois Theory/Concepts/Finite Fields Galois|Galois Theory of Finite Fields]]
 - [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
 
