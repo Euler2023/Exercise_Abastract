@@ -134,6 +134,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 410-412 / PDF pp. 425-427",
   }],
+  ["X", {
+    covered: 19,
+    total: 19,
+    status: "Complete",
+    pages: "printed pp. 443-447 / PDF pp. 458-462",
+  }],
 ]);
 
 const rows = [];
@@ -184,7 +190,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | VII | Extensions of Rings | All 12 exercises VII.1-VII.12; printed pp. 352-354 / PDF pp. 367-369 | Complete; 6 Ring Theory notes, 4 Linear Algebra and Modules notes, and 2 Galois Theory notes |
 | VIII | Transcendental Extensions | All 10 exercises VIII.1-VIII.10; printed pp. 374-375 / PDF pp. 389-390 | Complete; 9 Field Theory notes and 1 Ring Theory note |
 | IX | Algebraic Spaces | All 19 exercises IX.1-IX.19; printed pp. 410-412 / PDF pp. 425-427 | Complete; 19 Ring Theory notes |
-| X | Noetherian Rings and Modules | Pending source-total audit | Not archived |
+| X | Noetherian Rings and Modules | All 19 exercises X.1-X.19; printed pp. 443-447 / PDF pp. 458-462 | Complete; 10 Ring Theory notes and 9 Linear Algebra and Modules notes |
 | XI | Real Fields | Pending source-total audit | Not archived |
 | XII | Absolute Values | Pending source-total audit | Not archived |
 | XIII | Matrices and Linear Maps | Pending source-total audit | Not archived |
@@ -212,6 +218,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | VII | VII.1-VII.12 | printed pp. 352-354 / PDF pp. 367-369 | 12 | 0 | 0 | 0 | 0 | Complete |
 | VIII | VIII.1-VIII.10 | printed pp. 374-375 / PDF pp. 389-390 | 10 | 0 | 0 | 0 | 0 | Complete |
 | IX | IX.1-IX.19 | printed pp. 410-412 / PDF pp. 425-427 | 19 | 0 | 0 | 0 | 0 | Complete |
+| X | X.1-X.19 | printed pp. 443-447 / PDF pp. 458-462 | 19 | 0 | 0 | 0 | 0 | Complete |
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -235,7 +242,9 @@ Chapter IX was reconciled on 2026-09-15 against all 19 labels IX.1-IX.19, verifi
 
 On 2026-09-20, the 29 exercises in Chapters VIII–IX and their five prerequisite concepts were reviewed against the bounded original source pages and revised for proof completeness, hypotheses, signs, source references, and links. Source discrepancies and external proof inputs remain explicit, particularly VIII.6(a), IX.17, and the dimension theorems used in IX.18–19. A fresh provenance reconciliation of Chapters I–IX found 258 distinct exercise labels, each mapped to exactly one note, with all four exception sets empty. The dashboard now filters each source segment separately, preventing references to Lang's *Algebraic Number Theory* from being counted as *Algebra* exercises. All 29 learning statuses remain `not-started`.
 
-Chapters I-IX cover **258 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19). Statements, source issues, and proof boundaries are checked separately from the numerical reconciliation; Codex-written solutions are identified as independent derivations in each note.
+Chapter X was reconciled on 2026-09-22 against the ordered source labels X.1-X.19, audited on all five original exercise pages before note creation (printed pp. 443-447 / PDF pp. 458-462). Each label has exactly one note: X.2-X.10 and X.14 use Ring Theory (R281-R290); X.1, X.11-X.13, and X.15-X.19 use Linear Algebra and Modules (LA384-LA392). Missing, duplicate, unexpected, and unparsed exception sets are empty. Four prerequisite concepts have dynamic exercise backlinks and topic-hub links. All 19 exercise notes and four concepts are written in English; all 19 learning statuses remain not-started. The unnumbered complex preamble is supporting material, not an additional numbered exercise. Proofs, printed source issues, and hypothesis boundaries were checked separately from this provenance count.
+
+Chapters I-X cover **277 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19 + 19). A fresh provenance reconciliation found exactly one note mapping for each label, with no missing, duplicate, unexpected, or unparsed locators. This does not claim a fresh proof audit of all earlier chapters. Codex-written solutions are identified as independent derivations in the notes.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -446,6 +455,29 @@ dv.table(
 );
 ```
 
+### Chapter X — Noetherian Rings and Modules
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*X\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["X." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -504,6 +536,14 @@ dv.table(
 - **IX.17:** General localization fractions are allowed. Agreement “as functions” must mean equality in $A_{f_if_j}$ (equality of local sections); pointwise equality in residue fields is insufficient for nonreduced rings. The note preserves the printed wording and records the dual-number counterexample.
 - **IX.18–IX.19 proof boundary:** The revised solutions separately establish maximal-ideal heights and use catenarity for chains with fixed endpoints. Universal catenarity and the dimension formula are explicitly imported from Stacks Tags 00NM and 02IJ. IX.19 also states the characteristic-zero hypothesis implicit in $\mathbf Q(x_1,\ldots,x_n)$.
 
+- **Chapter X figure audit:** All five exercise pages (printed pp. 443-447 / PDF pp. 458-462) were inspected as high-resolution original PDF renders. No numbered exercise depends on a geometric figure or diagram. The unnumbered chain-map diagram in the shared background on printed p. 445 has reversed vertical arrows; its maps and correction are recorded as searchable formulas in the complexes concept. No image attachment is needed.
+- **X.9(a):** The printed hint has $x(\mathfrak p)=0$. The note preserves this and explains that the domain-to-field argument must start with a nonzero residue class.
+- **X.14(b):** The maximum component dimension $r$ presupposes a nonempty projective zero set. For the empty set the Hilbert polynomial is zero; the note states this boundary separately and proves the degree assertion for the nonempty case.
+- **X.15:** The hint places basis lifts in $A$ instead of $E$, and writes $J\subset\mathfrak p$ for a submodule $J\subseteq A^r$. The note preserves these expressions and explains the intended $x_j\in E$ and $J\subseteq\mathfrak pA^r$.
+- **X.17-X.19 shared preamble:** Printed p. 445 mixes differential and cohomology indices and reverses the chain-map diagram's vertical arrows. The complexes concept records the printed formulas and uses $d^i:K^i\to K^{i+1}$, $H^i=\ker d^i/\operatorname{Im}d^{i-1}$, with the corresponding endpoint corrections.
+- **X.17:** The printed hint ends with “Exercise 12”; the constant-rank splitting theorem applied directly is Exercise 16. The note preserves the reference and proves the result using X.15-X.16.
+- **X.19(d):** The final reference to (b) concerns degree $i-1$, whereas the displayed split inclusions directly compute degree $i$. The solution proves both comparison isomorphisms with their degrees distinguished.
+
 ## Next Archive Target
 
-Chapter X, **Noetherian Rings and Modules**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter XI, **Real Fields**, is the next archive target. Its complete source-label set and total have not yet been audited.

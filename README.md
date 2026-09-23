@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-22 (Lang Chapter X Exercise Archive)
+
+- Added: All 19 exercises X.1-X.19 from Lang's Algebra, revised third edition, checked against original page images (printed pp. 443-447 / PDF pp. 458-462): 10 Ring Theory notes (R281-R290) and 9 Linear Algebra and Modules notes (LA384-LA392), with complete statements, progressive hints, and independent solutions in English. Learning statuses remain not-started.
+- Integrated: Four English concept notes on primary decomposition, Hilbert functions and polynomials, module support and fibers, and complexes and cohomology under base change, with dynamic exercise backlinks and links from the two topic hubs.
+- Clarified: Preserved and explained the printed issues in X.9(a), X.15, the shared complex preamble, X.17, and X.19(d), as well as the empty-projective-set boundary in X.14(b). Distinguished source-proved inputs from independently derived exercise solutions.
+- Verified: Chapters I-X now have 277 distinct source labels with exactly one note per label and no missing, duplicate, unexpected, or unparsed mappings. Checked English-language consistency, exercise metadata and numbering, source page anchors, path-qualified links, formula delimiters, executable concept queries, and Study Progress tag discovery. Removed temporary source renders and audit code; the next archive target is Chapter XI.
+
 ### 2026-09-20 (Path Connectedness and Exercise Connections)
 
 - Added: A dedicated Path Connectedness and Path Components concept with path constructions, component proofs, the local path-connectedness criterion, topological-group applications, and matrix-group methods. Grounded the discussion in visually checked Artin M.6–M.8 and Hall's definitions, proofs, and manifold discussion.

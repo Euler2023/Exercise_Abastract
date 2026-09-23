@@ -68,11 +68,13 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups|Projective Modules and Grothendieck Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Torsion Modules|Torsion Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]
+- [[04 - Linear Algebra and Modules/Concepts/Module Support and Fibers|Module Support and Fibers]]
 
 ### Constructions
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]
+- [[04 - Linear Algebra and Modules/Concepts/Complexes and Cohomology under Base Change|Complexes and Cohomology under Base Change]]
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]
 - [[04 - Linear Algebra and Modules/Concepts/Localization of Modules|Localization of Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]

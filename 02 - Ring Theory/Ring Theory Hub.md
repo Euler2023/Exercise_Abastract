@@ -26,6 +26,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 ### Structure Theory
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
+- [[02 - Ring Theory/Concepts/Primary Ideals and Primary Decomposition|Primary Ideals and Primary Decomposition]]
 - [[02 - Ring Theory/Concepts/Isomorphism Theorems for Rings|Isomorphism Theorems]]
 - [[02 - Ring Theory/Concepts/Local Rings|Local Rings]]
 
@@ -58,6 +59,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Dedekind Rings and Fractional Ideals|Dedekind Rings and Fractional Ideals]]
 - [[02 - Ring Theory/Concepts/Integral Ring Extensions and Integrally Closed Domains|Integral Ring Extensions and Integrally Closed Domains]]
 - [[02 - Ring Theory/Concepts/Filtered and Graded Algebras|Filtered and Graded Algebras]]
+- [[02 - Ring Theory/Concepts/Hilbert Functions and Hilbert Polynomials|Hilbert Functions and Hilbert Polynomials]]
 - [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
 - [[02 - Ring Theory/Concepts/Krull Dimension and Catenarity|Krull Dimension and Catenarity]]
 

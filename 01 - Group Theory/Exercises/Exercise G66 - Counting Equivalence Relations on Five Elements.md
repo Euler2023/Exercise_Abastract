@@ -1,15 +1,15 @@
 ---
 title: "Exercise G66: Counting Equivalence Relations on Five Elements"
 topic: group-theory
-difficulty: intermediate
-status: not-started
+difficulty: Advanced
+status: in-progress
 tags:
   - exercise
   - group-theory
   - equivalence-relations
   - partitions
   - counting
-source: "Michael Artin, Algebra, 2nd ed., Ch. 2, Section 7, Ex. 7.6, printed p. 72, PDF p. 84"
+source: Michael Artin, Algebra, 2nd ed., Ch. 2, Section 7, Ex. 7.6, printed p. 72, PDF p. 84
 created: 2026-08-23
 ---
 
@@ -44,3 +44,4 @@ created: 2026-08-23
 ## Notes
 
 - **Source status:** The problem statement is transcribed from [S1, Ch. 2, §7, Ex. 7.6, printed p. 72, PDF p. 84]. The solution is an independent derivation for this vault, not a solution printed in Artin.
+- The solution is not so well for us 
