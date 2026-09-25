@@ -33,6 +33,8 @@ Field theory studies algebraic structures where every non-zero element has a mul
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[03 - Field Theory/Concepts/Purely Inseparable Extensions|Purely Inseparable Extensions]]
 - [[03 - Field Theory/Concepts/Normal Extensions|Normal Extensions]]
+- [[03 - Field Theory/Concepts/Ordered and Real Closed Fields|Ordered and Real Closed Fields]]
+- [[03 - Field Theory/Concepts/Real Places and Archimedean Valuation Rings|Real Places and Archimedean Valuation Rings]]
 - [[03 - Field Theory/Concepts/Transcendence Bases and Transcendence Degree|Transcendence Bases and Transcendence Degree]]
 - [[03 - Field Theory/Concepts/Derivations and Differentials on Fields|Derivations and Differentials on Fields]]
 

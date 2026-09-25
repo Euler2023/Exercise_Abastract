@@ -78,6 +78,26 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-26 (Lang Chapter XIII Exercise Archive)
+
+- Added: All 36 exercises XIII.1-XIII.36 from Lang's *Algebra*, revised third edition, checked against the original page images (printed pp. 545-552 / PDF pp. 560-567): 24 Linear Algebra and Modules notes (LA393-LA416), 3 Ring Theory notes (R298-R300), 2 Group Theory notes (G328-G329), 5 Representation Theory notes (Rep117-Rep121), and 2 Galois Theory notes (Gal138-Gal139). All learning statuses remain `not-started`.
+- Clarified: Preserved the printed errors and ambiguities in XIII.3, XIII.7, XIII.14, XIII.16, XIII.23, XIII.30-XIII.31, XIII.33, and XIII.35-XIII.36, with counterexamples or corrected hypotheses where needed. XIII.22 has an independent congruence-filtration proof; XIII.25 names Smith reduction over principal ideal rings and XIII.34 names the Nullstellensatz as external inputs.
+- Verified: Every source label has exactly one note mapping, with no missing, duplicate, unexpected, or unparsed locators. Chapters I-XIII now cover 346 source exercises; metadata, links, Obsidian formula syntax, tracker discovery, and figure relevance were checked. The next target is Chapter XIV.
+
+### 2026-09-25 (Lang Chapter XII Exercise Archive)
+
+- Added: All 20 exercises XII.1-XII.20 from Lang's *Algebra*, revised third edition, checked against original page images (printed pp. 495-499 / PDF pp. 510-514): 7 Field Theory notes (F107-F113), 5 Ring Theory notes (R293-R297), and 8 Arithmetic Geometry notes (AG18-AG25). All learning statuses remain `not-started`.
+- Updated: The existing Valuations and Places concept now distinguishes absolute-value places from valuation-ring residue maps used in XII.18-XII.19.
+- Clarified: Preserved the false general localization claim in XII.5, the missing residue-field hypotheses in XII.15-XII.16, the XII.17 and XII.19 cross-reference errors, and the point-of-$U$ wording in XII.20. XII.12(b) includes its independently proved Schur prime-divisor lemma; XII.20 identifies its external analytic inputs.
+- Verified: Each source label maps to exactly one note, with no missing, duplicate, unexpected, or unparsed exercise locators. Chapters I-XII now cover 310 source exercises; metadata, links, formula syntax, tracker discovery, and figure relevance were checked. The next target is Chapter XIII.
+
+### 2026-09-25 (Lang Chapter XI Exercise Archive)
+
+- Added: All 13 exercises XI.1-XI.13 from Lang's *Algebra*, revised third edition, checked against original page images (printed pp. 461-463 / PDF pp. 476-478): 11 Field Theory notes (F96-F106) and 2 Ring Theory notes (R291-R292), with complete statements, progressive hints, and independent solutions. Learning statuses remain `not-started`.
+- Integrated: Two prerequisite concepts on ordered and real closed fields, and real places and Archimedean valuation rings, with dynamic exercise backlinks and Field Theory Hub links.
+- Clarified: Preserved the printed zero-case error in XI.1, the XI.3 one-point interval boundary, the missing real-value hypothesis in XI.8, and the Bezout index and projective-counting issues in XI.13. Named external proof inputs and kept the book's reference to the external real-place paper distinct from the new solutions.
+- Verified: Each of the 13 source labels has exactly one parsed note mapping, with no missing, duplicate, unexpected, or unparsed labels; Chapters I-XI now cover 290 source exercises. Checked note metadata, links, Obsidian formula syntax, tracker discovery, and figure relevance; the next target is Chapter XII.
+
 ### 2026-09-22 (Lang Chapter X Exercise Archive)
 
 - Added: All 19 exercises X.1-X.19 from Lang's Algebra, revised third edition, checked against original page images (printed pp. 443-447 / PDF pp. 458-462): 10 Ring Theory notes (R281-R290) and 9 Linear Algebra and Modules notes (LA384-LA392), with complete statements, progressive hints, and independent solutions in English. Learning statuses remain not-started.

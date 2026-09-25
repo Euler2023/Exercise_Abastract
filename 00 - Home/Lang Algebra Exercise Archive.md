@@ -140,6 +140,24 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 443-447 / PDF pp. 458-462",
   }],
+  ["XI", {
+    covered: 13,
+    total: 13,
+    status: "Complete",
+    pages: "printed pp. 461-463 / PDF pp. 476-478",
+  }],
+  ["XII", {
+    covered: 20,
+    total: 20,
+    status: "Complete",
+    pages: "printed pp. 495-499 / PDF pp. 510-514",
+  }],
+  ["XIII", {
+    covered: 36,
+    total: 36,
+    status: "Complete",
+    pages: "printed pp. 545-552 / PDF pp. 560-567",
+  }],
 ]);
 
 const rows = [];
@@ -191,9 +209,9 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | VIII | Transcendental Extensions | All 10 exercises VIII.1-VIII.10; printed pp. 374-375 / PDF pp. 389-390 | Complete; 9 Field Theory notes and 1 Ring Theory note |
 | IX | Algebraic Spaces | All 19 exercises IX.1-IX.19; printed pp. 410-412 / PDF pp. 425-427 | Complete; 19 Ring Theory notes |
 | X | Noetherian Rings and Modules | All 19 exercises X.1-X.19; printed pp. 443-447 / PDF pp. 458-462 | Complete; 10 Ring Theory notes and 9 Linear Algebra and Modules notes |
-| XI | Real Fields | Pending source-total audit | Not archived |
-| XII | Absolute Values | Pending source-total audit | Not archived |
-| XIII | Matrices and Linear Maps | Pending source-total audit | Not archived |
+| XI | Real Fields | All 13 exercises XI.1-XI.13; printed pp. 461-463 / PDF pp. 476-478 | Complete; 11 Field Theory notes and 2 Ring Theory notes |
+| XII | Absolute Values | All 20 exercises XII.1-XII.20; printed pp. 495-499 / PDF pp. 510-514 | Complete; 7 Field Theory, 5 Ring Theory, and 8 Arithmetic Geometry notes |
+| XIII | Matrices and Linear Maps | All 36 exercises XIII.1-XIII.36; printed pp. 545-552 / PDF pp. 560-567 | Complete; 24 Linear Algebra and Modules, 3 Ring Theory, 2 Group Theory, 5 Representation Theory, and 2 Galois Theory notes |
 | XIV | Representation of One Endomorphism | Pending source-total audit | Not archived |
 | XV | Structure of Bilinear Forms | Pending source-total audit | Not archived |
 | XVI | The Tensor Product | Pending source-total audit | Not archived |
@@ -219,6 +237,15 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | VIII | VIII.1-VIII.10 | printed pp. 374-375 / PDF pp. 389-390 | 10 | 0 | 0 | 0 | 0 | Complete |
 | IX | IX.1-IX.19 | printed pp. 410-412 / PDF pp. 425-427 | 19 | 0 | 0 | 0 | 0 | Complete |
 | X | X.1-X.19 | printed pp. 443-447 / PDF pp. 458-462 | 19 | 0 | 0 | 0 | 0 | Complete |
+| XI | XI.1-XI.13 | printed pp. 461-463 / PDF pp. 476-478 | 13 | 0 | 0 | 0 | 0 | Complete |
+| XII | XII.1-XII.20 | printed pp. 495-499 / PDF pp. 510-514 | 20 | 0 | 0 | 0 | 0 | Complete |
+| XIII | XIII.1-XIII.36 | printed pp. 545-552 / PDF pp. 560-567 | 36 | 0 | 0 | 0 | 0 | Complete |
+
+Chapter XIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-26 against the ordered labels XIII.1-XIII.36 (36 total), printed pp. 545-552 / PDF pp. 560-567. Each source label has exactly one parsed note mapping: 24 in Linear Algebra and Modules (LA393-LA416), 3 in Ring Theory (R298-R300), 2 in Group Theory (G328-G329), 5 in Representation Theory (Rep117-Rep121), and 2 in Galois Theory (Gal138-Gal139). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 36 learning statuses remain `not-started`. Printed source issues and named external proof inputs are identified in the relevant notes.
+
+Chapter XII was reconciled on 2026-09-25 against the ordered source labels XII.1-XII.20, audited on all five original exercise pages before note creation (printed pp. 495-499 / PDF pp. 510-514). Each label has exactly one parsed note mapping: 7 in Field Theory (F107-F113), 5 in Ring Theory (R293-R297), and 8 in Arithmetic Geometry (AG18-AG25). The missing, duplicate, unexpected, and unparsed exception sets are empty. All 20 learning statuses remain `not-started`. The existing valuation concept now distinguishes absolute-value places from valuation-ring residue maps; source issues and imported proof inputs are recorded in the relevant notes.
+
+Chapter XI was reconciled on 2026-09-25 against all 13 ordered source labels XI.1-XI.13, audited on the three original exercise pages before note creation (printed pp. 461-463 / PDF pp. 476-478). Each label has exactly one parsed note mapping: 11 in Field Theory (F96-F106) and 2 in Ring Theory (R291-R292). Missing, duplicate, unexpected, and unparsed exception sets are empty. Two prerequisite concepts have dynamic exercise backlinks and links from Field Theory Hub. All 13 learning statuses remain `not-started`. The notes separate the printed source issues from corrected, independently derived arguments; XI.13 identifies its permitted generic Bezout input.
 
 Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
 
@@ -244,7 +271,7 @@ On 2026-09-20, the 29 exercises in Chapters VIII–IX and their five prerequisit
 
 Chapter X was reconciled on 2026-09-22 against the ordered source labels X.1-X.19, audited on all five original exercise pages before note creation (printed pp. 443-447 / PDF pp. 458-462). Each label has exactly one note: X.2-X.10 and X.14 use Ring Theory (R281-R290); X.1, X.11-X.13, and X.15-X.19 use Linear Algebra and Modules (LA384-LA392). Missing, duplicate, unexpected, and unparsed exception sets are empty. Four prerequisite concepts have dynamic exercise backlinks and topic-hub links. All 19 exercise notes and four concepts are written in English; all 19 learning statuses remain not-started. The unnumbered complex preamble is supporting material, not an additional numbered exercise. Proofs, printed source issues, and hypothesis boundaries were checked separately from this provenance count.
 
-Chapters I-X cover **277 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19 + 19). A fresh provenance reconciliation found exactly one note mapping for each label, with no missing, duplicate, unexpected, or unparsed locators. This does not claim a fresh proof audit of all earlier chapters. Codex-written solutions are identified as independent derivations in the notes.
+Chapters I-XIII cover **346 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19 + 19 + 13 + 20 + 36). A fresh provenance reconciliation across Chapters I-XIII found exactly one note mapping for each label, with no missing, duplicate, unexpected, or unparsed locators. This is not a fresh proof audit of earlier chapters. Codex-written solutions are identified as independent derivations in the notes.
 
 ## Source Exercise to Archived Note Mapping
 
@@ -474,7 +501,76 @@ for (const page of dv.pages("#exercise")) {
 rows.sort((a, b) => a[0] - b[0]);
 dv.table(
   ["Source exercise", "Archived note", "Learning status", "Difficulty"],
-  rows.map(row => ["X." + row[0], row[1], row[2], row[3]])
+rows.map(row => ["X." + row[0], row[1], row[2], row[3]])
+);
+```
+
+### Chapter XI — Real Fields
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*XI\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["XI." + row[0], row[1], row[2], row[3]])
+);
+```
+
+### Chapter XII — Absolute Values
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*XII\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["XII." + row[0], row[1], row[2], row[3]])
+);
+```
+
+### Chapter XIII — Matrices and Linear Maps
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string" || !page.source.includes(langSource)) continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource)) continue;
+    if (!/Ch\.\s*XIII\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["XIII." + row[0], row[1], row[2], row[3]])
 );
 ```
 
@@ -544,6 +640,28 @@ dv.table(
 - **X.17:** The printed hint ends with “Exercise 12”; the constant-rank splitting theorem applied directly is Exercise 16. The note preserves the reference and proves the result using X.15-X.16.
 - **X.19(d):** The final reference to (b) concerns degree $i-1$, whereas the displayed split inclusions directly compute degree $i$. The solution proves both comparison isomorphisms with their degrees distinguished.
 
+- **Chapter XI figure audit:** All three exercise pages (printed pp. 461-463 / PDF pp. 476-478) were inspected as high-resolution original PDF renders. No exercise depends on a source figure, diagram, or labeled geometric configuration; no attachment was created.
+- **XI.1:** The printed strict positivity criterion omits the zero case. The note preserves the statement, gives $\alpha=0$ as a counterexample, and proves the corrected nonzero or weak-inequality formulation. The same omission occurs in the source example on printed p. 457 / PDF p. 472.
+- **XI.3:** The printed representation permits $c\ge0$, while strict positivity forces $c>0$ in any representation. The hint divides by $\beta-\alpha$; the note handles the one-point interval $\alpha=\beta$ separately.
+- **XI.5-XI.10 proof boundary:** The printed shared preamble says solutions to the real-place sequence are in the external [La 53] paper. The notes supply independent arguments and name any imported standard result; they do not attribute these proofs to the textbook.
+- **XI.8:** The printed place is allowed to have any algebraic value field over $F$. A nonreal residue field gives a counterexample. The note proves the corrected statement with real algebraic values and records the valuation-extension theorem used in its counterexample as an external input.
+- **XI.13:** The printed Bezout comment uses an undefined terminal index $m$ in $d_1\cdots d_m$ and does not specify projective counting. The note retains this text and uses the corrected generic projective count $d_1\cdots d_r$ as the exercise-permitted external input. Infinitesimal specialization handles arbitrary real closed base fields.
+
+- **Chapter XII figure audit:** All five exercise pages (printed pp. 495-499 / PDF pp. 510-514) were inspected as high-resolution original PDF renders. No exercise depends on a source figure or diagram; no attachment was created.
+- **XII.5:** The printed conclusion $\mathfrak o=A_{(p)}$ fails for a general Bézout domain because the center $P=\mathfrak m_{\mathfrak o}\cap A$ need not be principal. The note supplies a rank-two valuation-ring counterexample and proves the corrected $\mathfrak o=A_P$ with a uniformizer $p\in A$ for $\mathfrak o$.
+- **XII.12:** Part (a) visibly prints “degree 1.” The Galois-polynomial argument for part (b) needs the stronger Schur prime-divisor lemma for arbitrary nonconstant integral polynomials, proved independently in the note.
+- **XII.15-XII.16:** XII.15 uses an unspecified prime $p$ and needs residue characteristic $p>0$; XII.16 also needs a perfect residue field for its $p$-power-invariant Teichmüller representatives. The notes preserve the printed statements, give counterexamples, and prove the corrected assertions.
+- **XII.17(b):** The printed “special system of Exercise 15” refers to Exercise 16. The embedding series uses powers $p^i$, including for a ramified target DVR; its ring-homomorphism proof derives from the earlier Witt ghost identities and the corrected Teichmüller construction.
+- **XII.19:** The printed “converse of Exercise 17” means Exercise 18. The claim also uses the preceding curve-function-field setting; the note states this inherited scope and derives the DVR of the smooth rational point.
+- **XII.20:** After moving to a non-compact Riemann surface $U$, the printed final phrase “associated with a complex number” should refer to a point of $U$. The note names the Weierstrass/Stein divisor and meromorphic-quotient theorems needed for the analytic extension.
+
+- **Chapter XIII figure audit:** All eight exercise pages (printed pp. 545-552 / PDF pp. 560-567) were inspected as high-resolution original PDF renders. The chapter contains equations and displayed matrices, but no exercise depends on a source figure or diagram; no attachment was created.
+- **XIII.3 and XIII.7:** Non-symmetric bilinear forms in XIII.3 give only the printed transpose's one-sided orthogonality; LA395 supplies a counterexample to two-sided orthogonality. XIII.7 calls quaternion conjugation an automorphism, though it reverses multiplication; LA399 preserves the wording and uses an involutive anti-automorphism.
+- **XIII.14 and XIII.16:** The diagonal-normalizer conclusion fails over $\mathbb F_2$ for $n\ge2$; LA403 proves it under $|F|>2$. The printed $PSL_n(F)$ order in XIII.16 stops its product at $n-1$; LA405 records and corrects the missing final factor.
+- **XIII.22 and XIII.25:** G329 independently proves the full mod-$p$ lifting theorem by a congruence filtration; the cited Serre result is not imported. LA413 uses the named Smith reduction theorem for a commutative principal ideal ring, including rings with zero divisors, as an external structural input.
+- **XIII.23, XIII.30, and XIII.31:** XIII.23 uses an undefined $G$, interpreted in LA411 as $GL_2(k)$. XIII.30 writes $R[t]$ for a square-zero dual-number algebra; Rep119 states the quotient $R[t]/(t^2)$. XIII.31's two cocycle-splitting formulas use inverse witnesses, and its printed polynomial-selection hint excludes finite base fields; Gal138 proves the result uniformly by invariant-vector descent.
+- **XIII.33-XIII.36:** LA415 preserves and resolves the negative-degree, low-$n$, and $m<d$ boundaries in XIII.33; LA416 names the Nullstellensatz input in XIII.34. Rep120 makes explicit the real/complex scalar switch in XIII.35 and completes the printed Howe-Tan recurrence argument. XIII.36's diagonal group $A$ is generally outside $SL_n(F)$ and its $E_{ii}$ are outside $\mathfrak{sl}_n(F)$; Rep121 states the corrected action and the $n\ge2$ irreducibility boundary.
+
 ## Next Archive Target
 
-Chapter XI, **Real Fields**, is the next archive target. Its complete source-label set and total have not yet been audited.
+Chapter XIV, **Representation of One Endomorphism**, is the next archive target. Its source-label set and total have not yet been audited.

@@ -2,13 +2,13 @@
 title: "Exercise LA29: Products of Upper Triangular Matrices"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: completed
 tags:
   - exercise
   - linear-algebra
   - matrices
   - triangular-matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.11, printed p. 32, PDF p. 44"
+source: Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.11, printed p. 32, PDF p. 44
 created: 2026-08-23
 ---
 

@@ -32,8 +32,12 @@ status: not-started
 
 ## Places
 
-> [!info] Definition (Place)
-> A **place** of $K$ is an equivalence class of non-trivial absolute values, where $|\cdot|_1 \sim |\cdot|_2$ if they define the same topology.
+> [!info] Definition (Absolute-value place)
+> In the number-field terminology used here, an **absolute-value place** of $K$ is an equivalence class of non-trivial absolute values: $|\cdot|_1\sim|\cdot|_2$ when they define the same topology.
+
+Lang also uses **place** for the residue map attached to a valuation ring $\mathfrak o\subseteq K$. If $\mathfrak m$ is its maximal ideal and $\kappa=\mathfrak o/\mathfrak m$, the algebraic place is $\varphi:\mathfrak o\to\kappa$, with the convention $\varphi(x)=\infty$ for $x\notin\mathfrak o$. Exercises XII.18–XII.19 use this latter meaning and write $\varphi(x)$ for the residue of an element of $\mathfrak o$. Lang's Chapter XII, §4 relates valuations to their valuation rings and invokes the place-extension theorem of Chapter VII [S2, printed p. 482, PDF p. 497].
+
+For a real-valued non-archimedean absolute value, the additive convention above is $v(x)=-\log|x|$ up to positive rescaling. Lang's Chapter XII, §4 also permits valuations with arbitrary ordered value groups, for which a real logarithm need not exist. These conventions must be distinguished when comparing formulas.
 
 ## Places of $\mathbb{Q}$
 
@@ -50,7 +54,9 @@ Notation:
 
 > [!abstract] Product Formula
 > For $x \in \mathbb{Q}^*$:
-> $$|x|_\infty \cdot \prod_{p} |x|_p = 1$$
+> $$
+> |x|_\infty \cdot \prod_{p} |x|_p = 1
+> $$
 
 > [!example] Example
 > $x = 12 = 2^2 \cdot 3$:
@@ -72,7 +78,9 @@ For a number field $K$:
 
 > [!info] Counting Places
 > If $[K:\mathbb{Q}] = n$ with $r_1$ real embeddings and $2r_2$ complex embeddings:
-> $$r_1 + 2r_2 = n$$
+> $$
+> r_1 + 2r_2 = n
+> $$
 
 ## Completions
 
@@ -111,4 +119,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-Lang's *Algebra* supplies the abstract absolute-value, completion, and valuation framework; *Algebraic Number Theory* specializes it to number fields and the product formula. The two cited slices were checked for these core definitions. Ostrowski's theorem and every example have not been audited proof by proof, so the overall status remains partially verified.
+Lang's *Algebra* supplies the abstract absolute-value, completion, and valuation framework; *Algebraic Number Theory* specializes it to number fields and the product formula. The distinction between absolute-value places and valuation-ring residue maps was checked against *Algebra*, Chapter XII, §4 (printed p. 482 / PDF p. 497). The broader cited slices were checked for core definitions, but Ostrowski's theorem and every example have not been audited proof by proof, so the overall status remains partially verified.
