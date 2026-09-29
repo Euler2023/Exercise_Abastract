@@ -29,6 +29,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
 - [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]
+- [[04 - Linear Algebra and Modules/Concepts/Quadratic Maps and Polarization|Quadratic Maps and Polarization]]
+- [[04 - Linear Algebra and Modules/Concepts/Witt and Witt-Grothendieck Groups|Witt and Witt-Grothendieck Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Skew-Symmetric Bilinear Forms|Skew-Symmetric Bilinear Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Eigenvalues and Eigenvectors|Eigenvalues and Eigenvectors]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]]

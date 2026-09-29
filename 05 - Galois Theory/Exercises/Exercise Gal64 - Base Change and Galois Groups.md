@@ -37,7 +37,10 @@ created: 2026-08-12
 
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
+- [[Composita and Restriction Maps]]
 
 ## Notes
 
 The formula assumes the standard embeddings into a common algebraic closure.
+
+Related to the [[Exercise Gal74 - Two S3 Splitting Fields and Their Compositum]], 

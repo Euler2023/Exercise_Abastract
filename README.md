@@ -78,6 +78,20 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-29 (Lang Chapter XV Exercise Archive)
+
+- Added: All 30 exercises XV.1-XV.30 from Lang's *Algebra*, revised third edition, as LA443-LA472 in Linear Algebra and Modules. Each note preserves the source problem, provides progressive hints and an independent solution, and remains `not-started`. The six original exercise pages were visually checked (printed pp. 595-600 / PDF pp. 610-615).
+- Added: Quadratic Maps and Polarization and Witt and Witt-Grothendieck Groups, with dynamic exercise backlinks and links from the topic hub. Corrected the existing inner-product projection formula to match its linear-variable convention, and clarified the Pfaffian normalization in Skew-Symmetric Bilinear Forms.
+- Clarified: Hermitian conventions, scalar compatibility in polarization, the bounded-defect typo, factorial-torsion hypotheses, degenerate alternating forms, and the cited Corollary 8.3 proof issue. Exercise 20 includes all seven Pfaffian properties checked against Emil Artin's original *Geometric Algebra*, printed p. 142 / PDF p. 154, and distinguishes its sign convention from Lang's. Named proof inputs and corrected statements are explicit.
+- Verified: All 30 source labels map one-to-one, with no missing, duplicate, unexpected, or unparsed mappings. Metadata, links, Obsidian formula syntax, and Study Progress tag discovery passed static checks. Chapters I-XV now cover 402 source exercises; the next target is Chapter XVI.
+
+### 2026-09-29 (Lang Chapter XIV Exercise Archive)
+
+- Added: All 26 exercises XIV.1-XIV.26 from Lang's *Algebra*, revised third edition, checked against the original page images (printed pp. 567-570 / PDF pp. 582-585), as LA417-LA442 in Linear Algebra and Modules. Each numbered exercise has its own note with complete statements, progressive hints, and independent solutions; all learning statuses remain `not-started`.
+- Clarified: Preserved the source wording and identified the terminology, rank, matrix-size, eigenvector, formal-series, map-name, and ambient-group issues in XIV.1, XIV.7, XIV.20, and XIV.23-XIV.26. Literal answers and inferred corrections are separated. Named proof inputs include Smith normal form, invariant-factor decomposition, and the spectral polynomial formula.
+- Fixed: The existing Diagonalization concept now states the base-field splitting conditions for its criteria and Jordan form, and the real/complex hypotheses for spectral-theorem examples.
+- Verified: Source-label reconciliation has 26 notes and no missing, duplicate, unexpected, or unparsed mappings. Metadata, full-path links, Obsidian math syntax, and Study Progress tag discovery passed static checks. Chapters I-XIV now cover 372 source exercises; the next target is Chapter XV.
+
 ### 2026-09-26 (Lang Chapter XIII Exercise Archive)
 
 - Added: All 36 exercises XIII.1-XIII.36 from Lang's *Algebra*, revised third edition, checked against the original page images (printed pp. 545-552 / PDF pp. 560-567): 24 Linear Algebra and Modules notes (LA393-LA416), 3 Ring Theory notes (R298-R300), 2 Group Theory notes (G328-G329), 5 Representation Theory notes (Rep117-Rep121), and 2 Galois Theory notes (Gal138-Gal139). All learning statuses remain `not-started`.

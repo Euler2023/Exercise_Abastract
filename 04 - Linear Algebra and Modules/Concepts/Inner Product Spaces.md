@@ -24,6 +24,8 @@ status: not-started
 > [!info] Definition (Inner Product Space)
 > A vector space equipped with an inner product is called an **inner product space** (or pre-Hilbert space).
 
+This note uses the **first-variable-linear** complex convention. The linked [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]] note uses the conjugate-linear-first convention; exchanging the arguments converts between them. Projection coefficients must follow the chosen convention.
+
 ## Induced Structures
 
 > [!info] Definition (Norm)
@@ -38,13 +40,19 @@ status: not-started
 ## Key Properties
 
 > [!abstract] Cauchy-Schwarz Inequality
-> $$|\langle u, v \rangle| \leq \|u\| \|v\|$$
+> $$
+> |\langle u, v \rangle| \leq \|u\| \|v\|
+> $$
 
 > [!abstract] Triangle Inequality
-> $$\|u + v\| \leq \|u\| + \|v\|$$
+> $$
+> \|u + v\| \leq \|u\| + \|v\|
+> $$
 
 > [!abstract] Parallelogram Law
-> $$\|u + v\|^2 + \|u - v\|^2 = 2\|u\|^2 + 2\|v\|^2$$
+> $$
+> \|u + v\|^2 + \|u - v\|^2 = 2\|u\|^2 + 2\|v\|^2
+> $$
 
 ## Orthogonality
 
@@ -75,7 +83,9 @@ status: not-started
 
 > [!info] Definition
 > For [[04 - Linear Algebra and Modules/Concepts/Subspaces|subspace]] $W \subseteq V$:
-> $$W^\perp = \{v \in V : \langle v, w \rangle = 0 \text{ for all } w \in W\}$$
+> $$
+> W^\perp = \{v \in V : \langle v, w \rangle = 0 \text{ for all } w \in W\}
+> $$
 
 > [!abstract] Theorem
 > For finite-dimensional $V$: $V = W \oplus W^\perp$ and $\dim W + \dim W^\perp = \dim V$.
@@ -85,10 +95,10 @@ status: not-started
 If the form is nondegenerate on a subspace $W$ and $(w_1,\ldots,w_k)$ is an orthogonal basis of $W$, then
 
 $$
-\pi_W(v)=\sum_{i=1}^k w_i\frac{\langle w_i,v\rangle}{\langle w_i,w_i\rangle}.
+\pi_W(v)=\sum_{i=1}^k \frac{\langle v,w_i\rangle}{\langle w_i,w_i\rangle}w_i.
 $$
 
-For an orthonormal basis this simplifies to $\pi_W(v)=\sum_i w_i\langle w_i,v\rangle$. The Gram-Schmidt process repeatedly subtracts such projections to construct an orthogonal or orthonormal basis.
+For an orthonormal basis this simplifies to $\pi_W(v)=\sum_i\langle v,w_i\rangle w_i$. Indeed, first-variable linearity and orthogonality give $\langle\pi_W(v),w_j\rangle=\langle v,w_j\rangle$, so $v-\pi_W(v)$ is orthogonal to $W$. The Gram-Schmidt process repeatedly subtracts such projections to construct an orthogonal or orthonormal basis.
 
 ## Related Concepts
 
@@ -110,3 +120,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
+
+The projection formula was corrected on 2026-09-29 to match this note's first-variable-linear convention; its verification above is an independent derivation.

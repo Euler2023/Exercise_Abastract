@@ -158,6 +158,18 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 545-552 / PDF pp. 560-567",
   }],
+  ["XIV", {
+    covered: 26,
+    total: 26,
+    status: "Complete",
+    pages: "printed pp. 567-570 / PDF pp. 582-585",
+  }],
+  ["XV", {
+    covered: 30,
+    total: 30,
+    status: "Complete",
+    pages: "printed pp. 595-600 / PDF pp. 610-615",
+  }],
 ]);
 
 const rows = [];
@@ -212,8 +224,8 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | XI | Real Fields | All 13 exercises XI.1-XI.13; printed pp. 461-463 / PDF pp. 476-478 | Complete; 11 Field Theory notes and 2 Ring Theory notes |
 | XII | Absolute Values | All 20 exercises XII.1-XII.20; printed pp. 495-499 / PDF pp. 510-514 | Complete; 7 Field Theory, 5 Ring Theory, and 8 Arithmetic Geometry notes |
 | XIII | Matrices and Linear Maps | All 36 exercises XIII.1-XIII.36; printed pp. 545-552 / PDF pp. 560-567 | Complete; 24 Linear Algebra and Modules, 3 Ring Theory, 2 Group Theory, 5 Representation Theory, and 2 Galois Theory notes |
-| XIV | Representation of One Endomorphism | Pending source-total audit | Not archived |
-| XV | Structure of Bilinear Forms | Pending source-total audit | Not archived |
+| XIV | Representation of One Endomorphism | All 26 exercises XIV.1-XIV.26; printed pp. 567-570 / PDF pp. 582-585 | Complete; 26 Linear Algebra and Modules notes |
+| XV | Structure of Bilinear Forms | All 30 exercises XV.1-XV.30; printed pp. 595-600 / PDF pp. 610-615 | Complete; 30 Linear Algebra and Modules notes |
 | XVI | The Tensor Product | Pending source-total audit | Not archived |
 | XVII | Semisimplicity | Pending source-total audit | Not archived |
 | XVIII | Representations of Finite Groups | Pending source-total audit | Not archived |
@@ -240,6 +252,12 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | XI | XI.1-XI.13 | printed pp. 461-463 / PDF pp. 476-478 | 13 | 0 | 0 | 0 | 0 | Complete |
 | XII | XII.1-XII.20 | printed pp. 495-499 / PDF pp. 510-514 | 20 | 0 | 0 | 0 | 0 | Complete |
 | XIII | XIII.1-XIII.36 | printed pp. 545-552 / PDF pp. 560-567 | 36 | 0 | 0 | 0 | 0 | Complete |
+| XIV | XIV.1-XIV.26 | printed pp. 567-570 / PDF pp. 582-585 | 26 | 0 | 0 | 0 | 0 | Complete |
+| XV | XV.1-XV.30 | printed pp. 595-600 / PDF pp. 610-615 | 30 | 0 | 0 | 0 | 0 | Complete |
+
+Chapter XV was source-audited on all six original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XV.1-XV.30 (30 total), printed pp. 595-600 / PDF pp. 610-615. Each label has exactly one parsed note mapping in Linear Algebra and Modules (LA443-LA472). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 30 learning statuses remain `not-started`. Chapters I-XV now cover 402 source exercises. Two prerequisite concepts, Quadratic Maps and Polarization and Witt and Witt-Grothendieck Groups, have dynamic exercise backlinks and links from the topic hub. The inner-product projection convention and the Pfaffian normalization in existing concepts were clarified.
+
+Chapter XIV was source-audited on all four original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XIV.1-XIV.26 (26 total), printed pp. 567-570 / PDF pp. 582-585. Each label has exactly one parsed note mapping in Linear Algebra and Modules (LA417-LA442). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 26 learning statuses remain `not-started`. Chapters I-XIV now cover 372 source exercises. The existing Diagonalization concept was corrected to state the required base-field splitting conditions; no new concept or figure attachment was needed.
 
 Chapter XIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-26 against the ordered labels XIII.1-XIII.36 (36 total), printed pp. 545-552 / PDF pp. 560-567. Each source label has exactly one parsed note mapping: 24 in Linear Algebra and Modules (LA393-LA416), 3 in Ring Theory (R298-R300), 2 in Group Theory (G328-G329), 5 in Representation Theory (Rep117-Rep121), and 2 in Galois Theory (Gal138-Gal139). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 36 learning statuses remain `not-started`. Printed source issues and named external proof inputs are identified in the relevant notes.
 
@@ -662,6 +680,21 @@ dv.table(
 - **XIII.23, XIII.30, and XIII.31:** XIII.23 uses an undefined $G$, interpreted in LA411 as $GL_2(k)$. XIII.30 writes $R[t]$ for a square-zero dual-number algebra; Rep119 states the quotient $R[t]/(t^2)$. XIII.31's two cocycle-splitting formulas use inverse witnesses, and its printed polynomial-selection hint excludes finite base fields; Gal138 proves the result uniformly by invariant-vector descent.
 - **XIII.33-XIII.36:** LA415 preserves and resolves the negative-degree, low-$n$, and $m<d$ boundaries in XIII.33; LA416 names the Nullstellensatz input in XIII.34. Rep120 makes explicit the real/complex scalar switch in XIII.35 and completes the printed Howe-Tan recurrence argument. XIII.36's diagonal group $A$ is generally outside $SL_n(F)$ and its $E_{ii}$ are outside $\mathfrak{sl}_n(F)$; Rep121 states the corrected action and the $n\ge2$ irreducibility boundary.
 
+- **Chapter XIV figure audit:** All four exercise pages (printed pp. 567-570 / PDF pp. 582-585) were inspected as high-resolution original PDF renders. The displayed block matrices are transcribed as searchable formulas; no exercise depends on a source figure or diagram, so no image attachment was created.
+- **XIV.1 and XIV.7:** XIV.1 calls the matrix upper triangular but explicitly requires its diagonal to vanish. LA417 preserves that wording and uses the strict condition. XIV.7 introduces an undefined finite rank $n$; LA423 makes the intended finite-rank hypothesis explicit and distinguishes the nonzero Smith invariants of inclusions from invariants of the abstract modules.
+- **XIV.20:** The source prints $GL_2(\mathbb C)$ with degree-six and degree-three characteristic polynomials, both having zero constant term. LA436 gives the literal answers $0,0$ and separately derives $6,1$ for the inferred questions in $M_6(\mathbb C)$ and $M_3(\mathbb C)$, without presenting this interpretation as an authorial erratum.
+- **XIV.23:** The source definition on printed p. 562 / PDF p. 577 allows zero to be called an eigenvector. LA439 distinguishes this convention from the vault's nonzero convention and states $E\ne0$ for the nontrivial common-eigenvector conclusion.
+- **XIV.24-XIV.25:** LA440 preserves the printed derivative exponent $t^m$, corrects it to $t^{m-1}$, supplies characteristic zero for formal logarithm/exponential, and proves the quotient derivative identity in arbitrary characteristic. XIV.25 prints $V:W\to W$ where its formulas use $B$; LA441 corrects the map name visibly and preserves the correct printed factor $(-1)^n$, including singular maps.
+- **XIV.26:** The full positive diagonal group $A$ is generally outside $SL_n(\mathbb C)$. LA442 retains it and defines relative normalizers in the common ambient $GL_n(\mathbb C)$, distinguishes $U(n),SU(n),O(n),SO(n)$, and constructs determinant-one signed permutation representatives.
+- **Chapter XIV proof boundary:** Solutions are independent derivations with named prior inputs. LA432 uses Smith normal form; LA433 derives finite-field normal bases through the Frobenius minimal polynomial and the cyclic-module theorem, including the case where the characteristic divides the extension degree. LA434 proves Cayley-Hamilton by universal specialization without assuming it in that proof.
+
+- **Chapter XV figure audit:** All six exercise pages (printed pp. 595-600 / PDF pp. 610-615) were inspected as high-resolution original PDF renders. The exercises require no source figure or diagram; all formulas and matrices are transcribed into searchable text, with no new attachment.
+- **XV.1 and XV.10:** LA443 preserves the conflict between the second-variable linearity in XV.1(b) and Lang's first-variable-linear Hermitian convention, supplies a counterexample to the literal convention, and proves the corrected decompositions. LA452 gives an explicit common small neighborhood for the local matrix logarithm product identity.
+- **XV.12-XV.15:** LA454 distinguishes the biadditive polarization forced by the parallelogram law from the extra scalar compatibility required for an arbitrary coefficient ring. LA455 separates additive/biadditive stability from real linearity/bilinearity, with explicit regularity hypotheses for the latter. LA456 preserves the printed defect $h\circ f-df$ and explicitly corrects it to $h\circ f-dh$. LA457 gives a precise higher-degree definition and proves uniqueness under factorial-torsion hypotheses.
+- **XV.17-XV.18:** LA459 corrects the hint's unjustified injectivity in the degenerate case and the following remark's reference to Exercise 18 rather than 17. It proves the integer and PID alternating normal forms; the extension to principal ideal rings with zero divisors explicitly imports the ordinary Smith basis theorem. XV.18 is valid: LA460 constructs the required nonorthogonal direct sum and identifies a faulty cross-pairing step in the printed proof of the cited Corollary 8.3.
+- **XV.19-XV.20:** LA461 proves odd-dimensional vanishing in the universal integral polynomial ring before specialization, including characteristic 2 and coefficient rings with nilpotents. LA462 checks and proves all seven properties on Emil Artin's original *Geometric Algebra* (1957), printed p. 142 / PDF p. 154, including the preceding definition on printed p. 141 / PDF p. 153. It explicitly distinguishes Artin's Pfaffian normalization from Lang's grouped symplectic normalization, differing by the factor $(-1)^{m(m-1)/2}$ in dimension $2m$.
+- **XV.21-XV.30 proof boundaries:** The Witt-group notes state characteristic different from 2 for symmetric forms; the alternating Witt extension proof includes characteristic 2. The Iwasawa decomposition and chamber calculations are independent finite-dimensional linear-algebra derivations. The source's shared [JoL 01] solution reference is recorded but is not used as a proof input.
+
 ## Next Archive Target
 
-Chapter XIV, **Representation of One Endomorphism**, is the next archive target. Its source-label set and total have not yet been audited.
+Chapter XVI, **The Tensor Product**, is the next chapter awaiting a bounded source-total audit.

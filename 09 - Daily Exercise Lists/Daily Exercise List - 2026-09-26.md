@@ -11,28 +11,28 @@ tags:
 ## Random Review
 
 <!-- exercise-manager:exercises:start -->
-1. [ ] [[03 - Field Theory/Exercises/Exercise F25 - Degrees of Three Splitting Fields|Exercise F25: Degrees of Three Splitting Fields]] <!-- exercise-manager:unit 73c5ae1dfb2b5af547b6011d9a7966725332a4f76ee7a37acb26606a43bc1aa6 -->
+1. [x] [[03 - Field Theory/Exercises/Exercise F25 - Degrees of Three Splitting Fields|Exercise F25: Degrees of Three Splitting Fields]] <!-- exercise-manager:unit 73c5ae1dfb2b5af547b6011d9a7966725332a4f76ee7a37acb26606a43bc1aa6 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Section 3, Ex. 3.2, printed p. 506, PDF p. 518
 
    > [!question] Exercise 3.2
    > Determine over $\mathbb Q$ the degrees of the splitting fields of (a) $x^3-2$, (b) $x^4-1$, (c) $x^4+1$.
 
-2. [ ] [[05 - Galois Theory/Exercises/Exercise Gal50 - Galois Groups of xn Minus 1|Exercise Gal50: Galois Groups of x8 - 1, x12 - 1, and x9 - 1]] <!-- exercise-manager:unit 75c630fb33247c2a55e7fa1baab518cf088a9fd8a309cb2c551a5e2ad90a6351 -->
+2. [x] [[05 - Galois Theory/Exercises/Exercise Gal50 - Galois Groups of xn Minus 1|Exercise Gal50: Galois Groups of x8 - 1, x12 - 1, and x9 - 1]] <!-- exercise-manager:unit 75c630fb33247c2a55e7fa1baab518cf088a9fd8a309cb2c551a5e2ad90a6351 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Section 10, Ex. 10.8, printed p. 510, PDF p. 522
 
    > [!question] Exercise 10.8
    > Determine the Galois groups over $\mathbb Q$ of $x^8-1$, $x^{12}-1$, and $x^9-1$.
 
-3. [ ] [[01 - Group Theory/Exercises/Exercise G76 - Normality at Index Two but Not Index Three|Exercise G76: Normality at Index 2 but Not Index 3]] <!-- exercise-manager:unit 1ef68f1195bebea7b2d01788f8fd5e13494e4842163dd3de3c5977a976089870 -->
+3. [x] [[01 - Group Theory/Exercises/Exercise G76 - Normality at Index Two but Not Index Three|Exercise G76: Normality at Index 2 but Not Index 3]] <!-- exercise-manager:unit 1ef68f1195bebea7b2d01788f8fd5e13494e4842163dd3de3c5977a976089870 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 8, Ex. 8.10, printed p. 73, PDF p. 85
 
    > [!question] Exercise 8.10
    > Prove every subgroup of index $2$ is normal, and give a nonnormal subgroup of index $3$.
 
-4. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA66 - The Discrete Dirichlet Problem|Exercise LA66: The Discrete Dirichlet Problem]] <!-- exercise-manager:unit 8ce8c98bbd0997f1b692b6ac00fc869bc6a717498ecd795975a0656b9260d101 -->
+4. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA66 - The Discrete Dirichlet Problem|Exercise LA66: The Discrete Dirichlet Problem]] <!-- exercise-manager:unit 8ce8c98bbd0997f1b692b6ac00fc869bc6a717498ecd795975a0656b9260d101 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Miscellaneous Ex. M.11, printed p. 36, PDF p. 48
 
@@ -65,7 +65,7 @@ tags:
    > [!question] Exercise 6.10
    > Find all automorphisms of (a) a cyclic group of order $10$ and (b) $S_3$.
 
-7. [ ] [[05 - Galois Theory/Exercises/Exercise Gal64 - Base Change and Galois Groups|Exercise Gal64: Base Change and Galois Groups]] <!-- exercise-manager:unit d2a7627c58a514cc1dc0594ba803b944d90694defe3df2b8742892cedb6914a5 -->
+7. [x] [[05 - Galois Theory/Exercises/Exercise Gal64 - Base Change and Galois Groups|Exercise Gal64: Base Change and Galois Groups]] <!-- exercise-manager:unit d2a7627c58a514cc1dc0594ba803b944d90694defe3df2b8742892cedb6914a5 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Miscellaneous Ex. M.1, printed p. 511, PDF p. 523
 

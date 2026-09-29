@@ -10,7 +10,7 @@ tags:
   - bilinear-forms
   - symplectic-forms
 created: 2026-08-12
-source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.1 and 8.8, printed pp. 229–231 and 249–252, PDF pp. 241–243 and 261–264"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.1 and 8.8, printed pp. 229–231 and 249–252, PDF pp. 241–243 and 261–264; Serge Lang, Algebra, rev. 3rd ed., Ch. XV, §§8–9, printed pp. 587–589, PDF pp. 602–604; Emil Artin, Geometric Algebra (1957), printed pp. 141–142, PDF pp. 153–154 in the Internet Archive scan"
 source_status: partially-verified
 status: not-started
 ---
@@ -67,13 +67,51 @@ This decomposition defines the projection onto $W$ along $W^{\perp_\omega}$; it 
 
 ## Determinants and the Pfaffian
 
-For a $2n\times2n$ skew-symmetric matrix $A$, its Pfaffian is the polynomial satisfying
+Let $X$ be an alternating matrix over a commutative ring. In size $2m$, define the Pfaffian by a signed perfect-matching polynomial:
 
 $$
-\det A=\operatorname{Pf}(A)^2.
+\operatorname{Pf}_A(X)=\sum_{\mathcal M}\epsilon(\mathcal M)
+\prod_{r=1}^{m}x_{i_rj_r}.
 $$
 
-If $A$ has integer entries, $\operatorname{Pf}(A)$ is an integer. Hence the determinant is the square of an integer. An odd-dimensional skew-symmetric matrix has determinant zero.
+Here $\mathcal M$ ranges over partitions of the indices into pairs, with $i_r<j_r$ and $i_1<\cdots<i_m$; $\epsilon(\mathcal M)$ is the sign of $(i_1,j_1,\ldots,i_m,j_m)$. Set $\operatorname{Pf}_A(\varnothing)=1$. For odd size there is no perfect matching, so the Pfaffian is the zero polynomial. This is a universal integral definition, valid also in characteristic $2$ and over rings with nilpotents; it is more precise than choosing an unspecified square root of a determinant.
+
+The subscript $A$ identifies Emil Artin's convention in *Geometric Algebra*. For the interleaved matrix $J_{\mathrm{int}}=\operatorname{diag}(J_2,\ldots,J_2)$, with $J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, it gives $\operatorname{Pf}_A(J_{\mathrm{int}})=1$.
+
+> [!warning] Lang's normalization uses a different ordering
+> Lang's *Algebra*, XV §9, instead requires $\operatorname{Pf}_L(J_{\mathrm{grp}})=1$ for $J_{\mathrm{grp}}=\begin{pmatrix}0&I_m\\-I_m&0\end{pmatrix}$. Since $\operatorname{Pf}_A(J_{\mathrm{grp}})=(-1)^{m(m-1)/2}$, the conversion in size $2m$ is
+>
+> $$
+> \operatorname{Pf}_L(X)=(-1)^{m(m-1)/2}\operatorname{Pf}_A(X).
+> $$
+>
+> In size $4$ the two polynomials are negatives of one another. Dimension-changing cofactor formulas therefore require attention to the chosen convention.
+
+Both conventions satisfy the same-size identities
+
+$$
+\det X=\operatorname{Pf}(X)^2,\qquad
+\operatorname{Pf}(B^{\mathsf T}XB)=\det(B)\operatorname{Pf}(X).
+$$
+
+The second formula holds for every matrix $B$, including singular matrices. It implies that interchanging one pair of rows and the corresponding columns reverses the Pfaffian's sign, while scaling one row and its corresponding column by $t$ multiplies it by $t$.
+
+In Emil Artin's convention, deleting indices $r<s$ gives the coefficient of $x_{rs}$ as
+
+$$
+C_{rs}=(-1)^{r+s-1}\operatorname{Pf}_A(X^{\widehat r\widehat s}),
+\qquad \operatorname{Pf}_A(X)=\sum_{s=2}^{2m}x_{1s}C_{1s}.
+$$
+
+Each matching uses an index exactly once, so the polynomial is linear in the entries incident with any fixed index, while its total degree is $m$. For example,
+
+$$
+\operatorname{Pf}_A\begin{pmatrix}
+0&a&b&c\\-a&0&d&e\\-b&-d&0&f\\-c&-e&-f&0
+\end{pmatrix}=af-be+cd.
+$$
+
+Thus an integral alternating matrix of even size has a determinant that is the square of an integer. An odd-size alternating matrix has determinant zero over every commutative ring: prove this first for the generic matrix over an integral polynomial ring, using $\det X=\det(-X)=-\det X$, and then specialize. In characteristic $2$, merely requiring $X^{\mathsf T}=-X$ without a zero diagonal would not suffice.
 
 ## Examples
 
@@ -114,4 +152,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 - The definitions, orthogonal decomposition, and standard-form theorem are proved in [S1, Ch. 8, §8.8, Thms. 8.8.6–8.8.7, printed pp. 249–252, PDF pp. 261–264].
-- The Pfaffian identity is a standard external input not developed in Artin §8.8; Exercise LA18 includes a self-contained exterior-algebra justification of the identity used there.
+- The universal polynomial construction, Lang's normalization, and the determinant and congruence identities were checked in [S2, Ch. XV, §§8–9, printed pp. 587–589, PDF pp. 602–604]. The odd-size extension is requested in Exercise 19 and follows from the universal argument above.
+- Emil Artin's alternative normalization and seven Pfaffian properties were checked directly in the [1957 original scan, printed pp. 141–142 / PDF pp. 153–154](https://archive.org/download/geometricalgebra033556mbp/geometricalgebra033556mbp.pdf#page=153). This is Emil Artin's *Geometric Algebra*, distinct from S1. The matching definition and the explicit sign conversion above make the convention used by each displayed formula unambiguous.
