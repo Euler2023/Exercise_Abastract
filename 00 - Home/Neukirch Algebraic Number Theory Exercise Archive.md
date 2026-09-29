@@ -18,7 +18,7 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > [!info] Archive status and learning status
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
-> [!note] Initial scope
+> [!note] Audit scope
 > The seven chapter titles have been checked against the original contents pages. Chapter I §1 has a verified source set of seven exercises; its section coverage is tracked separately below. Full chapter exercise totals and ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
 
 ## Chapter Coverage
@@ -45,7 +45,7 @@ const auditedSections = new Map([
     title: "The Gaussian Integers",
     labels: ["I.1.1", "I.1.2", "I.1.3", "I.1.4", "I.1.5", "I.1.6", "I.1.7"],
     pages: "printed p. 5 / PDF p. 24",
-    reconciled: false,
+    reconciled: true,
   }],
 ]);
 
@@ -175,7 +175,7 @@ if (sorted.length === 0) {
 
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
-| I | Algebraic Integers | §1 source-audited: seven exercises; archival pending. Full chapter total pending. |
+| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. Full chapter total pending. |
 | II | The Theory of Valuations | Pending |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
@@ -209,7 +209,7 @@ The exercise groups of Chapter I §1 and §2 both begin with Exercise 1. They we
 1. Count one numbered source exercise once, regardless of its subparts or the note's learning status. A section number is required because exercise numbers restart.
 2. Parse each semicolon-separated source segment independently. Each segment counted here must begin with the canonical edition prefix; references to Lang, Artin, or other books do not contribute.
 3. Keep **archived source exercises**, **note files**, and **verified source totals** distinct. Exercise notes are discovered through `#exercise` and `source`, across all topic folders.
-4. Before a chapter batch, inspect its exercise pages and record the ordered source-label set, verified total, and printed/PDF page anchors in this dashboard. Update `auditedCoverage` only with those checked labels.
+4. Before a chapter or section batch, inspect its exercise pages and record the ordered source-label set, verified total, and printed/PDF page anchors in this dashboard. Update `auditedSections` for checked sections and `auditedCoverage` only for a checked whole chapter; a completed section does not establish the full chapter total.
 5. After archival, reconcile expected labels against note provenance. Mark a chapter `Complete` only after missing labels, duplicate mappings, unexpected labels, and unparsed locators are all absent and the total agrees.
 6. Preserve durable coverage and source-status records after reconciliation; remove temporary batch-planning material. Archive completeness does not certify every mathematical claim or change any learning status.
 
@@ -221,9 +221,13 @@ Future notes must distinguish the printed problem, independently derived solutio
 
 Chapter I §1 was source-audited on 2026-09-29 against the ordered labels I.1.1-I.1.7, all on printed p. 5 / PDF p. 24. The complete section text on printed pp. 1-5 / PDF pp. 20-24 was visually checked, including the exercise group's end before the §2 heading. No exercise requires a source figure. Section completion will not be promoted to chapter completion without a separate full-chapter source audit.
 
+On 2026-09-29, all seven labels were reconciled one-to-one with R322-R328 in Ring Theory: no missing labels, duplicate mappings, unexpected labels, or unparsed locators remain in this section. All seven notes preserve the source problem, contain progressive hints and an independently derived solution, and remain `not-started`. Mathematical cross-review covered every solution. Existing concepts suffice; no new concept note or topic directory was needed.
+
+Exercise I.1.2 makes explicit the intended positive-integer exponent convention and handles zero factors. I.1.3 preserves the original Gaussian-factorization hint and proves both directions of the parametrization. I.1.4 specifies an order compatible with ring operations. I.1.5-I.1.6 distinguish the specified quadratic subrings from the full rings of integers. I.1.6 proves infinitude by pigeonhole approximation and congruent equal-norm elements, without importing Dirichlet's unit theorem. I.1.7 proves Euclidean division using the absolute norm, the full unit group, and the complete prime-element classification, including the square criterion for 2 modulo an odd prime. No incorrect printed assertion was identified in this batch.
+
 ## Next Archive Target
 
-**Chapter I §1 — The Gaussian Integers.** Its seven exercise labels are source-audited; the approved trial batch will use R322-R328 in Ring Theory. The rest of Chapter I remains unaudited.
+**Chapter I §2 — Integrality.** Audit its complete exercise group before assigning the next topic-specific note numbers. Section §1 is complete; the rest of Chapter I remains unaudited.
 
 ## Related Archives
 

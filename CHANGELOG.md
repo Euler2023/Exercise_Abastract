@@ -2,6 +2,12 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-09-29 (Neukirch Chapter I Section 1 Trial Archive)
+
+- Added: All seven exercises from Chapter I section 1, The Gaussian Integers, as R322-R328 in Ring Theory, checked against printed p. 5 / PDF p. 24. Each note preserves the original problem, supplies progressive hints and an independent solution, and remains `not-started`; existing concepts are reused.
+- Verified: The source labels I.1.1-I.1.7 reconcile one-to-one. Mathematical cross-review covers the Gaussian power and Pythagorean arguments, the elementary infinite-unit proof, and the complete units/prime-elements classification for the square-root-of-two ring. Metadata, source anchors, links, formula syntax, and tracker discovery were checked.
+- Updated: The Neukirch dashboard now distinguishes completed section coverage (7/7) from the still-unaudited Chapter I total; the next target is section 2, Integrality.
+
 ### 2026-09-29 (Changelog History Separation)
 
 - Reorganized: Preserved the complete change history in `CHANGELOG.md`; README now shows only the latest three entries with a link to the full history. Updated the repository guidelines to keep both files synchronized on future changes.
