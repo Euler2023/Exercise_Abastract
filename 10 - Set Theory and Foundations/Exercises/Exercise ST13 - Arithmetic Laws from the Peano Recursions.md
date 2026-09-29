@@ -1,18 +1,18 @@
 ---
-title: "Exercise R201: Arithmetic Laws from the Peano Recursions"
-topic: ring-theory
+title: "Exercise ST13: Arithmetic Laws from the Peano Recursions"
+topic: set-theory
 difficulty: advanced
 status: not-started
 tags:
   - exercise
-  - ring-theory
+  - set-theory
   - peano-arithmetic
   - induction
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.2, The Integers, Ex. A.9, printed p. 521, PDF p. 533"
 created: 2026-08-28
 ---
 
-# Exercise R201: Arithmetic Laws from the Peano Recursions
+# Exercise ST13: Arithmetic Laws from the Peano Recursions
 
 ## Problem Statement
 
@@ -89,11 +89,11 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 
 ## Notes
 
-- **Routing:** Ring Theory is primary because these recursive laws are the algebraic foundation of the natural-number semiring.
+- **Routing:** The task derives arithmetic from the Peano recursions and induction, so its primary home is Set Theory and Foundations, with ring theory retained as a related application.
 - **External source input:** The proof uses the associative law for addition established in the surrounding text at [S1, Appendix, §A.2, printed p. 517, PDF p. 529]. All remaining induction steps are supplied here.
 - **Source status:** [S1, Appendix, §A.2, Ex. A.9, printed p. 521, PDF p. 533].

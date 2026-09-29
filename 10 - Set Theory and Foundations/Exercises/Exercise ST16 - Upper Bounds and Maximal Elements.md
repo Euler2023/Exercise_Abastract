@@ -1,18 +1,18 @@
 ---
-title: "Exercise R204: Upper Bounds and Maximal Elements"
-topic: ring-theory
+title: "Exercise ST16: Upper Bounds and Maximal Elements"
+topic: set-theory
 difficulty: beginner
 status: not-started
 tags:
   - exercise
-  - ring-theory
+  - set-theory
   - partially-ordered-sets
   - zorns-lemma
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.3, Zorn's Lemma, Ex. A.12, printed p. 522, PDF p. 534"
 created: 2026-08-28
 ---
 
-# Exercise R204: Upper Bounds and Maximal Elements
+# Exercise ST16: Upper Bounds and Maximal Elements
 
 ## Problem Statement
 
@@ -39,10 +39,10 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 
 ## Notes
 
-- **Routing:** Ring Theory is the nearest primary home because these order-theoretic distinctions are the input to maximal-ideal arguments.
+- **Routing:** The proof uses partial orders, antisymmetry, and total comparability, so the exercise belongs to Set Theory and Foundations.
 - **Terminology boundary:** A maximal element need not be a greatest element in a merely partially ordered set; part (b) explains why total order removes the distinction.
 - **Source status:** [S1, Appendix, §A.3, Ex. A.12, printed p. 522, PDF p. 534]. The proof is independent.

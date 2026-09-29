@@ -188,6 +188,36 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 722-729 / PDF pp. 737-744",
   }],
+  ["XIX", {
+    covered: 21,
+    total: 21,
+    status: "Complete",
+    pages: "printed pp. 753-758 / PDF pp. 768-773",
+  }],
+  ["XX", {
+    covered: 30,
+    total: 30,
+    status: "Complete",
+    pages: "printed pp. 826-832 / PDF pp. 841-847",
+  }],
+  ["XXI", {
+    covered: 5,
+    total: 5,
+    status: "Complete",
+    pages: "printed pp. 864-866 / PDF pp. 879-881",
+  }],
+  ["A1", {
+    covered: 0,
+    total: 0,
+    status: "Complete (no numbered exercises)",
+    pages: "printed pp. 867-873 / PDF pp. 882-888",
+  }],
+  ["A2", {
+    covered: 14,
+    total: 14,
+    status: "Complete",
+    pages: "printed pp. 892-893 / PDF pp. 907-908",
+  }],
 ]);
 
 const rows = [];
@@ -247,11 +277,12 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | XVI | The Tensor Product | All 15 exercises XVI.1-XVI.15; printed pp. 637-640 / PDF pp. 652-655 | Complete; 3 Field Theory, 11 Linear Algebra and Modules, and 1 Representation Theory notes |
 | XVII | Semisimplicity | All 15 exercises XVII.1-XVII.15; printed pp. 661-662 / PDF pp. 676-677 | Complete; 6 Ring Theory, 7 Linear Algebra and Modules, and 2 Representation Theory notes |
 | XVIII | Representations of Finite Groups | All 27 exercises XVIII.1-XVIII.27; printed pp. 722-729 / PDF pp. 737-744 | Complete; 25 Representation Theory, 1 Ring Theory, and 1 Linear Algebra and Modules notes |
-| XIX | The Alternating Product | Pending source-total audit | Not archived |
-| XX | General Homology Theory | Pending source-total audit | Not archived |
-| XXI | Finite Free Resolutions | Pending source-total audit | Not archived |
-| Appendix 1 | The Transcendence of e and pi | Pending source-total audit | Not archived |
-| Appendix 2 | Some Set Theory | Pending source-total audit | Not archived |
+| XIX | The Alternating Product | All 21 exercises XIX.1-XIX.21; printed pp. 753-758 / PDF pp. 768-773 | Complete; 7 Linear Algebra and Modules (LA492-LA498), 13 Ring Theory (R308-R320), and 1 Representation Theory (Rep150) notes |
+| XX | General Homology Theory | All 30 exercises XX.1-XX.30; printed pp. 826-832 / PDF pp. 841-847 | Complete; 28 Linear Algebra and Modules (LA499-LA526), 1 Group Theory (G330), and 1 Ring Theory (R321) notes |
+| XXI | Finite Free Resolutions | All 5 exercises XXI.1-XXI.5; printed pp. 864-866 / PDF pp. 879-881 | Complete; 5 Linear Algebra and Modules notes (LA527-LA531) |
+| Appendix 1 | The Transcendence of e and pi | No numbered exercises; all printed pp. 867-873 / PDF pp. 882-888 inspected, PDF p. 889 blank | Complete; no numbered exercises |
+| Appendix 2 | Some Set Theory | All 14 exercises A2.1-A2.14; printed pp. 892-893 / PDF pp. 907-908 | Complete; 10 Set Theory and Foundations (ST1-ST10) and 4 Field Theory (F117-F120) notes |
+
 
 ## Verified Chapter Coverage
 
@@ -275,6 +306,17 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 |     XVI | XVI.1-XVI.15    | printed pp. 637-640 / PDF pp. 652-655 |             15 |       0 |         0 |          0 |        0 | Complete |
 |    XVII | XVII.1-XVII.15  | printed pp. 661-662 / PDF pp. 676-677 |             15 |       0 |         0 |          0 |        0 | Complete |
 |   XVIII | XVIII.1-XVIII.27 | printed pp. 722-729 / PDF pp. 737-744 |             27 |       0 |         0 |          0 |        0 | Complete |
+| XIX | XIX.1-XIX.21 | printed pp. 753-758 / PDF pp. 768-773 | 21 | 0 | 0 | 0 | 0 | Complete |
+| XX | XX.1-XX.30 | printed pp. 826-832 / PDF pp. 841-847 | 30 | 0 | 0 | 0 | 0 | Complete |
+| XXI | XXI.1-XXI.5 | printed pp. 864-866 / PDF pp. 879-881 | 5 | 0 | 0 | 0 | 0 | Complete |
+| A1 | Empty set (0) | printed pp. 867-873 / PDF pp. 882-888 | 0 | 0 | 0 | 0 | 0 | Complete |
+| A2 | A2.1-A2.14 | printed pp. 892-893 / PDF pp. 907-908 | 14 | 0 | 0 | 0 | 0 | Complete |
+
+The final source audit covered all exercise pages of Chapters XIX-XXI and every page of both appendices before any note in this batch was created. On 2026-09-29, the ordered sets XIX.1-XIX.21 (21), XX.1-XX.30 (30), XXI.1-XXI.5 (5), and A2.1-A2.14 (14) were reconciled against parsed note provenance: all 70 labels map exactly once, with no missing, duplicate, unexpected, or unparsed locators. Appendix 1 has no numbered exercises; its printed pp. 867-873 / PDF pp. 882-888 and the blank PDF p. 889 were inspected. Appendix 2's in-text proof requests for Corollaries 3.9 and 3.11 are included in Exercises 1 and 6, not counted twice.
+
+The complete edition now has **529 archived numbered source exercises across Chapters I-XXI and Appendix 2**. Appendix 1 contributes zero. The final 70 notes comprise LA492-LA531, R308-R321, F117-F120, G330, Rep150, and ST1-ST10, all with learning status `not-started`. The nine new prerequisite concepts have dynamic exercise backlinks and topic-hub entries. Every new mathematical note received an independent cross-review; the global provenance count does not re-audit the earlier proofs or alter their stated proof status.
+
+The approved Set Theory and Foundations topic also contains six migrated Artin appendix exercises as ST11-ST16 and the existing induction and Zorn-lemma concepts. Their source identities and learning states are preserved; their relocation does not add to Lang's source count.
 
 Chapter XVIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVIII.1-XVIII.27 (27 total), printed pp. 722-729 / PDF pp. 737-744. Each source label has exactly one parsed note mapping: 25 in Representation Theory (Rep125-Rep149), XVIII.18 in Ring Theory (R307), and XVIII.19 in Linear Algebra and Modules (LA491). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 27 learning statuses remain `not-started`. A fresh provenance reconciliation of Chapters I-XVIII finds 459 distinct source exercises, each mapped once; this does not re-audit the earlier proofs. The two new prerequisites, Isotypic Components and Clifford Theory and Character Rings and Adams Operations, have dynamic exercise backlinks and Representation Theory Hub links. The notes distinguish independent proofs, source-checked textbook inputs, corrected statements, and unconsulted reading references.
 
@@ -639,6 +681,28 @@ dv.table(
 );
 ```
 
+### Final Chapters and Appendix 2
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const order = new Map([["XIX",0],["XX",1],["XXI",2],["A2",3]]);
+const rows = [];
+for (const p of dv.pages("#exercise")) {
+  if (typeof p.source !== "string") continue;
+  for (const segment of p.source.split(";")) {
+    if (!segment.includes(edition)) continue;
+    const ch = segment.match(/Ch\.\s*([IVXLCDM]+)\b/);
+    const ap = segment.match(/Appendix\s*([12])\b/);
+    const unit = ch ? ch[1] : ap ? "A" + ap[1] : null;
+    const ex = segment.match(/Exercise\s*(\d+)\b/);
+    if (order.has(unit) && ex) rows.push([unit,Number(ex[1]),p.file.link,p.topic,p.status]);
+  }
+}
+rows.sort((a,b) => order.get(a[0])-order.get(b[0]) || a[1]-b[1]);
+dv.table(["Lang exercise","Archived note","Topic","Learning status"],
+  rows.map(r => [r[0]+"."+r[1],r[2],r[3],r[4]]));
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -765,6 +829,17 @@ dv.table(
 - **XVIII.26:** Rep148 distinguishes the printed isotypic determinant from the multiplicity-space determinant required for induction. It records the undefined factor in the trace formula, the zeta-function subscript, and the ordinary-characteristic-polynomial mismatch. Its complete repaired formalism uses explicitly added categorical quotient and compatible invariant-space hypotheses; the incompatible printed formulation is not claimed proved.
 - **XVIII.27:** Rep149 proves absolute irreducibility and exhaustion after reduction by averaging equivariant Hom spaces over a stable DVR lattice. No unramified-prime hypothesis is added; the arithmetic and semisimplicity inputs and the distinction between reduced traces and Brauer-character lifts remain explicit.
 
+- **Final source and figure coverage:** XIX printed pp. 753-758 / PDF pp. 768-773; XX printed pp. 826-832 / PDF pp. 841-847; XXI printed pp. 864-866 / PDF pp. 879-881; Appendix 2 printed pp. 892-893 / PDF pp. 907-908. All relevant diagrams contain formulas and maps and are transcribed as searchable MathJax; no raster attachment is required.
+- **XIX.5, XIX.9:** The shuffle formula's final index and the quotient-differential exercise reference are retained and corrected explicitly.
+- **XIX.13:** Horizontal elements form an R-submodule; the directional Leibniz identity alone does not imply uniqueness. LA497 states both boundaries and proves the curvature formula.
+- **XIX.16-XIX.21:** The Clifford basis argument covers arbitrary characteristic. XIX.18 prints the wrong eigenvalues, omits the exterior algebra from an endomorphism target, and uses a contraction sign incompatible with the chapter's relation. Rep150 gives the corrected exterior model and explicit matrix units. Real periodicity is proved without importing the unconsulted topological reading references.
+- **XX.1, XX.3-XX.5, XX.9:** The standard resolution requires a nonempty set; the inhomogeneous boundary has a final sign/tuple error; cohomology of invariants is right-derived; a two-cocycle has domain G times G. The group-extension classification requires an abelian kernel with fixed action and equivalences fixing both ends; XX.5(b)'s H1 must be H2.
+- **XX.15-XX.18:** The augmentation sequences split over the integers, not generally as G-modules. The cyclic cohomology parity formulas are interchanged in print. XX.17 conflicts with the initial-zero requirement in DEL 1; LA513 gives a counterexample and proves the consistent nonnegative Tate convention, which LA514 then uses.
+- **XX.23, XX.28:** The Baer hint extends first to the domain enlarged by one cyclic submodule; the cyclic Ext formula in XX.28(a) needs a nonzero parameter. Literal statements and counterexamples or repairs are explicit.
+- **XX.30:** LA526 retains the chapter's first-quadrant convention and proves the composite Euler formula using fully injective resolutions and finite truncations, without spectral sequences. It invokes the precise Euler-Poincare family definition from XX §3 rather than just the weaker summary in §9, and records the category subscript typo in CHAR 2. The source's Ext-argument reversal on printed p. 791 is recorded in Derived Functors and Ext.
+- **XXI.2, XXI.4-XXI.5:** The missing target parameter and duplicated condition in Exercise 2, the property-number reference in Exercise 4's hint, and the localization/quotient-module typos in Exercise 5's hint are retained and explained. The Koszul and Ext regular-sequence arguments identify their hypotheses and avoid circular appeals to depth equivalences.
+- **Appendix 2.1, Appendix 2.11, Appendix 2.13:** Corollary 3.9's finite-subset union omits the empty-set term; Exercise 11 needs n at least 2. The historical question and 1994 note in Exercise 13 are preserved as source text, with a separate explicit choice-based cardinal counterexample. They are not extra exercise labels.
+
 ## Next Archive Target
 
-Chapter XIX, **The Alternating Product**. Its numbered exercise set and exact printed/PDF exercise-page range must be source-audited before the next batch is assigned numbers or marked complete.
+None: all numbered chapter and appendix exercises in this edition have been archived and reconciled. Archive completeness is separate from learning completion and from the proof-status caveats recorded in individual notes.

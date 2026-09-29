@@ -13,7 +13,8 @@
 		{"id":"890abcdef0123456","type":"file","file":"08 - Arithmetic Geometry/Arithmetic Geometry Hub.md","x":770,"y":500,"width":280,"height":120,"color":"2"},
 		{"id":"simplegroups12345","type":"text","text":"### Simple & Sporadic\nClassification (CFSG)\n26 sporadic groups\nMonster → Moonshine","x":-80,"y":120,"width":200,"height":100,"color":"1"},
 		{"id":"solvablegroups123","type":"text","text":"### Solvable Groups\nAbel-Ruffini\nShafarevich theorem","x":300,"y":-80,"width":180,"height":80,"color":"6"},
-		{"id":"igpfaltings123456","type":"text","text":"### Deep Connections\n**IGP ↔ Faltings**\nAnabelian geometry\nSection conjecture","x":530,"y":360,"width":200,"height":100,"color":"3"}
+		{"id":"igpfaltings123456","type":"text","text":"### Deep Connections\n**IGP ↔ Faltings**\nAnabelian geometry\nSection conjecture","x":530,"y":360,"width":200,"height":100,"color":"3"},
+		{"id":"1026092900000001","type":"file","file":"10 - Set Theory and Foundations/Set Theory and Foundations Hub.md","x":-430,"y":-360,"width":300,"height":130,"color":"6"}
 	],
 	"edges":[
 		{"id":"e1a2b3c4d5e6f7a8","fromNode":"b2c3d4e5f6789012","fromSide":"right","toNode":"c3d4e5f678901234","toSide":"left","label":"generalizes to"},
@@ -31,6 +32,9 @@
 		{"id":"esolvable2galois1","fromNode":"solvablegroups123","fromSide":"bottom","toNode":"f67890123456789a","toSide":"top","color":"6","label":"solvability"},
 		{"id":"eigpfalt2arithgeo","fromNode":"igpfaltings123456","fromSide":"bottom","toNode":"890abcdef0123456","toSide":"top","color":"3","label":"covers & curves"},
 		{"id":"egroup2simple1234","fromNode":"b2c3d4e5f6789012","fromSide":"bottom","toNode":"simplegroups12345","toSide":"top","color":"1"},
-		{"id":"egroup2solvable12","fromNode":"b2c3d4e5f6789012","fromSide":"right","toNode":"solvablegroups123","toSide":"left","color":"1"}
+		{"id":"egroup2solvable12","fromNode":"b2c3d4e5f6789012","fromSide":"right","toNode":"solvablegroups123","toSide":"left","color":"1"},
+		{"id":"1026092900000002","fromNode":"1026092900000001","fromSide":"right","toNode":"b2c3d4e5f6789012","toSide":"top","label":"finite sets"},
+		{"id":"1026092900000003","fromNode":"1026092900000001","fromSide":"right","toNode":"c3d4e5f678901234","toSide":"top","label":"maximal ideals"},
+		{"id":"1026092900000004","fromNode":"1026092900000001","fromSide":"right","toNode":"d4e5f6789012345a","toSide":"top","label":"cardinality and closure"}
 	]
 }

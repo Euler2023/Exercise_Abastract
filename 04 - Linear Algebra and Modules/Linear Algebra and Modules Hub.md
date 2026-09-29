@@ -77,6 +77,12 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Module Support and Fibers|Module Support and Fibers]]
 
 ### Constructions
+- [[04 - Linear Algebra and Modules/Concepts/Exterior Algebra|Exterior Algebra]]
+- [[04 - Linear Algebra and Modules/Concepts/Connections and Curvature|Connections and Curvature]]
+- [[04 - Linear Algebra and Modules/Concepts/Injective Modules and Baer Criterion|Injective Modules and Baer's Criterion]]
+- [[04 - Linear Algebra and Modules/Concepts/Derived Functors and Ext|Derived Functors and Ext]]
+- [[04 - Linear Algebra and Modules/Concepts/Group Cohomology and Standard Resolutions|Group Cohomology and Standard Resolutions]]
+- [[04 - Linear Algebra and Modules/Concepts/Koszul Complexes and Regular Sequences|Koszul Complexes and Regular Sequences]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]

@@ -16,14 +16,16 @@ Ring theory studies algebraic structures with two operations: addition and multi
 ## Core Concepts
 
 ### Foundations
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[02 - Ring Theory/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Subrings|Subrings]]
 - [[02 - Ring Theory/Concepts/Ring Homomorphisms|Ring Homomorphisms]]
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 
 ### Structure Theory
+- [[02 - Ring Theory/Concepts/Clifford Algebras|Clifford Algebras]]
+- [[02 - Ring Theory/Concepts/Universal Derivations and Kahler Differentials|Universal Derivations and Kahler Differentials]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[02 - Ring Theory/Concepts/Primary Ideals and Primary Decomposition|Primary Ideals and Primary Decomposition]]

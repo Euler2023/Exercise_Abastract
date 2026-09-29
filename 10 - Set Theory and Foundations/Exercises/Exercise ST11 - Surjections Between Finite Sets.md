@@ -1,18 +1,18 @@
 ---
-title: "Exercise G280: Surjections Between Finite Sets"
-topic: group-theory
+title: "Exercise ST11: Surjections Between Finite Sets"
+topic: set-theory
 difficulty: beginner
 status: not-started
 tags:
   - exercise
-  - group-theory
+  - set-theory
   - finite-sets
   - induction
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.1, About Proofs, Ex. A.4, printed p. 521, PDF p. 533"
 created: 2026-08-28
 ---
 
-# Exercise G280: Surjections Between Finite Sets
+# Exercise ST11: Surjections Between Finite Sets
 
 ## Problem Statement
 
@@ -51,10 +51,10 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic|Cardinality and Cardinal Arithmetic]]
 
 ## Notes
 
-- **Routing:** Group Theory is the closest existing topic because cardinality comparisons for finite maps are a recurring input to finite-group arguments.
+- **Routing:** Finite-set cardinality and an induction argument are the primary tools, so the exercise belongs to Set Theory and Foundations.
 - **Source status:** [S1, Appendix, §A.1, Ex. A.4, printed p. 521, PDF p. 533]. The induction is independent.

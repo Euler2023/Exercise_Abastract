@@ -1,18 +1,18 @@
 ---
-title: "Exercise R202: Translation and Trichotomy for the Natural Order"
-topic: ring-theory
+title: "Exercise ST14: Translation and Trichotomy for the Natural Order"
+topic: set-theory
 difficulty: intermediate
 status: not-started
 tags:
   - exercise
-  - ring-theory
+  - set-theory
   - natural-numbers
   - order-relations
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.2, The Integers, Ex. A.10, printed p. 521, PDF p. 533"
 created: 2026-08-28
 ---
 
-# Exercise R202: Translation and Trichotomy for the Natural Order
+# Exercise ST14: Translation and Trichotomy for the Natural Order
 
 ## Problem Statement
 
@@ -61,10 +61,10 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
 
 ## Notes
 
-- **Routing:** Ring Theory is the nearest primary home because the order is derived from the additive structure of $\mathbb N$.
+- **Routing:** The task constructs and compares the natural-number order from Peano arithmetic, so it belongs to Set Theory and Foundations.
 - **Convention:** Artin's natural numbers begin with $1$, so the witness in $b=a+n$ is automatically positive and defines strict inequality.
 - **Source status:** [S1, Appendix, §A.2, Ex. A.10, printed p. 521, PDF p. 533]. The proofs are independent.

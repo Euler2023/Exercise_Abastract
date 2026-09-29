@@ -8,7 +8,8 @@ const topicLabels = [
   "Galois Theory",
   "Representation Theory",
   "Modular Forms",
-  "Arithmetic Geometry"
+  "Arithmetic Geometry",
+  "Set Theory and Foundations"
 ];
 const topicValues = [
   "group-theory",
@@ -19,7 +20,8 @@ const topicValues = [
   "galois-theory",
   "representation-theory",
   "modular-forms",
-  "arithmetic-geometry"
+  "arithmetic-geometry",
+  "set-theory"
 ];
 const topic = await tp.system.suggester(topicLabels, topicValues, true, "Select a topic");
 -%>

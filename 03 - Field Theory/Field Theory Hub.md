@@ -15,6 +15,8 @@ Field theory studies algebraic structures where every non-zero element has a mul
 
 ## Core Concepts
 
+Foundational cardinality arguments used in constructing and counting extensions are collected in [[10 - Set Theory and Foundations/Set Theory and Foundations Hub|Set Theory and Foundations]].
+
 ### Foundations
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]

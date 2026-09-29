@@ -60,6 +60,7 @@ exercise_abstract/
 ├── 06 - Representation Theory/  # Concepts/ and Exercises/
 ├── 07 - Modular Forms/  # Concepts/ and Exercises/
 ├── 08 - Arithmetic Geometry/  # Concepts/ and Exercises/
+├── 10 - Set Theory and Foundations/  # Concepts/ and Exercises/
 ├── Canvas/              # .canvas files for visual maps
 ├── Templates/           # Templater templates
 └── Attachments/         # Images and files
@@ -123,6 +124,7 @@ exercise_abstract/
 | Representation Theory | `representation-theory` |
 | Modular Forms | `modular-forms` |
 | Arithmetic Geometry | `arithmetic-geometry` |
+| Set Theory and Foundations | `set-theory` |
 
 ### 6. Base Files (.base)
 
@@ -150,6 +152,7 @@ Canvas files use JSON format. When creating:
 | Representation Theory | Rep |
 | Modular Forms | MF |
 | Arithmetic Geometry | AG |
+| Set Theory and Foundations | ST |
 
 ### 9. When Adding New Topics
 

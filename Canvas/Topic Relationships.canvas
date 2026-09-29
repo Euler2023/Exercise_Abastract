@@ -43,7 +43,11 @@
 		{"id":"rep3weights1234567","type":"text","text":"### Weights\nHighest weight theory","x":970,"y":1030,"width":300,"height":60},
 		{"id":"rep4characters12345","type":"text","text":"### Characters\n$\\chi(g) = \\text{tr}(\\rho(g))$","x":970,"y":1110,"width":300,"height":60},
 		{"id":"rep5monster12345678","type":"text","text":"### Monster Group\nLargest sporadic, $|\\mathbb{M}| \\approx 8 \\times 10^{53}$","x":970,"y":1190,"width":300,"height":60},
-		{"id":"rep1liealgebras123","type":"text","text":"## Lie Algebras\n$[X,Y]$ bracket, $\\mathfrak{sl}_2$","x":970,"y":870,"width":300,"height":60}
+		{"id":"rep1liealgebras123","type":"text","text":"## Lie Algebras\n$[X,Y]$ bracket, $\\mathfrak{sl}_2$","x":970,"y":870,"width":300,"height":60},
+		{"id":"1026092900000010","type":"group","x":-580,"y":-150,"width":430,"height":590,"color":"6","label":"Set Theory and Foundations"},
+		{"id":"1026092900000011","type":"file","file":"10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic.md","x":-540,"y":-100,"width":340,"height":110},
+		{"id":"1026092900000012","type":"file","file":"10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma.md","x":-540,"y":70,"width":340,"height":110},
+		{"id":"1026092900000013","type":"file","file":"10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic.md","x":-540,"y":240,"width":340,"height":110}
 	],
 	"edges":[
 		{"id":"ea1234567890abcde","fromNode":"n1d4e5f6789012345","fromSide":"bottom","toNode":"n2e5f67890123456a","toSide":"top"},
@@ -82,6 +86,9 @@
 		{"id":"erep5to6monster12","fromNode":"rep5monster12345678","fromSide":"bottom","toNode":"rep6moonshine12345","toSide":"top"},
 		{"id":"ecross3spor2rep12","fromNode":"n10sporadicgrp123","fromSide":"right","toNode":"rep5monster12345678","toSide":"left","color":"1","label":"Monster"},
 		{"id":"ecross4moon2mod12","fromNode":"rep6moonshine12345","fromSide":"left","toNode":"m4lfunctions12345b","toSide":"right","color":"4","label":"j-function"},
-		{"id":"ecross5solv2gal12","fromNode":"n9solvablegroups12","fromSide":"right","toNode":"f6ddef01234567890","toSide":"left","color":"6","label":"solvability"}
+		{"id":"ecross5solv2gal12","fromNode":"n9solvablegroups12","fromSide":"right","toNode":"f6ddef01234567890","toSide":"left","color":"6","label":"solvability"},
+		{"id":"1026092900000014","fromNode":"1026092900000011","fromSide":"bottom","toNode":"1026092900000013","toSide":"top","label":"finite and infinite counting"},
+		{"id":"1026092900000015","fromNode":"1026092900000012","fromSide":"right","toNode":"r5c6789abcdef0123","toSide":"left","label":"existence"},
+		{"id":"1026092900000016","fromNode":"1026092900000013","fromSide":"right","toNode":"f4bbcdef012345678","toSide":"top","label":"algebraic closures"}
 	]
 }

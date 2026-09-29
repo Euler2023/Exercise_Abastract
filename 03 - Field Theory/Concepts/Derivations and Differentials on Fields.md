@@ -92,6 +92,7 @@ $$
 > Let $k=\mathbb F_p(s)$ and $K=L=k(s^{1/p})$. The identity extension $L/K$ is separable algebraic, but $\dim_L\Omega_{L/k}^1=1$ while $\operatorname{tr.deg}(L/k)=0$. It is the extension over the field appearing in the differential subscript that controls the dimension comparison.
 
 ## Related Concepts
+- [[02 - Ring Theory/Concepts/Universal Derivations and Kahler Differentials|Universal differentials over arbitrary commutative algebras]]
 
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Transcendence Bases and Transcendence Degree|Transcendence Bases and Transcendence Degree]]

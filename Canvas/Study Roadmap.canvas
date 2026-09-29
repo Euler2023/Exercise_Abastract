@@ -36,7 +36,8 @@
 		{"id":"f5schemes123456789","type":"text","x":900,"y":420,"width":200,"height":60,"text":"**29. Schemes**\nSpec, sheaves"},
 		{"id":"f6galoisrep1234567","type":"text","x":900,"y":500,"width":200,"height":60,"text":"**30. Galois Rep.**\nÉtale cohomology"},
 		{"id":"f7langlands12345678","type":"text","x":900,"y":580,"width":200,"height":60,"text":"**31. Langlands**\nAutomorphic forms"},
-		{"id":"f8moonshine12345678","type":"text","x":900,"y":660,"width":200,"height":60,"text":"**32. Moonshine**\nMonster, $j$-function"}
+		{"id":"f8moonshine12345678","type":"text","x":900,"y":660,"width":200,"height":60,"text":"**32. Moonshine**\nMonster, $j$-function"},
+		{"id":"1026092900000020","type":"file","file":"10 - Set Theory and Foundations/Set Theory and Foundations Hub.md","x":-410,"y":100,"width":300,"height":150,"color":"6"}
 	],
 	"edges":[
 		{"id":"se1234567890abcde","fromNode":"p1e5f67890123456a","fromSide":"bottom","toNode":"p2f67890123456789","toSide":"top"},
@@ -70,6 +71,7 @@
 		{"id":"sem78901234567890","fromNode":"f5schemes123456789","fromSide":"bottom","toNode":"f6galoisrep1234567","toSide":"top"},
 		{"id":"sen89012345678901","fromNode":"f6galoisrep1234567","fromSide":"bottom","toNode":"f7langlands12345678","toSide":"top"},
 		{"id":"seo90123456789012","fromNode":"f7langlands12345678","fromSide":"bottom","toNode":"f8moonshine12345678","toSide":"top"},
-		{"id":"secross1sporadmoon","fromNode":"a9sporadicgroups12","fromSide":"bottom","toNode":"f8moonshine12345678","toSide":"left","color":"5","label":"Monster"}
+		{"id":"secross1sporadmoon","fromNode":"a9sporadicgroups12","fromSide":"bottom","toNode":"f8moonshine12345678","toSide":"left","color":"5","label":"Monster"},
+		{"id":"1026092900000021","fromNode":"1026092900000020","fromSide":"right","toNode":"p1e5f67890123456a","toSide":"left","label":"sets and induction"}
 	]
 }

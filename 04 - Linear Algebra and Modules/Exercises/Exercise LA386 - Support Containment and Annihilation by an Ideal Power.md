@@ -52,7 +52,7 @@ The chapter uses commutative rings, and $\subset$ allows equality.
 - [[04 - Linear Algebra and Modules/Concepts/Module Support and Fibers|Module Support and Fibers]]
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]
 - [[02 - Ring Theory/Concepts/Nilpotent and Idempotent Elements|Nilpotent and Idempotent Elements]]
-- [[02 - Ring Theory/Concepts/Partially Ordered Sets and Zorns Lemma|Zorn's Lemma]]
+- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Zorn's Lemma]]
 
 ## Notes
 

@@ -1,18 +1,18 @@
 ---
-title: "Exercise R200: Every Natural Number after One Is a Successor"
-topic: ring-theory
+title: "Exercise ST12: Every Natural Number after One Is a Successor"
+topic: set-theory
 difficulty: beginner
 status: not-started
 tags:
   - exercise
-  - ring-theory
+  - set-theory
   - peano-axioms
   - induction
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.2, The Integers, Ex. A.8, printed p. 521, PDF p. 533"
 created: 2026-08-28
 ---
 
-# Exercise R200: Every Natural Number after One Is a Successor
+# Exercise ST12: Every Natural Number after One Is a Successor
 
 ## Problem Statement
 
@@ -39,10 +39,10 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
 
 ## Notes
 
-- **Routing:** Ring Theory is the nearest primary home because this foundational result supports the inductive construction of integer arithmetic.
+- **Routing:** The proof uses the Peano successor and induction axioms directly, so the exercise belongs to Set Theory and Foundations.
 - **Notation:** The prime in $m'$ denotes the Peano successor, not differentiation or factorial.
 - **Source status:** [S1, Appendix, §A.2, Ex. A.8, printed p. 521, PDF p. 533]. The proof is independent from the stated Peano axioms.

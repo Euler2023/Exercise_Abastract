@@ -46,7 +46,7 @@ created: 2026-08-28
 
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
 
 ## Notes
 

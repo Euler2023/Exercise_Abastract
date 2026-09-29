@@ -79,7 +79,7 @@ GROUP BY true
 
 ```dataview
 TABLE status, difficulty, topic
-FROM "01 - Group Theory/Exercises" OR "02 - Ring Theory/Exercises" OR "03 - Field Theory/Exercises" OR "04 - Linear Algebra and Modules/Exercises" OR "05 - Galois Theory/Exercises" OR "06 - Representation Theory/Exercises" OR "07 - Modular Forms/Exercises" OR "08 - Arithmetic Geometry/Exercises"
+FROM "01 - Group Theory/Exercises" OR "02 - Ring Theory/Exercises" OR "03 - Field Theory/Exercises" OR "04 - Linear Algebra and Modules/Exercises" OR "05 - Galois Theory/Exercises" OR "06 - Representation Theory/Exercises" OR "07 - Modular Forms/Exercises" OR "08 - Arithmetic Geometry/Exercises" OR "10 - Set Theory and Foundations/Exercises"
 SORT file.mtime DESC
 LIMIT 20
 ```

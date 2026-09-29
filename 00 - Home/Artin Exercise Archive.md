@@ -165,7 +165,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 |                 14 | Linear Algebra in a Ring         | All 55 source exercises: 45 section exercises and M.1–M.10 | Complete; all source labels map one-to-one to LA312–LA350, R188–R193, G269–G277, and F38                                                         |
 |                 15 | Fields                           | All 60 source exercises: 53 section exercises and M.1–M.7  | Complete; all source labels map one-to-one to 60 notes across Field, Galois, Group, Ring, and Arithmetic Geometry topics                         |
 |                 16 | Galois Theory                    | All 90 source exercises: 77 section exercises and M.1–M.13 | Complete; all source labels and page anchors reconcile one-to-one with 90 notes                                                                  |
-|           Appendix | Background Material              | All 15 source exercises, A.1–A.15                          | Complete; all source labels map one-to-one to R194–R205, G280, and AG15–AG16; Exercise A.7's zero-polynomial boundary is visibly flagged in R199 |
+|           Appendix | Background Material              | All 15 source exercises, A.1–A.15                          | Complete; all source labels map one-to-one to R194–R199, R205, ST11–ST16, and AG15–AG16; Exercise A.7's zero-polynomial boundary is visibly flagged in R199 |
 
 
 ## Source Exercise to Archived Note Mapping
@@ -636,6 +636,8 @@ SORT exercise_group ASC, section_order ASC, exercise_order ASC, file.name ASC
 ```
 
 ### Appendix — Background Material
+
+The 15 labels A.1-A.15 were reconciled again after the approved topic migration on 2026-09-29, with no missing, duplicate, unexpected, or unparsed appendix locators. A.4 and A.8-A.12 are now ST11-ST16 in [[10 - Set Theory and Foundations/Set Theory and Foundations Hub|Set Theory and Foundations]], reflecting their finite-set, Peano, induction, and order-theoretic methods. The original exercise pages, printed pp. 521-522 / PDF pp. 533-534, were rechecked. The remaining numerical, ring-theoretic, and geometric exercises retain their existing topics. No source label, problem, proof, creation date, or learning status changed in the six migrated notes.
 
 ```dataview
 TABLE WITHOUT ID

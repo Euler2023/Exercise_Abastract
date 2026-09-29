@@ -1,18 +1,18 @@
 ---
-title: "Exercise R203: Complete Induction from Ordinary Induction"
-topic: ring-theory
+title: "Exercise ST15: Complete Induction from Ordinary Induction"
+topic: set-theory
 difficulty: intermediate
 status: not-started
 tags:
   - exercise
-  - ring-theory
+  - set-theory
   - complete-induction
   - peano-axioms
 source: "Michael Artin, Algebra, 2nd ed., Appendix, Background Material, Section A.2, The Integers, Ex. A.11, printed p. 521, PDF p. 533"
 created: 2026-08-28
 ---
 
-# Exercise R203: Complete Induction from Ordinary Induction
+# Exercise ST15: Complete Induction from Ordinary Induction
 
 ## Problem Statement
 
@@ -37,10 +37,10 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[02 - Ring Theory/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[02 - Ring Theory/Exercises/Exercise R202 - Translation and Trichotomy for the Natural Order|Translation and Trichotomy for the Natural Order]]
+- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[10 - Set Theory and Foundations/Exercises/Exercise ST14 - Translation and Trichotomy for the Natural Order|Translation and Trichotomy for the Natural Order]]
 
 ## Notes
 
-- **Routing:** Ring Theory is the nearest primary home because complete induction is derived from the Peano structure supporting integer arithmetic.
+- **Routing:** The equivalence of induction principles is a foundational argument about the natural numbers, so the exercise belongs to Set Theory and Foundations.
 - **Source status:** [S1, Appendix, §A.2, Ex. A.11, printed p. 521, PDF p. 533]. The proof is independent.

@@ -4,10 +4,10 @@ aliases:
   - Peano Axioms
   - Complete Induction
   - Strong Induction
-topic: ring-theory
+topic: set-theory
 tags:
   - concept
-  - ring-theory
+  - set-theory
   - induction
   - peano-arithmetic
 created: 2026-08-28
@@ -76,7 +76,7 @@ $$
 
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
-- [[02 - Ring Theory/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 
 ## Exercises
 

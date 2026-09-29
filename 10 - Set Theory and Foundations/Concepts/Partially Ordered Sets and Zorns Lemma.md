@@ -3,10 +3,10 @@ title: Partially Ordered Sets and Zorn's Lemma
 aliases:
   - Posets and Zorn's Lemma
   - Zorn's Lemma
-topic: ring-theory
+topic: set-theory
 tags:
   - concept
-  - ring-theory
+  - set-theory
   - partially-ordered-sets
   - zorns-lemma
 created: 2026-08-28
