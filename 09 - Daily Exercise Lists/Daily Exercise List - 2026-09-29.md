@@ -57,7 +57,7 @@ tags:
    > [!question] Exercise M.10
    > Let $K/F$ be finite and $f(x)\in K[x]$. Prove there is a nonzero $g(x)\in K[x]$ such that $f(x)g(x)\in F[x]$.
 
-7. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA47 - Rank Normal Form by Row and Column Operations|Exercise LA47: Rank Normal Form by Row and Column Operations]] <!-- exercise-manager:unit 8aed50f53698ee677c9e92a69407a07278001dd78f22f8d3e6d5cdc1545c3a33 -->
+7. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA47 - Rank Normal Form by Row and Column Operations|Exercise LA47: Rank Normal Form by Row and Column Operations]] <!-- exercise-manager:unit 8aed50f53698ee677c9e92a69407a07278001dd78f22f8d3e6d5cdc1545c3a33 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, §3, Ex. 3.4, printed p. 33, PDF p. 45; Ch. 4, §2, Ex. 2.4, printed p. 126, PDF p. 138
 
@@ -70,21 +70,21 @@ tags:
    > Q^{-1}AP=\begin{pmatrix}I_r&0\\0&0\end{pmatrix}.
    > $$
 
-8. [ ] [[02 - Ring Theory/Exercises/Exercise R11 - Signs of Real Discriminants|Exercise R11: Signs of Real Discriminants]] <!-- exercise-manager:unit a5e699f8a482c205e495267f70b3324d654021662305438ec2f4c55d712574fe -->
+8. [x] [[02 - Ring Theory/Exercises/Exercise R11 - Signs of Real Discriminants|Exercise R11: Signs of Real Discriminants]] <!-- exercise-manager:unit a5e699f8a482c205e495267f70b3324d654021662305438ec2f4c55d712574fe -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 16, Section 2, Ex. 2.2, printed p. 506, PDF p. 518
 
    > [!question] Exercise 2.2
    > (a) Prove the discriminant of a real cubic is nonnegative iff it has three real roots. (b) If a real quartic has positive discriminant, what can be said about its real roots?
 
-9. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA33 - Products with Matrix Units|Exercise LA33: Products with Matrix Units]] <!-- exercise-manager:unit 1c81fdc02a61a3b1e30d9f0e4605dea45e51d08b2f4550117119150bd648af83 -->
+9. [x] [[04 - Linear Algebra and Modules/Exercises/Exercise LA33 - Products with Matrix Units|Exercise LA33: Products with Matrix Units]] <!-- exercise-manager:unit 1c81fdc02a61a3b1e30d9f0e4605dea45e51d08b2f4550117119150bd648af83 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 1, Section 1, Ex. 1.15, printed p. 32, PDF p. 44
 
    > [!question] Exercise 1.15
    > For an arbitrary matrix $A=(a_{ij})$, determine $e_{ij}A$, $Ae_{ij}$, $e_j^{\mathsf T}Ae_k$, $e_{ii}Ae_{jj}$, and $e_{ij}Ae_{k\ell}$.
 
-10. [ ] [[01 - Group Theory/Exercises/Exercise G42 - Finite Order Factors with Infinite Order Product|Exercise G42: Finite-Order Factors with Infinite-Order Product]] <!-- exercise-manager:unit e49bb89353379b32175b716c7194e6e9845dc39ac4974358002823549c085cd0 -->
+10. [x] [[01 - Group Theory/Exercises/Exercise G42 - Finite Order Factors with Infinite Order Product|Exercise G42: Finite-Order Factors with Infinite-Order Product]] <!-- exercise-manager:unit e49bb89353379b32175b716c7194e6e9845dc39ac4974358002823549c085cd0 -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 2, Section 4, Ex. 4.10, printed p. 71, PDF p. 83
 

@@ -12,7 +12,7 @@ tags:
   - adjoint-representation
   - invariant-forms
 created: 2026-08-24
-source: "Michael Artin, Algebra, 2nd ed., Ch. 9, Miscellaneous Exs. M.11–M.13, printed p. 289, PDF p. 301; terminology compared with the standard Lie-algebra definition"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 9, Miscellaneous Exs. M.11–M.13, printed p. 289, PDF p. 301; Serge Lang, Algebra, rev. 3rd ed., Ch. XVI, Exercises 14-15, printed pp. 639-640, PDF pp. 654-655; terminology compared with the standard Lie-algebra definition"
 source_status: verified-with-terminology-warning
 status: not-started
 ---
@@ -78,6 +78,22 @@ $$
 =\operatorname{Ad}_P\operatorname{ad}_A\operatorname{Ad}_{P^{-1}}.
 $$
 
+## The Characteristic Boundary for Trace-Zero Matrices
+
+Over any field $k$, the defining trace form on $E=\mathfrak{sl}_n(k)$ remains conjugation invariant, but its nondegeneracy depends on the characteristic. For $n\ge1$,
+
+$$
+\operatorname{rad}(B_{\mathrm{tr}}|_E)=E\cap kI_n
+=\{aI_n:na=0\}.
+$$
+
+To verify this, test an element $X$ of the radical against $E_{ji}$ for $i\ne j$: all off-diagonal entries of $X$ vanish. Testing against $E_{ii}-E_{jj}$ makes its diagonal entries equal, so $X=aI_n$. Conversely, $\operatorname{tr}(aI_nY)=a\operatorname{tr}(Y)=0$ for every $Y\in E$, and membership in $E$ is exactly $na=0$. For $n=1$, $E=0$ and the same formula gives the zero radical.
+
+Thus this form is nondegenerate exactly when $n\cdot1_k\ne0$. If $\operatorname{char}(k)\mid n$, its radical is the nonzero line $kI_n$.
+
+> [!warning] Source boundary for the Casimir construction
+> Lang XVI.15(d) invokes the nondegenerate-form construction of Exercise 14 without stating $n\cdot1_k\ne0$. That additional hypothesis is necessary for the trace form on $\mathfrak{sl}_n(k)$. Under it, the [[04 - Linear Algebra and Modules/Concepts/Casimir Tensors and Invariant Elements|Casimir tensor]] is fixed by the conjugation action, and its image under any equivariant map to an algebra with a $G$-action by algebra automorphisms is also fixed. Invariance of the form alone does not imply its nondegeneracy.
+
 ## Kernel of the Adjoint Representation
 
 For a matrix group whose defining representation is irreducible enough that the commutant consists of scalars, the kernel of $\operatorname{Ad}$ is the center:
@@ -132,6 +148,7 @@ For $\mathfrak{sl}_n(\mathbb R)$, the positive subspace is the symmetric trace-z
 - [[06 - Representation Theory/Concepts/Representation Theory|Representation Theory Definition]]
 - [[06 - Representation Theory/Concepts/SU2 Quaternions and the Spin Cover|SU2, Quaternions, and the Spin Cover]]
 - [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]]
+- [[04 - Linear Algebra and Modules/Concepts/Casimir Tensors and Invariant Elements|Casimir Tensors and Invariant Elements]]
 
 ## Exercises
 
@@ -145,3 +162,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 Artin states the adjoint action, the defining trace form, and Exercises M.11–M.13 at [S1, Ch. 9, Misc. Exs. M.11–M.13, printed p. 289, PDF p. 301]. The source terminology and missing prime in M.11 are recorded explicitly above. The standard Killing-form definition, the distinction between the two forms, the signature table, and the kernel explanations are independent exposition checked against standard finite-dimensional Lie theory.
 
+Lang's trace-form and Casimir assertions were visually checked at [S2, Ch. XVI, Exercises 14-15, printed pp. 639-640, PDF pp. 654-655]. The characteristic-dependent radical computation above is an independent proof that exposes the missing hypothesis in Exercise 15(d); complete solutions and the invariant-tensor construction are supplied in the linked exercise notes.

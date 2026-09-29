@@ -23,13 +23,15 @@ status: not-started
 
 > [!info] Definition (For Vector Spaces)
 > For [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|vector spaces]] $V, W$ over field $F$:
-> $$\dim(V \otimes_F W) = \dim V \cdot \dim W$$
+> $$
+> \dim(V \otimes_F W) = \dim V \cdot \dim W
+> $$
 > If $\{v_i\}$ and $\{w_j\}$ are bases, then $\{v_i \otimes w_j\}$ is a basis for $V \otimes W$.
 
 ## Universal Property
 
 > [!abstract] Universal Property
-> $M \otimes_R N$ is characterized by: for any abelian group $P$ and $R$-bilinear map $\phi: M \times N \to P$, there exists a unique group homomorphism $\tilde{\phi}: M \otimes_R N \to P$ such that $\tilde{\phi}(m \otimes n) = \phi(m, n)$.
+> $M \otimes_R N$ is characterized by: for any abelian group $P$ and biadditive, $R$-balanced map $\phi: M \times N \to P$, meaning $\phi(mr,n)=\phi(m,rn)$, there exists a unique group homomorphism $\tilde{\phi}: M \otimes_R N \to P$ such that $\tilde{\phi}(m \otimes n) = \phi(m, n)$.
 > ```
 > M × N --φ--> P
 >   |         ^
@@ -38,19 +40,23 @@ status: not-started
 > M ⊗ N -----→
 > ```
 
+When $R$ is commutative, $M,N$ are $R$-modules, and $P$ is an $R$-module, the tensor product also has an $R$-module structure. In that setting $R$-bilinear maps to $P$ correspond to $R$-linear maps out of the tensor product. The distinction matters when the target is only an abelian group.
+
 ## Key Properties
 
 1. $R \otimes_R M \cong M$ (via $r \otimes m \mapsto rm$)
 2. $M \otimes_R N \cong N \otimes_{R^{op}} M$ (when both sides make sense)
 3. $(M \oplus M') \otimes N \cong (M \otimes N) \oplus (M' \otimes N)$
 4. Tensor product is right exact (preserves surjections)
-5. $(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P)$ (associativity)
+5. $(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P)$ when $M$ is a right $R$-module, $N$ an $(R,S)$-bimodule with commuting actions, and $P$ a left $S$-module (associativity)
 
 ## Tensor Product of Algebras
 
 > [!info] Definition
-> For $R$-algebras $A$ and $B$:
-> $$A \otimes_R B$$
+> For a commutative ring $R$ and $R$-algebras $A$ and $B$ with central scalar actions:
+> $$
+> A \otimes_R B
+> $$
 > is an $R$-algebra with multiplication $(a \otimes b)(a' \otimes b') = aa' \otimes bb'$.
 
 ## Examples
@@ -70,6 +76,8 @@ status: not-started
 > [!example] Example 5: Matrices
 > $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$
 
+The algebra tensor products in these examples use a commutative base ring.
+
 ## Flatness
 
 > [!info] Definition (Flat Module)
@@ -79,6 +87,8 @@ Examples of flat modules:
 - Free modules
 - Projective modules
 - Localizations
+
+For commutative rings, a flat module is **faithfully flat** when tensoring with it also detects nonzero modules. The maximal-ideal criterion, extension of scalars, and Lazard's description as a directed limit of finite free modules are developed in [[04 - Linear Algebra and Modules/Concepts/Flat and Faithfully Flat Modules|Flat and Faithfully Flat Modules]].
 
 ## Related Concepts
 
@@ -99,3 +109,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
+
+The commutative-ring multilinear universal property was rechecked at [S2, Ch. XVI, §1, printed p. 602, PDF p. 617]. The biadditive balanced formulation for right/left modules is the direct universal property of the displayed generators and relations; it is stated separately from the source's commutative-module formulation. The bimodule and central-scalar hypotheses were made explicit on 2026-09-29.

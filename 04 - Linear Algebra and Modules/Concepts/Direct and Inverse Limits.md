@@ -133,6 +133,19 @@ $$
 
 is injective when $E$ is finitely generated and is an isomorphism when $E$ is finitely presented. Without these finiteness hypotheses the direct-limit assertion need not hold.
 
+## Tensor Products and Flatness
+
+Over a commutative ring $A$, tensoring with any fixed module commutes with directed limits:
+
+$$
+\left(\varinjlim_i E_i\right)\otimes_A M
+\cong\varinjlim_i(E_i\otimes_A M).
+$$
+
+The map sends $[x_i]\otimes m$ to $[x_i\otimes m]$. The common-stage equality criterion makes this map well-defined and gives its inverse. Combining this fact with finite-stage detection of zero proves that a directed limit of flat modules is flat.
+
+Lazard's theorem supplies a converse description: an $A$-module is flat exactly when it is a directed limit of finite free modules. The transition maps need not be injective, so this does not assert a directed union of free submodules. See [[04 - Linear Algebra and Modules/Concepts/Flat and Faithfully Flat Modules|Flat and Faithfully Flat Modules]] for the statement and links to the full exercise proofs.
+
 ## Examples
 
 > [!example] The $p$-adic integers
@@ -172,3 +185,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 The definitions, universal constructions, Mittag-Leffler boundary, and examples were checked against Lang §10. The exactness and Hom comparison statements occur as Chapter III exercises; the explanations here are independent derivations or proof summaries, with complete arguments supplied in the linked exercise notes.
+
+The tensor-limit identity and Lazard's theorem are posed in [S2, Ch. XVI, Exercises 12-13, printed p. 639, PDF p. 654], checked on the original page image. Their proofs are independently supplied in the corresponding exercise notes; the source's hint does not itself supply all of the compatible-system construction.

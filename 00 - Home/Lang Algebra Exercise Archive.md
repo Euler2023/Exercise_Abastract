@@ -170,6 +170,12 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 595-600 / PDF pp. 610-615",
   }],
+  ["XVI", {
+    covered: 15,
+    total: 15,
+    status: "Complete",
+    pages: "printed pp. 637-640 / PDF pp. 652-655",
+  }],
 ]);
 
 const rows = [];
@@ -226,7 +232,7 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | XIII | Matrices and Linear Maps | All 36 exercises XIII.1-XIII.36; printed pp. 545-552 / PDF pp. 560-567 | Complete; 24 Linear Algebra and Modules, 3 Ring Theory, 2 Group Theory, 5 Representation Theory, and 2 Galois Theory notes |
 | XIV | Representation of One Endomorphism | All 26 exercises XIV.1-XIV.26; printed pp. 567-570 / PDF pp. 582-585 | Complete; 26 Linear Algebra and Modules notes |
 | XV | Structure of Bilinear Forms | All 30 exercises XV.1-XV.30; printed pp. 595-600 / PDF pp. 610-615 | Complete; 30 Linear Algebra and Modules notes |
-| XVI | The Tensor Product | Pending source-total audit | Not archived |
+| XVI | The Tensor Product | All 15 exercises XVI.1-XVI.15; printed pp. 637-640 / PDF pp. 652-655 | Complete; 3 Field Theory, 11 Linear Algebra and Modules, and 1 Representation Theory notes |
 | XVII | Semisimplicity | Pending source-total audit | Not archived |
 | XVIII | Representations of Finite Groups | Pending source-total audit | Not archived |
 | XIX | The Alternating Product | Pending source-total audit | Not archived |
@@ -237,23 +243,26 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 
 ## Verified Chapter Coverage
 
-| Chapter | Verified labels | Source pages | Archived notes | Missing | Duplicate | Unexpected | Unparsed | Status |
-|---:|---|---|---:|---:|---:|---:|---:|---|
-| I | I.1-I.57 | printed pp. 75-82 / PDF pp. 90-97 | 57 | 0 | 0 | 0 | 0 | Complete |
-| II | II.1-II.19 | printed pp. 114-116 / PDF pp. 129-131 | 19 | 0 | 0 | 0 | 0 | Complete |
-| III | III.1-III.29 | printed pp. 165-172 / PDF pp. 180-187 | 29 | 0 | 0 | 0 | 0 | Complete |
-| IV | IV.1-IV.27 | printed pp. 213-219 / PDF pp. 228-234 | 27 | 0 | 0 | 0 | 0 | Complete |
-| V | V.1-V.34 | printed pp. 253-259 / PDF pp. 268-274 | 34 | 0 | 0 | 0 | 0 | Complete |
-| VI | VI.1-VI.51 | printed pp. 320-332 / PDF pp. 335-347 | 51 | 0 | 0 | 0 | 0 | Complete |
-| VII | VII.1-VII.12 | printed pp. 352-354 / PDF pp. 367-369 | 12 | 0 | 0 | 0 | 0 | Complete |
-| VIII | VIII.1-VIII.10 | printed pp. 374-375 / PDF pp. 389-390 | 10 | 0 | 0 | 0 | 0 | Complete |
-| IX | IX.1-IX.19 | printed pp. 410-412 / PDF pp. 425-427 | 19 | 0 | 0 | 0 | 0 | Complete |
-| X | X.1-X.19 | printed pp. 443-447 / PDF pp. 458-462 | 19 | 0 | 0 | 0 | 0 | Complete |
-| XI | XI.1-XI.13 | printed pp. 461-463 / PDF pp. 476-478 | 13 | 0 | 0 | 0 | 0 | Complete |
-| XII | XII.1-XII.20 | printed pp. 495-499 / PDF pp. 510-514 | 20 | 0 | 0 | 0 | 0 | Complete |
-| XIII | XIII.1-XIII.36 | printed pp. 545-552 / PDF pp. 560-567 | 36 | 0 | 0 | 0 | 0 | Complete |
-| XIV | XIV.1-XIV.26 | printed pp. 567-570 / PDF pp. 582-585 | 26 | 0 | 0 | 0 | 0 | Complete |
-| XV | XV.1-XV.30 | printed pp. 595-600 / PDF pp. 610-615 | 30 | 0 | 0 | 0 | 0 | Complete |
+| Chapter | Verified labels | Source pages                          | Archived notes | Missing | Duplicate | Unexpected | Unparsed | Status   |
+| ------: | --------------- | ------------------------------------- | -------------: | ------: | --------: | ---------: | -------: | -------- |
+|       I | I.1-I.57        | printed pp. 75-82 / PDF pp. 90-97     |             57 |       0 |         0 |          0 |        0 | Complete |
+|      II | II.1-II.19      | printed pp. 114-116 / PDF pp. 129-131 |             19 |       0 |         0 |          0 |        0 | Complete |
+|     III | III.1-III.29    | printed pp. 165-172 / PDF pp. 180-187 |             29 |       0 |         0 |          0 |        0 | Complete |
+|      IV | IV.1-IV.27      | printed pp. 213-219 / PDF pp. 228-234 |             27 |       0 |         0 |          0 |        0 | Complete |
+|       V | V.1-V.34        | printed pp. 253-259 / PDF pp. 268-274 |             34 |       0 |         0 |          0 |        0 | Complete |
+|      VI | VI.1-VI.51      | printed pp. 320-332 / PDF pp. 335-347 |             51 |       0 |         0 |          0 |        0 | Complete |
+|     VII | VII.1-VII.12    | printed pp. 352-354 / PDF pp. 367-369 |             12 |       0 |         0 |          0 |        0 | Complete |
+|    VIII | VIII.1-VIII.10  | printed pp. 374-375 / PDF pp. 389-390 |             10 |       0 |         0 |          0 |        0 | Complete |
+|      IX | IX.1-IX.19      | printed pp. 410-412 / PDF pp. 425-427 |             19 |       0 |         0 |          0 |        0 | Complete |
+|       X | X.1-X.19        | printed pp. 443-447 / PDF pp. 458-462 |             19 |       0 |         0 |          0 |        0 | Complete |
+|      XI | XI.1-XI.13      | printed pp. 461-463 / PDF pp. 476-478 |             13 |       0 |         0 |          0 |        0 | Complete |
+|     XII | XII.1-XII.20    | printed pp. 495-499 / PDF pp. 510-514 |             20 |       0 |         0 |          0 |        0 | Complete |
+|    XIII | XIII.1-XIII.36  | printed pp. 545-552 / PDF pp. 560-567 |             36 |       0 |         0 |          0 |        0 | Complete |
+|     XIV | XIV.1-XIV.26    | printed pp. 567-570 / PDF pp. 582-585 |             26 |       0 |         0 |          0 |        0 | Complete |
+|      XV | XV.1-XV.30      | printed pp. 595-600 / PDF pp. 610-615 |             30 |       0 |         0 |          0 |        0 | Complete |
+|     XVI | XVI.1-XVI.15    | printed pp. 637-640 / PDF pp. 652-655 |             15 |       0 |         0 |          0 |        0 | Complete |
+
+Chapter XVI was source-audited on all four original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVI.1-XVI.15 (15 total), printed pp. 637-640 / PDF pp. 652-655. Each source label has exactly one parsed note mapping: 3 in Field Theory (F114-F116), 11 in Linear Algebra and Modules (LA473-LA483), and 1 in Representation Theory (Rep122). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 15 learning statuses remain `not-started`. Chapters I-XVI now cover 417 source exercises. Two prerequisite concepts, Flat and Faithfully Flat Modules and Casimir Tensors and Invariant Elements, have dynamic exercise backlinks and topic-hub links. Existing tensor, direct-limit, and invariant-trace-form concepts have the needed convention and hypothesis clarifications.
 
 Chapter XV was source-audited on all six original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XV.1-XV.30 (30 total), printed pp. 595-600 / PDF pp. 610-615. Each label has exactly one parsed note mapping in Linear Algebra and Modules (LA443-LA472). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 30 learning statuses remain `not-started`. Chapters I-XV now cover 402 source exercises. Two prerequisite concepts, Quadratic Maps and Polarization and Witt and Witt-Grothendieck Groups, have dynamic exercise backlinks and links from the topic hub. The inner-product projection convention and the Pfaffian normalization in existing concepts were clarified.
 
@@ -695,6 +704,13 @@ dv.table(
 - **XV.19-XV.20:** LA461 proves odd-dimensional vanishing in the universal integral polynomial ring before specialization, including characteristic 2 and coefficient rings with nilpotents. LA462 checks and proves all seven properties on Emil Artin's original *Geometric Algebra* (1957), printed p. 142 / PDF p. 154, including the preceding definition on printed p. 141 / PDF p. 153. It explicitly distinguishes Artin's Pfaffian normalization from Lang's grouped symplectic normalization, differing by the factor $(-1)^{m(m-1)/2}$ in dimension $2m$.
 - **XV.21-XV.30 proof boundaries:** The Witt-group notes state characteristic different from 2 for symmetric forms; the alternating Witt extension proof includes characteristic 2. The Iwasawa decomposition and chamber calculations are independent finite-dimensional linear-algebra derivations. The source's shared [JoL 01] solution reference is recorded but is not used as a proof input.
 
+- **Chapter XVI source diagrams:** All four original exercise pages (printed pp. 637-640 / PDF pp. 652-655) were inspected as high-resolution PDF renders. The norm square in XVI.5 and the Hom comparison diagram in XVI.11 are preserved with their nodes, arrows, and labels as searchable MathJax arrays. No raster attachment was needed.
+- **XVI.1-XVI.3:** F114-F116 use minimal polynomials, separability, and algebraic closure, with tensor prerequisites cross-linked. XVI.2 inherits the arbitrary extension $k'/k$ from the preceding exercise. XVI.3 tests the algebraic closure $k^a$, and “no nilpotent elements” means no nonzero nilpotents. The primitive element theorem is a named, source-checked proof input.
+- **XVI.5:** LA474 preserves the correct printed formula $N(x\otimes_B y)=N(x)\otimes N(y)$. Its left-hand norm is taken over $A\otimes_R A$, using $(A\otimes_R B)\otimes_B(A\otimes_R B)\cong(A\otimes_R A)\otimes_R B$; the rank remains $r$. The tensor is not silently replaced by ordinary multiplication.
+- **XVI.8:** LA477 reproduces all three parts of Proposition 3.2. Part (iii) prints “principal ring,” while its torsion-free equivalence needs a principal ideal domain. The note checks Lang's definitions, gives a $\mathbb Z/4\mathbb Z$ counterexample to the literal statement, and proves the corrected arbitrary-module assertion. The maximal-ideal existence theorem and the finitely generated PID module structure theorem are named proof inputs.
+- **XVI.9-XVI.13:** The faithful-flatness notes distinguish detection of nonzero objects from the usual faithfulness on morphisms and prove their equivalence in the flat case. LA482 supplies a complete Lazard proof with an actual directed partially ordered index set, compatible transition maps, and a proof that the limit is the given module. The printed Bourbaki reference is retained, but no unverified theorem from it is used.
+- **XVI.14-XVI.15:** LA483 constructs the basis-independent Casimir tensor and its algebra images. Rep122 states and proves the necessary condition $n\cdot1_k\ne0$ for the trace pairing on $\mathfrak{sl}_n(k)$ to be nondegenerate; its radical is $\mathfrak{sl}_n(k)\cap kI_n$. The original characteristic-free parts are retained, and algebra actions in the invariance argument are explicitly by algebra automorphisms. Basis independence alone does not assert centrality. The source's Lie-derivative remark is retained as context, not as a proof input.
+
 ## Next Archive Target
 
-Chapter XVI, **The Tensor Product**, is the next chapter awaiting a bounded source-total audit.
+Chapter XVII, **Semisimplicity**, is the next chapter awaiting a bounded source-total audit.

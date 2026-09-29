@@ -78,6 +78,13 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-29 (Lang Chapter XVI Exercise Archive)
+
+- Added: All 15 exercises XVI.1-XVI.15 from Lang's *Algebra*, revised third edition, checked against the original pages (printed pp. 637-640 / PDF pp. 652-655): F114-F116 in Field Theory, LA473-LA483 in Linear Algebra and Modules, and Rep122 in Representation Theory. Each note preserves the source problem, supplies progressive hints and an independent solution, and remains `not-started`.
+- Added: Flat and Faithfully Flat Modules and Casimir Tensors and Invariant Elements, with dynamic exercise backlinks and topic-hub links. Clarified balanced maps and bimodule hypotheses in Tensor Product, linked direct limits to flatness, and recorded the characteristic boundary of the trace pairing in the existing invariant-form concept.
+- Clarified: The norm's base ring in XVI.5, the missing integral-domain hypothesis in Proposition 3.2(iii) requested by XVI.8, and the missing nondegeneracy condition in XVI.15(d). The Lazard proof explicitly constructs a compatible directed system. Original source issues and named proof inputs remain visible; source diagrams are transcribed as searchable formulas.
+- Verified: All 15 source labels map one-to-one, with no missing, duplicate, unexpected, or unparsed mappings. Mathematical cross-review, metadata, links, Obsidian math syntax, and Study Progress discovery passed their checks. Chapters I-XVI now cover 417 source exercises; the next target is Chapter XVII.
+
 ### 2026-09-29 (Lang Chapter XV Exercise Archive)
 
 - Added: All 30 exercises XV.1-XV.30 from Lang's *Algebra*, revised third edition, as LA443-LA472 in Linear Algebra and Modules. Each note preserves the source problem, provides progressive hints and an independent solution, and remains `not-started`. The six original exercise pages were visually checked (printed pp. 595-600 / PDF pp. 610-615).
