@@ -80,6 +80,10 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-29 (Neukirch Exercise Archive Dashboard)
+
+- Added: A Neukirch Algebraic Number Theory archive dashboard modeled on the Lang archive, with seven source-checked chapter titles, dynamic chapter coverage and exercise mappings, source-locator checks, and a Chapter I next-target pointer. Exercise identities include chapter, section, and number because numbering restarts between sections. Full source totals remain explicitly unaudited; no exercise notes or learning states were changed. Linked the dashboard from the home page.
+
 ### 2026-09-29 (Lang Archive Completed and Set Theory Foundations)
 
 - Added: All 70 remaining Lang exercises: Chapter XIX (21), XX (30), XXI (5), and Appendix 2 (14), after visual inspection of the original PDF. Appendix 1 has no numbered exercises. The new notes are LA492-LA531, R308-R321, F117-F120, G330, Rep150, and ST1-ST10; all remain `not-started`.
