@@ -29,6 +29,8 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Primary Ideals and Primary Decomposition|Primary Ideals and Primary Decomposition]]
 - [[02 - Ring Theory/Concepts/Isomorphism Theorems for Rings|Isomorphism Theorems]]
 - [[02 - Ring Theory/Concepts/Local Rings|Local Rings]]
+- [[02 - Ring Theory/Concepts/Jacobson Radical and Artinian Rings|Jacobson Radical and Artinian Rings]]
+- [[04 - Linear Algebra and Modules/Concepts/Semisimple Modules and Rings|Semisimple Modules and Rings]]
 
 ### Special Rings
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]

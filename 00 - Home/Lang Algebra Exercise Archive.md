@@ -176,6 +176,18 @@ const auditedCoverage = new Map([
     status: "Complete",
     pages: "printed pp. 637-640 / PDF pp. 652-655",
   }],
+  ["XVII", {
+    covered: 15,
+    total: 15,
+    status: "Complete",
+    pages: "printed pp. 661-662 / PDF pp. 676-677",
+  }],
+  ["XVIII", {
+    covered: 27,
+    total: 27,
+    status: "Complete",
+    pages: "printed pp. 722-729 / PDF pp. 737-744",
+  }],
 ]);
 
 const rows = [];
@@ -233,8 +245,8 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | XIV | Representation of One Endomorphism | All 26 exercises XIV.1-XIV.26; printed pp. 567-570 / PDF pp. 582-585 | Complete; 26 Linear Algebra and Modules notes |
 | XV | Structure of Bilinear Forms | All 30 exercises XV.1-XV.30; printed pp. 595-600 / PDF pp. 610-615 | Complete; 30 Linear Algebra and Modules notes |
 | XVI | The Tensor Product | All 15 exercises XVI.1-XVI.15; printed pp. 637-640 / PDF pp. 652-655 | Complete; 3 Field Theory, 11 Linear Algebra and Modules, and 1 Representation Theory notes |
-| XVII | Semisimplicity | Pending source-total audit | Not archived |
-| XVIII | Representations of Finite Groups | Pending source-total audit | Not archived |
+| XVII | Semisimplicity | All 15 exercises XVII.1-XVII.15; printed pp. 661-662 / PDF pp. 676-677 | Complete; 6 Ring Theory, 7 Linear Algebra and Modules, and 2 Representation Theory notes |
+| XVIII | Representations of Finite Groups | All 27 exercises XVIII.1-XVIII.27; printed pp. 722-729 / PDF pp. 737-744 | Complete; 25 Representation Theory, 1 Ring Theory, and 1 Linear Algebra and Modules notes |
 | XIX | The Alternating Product | Pending source-total audit | Not archived |
 | XX | General Homology Theory | Pending source-total audit | Not archived |
 | XXI | Finite Free Resolutions | Pending source-total audit | Not archived |
@@ -261,6 +273,12 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 |     XIV | XIV.1-XIV.26    | printed pp. 567-570 / PDF pp. 582-585 |             26 |       0 |         0 |          0 |        0 | Complete |
 |      XV | XV.1-XV.30      | printed pp. 595-600 / PDF pp. 610-615 |             30 |       0 |         0 |          0 |        0 | Complete |
 |     XVI | XVI.1-XVI.15    | printed pp. 637-640 / PDF pp. 652-655 |             15 |       0 |         0 |          0 |        0 | Complete |
+|    XVII | XVII.1-XVII.15  | printed pp. 661-662 / PDF pp. 676-677 |             15 |       0 |         0 |          0 |        0 | Complete |
+|   XVIII | XVIII.1-XVIII.27 | printed pp. 722-729 / PDF pp. 737-744 |             27 |       0 |         0 |          0 |        0 | Complete |
+
+Chapter XVIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVIII.1-XVIII.27 (27 total), printed pp. 722-729 / PDF pp. 737-744. Each source label has exactly one parsed note mapping: 25 in Representation Theory (Rep125-Rep149), XVIII.18 in Ring Theory (R307), and XVIII.19 in Linear Algebra and Modules (LA491). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 27 learning statuses remain `not-started`. A fresh provenance reconciliation of Chapters I-XVIII finds 459 distinct source exercises, each mapped once; this does not re-audit the earlier proofs. The two new prerequisites, Isotypic Components and Clifford Theory and Character Rings and Adams Operations, have dynamic exercise backlinks and Representation Theory Hub links. The notes distinguish independent proofs, source-checked textbook inputs, corrected statements, and unconsulted reading references.
+
+Chapter XVII was source-audited on both original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVII.1-XVII.15 (15 total), printed pp. 661-662 / PDF pp. 676-677. Each source label has exactly one parsed note mapping: 6 in Ring Theory (R301-R306), 7 in Linear Algebra and Modules (LA484-LA490), and 2 in Representation Theory (Rep123-Rep124). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 15 learning statuses remain `not-started`. Chapters I-XVII now cover 432 source exercises. Three prerequisite concepts, Jacobson Radical and Artinian Rings, Semisimple Modules and Rings, and Generators and Balanced Modules, have dynamic exercise backlinks and topic-hub links.
 
 Chapter XVI was source-audited on all four original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVI.1-XVI.15 (15 total), printed pp. 637-640 / PDF pp. 652-655. Each source label has exactly one parsed note mapping: 3 in Field Theory (F114-F116), 11 in Linear Algebra and Modules (LA473-LA483), and 1 in Representation Theory (Rep122). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 15 learning statuses remain `not-started`. Chapters I-XVI now cover 417 source exercises. Two prerequisite concepts, Flat and Faithfully Flat Modules and Casimir Tensors and Invariant Elements, have dynamic exercise backlinks and topic-hub links. Existing tensor, direct-limit, and invariant-trace-form concepts have the needed convention and hypothesis clarifications.
 
@@ -601,6 +619,26 @@ dv.table(
 );
 ```
 
+### Chapter XVIII — Representations of Finite Groups
+
+```dataviewjs
+const langSource = "Serge Lang, Algebra, rev. 3rd ed.";
+const rows = [];
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const segment of page.source.split(";")) {
+    if (!segment.includes(langSource) || !/Ch\.\s*XVIII\b/i.test(segment)) continue;
+    const match = segment.match(/Exercise\s*(\d+)/i);
+    if (match) rows.push([Number(match[1]), page.file.link, page.status, page.difficulty]);
+  }
+}
+rows.sort((a, b) => a[0] - b[0]);
+dv.table(
+  ["Source exercise", "Archived note", "Learning status", "Difficulty"],
+  rows.map(row => ["XVIII." + row[0], row[1], row[2], row[3]])
+);
+```
+
 ## Source Issues and Figure Coverage
 
 - **I.48:** The printed finite-count identities omit finiteness hypotheses; the note preserves the wording and proves the intended finite statement.
@@ -711,6 +749,22 @@ dv.table(
 - **XVI.9-XVI.13:** The faithful-flatness notes distinguish detection of nonzero objects from the usual faithfulness on morphisms and prove their equivalence in the flat case. LA482 supplies a complete Lazard proof with an actual directed partially ordered index set, compatible transition maps, and a proof that the limit is the given module. The printed Bourbaki reference is retained, but no unverified theorem from it is used.
 - **XVI.14-XVI.15:** LA483 constructs the basis-independent Casimir tensor and its algebra images. Rep122 states and proves the necessary condition $n\cdot1_k\ne0$ for the trace pairing on $\mathfrak{sl}_n(k)$ to be nondegenerate; its radical is $\mathfrak{sl}_n(k)\cap kI_n$. The original characteristic-free parts are retained, and algebra actions in the invariance argument are explicitly by algebra automorphisms. Basis independence alone does not assert centrality. The source's Lie-derivative remark is retained as context, not as a proof input.
 
+- **Chapter XVII figure audit:** Both original exercise pages (printed pp. 661-662 / PDF pp. 676-677) were inspected at 200 dpi. Exercise 9 continues onto the second page; the full ordered set is XVII.1-XVII.15. No exercise depends on a source figure or diagram, and no image attachment was created.
+- **XVII.3 and XVII.7:** Lang's semisimple-ring definition on printed p. 651 / PDF p. 666 requires $1\ne0$. R303 and R306 preserve the printed statements and explicitly handle their missing nonzero-ring qualification. LA484 and R304 prove the noncommutative Nakayama and radical-nilpotence arguments without assuming Artinian implies Noetherian.
+- **XVII.8-XVII.11:** Rep123 imports the source-checked arbitrary-characteristic Burnside theorem and proves descent of the common fixed vector. LA485 records the hint's basis/preimage and multiplicity defects and constructs its factor inside the semisimple algebra. LA486 distinguishes irreducible-factor multiplicity over the base field from separability and diagonalizability after scalar extension. LA487 uses the independently proved commutative criteria in R305-R306.
+- **XVII.12:** LA488 includes the complete Morita criterion and the requested Rieffel consequence. The proof of Theorem 7.1 on printed p. 660 / PDF p. 675 prints $g\in R'(E)$ where the double-centralizer step needs $g\in R''(E)$. The original defect is recorded, and both directions are proved with the left actions and composition order explicit.
+- **XVII.13-XVII.15:** LA489 uses the quotient-field hypothesis and proves an isomorphism onto the lattice without requiring its change-of-basis matrix to be invertible over the original PID. LA490 treats the strictly upper triangular algebra without an identity. Rep124 gives a direct sum of invariant matrix-unit lines over any field, including finite fields where some characters coincide.
+
+- **Chapter XVIII source coverage:** All eight exercise pages (printed pp. 722-729 / PDF pp. 737-744) were inspected at 200 dpi, including the continuations of Exercises 6, 18, and 26. The quotient square in XVIII.26 is preserved with its objects, arrows, and labels as searchable MathJax. No raster attachment was needed.
+- **XVIII.1-XVIII.2:** The characteristic restriction comes from the chapter's standing convention on printed p. 667 / PDF p. 682. The root-space proofs distinguish abstract scalar extension from the span of roots inside an algebraic closure.
+- **XVIII.4:** The printed invariance condition for elements of the normal subgroup is automatic and does not imply irreducibility. Rep128 gives a counterexample and proves the corrected condition that the inertia group equals that subgroup.
+- **XVIII.11-XVIII.12:** Rep135 derives all SL2 character tables, including the small fields, using Lang's checked GL2 classification and tables. Its exceptional square-root values follow from restriction, conjugacy, and orthogonality. Rep136 proves both identifications with A5 and its full character table. Finite numerical checks are recorded separately from the general proofs.
+- **XVIII.15-XVIII.16:** Rep139 corrects both the missing equivariance in the Hom space and the incompatible order of the kernel actions, with explicit counterexamples and an inverse construction. Rep140 preserves the printed second-factor repetition and proves the intended external tensor-product assertion.
+- **XVIII.18-XVIII.21:** The positive-power separation claims omit zero forms or operators. R307, LA491, and Rep142 state the counterexamples and prove both the nonzero and degree-zero repairs. Rep143 proves Burnside's tensor-power theorem over an arbitrary coefficient field of characteristic prime to the group order, without assuming it splits the group.
+- **XVIII.23-XVIII.25:** Rep145 corrects the logarithmic-derivative sign and powers, and specifies the negative-exterior-degree convention. Rep146 disproves unrestricted preservation of irreducibility by Adams operations and proves a coprime version. Rep147 checks the cited Chapter XX theorem and independently proves the special lambda identities; the unavailable Fulton-Lang reading is explicitly unconsulted.
+- **XVIII.26:** Rep148 distinguishes the printed isotypic determinant from the multiplicity-space determinant required for induction. It records the undefined factor in the trace formula, the zeta-function subscript, and the ordinary-characteristic-polynomial mismatch. Its complete repaired formalism uses explicitly added categorical quotient and compatible invariant-space hypotheses; the incompatible printed formulation is not claimed proved.
+- **XVIII.27:** Rep149 proves absolute irreducibility and exhaustion after reduction by averaging equivariant Hom spaces over a stable DVR lattice. No unramified-prime hypothesis is added; the arithmetic and semisimplicity inputs and the distinction between reduced traces and Brauer-character lifts remain explicit.
+
 ## Next Archive Target
 
-Chapter XVII, **Semisimplicity**, is the next chapter awaiting a bounded source-total audit.
+Chapter XIX, **The Alternating Product**. Its numbered exercise set and exact printed/PDF exercise-page range must be source-audited before the next batch is assigned numbers or marked complete.

@@ -69,6 +69,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups|Projective Modules and Grothendieck Groups]]
+- [[04 - Linear Algebra and Modules/Concepts/Semisimple Modules and Rings|Semisimple Modules and Rings]]
+- [[04 - Linear Algebra and Modules/Concepts/Generators and Balanced Modules|Generators and Balanced Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Flat and Faithfully Flat Modules|Flat and Faithfully Flat Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Torsion Modules|Torsion Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Noetherian Modules|Noetherian Modules]]

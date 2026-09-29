@@ -21,6 +21,8 @@ Representation theory studies abstract algebraic structures by representing thei
 - [[06 - Representation Theory/Concepts/Group Algebra|Group Algebra]]
 - [[06 - Representation Theory/Concepts/Characters|Characters]]
 - [[06 - Representation Theory/Concepts/Induced Representations and Frobenius Reciprocity|Induced Representations and Frobenius Reciprocity]]
+- [[06 - Representation Theory/Concepts/Isotypic Components and Clifford Theory|Isotypic Components and Clifford Theory]]
+- [[06 - Representation Theory/Concepts/Character Rings and Adams Operations|Character Rings and Adams Operations]]
 
 ### Linear Algebra Prereqs
 - [[Vector Spaces]]

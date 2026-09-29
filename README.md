@@ -78,6 +78,20 @@ Each exercise includes:
 
 ## Changelog
 
+### 2026-09-29 (Lang Chapter XVIII Exercise Archive)
+
+- Added: All 27 exercises XVIII.1-XVIII.27, checked on the eight original PDF pages (printed pp. 722-729 / PDF pp. 737-744): Rep125-Rep149 in Representation Theory, R307 in Ring Theory, and LA491 in Linear Algebra and Modules. Each note preserves the full problem, provides progressive hints and an independent solution or explicitly corrected theorem, and remains `not-started`.
+- Added: Isotypic Components and Clifford Theory and Character Rings and Adams Operations, with dynamic exercise backlinks and topic-hub links. The archive dashboard includes a dynamic XVIII source-to-note mapping.
+- Clarified: The inertia-group criterion, induced-kernel action order, external tensor-product typo, zero-form/operator defects, Adams-operation signs and coprimality, and the normalization and quotient assumptions in the Artin formalism. Full finite-field SL2 and A5 character tables are derived from precisely identified source inputs; the requested Fulton-Lang reading is marked unconsulted, with an independent special-lambda-ring proof supplied.
+- Verified: All 27 source labels reconcile one-to-one with no missing, duplicate, unexpected, or unparsed mappings. Mathematical cross-review, exact source anchors, metadata, path-qualified links, Obsidian formula syntax, and Study Progress tag discovery passed checks. Chapters I-XVIII now cover 459 source exercises; the next target is Chapter XIX.
+
+### 2026-09-29 (Lang Chapter XVII Exercise Archive)
+
+- Added: All 15 exercises XVII.1-XVII.15 from Lang's *Algebra*, revised third edition, checked against both original exercise pages (printed pp. 661-662 / PDF pp. 676-677): R301-R306 in Ring Theory, LA484-LA490 in Linear Algebra and Modules, and Rep123-Rep124 in Representation Theory. Each note preserves the complete problem, provides progressive hints and an independent solution, and remains `not-started`.
+- Added: Three prerequisite concepts, Jacobson Radical and Artinian Rings, Semisimple Modules and Rings, and Generators and Balanced Modules, with dynamic exercise backlinks and topic-hub links.
+- Clarified: The nonzero-ring convention in XVII.3 and XVII.7, the defective basis prescription in XVII.9, and the missing prime in the proof of Theorem 7.1 used by XVII.12. Proofs distinguish semisimplicity from separability, preserve noncommutative multiplication order, and cover finite fields in the conjugation representation.
+- Verified: The 15 source labels reconcile one-to-one with no missing, duplicate, unexpected, or unparsed mappings. Mathematical cross-review, source anchors, metadata, links, Obsidian math syntax, and Study Progress tag discovery passed their checks. Chapters I-XVII now cover 432 source exercises; the next target is Chapter XVIII.
+
 ### 2026-09-29 (Lang Chapter XVI Exercise Archive)
 
 - Added: All 15 exercises XVI.1-XVI.15 from Lang's *Algebra*, revised third edition, checked against the original pages (printed pp. 637-640 / PDF pp. 652-655): F114-F116 in Field Theory, LA473-LA483 in Linear Algebra and Modules, and Rep122 in Representation Theory. Each note preserves the source problem, supplies progressive hints and an independent solution, and remains `not-started`.
