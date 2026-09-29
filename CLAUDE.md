@@ -5,11 +5,15 @@ This is an Obsidian vault for Abstract Algebra exercises and related topics.
 ## Project Rules
 
 ### 1. Changelog Updates (REQUIRED)
-**Every time you make changes to this project, you MUST update the changelog in `README.md`.**
+**Every time you make changes to this project, prepend an entry to `CHANGELOG.md` and synchronize the Changelog section in `README.md`.**
 
-Format:
+`CHANGELOG.md` preserves the complete history, newest first. README must contain only the latest three entries, identical to the first three entries in `CHANGELOG.md`, plus a link to the full history. Never delete historical entries from `CHANGELOG.md` when trimming README.
+
+README section format (followed by the latest three entries):
 ```markdown
 ## Changelog
+
+[Full change history](CHANGELOG.md)
 
 ### [YYYY-MM-DD]
 - Added: description of new content
@@ -45,7 +49,7 @@ Format:
 #### README.md sections to update:
 1. **Topics Covered** - Add new topic with brief description
 2. **Structure** - Update folder tree if structure changes
-3. **Changelog** - Always add dated entry (required for ALL changes)
+3. **Changelog** - Add each dated entry to `CHANGELOG.md` and synchronize README's latest-three excerpt (required for ALL changes)
 
 ### 3. File Organization
 
@@ -161,7 +165,7 @@ Canvas files use JSON format. When creating:
 3. Update `00 - Home/Index.md` navigation table
 4. Update relevant Canvas files
 5. Add topic to this guidelines file
-6. **Update changelog in README.md**
+6. **Update `CHANGELOG.md` and synchronize the latest three entries in `README.md`**
 
 ## Quick Reference
 
@@ -172,7 +176,7 @@ Canvas files use JSON format. When creating:
 - [ ] Hints in collapsible `> [!hint]-` callouts
 - [ ] Solution in collapsible `> [!success]-` callout
 - [ ] Related concepts linked
-- [ ] **Changelog updated**
+- [ ] **`CHANGELOG.md` updated; README's latest three entries synchronized**
 
 ### New Concept Checklist
 - [ ] Correct folder location
@@ -181,4 +185,4 @@ Canvas files use JSON format. When creating:
 - [ ] Examples in `> [!example]` callouts
 - [ ] Related concepts linked
 - [ ] Hub file updated
-- [ ] **Changelog updated**
+- [ ] **`CHANGELOG.md` updated; README's latest three entries synchronized**

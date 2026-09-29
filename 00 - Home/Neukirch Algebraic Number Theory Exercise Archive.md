@@ -19,7 +19,7 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
 > [!note] Initial scope
-> The seven chapter titles have been checked against the original contents pages. Chapter exercise totals and full ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
+> The seven chapter titles have been checked against the original contents pages. Chapter I §1 has a verified source set of seven exercises; its section coverage is tracked separately below. Full chapter exercise totals and ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
 
 ## Chapter Coverage
 
@@ -40,6 +40,14 @@ const chapterTitles = new Map([
 // Labels include chapter, section, and exercise, for example "I.1.1".
 // Set reconciled to true only after the post-archive source reconciliation.
 const auditedCoverage = new Map();
+const auditedSections = new Map([
+  ["I.1", {
+    title: "The Gaussian Integers",
+    labels: ["I.1.1", "I.1.2", "I.1.3", "I.1.4", "I.1.5", "I.1.6", "I.1.7"],
+    pages: "printed p. 5 / PDF p. 24",
+    reconciled: false,
+  }],
+]);
 
 const chapterOrder = new Map([...chapterTitles.keys()].map((ch, i) => [ch, i]));
 const noteFiles = new Map([...chapterTitles.keys()].map(ch => [ch, new Set()]));
@@ -113,6 +121,27 @@ if (reconciliationRows.length === 0) {
   );
 }
 
+dv.header(3, "Verified Section Coverage");
+const sectionRows = [];
+for (const [section, audit] of auditedSections) {
+  const expected = new Set(audit.labels);
+  const found = new Set([...mappings.keys()].filter(label => label.startsWith(section + ".")));
+  const missing = [...expected].filter(label => !found.has(label));
+  const unexpected = [...found].filter(label => !expected.has(label));
+  const duplicates = [...found].filter(label => mappings.get(label).notes.size > 1);
+  const clean = missing.length === 0 && unexpected.length === 0
+    && duplicates.length === 0 && unparsed.length === 0;
+  sectionRows.push([
+    section, audit.title, [...expected].filter(label => found.has(label)).length + "/" + expected.size,
+    missing.length, duplicates.length, unexpected.length, audit.pages,
+    audit.reconciled && clean ? "Complete" : "Source-audited; reconciliation pending",
+  ]);
+}
+dv.table(
+  ["Section", "Original title", "Verified coverage", "Missing", "Duplicate mappings",
+   "Unexpected", "Exercise pages", "Archive status"], sectionRows
+);
+
 dv.header(3, "Source Locator Checks");
 const duplicates = [...mappings.entries()].filter(([, entry]) => entry.notes.size > 1);
 dv.paragraph("Duplicate mappings: " + duplicates.length + ". Unparsed source locators: " + unparsed.length + ".");
@@ -146,7 +175,7 @@ if (sorted.length === 0) {
 
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
-| I | Algebraic Integers | Pending; next archive target |
+| I | Algebraic Integers | §1 source-audited: seven exercises; archival pending. Full chapter total pending. |
 | II | The Theory of Valuations | Pending |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
@@ -190,15 +219,14 @@ Exercises will be routed by the primary computational or proof method, following
 
 Future notes must distinguish the printed problem, independently derived solutions, imported results, computational checks, and source errors or unresolved ambiguities. Preserve any defective printed statement visibly before presenting a corrected formulation.
 
-This page establishes the archive framework. No new exercise or concept notes were created with it, and no chapter is marked source-audited or complete.
+Chapter I §1 was source-audited on 2026-09-29 against the ordered labels I.1.1-I.1.7, all on printed p. 5 / PDF p. 24. The complete section text on printed pp. 1-5 / PDF pp. 20-24 was visually checked, including the exercise group's end before the §2 heading. No exercise requires a source figure. Section completion will not be promoted to chapter completion without a separate full-chapter source audit.
 
 ## Next Archive Target
 
-**Chapter I — Algebraic Integers.** Begin with a source audit of its section exercise groups, then establish the complete label set, routing, and topic-specific note numbers before drafting the first batch.
+**Chapter I §1 — The Gaussian Integers.** Its seven exercise labels are source-audited; the approved trial batch will use R322-R328 in Ring Theory. The rest of Chapter I remains unaudited.
 
 ## Related Archives
 
 - [[00 - Home/Artin Exercise Archive|Artin Exercise Archive]]
 - [[00 - Home/Lang Algebra Exercise Archive|Lang Algebra Exercise Archive]]
 - [[00 - Home/Index|Home]]
-

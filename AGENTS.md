@@ -124,7 +124,7 @@ Even when a note contains a full solution, keep its learning status as `not-star
 ## 9. Hubs, README, and Canvas
 
 - Add new concepts to the relevant topic hub. Ordinary exercises should appear through Dataview or Bases rather than a manually maintained complete list.
-- After every actual repository modification, add a concise consolidated entry at the top of the Changelog in `README.md`.
+- After every actual repository modification, prepend a concise consolidated entry to `CHANGELOG.md`, which preserves the complete history. Keep only the latest three entries in the Changelog section of `README.md`, identical to the first three entries in `CHANGELOG.md`, and retain a link to the full history. Remove older entries only from README, never from `CHANGELOG.md`.
 - Do not update global counts in `Academic_Report.md` for an ordinary exercise batch unless the user explicitly requests report maintenance.
 - Update Canvas files only when a new topic, major directory restructuring, or a genuine knowledge-graph change requires it. Do not edit unrelated canvases merely for formality.
 - Do not create a directory solely for a single batch, textbook chapter, or temporary render.
@@ -138,7 +138,7 @@ For every full textbook-chapter exercise batch, use the archive dashboard as a t
 1. **Pre-archive source audit:** inspect the bounded exercise pages in the original PDF, record the exact ordered source-label set, the verified total, and the printed/PDF page range in `00 - Home/Artin Exercise Archive.md`. Mark the chapter as source-audited but not complete.
 2. **One-to-one archival pass:** create one note for each numbered source exercise, preserving multipart structure, exact source locators, and visible source issues. Do not infer completeness from the number of files alone.
 3. **Post-archive reconciliation:** compare the expected source-label set with parsed note provenance. Report missing labels, duplicate mappings, unexpected labels, and Artin-based notes whose locators cannot be parsed. Mark a chapter `Complete` only when all four exception sets are empty and the verified total matches the source audit.
-4. **Archive cleanup:** after recording the successful reconciliation in the permanent chapter coverage/status and README Changelog, remove temporary planning prose, active-batch notices, one-off source manifests, and temporary reconciliation code from `Artin Exercise Archive.md`. Keep only durable totals, source anchors, final status notes, and the next-batch pointer.
+4. **Archive cleanup:** after recording the successful reconciliation in the permanent chapter coverage/status and `CHANGELOG.md` (with the latest-three README excerpt synchronized), remove temporary planning prose, active-batch notices, one-off source manifests, and temporary reconciliation code from `Artin Exercise Archive.md`. Keep only durable totals, source anchors, final status notes, and the next-batch pointer.
 5. **Final consistency pass:** rerun the ordinary metadata, link, formula-delimiter, tracker, and Git-status checks after that cleanup.
 
 Before writing:
@@ -160,7 +160,7 @@ Before delivery, verify at least:
 - external proof inputs and source ambiguities are explicitly labeled;
 - new exercises are discoverable by the Study Progress tag filter;
 - temporary PDF renders and crops have been cleaned up;
-- the README Changelog has been updated;
+- `CHANGELOG.md` has been updated and the README Changelog shows exactly its latest three entries;
 - Git status contains no unintended modifications.
 
 ## 11. User-Facing Handoff
