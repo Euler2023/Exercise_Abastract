@@ -82,16 +82,17 @@ Each exercise includes:
 
 [Full change history](CHANGELOG.md)
 
-### 2026-09-29 (Neukirch Chapter I Section 1 Trial Archive)
+### 2026-09-29 (Simplify Lang Archive Coverage)
 
-- Added: All seven exercises from Chapter I section 1, The Gaussian Integers, as R322-R328 in Ring Theory, checked against printed p. 5 / PDF p. 24. Each note preserves the original problem, supplies progressive hints and an independent solution, and remains `not-started`; existing concepts are reused.
-- Verified: The source labels I.1.1-I.1.7 reconcile one-to-one. Mathematical cross-review covers the Gaussian power and Pythagorean arguments, the elementary infinite-unit proof, and the complete units/prime-elements classification for the square-root-of-two ring. Metadata, source anchors, links, formula syntax, and tracker discovery were checked.
-- Updated: The Neukirch dashboard now distinguishes completed section coverage (7/7) from the still-unaudited Chapter I total; the next target is section 2, Integrality.
+- Removed: The entire Verified Chapter Coverage section from the Lang archive dashboard, including its repeated table and reconciliation narratives. Chapter and appendix coverage, scope notes, all independent exercise mappings, and source-issue records remain intact.
 
-### 2026-09-29 (Changelog History Separation)
+### 2026-09-29 (Separate Textbook Archive Mapping Views)
 
-- Reorganized: Preserved the complete change history in `CHANGELOG.md`; README now shows only the latest three entries with a link to the full history. Updated the repository guidelines to keep both files synchronized on future changes.
+- Fixed: Neukirch now has real chapter and section headings with independent queries for I.1 and the next I.2 batch, replacing the single combined exercise table. Chapter overview and source-reconciliation records are preserved; future batches must receive their own section query.
+- Fixed: Restored separate Lang mappings for Chapters XIV-XVII and split the combined final table into Chapters XIX, XX, XXI, and Appendix 2. Existing summary counts, source audits, exercise notes, and learning states are unchanged.
+- Verified: Executed the queries against vault metadata: Neukirch I.1 contains seven notes and I.2 remains empty; Lang displays all 529 source labels exactly once across 22 separate mapping tables. Checked chapter/section/edition boundaries, numeric ordering, repeated source segments, note links, and README's latest-three excerpt.
 
-### 2026-09-29 (Neukirch Exercise Archive Dashboard)
+### 2026-09-29 (Euclidean Domain Counterexample Proofs)
 
-- Added: A Neukirch Algebraic Number Theory archive dashboard modeled on the Lang archive, with seven source-checked chapter titles, dynamic chapter coverage and exercise mappings, source-locator checks, and a Chapter I next-target pointer. Exercise identities include chapter, section, and number because numbering restarts between sections. Full source totals remain explicitly unaudited; no exercise notes or learning states were changed. Linked the dashboard from the home page.
+- Expanded: The Euclidean Domains concept now proves that the ring of integers of Q(sqrt(-19)) is a PID but admits no Euclidean function. Added an elementary Dedekind-Hasse argument, including the zero-remainder case, and a minimal-nonunit obstruction using the two smallest finite fields.
+- Sourced: Visually checked Dummit-Foote, third edition, section 8.1 (printed p. 277 / PDF p. 290) and section 8.2 (printed pp. 281-282 / PDF pp. 294-295). Distinguished the independent proof presentations from the textbook and recorded Motzkin's precise historical reference without claiming direct inspection of the article. Recorded the missing integer-rounding step in the textbook's denominator-five case. Normalized display formulas and retained the existing learning status.

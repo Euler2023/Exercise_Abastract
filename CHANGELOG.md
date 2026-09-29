@@ -2,6 +2,21 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-09-29 (Simplify Lang Archive Coverage)
+
+- Removed: The entire Verified Chapter Coverage section from the Lang archive dashboard, including its repeated table and reconciliation narratives. Chapter and appendix coverage, scope notes, all independent exercise mappings, and source-issue records remain intact.
+
+### 2026-09-29 (Separate Textbook Archive Mapping Views)
+
+- Fixed: Neukirch now has real chapter and section headings with independent queries for I.1 and the next I.2 batch, replacing the single combined exercise table. Chapter overview and source-reconciliation records are preserved; future batches must receive their own section query.
+- Fixed: Restored separate Lang mappings for Chapters XIV-XVII and split the combined final table into Chapters XIX, XX, XXI, and Appendix 2. Existing summary counts, source audits, exercise notes, and learning states are unchanged.
+- Verified: Executed the queries against vault metadata: Neukirch I.1 contains seven notes and I.2 remains empty; Lang displays all 529 source labels exactly once across 22 separate mapping tables. Checked chapter/section/edition boundaries, numeric ordering, repeated source segments, note links, and README's latest-three excerpt.
+
+### 2026-09-29 (Euclidean Domain Counterexample Proofs)
+
+- Expanded: The Euclidean Domains concept now proves that the ring of integers of Q(sqrt(-19)) is a PID but admits no Euclidean function. Added an elementary Dedekind-Hasse argument, including the zero-remainder case, and a minimal-nonunit obstruction using the two smallest finite fields.
+- Sourced: Visually checked Dummit-Foote, third edition, section 8.1 (printed p. 277 / PDF p. 290) and section 8.2 (printed pp. 281-282 / PDF pp. 294-295). Distinguished the independent proof presentations from the textbook and recorded Motzkin's precise historical reference without claiming direct inspection of the article. Recorded the missing integer-rounding step in the textbook's denominator-five case. Normalized display formulas and retained the existing learning status.
+
 ### 2026-09-29 (Neukirch Chapter I Section 1 Trial Archive)
 
 - Added: All seven exercises from Chapter I section 1, The Gaussian Integers, as R322-R328 in Ring Theory, checked against printed p. 5 / PDF p. 24. Each note preserves the original problem, supplies progressive hints and an independent solution, and remains `not-started`; existing concepts are reused.

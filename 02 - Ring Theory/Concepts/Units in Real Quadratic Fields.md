@@ -41,7 +41,7 @@ Their product is the norm $N(\alpha)=uv$. An algebraic integer is a unit exactly
 The units whose two embedded coordinates are positive form a subgroup
 
 $$
-U_0=R^\times\cap\{(u,v):u>0, v>0}.
+ U_0=R^\times \cap\{(u,v):u>0,v>0}
 $$
 
 This subgroup is infinite cyclic. If $\varepsilon>1$ is the unit in $U_0$ with smallest first coordinate greater than $1$, then

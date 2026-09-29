@@ -284,82 +284,6 @@ Chapter and appendix titles are transcribed from the original contents pages. [S
 | Appendix 2 | Some Set Theory | All 14 exercises A2.1-A2.14; printed pp. 892-893 / PDF pp. 907-908 | Complete; 10 Set Theory and Foundations (ST1-ST10) and 4 Field Theory (F117-F120) notes |
 
 
-## Verified Chapter Coverage
-
-| Chapter | Verified labels | Source pages                          | Archived notes | Missing | Duplicate | Unexpected | Unparsed | Status   |
-| ------: | --------------- | ------------------------------------- | -------------: | ------: | --------: | ---------: | -------: | -------- |
-|       I | I.1-I.57        | printed pp. 75-82 / PDF pp. 90-97     |             57 |       0 |         0 |          0 |        0 | Complete |
-|      II | II.1-II.19      | printed pp. 114-116 / PDF pp. 129-131 |             19 |       0 |         0 |          0 |        0 | Complete |
-|     III | III.1-III.29    | printed pp. 165-172 / PDF pp. 180-187 |             29 |       0 |         0 |          0 |        0 | Complete |
-|      IV | IV.1-IV.27      | printed pp. 213-219 / PDF pp. 228-234 |             27 |       0 |         0 |          0 |        0 | Complete |
-|       V | V.1-V.34        | printed pp. 253-259 / PDF pp. 268-274 |             34 |       0 |         0 |          0 |        0 | Complete |
-|      VI | VI.1-VI.51      | printed pp. 320-332 / PDF pp. 335-347 |             51 |       0 |         0 |          0 |        0 | Complete |
-|     VII | VII.1-VII.12    | printed pp. 352-354 / PDF pp. 367-369 |             12 |       0 |         0 |          0 |        0 | Complete |
-|    VIII | VIII.1-VIII.10  | printed pp. 374-375 / PDF pp. 389-390 |             10 |       0 |         0 |          0 |        0 | Complete |
-|      IX | IX.1-IX.19      | printed pp. 410-412 / PDF pp. 425-427 |             19 |       0 |         0 |          0 |        0 | Complete |
-|       X | X.1-X.19        | printed pp. 443-447 / PDF pp. 458-462 |             19 |       0 |         0 |          0 |        0 | Complete |
-|      XI | XI.1-XI.13      | printed pp. 461-463 / PDF pp. 476-478 |             13 |       0 |         0 |          0 |        0 | Complete |
-|     XII | XII.1-XII.20    | printed pp. 495-499 / PDF pp. 510-514 |             20 |       0 |         0 |          0 |        0 | Complete |
-|    XIII | XIII.1-XIII.36  | printed pp. 545-552 / PDF pp. 560-567 |             36 |       0 |         0 |          0 |        0 | Complete |
-|     XIV | XIV.1-XIV.26    | printed pp. 567-570 / PDF pp. 582-585 |             26 |       0 |         0 |          0 |        0 | Complete |
-|      XV | XV.1-XV.30      | printed pp. 595-600 / PDF pp. 610-615 |             30 |       0 |         0 |          0 |        0 | Complete |
-|     XVI | XVI.1-XVI.15    | printed pp. 637-640 / PDF pp. 652-655 |             15 |       0 |         0 |          0 |        0 | Complete |
-|    XVII | XVII.1-XVII.15  | printed pp. 661-662 / PDF pp. 676-677 |             15 |       0 |         0 |          0 |        0 | Complete |
-|   XVIII | XVIII.1-XVIII.27 | printed pp. 722-729 / PDF pp. 737-744 |             27 |       0 |         0 |          0 |        0 | Complete |
-| XIX | XIX.1-XIX.21 | printed pp. 753-758 / PDF pp. 768-773 | 21 | 0 | 0 | 0 | 0 | Complete |
-| XX | XX.1-XX.30 | printed pp. 826-832 / PDF pp. 841-847 | 30 | 0 | 0 | 0 | 0 | Complete |
-| XXI | XXI.1-XXI.5 | printed pp. 864-866 / PDF pp. 879-881 | 5 | 0 | 0 | 0 | 0 | Complete |
-| A1 | Empty set (0) | printed pp. 867-873 / PDF pp. 882-888 | 0 | 0 | 0 | 0 | 0 | Complete |
-| A2 | A2.1-A2.14 | printed pp. 892-893 / PDF pp. 907-908 | 14 | 0 | 0 | 0 | 0 | Complete |
-
-The final source audit covered all exercise pages of Chapters XIX-XXI and every page of both appendices before any note in this batch was created. On 2026-09-29, the ordered sets XIX.1-XIX.21 (21), XX.1-XX.30 (30), XXI.1-XXI.5 (5), and A2.1-A2.14 (14) were reconciled against parsed note provenance: all 70 labels map exactly once, with no missing, duplicate, unexpected, or unparsed locators. Appendix 1 has no numbered exercises; its printed pp. 867-873 / PDF pp. 882-888 and the blank PDF p. 889 were inspected. Appendix 2's in-text proof requests for Corollaries 3.9 and 3.11 are included in Exercises 1 and 6, not counted twice.
-
-The complete edition now has **529 archived numbered source exercises across Chapters I-XXI and Appendix 2**. Appendix 1 contributes zero. The final 70 notes comprise LA492-LA531, R308-R321, F117-F120, G330, Rep150, and ST1-ST10, all with learning status `not-started`. The nine new prerequisite concepts have dynamic exercise backlinks and topic-hub entries. Every new mathematical note received an independent cross-review; the global provenance count does not re-audit the earlier proofs or alter their stated proof status.
-
-The approved Set Theory and Foundations topic also contains six migrated Artin appendix exercises as ST11-ST16 and the existing induction and Zorn-lemma concepts. Their source identities and learning states are preserved; their relocation does not add to Lang's source count.
-
-Chapter XVIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVIII.1-XVIII.27 (27 total), printed pp. 722-729 / PDF pp. 737-744. Each source label has exactly one parsed note mapping: 25 in Representation Theory (Rep125-Rep149), XVIII.18 in Ring Theory (R307), and XVIII.19 in Linear Algebra and Modules (LA491). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 27 learning statuses remain `not-started`. A fresh provenance reconciliation of Chapters I-XVIII finds 459 distinct source exercises, each mapped once; this does not re-audit the earlier proofs. The two new prerequisites, Isotypic Components and Clifford Theory and Character Rings and Adams Operations, have dynamic exercise backlinks and Representation Theory Hub links. The notes distinguish independent proofs, source-checked textbook inputs, corrected statements, and unconsulted reading references.
-
-Chapter XVII was source-audited on both original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVII.1-XVII.15 (15 total), printed pp. 661-662 / PDF pp. 676-677. Each source label has exactly one parsed note mapping: 6 in Ring Theory (R301-R306), 7 in Linear Algebra and Modules (LA484-LA490), and 2 in Representation Theory (Rep123-Rep124). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 15 learning statuses remain `not-started`. Chapters I-XVII now cover 432 source exercises. Three prerequisite concepts, Jacobson Radical and Artinian Rings, Semisimple Modules and Rings, and Generators and Balanced Modules, have dynamic exercise backlinks and topic-hub links.
-
-Chapter XVI was source-audited on all four original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XVI.1-XVI.15 (15 total), printed pp. 637-640 / PDF pp. 652-655. Each source label has exactly one parsed note mapping: 3 in Field Theory (F114-F116), 11 in Linear Algebra and Modules (LA473-LA483), and 1 in Representation Theory (Rep122). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 15 learning statuses remain `not-started`. Chapters I-XVI now cover 417 source exercises. Two prerequisite concepts, Flat and Faithfully Flat Modules and Casimir Tensors and Invariant Elements, have dynamic exercise backlinks and topic-hub links. Existing tensor, direct-limit, and invariant-trace-form concepts have the needed convention and hypothesis clarifications.
-
-Chapter XV was source-audited on all six original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XV.1-XV.30 (30 total), printed pp. 595-600 / PDF pp. 610-615. Each label has exactly one parsed note mapping in Linear Algebra and Modules (LA443-LA472). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 30 learning statuses remain `not-started`. Chapters I-XV now cover 402 source exercises. Two prerequisite concepts, Quadratic Maps and Polarization and Witt and Witt-Grothendieck Groups, have dynamic exercise backlinks and links from the topic hub. The inner-product projection convention and the Pfaffian normalization in existing concepts were clarified.
-
-Chapter XIV was source-audited on all four original exercise pages before note creation and reconciled on 2026-09-29 against the ordered labels XIV.1-XIV.26 (26 total), printed pp. 567-570 / PDF pp. 582-585. Each label has exactly one parsed note mapping in Linear Algebra and Modules (LA417-LA442). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 26 learning statuses remain `not-started`. Chapters I-XIV now cover 372 source exercises. The existing Diagonalization concept was corrected to state the required base-field splitting conditions; no new concept or figure attachment was needed.
-
-Chapter XIII was source-audited on all eight original exercise pages before note creation and reconciled on 2026-09-26 against the ordered labels XIII.1-XIII.36 (36 total), printed pp. 545-552 / PDF pp. 560-567. Each source label has exactly one parsed note mapping: 24 in Linear Algebra and Modules (LA393-LA416), 3 in Ring Theory (R298-R300), 2 in Group Theory (G328-G329), 5 in Representation Theory (Rep117-Rep121), and 2 in Galois Theory (Gal138-Gal139). Missing, duplicate, unexpected, and unparsed exception sets are empty. All 36 learning statuses remain `not-started`. Printed source issues and named external proof inputs are identified in the relevant notes.
-
-Chapter XII was reconciled on 2026-09-25 against the ordered source labels XII.1-XII.20, audited on all five original exercise pages before note creation (printed pp. 495-499 / PDF pp. 510-514). Each label has exactly one parsed note mapping: 7 in Field Theory (F107-F113), 5 in Ring Theory (R293-R297), and 8 in Arithmetic Geometry (AG18-AG25). The missing, duplicate, unexpected, and unparsed exception sets are empty. All 20 learning statuses remain `not-started`. The existing valuation concept now distinguishes absolute-value places from valuation-ring residue maps; source issues and imported proof inputs are recorded in the relevant notes.
-
-Chapter XI was reconciled on 2026-09-25 against all 13 ordered source labels XI.1-XI.13, audited on the three original exercise pages before note creation (printed pp. 461-463 / PDF pp. 476-478). Each label has exactly one parsed note mapping: 11 in Field Theory (F96-F106) and 2 in Ring Theory (R291-R292). Missing, duplicate, unexpected, and unparsed exception sets are empty. Two prerequisite concepts have dynamic exercise backlinks and links from Field Theory Hub. All 13 learning statuses remain `not-started`. The notes separate the printed source issues from corrected, independently derived arguments; XI.13 identifies its permitted generic Bezout input.
-
-Chapter I was reconciled against the ordered source labels on all eight exercise pages. Every source exercise has exactly one parsed note mapping. The archive reuses 11 pre-existing notes whose mathematical tasks coincide with Artin exercises and adds 46 notes for the remaining Lang exercises.
-
-Chapter II was reconciled against the ordered source labels on all three exercise pages. Every source exercise has exactly one parsed note mapping: 18 are routed to Ring Theory and II.8 is routed to Group Theory because finite-group structure supplies its primary computational toolkit. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
-
-Chapter III was reconciled against the ordered labels III.1-III.29 on all eight exercise pages. Every source exercise has exactly one parsed note mapping: the archive adds 27 notes—22 in Linear Algebra and Modules, 3 in Ring Theory, 1 in Group Theory, and 1 in Representation Theory—and reuses 2 existing cross-source notes. The reconciliation found no missing, duplicate, unexpected, or unparsed labels.
-
-On 2026-09-06, the current source metadata was rechecked for Chapters I-III: 105 distinct source labels have exactly one note mapping each, with no missing, duplicate, unexpected, or unparsed Lang exercise locators. This is a provenance reconciliation, not a fresh audit of all existing solutions.
-
-Chapter IV was reconciled on 2026-09-06 against the ordered source labels IV.1-IV.27 on all seven exercise pages, printed pp. 213-219 / PDF pp. 228-234. Every numbered exercise has exactly one note mapping: 24 in Ring Theory, IV.10 in Field Theory, and IV.16 and IV.19 in Linear Algebra and Modules. The reconciliation found no missing, duplicate, unexpected, or unparsed labels. Seven prerequisite concept notes are linked from the exercises and the existing topic hubs, with dynamic exercise backlinks. All 27 notes follow the exercise template and retain learning status `not-started`.
-
-Chapter V was reconciled on 2026-09-06 against all 34 labels V.1-V.34, verified on printed pp. 253-259 / PDF pp. 268-274 before note creation. Every label has exactly one parsed note mapping: 25 in Field Theory (24 new notes and the reused F24), 4 in Ring Theory, 4 in Linear Algebra and Modules, and 1 in Arithmetic Geometry. The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. The three new prerequisite concepts have dynamic exercise backlinks and are linked from their topic hubs. All 34 exercise notes retain learning status `not-started`. V.30 is archived as a conjecture with proved low-degree special cases, and V.34 distinguishes its source-contained argument from independently supplied details.
-
-Chapter VI was reconciled on 2026-09-12 against all 51 labels VI.1-VI.51, verified on printed pp. 320-332 / PDF pp. 335-347 before note creation. Every numbered exercise has exactly one parsed note mapping in Galois Theory (Exercise Gal85 to Exercise Gal135). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Three prerequisite concept notes (Normal Basis Theorem, Infinite Galois Extensions and Krull Topology, and Witt Vectors and Artin-Schreier-Witt Theory) have dynamic exercise backlinks and are linked from Galois Theory Hub. All 51 exercise notes retain learning status `not-started`.
-
-Chapter VII was reconciled on 2026-09-15 against all 12 labels VII.1-VII.12, verified on printed pp. 352-354 / PDF pp. 367-369 before note creation. Every numbered exercise has exactly one parsed note mapping: 6 in Ring Theory (`Exercise R255` to `Exercise R260`), 4 in Linear Algebra and Modules (`Exercise LA380` to `Exercise LA383`), and 2 in Galois Theory (`Exercise Gal136` and `Exercise Gal137`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Two prerequisite concept notes (`Integral Ring Extensions and Integrally Closed Domains` and `Decomposition and Inertia Groups`) have dynamic exercise backlinks and are linked from their respective topic hubs. All 12 exercise notes retain learning status `not-started`.
-
-Chapter VIII was reconciled on 2026-09-15 against all 10 labels VIII.1-VIII.10, verified on printed pp. 374-375 / PDF pp. 389-390 before note creation. Every numbered exercise has exactly one parsed note mapping: 9 in Field Theory (`Exercise F87` to `Exercise F95`) and 1 in Ring Theory (`Exercise R261`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Two prerequisite concept notes (`Transcendence Bases and Transcendence Degree` and `Derivations and Differentials on Fields`) have dynamic exercise backlinks and are linked from Field Theory Hub. All 10 exercise notes retain learning status `not-started`.
-
-Chapter IX was reconciled on 2026-09-15 against all 19 labels IX.1-IX.19, verified on printed pp. 410-412 / PDF pp. 425-427 before note creation. Every numbered exercise has exactly one parsed note mapping in Ring Theory (`Exercise R262` to `Exercise R280`). The four exception sets—missing, duplicate, unexpected, and unparsed—are empty. Three prerequisite concept notes (`Hilbert Nullstellensatz`, `Krull Dimension and Catenarity`, and `Multivariate Resultants and Resultant Systems`) have dynamic exercise backlinks and are linked from Ring Theory Hub. All 19 exercise notes retain learning status `not-started`.
-
-On 2026-09-20, the 29 exercises in Chapters VIII–IX and their five prerequisite concepts were reviewed against the bounded original source pages and revised for proof completeness, hypotheses, signs, source references, and links. Source discrepancies and external proof inputs remain explicit, particularly VIII.6(a), IX.17, and the dimension theorems used in IX.18–19. A fresh provenance reconciliation of Chapters I–IX found 258 distinct exercise labels, each mapped to exactly one note, with all four exception sets empty. The dashboard now filters each source segment separately, preventing references to Lang's *Algebraic Number Theory* from being counted as *Algebra* exercises. All 29 learning statuses remain `not-started`.
-
-Chapter X was reconciled on 2026-09-22 against the ordered source labels X.1-X.19, audited on all five original exercise pages before note creation (printed pp. 443-447 / PDF pp. 458-462). Each label has exactly one note: X.2-X.10 and X.14 use Ring Theory (R281-R290); X.1, X.11-X.13, and X.15-X.19 use Linear Algebra and Modules (LA384-LA392). Missing, duplicate, unexpected, and unparsed exception sets are empty. Four prerequisite concepts have dynamic exercise backlinks and topic-hub links. All 19 exercise notes and four concepts are written in English; all 19 learning statuses remain not-started. The unnumbered complex preamble is supporting material, not an additional numbered exercise. Proofs, printed source issues, and hypothesis boundaries were checked separately from this provenance count.
-
-Chapters I-XIII cover **346 verified source exercises** (57 + 19 + 29 + 27 + 34 + 51 + 12 + 10 + 19 + 19 + 13 + 20 + 36). A fresh provenance reconciliation across Chapters I-XIII found exactly one note mapping for each label, with no missing, duplicate, unexpected, or unparsed locators. This is not a fresh proof audit of earlier chapters. Codex-written solutions are identified as independent derivations in the notes.
-
 ## Source Exercise to Archived Note Mapping
 
 ### Chapter I — Groups
@@ -661,6 +585,146 @@ dv.table(
 );
 ```
 
+### Chapter XIV — Representation of One Endomorphism
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XIV";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Chapter XV — Structure of Bilinear Forms
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XV";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Chapter XVI — The Tensor Product
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XVI";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Chapter XVII — Semisimplicity
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XVII";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
 ### Chapter XVIII — Representations of Finite Groups
 
 ```dataviewjs
@@ -681,26 +745,144 @@ dv.table(
 );
 ```
 
-### Final Chapters and Appendix 2
+### Chapter XIX — The Alternating Product
 
 ```dataviewjs
 const edition = "Serge Lang, Algebra, rev. 3rd ed.";
-const order = new Map([["XIX",0],["XX",1],["XXI",2],["A2",3]]);
-const rows = [];
-for (const p of dv.pages("#exercise")) {
-  if (typeof p.source !== "string") continue;
-  for (const segment of p.source.split(";")) {
-    if (!segment.includes(edition)) continue;
-    const ch = segment.match(/Ch\.\s*([IVXLCDM]+)\b/);
-    const ap = segment.match(/Appendix\s*([12])\b/);
-    const unit = ch ? ch[1] : ap ? "A" + ap[1] : null;
-    const ex = segment.match(/Exercise\s*(\d+)\b/);
-    if (order.has(unit) && ex) rows.push([unit,Number(ex[1]),p.file.link,p.topic,p.status]);
+const targetUnit = "XIX";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
   }
 }
-rows.sort((a,b) => order.get(a[0])-order.get(b[0]) || a[1]-b[1]);
-dv.table(["Lang exercise","Archived note","Topic","Learning status"],
-  rows.map(r => [r[0]+"."+r[1],r[2],r[3],r[4]]));
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Chapter XX — General Homology Theory
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XX";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Chapter XXI — Finite Free Resolutions
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "XXI";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
+```
+
+### Appendix 2 — Some Set Theory
+
+```dataviewjs
+const edition = "Serge Lang, Algebra, rev. 3rd ed.";
+const targetUnit = "A2";
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(edition + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)(?=\s*,)/i)?.[1].toUpperCase();
+    const appendix = segment.match(/\bAppendix\s*([12])(?=\s*,)/i)?.[1];
+    const unit = chapter ?? (appendix ? "A" + appendix : null);
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (unit !== targetUnit || !exercise) continue;
+    const number = Number(exercise);
+    const label = unit + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+dv.table(
+  ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+  rows.map(entry => entry.row)
+);
 ```
 
 ## Source Issues and Figure Coverage

@@ -49,7 +49,6 @@ const auditedSections = new Map([
   }],
 ]);
 
-const chapterOrder = new Map([...chapterTitles.keys()].map((ch, i) => [ch, i]));
 const noteFiles = new Map([...chapterTitles.keys()].map(ch => [ch, new Set()]));
 const mappings = new Map();
 const unparsed = [];
@@ -153,22 +152,6 @@ if (unparsed.length > 0) {
   dv.table(["Note", "Source segment needing review"], unparsed);
 }
 
-dv.header(2, "Source Exercise to Archived Note Mapping");
-const sorted = [...mappings.entries()].sort(([, a], [, b]) =>
-  chapterOrder.get(a.chapter) - chapterOrder.get(b.chapter)
-  || a.section - b.section || a.exercise - b.exercise
-);
-if (sorted.length === 0) {
-  dv.paragraph("No source-identified Neukirch exercises are archived yet.");
-} else {
-  const exerciseRows = sorted.flatMap(([label, entry]) =>
-    [...entry.notes.values()].map(page =>
-      [label, page.file.link, page.topic, page.status, page.difficulty]));
-  dv.table(
-    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
-    exerciseRows
-  );
-}
 ```
 
 ## Chapter Scope Notes
@@ -184,6 +167,118 @@ if (sorted.length === 0) {
 | VII | Zeta Functions and L-series | Pending |
 
 The chapter titles and order were visually checked on all three original contents pages. The contents end with the bibliography and index and do not list a separate appendix. This contents check is not an audit of the full exercise corpus. [S4, Contents, printed pp. xv-xvii, PDF pp. 16-18]
+
+## Source Exercise to Archived Note Mapping
+
+Each section has its own query under a chapter heading. These Markdown headings can be folded and selected in the outline. A section table matches the exact edition, chapter, and section in the same source segment; exercise numbers are sorted numerically within that section.
+
+### Chapter I — Algebraic Integers
+
+#### I.1 — The Gaussian Integers
+
+Source-audited labels: I.1.1-I.1.7, printed p. 5 / PDF p. 24. The verified section coverage above reports the current reconciliation status.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 1;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.2 — Integrality
+
+Next archive target. The full exercise group and source total remain unaudited.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 2;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+### Chapter II — The Theory of Valuations
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
+
+### Chapter III — Riemann-Roch Theory
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
+
+### Chapter IV — Abstract Class Field Theory
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
+
+### Chapter V — Local Class Field Theory
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
+
+### Chapter VI — Global Class Field Theory
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
+
+### Chapter VII — Zeta Functions and L-series
+
+Section archival has not started. Add a separate section heading and query when its source group is audited.
 
 ## Source Identity and Numbering
 
@@ -212,6 +307,7 @@ The exercise groups of Chapter I §1 and §2 both begin with Exercise 1. They we
 4. Before a chapter or section batch, inspect its exercise pages and record the ordered source-label set, verified total, and printed/PDF page anchors in this dashboard. Update `auditedSections` for checked sections and `auditedCoverage` only for a checked whole chapter; a completed section does not establish the full chapter total.
 5. After archival, reconcile expected labels against note provenance. Mark a chapter `Complete` only after missing labels, duplicate mappings, unexpected labels, and unparsed locators are all absent and the total agrees.
 6. Preserve durable coverage and source-status records after reconciliation; remove temporary batch-planning material. Archive completeness does not certify every mathematical claim or change any learning status.
+7. For every new section batch, add or update its own Markdown subsection and independent query under the correct chapter in the mapping area. Match both chapter and section exactly within the same source segment; do not append its notes to another section table. Keep the chapter overview separate from these section-level mappings.
 
 ## Classification and Source Status
 
