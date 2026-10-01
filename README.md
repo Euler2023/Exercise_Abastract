@@ -82,6 +82,11 @@ Each exercise includes:
 
 [Full change history](CHANGELOG.md)
 
+### 2026-10-01 (Permutation Matrices in Symmetric Groups)
+
+- Expanded: Added permutation matrices to Symmetric Groups, including the basis-vector and entry definitions, coordinate reindexing, the three-cycle example, composition and inverse/transpose proofs, row/column permutations, and determinant sign with the characteristic-two boundary. Linked the matrix prerequisites and existing exercises; preserved learning statuses.
+- Verified: Visually checked Artin, second edition, section 1.5 (printed pp. 26-27 / PDF pp. 38-39), distinguishing the textbook's proved product formula from its omitted verifications and the independent derivations supplied here. Reviewed convention consistency with existing notes and checked metadata, links, formula delimiters, dynamic exercise backlinks, and tracker discovery.
+
 ### 2026-09-29 (Simplify Lang Archive Coverage)
 
 - Removed: The entire Verified Chapter Coverage section from the Lang archive dashboard, including its repeated table and reconciliation narratives. Chapter and appendix coverage, scope notes, all independent exercise mappings, and source-issue records remain intact.
@@ -91,8 +96,3 @@ Each exercise includes:
 - Fixed: Neukirch now has real chapter and section headings with independent queries for I.1 and the next I.2 batch, replacing the single combined exercise table. Chapter overview and source-reconciliation records are preserved; future batches must receive their own section query.
 - Fixed: Restored separate Lang mappings for Chapters XIV-XVII and split the combined final table into Chapters XIX, XX, XXI, and Appendix 2. Existing summary counts, source audits, exercise notes, and learning states are unchanged.
 - Verified: Executed the queries against vault metadata: Neukirch I.1 contains seven notes and I.2 remains empty; Lang displays all 529 source labels exactly once across 22 separate mapping tables. Checked chapter/section/edition boundaries, numeric ordering, repeated source segments, note links, and README's latest-three excerpt.
-
-### 2026-09-29 (Euclidean Domain Counterexample Proofs)
-
-- Expanded: The Euclidean Domains concept now proves that the ring of integers of Q(sqrt(-19)) is a PID but admits no Euclidean function. Added an elementary Dedekind-Hasse argument, including the zero-remainder case, and a minimal-nonunit obstruction using the two smallest finite fields.
-- Sourced: Visually checked Dummit-Foote, third edition, section 8.1 (printed p. 277 / PDF p. 290) and section 8.2 (printed pp. 281-282 / PDF pp. 294-295). Distinguished the independent proof presentations from the textbook and recorded Motzkin's precise historical reference without claiming direct inspection of the article. Recorded the missing integer-rounding step in the textbook's denominator-five case. Normalized display formulas and retained the existing learning status.

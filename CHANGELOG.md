@@ -2,6 +2,11 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-10-01 (Permutation Matrices in Symmetric Groups)
+
+- Expanded: Added permutation matrices to Symmetric Groups, including the basis-vector and entry definitions, coordinate reindexing, the three-cycle example, composition and inverse/transpose proofs, row/column permutations, and determinant sign with the characteristic-two boundary. Linked the matrix prerequisites and existing exercises; preserved learning statuses.
+- Verified: Visually checked Artin, second edition, section 1.5 (printed pp. 26-27 / PDF pp. 38-39), distinguishing the textbook's proved product formula from its omitted verifications and the independent derivations supplied here. Reviewed convention consistency with existing notes and checked metadata, links, formula delimiters, dynamic exercise backlinks, and tracker discovery.
+
 ### 2026-09-29 (Simplify Lang Archive Coverage)
 
 - Removed: The entire Verified Chapter Coverage section from the Lang archive dashboard, including its repeated table and reconciliation narratives. Chapter and appendix coverage, scope notes, all independent exercise mappings, and source-issue records remain intact.

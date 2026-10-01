@@ -1,15 +1,15 @@
 ---
 title: "Exercise LA184: Integer Orthogonal Matrices Are Signed Permutations"
 topic: linear-algebra
-difficulty: beginner
-status: not-started
+difficulty: advanced
+status: completed
 tags:
   - exercise
   - linear-algebra
   - orthogonal-groups
   - integer-matrices
   - signed-permutations
-source: "Michael Artin, Algebra, 2nd ed., Ch. 5, Miscellaneous Problems, Ex. M.1, printed p. 152, PDF p. 164"
+source: Michael Artin, Algebra, 2nd ed., Ch. 5, Miscellaneous Problems, Ex. M.1, printed p. 152, PDF p. 164
 created: 2026-08-24
 ---
 
