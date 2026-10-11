@@ -45,9 +45,9 @@
 		{"id":"rep5monster12345678","type":"text","text":"### Monster Group\nLargest sporadic, $|\\mathbb{M}| \\approx 8 \\times 10^{53}$","x":970,"y":1190,"width":300,"height":60},
 		{"id":"rep1liealgebras123","type":"text","text":"## Lie Algebras\n$[X,Y]$ bracket, $\\mathfrak{sl}_2$","x":970,"y":870,"width":300,"height":60},
 		{"id":"1026092900000010","type":"group","x":-580,"y":-150,"width":430,"height":590,"color":"6","label":"Set Theory and Foundations"},
-		{"id":"1026092900000011","type":"file","file":"10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic.md","x":-540,"y":-100,"width":340,"height":110},
-		{"id":"1026092900000012","type":"file","file":"10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma.md","x":-540,"y":70,"width":340,"height":110},
-		{"id":"1026092900000013","type":"file","file":"10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic.md","x":-540,"y":240,"width":340,"height":110}
+		{"id":"1026092900000011","type":"file","file":"09 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic.md","x":-540,"y":-100,"width":340,"height":110},
+		{"id":"1026092900000012","type":"file","file":"09 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma.md","x":-540,"y":70,"width":340,"height":110},
+		{"id":"1026092900000013","type":"file","file":"09 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic.md","x":-540,"y":240,"width":340,"height":110}
 	],
 	"edges":[
 		{"id":"ea1234567890abcde","fromNode":"n1d4e5f6789012345","fromSide":"bottom","toNode":"n2e5f67890123456a","toSide":"top"},

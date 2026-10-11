@@ -53,7 +53,7 @@ created: 2026-09-29
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Injective Modules and Baer Criterion]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma]]
+- [[Partially Ordered Sets and Zorns Lemma]]
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor]]
 
 ## Notes

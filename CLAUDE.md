@@ -64,7 +64,8 @@ exercise_abstract/
 ├── 06 - Representation Theory/  # Concepts/ and Exercises/
 ├── 07 - Modular Forms/  # Concepts/ and Exercises/
 ├── 08 - Arithmetic Geometry/  # Concepts/ and Exercises/
-├── 10 - Set Theory and Foundations/  # Concepts/ and Exercises/
+├── 09 - Set Theory and Foundations/  # Concepts/ and Exercises/
+├── 10 - Daily Exercise Lists/  # Daily exercise list output folder (configurable in Exercise Manager)
 ├── Canvas/              # .canvas files for visual maps
 ├── Templates/           # Templater templates
 └── Attachments/         # Images and files

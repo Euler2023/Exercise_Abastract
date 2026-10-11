@@ -637,7 +637,7 @@ SORT exercise_group ASC, section_order ASC, exercise_order ASC, file.name ASC
 
 ### Appendix — Background Material
 
-The 15 labels A.1-A.15 were reconciled again after the approved topic migration on 2026-09-29, with no missing, duplicate, unexpected, or unparsed appendix locators. A.4 and A.8-A.12 are now ST11-ST16 in [[10 - Set Theory and Foundations/Set Theory and Foundations Hub|Set Theory and Foundations]], reflecting their finite-set, Peano, induction, and order-theoretic methods. The original exercise pages, printed pp. 521-522 / PDF pp. 533-534, were rechecked. The remaining numerical, ring-theoretic, and geometric exercises retain their existing topics. No source label, problem, proof, creation date, or learning status changed in the six migrated notes.
+The 15 labels A.1-A.15 were reconciled again after the approved topic migration on 2026-09-29, with no missing, duplicate, unexpected, or unparsed appendix locators. A.4 and A.8-A.12 are now ST11-ST16 in [[Set Theory and Foundations Hub|Set Theory and Foundations]], reflecting their finite-set, Peano, induction, and order-theoretic methods. The original exercise pages, printed pp. 521-522 / PDF pp. 533-534, were rechecked. The remaining numerical, ring-theoretic, and geometric exercises retain their existing topics. No source label, problem, proof, creation date, or learning status changed in the six migrated notes.
 
 ```dataview
 TABLE WITHOUT ID

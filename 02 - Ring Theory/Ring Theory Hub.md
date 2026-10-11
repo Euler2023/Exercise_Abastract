@@ -16,8 +16,8 @@ Ring theory studies algebraic structures with two operations: addition and multi
 ## Core Concepts
 
 ### Foundations
-- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Subrings|Subrings]]
 - [[02 - Ring Theory/Concepts/Ring Homomorphisms|Ring Homomorphisms]]

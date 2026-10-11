@@ -51,8 +51,8 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic|Cardinality and Cardinal Arithmetic]]
+- [[Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[Cardinality and Cardinal Arithmetic|Cardinality and Cardinal Arithmetic]]
 
 ## Notes
 

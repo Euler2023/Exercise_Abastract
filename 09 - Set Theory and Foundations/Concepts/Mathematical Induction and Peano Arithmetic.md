@@ -76,7 +76,7 @@ $$
 
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 
 ## Exercises
 

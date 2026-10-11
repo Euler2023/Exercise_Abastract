@@ -37,8 +37,8 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
-- [[10 - Set Theory and Foundations/Exercises/Exercise ST14 - Translation and Trichotomy for the Natural Order|Translation and Trichotomy for the Natural Order]]
+- [[Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[Exercise ST14 - Translation and Trichotomy for the Natural Order|Translation and Trichotomy for the Natural Order]]
 
 ## Notes
 

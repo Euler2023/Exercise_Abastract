@@ -2,6 +2,14 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-10-12 (Configurable Daily-Exercise Lists Folder)
+
+- Fixed: Renaming the daily exercise list folder made the Exercise Manager plugin recreate the old hardcoded `09 - Daily Exercise Lists/` path, leaving the vault with two list folders. Confirmed the recreated `Daily Exercise List - 2026-10-12.md` was byte-identical (SHA-256) to the copy in `10 - Daily Exercise Lists/`, removed the duplicate folder after that check, and pointed the plugin at `10 - Daily Exercise Lists`.
+- Added: Upgraded the local Exercise Manager to 0.6.1. The daily list output folder is now a setting (settings page "每日题单文件夹", stored as `settings.listsDir` in the daily state file): vault-relative paths are accepted, `a/b` subfolders are created level by level, and empty, absolute, `..`-escaping, or `* ? " < > |` paths are rejected with a notice instead of being written. Automatic generation, every export, and the sidebar's displayed path follow the configured folder; changing the value redirects only future writes, so existing lists must be moved by hand.
+- Added: The same release adds a "暂停每日自动出题" switch (sidebar button, settings toggle, and "暂停/恢复每日自动出题" command) that stops automatic generation when the vault opens, the date rolls over, or metadata becomes ready, for both the random list and the systematic queue. Manual generation stays available, and existing lists, cycle history, seen sets, and systematic progress are preserved; resuming immediately backfills the current date.
+- Updated: Set Theory and Foundations now lives in `09`, so the Dataview exercise queries in its hub and in `00 - Home/Index.md` were repaired, and the folder trees in `README.md` and `CLAUDE.md` were synchronized with the actual layout (`09 - Set Theory and Foundations/`, `10 - Daily Exercise Lists/`). Historical changelog entries were left untouched.
+- Verified: The Exercise Manager test suite passes 42/42, covering pause gating of all automatic entry points, resume backfill, the sidebar button and settings toggle, custom and nested output folders, invalid-path rejection, old state files without the new fields, and idempotent re-export. The live daily state file (revision 112, 32 batches) was re-hydrated with the new schema to confirm `paused` and `listsDir` load without altering existing history or batches.
+
 ### 2026-10-11 (Neukirch I.2 Integrality Exercises)
 
 - Added: Archived all seven exercises of Chapter I §2 as R330-R335 in Ring Theory and LA532 in Linear Algebra and Modules. Each preserves the complete source problem, includes progressive collapsed hints and a complete independent derivation, links existing prerequisites, records printed p. 15 / PDF p. 34, and remains not-started. No new concept or directory was needed.

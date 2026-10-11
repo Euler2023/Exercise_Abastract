@@ -62,7 +62,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
+- [[Mathematical Induction and Peano Arithmetic|Mathematical Induction and Peano Arithmetic]]
 
 ## Notes
 

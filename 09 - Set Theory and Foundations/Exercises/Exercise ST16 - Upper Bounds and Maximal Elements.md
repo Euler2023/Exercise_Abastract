@@ -39,7 +39,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
+- [[Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 
 ## Notes
 

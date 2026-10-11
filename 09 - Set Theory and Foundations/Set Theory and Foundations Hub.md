@@ -16,9 +16,9 @@ This topic collects proofs whose main tools are finite sets, induction, order re
 
 ## Core Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic|Induction and the natural numbers]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partial orders, maximal elements, and Zorn's lemma]]
-- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic|Cardinality, finite products, and countable constructions]]
+- [[Mathematical Induction and Peano Arithmetic|Induction and the natural numbers]]
+- [[Partially Ordered Sets and Zorns Lemma|Partial orders, maximal elements, and Zorn's lemma]]
+- [[Cardinality and Cardinal Arithmetic|Cardinality, finite products, and countable constructions]]
 
 ## How the Topics Connect
 
@@ -38,7 +38,7 @@ Induction proves statements about finite sets and recursively defined arithmetic
 
 ```dataview
 TABLE difficulty, status, source
-FROM "10 - Set Theory and Foundations/Exercises"
+FROM "09 - Set Theory and Foundations/Exercises"
 WHERE contains(tags, "exercise")
 SORT number(regexreplace(file.name, "^Exercise ST([0-9]+).*", "$1")) ASC
 ```

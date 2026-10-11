@@ -43,8 +43,8 @@ created: 2026-09-29
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma]]
+- [[Cardinality and Cardinal Arithmetic]]
+- [[Partially Ordered Sets and Zorns Lemma]]
 
 ## Notes
 

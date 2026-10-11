@@ -44,7 +44,7 @@ created: 2026-09-29
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic]]
+- [[Cardinality and Cardinal Arithmetic]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions]]
 - [[03 - Field Theory/Concepts/Minimal Polynomials]]
 

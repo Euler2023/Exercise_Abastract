@@ -84,7 +84,7 @@ The power set $\mathcal P(A)$ is in bijection with $\{0,1\}^A$ by characteristic
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma]]
+- [[Partially Ordered Sets and Zorns Lemma]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions]]
 - [[03 - Field Theory/Concepts/Algebraic Closure]]
 

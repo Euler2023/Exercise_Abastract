@@ -40,8 +40,8 @@ created: 2026-09-29
 
 ## Related Concepts
 
-- [[10 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic]]
-- [[10 - Set Theory and Foundations/Exercises/Exercise ST7 - Finite Alphabet Sequences and the Continuum]]
+- [[Cardinality and Cardinal Arithmetic]]
+- [[Exercise ST7 - Finite Alphabet Sequences and the Continuum]]
 
 ## Notes
 

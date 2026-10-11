@@ -14,7 +14,7 @@
 		{"id":"simplegroups12345","type":"text","text":"### Simple & Sporadic\nClassification (CFSG)\n26 sporadic groups\nMonster → Moonshine","x":-80,"y":120,"width":200,"height":100,"color":"1"},
 		{"id":"solvablegroups123","type":"text","text":"### Solvable Groups\nAbel-Ruffini\nShafarevich theorem","x":300,"y":-80,"width":180,"height":80,"color":"6"},
 		{"id":"igpfaltings123456","type":"text","text":"### Deep Connections\n**IGP ↔ Faltings**\nAnabelian geometry\nSection conjecture","x":530,"y":360,"width":200,"height":100,"color":"3"},
-		{"id":"1026092900000001","type":"file","file":"10 - Set Theory and Foundations/Set Theory and Foundations Hub.md","x":-430,"y":-360,"width":300,"height":130,"color":"6"}
+		{"id":"1026092900000001","type":"file","file":"09 - Set Theory and Foundations/Set Theory and Foundations Hub.md","x":-430,"y":-360,"width":300,"height":130,"color":"6"}
 	],
 	"edges":[
 		{"id":"e1a2b3c4d5e6f7a8","fromNode":"b2c3d4e5f6789012","fromSide":"right","toNode":"c3d4e5f678901234","toSide":"left","label":"generalizes to"},

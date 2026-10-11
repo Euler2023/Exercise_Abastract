@@ -50,7 +50,7 @@ Divisibility is not asserted equivalent to injectivity over an arbitrary ring. P
 - [[04 - Linear Algebra and Modules/Concepts/Derived Functors and Ext]]
 - [[04 - Linear Algebra and Modules/Concepts/Flat and Faithfully Flat Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups]]
-- [[10 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma]]
+- [[Partially Ordered Sets and Zorns Lemma]]
 
 ## Exercises
 
