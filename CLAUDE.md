@@ -186,3 +186,5 @@ Canvas files use JSON format. When creating:
 - [ ] Related concepts linked
 - [ ] Hub file updated
 - [ ] **`CHANGELOG.md` updated; README's latest three entries synchronized**
+
+@AGENTS.md

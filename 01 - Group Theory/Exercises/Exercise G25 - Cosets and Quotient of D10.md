@@ -2,7 +2,7 @@
 title: "Exercise G25: Cosets and Quotient of D10"
 topic: group-theory
 difficulty: intermediate
-status: not-started
+status: in-progress
 tags:
   - exercise
   - group-theory
@@ -10,7 +10,7 @@ tags:
   - cosets
   - quotient-groups
   - direct-products
-source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 4, Ex. 4.3, printed p. 188, PDF p. 200"
+source: Michael Artin, Algebra, 2nd ed., Ch. 6, Section 4, Ex. 4.3, printed p. 188, PDF p. 200
 created: 2026-08-10
 ---
 

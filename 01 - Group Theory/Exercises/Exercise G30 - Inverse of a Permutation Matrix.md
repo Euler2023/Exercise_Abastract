@@ -38,12 +38,22 @@ created: 2026-08-23
 > $$
 > P^{-1}=P^{\mathsf T}.
 > $$
+>
+> Regarding $P$ as a real matrix, $P^{\mathsf T}P=I$ is exactly the defining condition for an [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|orthogonal matrix]]. Thus every permutation matrix is orthogonal. The identity $P^{-1}=P^{\mathsf T}$ does not say $P=P^{\mathsf T}$; for instance, the permutation matrix of $(123)$ is not symmetric.
+>
+> Regarding $P$ as a real matrix, $P^{\mathsf T}P=I$ is exactly the defining condition for an [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|orthogonal matrix]]. Thus every permutation matrix is orthogonal. The identity $P^{-1}=P^{\mathsf T}$ does not say $P=P^{\mathsf T}$; for instance, the permutation matrix of $(123)$ is not symmetric.
 
 ## Related Concepts
 
 - [[01 - Group Theory/Concepts/Symmetric Groups|Symmetric Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|Orthogonal Matrices]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Coordinate Basis|Standard Coordinate Basis]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|Orthogonal Matrices]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Coordinate Basis|Standard Coordinate Basis]]
 
 ## Notes
 
 - **Source status:** The problem statement is transcribed from [S1, Ch. 1, §5, Ex. 5.3, printed p. 34, PDF p. 46]. The solution is an independent derivation for this vault, not a solution printed in Artin.
+- **Definition link:** The original exercise page was visually rechecked on 2026-10-01. Orthogonality here uses the real Euclidean product; the linked concept note supplies the definition and its equivalent conditions. The added consequence and symmetry distinction are independent explanations.
+- **Definition link:** The original exercise page was visually rechecked on 2026-10-01. Orthogonality here uses the real Euclidean product; the linked concept note supplies the definition and its equivalent conditions. The added consequence and symmetry distinction are independent explanations.

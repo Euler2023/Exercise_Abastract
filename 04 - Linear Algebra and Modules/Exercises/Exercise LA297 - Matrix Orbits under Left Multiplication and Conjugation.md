@@ -33,7 +33,7 @@ created: 2026-08-27
 > **(a)** Two matrices are related by invertible left multiplication exactly when they have the same row space. Thus there is one zero orbit, one full-rank orbit, and one rank-one orbit for every line in $\mathbb C^2$. Representatives may be chosen as
 >
 > $$
-> 0,qquad I_2,qquad
+> 0,\qquad I_2,\qquad
 > \begin{pmatrix}1&a\\0&0\end{pmatrix} (a\in\mathbb C),qquad
 > \begin{pmatrix}0&1\\0&0\end{pmatrix}.
 > $$
@@ -43,7 +43,7 @@ created: 2026-08-27
 > **(b)** Conjugation orbits are the similarity classes. Every complex $2\times2$ matrix is similar to exactly one of the following types, with the eigenvalues in the last family regarded as an unordered pair:
 >
 > $$
-> \lambda I_2,qquad
+> \lambda I_2,\qquad
 > \begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix},qquad
 > \begin{pmatrix}\lambda&0\\0&\mu\end{pmatrix}\quad(\lambda\ne\mu).
 > $$

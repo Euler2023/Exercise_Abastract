@@ -76,6 +76,8 @@ status: not-started
 
 > [!abstract] Existence of Primitive Elements
 > The multiplicative group $\mathbb{F}_{p^n}^*$ is cyclic. A generator is called a **primitive element**.
+>
+> This is the multiplicative-group meaning. It implies field generation over every subfield, but the converse can fail; see [[03 - Field Theory/Concepts/Primitive Elements#Finite-Field Terminology|Primitive Elements]].
 
 ## Applications
 
@@ -86,6 +88,7 @@ status: not-started
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]

@@ -93,7 +93,7 @@ created: 2026-08-12
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Composita and Restriction Maps|Composita and Restriction Maps]]
-- [[03 - Field Theory/Concepts/Separable Extensions#Primitive Element Theorem|Primitive Element Theorem]]
+- [[03 - Field Theory/Concepts/Primitive Elements#Primitive Element Theorem|Primitive Element Theorem]]
 - [[03 - Field Theory/Concepts/Minimal Polynomials|Minimal Polynomials]]
 - [[05 - Galois Theory/Concepts/Galois Group|Galois Group]]
 

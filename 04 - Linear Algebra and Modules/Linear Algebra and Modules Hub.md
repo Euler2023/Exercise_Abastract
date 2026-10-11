@@ -23,6 +23,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[04 - Linear Algebra and Modules/Concepts/Subspaces|Subspaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Coordinate Basis|Standard Coordinate Basis]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Matrix Basis|Standard Matrix Basis]]
 
 ### Core Topics
 - [[04 - Linear Algebra and Modules/Concepts/Linear Independence|Linear Independence]]
@@ -43,6 +45,11 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 
 ### Matrix Theory
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Representation#Matrix Units|Matrix Units]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Representation#Special Matrices|Special Matrices]]
+- [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms#Transpose and Conjugate Transpose|Transpose and Conjugate Transpose]]
+- [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms#Hermitian Matrices|Hermitian Matrices]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Representation#Elementary Matrices|Elementary Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Infinite Matrices|Infinite Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Centralizers and Similarity|Matrix Centralizers and Similarity]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
@@ -52,6 +59,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 
 ### Bilinear Forms and Matrix Groups
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|Orthogonal Matrices]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Unitary Matrices|Unitary Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Indefinite Bilinear Forms and Lorentz Groups|Indefinite Bilinear Forms and Lorentz Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Symplectic Groups|Symplectic Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]

@@ -32,7 +32,7 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution 
 > Set $K=k(t^p,u^p)$ and $E=k(t,u)$.
 >
 > **(a)** The $p^2$ monomials $t^iu^j$, $0\le i,j<p$, are linearly independent over $K$. Indeed, clearing denominators in a relation gives a polynomial identity
@@ -53,10 +53,14 @@ created: 2026-09-06
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Purely Inseparable Extensions|Purely Inseparable Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
 
 ## Notes
+
+> [!info] Related Dummit–Foote exercise
+> [[03 - Field Theory/Exercises/Exercise F122 - A Nonsimple Purely Inseparable Rational Function Extension|Exercise F122]] archives Dummit–Foote, third edition, §14.4, Exercise 6 (printed p. 596 / PDF p. 609). It is the $k=\mathbb F_p$ specialization of this exercise's construction and explicitly asks for nonsimplicity via infinitely many intermediate fields. The two original source pages were compared; their independent source identities and learning states are retained.
 
 - **Source status:** The numbered statement, multipart structure, and notation were checked against the original PDF [S2, Ch. V, Ex. 24, printed p. 255, PDF p. 270]. The solution is an independent derivation except where a source-contained argument, external input, or conjectural boundary is explicitly identified.

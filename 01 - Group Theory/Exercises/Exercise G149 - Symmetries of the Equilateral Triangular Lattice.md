@@ -1,14 +1,14 @@
 ---
 title: "Exercise G149: Symmetries of the Equilateral Triangular Lattice"
 topic: group-theory
-difficulty: beginner
-status: not-started
+difficulty: intermediate
+status: completed
 tags:
   - exercise
   - group-theory
   - crystallographic-groups
   - lattices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 6, Ex. 6.2, printed p. 189, PDF p. 201"
+source: Michael Artin, Algebra, 2nd ed., Ch. 6, Section 6, Ex. 6.2, printed p. 189, PDF p. 201
 created: 2026-08-27
 ---
 
@@ -33,7 +33,7 @@ created: 2026-08-27
 > Choose equal-length lattice generators $a,b$ with angle $60^\circ$. Rotation through $60^\circ$ sends
 >
 > $$
-> a\longmapsto b,qquad b\longmapsto b-a,
+> a\longmapsto b,\qquad b\longmapsto b-a,
 > $$
 >
 > so it preserves $L=\mathbb Za+\mathbb Zb$. Reflection in the line $\mathbb Ra$ also preserves $L$. These two operators generate the full dihedral point group $D_6$, of order $12$.
@@ -41,7 +41,7 @@ created: 2026-08-27
 > Let $T$ be the subgroup of translations by vectors of $L$. Sending an isometry to its orthogonal part has kernel $T$ and image $D_6$. Therefore
 >
 > $$
-> G/T\cong D_6,qquad [G:T]=|D_6|=12.
+> G/T\cong D_6,\qquad [G:T]=|D_6|=12.
 > $$
 >
 > $\square$

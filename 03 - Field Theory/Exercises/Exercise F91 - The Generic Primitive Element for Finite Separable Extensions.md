@@ -37,7 +37,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!solution]-
 > ### Step 1: Degree of the extension and embeddings
 > 
 > Let $k(x) = k(x_1, \ldots, x_n)$ be a finite separable extension of $k$, with degree
@@ -132,6 +132,7 @@ created: 2026-09-15
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[03 - Field Theory/Concepts/Transcendence Bases and Transcendence Degree|Transcendence Bases and Transcendence Degree]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]

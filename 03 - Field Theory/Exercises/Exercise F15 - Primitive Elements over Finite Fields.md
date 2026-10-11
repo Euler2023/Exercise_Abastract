@@ -35,6 +35,7 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]

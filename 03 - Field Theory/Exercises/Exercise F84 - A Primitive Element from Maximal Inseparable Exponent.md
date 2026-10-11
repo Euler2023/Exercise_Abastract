@@ -61,6 +61,7 @@ created: 2026-09-06
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Purely Inseparable Extensions|Purely Inseparable Extensions]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]

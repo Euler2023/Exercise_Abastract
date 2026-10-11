@@ -158,7 +158,7 @@ if (unparsed.length > 0) {
 
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
-| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. Full chapter total pending. |
+| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. Selected §8 Exercise 2 archived as R329 with a source error and full counterexample. Full chapter total pending. |
 | II | The Theory of Valuations | Pending |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
@@ -254,6 +254,37 @@ if (rows.length === 0) {
     rows.map(entry => entry.row)
   );
 }
+```
+
+#### I.8 — Extensions of Dedekind Domains
+
+Selected exercise I.8.2 was visually checked at printed p. 52 / PDF p. 71 and archived on 2026-10-02. This is a one-exercise selection, not a complete §8 exercise-set audit; the section total remains unknown.
+
+> [!warning] Source statement refuted
+> Exercise I.8.2's prescribed coprime-conductor claim is false even for a separable cubic number field. Its archived note preserves the full mathematical claim and gives an independent integral-basis calculation, the quotient $\mathcal O_L/2\mathcal O_L\simeq\mathbb F_2^3$, and a contradiction for every integral primitive element. Archival coverage records this source issue; it does not treat the printed claim as a proved theorem.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const matches = [];
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== "I" || Number(section) !== 8 || !exercise) continue;
+    matches.push({
+      number: Number(exercise), path: page.file.path,
+      row: ["I.8." + Number(exercise), page.file.link, page.topic,
+        page.status, page.source_status ?? "See note"],
+    });
+  }
+}
+matches.sort((a, b) => a.number - b.number || a.path.localeCompare(b.path));
+dv.table(["Source exercise", "Archived note", "Topic", "Learning status", "Source status"],
+  matches.map(entry => entry.row));
 ```
 
 ### Chapter II — The Theory of Valuations

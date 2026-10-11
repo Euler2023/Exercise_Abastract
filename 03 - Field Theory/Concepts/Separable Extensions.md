@@ -77,6 +77,8 @@ status: not-started
 > If $E/F$ is a finite separable extension, then $E = F(\alpha)$ for some $\alpha \in E$.
 >
 > Such $\alpha$ is called a **primitive element**.
+>
+> See [[03 - Field Theory/Concepts/Primitive Elements#Primitive Element Theorem|Primitive Elements]] for the proof, examples, and distinction from a multiplicative-group generator.
 
 > [!abstract] Separable Degree
 > For a finite extension $E/F$:
@@ -90,6 +92,7 @@ status: not-started
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[05 - Galois Theory/Concepts/Hilbert's Theorem 90|Hilbert's Theorem 90]]
 - [[05 - Galois Theory/Concepts/Artin-Schreier Extensions|Artin–Schreier Extensions]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]

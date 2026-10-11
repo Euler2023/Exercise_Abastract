@@ -26,6 +26,7 @@ Foundational cardinality arguments used in constructing and counting extensions 
 ### Extension Theory
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions|Algebraic Extensions]]
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Splitting Fields|Splitting Fields]]
 - [[03 - Field Theory/Concepts/Algebraic Closure|Algebraic Closure]]
 
@@ -87,6 +88,8 @@ SORT file.name ASC
 
 > [!abstract] Primitive Element Theorem
 > If $K/F$ is a finite separable extension, then $K = F(\alpha)$ for some $\alpha \in K$.
+>
+> See [[03 - Field Theory/Concepts/Primitive Elements#Primitive Element Theorem|Primitive Elements]] for the definition, proof, and scope.
 
 > [!abstract] Classification of Finite Fields
 > For each prime power $q = p^n$, there is exactly one field $\mathbb{F}_q$ (up to isomorphism).

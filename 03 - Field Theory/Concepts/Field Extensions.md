@@ -40,6 +40,8 @@ status: not-started
 > [!info] Simple Extension
 > For $\alpha \in K$, the **simple extension** $F(\alpha)$ is the smallest subfield of $K$ containing $F$ and $\alpha$.
 >
+> If $K=F(\alpha)$, then $\alpha$ is a [[03 - Field Theory/Concepts/Primitive Elements|primitive element for $K/F$]].
+>
 > $$F(\alpha) = \bigcap \{L : F \subseteq L \subseteq K, \alpha \in L, L \text{ is a field}\}$$
 
 > [!info] Adjunction of Multiple Elements
@@ -77,6 +79,7 @@ status: not-started
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]

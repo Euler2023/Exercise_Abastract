@@ -41,6 +41,7 @@ created: 2026-08-23
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[01 - Group Theory/Concepts/Cyclic Groups|Cyclic Groups]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 

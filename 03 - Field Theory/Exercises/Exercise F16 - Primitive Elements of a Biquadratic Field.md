@@ -57,6 +57,7 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Primitive Elements|Primitive Elements]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[05 - Galois Theory/Concepts/Fundamental Theorem|Galois Correspondence]]
@@ -64,3 +65,6 @@ created: 2026-08-10
 ## Notes
 
 The classification is an independent derivation. It uses the complete intermediate-field list for the biquadratic Galois extension.
+
+> [!note] Qualifying-exam source overlap
+> Georgia Tech's Fall 2017 Algebra Comprehensive Exam, Question 4, printed p. 3 / PDF p. 3, asks for all primitive elements of this same extension, with justification. The mathematical task is identical to Artin's exercise archived here. The [official examination and solutions PDF](https://intranet.math.gatech.edu/sites/default/files/documents/exam_sol/AlgebraFall17.pdf) was visually checked; its coefficient criterion agrees with the independent derivation above. This is a duplicate source reference, not an additional exercise note. The original Artin source identity and learning status are retained.

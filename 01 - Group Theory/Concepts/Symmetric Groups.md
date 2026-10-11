@@ -95,7 +95,7 @@ $$
 Permutation matrices turn the movement of labels into a linear transformation: the label $j$ is represented by the standard basis vector $e_j$, and moving $j$ to $\sigma(j)$ means sending $e_j$ to $e_{\sigma(j)}$.
 
 > [!info] Definition (Permutation Matrix)
-> Let $n\ge1$, let $F$ be a field, and let $e_1,\ldots,e_n$ be the standard basis of $F^n$. For $\sigma\in S_n$, its **permutation matrix** $P_\sigma$ is the $n\times n$ matrix defined by
+> Let $n\ge1$, let $F$ be a field, and let $e_1,\ldots,e_n$ be the [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Coordinate Basis|standard basis]] of $F^n$. For $\sigma\in S_n$, its **permutation matrix** $P_\sigma$ is the $n\times n$ matrix defined by
 > $$
 > P_\sigma e_j=e_{\sigma(j)}\qquad(1\le j\le n).
 > $$
@@ -109,7 +109,7 @@ Permutation matrices turn the movement of labels into a linear transformation: t
 > $$
 > Thus a permutation matrix has exactly one $1$ in each row and each column, with every other entry $0$.
 
-Conversely, any matrix with this pattern determines a unique permutation: define $\sigma(j)$ to be the row containing the $1$ in column $j$. The condition on rows makes these values distinct, so $\sigma$ is bijective. In matrix-unit notation,
+Conversely, any matrix with this pattern determines a unique permutation: define $\sigma(j)$ to be the row containing the $1$ in column $j$. The condition on rows makes these values distinct, so $\sigma$ is bijective. Using [[04 - Linear Algebra and Modules/Concepts/Matrix Representation#Matrix Units|matrix units]],
 $$
 P_\sigma=\sum_{j=1}^n E_{\sigma(j),j},
 $$
@@ -167,7 +167,7 @@ $$
 >
 > Transposing the $1$ in position $(\sigma(j),j)$ puts it in position $(j,\sigma(j))$. Writing $k=\sigma(j)$ makes this position $(\sigma^{-1}(k),k)$, exactly the defining pattern of $P_{\sigma^{-1}}$. Hence $P_\sigma^{\mathsf T}=P_{\sigma^{-1}}$. $\square$
 
-Consequently, $\sigma\mapsto P_\sigma$ is an injective [[01 - Group Theory/Concepts/Group Homomorphisms|group homomorphism]] $S_n\to GL_n(F)$. It is injective because the columns recover every value $\sigma(j)$. Its image is precisely the subgroup of permutation matrices, giving a concrete matrix realization of $S_n$. Over $\mathbb R$, the identity $P_\sigma^{\mathsf T}P_\sigma=I_n$ also says that these matrices are orthogonal.
+Consequently, $\sigma\mapsto P_\sigma$ is an injective [[01 - Group Theory/Concepts/Group Homomorphisms|group homomorphism]] $S_n\to GL_n(F)$. It is injective because the columns recover every value $\sigma(j)$. Its image is precisely the subgroup of permutation matrices, giving a concrete matrix realization of $S_n$. Over $\mathbb R$, the identity $P_\sigma^{\mathsf T}P_\sigma=I_n$ also says that these matrices are [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|orthogonal]].
 
 Left and right multiplication reorder rows and columns differently. If $A$ is $n\times m$ and $B$ is $m\times n$, then
 $$
@@ -261,6 +261,8 @@ These relations provide a compact way to calculate the complete multiplication t
 - [[01 - Group Theory/Concepts/Semigroups Monoids and Units|Semigroups, Monoids, and Units]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension#Standard Coordinate Basis|Standard Coordinate Basis]]
+- [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups#Orthogonal Matrices|Orthogonal Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 
 ## Exercises

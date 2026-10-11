@@ -2,6 +2,56 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-10-02 (Qualifying Exercises and Neukirch Conductor Counterexample)
+
+- Added: Archived Kent State qualifying-exam bank Problems 55, 56, and 74 as F123-F125, Rice's 2020-08-21 Question 3(a)-(b) as Gal140, and Neukirch I.8.2 as R329. Each preserves the complete mathematical task and source identity, includes progressive hints and a complete independent derivation, and remains not-started. Distinguished the Kent problem bank from the dated Rice examination.
+- Clarified: Preserved Neukirch's false prescribed coprime-conductor claim with a visible source warning. Derived Dedekind's cubic integer basis, discriminant -503, the quotient modulo 2 as F2 cubed, the impossibility for every integral primitive element, and a valid replacement with different quantifiers. Added Orders and Conductors and the algebraic intermediate-field criterion in Primitive Elements. Marked Georgia Tech's Fall 2017 Question 4 as a duplicate of F16; the Neukirch dashboard records selected I.8.2 coverage without claiming a complete section audit.
+- Verified: Checked Kent printed pp. 5-6 / PDF pp. 9-10, Rice printed/PDF p. 2, Neukirch printed pp. 11-12 and 52 / PDF pp. 30-31 and 71, and Conrad Example 7 printed/PDF pp. 5-6 against rendered originals. Independent mathematical review checked inseparable cases, finite-degree reductions, orbit-sum stabilizers and field inclusions, and the conductor counterexample. Metadata, numbering, links, formula delimiters, tracker tags, source mappings, preservation of unrelated changes, and the README latest-three excerpt passed checks; temporary source files were removed.
+
+### 2026-10-02 (Dummit–Foote Primitive Element Exercises)
+
+- Added: Archived third-edition §14.4 Exercises 2 and 6 as F121 and F122 in Field Theory, preserving both original statements and precise printed/PDF page anchors. Each includes progressive hints, a complete independent derivation, concept links, and not-started learning status; existing concept queries and the Study Progress exercise-tag filter discover them automatically.
+- Clarified: F121 constructs a generator of Q(sqrt2,sqrt3,sqrt5) through explicit recovery of all three square roots. F122 constructs infinitely many intermediate fields and proves nonsimplicity. Marked F122 as the prime-constant-field specialization of Lang V.24 / F83, with reciprocal source-overlap notes and preserved original F83 content and metadata.
+- Verified: Visually checked Dummit–Foote printed pp. 595–596 / PDF pp. 608–609 and Lang printed p. 255 / PDF p. 270. Mathematical cross-review checked the recovery formulas, nonzero denominators, the infinite parameter field, and characteristic two. Metadata, numbering, formula syntax, links, tracker discovery, preserved prior changes, and README's latest-three excerpt were checked; temporary source images were removed.
+
+### 2026-10-02 (Primitive Elements Concept)
+
+- Added: A dedicated Primitive Elements concept with searchable English and Chinese aliases, the field-generator definition, degree and power-basis criteria, the finite-separable theorem and expanded embedding proof, and examples of explicit recovery, finite-field multiplicative order, and failure of simplicity in a purely inseparable extension.
+- Connected: Added the concept to the field hub, Field Extensions, Separable Extensions, Finite Fields, and seven directly related exercises (F15, F16, F83, F84, F91, Gal28, and G106). Distinguished field generation from multiplicative-group generation and repaired Gal28's theorem-heading target. Preserved all exercise content and learning states, including the existing F91 callout change.
+- Verified: Visually checked Artin printed pp. 461–463 / PDF pp. 473–475 and Lang printed pp. 243–244 / PDF pp. 258–259; distinguished source-contained proofs, imported inputs, and independent derivations. Mathematical cross-review and static metadata, links, formula-delimiter, dynamic-backlink, and tracker checks passed. Synchronized README's latest three entries; temporary source renders were removed.
+
+### 2026-10-01 (Shortest-Vector Proof for LA184)
+
+- Added: A separate collapsed Proof 2 for LA184 using the integer lattice and its shortest nonzero vectors. Included lattice preservation by the matrix and its inverse, the shortest-vector characterization, the signed-permutation classification and converse, and the count; reused Proof 1's group multiplication.
+- Preserved: Retained the first proof and supplementary details, added the lattice prerequisite link, and identified the new proof as an independent geometric derivation. Checked mathematics, formula syntax, links, metadata, and README's latest-three history excerpt.
+
+### 2026-10-01 (Concise Main Proof for LA184)
+
+- Revised: Reduced LA184's main solution from seven steps to four, retaining the integer sum-of-squares argument, distinct nonzero rows, unique signed-permutation factorization, converse, count, and explicit group multiplication. Removed repeated explanations and the unnecessary matrix-unit expansion.
+- Reorganized: Moved the basis-vector/product-entry explanation and three-dimensional example into separate collapsed supplements. Reviewed proof completeness and sign indexing, checked formula syntax and links, preserved the problem and metadata, and synchronized README while retaining the full change history.
+
+### 2026-10-01 (Column Inner Products in LA184)
+
+- Clarified: Expanded LA184's first step to show why multiplication by a standard coordinate vector selects a column, how the product-entry rule and transpose swap produce the column inner product, and why the Kronecker delta comes from the orthogonality hypothesis. Distinguished fixed column indices from the summation index and added three-dimensional off-diagonal and diagonal calculations.
+- Verified: Reviewed the added independent derivation and checked formula delimiters, callout formatting, links, and the synchronized README excerpt. Preserved the original problem, all exercise metadata and learning status, the rest of the solution, and earlier change history.
+
+### 2026-10-01 (Orthogonal and Hermitian Matrix Definitions)
+
+- Expanded: Added explicit real orthogonal and complex unitary matrix definitions to Classical Linear Groups, with inverse/transpose equivalences, orthonormal columns and rows, preservation of inner products and lengths, group closure, determinant consequences, and examples distinguishing symmetry and complex orthogonality. Added transpose, conjugate transpose, and Hermitian matrix definitions to Bilinear and Hermitian Forms, including entry conditions, examples, and the precise relationship to self-adjoint operators and form preservation.
+- Connected: Linked the definitions from G30, LA184, Symmetric Groups, the special-matrix comparison in Matrix Representation, and the linear algebra hub. Added searchable matrix aliases and retained dynamic exercise backlinks and all learning states.
+- Verified: Visually checked Artin's orthogonal/unitary definitions on printed pp. 261–262 / PDF pp. 273–274, Hermitian and conjugate-transpose definitions on printed pp. 232–234 / PDF pp. 244–246, and G30 on printed p. 34 / PDF p. 46. Distinguished independent derivations from source statements; reviewed the mathematics and checked metadata, formula syntax, links, tracker discovery, and the synchronized README excerpt. Temporary source renders were removed.
+
+### 2026-10-01 (Detailed Solution for Integer Orthogonal Matrices)
+
+- Expanded: Rewrote LA184 with progressive hints and a full derivation from column inner products and integer sums of squares to the unique signed-permutation factorization. Explained the column-sign/row-sign conversion, verified the converse and the count, added a three-dimensional example, and proved the semidirect-product description through its explicit action, multiplication, and isomorphism.
+- Verified: Checked Artin's original M.1 statement on printed p. 152 / PDF p. 164; preserved the problem and all metadata, including the existing completed status. Reviewed the mathematics and indexing conventions, linked the recently expanded prerequisite definitions, and checked links, formula syntax, collapsed callouts, and tracker discovery. The solution is an independent derivation; temporary source renders were removed.
+
+### 2026-10-01 (Matrix Units, Special Matrices, and Standard Bases)
+
+- Expanded: Defined matrix units, Kronecker delta, zero/identity/scalar/diagonal/triangular/unitriangular matrices, and the three elementary matrix types in Matrix Representation. Expanded Basis and Dimension with ordered coordinates, standard coordinate/monomial/matrix bases, finite-dimensional dual bases, and links to the existing orthonormal and eigenvector basis definitions. Added searchable aliases and definition links from Symmetric Groups and the linear algebra hub.
+- Fixed: Made the change-of-basis matrix consistently express the new basis in old coordinates, repaired its coordinate direction, and supplied a compatible similarity proof and numerical example. Distinguished vectors from matrix units, matrix units from elementary matrices, and ordinary dual bases from bases dual under a bilinear form.
+- Verified: Visually checked the bounded Artin pages for matrix notation and elementary operations (printed pp. 6 and 9-11 / PDF pp. 18 and 21-23), bases and coordinates (printed pp. 86-95 / PDF pp. 98-107), and matrix representation/base change (printed pp. 105-106 and 109 / PDF pp. 117-118 and 121). Reviewed the mathematics, preserved learning states, and checked metadata, file/heading links, Obsidian formula syntax, dynamic exercise backlinks, and tracker discovery. Distinguished independent derivations and unproved infinite-dimensional basis inputs; removed temporary source renders.
+
 ### 2026-10-01 (Permutation Matrices in Symmetric Groups)
 
 - Expanded: Added permutation matrices to Symmetric Groups, including the basis-vector and entry definitions, coordinate reindexing, the three-cycle example, composition and inverse/transpose proofs, row/column permutations, and determinant sign with the characteristic-two boundary. Linked the matrix prerequisites and existing exercises; preserved learning statuses.
