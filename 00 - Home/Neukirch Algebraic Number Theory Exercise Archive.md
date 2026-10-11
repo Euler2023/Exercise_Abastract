@@ -19,7 +19,7 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
 > [!note] Audit scope
-> The seven chapter titles have been checked against the original contents pages. Chapter I §1 has a verified source set of seven exercises; its section coverage is tracked separately below. Full chapter exercise totals and ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
+> The seven chapter titles have been checked against the original contents pages. Chapter I §1 and §2 each have a verified source set of seven exercises; their section coverage is tracked separately below. Full chapter exercise totals and ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
 
 ## Chapter Coverage
 
@@ -45,6 +45,12 @@ const auditedSections = new Map([
     title: "The Gaussian Integers",
     labels: ["I.1.1", "I.1.2", "I.1.3", "I.1.4", "I.1.5", "I.1.6", "I.1.7"],
     pages: "printed p. 5 / PDF p. 24",
+    reconciled: true,
+  }],
+  ["I.2", {
+    title: "Integrality",
+    labels: ["I.2.1", "I.2.2", "I.2.3", "I.2.4", "I.2.5", "I.2.6", "I.2.7"],
+    pages: "printed p. 15 / PDF p. 34",
     reconciled: true,
   }],
 ]);
@@ -158,7 +164,7 @@ if (unparsed.length > 0) {
 
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
-| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. Selected §8 Exercise 2 archived as R329 with a source error and full counterexample. Full chapter total pending. |
+| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. §2 complete: 7/7 exercises, R330-R335 in Ring Theory and LA532 in Linear Algebra and Modules. Selected §8 Exercise 2 archived as R329 with a source error and full counterexample. Full chapter total pending. |
 | II | The Theory of Valuations | Pending |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
@@ -217,12 +223,53 @@ if (rows.length === 0) {
 
 #### I.2 — Integrality
 
-Next archive target. The full exercise group and source total remain unaudited.
+Source-audited and reconciled on 2026-10-11: the ordered labels are I.2.1-I.2.7, all on printed p. 15 / PDF p. 34. The following page begins §3, confirming the end of the exercise group. Verified coverage: 7/7; no missing labels, duplicate mappings, unexpected labels, or unparsed Neukirch locators remain. No source figure is required.
 
 ```dataviewjs
 const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
 const targetChapter = "I";
 const targetSection = 2;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.3 — Ideals
+
+Next archive target. Its full exercise group and source total remain unaudited. The section begins on printed p. 16 / PDF p. 35; this opening-page check does not establish its exercise pages or total.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 3;
 const matches = new Map();
 
 for (const page of dv.pages("#exercise")) {
@@ -352,9 +399,13 @@ On 2026-09-29, all seven labels were reconciled one-to-one with R322-R328 in Rin
 
 Exercise I.1.2 makes explicit the intended positive-integer exponent convention and handles zero factors. I.1.3 preserves the original Gaussian-factorization hint and proves both directions of the parametrization. I.1.4 specifies an order compatible with ring operations. I.1.5-I.1.6 distinguish the specified quadratic subrings from the full rings of integers. I.1.6 proves infinitude by pigeonhole approximation and congruent equal-norm elements, without importing Dirichlet's unit theorem. I.1.7 proves Euclidean division using the absolute norm, the full unit group, and the complete prime-element classification, including the square criterion for 2 modulo an odd prime. No incorrect printed assertion was identified in this batch.
 
+Chapter I §2 was source-audited on 2026-10-11 against the ordered labels I.2.1-I.2.7, all on printed p. 15 / PDF p. 34. The entire exercise page and the following §3 opening were visually checked. All seven labels were reconciled one-to-one with R330-R335 and LA532: no missing labels, duplicate mappings, unexpected labels, or unparsed Neukirch locators remain. Every note preserves the problem, supplies progressive hints and a complete independent derivation, and remains `not-started`. Mathematical cross-review covered all seven solutions; existing concepts suffice and no new directory or concept note was required.
+
+I.2.1 simplifies its fraction before checking a monic integer equation. I.2.2 proves polynomial normality in arbitrary characteristic using roots-of-unity coefficient sums and two coprime multipliers. I.2.3 computes the cusp kernel and exhibits a missing integral element in the quotient's own fraction field. I.2.4 treats positive and negative squarefree radicands and verifies the uniform basis $(d+\sqrt d)/2$. I.2.5 proves maximality of the cube-root-of-two power order by excluding denominators 2 and 3. I.2.6 uses discriminant -107 to establish its integral basis and distinguishes the original proper power order from the full ring generated by a different element. I.2.7 follows the printed determinant hint, proving that the parity-symmetric combinations are rational integers. No incorrect printed assertion was identified in this section. Section completion does not imply completion of Chapter I.
+
 ## Next Archive Target
 
-**Chapter I §2 — Integrality.** Audit its complete exercise group before assigning the next topic-specific note numbers. Section §1 is complete; the rest of Chapter I remains unaudited.
+**Chapter I §3 — Ideals.** Audit its complete exercise group before assigning the next topic-specific note numbers. Sections §1 and §2 are complete; the full Chapter I total remains unaudited.
 
 ## Related Archives
 
