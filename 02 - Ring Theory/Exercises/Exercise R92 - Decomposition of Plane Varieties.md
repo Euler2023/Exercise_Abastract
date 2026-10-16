@@ -40,11 +40,12 @@ created: 2026-08-27
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 
 ## Notes
 
-- **Source input:** The finite intersection of coprime plane curves is the theorem established in Artin §11.9.
+- **Source input:** The finite intersection of plane curves with no common nonconstant factor is Artin Theorem 11.9.10 [S1, printed pp. 349-350, PDF pp. 361-362]. Its proof and the separate, unproved Bézout bound are distinguished in [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties#Finite Intersections in the Affine Plane|Affine and Projective Varieties]].
 - **Source issue:** The proof covers the intended proper-variety formulation; the literal printed formulation has the counterexample recorded above.
 - **Source status:** The problem is from [S1, Ch. 11, §9, Ex. 9.6, printed p. 357, PDF p. 369]. The decomposition argument is independent.

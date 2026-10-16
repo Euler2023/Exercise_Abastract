@@ -99,6 +99,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]
 - [[04 - Linear Algebra and Modules/Concepts/Localization of Modules|Localization of Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 
 ## Relationship: Vector Spaces vs Modules
 

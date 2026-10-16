@@ -47,11 +47,12 @@ created: 2026-08-27
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 
 ## Notes
 
-- **Source input:** The weak Nullstellensatz used for the empty-set equivalence is proved earlier in Artin §11.9.
+- **Source input:** The empty-set equivalence is Artin Corollary 11.9.4 [S1, printed p. 348, PDF p. 360], using Theorem 11.8.6 and the quotient correspondence of Theorem 11.9.1. The general-base and strong versions are compared with Lang IX §1 in [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]].
 - **Source status:** The problem is from [S1, Ch. 11, §9, Ex. 9.4, printed p. 357, PDF p. 369]. The ideal identities are independently derived.
 

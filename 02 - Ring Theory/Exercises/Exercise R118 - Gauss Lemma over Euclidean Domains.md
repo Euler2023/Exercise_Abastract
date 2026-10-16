@@ -52,6 +52,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]

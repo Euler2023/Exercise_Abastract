@@ -51,6 +51,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[01 - Group Theory/Concepts/Abelian Groups|Abelian Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[01 - Group Theory/Exercises/Exercise G319 - Pullbacks of Abelian Groups|Exercise G319]]

@@ -6,7 +6,7 @@ tags:
   - definition
   - ring-theory
 created: 2026-01-19
-source: "Michael Artin, Algebra, 2nd ed., Ch. 11, §§11.3 and 11.8, printed pp. 328–334 and 344–347, PDF pp. 340–346 and 356–359"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 11, §§11.3 and 11.8, printed pp. 328-334 and 344-347, PDF pp. 340-346 and 356-359; Theorem 11.9.2 and Corollary 11.9.3, printed p. 348, PDF p. 360"
 source_status: partially-verified
 status: not-started
 ---
@@ -17,7 +17,9 @@ status: not-started
 
 > [!info] Definition (Prime Ideal)
 > An ideal $P$ of a commutative ring $R$ is **prime** if $P \neq R$ and:
-> $$ab \in P \Rightarrow a \in P \text{ or } b \in P$$
+> $$
+> ab \in P \Rightarrow a \in P \text{ or } b \in P
+> $$
 > for all $a, b \in R$.
 
 > [!info] Definition (Maximal Ideal)
@@ -64,12 +66,21 @@ status: not-started
 > If an ideal $I$ is contained in a union of prime ideals $P_1 \cup \cdots \cup P_n$, then $I \subseteq P_i$ for some $i$.
 
 > [!abstract] Existence of Maximal Ideals
-> Every proper ideal of a ring with identity is contained in a maximal ideal.
+> Every proper ideal $I$ of a commutative ring $R$ with identity is contained in a maximal ideal.
+>
+> **Independent proof using Zorn's Lemma:** Order the proper ideals containing $I$ by inclusion. This set is nonempty. The union of a nonempty chain is an ideal containing $I$; it is proper because if the union contained $1$, one member of the chain would contain $1$. Thus every nonempty chain has an upper bound, and the empty chain has the upper bound $I$. Zorn's Lemma gives a maximal member, which is a maximal ideal of $R$.
+>
+> Consequently a nonzero unital commutative ring has a maximal ideal, by taking $I=(0)$; the zero ring has none.
+>
+> **Source boundary:** Artin states this as Theorem 11.9.2 and the zero-ring consequence as Corollary 11.9.3 [S1, printed p. 348, PDF p. 360]. He explains the choice input and defers the general proof to Chapter 14. The proof written here is independent, with Zorn's Lemma as an imported result.
 
 ## Related Concepts
 
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
+- [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
+- [[09 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma|Partially Ordered Sets and Zorn's Lemma]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
 - [[03 - Field Theory/Concepts/Field Definition|Field Definition]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]

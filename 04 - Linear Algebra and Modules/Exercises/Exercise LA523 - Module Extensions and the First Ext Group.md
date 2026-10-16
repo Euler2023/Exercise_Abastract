@@ -67,6 +67,7 @@ created: 2026-09-29
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Derived Functors and Ext]]
 - [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences]]

@@ -40,6 +40,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[01 - Group Theory/Concepts/Group Homomorphisms|Group Homomorphisms]]
 - [[01 - Group Theory/Concepts/Quotient Groups|Quotient Groups]]
 - [[01 - Group Theory/Exercises/Exercise G321 - Pushouts of Abelian Groups|Exercise G321]]

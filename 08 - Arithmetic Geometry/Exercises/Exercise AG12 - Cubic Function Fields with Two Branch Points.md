@@ -132,6 +132,8 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
+- [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]]
 - [[08 - Arithmetic Geometry/Concepts/Branch Points and Monodromy|Branch Points and Monodromy]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[01 - Group Theory/Concepts/Symmetric Groups|Symmetric Groups]]

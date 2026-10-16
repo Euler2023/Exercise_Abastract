@@ -58,6 +58,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[01 - Group Theory/Concepts/Group Actions|Group Actions]]
 - [[01 - Group Theory/Exercises/Exercise G322 - Amalgamated Free Products as Group Pushouts|Exercise G322]]
 - [[01 - Group Theory/Exercises/Exercise G324 - Free Matrix Groups from Projective Ping Pong|Exercise G324]]

@@ -8,9 +8,9 @@ tags:
   - function-fields
   - monodromy
 created: 2026-08-10
-source: "Michael Artin, Algebra, 2nd ed., Ch. 15, Section 9, printed pp. 464-470, PDF pp. 476-482"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 11, §11.9, printed pp. 350-353, PDF pp. 362-365; Ch. 15, §15.9, printed pp. 464-471, PDF pp. 476-483; Serge Lang, Algebra, rev. 3rd ed., Ch. VI, §2, Example 9, printed pp. 275-276, PDF pp. 290-291"
 status: not-started
-source_status: verified
+source_status: partially-verified
 ---
 
 # Branch Points and Monodromy
@@ -18,16 +18,19 @@ source_status: verified
 ## Definition
 
 > [!info] Branched covering and branch point
-> For a polynomial $f(t,x)\in\mathbb C[t,x]$ of degree $n$ in $x$, the projection
+> Let $f(t,x)\in\mathbb C[t,x]$ be irreducible, with degree $n>0$ in $x$ and leading coefficient $a_n(t)$. The projection
 > $$
 > X=\{(t,x):f(t,x)=0\}\longrightarrow\mathbb C_t,
 > \qquad(t,x)\longmapsto t,
 > $$
-> is generically an $n$-sheeted covering. A value $p$ is a **branch candidate** when the fibre has fewer than $n$ distinct roots, usually detected by
+> is an $n$-sheeted unbranched covering outside a finite exceptional set. This set includes zeros of $a_n(t)$, where the degree can drop, and values with repeated fibre roots, detected by
 > $$
 > \operatorname{Res}_x(f,f_x)(p)=0.
 > $$
 > It is a **true branch point** when analytic continuation around $p$ permutes the sheets nontrivially.
+
+> [!warning] Model exceptions and genuine ramification
+> Artin allows the exceptional set to be enlarged and works with $X'$ after deleting finite subsets. A missing affine root may represent a point absent from the model; a repeated root at a singular point may represent distinct normalized branches. Neither phenomenon alone proves genuine ramification of the normalized map. The projection, not just the abstract surface, determines its branch values. See [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]] for the distinction between the affine equation and a nonsingular analytic surface.
 
 > [!info] Monodromy or gluing permutation
 > Choose a base point away from the branch values and number the $n$ roots there. Continuing the roots around a counterclockwise loop about $p_\nu$ produces a permutation
@@ -66,9 +69,101 @@ Cut the $t$-plane from each branch point to infinity. Above the cut plane, the m
 >
 > **Source status:** S1 states this theorem at printed p. 465, PDF p. 477, and explicitly says that its general proof is too long to include. In this vault it is therefore an external standard input except for the independently proved quadratic case in Exercise AG13.
 
+The displayed correspondence is Artin's Theorem 15.9.4, interpreted with his finite-deletion convention. A precise modern version uses connected finite covers of a punctured sphere and their completed compact Riemann surfaces. The existence and extension of this analytic completion are imported results here; arbitrary noncompact surfaces and their full meromorphic function fields are not included in the finite-extension correspondence.
+
+### Coverage of Artin's Function-Field Section
+
+| Artin item | Content and proof boundary | Printed / PDF pages |
+|---|---|---|
+| §15.9 opening, (15.9.1) | $F=\mathbb C(t)$ and finite extensions; a primitive element yields an irreducible plane model after clearing denominators | 464 / 476 |
+| (15.9.2)-(15.9.3) | Field isomorphisms fix $F$; covering isomorphisms commute with projection after finite deletions | 464 / 476 |
+| Thm. 15.9.4 | Riemann Existence correspondence; general proof explicitly omitted | 465 / 477 |
+| Prop. 15.9.5 | An $F$-isomorphism of fields gives inverse rational maps of plane models away from finite sets; proved | 465 / 477 |
+| Lemma 15.9.7 | Cutting the base trivializes the covering into sheets; the simply connected covering input is referred to a Munkres exercise | 466 / 478 |
+| Lemma 15.9.9 | Reconstruction by cut and paste; stated as a consequence of the preceding discussion | 467 / 479 |
+| Lemma 15.9.10 | Isomorphism is simultaneous conjugacy of gluing permutations, with branch points and cuts fixed; stated | 467 / 479 |
+| Lemma 15.9.11 | Connectedness is transitivity of the generated permutation group; proved | 467 / 479 |
+| Example 15.9.12 | One true finite branch point gives an $n$-cycle and the model $x^n=t$; field uniqueness uses Thm. 15.9.4 | 468 / 480 |
+| Computing the permutations | A common base point and root continuation fix consistent sheet labels; numerical accuracy is not certified by this description | 468 / 480 |
+| Lemma 15.9.13 | A $k$-fold fibre root with $f_t\ne0$ gives a $k$-cycle; local argument given | 469 / 481 |
+| Examples 15.9.14(a)-(c) | Quadratic and cubic branching, including a calculation at infinity; source issues are recorded below | 469-471 / 481-483 |
+
+### Why the Field Isomorphism Gives a Covering Isomorphism
+
+Artin's Proposition 15.9.5 uses a primitive root $\alpha$ of $f$ and a primitive root $\beta$ of $g$. An $F$-isomorphism $K\to L$ lets one express $\beta$ as $u(t,\alpha)$, where $u\in F[x]$. The map
+$$
+(t,x)\longmapsto(t,u(t,x))
+$$
+takes the locus of $f$ to the locus of $g$ because $g(t,u(t,x))$ is divisible by $f$ in $F[x]$. Denominators exclude finitely many $t$-values. Expressing $\alpha$ in terms of $\beta$ supplies the inverse, after excluding its exceptional values too. This source-contained argument proves this direction on the plane models; it does not prove that every prescribed topological covering comes from a polynomial.
+
+### Simultaneous Conjugacy and Transitivity
+
+Fix the branch-value set, cuts, and based loops. An isomorphism over the base identifies the numbered fibre at the base point by a permutation $\rho$. Transporting this identification around every loop conjugates each gluing permutation by the same $\rho$. Conversely, a simultaneous conjugacy identifies each cut sheet and respects every gluing, producing an isomorphism. This is an independent expansion of Lemma 15.9.10, within Artin's cut-and-paste convention; independent conjugations at different branch points are not allowed.
+
+Each sheet is path connected. A path crossing cuts moves its label by a word in the $\sigma_\nu$ and their inverses. Conversely, such a word is realized by crossing those cuts and joining within sheets. Thus connected components are the orbits of
+$$
+H=\langle\sigma_1,\ldots,\sigma_r\rangle\subseteq S_n.
+$$
+This restates the source proof of Lemma 15.9.11. Irreducibility gives a field rather than a product of fields, and Riemann Existence then identifies the field with a connected covering; the existence theorem remains an imported input in that implication.
+
+### The Local Cycle Criterion
+
+> [!abstract] Artin 15.9.13
+> Suppose $x_0$ is a root of multiplicity $k$ of $f(t_0,x)$ and $f_t(t_0,x_0)\ne0$. Then local monodromy around $t_0$ contains a $k$-cycle on the sheets near $(t_0,x_0)$ [S1, printed p. 469, PDF p. 481].
+
+Translate the point to $(0,0)$. Write
+$$
+f(t,x)=x^k u(x)-t v(t,x),\qquad u(0)v(0,0)\ne0.
+$$
+In a small neighborhood, the nonvanishing holomorphic function $u/v$ has a holomorphic $k$th root $w$. Put $y=xw(t,x)$. Since $w(0,0)\ne0$, the holomorphic inverse function theorem makes $(t,x)\mapsto(t,y)$ a local coordinate change. On the curve the equation becomes $y^k=t$, whose $k$ local roots are cyclically permuted around $0$. Other points over $t_0$ may contribute additional disjoint cycles.
+
+This expands Artin's argument and names the local holomorphic root and inverse-function inputs. It cannot be applied when $f_t(t_0,x_0)=0$; singular branches then require a separate calculation.
+
+### Infinity, Lang, and the Galois Boundary
+
+Artin's base is the affine $t$-plane. Its $r$ punctures have a free fundamental group on $r$ generators, so there is no required identity $\sigma_1\cdots\sigma_r=1$ among the finite permutations alone. On the completed sphere there is an additional loop around infinity. For compatible generators and a fixed composition convention,
+$$
+\sigma_1\cdots\sigma_r\sigma_\infty=1.
+$$
+The substitution $u=1/t$ reverses the orientation of a large positive $t$-circle: it becomes a small negative $u$-circle. Artin uses this in Example 15.9.14(c). The loop relation and covering classification are standard topological inputs here; the orientation reversal follows directly from $t=re^{i\theta}$ and $u=r^{-1}e^{-i\theta}$.
+
+| Topic | Artin §15.9 | Lang's corresponding discussion |
+|---|---|---|
+| Function fields | Finite extensions of $\mathbb C(t)$ | Ch. VIII begins with general finitely generated extensions, not restricted to transcendence degree one; see [[03 - Field Theory/Concepts/Function Fields|Function Fields]] |
+| Plane model | Primitive element, polynomial equation, finite deletions | Ch. V Thm. 4.6 and Ch. IV §2 give the algebraic prerequisites; deriving a plane model from them is an independent synthesis |
+| Complex coverings | Cut-and-paste description and worked local permutations | Ch. VI §2 Example 9 assumes prior Riemann-surface and covering knowledge and uses the covering/function-field correspondence as known |
+| Fundamental group | Affine punctured plane; infinity treated separately | Example 9 uses the sphere punctured at $r+1$ points, whose group is free on $r$ generators |
+| Proof status | General Riemann Existence proof omitted; the section proves selected directions and local facts | The geometry in Example 9 and the subsequent rigidity results are inputs or references, not proved there |
+
+Lang's comparison is at printed pp. 275-276 / PDF pp. 290-291. His realization of a finite group uses a finite quotient of the punctured-sphere fundamental group and the corresponding regular covering. In modern terminology, connected covers correspond to finite field extensions, and regular covers to Galois extensions.
+
+> [!warning] Monodromy is not always the automorphism group of the original extension
+> For an irreducible polynomial over $\mathbb C(t)$, permutation monodromy identifies with the Galois group of its **splitting field**, acting on the roots. It need not be $\operatorname{Aut}_{\mathbb C(t)}K$ for $K=\mathbb C(t)(\alpha)$. The latter is the deck group of the associated connected cover; in the permutation description it is the centralizer of $H$ in $S_n$. For the cubic $x^3-3x+t$, two distinct transpositions generate $H=S_3$, but the degree-three extension is not Galois and its deck group is trivial. These identifications are external standard covering/Galois inputs, not proofs supplied by Artin §15.9 or Lang's Example 9.
+
+## Source Issues
+
+> [!warning] Artin 15.9.14(b): a missing branching hypothesis
+> The printed example assumes a connected three-sheeted cover with two finite branch points and $\sigma_1=(12)$, then concludes that $\sigma_2$ must be $(23)$ or $(13)$ and that there is one isomorphism class [S1, printed pp. 469-470, PDF pp. 481-482]. The alternative $\sigma_2=(123)$ also generates a transitive subgroup with $(12)$ and is not simultaneously conjugate to a pair of transpositions. The uniqueness assertion needs the additional hypothesis that **both local permutations are transpositions**. Under the printed assumptions there are two simultaneous-conjugacy classes, distinguished by the cycle type of $\sigma_2$.
+
+An independent polynomial counterexample is $f(t,x)=x^3-t(x-1)^2$. Its curve is parametrized by $t=x^3/(x-1)^2$, so it is connected. The derivative is
+$$
+\frac{dt}{dx}=\frac{x^2(x-3)}{(x-1)^3}.
+$$
+The finite branch values are $0$ and $27/4$. At $(0,0)$ the fibre root is triple and $f_t=-1$, giving a $3$-cycle; at $(27/4,3)$ it is double and $f_t=-4$, giving a transposition. Set $p_1=27/4$, $p_2=0$. Ramification at infinity is allowed because Artin's base here is affine.
+
+> [!warning] Artin 15.9.14: two formula errors
+> In part (b), the printed point $(2,-1)$ is called a double-root point of $x^3-3x+t$, but substitution gives $4$. The double-root points are $(2,1)$ and $(-2,-1)$ [printed p. 470, PDF p. 482]. In part (c), for $f=x^3-t^3+t^2$, the printed derivative $f_t=-3t^2+t$ must be $-3t^2+2t$ on the same page. The subsequent change to $y^3-1+u$ with $u=1/t$, $y=ux$, is correct, and the stated monodromy conclusions in part (c) are unaffected.
+
+> [!warning] Lang VI §2 Example 9: puncture indices
+> The opening mentions $P_{n-1}$, while the later setup uses $P_{n+1}$ [S2, printed p. 275, PDF p. 290]. The free-group rank $n$ corresponds to a sphere with $n+1$ punctures. The comparison above states the consistent geometry and records this original index conflict rather than silently copying a corrected list.
+
 ## Related Concepts
 
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
+- [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]]
+- [[08 - Arithmetic Geometry/Concepts/Implicit Function Theorem for Complex Polynomials|Implicit Function Theorem for Complex Polynomials]]
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[08 - Arithmetic Geometry/Concepts/Valuations and Places|Valuations and Places]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[01 - Group Theory/Concepts/Symmetric Groups|Symmetric Groups]]
@@ -83,4 +178,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 ## Source and Proof Status
 
-The source record in the frontmatter includes printed and physical PDF pages and was checked against a bounded slice of the named source. Unless a proof is explicitly identified as source-contained, explanations and derivations in this note are independent exposition.
+The complete Artin §15.9 discussion, including its end on printed p. 471, and the relevant Chapter 11 pages were visually checked against the original PDF. Lang VI §2 Example 9 and its continuation were also checked. The coverage table distinguishes source proofs, stated consequences, omitted proofs, and referred topology. The expanded local-coordinate argument, the counterexample to 15.9.14(b), and the corrections computed above are independent derivations. Analytic completion, normalization, fundamental-group classification, and monodromy/Galois identifications remain named external inputs. Accordingly the note is partially verified rather than claiming that every analytical assertion is proved in these algebra texts.

@@ -163,6 +163,7 @@ created: 2026-09-29
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Flat and Faithfully Flat Modules|Flat and Faithfully Flat Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated and Finitely Presented Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]

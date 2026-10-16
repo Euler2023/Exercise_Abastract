@@ -40,6 +40,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains (UFDs)]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[02 - Ring Theory/Concepts/Polynomial Derivations|Polynomial Derivations]]
 - [[02 - Ring Theory/Concepts/Integer-Valued Polynomials|Integer-Valued Polynomials]]
 - [[02 - Ring Theory/Concepts/Formal Power Series|Formal Power Series]]

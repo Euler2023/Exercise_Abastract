@@ -126,6 +126,7 @@ created: 2026-09-15
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[03 - Field Theory/Concepts/Transcendence Bases and Transcendence Degree|Transcendence Bases and Transcendence Degree]]
 - [[03 - Field Theory/Concepts/Derivations and Differentials on Fields|Derivations and Differentials on Fields]]
 - [[03 - Field Theory/Concepts/Separable Extensions|Separable Extensions]]

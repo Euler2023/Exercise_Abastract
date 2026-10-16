@@ -78,6 +78,8 @@ created: 2026-09-25
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
+- [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]]
 - [[08 - Arithmetic Geometry/Concepts/Valuations and Places|Valuations and Places]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
 

@@ -17,11 +17,15 @@ status: not-started
 
 > [!info] Definition (Irreducible Element)
 > A nonzero non-unit element $p$ in an integral domain $R$ is **irreducible** if:
-> $$p = ab \Rightarrow a \text{ is a unit or } b \text{ is a unit}$$
+> $$
+> p = ab \Rightarrow a \text{ is a unit or } b \text{ is a unit}
+> $$
 
 > [!info] Definition (Prime Element)
 > A nonzero non-unit element $p$ in an integral domain $R$ is **prime** if:
-> $$p | ab \Rightarrow p | a \text{ or } p | b$$
+> $$
+> p | ab \Rightarrow p | a \text{ or } p | b
+> $$
 
 > [!info] Definition (UFD)
 > An integral domain $R$ is a **unique factorization domain (UFD)** if:
@@ -73,7 +77,9 @@ status: not-started
 
 > [!abstract] Gauss's Lemma
 > Let $R$ be a UFD and $F = \text{Frac}(R)$. If $f \in R[x]$ is primitive (gcd of coefficients is 1), then:
-> $$f \text{ irreducible in } R[x] \Leftrightarrow f \text{ irreducible in } F[x]$$
+> $$
+> f \text{ irreducible in } R[x] \Leftrightarrow f \text{ irreducible in } F[x]
+> $$
 
 > [!abstract] UFD Polynomial Theorem
 > If $R$ is a UFD, then $R[x_1, \ldots, x_n]$ is a UFD.
@@ -87,6 +93,7 @@ Fields ⊂ Euclidean Domains ⊂ PIDs ⊂ UFDs ⊂ Integral Domains
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]
 - [[02 - Ring Theory/Concepts/Principal Ideal Domains|Principal Ideal Domains]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]

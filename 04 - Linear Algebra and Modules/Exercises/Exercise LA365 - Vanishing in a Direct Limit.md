@@ -65,6 +65,7 @@ created: 2026-08-29
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]
 - [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]]
 - [[04 - Linear Algebra and Modules/Concepts/Quotient Modules|Quotient Modules]]

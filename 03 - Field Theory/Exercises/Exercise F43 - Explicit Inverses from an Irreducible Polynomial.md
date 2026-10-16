@@ -49,6 +49,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[03 - Field Theory/Concepts/Minimal Polynomials|Minimal Polynomials]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions|Algebraic Extensions]]
 

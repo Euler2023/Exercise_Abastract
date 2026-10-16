@@ -17,7 +17,9 @@ status: not-started
 
 > [!info] Definition (Polynomial Ring)
 > Let $R$ be a ring. The **polynomial ring** $R[x]$ consists of formal expressions:
-> $$f(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n$$
+> $$
+> f(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n
+> $$
 > where $a_i \in R$ and only finitely many $a_i$ are nonzero.
 >
 > Operations are defined by:
@@ -64,12 +66,16 @@ status: not-started
 
 > [!abstract] Division Algorithm
 > If $F$ is a field and $f, g \in F[x]$ with $g \neq 0$, then there exist unique $q, r \in F[x]$ such that:
-> $$f = gq + r$$
+> $$
+> f = gq + r
+> $$
 > with $r = 0$ or $\deg(r) < \deg(g)$.
 
 > [!abstract] Remainder Theorem
 > For $f \in R[x]$ and $a \in R$:
-> $$f(x) = (x - a)q(x) + f(a)$$
+> $$
+> f(x) = (x - a)q(x) + f(a)
+> $$
 > Thus $a$ is a root of $f$ iff $(x-a) | f$.
 
 > [!abstract] Number of Roots
@@ -84,6 +90,7 @@ status: not-started
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[02 - Ring Theory/Concepts/Ring Definition|Ring Definition]]
 - [[02 - Ring Theory/Concepts/Euclidean Domains|Euclidean Domains]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]

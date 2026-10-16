@@ -43,6 +43,7 @@ created: 2026-08-10
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 - [[02 - Ring Theory/Concepts/Integral Domains|Integral Domains]]

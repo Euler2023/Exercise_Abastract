@@ -39,6 +39,7 @@ Foundational cardinality arguments used in constructing and counting extensions 
 - [[03 - Field Theory/Concepts/Ordered and Real Closed Fields|Ordered and Real Closed Fields]]
 - [[03 - Field Theory/Concepts/Real Places and Archimedean Valuation Rings|Real Places and Archimedean Valuation Rings]]
 - [[03 - Field Theory/Concepts/Transcendence Bases and Transcendence Degree|Transcendence Bases and Transcendence Degree]]
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[03 - Field Theory/Concepts/Derivations and Differentials on Fields|Derivations and Differentials on Fields]]
 
 ## Important Fields

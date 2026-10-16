@@ -57,6 +57,7 @@ If $S$ is algebraically independent over $k$ and $K$ is algebraic over $k(T)$, t
 
 ## Related Concepts
 
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
 - [[03 - Field Theory/Concepts/Algebraic Extensions|Algebraic Extensions]]

@@ -135,6 +135,11 @@ created: 2026-09-12
 > \varphi(X) = \frac{aX + b}{cX + d}, \quad ad - bc \ne 0.
 > $$
 > We show that every such transformation is a composition of automorphisms from the specified sets:
+> Here $\Phi_\varphi$ denotes the field automorphism with $\Phi_\varphi(X)=\varphi(X)$. For two rational substitutions,
+> $$
+> (\Phi_\varphi\circ\Phi_\psi)(X)=\psi(\varphi(X)).
+> $$
+> The composition of field automorphisms therefore reverses the order of the corresponding numerical rational maps.
 >
 > - **Case 1: $c = 0$.**
 >   Since $ad - bc = ad \ne 0$, we have $d \ne 0$ and $a \ne 0$. Then:
@@ -143,7 +148,7 @@ created: 2026-09-12
 >   $$
 >   This is precisely the composition:
 >   $$
->   \varphi = \tau_{b/d} \circ \sigma_{a/d},
+>   \Phi_\varphi = \sigma_{a/d} \circ \tau_{b/d},
 >   $$
 >   where $\sigma_{a/d}: X \mapsto \frac{a}{d} X$ (since $\frac{a}{d} \ne 0$) and $\tau_{b/d}: X \mapsto X + \frac{b}{d}$.
 >
@@ -152,21 +157,23 @@ created: 2026-09-12
 >   $$
 >   \frac{aX + b}{cX + d} = \frac{\frac{a}{c}(cX + d) + \left(b - \frac{ad}{c}\right)}{cX + d} = \frac{a}{c} + \frac{bc - ad}{c(cX + d)} = \frac{a}{c} + \frac{bc - ad}{c^2} \cdot \frac{1}{X + \frac{d}{c}}.
 >   $$
->   Let $\Delta = \frac{bc - ad}{c^2} \ne 0$. Then $\varphi(X)$ can be factored into a sequence of elementary transformations:
->   1. Translation: $X_1 = \tau_{d/c}(X) = X + \frac{d}{c}$;
->   2. Inversion: $X_2 = \operatorname{inv}(X_1) = \frac{1}{X + \frac{d}{c}}$;
->   3. Scaling: $X_3 = \sigma_\Delta(X_2) = \Delta \cdot \frac{1}{X + \frac{d}{c}}$;
->   4. Translation: $X_4 = \tau_{a/c}(X_3) = \frac{a}{c} + \Delta \cdot \frac{1}{X + \frac{d}{c}} = \varphi(X)$.
->   In other words:
+>   Let $\Delta = \frac{bc - ad}{c^2} \ne 0$. The rational expression is obtained by four numerical operations:
+>   1. Translation: $X_1 = X + \frac{d}{c}$;
+>   2. Inversion: $X_2 = 1/X_1$;
+>   3. Scaling: $X_3 = \Delta X_2$;
+>   4. Translation: $X_4 = \frac{a}{c}+X_3=\varphi(X)$.
+>   For field automorphisms, the order is reversed:
 >   $$
->   \varphi = \tau_{a/c} \circ \sigma_\Delta \circ \operatorname{inv} \circ \tau_{d/c}.
+>   \Phi_\varphi = \tau_{d/c} \circ \operatorname{inv} \circ \sigma_\Delta \circ \tau_{a/c}.
 >   $$
 >
-> In both cases, $\varphi$ is expressed as a finite product of elements from $\{\tau_b \mid b \in k\}$, $\{\sigma_a \mid a \in k^\times\}$, and the inversion $\operatorname{inv}: X \mapsto X^{-1}$.
+> In both cases, $\Phi_\varphi$ is expressed as a finite product of elements from $\{\tau_b \mid b \in k\}$, $\{\sigma_a \mid a \in k^\times\}$, and the inversion $\operatorname{inv}: X \mapsto X^{-1}$.
 > Thus these elements generate $G$.
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[05 - Galois Theory/Concepts/Automorphisms|Automorphisms]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
@@ -175,5 +182,5 @@ created: 2026-09-12
 
 ## Notes
 
-- This result establishes the canonical isomorphism $\operatorname{Aut}_k(k(X)) \cong \operatorname{PGL}_2(k) = \operatorname{GL}_2(k) / k^\times$.
+- This result establishes the isomorphism $\operatorname{Aut}_k(k(X)) \cong \operatorname{PGL}_2(k) = \operatorname{GL}_2(k) / k^\times$, with a matrix class mapped to its inverse fractional substitution. Direct substitutions reverse composition; the corrected products in part (c) use field-automorphism composition. See [[03 - Field Theory/Concepts/Function Fields#Rational-Function Degree and Automorphisms|Function Fields]] for the convention.
 - Lüroth's theorem asserts that every intermediate field $k \subsetneq L \subseteq k(X)$ is of the form $L = k(Y)$ for some rational function $Y = \varphi(X)$, and by part (a), $[k(X) : L] = \deg \varphi$.

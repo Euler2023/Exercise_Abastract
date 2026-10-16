@@ -76,13 +76,16 @@ status: not-started
 
 > [!abstract] Degree Formula
 > If $\alpha$ is algebraic over $F$, then:
-> $$[F(\alpha):F] = \deg(m_\alpha)$$
+> $$
+> [F(\alpha):F] = \deg(m_\alpha)
+> $$
 
 > [!abstract] Basis Theorem
 > If $m_\alpha$ has degree $n$, then $\{1, \alpha, \alpha^2, \ldots, \alpha^{n-1}\}$ is a basis for $F(\alpha)$ over $F$.
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[03 - Field Theory/Concepts/Algebraic and Transcendental Elements|Algebraic and Transcendental Elements]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]

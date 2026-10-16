@@ -52,6 +52,8 @@ created: 2026-09-06
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[03 - Field Theory/Concepts/Field Extensions|Field Extensions]]
 - [[03 - Field Theory/Concepts/Degree of Extension|Degree of Extension]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]

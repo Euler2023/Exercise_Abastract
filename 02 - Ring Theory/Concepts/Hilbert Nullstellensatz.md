@@ -13,7 +13,7 @@ tags:
   - algebraic-geometry
   - commutative-algebra
 created: 2026-09-15
-source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §1, Corollary 1.2 and Theorems 1.4–1.5, printed pp. 379–380, PDF pp. 394–395"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 11, Theorem 11.8.6 and Lemma 11.8.7, printed pp. 345-347, PDF pp. 357-359; Theorem 11.9.1 and Corollary 11.9.4, printed pp. 347-348, PDF pp. 359-360; Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §1, Theorem 1.1, Corollary 1.2 and Theorems 1.4-1.5, printed pp. 378-380, PDF pp. 393-395"
 source_status: partially-verified
 status: not-started
 ---
@@ -64,6 +64,40 @@ If $f\ne0$ vanishes at all zeros of $\mathfrak{a}$, then the polynomials in $\ma
 
 The homogeneous statements are consequences of the affine theorem. A proper homogeneous ideal vanishes at the origin. If every $X_i$ lies in its radical, choose $n_i\ge1$ with $X_i^{n_i}\in\mathfrak a$; every monomial of degree $N=1+\sum_i(n_i-1)$ then belongs to $\mathfrak a$, proving $\mathfrak m^N\subseteq\mathfrak a$. For a nonempty projective zero set, its affine cone is $V(\mathfrak a)$, and a homogeneous polynomial vanishes on that cone exactly when it vanishes projectively. The strong theorem gives the claimed homogeneous radical.
 
+## Artin's Ring-Chapter Results and Lang's Generalization
+
+> [!abstract] Maximal ideals and points: Artin 11.8.6 and 11.9.1
+> For $A=\mathbb C[x_1,\ldots,x_n]$, every maximal ideal is
+> $$
+> \mathfrak m_a=(x_1-a_1,\ldots,x_n-a_n),\qquad a\in\mathbb C^n.
+> $$
+> For any ideal $J=(f_1,\ldots,f_r)$, the maximal ideals of $A/J$ consequently correspond to the points of $V(J)$. The corresponding ideal is $\mathfrak m_a/J$.
+>
+> **Derivation:** The ideal correspondence for a quotient identifies maximal ideals of $A/J$ with maximal ideals of $A$ containing $J$. The condition $J\subseteq\mathfrak m_a$ is exactly $f_i(a)=0$ for every generator. No radical hypothesis on $J$ is required: maximal ideals detect points even when $A/J$ has nilpotents.
+>
+> **Source:** [S1, Thm. 11.8.6, printed pp. 345-347, PDF pp. 357-359; Thm. 11.9.1, printed p. 347, PDF p. 359]. Both arguments occur in the source.
+
+> [!abstract] Certificate for an inconsistent system: Artin 11.9.4
+> For $f_1,\ldots,f_r\in\mathbb C[x_1,\ldots,x_n]$, the equations $f_1=\cdots=f_r=0$ have no common solution if and only if there are polynomials $g_i$ such that
+> $$
+> 1=\sum_{i=1}^r g_i f_i.
+> $$
+> If the ideal $(f_1,\ldots,f_r)$ were proper, it would lie in a maximal ideal, hence have a common zero by the preceding theorem. Thus no common zero implies that this ideal is $(1)$. Conversely, evaluating the displayed identity at a common zero would give $1=0$.
+>
+> **Source boundary:** Artin states and proves the forward implication as Corollary 11.9.4 [S1, printed p. 348, PDF p. 360]; the converse above is an independent one-line deduction. The proof uses maximal-ideal existence, Theorem 11.9.2, whose general proof is deferred in that section; see [[02 - Ring Theory/Concepts/Prime and Maximal Ideals#Theorems|Prime and Maximal Ideals]].
+
+| Point of comparison | Artin, Chapter 11 | Lang, Chapter IX §1 |
+|---|---|---|
+| Base field | $\mathbb C$ | Any field $k$, zeros taken in its algebraic closure $k^a$ |
+| Weak theorem | Thm. 11.8.6: maximal ideals are evaluation ideals | Thm. 1.4: every proper ideal has a zero in $(k^a)^n$ |
+| Main proof input | Lemma 11.8.7: countable spanning set versus uncountably many independent rational functions $(x-a)^{-1}$ | Thm. 1.1 and Cor. 1.2: a field finitely generated as a $k$-algebra is algebraic over $k$ |
+| Strong theorem | The checked Chapter 11 slice gives the weak theorem and its quotient/certificate consequences | Thm. 1.5 proves $I(V(J))=\sqrt J$ using Rabinowitsch's trick |
+
+Artin's dimension argument uses that $\mathbb C$ is uncountable; it is not by itself a proof for every algebraically closed field. Lang's argument supplies that generality. Lang's Thm. 1.1 uses a transcendence basis, localization, and extension of homomorphisms across an integral extension, citing Chapter VII Proposition 3.1. These prerequisites are stronger than those used in Artin's presentation [S2, printed pp. 378-380, PDF pp. 393-395].
+
+> [!warning] Source issue: Lang's cross-reference
+> In the proof of Theorem 1.4, Lang prints “Corollary 2.2”; the finite-generation conclusion used there is Corollary 1.2 of the same section. This is a verified cross-reference error on printed p. 379 / PDF p. 394. The comparison above uses the corrected locator explicitly.
+
 ## Key Properties
 
 - **Radical correspondence:** The map $V \mapsto I(V)$ and $\mathfrak{a} \mapsto V(\mathfrak{a})$ gives an order-reversing bijection:
@@ -85,6 +119,7 @@ The homogeneous statements are consequences of the affine theorem. A proper homo
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 - [[02 - Ring Theory/Concepts/Prime and Maximal Ideals|Prime and Maximal Ideals]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[08 - Arithmetic Geometry/Concepts/Algebraic Varieties|Algebraic Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Zariski Topology|Zariski Topology]]
@@ -101,3 +136,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 The original PDF verifies Zariski's lemma as **Corollary 1.2**, the weak form as **Theorem 1.4** [S2, Ch. IX, §1, printed p. 379, PDF p. 394], and the strong form as **Theorem 1.5** [printed p. 380, PDF p. 395]. The homogeneous consequences and examples above are independent deductions, not additional numbered theorems attributed to Lang. The displayed proof mechanics explain the passage from the weak form to the strong and homogeneous forms; a proof of Zariski's lemma is not reproduced here.
+
+The Artin comparison was checked against the original pages cited above. Artin's weak theorem, its quotient version, and its polynomial certificate have source-contained proofs, subject to the separately identified maximal-ideal existence input. The comparison does not attribute Lang's general strong theorem to Artin's Chapter 11.

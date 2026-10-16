@@ -101,6 +101,7 @@ created: 2026-08-29
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]

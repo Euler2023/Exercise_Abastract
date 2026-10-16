@@ -54,6 +54,7 @@ created: 2026-09-06
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 - [[02 - Ring Theory/Exercises/Exercise R232 - The Integral Root Test over a UFD|R232 — The Integral Root Test over a UFD]]

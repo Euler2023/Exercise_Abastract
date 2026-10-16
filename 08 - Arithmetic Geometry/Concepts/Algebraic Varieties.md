@@ -7,7 +7,7 @@ tags:
   - arithmetic-geometry
   - algebraic-geometry
 created: 2026-01-19
-source: "Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §2, printed pp. 382–386, PDF pp. 397–401; Ch. X, §6, printed p. 437, PDF p. 452"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 11, §11.9 and Theorem 11.9.1, printed p. 347, PDF p. 359; Serge Lang, Algebra, rev. 3rd ed., Ch. IX, §2, printed pp. 382-386, PDF pp. 397-401; Ch. X, §6, printed p. 437, PDF p. 452"
 source_status: partially-verified
 status: not-started
 ---
@@ -25,6 +25,9 @@ status: not-started
 
 > [!info] Definition (Algebraic Variety)
 > An **algebraic variety** is an irreducible algebraic set, i.e., it cannot be written as a union of two proper closed subsets.
+
+> [!warning] Artin and Lang use different conventions
+> Artin §11.9 calls any common zero set of finitely many complex polynomials a **variety**, without an irreducibility requirement [S1, printed p. 347, PDF p. 359]. Thus $V(xy)$, the union of two lines, and $\mathbb C^2$ itself are varieties in his terminology. This note retains the irreducible convention used in its Lang-based discussion. In statements taken from Artin, read his word “variety” as **algebraic set**. In particular, Exercise R92 needs a proper algebraic set; irreducibility is not the missing hypothesis there.
 
 ## Affine vs Projective
 
@@ -44,6 +47,13 @@ status: not-started
 > K[V] = K[x_1, \ldots, x_n]/I(V)
 > $$
 > where $I(V) = \{f \in K[x_1, \ldots, x_n] : f|_V = 0\}$.
+
+## Points and Quotient Rings
+
+> [!abstract] Points and a quotient presentation: Artin 11.9.1
+> Let $J=(f_1,\ldots,f_r)\subseteq\mathbb C[x_1,\ldots,x_n]$, let $V=V(J)$, and let $A=\mathbb C[x_1,\ldots,x_n]/J$. Then points of $V$ correspond to maximal ideals of $A$, by sending $a$ to $(x_1-a_1,\ldots,x_n-a_n)/J$.
+>
+> This is the weak Nullstellensatz followed by the ideal correspondence for a quotient. Artin proves it at printed p. 347 / PDF p. 359. The presentation ring $A$ need not be the reduced coordinate ring $\mathbb C[V]$: the latter quotients by $I(V)=\sqrt J$, using the strong Nullstellensatz. For example, $J=(x^2)$ and $\sqrt J=(x)$ have the same point set but different quotient rings.
 
 ## Dimension
 
@@ -101,6 +111,9 @@ In arithmetic geometry, the base field matters critically:
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
+- [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
+- [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
+- [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]]
 
 ## Exercises
 
@@ -113,3 +126,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 Lang proves that irreducible algebraic sets correspond to prime ideals, defines a $k$-variety via its prime ideal and functor of points, defines affine and projective space, and defines dimension through transcendence degree on the cited pages. These support the core affine definitions and the dimension viewpoint. The coordinate-ring formulation is compatible with Lang's construction but is independently restated here. Smoothness, the Jacobian criterion, properness, and the examples were not checked against those slices. Terminology for “variety” varies across texts, so this note uses the classical irreducible convention and does not silently import the broader modern convention.
+
+Artin's broader terminology and Theorem 11.9.1 were visually checked at printed p. 347 / PDF p. 359. The reduced-ring comparison and the example $\mathbb C[x]/(x^2)$ are independent deductions; the strong Nullstellensatz input is recorded in its linked concept note.

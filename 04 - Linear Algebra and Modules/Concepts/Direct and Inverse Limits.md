@@ -4,6 +4,8 @@ aliases:
   - Direct Limits
   - Inverse Limits
   - Colimits and Projective Limits
+  - Directed Colimits
+  - 有向直极限
 topic: module-theory
 tags:
   - concept
@@ -19,9 +21,15 @@ status: not-started
 
 # Direct and Inverse Limits
 
+## Scope: Directed Limits and General Colimits
+
+This page treats systems indexed by a nonempty directed partially ordered set. A direct limit is a special case of a [[04 - Linear Algebra and Modules/Concepts/Colimits|colimit]], not a synonym for all colimits: general diagrams also include coproducts, coequalizers, and pushouts. The older alias "Colimits and Projective Limits" is retained for existing links.
+
+The general definition and module construction are developed on the linked concept page, using [S13, §§1.3.5, 1.3.7 and Exercise 1.3.H, printed/PDF pp. 46, 48]. Single-stage representatives, eventual vanishing, and the exactness statement below depend on directedness; they are not asserted for arbitrary diagram shapes.
+
 ## Directed Systems
 
-A partially ordered set $I$ is **directed** if for every $i,j\in I$ there is $k\in I$ with $i\le k$ and $j\le k$.
+A nonempty partially ordered set $I$ is **directed** if for every $i,j\in I$ there is $k\in I$ with $i\le k$ and $j\le k$.
 
 A **direct system** of $A$-modules consists of modules $M_i$ and maps
 
@@ -159,7 +167,7 @@ Lazard's theorem supplies a converse description: an $A$-module is flat exactly 
 > [!example] Power series
 >
 > $$
-> k\llbracket T\rrbracket=\varprojlim_n k[T]/(T^n).
+> k[[T]] = \varprojlim_n k[T]/(T^n)
 > $$
 
 > [!example] A module from finite pieces
@@ -167,6 +175,7 @@ Lazard's theorem supplies a converse description: an $A$-module is flat exactly 
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct Sum|Direct Sum]]
 - [[04 - Linear Algebra and Modules/Concepts/Exact Sequences|Exact Sequences]]
 - [[04 - Linear Algebra and Modules/Concepts/Hom Functor|Hom Functor]]

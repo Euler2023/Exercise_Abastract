@@ -84,6 +84,7 @@ created: 2026-09-29
 
 ## Related Concepts
 
+- [[04 - Linear Algebra and Modules/Concepts/Colimits|Colimits]]
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Direct and Inverse Limits|Direct and Inverse Limits]]
 - [[04 - Linear Algebra and Modules/Concepts/Module Homomorphisms|Module Homomorphisms]]

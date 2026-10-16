@@ -52,6 +52,7 @@ created: 2026-08-28
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[03 - Field Theory/Concepts/Finite Fields|Finite Fields]]
 - [[02 - Ring Theory/Concepts/Polynomial Rings|Polynomial Rings]]
 

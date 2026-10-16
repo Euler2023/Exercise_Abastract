@@ -31,12 +31,13 @@ created: 2026-08-27
 
 ## Related Concepts
 
+- [[02 - Ring Theory/Concepts/Irreducible Polynomials|Irreducible Polynomials]]
 - [[08 - Arithmetic Geometry/Concepts/Irreducible Topological Spaces and Components|Irreducible Topological Spaces and Components]]
 - [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties|Affine and Projective Varieties]]
 - [[02 - Ring Theory/Concepts/Unique Factorization Domains|Unique Factorization Domains]]
 
 ## Notes
 
-- **Source input:** The finite-intersection theorem from Artin §11.9 is used; its exact hypothesis is that the two plane polynomials have no common nonconstant factor.
+- **Source input:** Artin Theorem 11.9.10 [S1, printed pp. 349-350, PDF pp. 361-362] is used; its exact hypothesis is that the two plane polynomials have no common nonconstant factor. The proof is archived in [[08 - Arithmetic Geometry/Concepts/Affine and Projective Varieties#Finite Intersections in the Affine Plane|Affine and Projective Varieties]]; the stronger Bézout count is not required.
 - **Source status:** The problem is from [S1, Ch. 11, §9, Ex. 9.9, printed p. 358, PDF p. 370]. The reduction is independent.
 
