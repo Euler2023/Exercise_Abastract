@@ -11,7 +11,7 @@ tags:
   - lattices
   - free-modules
 created: 2026-08-24
-source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 5, printed pp. 168–172, PDF pp. 180–184"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 6, Section 5, printed pp. 168–172, PDF pp. 180–184; Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. I, §4, printed pp. 24–27, PDF pp. 43–46; Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. I, §5, printed pp. 29–33, PDF pp. 48–52"
 source_status: partially-verified
 status: not-started
 ---
@@ -54,6 +54,99 @@ $$
 
 Every vector in $\operatorname{span}_{\mathbb R}(L)$ has a unique expression $\ell+x$ with $\ell\in L$ and $x\in\Pi(B)$. This is the geometric analogue of division with remainder.
 
+## Full Lattices and Covolume
+
+Neukirch calls a rank-$n$ lattice in an $n$-dimensional real space **complete**, or a $\mathbb Z$-structure. Here complete means **full rank**; it is not a condition about convergence of Cauchy sequences. His fundamental mesh uses the same half-open coefficient range $0\le t_i<1$. [S4, Ch. I, §4, Definition (4.1), printed p. 24, PDF p. 43]
+
+Let $V$ be an $n$-dimensional Euclidean space and $L$ a full lattice, with $n\ge1$. Normalize volume so that an orthonormal unit cube has volume $1$. If the columns of $B$ are a lattice basis in orthonormal coordinates, the **covolume** is
+
+$$
+\operatorname{covol}(L)
+=\operatorname{vol}(\Pi(B))
+=|\det B|
+=\sqrt{\det\bigl(\langle v_i,v_j\rangle\bigr)}.
+$$
+
+The Gram matrix is $B^{\mathsf T}B$, which gives the last equality. A different lattice basis replaces $B$ by $BU$ with $U\in GL_n(\mathbb Z)$ and $\det U=\pm1$, so the covolume is independent of the lattice basis. Neukirch writes this quantity as $\operatorname{vol}(L)$: it is the volume of a fundamental mesh, rather than the volume of the discrete set $L$. The formula here is for a full lattice in its ambient Euclidean space. [S4, Ch. I, §4, printed p. 26, PDF p. 45]
+
+## Minkowski's Lattice Point Theorem
+
+A set $X\subseteq V$ is **centrally symmetric** here when $X=-X$, and **convex** when $tx+(1-t)y\in X$ for $x,y\in X$ and $0\le t\le1$.
+
+> [!abstract] Minkowski's lattice point theorem
+> Let $V$ have dimension $n\ge1$, let $L$ be a full lattice in $V$, and let $X\subseteq V$ be centrally symmetric and convex. If
+> $$
+> \operatorname{vol}(X)>2^n\operatorname{covol}(L),
+> $$
+> then $X$ contains a nonzero point of $L$.
+
+**Source proof status.** Neukirch proves this theorem as (4.4), using translates of $\tfrac12X$, volume comparison in a fundamental mesh, and the fact that the difference of two points in $\tfrac12X$ lies in $X$. [S4, Ch. I, §4, Theorem (4.4) and proof, printed p. 27, PDF p. 46]
+
+The strict inequality is essential for arbitrary convex symmetric sets: for $L=\mathbb Z^n$, the open box $(-1,1)^n$ has volume $2^n$ and contains only the zero lattice point. For compact $X$, the threshold can instead be attained with equality; this is the additional assertion of Exercise I.4.2, whose independent proof is in the linked exercise notes below. Positive dimension is required for a conclusion asserting a nonzero lattice point. [S4, Ch. I, §4, Exercise 2, printed p. 27, PDF p. 46]
+
+## Minkowski Embeddings and Canonical Volume
+
+Let $K$ be a number field of degree $n\ge1$. Write its real embeddings as $\rho_1,\ldots,\rho_r$ and its nonreal embeddings in conjugate pairs $\sigma_1,\bar\sigma_1,\ldots,\sigma_s,\bar\sigma_s$, so $n=r+2s$. Its **Minkowski space** and embedding are
+
+$$
+K_{\mathbb R}
+=\left\{(z_\tau)\in\prod_{\tau:K\hookrightarrow\mathbb C}\mathbb C:
+z_{\bar\tau}=\overline{z_\tau}\right\},
+\qquad
+j:K\longrightarrow K_{\mathbb R},\quad a\longmapsto(\tau a)_\tau.
+$$
+
+For a real embedding $\rho=\bar\rho$, the condition forces $z_\rho$ to be real. Keeping one representative of each complex pair identifies this real vector space with $\mathbb R^r\times\mathbb C^s$, of real dimension $n$. The embedding $j$ is injective because every field embedding is injective. [S4, Ch. I, §5, printed pp. 29–30, PDF pp. 48–49]
+
+### Metric and the factor $2^s$
+
+Neukirch uses the **canonical metric**
+
+$$
+\langle z,w\rangle=\sum_\tau z_\tau\overline{w_\tau}.
+$$
+
+The sum is real on $K_{\mathbb R}$: each complex pair contributes $2\operatorname{Re}(z_\sigma\overline{w_\sigma})$. In coordinates $x_i=z_{\rho_i}$ and $z_{\sigma_j}=u_j+iv_j$, its squared norm is
+
+$$
+\langle z,z\rangle
+=\sum_{i=1}^r x_i^2+2\sum_{j=1}^s(u_j^2+v_j^2).
+$$
+
+The real coordinate Gram matrix has $r$ diagonal entries $1$ and $2s$ entries $2$. Its determinant is $2^{2s}$, so canonical volume is
+
+$$
+d\operatorname{vol}_{\mathrm{can}}
+=2^s\,dx_1\cdots dx_r\,du_1\,dv_1\cdots du_s\,dv_s.
+$$
+
+Thus $\operatorname{vol}_{\mathrm{can}}(X)=2^s\operatorname{vol}_{\mathrm{Leb}}(f(X))$ under these unscaled real coordinates $f$. Neukirch denotes canonical volume simply by $\operatorname{vol}$; some accounts instead use the coordinate Lebesgue volume. All lattice and convex-body volumes in a single application of Minkowski's theorem must use the same measure. [S4, Ch. I, §5, Proposition (5.1) and following measure comparison, printed pp. 30–31, PDF pp. 49–50]
+
+### Ideal lattices and field norms
+
+Let $\mathcal O_K$ be the ring of integers, $d_K$ its field discriminant, and $0\ne\mathfrak a\subseteq\mathcal O_K$ an integral ideal. Neukirch's Proposition (5.2) proves that $j(\mathfrak a)$ is a full lattice and that
+
+$$
+\operatorname{covol}_{\mathrm{can}}(j(\mathfrak a))
+=\sqrt{|d_K|}\,[\mathcal O_K:\mathfrak a].
+$$
+
+Its source proof takes a $\mathbb Z$-basis of the ideal, compares the embedding-matrix Gram determinant with its discriminant, and uses the discriminant-index formula. These arithmetic lattice facts are source inputs here, rather than new independent claims. In ordinary unscaled coordinate Lebesgue measure the corresponding covolume is $2^{-s}\sqrt{|d_K|}[\mathcal O_K:\mathfrak a]$. [S4, Ch. I, §5, Proposition (5.2) and proof, printed p. 31, PDF p. 50]
+
+The field norm is the product over **all** embeddings:
+
+$$
+N_{K/\mathbb Q}(a)=\prod_\tau\tau(a),
+\qquad
+|N_{K/\mathbb Q}(a)|
+=\prod_{i=1}^r|\rho_i(a)|\prod_{j=1}^s|\sigma_j(a)|^2.
+$$
+
+Both members of a complex conjugate pair are included in this product. Correspondingly, $\sum_\tau|z_\tau|=\sum_i|x_i|+2\sum_j|z_{\sigma_j}|$. This multiplicity is essential in the convex-body volume and AM–GM calculations of the linked §5 exercises. The norm-product identity is stated in the source's multiplicative construction. [S4, Ch. I, §5, printed pp. 32–33, PDF pp. 51–52]
+
+> [!example] One complex coordinate pair
+> With one nonreal conjugate pair and no real coordinate, the canonical metric is $2(du^2+dv^2)$. A disk of radius $R$ in the unscaled complex coordinate has canonical area $2\pi R^2$. The constraint $|z_\sigma|+|z_{\bar\sigma}|<t$, for $t>0$, is a disk of radius $t/2$ and therefore has canonical area $\pi t^2/2$, in agreement with the §5 volume formula for $r=0$, $s=1$, $n=2$. This area calculation is an independent illustration of the measure convention.
+
 ## Examples
 
 > [!example] Square lattice
@@ -70,6 +163,8 @@ Every vector in $\operatorname{span}_{\mathbb R}(L)$ has a unique expression $\e
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
+- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[02 - Ring Theory/Concepts/Orders and Conductors|Orders, Integral Bases, and Discriminants]]
 - [[01 - Group Theory/Concepts/Discrete and Dense Subgroups|Discrete and Dense Subgroups]]
 - [[01 - Group Theory/Concepts/Discrete Isometry Groups and Frieze Groups|Discrete Isometry Groups and Frieze Groups]]
 
@@ -84,3 +179,7 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 Artin classifies discrete additive subgroups of $\mathbb R^2$, defines lattices and lattice bases, proves bounded-region finiteness, and introduces the fundamental parallelogram in Theorem 6.5.5 and Lemmas 6.5.7–6.5.8. [S1, Ch. 6, printed pp. 168–170, PDF pp. 180–182] The higher-dimensional formulation and $GL_r(\mathbb Z)$ language are standard extensions, proved for the active cases in Exercises LA193–LA194.
+
+Neukirch's complete-lattice convention, the discrete-subgroup characterization and its proof, the Euclidean covolume formula, and Theorem (4.4) were visually checked at [S4, Ch. I, §4, printed pp. 24–27, PDF pp. 43–46]. The compact equality case and the linear-forms application are posed as exercises in the source, rather than worked solutions there. The exercise notes preserve the printed statements and identify their independently derived conclusions. Existing source and learning-status fields are retained; this addition does not certify every earlier higher-dimensional property anew.
+
+The Minkowski-space definitions, real/complex coordinate metric and measure comparison, ideal-lattice covolume proposition and its source proof, and norm-product identity were visually checked at [S4, Ch. I, §5, printed pp. 29–33, PDF pp. 48–52]. The metric-density and disk-area calculations in the added subsection are independent explanations of those conventions. The §5 exercise solutions are independently derived in their exercise notes, including the parameter-range qualification in I.5.2 and the endpoint argument in I.5.3; they are not claimed as worked solutions in the source. The existing partially-verified source status is preserved.
