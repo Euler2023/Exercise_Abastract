@@ -82,6 +82,14 @@ Each exercise includes:
 
 [Full change history](CHANGELOG.md)
 
+### 2026-10-20 (Neukirch II.1 The p-adic Numbers Exercises)
+
+- Archived: All six numbered exercises of Chapter II §1, printed p. 106 / PDF p. 125, as R370–R373, F128 and R374 in source order. Each note preserves the full problem, the first exercise’s printed hint, progressive collapsed hints, a complete independent solution, prerequisite links and precise S4 provenance. New learning states remain not-started.
+- Proved: Eventual digit periodicity characterizes rational numbers by a bounded integer-state recurrence; the first digit detects units; a compatible root-lifting sequence constructs a square root of 2 in Z7; and the exact 5-adic expansions are for 2/3 and −2/3 (the original numerators are lost in text extraction). The abstract-automorphism proof algebraically recovers Zp, handles p=2 separately and fixes every finite truncation without assuming continuity or using a later Hensel theorem. One note retains all four digit operations, including negative borrows, division carries, nonunit denominator shifts, zero boundaries and finite-precision limits.
+- Updated: Expanded the existing p-adic Numbers concept with the source’s inverse-limit construction, unit and periodicity criteria, arithmetic mechanisms and automorphism boundary; preserved its older content, metadata, partial verification status and dynamic backlinks. No new concept, folder, Base or Canvas was created. Related Lang exercises F108 and R224 remain independent source notes.
+- Verified: Inspected the bounded original exercise, definition and construction pages at 200 dpi and cross-reviewed every solution. Recomputed all four root-lifting table rows and checked both signs of the 2/3 expansions modulo 5^1 through 5^20. The digit algorithms passed 20,160 finite modular equalities for p=2,3,5,7,11,13 and precision N=1–8; the worked six-digit example was independently recalculated. These finite checks supplement the all-digit proofs. Source mapping is exactly 6/6, with no missing, duplicate, unexpected or unparsed locators.
+- Synchronized: Added the independent II.1 mapping query and permanent source audit, marked only that section complete, and advanced the next pointer to Chapter II §2. Chapter I remains 75/75; the complete Chapter II source total remains unknown. Checked metadata, numbering, links, Obsidian formula syntax, dynamic backlinks and the Study Progress exercise-tag filter. Preserved pre-existing dashboard/R366 changes, retained the complete changelog and synchronized README’s latest three entries. No Git commit or publication was performed.
+
 ### 2026-10-20 (Neukirch Chapter I Archive Complete — 75/75)
 
 - Completed: Chapter I now has 75 numbered source exercises mapped one-to-one to 75 notes across all 14 sections. This batch added 44 notes (R345–R369, LA540–LA546, Gal141–Gal148, G331–G332 and F126–F127), reused I.8.2/R329, and recorded the verified zero-exercise sections I.13–I.14. All new notes remain not-started. Each numbered problem retains all its subparts, progressive hints, a complete independent solution, precise printed/PDF provenance and prerequisite links.
@@ -94,9 +102,3 @@ Each exercise includes:
 
 - Audited: Visually checked §13 One-dimensional Schemes (printed pp. 84–93 / PDF pp. 103–112) and §14 Function Fields (printed pp. 94–97 / PDF pp. 113–116): neither contains a numbered exercise group. Body subsection numbers and references to earlier exercises are not new exercise labels.
 - Recorded: Both permanent section ledgers have the empty expected label set, verified total 0 and clean reconciliation. No extra exercise note was created; the Chapter II boundary was checked at printed p. 99 / PDF p. 118.
-
-### 2026-10-20 (Neukirch I.12 Orders Exercises)
-
-- Archived: Reconciled all 5 source exercises of Chapter I §12 (printed p. 84 / PDF p. 103), with one note per number and complete multipart structure; new learning states remain not-started.
-- Explained: Computed four curve normalizations including the total quotient ring of the reducible example, preserved and corrected the reversed parameter ratio in the printed hint, proved the biquadratic-order unit identity, the complete-module multiplier order, both Pell norm-seven orbits, and the regular/invertible-prime equivalence.
-- Verified: Inspected original source pages at 200 dpi, independently cross-reviewed the mathematical arguments, and checked source provenance, metadata, numbering, links and Obsidian formula syntax. All four source exception sets are empty. Preserved existing user changes and complete changelog history; synchronized README’s latest-three excerpt.

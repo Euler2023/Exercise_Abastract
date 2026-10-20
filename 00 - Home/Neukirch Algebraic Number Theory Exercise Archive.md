@@ -19,7 +19,7 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
 > [!note] Audit scope
-> Chapter I is complete: **75 numbered source exercises, 75 notes, verified coverage 75/75**. Every section has its own source-label set and reconciliation below; §13 and §14 were checked to contain no numbered exercises. On 2026-10-20, the original pages were rechecked and all four exception sets were empty: missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators. The other six chapters have not had full exercise-set audits; an archived count of zero does not establish a zero source total.
+> Chapter I is complete: **75 numbered source exercises, 75 notes, verified coverage 75/75**. Every section has its own source-label set and reconciliation below; §13 and §14 were checked to contain no numbered exercises. On 2026-10-20, the original pages were rechecked and all four exception sets were empty: missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators. Chapter II §1 is separately complete at 6/6, as recorded below. The other six chapters have not had full exercise-set audits; an archived count of zero does not establish a zero source total.
 
 ## Chapter Coverage
 
@@ -129,6 +129,12 @@ const auditedSections = new Map([
     title: "Function Fields",
     labels: [],
     pages: "body printed pp. 94-97 / PDF pp. 113-116; no numbered exercises",
+    reconciled: true,
+  }],
+  ["II.1", {
+    title: "The p-adic Numbers",
+    labels: ["II.1.1", "II.1.2", "II.1.3", "II.1.4", "II.1.5", "II.1.6"],
+    pages: "printed p. 106 / PDF p. 125",
     reconciled: true,
   }],
 ]);
@@ -243,7 +249,7 @@ if (unparsed.length > 0) {
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
 | I | Algebraic Integers | Complete: 75/75 source exercises in 75 notes; §1–§14 reconciled. This batch added 44 notes and reused R329 for I.8.2. §13–§14 have no numbered exercises. Source issues remain visibly recorded in their notes and section warnings. |
-| II | The Theory of Valuations | Pending |
+| II | The Theory of Valuations | §1 complete: 6/6 numbered exercises, printed p. 106 / PDF p. 125. The complete chapter total has not been audited. |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
 | V | Local Class Field Theory | Pending |
@@ -844,7 +850,46 @@ if (rows.length === 0) {
 
 ### Chapter II — The Theory of Valuations
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### II.1 — The p-adic Numbers
+
+Source-audited and reconciled on 2026-10-20: ordered labels II.1.1–II.1.6, verified total 6, all on printed p. 106 / PDF p. 125. The group ends before the §2 body heading on the same page. Verified coverage 6/6, with one note per numbered exercise; missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators are all zero. The six notes are R370, R371, R372, R373, F128 and R374 in source order, all remaining `not-started`. No source figure is required. This section audit does not establish the source total of Chapter II.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 1;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
 
 ### Chapter III — Riemann-Roch Theory
 
@@ -917,9 +962,11 @@ Chapter I §5 was source-audited and reconciled on 2026-10-17 against I.5.1-I.5.
 
 Chapter I was finally source-audited and reconciled on 2026-10-20. The ordered section totals are 7, 7, 10, 3, 3, 7, 6, 11, 4, 5, 7, 5, 0 and 0, totaling 75. The original §1–§5 exercise pages (printed pp. 5, 15, 23, 27–28 and 34 / PDF pp. 24, 34, 42, 46–47 and 53) were re-rendered at 200 dpi and their 30 labels rechecked. Together with the independently checked §6–§12 groups, the expected 75 labels map to 75 distinct notes, with no missing, duplicate, unexpected or unparsed entries. Sections §13 and §14 contain no numbered exercises; §14 ends at printed p. 97 / PDF p. 116, PDF p. 117 is blank, and Chapter II begins at printed p. 99 / PDF p. 118. The permanent chapter and section ledgers above retain the source anchors and final status. Learning status remains separate from archive coverage.
 
+Chapter II §1 was source-audited and reconciled on 2026-10-20 against its complete ordered set II.1.1–II.1.6. All six exercises and the first exercise’s printed periodicity hint were visually checked on printed p. 106 / PDF p. 125 at 200 dpi. Definition (1.1), Proposition (1.2), Proposition (1.3), the inverse-limit ring interpretation and the fraction-field construction were checked on printed pp. 100–101 and 103–104 / PDF pp. 119–120 and 122–123. All six solutions are independent derivations and were mathematically cross-reviewed. Exercise 4 concerns $2/3$ and $-2/3$; the dropped numerators in text extraction are not a source error. Exercise 5 treats abstract field automorphisms, including $p=2$, without assuming continuity or importing a later Hensel theorem; its separately archived Lang analogue remains F108. Exercise 6 keeps all four operations in one note, with complete carry, borrow, unit-division and exponent-shift arguments. The existing p-adic concept was expanded, preserving its metadata, partial source-verification status, older content and dynamic exercise query; no new concept, folder or tracker configuration was needed. The six expected labels map one-to-one to six notes, with all source exception sets empty; no incorrect printed assertion was found. Chapter II as a whole remains unaudited.
+
 ## Next Archive Target
 
-**Chapter II §1 — The p-adic Numbers.** Chapter I is complete at 75/75 after the full source-set audit and one-to-one reconciliation. This pointer records the next batch; Chapter II is outside the completed batch.
+**Chapter II §2 — The p-adic Absolute Value.** Chapter II §1 is complete at 6/6. Its exercise group ends before this next section’s body heading on printed p. 106 / PDF p. 125; §2 continues on printed p. 107 / PDF p. 126. The next section’s exercise set and the complete Chapter II total have not yet been audited.
 
 ## Related Archives
 
