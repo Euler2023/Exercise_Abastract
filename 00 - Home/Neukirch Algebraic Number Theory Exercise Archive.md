@@ -19,7 +19,7 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
 > [!note] Audit scope
-> The seven chapter titles have been checked against the original contents pages. Chapter I §1 and §2 each have a verified source set of seven exercises, §3 has ten, and §4 and §5 each have three; their section coverage is tracked separately below. Full chapter exercise totals and ordered label sets have **not yet been audited**. An archived count of zero means that no matching exercise note is currently found; it does not mean that the chapter has no exercises.
+> Chapter I is complete: **75 numbered source exercises, 75 notes, verified coverage 75/75**. Every section has its own source-label set and reconciliation below; §13 and §14 were checked to contain no numbered exercises. On 2026-10-20, the original pages were rechecked and all four exception sets were empty: missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators. The other six chapters have not had full exercise-set audits; an archived count of zero does not establish a zero source total.
 
 ## Chapter Coverage
 
@@ -39,7 +39,13 @@ const chapterTitles = new Map([
 // Each entry records { labels: [...], pages: "...", reconciled: false }.
 // Labels include chapter, section, and exercise, for example "I.1.1".
 // Set reconciled to true only after the post-archive source reconciliation.
-const auditedCoverage = new Map();
+const auditedCoverage = new Map([
+  ["I", {
+    labels: ["I.1.1", "I.1.2", "I.1.3", "I.1.4", "I.1.5", "I.1.6", "I.1.7", "I.2.1", "I.2.2", "I.2.3", "I.2.4", "I.2.5", "I.2.6", "I.2.7", "I.3.1", "I.3.2", "I.3.3", "I.3.4", "I.3.5", "I.3.6", "I.3.7", "I.3.8", "I.3.9", "I.3.10", "I.4.1", "I.4.2", "I.4.3", "I.5.1", "I.5.2", "I.5.3", "I.6.1", "I.6.2", "I.6.3", "I.6.4", "I.6.5", "I.6.6", "I.6.7", "I.7.1", "I.7.2", "I.7.3", "I.7.4", "I.7.5", "I.7.6", "I.8.1", "I.8.2", "I.8.3", "I.8.4", "I.8.5", "I.8.6", "I.8.7", "I.8.8", "I.8.9", "I.8.10", "I.8.11", "I.9.1", "I.9.2", "I.9.3", "I.9.4", "I.10.1", "I.10.2", "I.10.3", "I.10.4", "I.10.5", "I.11.1", "I.11.2", "I.11.3", "I.11.4", "I.11.5", "I.11.6", "I.11.7", "I.12.1", "I.12.2", "I.12.3", "I.12.4", "I.12.5"],
+    pages: "printed pp. 5, 15, 23, 27-28, 34, 38, 43-44, 52-53, 58, 64-65, 71-72, 84 / PDF pp. 24, 34, 42, 46-47, 53, 57, 62-63, 71-72, 77, 83-84, 90-91, 103; sections 13-14 checked: no numbered exercises",
+    reconciled: true,
+  }],
+]);
 const auditedSections = new Map([
   ["I.1", {
     title: "The Gaussian Integers",
@@ -69,6 +75,60 @@ const auditedSections = new Map([
     title: "Minkowski Theory",
     labels: ["I.5.1", "I.5.2", "I.5.3"],
     pages: "printed p. 34 / PDF p. 53",
+    reconciled: true,
+  }],
+  ["I.6", {
+    title: "The Class Number",
+    labels: ["I.6.1", "I.6.2", "I.6.3", "I.6.4", "I.6.5", "I.6.6", "I.6.7"],
+    pages: "printed p. 38 / PDF p. 57",
+    reconciled: true,
+  }],
+  ["I.7", {
+    title: "Dirichlet's Unit Theorem",
+    labels: ["I.7.1", "I.7.2", "I.7.3", "I.7.4", "I.7.5", "I.7.6"],
+    pages: "printed pp. 43-44 / PDF pp. 62-63",
+    reconciled: true,
+  }],
+  ["I.8", {
+    title: "Extensions of Dedekind Domains",
+    labels: ["I.8.1", "I.8.2", "I.8.3", "I.8.4", "I.8.5", "I.8.6", "I.8.7", "I.8.8", "I.8.9", "I.8.10", "I.8.11"],
+    pages: "printed pp. 52-53 / PDF pp. 71-72",
+    reconciled: true,
+  }],
+  ["I.9", {
+    title: "Hilbert's Ramification Theory",
+    labels: ["I.9.1", "I.9.2", "I.9.3", "I.9.4"],
+    pages: "printed p. 58 / PDF p. 77",
+    reconciled: true,
+  }],
+  ["I.10", {
+    title: "Cyclotomic Fields",
+    labels: ["I.10.1", "I.10.2", "I.10.3", "I.10.4", "I.10.5"],
+    pages: "printed pp. 64-65 / PDF pp. 83-84",
+    reconciled: true,
+  }],
+  ["I.11", {
+    title: "Localization",
+    labels: ["I.11.1", "I.11.2", "I.11.3", "I.11.4", "I.11.5", "I.11.6", "I.11.7"],
+    pages: "printed pp. 71-72 / PDF pp. 90-91",
+    reconciled: true,
+  }],
+  ["I.12", {
+    title: "Orders",
+    labels: ["I.12.1", "I.12.2", "I.12.3", "I.12.4", "I.12.5"],
+    pages: "printed p. 84 / PDF p. 103",
+    reconciled: true,
+  }],
+  ["I.13", {
+    title: "One-dimensional Schemes",
+    labels: [],
+    pages: "body printed pp. 84-93 / PDF pp. 103-112; no numbered exercises",
+    reconciled: true,
+  }],
+  ["I.14", {
+    title: "Function Fields",
+    labels: [],
+    pages: "body printed pp. 94-97 / PDF pp. 113-116; no numbered exercises",
     reconciled: true,
   }],
 ]);
@@ -182,7 +242,7 @@ if (unparsed.length > 0) {
 
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
-| I | Algebraic Integers | §1 complete: 7/7 exercises, R322-R328 in Ring Theory. §2 complete: 7/7 exercises, R330-R335 in Ring Theory and LA532 in Linear Algebra and Modules. §3 complete: 10/10 exercises, R336-R344 in Ring Theory and LA533 in Linear Algebra and Modules; I.3.3 has a degenerate-case warning, and I.3.5 preserves and corrects a false printed domain assertion. §4 complete: 3/3 exercises, LA534-LA536 in Linear Algebra and Modules; I.4.3 preserves the printed wording and proves the stronger nonzero-vector statement. §5 complete: 3/3 exercises, LA537-LA539 in Linear Algebra and Modules; I.5.2 preserves and explains its unstated parameter range, and I.5.3 proves the non-strict Minkowski bound. Selected §8 Exercise 2 archived as R329 with a source error and full counterexample. Full chapter total pending. |
+| I | Algebraic Integers | Complete: 75/75 source exercises in 75 notes; §1–§14 reconciled. This batch added 44 notes and reused R329 for I.8.2. §13–§14 have no numbered exercises. Source issues remain visibly recorded in their notes and section warnings. |
 | II | The Theory of Valuations | Pending |
 | III | Riemann-Roch Theory | Pending |
 | IV | Abstract Class Field Theory | Pending |
@@ -416,7 +476,10 @@ if (rows.length === 0) {
 
 #### I.6 — The Class Number
 
-Next archive target. Its complete exercise group and source total remain unaudited. The section begins on printed p. 34 / PDF p. 53, immediately after Exercise I.5.3. This opening-page check does not establish its exercise pages or total.
+Source-audited and reconciled on 2026-10-20: ordered labels I.6.1-I.6.7, printed p. 38 / PDF p. 57. Verified coverage 7/7; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+> [!warning] Invalid discriminant entry in I.6.2
+> The source prints positive $11$, which is not a quadratic-field discriminant. Its note preserves the entry, explains its impossibility, and proves the remaining seven valid cases without guessing a replacement.
 
 ```dataviewjs
 const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
@@ -455,9 +518,50 @@ if (rows.length === 0) {
 }
 ```
 
+#### I.7 — Dirichlet's Unit Theorem
+
+Source-audited and reconciled on 2026-10-20: ordered labels I.7.1-I.7.6, printed pp. 43–44 / PDF pp. 62–63. Verified coverage 6/6; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 7;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
 #### I.8 — Extensions of Dedekind Domains
 
-Selected exercise I.8.2 was visually checked at printed p. 52 / PDF p. 71 and archived on 2026-10-02. This is a one-exercise selection, not a complete §8 exercise-set audit; the section total remains unknown.
+Source-audited and reconciled on 2026-10-20: ordered labels I.8.1-I.8.11, printed pp. 52–53 / PDF pp. 71–72. Verified coverage 11/11; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
 
 > [!warning] Source statement refuted
 > Exercise I.8.2's prescribed coprime-conductor claim is false even for a separable cubic number field. Its archived note preserves the full mathematical claim and gives an independent integral-basis calculation, the quotient $\mathcal O_L/2\mathcal O_L\simeq\mathbb F_2^3$, and a contradiction for every integral primitive element. Archival coverage records this source issue; it does not treat the printed claim as a proved theorem.
@@ -484,6 +588,258 @@ for (const page of dv.pages("#exercise")) {
 matches.sort((a, b) => a.number - b.number || a.path.localeCompare(b.path));
 dv.table(["Source exercise", "Archived note", "Topic", "Learning status", "Source status"],
   matches.map(entry => entry.row));
+```
+
+#### I.9 — Hilbert's Ramification Theory
+
+Source-audited and reconciled on 2026-10-20: ordered labels I.9.1-I.9.4, printed p. 58 / PDF p. 77. Verified coverage 4/4; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+> [!warning] Incorrect exponent in I.9.2
+> The source sets the Frobenius exponent to the residue-extension degree. Its note preserves that formula, gives a counterexample in $\mathbb Q(i)$ above $3$, and proves the corrected statement with $q=\#\kappa(\mathfrak p)$. The term nonsplit in I.9.1 means exactly one prime above the base prime.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 9;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.10 — Cyclotomic Fields
+
+Source-audited and reconciled on 2026-10-20: ordered labels I.10.1-I.10.5, printed pp. 64–65 / PDF pp. 83–84. Verified coverage 5/5; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 10;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.11 — Localization
+
+Source-audited and reconciled on 2026-10-20: ordered labels I.11.1-I.11.7, printed pp. 71–72 / PDF pp. 90–91. Verified coverage 7/7; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 11;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.12 — Orders
+
+Source-audited and reconciled on 2026-10-20: ordered labels I.12.1-I.12.5, printed p. 84 / PDF p. 103. Verified coverage 5/5; one note per source number, including all subparts. Missing labels, duplicate mappings, unexpected labels, and unparsed Neukirch locators are all zero. All new notes remain `not-started`; no source figure is required.
+
+> [!warning] Reversed parameter in the hint to I.12.1
+> The printed parametrization $X=t^2-1$, $Y=t(t^2-1)$ requires $t=Y/X$, although the hint prints $t=X/Y$. The note preserves the original, explains the correction, and proves the printed kernel and all four normalizations.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 12;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.13 — One-dimensional Schemes
+
+Source-audited and reconciled on 2026-10-20: no numbered exercises occur in this section (body printed pp. 84–93 / PDF pp. 103–112). The expected source-label set is empty, verified total 0 and coverage 0/0. This is a checked zero-exercise section, rather than an unaudited or missing batch. No exercise note is created.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 13;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
+```
+
+#### I.14 — Function Fields
+
+Source-audited and reconciled on 2026-10-20: no numbered exercises occur in this section (body printed pp. 94–97 / PDF pp. 113–116). The expected source-label set is empty, verified total 0 and coverage 0/0. This is a checked zero-exercise section, rather than an unaudited or missing batch. No exercise note is created.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "I";
+const targetSection = 14;
+const matches = new Map();
+
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const number = Number(exercise);
+    const label = chapter + "." + targetSection + "." + number;
+    matches.set(label + "\0" + page.file.path, {
+      number, label, path: page.file.path,
+      row: [label, page.file.link, page.topic, page.status, page.difficulty],
+    });
+  }
+}
+
+const rows = [...matches.values()].sort((a, b) =>
+  a.number - b.number || a.path.localeCompare(b.path)
+);
+if (rows.length === 0) {
+  dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+} else {
+  dv.table(
+    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
+    rows.map(entry => entry.row)
+  );
+}
 ```
 
 ### Chapter II — The Theory of Valuations
@@ -524,7 +880,7 @@ For example, the following locator identifies the first exercise of Chapter I, �
 source: "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. I, §1, Exercise 1, printed p. 5, PDF p. 24"
 ```
 
-The exercise groups of Chapter I §1 and §2 both begin with Exercise 1. They were checked to establish the section-sensitive numbering convention; they do not establish a complete Chapter I total. [S4, Ch. I, §1, Exercises, printed p. 5, PDF p. 24; §2, Exercises, printed p. 15, PDF p. 34]
+The exercise groups of Chapter I §1 and §2 both begin with Exercise 1. They establish the section-sensitive numbering convention. The complete Chapter I total is independently established by the full audit above. [S4, Ch. I, §1, Exercises, printed p. 5, PDF p. 24; §2, Exercises, printed p. 15, PDF p. 34]
 
 > [!warning] Section boundaries
 > Printed p. 5 / PDF p. 24 carries a §2 running header, but the exercises above the §2 body heading belong to **§1**. Determine ownership from the surrounding text and section boundaries, not the running header.
@@ -545,7 +901,7 @@ Exercises will be routed by the primary computational or proof method, following
 
 Future notes must distinguish the printed problem, independently derived solutions, imported results, computational checks, and source errors or unresolved ambiguities. Preserve any defective printed statement visibly before presenting a corrected formulation.
 
-Chapter I §1 was source-audited on 2026-09-29 against the ordered labels I.1.1-I.1.7, all on printed p. 5 / PDF p. 24. The complete section text on printed pp. 1-5 / PDF pp. 20-24 was visually checked, including the exercise group's end before the §2 heading. No exercise requires a source figure. Section completion will not be promoted to chapter completion without a separate full-chapter source audit.
+Chapter I §1 was source-audited on 2026-09-29 against the ordered labels I.1.1-I.1.7, all on printed p. 5 / PDF p. 24. The complete section text on printed pp. 1-5 / PDF pp. 20-24 was visually checked, including the exercise group's end before the §2 heading. No exercise requires a source figure. The separate full-chapter source audit and reconciliation were completed on 2026-10-20, as recorded above.
 
 On 2026-09-29, all seven labels were reconciled one-to-one with R322-R328 in Ring Theory: no missing labels, duplicate mappings, unexpected labels, or unparsed locators remain in this section. All seven notes preserve the source problem, contain progressive hints and an independently derived solution, and remain `not-started`. Mathematical cross-review covered every solution. Existing concepts suffice; no new concept note or topic directory was needed.
 
@@ -553,15 +909,17 @@ Exercise I.1.2 makes explicit the intended positive-integer exponent convention 
 
 Chapter I §2 was source-audited on 2026-10-11 against the ordered labels I.2.1-I.2.7, all on printed p. 15 / PDF p. 34. The entire exercise page and the following §3 opening were visually checked. All seven labels were reconciled one-to-one with R330-R335 and LA532: no missing labels, duplicate mappings, unexpected labels, or unparsed Neukirch locators remain. Every note preserves the problem, supplies progressive hints and a complete independent derivation, and remains `not-started`. Mathematical cross-review covered all seven solutions; existing concepts suffice and no new directory or concept note was required.
 
-I.2.1 simplifies its fraction before checking a monic integer equation. I.2.2 proves polynomial normality in arbitrary characteristic using roots-of-unity coefficient sums and two coprime multipliers. I.2.3 computes the cusp kernel and exhibits a missing integral element in the quotient's own fraction field. I.2.4 treats positive and negative squarefree radicands and verifies the uniform basis $(d+\sqrt d)/2$. I.2.5 proves maximality of the cube-root-of-two power order by excluding denominators 2 and 3. I.2.6 uses discriminant -107 to establish its integral basis and distinguishes the original proper power order from the full ring generated by a different element. I.2.7 follows the printed determinant hint, proving that the parity-symmetric combinations are rational integers. No incorrect printed assertion was identified in this section. Section completion does not imply completion of Chapter I.
+I.2.1 simplifies its fraction before checking a monic integer equation. I.2.2 proves polynomial normality in arbitrary characteristic using roots-of-unity coefficient sums and two coprime multipliers. I.2.3 computes the cusp kernel and exhibits a missing integral element in the quotient's own fraction field. I.2.4 treats positive and negative squarefree radicands and verifies the uniform basis $(d+\sqrt d)/2$. I.2.5 proves maximality of the cube-root-of-two power order by excluding denominators 2 and 3. I.2.6 uses discriminant -107 to establish its integral basis and distinguishes the original proper power order from the full ring generated by a different element. I.2.7 follows the printed determinant hint, proving that the parity-symmetric combinations are rational integers. No incorrect printed assertion was identified in this section. The full chapter was separately audited and reconciled on 2026-10-20.
 
-Chapter I §4 was source-audited and reconciled on 2026-10-17 against I.4.1-I.4.3, printed pp. 27-28 / PDF pp. 46-47. The three labels map one-to-one to LA534-LA536, with all source-locator exception sets empty. Every note retains the original exercise, supplies progressive hints and a complete independent derivation, and remains `not-started`. The compact-quotient proof specifies the quotient topology, the equality exercise keeps both tasks together, and the linear-forms proof preserves the printed wording while deriving a nonzero integer vector. Existing lattice concepts were expanded with the source's full-rank convention, covolume and Minkowski theorem, retaining dynamic exercise backlinks and existing metadata. No new concept or directory was needed; the complete chapter total is still unknown.
+Chapter I §4 was source-audited and reconciled on 2026-10-17 against I.4.1-I.4.3, printed pp. 27-28 / PDF pp. 46-47. The three labels map one-to-one to LA534-LA536, with all source-locator exception sets empty. Every note retains the original exercise, supplies progressive hints and a complete independent derivation, and remains `not-started`. The compact-quotient proof specifies the quotient topology, the equality exercise keeps both tasks together, and the linear-forms proof preserves the printed wording while deriving a nonzero integer vector. Existing lattice concepts were expanded with the source's full-rank convention, covolume and Minkowski theorem, retaining dynamic exercise backlinks and existing metadata. No new concept or directory was needed; the complete chapter total was subsequently verified as 75 on 2026-10-20.
 
-Chapter I §5 was source-audited and reconciled on 2026-10-17 against I.5.1-I.5.3, all on printed p. 34 / PDF p. 53. The three labels map one-to-one to LA537-LA539, with all source-locator exception sets empty. Every note retains the original exercise, supplies progressive hints and a complete independent derivation, and remains `not-started`. I.5.1 supplies an explicit field-dependent embedding bound; I.5.2 computes canonical volume by polar coordinates and an elementary simplex integral while recording the omitted parameter range; I.5.3 derives the Minkowski norm bound and proves its endpoint with the least positive integer norm. Existing lattice concepts were expanded with Minkowski space, the canonical metric and its $2^s$ measure factor, ideal-lattice covolumes, and the all-embedding norm convention. Dynamic exercise backlinks and existing concept metadata are retained. No new concept or directory was needed; the full chapter total remains unknown.
+Chapter I §5 was source-audited and reconciled on 2026-10-17 against I.5.1-I.5.3, all on printed p. 34 / PDF p. 53. The three labels map one-to-one to LA537-LA539, with all source-locator exception sets empty. Every note retains the original exercise, supplies progressive hints and a complete independent derivation, and remains `not-started`. I.5.1 supplies an explicit field-dependent embedding bound; I.5.2 computes canonical volume by polar coordinates and an elementary simplex integral while recording the omitted parameter range; I.5.3 derives the Minkowski norm bound and proves its endpoint with the least positive integer norm. Existing lattice concepts were expanded with Minkowski space, the canonical metric and its $2^s$ measure factor, ideal-lattice covolumes, and the all-embedding norm convention. Dynamic exercise backlinks and existing concept metadata are retained. No new concept or directory was needed; the full chapter total was subsequently verified as 75 on 2026-10-20.
+
+Chapter I was finally source-audited and reconciled on 2026-10-20. The ordered section totals are 7, 7, 10, 3, 3, 7, 6, 11, 4, 5, 7, 5, 0 and 0, totaling 75. The original §1–§5 exercise pages (printed pp. 5, 15, 23, 27–28 and 34 / PDF pp. 24, 34, 42, 46–47 and 53) were re-rendered at 200 dpi and their 30 labels rechecked. Together with the independently checked §6–§12 groups, the expected 75 labels map to 75 distinct notes, with no missing, duplicate, unexpected or unparsed entries. Sections §13 and §14 contain no numbered exercises; §14 ends at printed p. 97 / PDF p. 116, PDF p. 117 is blank, and Chapter II begins at printed p. 99 / PDF p. 118. The permanent chapter and section ledgers above retain the source anchors and final status. Learning status remains separate from archive coverage.
 
 ## Next Archive Target
 
-**Chapter I §6 — The Class Number.** Audit its complete exercise group before assigning the next topic-specific note numbers. Sections §1-§5 are complete; the full Chapter I total remains unaudited.
+**Chapter II §1 — The p-adic Numbers.** Chapter I is complete at 75/75 after the full source-set audit and one-to-one reconciliation. This pointer records the next batch; Chapter II is outside the completed batch.
 
 ## Related Archives
 

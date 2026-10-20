@@ -29,6 +29,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 ### Core Topics
 - [[04 - Linear Algebra and Modules/Concepts/Linear Independence|Linear Independence]]
 - [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
+- [[04 - Linear Algebra and Modules/Concepts/Dirichlets Unit Theorem and Logarithmic Unit Lattices|Dirichlet's Unit Theorem and Logarithmic Unit Lattices]]
 - [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Casimir Tensors and Invariant Elements|Casimir Tensors and Invariant Elements]]
 - [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]

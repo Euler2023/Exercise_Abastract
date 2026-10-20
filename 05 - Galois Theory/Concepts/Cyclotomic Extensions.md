@@ -50,7 +50,10 @@ status: not-started
 2. **Galois extension**: $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is always Galois
 3. **Irreducibility**: $\Phi_n(x) \in \mathbb{Z}[x]$ is irreducible over $\mathbb{Q}$
 4. **Integer coefficients**: $\Phi_n(x)$ has integer coefficients
-5. **Containment**: $\mathbb{Q}(\zeta_m) \subseteq \mathbb{Q}(\zeta_n)$ iff $m | n$
+5. **Containment**: If $m\mid n$, then $\mathbb{Q}(\zeta_m)\subseteq\mathbb{Q}(\zeta_n)$, since $\zeta_n^{n/m}$ is a primitive $m$-th root of unity.
+
+> [!warning] Correction to the former containment criterion
+> The converse does not hold for arbitrary positive $m,n$. For example, $\zeta_6=1+\zeta_3$, so $\mathbb Q(\zeta_6)=\mathbb Q(\zeta_3)$, although $6\nmid3$. The sufficient divisibility condition above replaces the incorrect unconditional “if and only if” previously stated in this vault. This is an independent correction, not an error attributed to the source.
 
 ## The Galois Group
 

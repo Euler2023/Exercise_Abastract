@@ -1,0 +1,1888 @@
+% !TEX program = xelatex
+% 本周（2026-10-12 至 2026-10-18）Daily Exercise List 回顾 · 完整详解版
+% 自包含单文件：导言区 + 封面/概览/议程 + §7.2--§7.5 逐题详解 + 答案速查/方法卡/易错点/自测
+% 编译：xelatex 跑三遍（页码 \pageref 需要两遍以上；中文字体 Microsoft YaHei）
+\documentclass[aspectratio=169,10pt,fontset=none]{ctexbeamer}
+
+% ---------- 中英文字体 ----------
+\usepackage{fontspec}
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+
+% ---------- 数学与图形 ----------
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+% ---------- 配色（沿用库内讲义配色） ----------
+\definecolor{ink}{HTML}{1F3864}
+\definecolor{accent}{HTML}{C00000}
+\definecolor{gold}{HTML}{BF8F00}
+\definecolor{greenink}{HTML}{2E6B2E}
+\definecolor{paper}{HTML}{F5F7FA}
+
+\usetheme{default}
+\usecolortheme[named=ink]{structure}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{structure}{fg=ink}
+\setbeamercolor{frametitle}{fg=ink}
+\setbeamercolor{block title}{bg=ink!12,fg=ink}
+\setbeamercolor{block body}{bg=ink!4,fg=black}
+\setbeamercolor{block title alerted}{bg=accent!12,fg=accent}
+\setbeamercolor{block body alerted}{bg=accent!4,fg=black}
+\setbeamercolor{block title example}{bg=greenink!14,fg=greenink}
+\setbeamercolor{block body example}{bg=greenink!5,fg=black}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{footline}{size=\scriptsize}
+\setbeamertemplate{frametitle}{\vskip3pt\insertframetitle\par\vskip1.5pt%
+  \textcolor{accent}{\rule{\textwidth}{0.7pt}}\vskip-3pt}
+\setbeamertemplate{footline}{%
+  \hbox to \paperwidth{\hspace{8pt}%
+    \textcolor{ink!55}{本周 Daily Exercise 回顾\ \ ·\ \ 10-12 -- 10-18\ \ ·\ \ 28 题完整详解版}\hfill
+    \textcolor{ink!55}{\insertframenumber\,/\,\inserttotalframenumber}\hspace{9pt}}\vskip5pt}
+\setbeamersize{text margin left=0.75cm,text margin right=0.75cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\AtBeginDocument{%
+  \setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}%
+  \setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}}
+
+% 题号标记
+\newcommand{\ex}[1]{\textcolor{accent}{\footnotesize\bfseries #1}}
+\newcommand{\key}[1]{\textcolor{ink}{\bfseries #1}}
+\newcommand{\starpt}{\textcolor{accent}{\bfseries$\ast$}}
+
+\hypersetup{pdftitle={本周 Daily Exercise 回顾（2026-10-12 至 10-18，28 题完整详解版）},
+  pdfsubject={Artin Algebra 2e, Ch. 7, Section 7.2--7.5: 28 exercises weekly review},
+  pdfauthor={exercise\_abstract}}
+\title{本周 Daily Exercise 回顾（2026-10-12 至 10-18，28 题完整详解版）}
+\author{exercise\_abstract}
+
+\begin{document}
+% ============================================================ 1 标题页
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[ink] (current page.north west) rectangle ([yshift=-4.7cm]current page.north east);
+    \node[anchor=north west,text=white,font=\fontsize{26}{30}\selectfont\bfseries]
+      at ([xshift=1.0cm,yshift=-0.92cm]current page.north west) {本周 Daily Exercise 回顾};
+    \node[anchor=north west,text=white!90]
+      at ([xshift=1.02cm,yshift=-2.10cm]current page.north west)
+      {\large 覆盖 2026-10-12 -- 10-18（7 份清单，28 题）\quad·\quad 逐题详解版};
+    \node[anchor=north west,text=white!75]
+      at ([xshift=1.02cm,yshift=-2.92cm]current page.north west)
+      {\normalsize Artin \textit{Algebra} 2e, Ch.~7, \S7.2--\S7.5\quad·\quad 群论 25 + 线性代数 3\quad·\quad 难度 7 / 11 / 10};
+    \node[anchor=north east,text=white!60,font=\small]
+      at ([xshift=-1.0cm,yshift=-0.92cm]current page.north east) {exercise\_abstract};
+    \node[anchor=west,text=white!55,font=\tiny]
+      at ([xshift=1.02cm,yshift=-4.42cm]current page.north west)
+      {数据来源：\texttt{10 - Daily Exercise Lists} 的七份清单；题面、来源与结论取自 28 篇已核对习题笔记};
+  \end{tikzpicture}
+  \vspace*{4.85cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{四条主线（按书序）}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \key{\S7.2 共轭作用与类方程} \ex{LA198, G125--G129, LA199, LA200}
+          \item \key{\S7.3 $p$-群与不动点} \ex{G195--G198}
+          \item \key{\S7.4 群作用与多面体群} \ex{G199--G207}
+          \item \key{\S7.5 对称群 $S_n$} \ex{G208--G214}（含今天 10-18 的 3 题）
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{这一版和上一版的区别}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item 每题先给完整题面，再给\textbf{可跟读的逐步推导}
+          \item 每个关键步骤都写出式子/矩阵/置换/数值，不用“容易验证”带过
+          \item 每题补一个\textbf{具体验算}或反例；带 \starpt 的是易错点
+          \item 第 \pageref{sec:answers} 页起是 28 题答案速查、方法卡、易错点与自测题
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 2 本周概览
+\begin{frame}[t]{一、本周概览：7 天、28 题、按书序推进}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.60\textwidth}
+      \centering
+      \scriptsize
+      \setlength{\tabcolsep}{3pt}
+      \renewcommand{\arraystretch}{1.10}
+      \begin{tabular}{@{}l r l@{}}
+        \toprule
+        日期 & 题数 & 题目（按清单顺序）\\
+        \midrule
+        10-12（一） & 10 & LA198, G125--G129, LA199, LA200, G195, G196\\
+        10-13（二） & 3  & G197, G198, G199\\
+        10-14（三） & 3  & G200, G201, G202\\
+        10-15（四） & 3  & G203, G204, G205\\
+        10-16（五） & 3  & G206, G207, G208\\
+        10-17（六） & 3  & G209, G210, G211\\
+        \rowcolor{ink!8} 10-18（日） & 3 & G212, G213, G214\\
+        \midrule
+        合计 & \textbf{28} & \S7.2 八题 + \S7.3 四题 + \S7.4 九题 + \S7.5 七题\\
+        \bottomrule
+      \end{tabular}
+      \vspace{0.3em}
+
+      \raggedright
+      \begin{exampleblock}{\footnotesize 两个数据观察}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \textbf{Random Review 本周 0 条}：28 题全部来自 Systematic Progress；周日补的三题正好收尾 \S7.5。
+          \item \textbf{周一 10 题、之后每天 3 题}：\S7.2 一次扫完，之后按书序稳定推进；今天讲完 28 题覆盖 Ch.~7 的前四节。
+        \end{itemize}
+      \end{exampleblock}
+    \end{column}
+    \begin{column}{0.38\textwidth}
+      \centering
+      \begin{tikzpicture}[x=0.46cm,y=0.32cm]
+        \foreach \d/\n [count=\i] in {一/10, 二/3, 三/3, 四/3, 五/3, 六/3, 日/3}{
+          \fill[ink!75] (\i-0.25,0) rectangle (\i+0.25,\n);
+          \node[above,font=\tiny,text=ink] at (\i,\n) {\n};
+          \node[below,font=\tiny,text=ink!80] at (\i,0) {\d};
+        }
+        \draw[ink!45] (0.35,0) -- (7.65,0);
+        \node[right,font=\tiny,text=accent] at (7.75,4) {28 题};
+        \node[below,font=\tiny,text=ink!60] at (4.0,-1.05) {每日题量};
+      \end{tikzpicture}
+
+      \vspace{0.2em}
+      \begin{block}{\footnotesize 难度与来源}
+        \scriptsize
+        入门 7 · 中等 11 · 高级 10。\\[1pt]
+        Artin 2e Ch.~7 \S7.2--\S7.5，印刷 pp.~221--223 / PDF pp.~233--235；\ex{G198}、\ex{G208} 另含 Lang I.35、I.38。
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 3 讲法/议程
+\begin{frame}[t]{二、今天（10-18）怎么用这份详解版：90 分钟议程}
+  \label{sec:agenda}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.53\textwidth}
+      \centering
+      \scriptsize
+      \setlength{\tabcolsep}{2pt}
+      \renewcommand{\arraystretch}{1.18}
+      \begin{tabular}{@{}l l r@{}}
+        \toprule
+        时间 & 内容 & 起始页\\
+        \midrule
+        8 分钟  & 框架：轨道--稳定化子、类方程、两条引理 & \pageref{sec:frame1}\\
+        25 分钟 & \S7.2 八题：矩阵中心化子、类方程案例、共轭判定 & \pageref{ex:LA198}\\
+        12 分钟 & \S7.3 四题：不动点定理、$p^3$、8 阶群分类 & \pageref{ex:G195}\\
+        18 分钟 & \S7.4 九题：$T/O/I$ 的类方程与正规子群、群作用 & \pageref{ex:G199}\\
+        17 分钟 & \S7.5 七题：轮换型中心化子、$S_n$ 的生成元、今天三题 & \pageref{ex:G208}\\
+        10 分钟 & 收尾：速查表、方法卡、易错点、当场自测 & \pageref{sec:answers}\\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+    \begin{column}{0.44\textwidth}
+      \begin{block}{\footnotesize 三种用法}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \textbf{通读}：每题“题面 → 思路 → 详解 → 验算”完整走一遍；
+          \item \textbf{讲题}：先让学生说该算哪个量，再翻到详解页对照；
+          \item \textbf{复习}：只看第 \pageref{sec:answers} 页起的速查表与方法卡，忘了再回跳。
+        \end{itemize}
+      \end{block}
+      \begin{alertblock}{\footnotesize 时间不够时的取舍}
+        \scriptsize
+        90 分钟讲完 28 题偏紧。建议：\S7.2 与 \S7.4 各挑 3 道带 \starpt 的详讲，其余快速过结论；\S7.5 的 G212--G214 是今天的作业，优先讲完。
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \vspace{0.2em}
+  {\scriptsize\color{ink!70} 页脚给出当前页/总页数；本次所有页码引用都由 \LaTeX{} 标签自动生成，增删页面后重编译即可同步。}
+\end{frame}
+
+% ============================================================ 4 框架 1/2
+\begin{frame}[t]{三、框架 1/2：三条公式与它们的证明}
+  \label{sec:frame1}
+  \begin{block}{1. 轨道--稳定化子 $\Rightarrow$ 类大小公式}
+    \scriptsize
+    共轭作用 $x^g=gxg^{-1}$ 的轨道是共轭类 $C(x)$，稳定化子是中心化子 $Z_G(x)$；$gZ_G(x)\mapsto gxg^{-1}$ 是双射，故
+    \[ |C(x)|=[G:Z_G(x)]\quad\Longleftrightarrow\quad |G|=|C(x)|\,|Z_G(x)| \]
+    \starpt 例：$S_5$ 中对换 $(12)$ 的中心化子 $C_2\times S_3$ 阶 $12$，类大小 $120/12=10$，恰为全部 10 个对换。
+  \end{block}
+  \begin{block}{2. 类方程}
+    \scriptsize
+    按共轭类切开 $G$：中心的类都是单点，其余类大小是 $[G:Z_G(x_i)]$。于是
+    \[ |G|=|Z(G)|+\sum_{i=1}^{k}\,[G:Z_G(x_i)], \]
+    其中 $x_i$ 取遍非中心类的代表元。例：$S_4$ 的类方程 $24=1+6+3+8+6$。
+  \end{block}
+  \begin{block}{3. 正规子群 $=$ 含 $1$ 的若干共轭类之并}
+    \scriptsize
+    $N\trianglelefteq G$ $\iff$ $N$ 对共轭封闭 $\iff$ $N$ 是类之并；于是 $|N|=1+\text{若干类大小}$，且 $|N|\mid|G|$。\\
+    \starpt 反用：若某个 $|N|$ 不能写成这种和，就不可能是正规子群（\ex{G127}、\ex{G202}、\ex{G203}）。
+  \end{block}
+\end{frame}
+
+% ============================================================ 5 框架 2/2
+\begin{frame}[t]{三、框架 2/2：两条反复调用的小引理}
+  \label{sec:frame2}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize 引理 A（G126）$5$ 阶正规子群必中心}
+        \scriptsize
+        设 $N\trianglelefteq G$，$|N|=5$，$|G|$ 为奇数。则 $N\subseteq Z(G)$。\\[2pt]
+        \textbf{证明.} $|N|=5$ 素 $\Rightarrow N\cong C_5$，$|\operatorname{Aut}(C_5)|=\varphi(5)=4$。共轭给出同态
+        \[ \theta:G\to\operatorname{Aut}(N),\qquad |\operatorname{im}\theta|\mid|G|,\quad |\operatorname{im}\theta|\mid4. \]
+        因 $|G|$ 奇，$|\operatorname{im}\theta|=1$，即 $gng^{-1}=n$。$\square$\\[2pt]
+        \key{奇阶不可省}：10 阶二面体 $D_{10}=\langle r,s\mid r^5=s^2=1,\ srs^{-1}=r^{-1}\rangle$ 中 $\langle r\rangle\trianglelefteq D_{10}$，但 $srs^{-1}=r^{-1}\ne r$。
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize 引理 B（G196）$G/Z(G)$ 循环 $\Rightarrow$ $G$ 交换}
+        \scriptsize
+        设 $G/Z(G)=\langle aZ\rangle$。任意 $x,y\in G$ 可写
+        \[ x=a^m z,\qquad y=a^n w,\qquad z,w\in Z(G). \]
+        则 $xy=a^{m+n}zw=a^{n+m}wz=yx$，故 $G$ 交换，$G=Z(G)$。$\square$\\[3pt]
+        \key{本周调用位置：}
+        \begin{itemize}\setlength{\itemsep}{0pt}
+          \item \ex{G197}：排除 $|Z|=p^2$（否则 $G/Z$ 是 $p$ 阶，循环）；
+          \item \ex{G207}：$C/Z(C)$ 是循环商，故 $C$ 交换；
+          \item \ex{LA199} 的对照：$SL_2(\mathbb F_3)/\{\pm I\}$ 不是循环群，所以不矛盾。
+        \end{itemize}
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \vspace{0.1em}
+  {\scriptsize\color{ink!80} \starpt 两条引理一管“正规子群能有多大”，一管“中心能有多小”，正好夹住类方程里 $|Z(G)|$ 的可能值。}
+\end{frame}
+
+% ============================================================
+%  §7.2 逐题详细解答（LA198--LA200，8 题 15 帧）
+%  LA198 x3, G125 x2, G126 x1, G127 x2, LA199 x2, G128 x1, G129 x2, LA200 x2
+%  共 15 帧；只含 frame 环境
+% ============================================================
+
+% ------------------------------------------------------------ 1/15  LA198 上
+\begin{frame}[t]{四、\S7.2 详解 1/8：LA198 五个实 $3\times3$ 矩阵的中心化子（上）}
+\label{ex:LA198}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{LA198}；Artin 2e, Ch.~7, \S7.2, Ex.~2.11，印刷 p.~221 / PDF p.~233）}
+Determine the centralizer in $GL_3(\mathbb R)$ of each matrix:
+\[
+A_1=\begin{pmatrix}1&0&0\\0&2&0\\0&0&3\end{pmatrix},\quad
+A_2=\begin{pmatrix}1&0&0\\0&1&0\\0&0&2\end{pmatrix},\quad
+A_3=\begin{pmatrix}1&1&0\\0&1&0\\0&0&1\end{pmatrix},\quad
+A_4=\begin{pmatrix}1&1&0\\0&1&1\\0&0&1\end{pmatrix},\quad
+A_5=\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix}.
+\]
+\end{block}
+\key{思路}：逐个解 $PA_i=A_iP$：$A_1,A_2$ 用特征空间，$A_3,A_4$ 用幂零部分，$A_5$ 用行列重排。
+\begin{block}{\footnotesize $A_1$：特征值 $1,2,3$ 互异 $\Rightarrow$ $P$ 只能对角}
+记 $E_{\lambda_i}=\mathbb R e_i$。若 $v\in E_{\lambda_i}$，则 $A_1(Pv)=P(A_1v)=P(\lambda_i v)=\lambda_i(Pv)$，即 $Pv\in E_{\lambda_i}$；又 $P$ 可逆、$v\ne0$，故 $Pv\ne0$ 仍张成这条 1 维特征线，$Pe_i=a_ie_i$。于是 $P=\operatorname{diag}(a_1,a_2,a_3)$，$\det P=a_1a_2a_3\ne0$（反之亦然）。故
+\[
+Z(A_1)=\{\operatorname{diag}(a_1,a_2,a_3):a_1a_2a_3\ne0\},\qquad \dim Z(A_1)=3.
+\]
+\end{block}
+\begin{block}{\footnotesize $A_2$：保持 $1$-特征空间（2 维）与 $2$-特征空间（1 维）}
+$E_1=\langle e_1,e_2\rangle$，$E_2=\langle e_3\rangle$（维数 2、1）。同上 $PE_\lambda\subseteq E_\lambda$，$P$ 可逆且维数相同，故 $PE_1=E_1$、$PE_2=E_2$；于是 $Pe_3=ce_3$（$c\ne0$），$P|_{E_1}$ 为可逆的 $B$：
+\[
+P=\begin{pmatrix}B&0\\0&c\end{pmatrix},\qquad B\in GL_2(\mathbb R),\ c\ne0;
+\]
+反之亦然；自由参数 $4+1=5$，故 $\dim Z(A_2)=5$。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 2/15  LA198 中
+\begin{frame}[t]{四、\S7.2 详解 1/8：LA198 五个实 $3\times3$ 矩阵的中心化子（中）}
+\scriptsize
+\begin{block}{\footnotesize $A_3=I+E_{12}$：显式解 $PE_{12}=E_{12}P$}
+由 $PA_3=A_3P\iff P(I+E_{12})=(I+E_{12})P\iff PE_{12}=E_{12}P$。记 $P=(p_{ij})$：
+$PE_{12}$ 只有第 2 列，$=Pe_1=(p_{11},p_{21},p_{31})^{\mathsf T}$；
+$E_{12}P$ 只有第 1 行，$=$（$P$ 的第 2 行）$(p_{21},p_{22},p_{23})$。比较得
+\[
+p_{21}=p_{23}=p_{31}=0,\qquad p_{22}=p_{11},
+\]
+即 $P=\begin{pmatrix}a&b&c\\0&a&0\\0&h&k\end{pmatrix}$，$\det P=a^2k$。可逆要求 $ak\ne0$，自由参数 5 个，故 $\dim Z(A_3)=5$。
+\end{block}
+\begin{block}{\footnotesize $A_4=I+N$（$N=E_{12}+E_{23}$）：与幂零部分交换}
+$N^2=E_{13}$，$N^3=0$，故 $PA_4=A_4P\iff PN=NP$。这里 $PN$ 的三列是 $0,\,Pe_1,\,Pe_2$，$NP$ 的第 $j$ 列是 $Ne_j=(p_{2j},p_{3j},0)^{\mathsf T}$。逐列写开：
+\[
+(p_{21},p_{31},0)=(0,0,0),\quad
+(p_{22},p_{32},0)=(p_{11},p_{21},p_{31}),\quad
+(p_{23},p_{33},0)=(p_{12},p_{22},p_{32}).
+\]
+得 $p_{21}=p_{31}=p_{32}=0$、$p_{22}=p_{11}$、$p_{23}=p_{12}$、$p_{33}=p_{11}$，即 $P=aI+bN+cN^2$，$\det P=a^3\ne0$。故 $\dim Z(A_4)=3$。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 3/15  LA198 下
+\begin{frame}[t]{四、\S7.2 详解 1/8：LA198 五个实 $3\times3$ 矩阵的中心化子（下）}
+\scriptsize
+\begin{block}{\footnotesize $A_5$：交换 $e_1,e_3$ $\Rightarrow$ 中心对称}
+$A_5P$ 的第 $i$ 行是 $P$ 的第 $4-i$ 行，$PA_5$ 的第 $j$ 列是 $P e_{4-j}$，故
+\[
+(PA_5)_{ij}=p_{i,\,4-j},\qquad (A_5P)_{ij}=p_{4-i,\,j};
+\]
+$PA_5=A_5P$ 即 $p_{ij}=p_{4-i,4-j}$，于是
+\[
+P=\begin{pmatrix}a&b&c\\d&e&d\\c&b&a\end{pmatrix},\qquad
+\det P=(a-c)\bigl(e(a+c)-2bd\bigr).
+\]
+可逆要求 $\det P\ne0$，自由参数 5 个，故 $\dim Z(A_5)=5$。
+\end{block}
+\begin{block}{\footnotesize 五题总表（$Z(A_i)=Z_{GL_3(\mathbb R)}(A_i)$）}
+\begin{tabular}{@{}l l c@{}}
+\toprule
+矩阵 & 中心化子的形状 & $\dim$\\
+\midrule
+$A_1$ & 对角 $\operatorname{diag}(a,b,c)$，$abc\ne0$ & 3\\
+$A_2$ & 分块 $\operatorname{diag}(B,c)$，$B\in GL_2(\mathbb R)$，$c\ne0$ & 5\\
+$A_3$ & $p_{21}=p_{23}=p_{31}=0,\ p_{22}=p_{11}$，$ak\ne0$ & 5\\
+$A_4$ & $aI+bN+cN^2$，$a\ne0$ & 3\\
+$A_5$ & $p_{ij}=p_{4-i,4-j}$（中心对称），$\det\ne0$ & 5\\
+\bottomrule
+\end{tabular}
+\end{block}
+\footnotesize\color{ink!80}
+\starpt 易错点：$A_3$ 的可逆条件是 $ak\ne0$（不是 $a\ne0$ 就够）；$A_4$ 的“多项式”里必须保留 $N^2$ 项；$A_5$ 的 $\det$ 化简用第一、三行相同结构，漏掉 $\det$ 条件会多算参数。
+\end{frame}
+
+% ------------------------------------------------------------ 4/15  G125 上
+\begin{frame}[t]{四、\S7.2 详解 2/8：G125 至多三个共轭类的有限群（上）}
+\label{ex:G125}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{G125}；Artin 2e, Ch.~7, \S7.2, Ex.~2.12，印刷 p.~221 / PDF p.~233）}
+Determine all finite groups that contain at most three conjugacy classes.
+\end{block}
+\key{思路}：按共轭类数 $r=1,2,3$ 分类，只用“类大小 $=[G:Z_G(x)]$ 整除 $|G|$”这条整除链。
+\begin{block}{\footnotesize $r=1$ 与 $r=2$}
+$r=1$：只有一个类 $\{1\}$，故 $G=\{1\}$。\\[1pt]
+$r=2$：类方程为 $|G|=1+a$，$a$ 是非单位类的大小，且 $a=[G:Z_G(x)]\mid|G|$，故 $a\mid 1+a$，即 $a\mid1$，所以 $a=1$、$|G|=2$。2 阶群只有 $C_2$。
+\end{block}
+\begin{block}{\footnotesize $r=3$ 且 $G$ 交换}
+交换群中每个元素自成一类，故 $r=|G|=3$，$G\cong C_3$。
+\end{block}
+\begin{block}{\footnotesize $r=3$ 非交换：中心只能是 $1$}
+中心元都自成一类，故 $|Z(G)|\le3$。若 $|Z|=3$，三个类全是单点，$G$ 交换，矛盾。若 $|Z|=2$，类方程
+\[
+|G|=1+1+a,\qquad a\mid|G|=a+2\ \Rightarrow\ a\mid2;
+\]
+于是 $a=1$（得 $|G|=3$，与 $|Z|=2$ 矛盾）或 $a=2$（得 $|G|=4$，$|G/Z|=2$ 循环）。商群循环时 $G$ 交换：若 $G/Z=\langle gZ\rangle$，任意 $x=g^i z,\ y=g^j w$（$z,w\in Z$）满足 $xy=g^{i+j}zw=yx$，与“三类非交换”矛盾。故 $Z(G)=1$，类方程为
+\[
+|G|=1+a+b,\qquad 1<a\le b.
+\]
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 5/15  G125 下
+\begin{frame}[t]{四、\S7.2 详解 2/8：G125 至多三个共轭类的有限群（下）}
+\scriptsize
+\begin{block}{\footnotesize 非交换情形的整除链}
+$a,b$ 都是类大小，故 $a,b\mid|G|=1+a+b$，即
+\[
+a\mid 1+b,\qquad b\mid 1+a.
+\]
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item $a=b$ 不可能：若 $a=b$，则 $a\mid 1+2a$，即 $a\mid1$，与 $a>1$ 矛盾。
+\item 故 $b>a$，从而 $b\ge a+1$；又 $b\mid1+a$ 给出 $b\le a+1$，于是 $b=a+1$。
+\item 代回：$|G|=1+a+(a+1)=2a+2$，由 $a\mid|G|$ 得 $a\mid2a+2$，即 $a\mid2$。结合 $a>1$ 得 $a=2$，$b=3$，$|G|=6$。
+\end{enumerate}
+\end{block}
+\begin{block}{\footnotesize 6 阶非交换群唯一是 $S_3$（理由）}
+类方程只能是 $1+2+3$：大小为 2 的类的元素 $r$ 满足 $|Z_G(r)|=6/2=3$（阶 3 元），大小为 3 的类的元素 $s$ 满足 $|Z_G(s)|=6/3=2$（阶 2 元）。$\langle r\rangle$ 指数 2，故正规（$G=\langle r\rangle\cup s\langle r\rangle=\langle r\rangle\cup\langle r\rangle s$，故 $s\langle r\rangle=\langle r\rangle s$）。共轭作用给出 $\theta:C_2\to\operatorname{Aut}(C_3)$：若 $\theta$ 平凡，则 $s$ 与 $r$ 交换，$G\cong C_3\times C_2\cong C_6$ 交换，矛盾；故 $srs^{-1}=r^{-1}$，即
+\[
+G=\langle r,s\mid r^3=s^2=1,\ srs^{-1}=r^{-1}\rangle\cong S_3
+\]
+（$S_3$ 中 $r=(123),s=(12)$ 满足同一组关系，且 $|S_3|=6=|G|$，故同构）。类方程 $6=1+2+3$。
+\end{block}
+\key{结论}：所有解为 $\{1\},\ C_2,\ C_3,\ S_3$。\quad
+\starpt 易错：$r=3$ 非交换时不能漏掉 $|Z|=3$ 的排除；$|Z|=2$ 排除要用“$|G/Z|=2$ 循环 $\Rightarrow$ 交换”，只说 $|G|\le4$ 不够严格。
+\end{frame}
+
+% ------------------------------------------------------------ 6/15  G126
+\begin{frame}[t]{四、\S7.2 详解 3/8：G126 阶 $5$ 正规子群必中心}
+\label{ex:G126}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{G126}；Artin 2e, Ch.~7, \S7.2, Ex.~2.13，印刷 p.~221 / PDF p.~233）}
+Let $N$ be a normal subgroup of a group $G$. Suppose that $|N|=5$ and that $|G|$ is an odd integer. Prove that $N$ is contained in the center of $G$.
+\end{block}
+\key{思路}：正规性把共轭变成同态 $G\to\operatorname{Aut}(N)$；像的阶同时整除奇数的 $|G|$ 与 $|\operatorname{Aut}(N)|=4$，只能是 1。
+\begin{block}{\footnotesize 证明}
+$|N|=5$ 素数，取 $1\ne n\in N$，则 $|\langle n\rangle|\mid5$ 且 $>1$，故 $\langle n\rangle=N$，$N\cong C_5$。自同构由生成元的像决定，而生成元的像必须是生成元，故
+\[
+\operatorname{Aut}(C_5)=\{x\mapsto x^k:k=1,2,3,4\},\qquad |\operatorname{Aut}(C_5)|=\varphi(5)=4.
+\]
+因 $N\trianglelefteq G$，$gng^{-1}\in N$，可定义
+\[
+\theta:G\longrightarrow\operatorname{Aut}(N),\qquad \theta(g)(n)=gng^{-1};
+\]
+它是同态：$\theta(gh)(n)=(gh)n(gh)^{-1}=g(hnh^{-1})g^{-1}=\theta(g)\theta(h)(n)$。由第一同构定理，$|\operatorname{im}\theta|\mid|G|$；又由 Lagrange，$|\operatorname{im}\theta|\mid|\operatorname{Aut}(N)|=4$。所以 $|\operatorname{im}\theta|$ 是 $4$ 的约数且为奇数，只能等于 $1$。于是 $\theta(g)=\mathrm{id}_N$，即 $gng^{-1}=n$ 对一切 $g\in G,n\in N$ 成立，故 $N\subseteq Z(G)$。
+\end{block}
+\begin{block}{\footnotesize 反例：奇数条件不能省}
+在 $D_{10}=\langle r,s\mid r^5=s^2=1,\ srs^{-1}=r^{-1}\rangle$（阶 10，偶数）中，$|\langle r\rangle|=5$，指数 2 故正规；但
+\[
+srs^{-1}=r^{-1}\ne r,
+\]
+所以 $r\notin Z(D_{10})$，$\langle r\rangle\not\subseteq Z(D_{10})$。共轭作用 $\theta$ 的像为 $\{1,\text{反演}\}$，阶 2——正是被“$|G|$ 奇”排除掉的情形。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 7/15  G127 上
+\begin{frame}[t]{四、\S7.2 详解 4/8：G127 类方程 $1+4+5+5+5$ 的群（上）}
+\label{ex:G127}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{G127}；Artin 2e, Ch.~7, \S7.2, Ex.~2.14，印刷 p.~221 / PDF p.~233）}
+The class equation of a group $G$ is $1+4+5+5+5$.\\
+(a) Does $G$ have a subgroup of order $5$? If so, is it a normal subgroup?\\
+(b) Does $G$ have a subgroup of order $4$? If so, is it a normal subgroup?
+\end{block}
+\key{思路}：(a) 取 4 元类的元素 $x$，$H=Z_G(x)$ 的阶为 $20/4=5$，再证 $H$ 是类之并；(b) 取 5 元类的元素 $y$，$K=Z_G(y)$ 的阶为 $20/5=4$，再用“正规 $=$ 含 $1$ 的类之并”排除。
+\begin{block}{\footnotesize 先读题面}
+类大小之和是 $|G|=20$；唯一大小为 $1$ 的类是 $\{1\}$，故 $Z(G)=1$。记 $C(x)$ 为 $x$ 的共轭类：$|C(x)|=[G:Z_G(x)]$，故 $|Z_G(x)|=20/|C(x)|$。类大小只有 $1,4,5$ 三种可能。
+\end{block}
+\begin{block}{\footnotesize (a) 有 $5$ 阶子群，且正规}
+取 $x$ 在大小 $4$ 的类中，$H=Z_G(x)$，则 $|H|=20/4=5$，故 $H\cong C_5$，即 $H$ 是 $5$ 阶子群。
+任取 $1\ne h\in H$：$H$ 交换（阶 5 群循环），故 $H\subseteq Z_G(h)$，于是
+\[
+|C(h)|=\frac{20}{|Z_G(h)|}\le\frac{20}{5}=4.
+\]
+$h$ 非中心（$Z(G)=1$），故 $|C(h)|\ne1$；结合类大小只能是 $1,4,5$ 且 $\le4$，得 $|C(h)|=4$。大小 4 的类唯一，就是 $C(x)$；而 $h\in C(h)$，故 $h\in C(x)$。于是 $H\setminus\{1\}\subseteq C(x)$，且 $|H\setminus\{1\}|=|C(x)|=4$，故 $H\setminus\{1\}=C(x)$，即 $H=\{1\}\cup C(x)$ 是含 $1$ 的类之并，因此 $H\trianglelefteq G$；又 $x\in H$，此 $5$ 阶子群正规。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 8/15  G127 下
+\begin{frame}[t]{四、\S7.2 详解 4/8：G127 类方程 $1+4+5+5+5$ 的群（下）}
+\scriptsize
+\begin{block}{\footnotesize (b) 有 $4$ 阶子群，但不正规}
+取 $y$ 在某个大小 $5$ 的类中，$K:=Z_G(y)$，则
+\[
+|K|=\frac{20}{5}=4,
+\]
+所以 $4$ 阶子群存在。若 $K\trianglelefteq G$，则 $K$ 是含 $1$ 的类之并，且类大小只能是 $1,4,5,5,5$ 中的某几个，故
+\[
+|K|=1+\varepsilon_4\cdot4+\varepsilon_5\cdot5+\varepsilon_5'\cdot5+\varepsilon_5''\cdot5,\qquad \varepsilon_\bullet\in\{0,1\}.
+\]
+把全部可能列出来：
+\[
+1,\quad 1+4=5,\quad 1+5=6,\quad 1+4+5=10,\quad 1+5+5=11,\quad 1+4+5+5=15,\quad 1+5+5+5=16,\quad 20.
+\]
+没有 $4$。因此不存在阶 $4$ 的正规子群；特别地 $K$ 不正规。（上面的 $K$ 只是“某个”阶 4 子群，但这个枚举说明\key{任何}阶 4 子群都不正规。）
+\end{block}
+\begin{block}{\footnotesize 具体模型：$G=\langle r,s\mid r^5=s^4=1,\ srs^{-1}=r^2\rangle$}
+这是 $C_5\rtimes C_4$（$|G|=20$，$2$ 在 $\mathbb F_5^\times$ 中阶为 4）。直接枚举共轭类得
+\[
+1+4+5+5+5;
+\]
+$\langle r\rangle$ 是阶 5 正规子群；中心只有 $1$；而阶 4 子群的候选 $K=Z_G(y)$ 均不正规。这与 (a)(b) 的答案完全一致。
+\end{block}
+\footnotesize\color{ink!80}
+\starpt 易错点：“子群存在”与“正规”是两个独立问题，都靠中心化子的阶先造出子群；正规性只用类之并的\key{大小}就能否定，不需要写出具体的类。
+\end{frame}
+
+% ------------------------------------------------------------ 9/15  LA199 上
+\begin{frame}[t]{四、\S7.2 详解 5/8：LA199 $SL_2(\mathbb F_3)$ 的类方程（上）}
+\label{ex:LA199}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{LA199}；Artin 2e, Ch.~7, \S7.2, Ex.~2.15，印刷 p.~222 / PDF p.~234）}
+Verify the class equation (7.2.10) of $SL_2(\mathbb F_3)$，即 $24=1+1+4+4+4+4+6$。
+\end{block}
+\key{思路}：先算 $|SL_2(\mathbb F_3)|=24$；中心 $\{\pm I\}$（标量 $\lambda I\in SL_2\Rightarrow\lambda^2=1$）各成一类；$U_a=\begin{pmatrix}1&a\\0&1\end{pmatrix}$（$a=\pm1$）的中心化子 6 个，类大小 4；迹 0 元素共 6 个、成一类。
+\begin{block}{\footnotesize 阶：$|SL_2(\mathbb F_3)|=24$}
+$|GL_2(\mathbb F_3)|=(3^2-1)(3^2-3)=8\cdot6=48$：第一列任取非零向量（$9-1=8$ 种），第二列不落在第一列张成的直线上（$9-3=6$ 种）。行列式映射 $\det:GL_2(\mathbb F_3)\to\mathbb F_3^\times$ 是满射（$\operatorname{diag}(\lambda,1)\mapsto\lambda$），核为 $SL_2(\mathbb F_3)$，故 $|SL_2|=48/2=24$。
+\end{block}
+\begin{block}{\footnotesize $U_a$ 的中心化子：显式解方程}
+$U_a=\begin{pmatrix}1&a\\0&1\end{pmatrix}$，$a=\pm1$。设 $P=\begin{pmatrix}p&q\\r&s\end{pmatrix}$，比较 $PU_a=U_aP$：
+\[
+PU_a=\begin{pmatrix}p&pa+q\\r&ra+s\end{pmatrix},\qquad
+U_aP=\begin{pmatrix}p+ar&q+as\\r&s\end{pmatrix}.
+\]
+逐项比较：$p=p+ar\Rightarrow ar=0\Rightarrow r=0$；$pa+q=q+as\Rightarrow pa=as\Rightarrow s=p$；于是 $\det P=ps-qr=p^2$，在 $SL_2$ 中 $p^2=1$，即 $p=s=\pm1$，$q\in\mathbb F_3$ 任意，故 $Z_{SL_2}(U_a)=\left\{\begin{pmatrix}p&q\\0&p\end{pmatrix}:p=\pm1,\ q\in\mathbb F_3\right\}$，$|Z_{SL_2}(U_a)|=6$，类大小 $24/6=4$。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 10/15  LA199 下
+\begin{frame}[t]{四、\S7.2 详解 5/8：LA199 $SL_2(\mathbb F_3)$ 的类方程（下）}
+\scriptsize
+\begin{block}{\footnotesize $U_1$ 与 $U_{-1}$ 不共轭（但 $GL_2$ 中共轭）}
+共轭保持特征线：$PU_1P^{-1}=U_b$ 迫使 $P$ 把 $U_1$ 的特征线 $\mathbb F_3 e_1$ 送到 $U_b$ 的特征线 $\mathbb F_3 e_1$，故 $P=\begin{pmatrix}\lambda&\mu\\0&\delta\end{pmatrix}$，直接算
+\[
+PU_1P^{-1}=U_{\lambda/\delta}=U_{\lambda^2}\qquad(\det P=\lambda\delta=1\Rightarrow\delta=\lambda^{-1}).
+\]
+$\mathbb F_3^\times=\{1,2\}$ 中 $\lambda^2=1$，只能 $b=1$：$U_1\not\sim U_{-1}$；同理 $-U_1\not\sim-U_{-1}$。\key{对照}：$GL_2$ 中取 $P=\operatorname{diag}(1,-1)$ 可得 $\lambda/\delta=-1$，故 $U_1\sim U_{-1}$。
+\end{block}
+\begin{block}{\footnotesize 迹 $0$ 的代表元 $A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$：中心化子 $\{\pm I,\pm A\}$}
+设 $P=\begin{pmatrix}p&q\\r&s\end{pmatrix}$，比较 $PA=AP$（$A=\begin{pmatrix}0&2\\1&0\end{pmatrix}$，$-1=2$）：$PA=\begin{pmatrix}q&2p\\s&2r\end{pmatrix}$，$AP=\begin{pmatrix}2r&2s\\p&q\end{pmatrix}$，得 $q=2r$、$p=s$，即 $P=pI+rA$；$\det P=p^2+r^2=1$ 的解为 $(p,r)=(\pm1,0),(0,\pm1)$，故 $Z_{SL_2}(A)=\{\pm I,\pm A\}$，$|C(A)|=24/4=6$。迹 $0$ 元：$\begin{pmatrix}a&b\\c&-a\end{pmatrix}$ 且 $bc=-1-a^2$。$a=0$ 时 $bc=2$，给 $(b,c)=(1,2),(2,1)$；$a=\pm1$ 时 $bc=1$，各给 $(1,1),(2,2)$；共 6 个，全在 $C(A)$ 内，故恰为一类。
+\end{block}
+\key{合计}：$2$ 个中心类 $+$ 四个 4 元类（$U_1,U_{-1},-U_1,-U_{-1}$，迹 $\pm2$ 区分正负）$+$ 一个 6 元类，得 $24=1+1+4+4+4+4+6$。
+\starpt 易错：$SL_2$ 中共轭不能任意缩放幂零项，$\det P=1$ 把 $\lambda/\delta$ 锁成平方；四条 4 元类不能合并成两条。
+\end{frame}
+
+% ------------------------------------------------------------ 11/15  G128
+\begin{frame}[t]{四、\S7.2 详解 6/8：G128 满射同态下的共轭类}
+\label{ex:G128}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{G128}；Artin 2e, Ch.~7, \S7.2, Ex.~2.16，印刷 p.~222 / PDF p.~234）}
+Let $\varphi:G\to G'$ be a surjective group homomorphism, let $C$ denote the conjugacy class of an element $x$ of $G$, and let $C'$ denote the conjugacy class in $G'$ of its image $\varphi(x)$. Prove that $\varphi$ maps $C$ surjectively to $C'$, and that $|C'|$ divides $|C|$.
+\end{block}
+\key{思路}：共轭关系被同态送到共轭关系；整除性则比较中心化子的原像。
+\begin{block}{\footnotesize 映满：$\varphi(C)=C'$}
+对 $g\in G$，
+\[
+\varphi(gxg^{-1})=\varphi(g)\varphi(x)\varphi(g)^{-1}\in C',
+\]
+故 $\varphi(C)\subseteq C'$。反之，$C'$ 的元素形如 $g'\varphi(x)g'^{-1}$；由满射取 $g'=\varphi(g)$，则它 $=\varphi(gxg^{-1})\in\varphi(C)$，故 $C'\subseteq\varphi(C)$，即 $\varphi(C)=C'$。
+\end{block}
+\begin{block}{\footnotesize 整除：$|C'|\mid|C|$（有限群）}
+令 $H=\varphi^{-1}\bigl(Z_{G'}(\varphi(x))\bigr)$。若 $h\in Z_G(x)$，则 $\varphi(h)$ 与 $\varphi(x)$ 交换，故 $Z_G(x)\le H$。由满射 $\varphi(H)=Z_{G'}(\varphi(x))$，且 $\ker\varphi\subseteq H$，故
+\[
+|C'|=[G':Z']=\frac{|G'|}{|Z'|}=\frac{|G|/|\ker\varphi|}{|H|/|\ker\varphi|}=[G:H].
+\]
+再由指数塔 $|C|=[G:Z_G(x)]=[G:H]\,[H:Z_G(x)]=|C'|\,[H:Z_G(x)]$，即 $|C'|\mid|C|$。
+\end{block}
+\key{具体例子}：\ (i) $S_5\xrightarrow{\operatorname{sgn}}C_2$：对换的类大小 $\binom52=10$，映入 $\{-1\}$（大小 1），$1\mid10$。\ (ii) $S_4\to S_3$（作用在 3 个分划上，核 $V_4$）：对换类大小 6，像为 $S_3$ 的对换类、大小 3，$3\mid6$；此处 $[H:Z_G(x)]=8/4=2$，正好 $6=3\cdot2$。
+\end{frame}
+
+% ------------------------------------------------------------ 12/15  G129 上
+\begin{frame}[t]{四、\S7.2 详解 7/8：G129 $pq$ 阶群必有 $p$ 阶元（上）}
+\label{ex:G129}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{G129}；Artin 2e, Ch.~7, \S7.2, Ex.~2.17，印刷 p.~222 / PDF p.~234）}
+Use the class equation to show that a group of order $pq$, with $p$ and $q$ prime, contains an element of order $p$.
+\end{block}
+\key{思路}：$p=q$ 时用幂次降阶；$p\ne q$ 时反设无 $p$ 阶元，按 $Z(G)\ne1$ 与 $Z(G)=1$ 两种情形制造矛盾。
+\begin{block}{\footnotesize $p=q$：$|G|=p^2$}
+取 $1\ne x\in G$，由 Lagrange，$|x|\in\{p,p^2\}$。若 $|x|=p$ 已得；若 $|x|=p^2$，则 $|x^p|=p^2/\gcd(p^2,p)=p$。
+\end{block}
+\begin{block}{\footnotesize $p\ne q$，情形 1：$Z(G)\ne1$}
+取 $1\ne z\in Z(G)$。$|z|\mid pq$，故 $|z|\in\{p,q,pq\}$；$|z|=p$ 已给出 $p$ 阶元，$|z|=pq$ 时
+\[
+|z^q|=\frac{pq}{\gcd(pq,q)}=p,
+\]
+也给出 $p$ 阶元。反设下只能 $|z|=q$。于是 $|G/\langle z\rangle|=pq/q=p$，商群循环。取 $x\notin\langle z\rangle$（因 $|G|=pq>q$），则 $x\langle z\rangle$ 的阶为 $p$，故 $x^p\in\langle z\rangle$。若 $x^p=1$，则 $x\ne1$ 且 $|x|=p$，矛盾。故 $x^p\ne1$；又 $p\mid|x|$（商中元素的阶整除原元素的阶），$|x|\mid pq$，所以 $|x|=pq$。这时
+\[
+|x^q|=\frac{pq}{\gcd(pq,q)}=p,
+\]
+再次矛盾。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 13/15  G129 下
+\begin{frame}[t]{四、\S7.2 详解 7/8：G129 $pq$ 阶群必有 $p$ 阶元（下）}
+\scriptsize
+\begin{block}{\footnotesize 情形 2：$Z(G)=1$}
+反设无 $p$ 阶元。每个 $1\ne x\in G$ 的阶属于 $\{p,q,pq\}$：阶 $p$ 被假设排除；阶 $pq$ 时 $x^q$ 的阶为 $p$，也被排除。故所有 $1\ne x$ 的阶都是 $q$。中心化子 $Z_G(x)$ 包含 $\langle x\rangle$（阶 $q$），且 $Z_G(x)\ne G$（否则 $x\in Z(G)=1$，矛盾）；又 $|Z_G(x)|\mid pq$，故
+\[
+|Z_G(x)|=q\qquad\Longrightarrow\qquad |C(x)|=[G:Z_G(x)]=\frac{pq}{q}=p.
+\]
+每个非中心类大小都是 $p$。类方程（$Z(G)=1$）为 $pq=1+kp$（$k$ 为非中心类个数），模 $p$ 得 $0\equiv1\pmod p$，矛盾。故 $G$ 必有 $p$ 阶元。
+\end{block}
+\begin{block}{\footnotesize 验算：几个具体群}
+$|G|=6$：$S_3$ 有 2 阶对换与 3 阶轮换；$C_6$ 有 2 阶元 $g^3$、3 阶元 $g^2$。\\
+$|G|=10$：$D_{10}$ 中 $r$ 的阶为 5（即使 $D_{10}$ 非交换），$s$ 的阶为 2。\\
+$|G|=15$：$C_{15}$ 中 $g^5$ 阶 3、$g^3$ 阶 5。\\
+$|G|=21$：$C_7\rtimes C_3$（非交换）中 $C_3$ 给出 3 阶元，$C_7$ 给出 7 阶元。
+\end{block}
+\footnotesize\color{ink!80}
+\starpt 易错：$p=q$ 必须单独处理；$Z\ne1$ 情形里要同时排除 $|z|=p$ 与 $|z|=pq$，$Z=1$ 情形里“中心化子真包含 $\langle x\rangle$”是得到 $|Z_G(x)|=q$ 的关键。
+\end{frame}
+
+% ------------------------------------------------------------ 14/15  LA200 上
+\begin{frame}[t]{四、\S7.2 详解 8/8：LA200 $GL_2$ 与 $SL_2$ 中的共轭（上）}
+\label{ex:LA200}
+\scriptsize
+\begin{block}{\footnotesize 题面（\ex{LA200}；Artin 2e, Ch.~7, \S7.2, Ex.~2.18，印刷 p.~222 / PDF p.~234）}
+Which pairs of matrices
+\[
+A_d=\begin{pmatrix}0&1\\-1&d\end{pmatrix},\qquad
+B_d=\begin{pmatrix}0&-1\\1&d\end{pmatrix}
+\]
+are conjugate elements of \textbf{(a)} $GL_n(\mathbb R)$, \textbf{(b)} $SL_n(\mathbb R)$?\\
+{\color{accent}\textbf{Source issue}：矩阵 $2\times2$ 而群印成 $GL_n/SL_n$；照录题面并按 $n=2$ 解。}
+\end{block}
+\key{思路}：先解出全部 intertwiner $P$：$PA_d=B_dP$；再按 $\det P$ 区分 $GL_2$ 与 $SL_2$。
+\begin{block}{\footnotesize 解方程 $PA_d=B_dP$}
+设 $P=\begin{pmatrix}a&b\\c&e\end{pmatrix}$，乘开得 $PA_d=\begin{pmatrix}-b&a+bd\\-e&c+ed\end{pmatrix}$，$B_dP=\begin{pmatrix}-c&-e\\a+dc&b+de\end{pmatrix}$；比较得 $c=b$、$e=-a-db$（后两式自动成立），故全部 intertwiner 为
+\[
+P=\begin{pmatrix}a&b\\b&-a-db\end{pmatrix},\qquad
+\det P=a(-a-db)-b^2=-(a^2+dab+b^2).
+\]
+\end{block}
+\begin{block}{\footnotesize (a) $GL_2(\mathbb R)$：对一切 $d$ 共轭}
+取 $(a,b)=(1,0)$ 得 $P=\operatorname{diag}(1,-1)$，$\det P=-1\ne0$，与 $d$ 无关；验算 $PA_d=\begin{pmatrix}0&1\\1&-d\end{pmatrix}=B_dP$，故对每个 $d\in\mathbb R$ 二者在 $GL_2(\mathbb R)$ 中共轭。
+\end{block}
+\end{frame}
+
+% ------------------------------------------------------------ 15/15  LA200 下
+\begin{frame}[t]{四、\S7.2 详解 8/8：LA200 $GL_2$ 与 $SL_2$ 中的共轭（下）}
+\scriptsize
+\begin{block}{\footnotesize (b) $SL_2(\mathbb R)$：当且仅当 $|d|>2$}
+需要 $\det P=1$，即 $q(a,b):=a^2+dab+b^2=-1$。配方得
+\[
+q(a,b)=\left(a+\frac d2b\right)^2-\frac{d^2-4}{4}\,b^2.
+\]
+按判别式 $d^2-4$ 分类：$|d|<2$ 时 $1-\frac{d^2}{4}>0$，$q$ 正定，取不到 $-1$；$d=\pm2$ 时 $q=(a\pm b)^2\ge0$，也取不到；$|d|>2$ 时 $q$ 不定，存在 $(a,b)$ 使 $q<0$，由 $q(ta,tb)=t^2q(a,b)$ 可缩放得 $q=-1$。故
+\[
+A_d\sim_{SL_2(\mathbb R)}B_d\iff|d|>2.
+\]
+\end{block}
+\begin{block}{\footnotesize 具体验算：$d=3$}
+$q(-1,1)=1-3+1=-1$，对应
+\[
+P=\begin{pmatrix}a&b\\b&-a-db\end{pmatrix}=\begin{pmatrix}-1&1\\1&-2\end{pmatrix},\qquad \det P=2-1=1\in SL_2,
+\]
+直接验算 $PA_3=\begin{pmatrix}-1&2\\2&-5\end{pmatrix}=B_3P$。边界 $|d|=2$：$q=(a\pm b)^2$，$q=-1$ 无实解，故 $A_2,B_2$ 在 $SL_2$ 中不共轭。
+\end{block}
+\footnotesize\color{ink!80}
+\starpt 易错：$P$ 的形式自动 $b=c$，可逆 $\iff q(a,b)\ne0$；$SL_2$ 要 $q=-1$（不是 $q<0$），而 $|d|>2$ 时 $q$ 不定、可缩放取到 $-1$。
+\end{frame}
+
+% ============================================================
+% 五、\S7.3 详解（G195--G198）
+% §7.3 逐题详细解答（G195--G198，4 题 8 帧）
+% ============================================================
+
+% ------------------------------------------------------------
+% 1/4  G195 不动点定理（上）：题面 + 完整证明
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 1/4：G195 不动点定理（上）}
+\label{ex:G195}
+\begin{block}{\footnotesize 题面（来源）}
+\scriptsize
+\textbf{Ex.~3.1（\ex{G195}；Artin 2e, Ch.~7, \S7.3, Ex.~3.1，印刷 p.~222 / PDF p.~234）}\ 
+证明 \textbf{Fixed Point Theorem 7.3.2}：设有限 $p$-群 $G$ 作用在有限集 $S$ 上，记不动点集
+$S^G=\{s\in S: gs=s\ \text{对一切}\ g\in G\}$，则
+\[ |S|\equiv |S^G|\pmod p;\qquad p\nmid |S|\ \Longrightarrow\ S^G\neq\varnothing. \]
+\end{block}
+{\footnotesize\key{思路}\ \ 把 $S$ 分解成轨道 $S=\bigsqcup_i O_i$。轨道大小由 orbit--stabilizer 给出，为 $[G:G_s]$，因而是 $p$ 的幂；单点轨道恰为不动点，其余轨道都被 $p$ 整除；把轨道大小相加即得同余，再由 $p\nmid|S|$ 推出非空。\par}
+{\footnotesize\key{详解}\ \ 设 $|G|=p^n$（$n\ge1$），$S=\bigsqcup_{i=1}^{r}O_i$，$O_i=Gs_i$，稳定化子 $G_{s_i}=\{g\in G:gs_i=s_i\}$。\par}
+\begin{enumerate}\setlength{\itemsep}{0.5pt}
+\scriptsize
+\item \textbf{轨道大小是 $p$ 的幂。} orbit--stabilizer 给出 $|O_i|=[G:G_{s_i}]=|G|/|G_{s_i}|$；由 Lagrange，$|G_{s_i}|=p^{k_i}$（$0\le k_i\le n$），故 $|O_i|=p^{\,n-k_i}$ 是 $p$ 的幂。
+\item \textbf{单点轨道 $=$ 不动点。} 因为
+\[ |O_i|=1\iff G_{s_i}=G\iff s_i\in S^G, \]
+故 $S^G$ 恰由 $|S^G|$ 个单点轨道组成。
+\item \textbf{其余轨道都被 $p$ 整除。} 若 $|O_i|>1$，则 $e_i:=n-k_i\ge1$，$|O_i|=p^{e_i}$，故 $p\mid |O_i|$。
+\item \textbf{求和得同余。} 分离单点轨道：
+\[ |S|=\sum_{i=1}^{r}|O_i|=|S^G|+\sum_{|O_i|>1}p^{e_i}\equiv |S^G|\pmod p. \]
+若 $p\nmid |S|$，则 $|S^G|\equiv |S|\not\equiv0\pmod p$，故 $|S^G|\neq0$，即 $S^G\neq\varnothing$。$\square$
+\end{enumerate}
+\end{frame}
+
+% ------------------------------------------------------------
+% 1/4  G195 不动点定理（下）：推论 + 具体例子 + 易错点
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 1/4：G195 不动点定理（下）}
+\begin{block}{\footnotesize 推论（共轭作用）：$p$-群的中心非平凡}
+\scriptsize
+取作用 $G\curvearrowright S=G$，$g\cdot x=gxg^{-1}$。其不动点集为
+\[ S^G=\{x\in G: gxg^{-1}=x\ \text{对一切}\ g\in G\}=Z(G). \]
+由定理（$|G|=p^n$）得 $|Z(G)|\equiv |G|=p^n\equiv0\pmod p$，故 $p\mid |Z(G)|$；又 $1\in Z(G)$，故 $|Z(G)|\ge p$：有限 $p$-群的中心非平凡。
+\end{block}
+{\footnotesize\key{具体例子（逐个代入）}\par}
+\begin{itemize}\setlength{\itemsep}{0pt}
+\scriptsize
+\item \textbf{$G=C_2=\langle(1\,2)\rangle$ 作用在 $S=\{1,2,3\}$：} 轨道为 $\{1,2\}$、$\{3\}$，故 $S^G=\{3\}$，
+\[ |S|=3\equiv1=|S^G|\pmod2; \]
+这里 $2\nmid3$，定理保证的不动点正是 $3$。
+\item \textbf{$G=Q_8$ 共轭作用在自身：} $Z(Q_8)=\{1,-1\}$，轨道分解为
+\[ Q_8=\{1\}\sqcup\{-1\}\sqcup\{i,-i\}\sqcup\{j,-j\}\sqcup\{k,-k\}, \]
+故 $|S^G|=|Z(Q_8)|=2$，$|S|=8\equiv2\pmod2$；注意 $2\mid8$，同余不提供新信息。
+\item \textbf{$G=D_4$ 作用在正方形顶点 $S=\{1,2,3,4\}$：} $D_4$ 在四个顶点上传递，故轨道只有一个 $S$；每个顶点的稳定化子是 $\{1,\text{过该顶点的反射}\}$，阶为 $2$，于是
+\[ |S|=[D_4:\text{stab}]=8/2=4,\qquad S^G=\varnothing. \]
+此与 $4\equiv0\pmod2$ 不矛盾，因为 $2\mid4$（定理只保证同余）。
+\end{itemize}
+{\footnotesize\color{ink!80}\starpt\ 两个易错点：(1) 定理给出的是\textbf{同余}，不是等式；$p\nmid|S|$ 时只保证\textbf{至少一个}不动点，不能保证更多（例如 $C_2$ 在 $\{1,2,3\}$ 上只有 $3$ 固定）。(2) 若 $p\mid|S|$ 则可能没有不动点：$D_4$ 在 $4$ 个顶点上无不动点，$C_2$ 交换 $\{1,2\}$ 也无。\par}
+\end{frame}
+
+% ------------------------------------------------------------
+% 2/4  G196 循环中心商迫使交换
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 2/4：G196 循环中心商迫使交换}
+\label{ex:G196}
+\begin{block}{\footnotesize 题面（来源）}
+\scriptsize
+\textbf{Ex.~3.2（\ex{G196}；Artin 2e, Ch.~7, \S7.3, Ex.~3.2，印刷 p.~222 / PDF p.~234）}\ 
+设 $Z=Z(G)$ 是群 $G$ 的中心。证明：若商群 $G/Z$ 是循环群，则 $G$ 是交换群，从而 $G=Z$。
+\end{block}
+{\footnotesize\key{思路}\ \ 设 $G/Z=\langle aZ\rangle$。商群中每个元素都是 $aZ$ 的幂，故 $G$ 中每个元素都能写成 $a^m z$（$z\in Z(G)$）。把中心元 $z,w$ 移到一起，即可交换任意 $x,y$。\par}
+{\footnotesize\key{详解}\ \ 设 $G/Z=\langle aZ\rangle$，其中 $a\in G$。\par}
+\begin{enumerate}\setlength{\itemsep}{0.5pt}
+\scriptsize
+\item \textbf{标准形。} 对任意 $x\in G$，有 $xZ\in G/Z=\langle aZ\rangle$，故存在 $m\in\mathbb Z$ 使 $xZ=a^mZ$，即 $a^{-m}x\in Z$。记 $z=a^{-m}x\in Z(G)$，则
+\[ x=a^m z,\qquad z\in Z(G). \]
+同理 $y=a^n w$，其中 $n\in\mathbb Z$，$w\in Z(G)$。
+\item \textbf{交换。} 利用 $z,w\in Z(G)$ 与所有元素交换（特别与 $a^n,a^m$ 交换）：
+\[ xy=a^m z\,a^n w=a^{m+n}zw=a^{n+m}wz=a^n w\,a^m z=yx. \]
+\item \textbf{结论。} 上式对一切 $x,y\in G$ 成立，故 $G$ 交换；于是 $Z(G)=G$，即 $Z=G$。$\square$
+\end{enumerate}
+{\footnotesize\key{逆命题与等价刻画}\ \ 若 $G$ 交换，则 $Z=G$，$G/Z$ 是平凡群，当然循环。因此
+\[ G/Z(G)\ \text{循环}\iff G\ \text{交换}. \]
+{\color{ink!80}\starpt}\ 条件中“$Z$”不能换成任意正规子群：$S_3/A_3\cong C_2$ 循环，但 $S_3$ 非交换（$(1\,2)(2\,3)=(1\,2\,3)\neq(1\,3\,2)=(2\,3)(1\,2)$）。证明失败处：$A_3$ 不中心（$Z(S_3)=1$），$z\in A_3$ 不能随意搬过 $a^n$。反过来 $Q_8/Z(Q_8)=Q_8/\{\pm1\}\cong V_4$ 非循环，与定理不矛盾：定理只断言“循环 $\Rightarrow$ 交换”，其逆否命题“非交换 $\Rightarrow G/Z$ 非循环”正被 $Q_8$ 满足。一般地，证明只用到 $N\subseteq Z(G)$，故有加强版：$N\le Z(G)$ 且 $G/N$ 循环 $\Rightarrow G$ 交换（因 $G/Z(G)$ 是 $G/N$ 的商群）。\par}
+\end{frame}
+
+% ------------------------------------------------------------
+% 3/4  G197 非交换 p^3 群（上）：(a)
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 3/4：G197 非交换 $p^3$ 群（上）}
+\label{ex:G197}
+\begin{block}{\footnotesize 题面（来源）}
+\scriptsize
+\textbf{Ex.~3.3（\ex{G197}；Artin 2e, Ch.~7, \S7.3, Ex.~3.3，印刷 p.~222 / PDF p.~234）}\ 
+设 $G$ 是非交换群，$|G|=p^3$，其中 $p$ 是素数。\\
+(a) 中心 $Z=Z(G)$ 的阶有哪些可能？\quad
+(b) 若 $x\in G$ 且 $x\notin Z$，则 $x$ 的中心化子 $Z(x)$ 的阶是多少？\quad
+(c) $G$ 的类方程有哪些可能？
+\end{block}
+{\footnotesize\key{思路}\ \ (a) 对共轭作用用 G195 得 $p\mid |Z|$，再用 G196 排除 $|Z|=p^2$；(b) 用 $Z\subseteq Z(x)\subseteq G$ 的严格夹逼；(c) 用轨道--稳定化子算非中心类大小，再数非中心元。\par}
+{\footnotesize\key{详解 (a)：中心阶只能是 $p$}\par}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\scriptsize
+\item \textbf{不动点定理给 $p\mid |Z|$。} 考虑共轭作用 $G\curvearrowright G$，$g\cdot x=gxg^{-1}$。其不动点集正是
+\[ S^G=\{x\in G:gxg^{-1}=x\ \text{对一切}\ g\in G\}=Z(G). \]
+由 G195（$|G|=p^3$）：
+\[ |Z|\equiv |G|=p^3\equiv0\pmod p,\qquad\text{故 }p\mid |Z|. \]
+\item \textbf{用 Lagrange 缩小范围。} $Z\le G$，故 $|Z|\mid|G|=p^3$；结合 $p\mid|Z|$ 得
+\[ |Z|\in\{p,\,p^2,\,p^3\}. \]
+\item \textbf{$|Z|=p^3$ 被排除。} $|Z|=p^3\iff Z=G\iff G$ 交换，与题设非交换矛盾。
+\item \textbf{$|Z|=p^2$ 被 G196 排除。} 若 $|Z|=p^2$，则 $|G/Z|=p^3/p^2=p$ 是素数阶群，必循环：任取 $aZ\neq Z$，由 Lagrange，$|\langle aZ\rangle|$ 整除 $p$ 且大于 $1$，故 $\langle aZ\rangle=G/Z$。由 G196，$G$ 交换，矛盾。
+\item 综上，非交换 $p^3$ 群的中心阶只能是
+\[ |Z|=p. \]
+\end{enumerate}
+\end{frame}
+
+% ------------------------------------------------------------
+% 3/4  G197 非交换 p^3 群（下）：(b)(c) + 数值核对
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 3/4：G197 非交换 $p^3$ 群（下）}
+\leavevmode{\footnotesize\key{详解 (b)：非中心元的中心化子阶为 $p^2$}\ \ 设 $x\notin Z=Z(G)$。因 $Z$ 中元素与一切元素交换，$Z\subseteq Z(x)$；又 $x\in Z(x)\setminus Z$，故 $Z\subsetneq Z(x)$；而 $x\notin Z(G)$ 给出 $g\in G$ 使 $gx\neq xg$，即 $g\notin Z(x)$，故 $Z(x)\subsetneq G$。由 Lagrange，$|Z(x)|\mid p^3$，且 $p=|Z|\mid|Z(x)|$，故 $|Z(x)|\in\{p,p^2,p^3\}$；严格夹逼 $p<|Z(x)|<p^3$ 迫使
+\[ |Z(x)|=p^2. \]
+\par}
+{\footnotesize\key{详解 (c)：类方程}\ \ 对 $x\notin Z$，共轭类 $C(x)=\{gxg^{-1}:g\in G\}$ 的大小为 $[G:Z(x)]$（轨道--稳定化子），故
+\[ |C(x)|=\frac{|G|}{|Z(x)|}=\frac{p^3}{p^2}=p. \]
+非中心元共 $|G|-|Z|=p^3-p$ 个，每个非中心类含 $p$ 个非中心元，故非中心类数为 $(p^3-p)/p=p^2-1$。中心类都是单点类，共 $|Z|=p$ 个，于是类方程
+\[ p^3=|Z|+(p^2-1)\cdot p=p+(p^2-1)p,\qquad p+(p^2-1)p=p+p^3-p=p^3.\qquad\square \]
+\par}
+{\footnotesize\key{数值核对}\ \ $p=2$：$8=2+3\cdot2=1+1+2+2+2$。$D_4$ 的类为 $\{1\},\{a^2\},\{a,a^3\},\{b,a^2b\},\{ab,a^3b\}$（大小 $1,1,2,2,2$）；$Q_8$ 的类为 $\{1\},\{-1\},\{i,-i\},\{j,-j\},\{k,-k\}$（同样 $1,1,2,2,2$）。$p=3$：$27=3+8\cdot3=1+1+1+3+\cdots+3$（$8$ 个 $3$），且 $3+8\cdot3=27$。\par}
+{\footnotesize\color{ink!80}\starpt\ 类方程的形状被 $p$ 锁定，与同构型无关：$p=2$ 时 $D_4$ 与 $Q_8$ 的类方程相同，故类方程不是完全不变量；区分它们需用别的量（对合个数，见 G198）。\par}
+\end{frame}
+
+% ------------------------------------------------------------
+% 4/4  G198 八阶群分类（上）：交换情形
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 4/4：G198 八阶群分类（上）}
+\label{ex:G198}
+\begin{block}{\footnotesize 题面（来源）}
+\scriptsize
+\textbf{Ex.~3.4（\ex{G198}；Artin 2e, Ch.~7, \S7.3, Ex.~3.4，印刷 p.~222 / PDF p.~234）}\ 
+分类所有 $8$ 阶群。\\
+\textbf{Lang I.35（Lang, \emph{Algebra}, rev.\ 3rd ed., Ch.~I, Groups, Ex.~35，印刷 p.~78 / PDF p.~93）}\ 
+证明恰有两个不同构的非交换 $8$ 阶群：$\langle\sigma,\tau\mid\sigma^4=1,\ \tau^2=1,\ \tau\sigma\tau=\sigma^3\rangle$ 与 quaternion group。
+\end{block}
+{\footnotesize\key{思路}\ \ 先按指数分类交换群；再设 $G$ 非交换，证明存在 $4$ 阶元 $a$，令 $H=\langle a\rangle$（指数 $2$，正规），取 $b\notin H$，由共轭作用定出 $bab^{-1}=a^{-1}$，再由 $b^2\in\{1,a^2\}$ 得到 $D_4$ 或 $Q_8$；最后用对合个数区分。\par}
+{\footnotesize\key{详解 1：交换情形恰有三个群}\ \ 设 $G$ 交换，$|G|=8$，记 $\operatorname{Exp}(G)=\operatorname{lcm}\{\operatorname{ord}(g):g\in G\}\in\{1,2,4,8\}$。\par}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\scriptsize
+\item \textbf{$\operatorname{Exp}(G)=8$：} 存在 $8$ 阶元 $a$，则 $|\langle a\rangle|=8=|G|$，故 $G=\langle a\rangle\cong C_8$。
+\item \textbf{$\operatorname{Exp}(G)=2$：} 每个 $g\neq1$ 满足 $g^2=1$，即 $g=g^{-1}$；于是 $G$（交换且每元自逆）可看作 $\mathbb F_2$-向量空间（加法即群运算），维数为 $\log_2 8=3$，故
+\[ G\cong\mathbb F_2^3=C_2\times C_2\times C_2=:C_2^3. \]
+\item \textbf{$\operatorname{Exp}(G)=4$：} 取阶为 $4$ 的元 $a$，令 $H=\langle a\rangle\cong C_4$，$[G:H]=2$。取 $b\notin H$，由 $|G/H|=2$ 得 $b^2\in H$，设 $b^2=a^j$（$0\le j\le3$）。若 $j=1,3$，则 $b^2$ 阶为 $4$，从而 $b$ 阶为 $8$，与 $\operatorname{Exp}(G)=4$ 矛盾；故 $b^2\in\{1,a^2\}$。
+  \begin{itemize}\setlength{\itemsep}{0pt}
+  \item 若 $b^2=a^2$，换用 $b'=ba\notin H$：$(ba)^2=b^2a^2=a^2a^2=a^4=1$。故不妨设 $b^2=1$。
+  \item 此时 $\langle b\rangle\cong C_2$，$H\cap\langle b\rangle=1$（$b\notin H$），且 $G$ 交换，故
+  \[ G=H\times\langle b\rangle\cong C_4\times C_2. \]
+  \end{itemize}
+\item 故交换 $8$ 阶群恰为 $C_8,\ C_4\times C_2,\ C_2^3$，指数分别为 $8,4,2$，两两不同构。
+\end{enumerate}
+\end{frame}
+
+% ------------------------------------------------------------
+% 4/4  G198 八阶群分类（中）：非交换情形与两种 presentation
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 4/4：G198 八阶群分类（中）}
+\leavevmode{\footnotesize\key{详解 2：非交换情形存在 $4$ 阶元}\ \ 设 $G$ 非交换，$|G|=8$。\par}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\scriptsize
+\item \textbf{指数不为 $2$。} 若每个非单位元都满足 $x^2=1$，则对任意 $x,y\in G$，$(xy)^2=1$，故
+\[ xy=(xy)^{-1}=y^{-1}x^{-1}=yx \]
+（用 $x^{-1}=x$、$y^{-1}=y$），$G$ 交换，矛盾。
+\item \textbf{存在 $4$ 阶元。} 由第 $1$ 步，$\operatorname{Exp}(G)\in\{4,8\}$。若 $\operatorname{Exp}(G)=8$，取 $8$ 阶元 $a$，则 $a^2$ 的阶为 $4$；若 $\operatorname{Exp}(G)=4$，直接取 $4$ 阶元。总之存在 $a\in G$ 使 $\operatorname{ord}(a)=4$。
+\item \textbf{指数 $2$ 的子群正规。} 令 $H=\langle a\rangle\cong C_4$。$[G:H]=8/4=2$，故 $H\trianglelefteq G$。取 $b\notin H$，则
+\[ G=H\sqcup bH,\qquad |H|=4,\ |bH|=4, \]
+特别地 $G=\langle a,b\rangle$ 且 $b^2\in H$，记 $b^2=a^k$（$0\le k\le3$）。
+\item \textbf{共轭作用定出 $bab^{-1}=a^{-1}$。} 共轭给出同态
+\[ \varphi:G\to\operatorname{Aut}(H)\cong\operatorname{Aut}(C_4)\cong C_2,\qquad \varphi(g)(h)=ghg^{-1}. \]
+因 $H$ 交换，$H\subseteq\ker\varphi$，故 $\varphi$ 通过 $G/H\cong C_2$ 分解；$H$ 的自同构为 $a\mapsto a^r$（$r=1,3$），故 $\operatorname{Aut}(H)=\{1,\ \text{求逆}\}$。若 $\varphi$ 平凡，则 $b$ 与 $H$ 中所有元素交换，而 $H$ 交换，于是 $G=\langle a,b\rangle$ 交换，矛盾。故 $\varphi(b)$ 是非平凡自同构，即
+\[ \varphi(b)(a)=bab^{-1}=a^{-1}\quad\left(\text{等价于 }ba=a^{-1}b\right). \]
+\item \textbf{$b^2$ 只能是 $1$ 或 $a^2$。} $b$ 与 $b^2=a^k$ 交换，故
+\[ a^k=b^2=b\,a^k\,b^{-1}=(bab^{-1})^k=(a^{-1})^k=a^{-k}, \]
+即 $a^{2k}=1$。因 $\operatorname{ord}(a)=4$，故 $4\mid 2k$，即 $k$ 为偶数，$k\in\{0,2\}$；于是
+\[ b^2=1\quad\text{或}\quad b^2=a^2. \]
+\end{enumerate}
+\end{frame}
+
+% ------------------------------------------------------------
+% 4/4  G198 八阶群分类（下）：验证 8 阶、区分、结论
+% ------------------------------------------------------------
+\begin{frame}[t]{五、\S7.3 详解 4/4：G198 八阶群分类（下）}
+\leavevmode{\footnotesize\key{详解 3：两个 presentation 各给出 $8$ 阶群}\par}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+\begin{block}{\footnotesize $b^2=1$：$D_4$}
+\scriptsize
+\[ \langle a,b\mid a^4=1,\ b^2=1,\ bab^{-1}=a^{-1}\rangle. \]
+正方形对称群取 $a=$ 旋转 $90^\circ$、$b=$ 一条反射，即满足全部关系，且该群恰有 $8$ 个元素，故这是 $8$ 阶群 $D_4$。
+\end{block}
+\end{column}
+\begin{column}{0.49\textwidth}
+\begin{block}{\footnotesize $b^2=a^2$：$Q_8$}
+\scriptsize
+\[ \langle a,b\mid a^4=1,\ b^2=a^2,\ bab^{-1}=a^{-1}\rangle. \]
+矩阵实现：$A=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$，$B=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$，则 $A^2=B^2=-I$，$BAB^{-1}=A^{-1}$，且 $\pm I,\pm A,\pm B,\pm AB$ 是 $8$ 个不同矩阵。
+\end{block}
+\end{column}
+\end{columns}
+{\footnotesize\key{标准形与阶}\ \ 由 $ba=a^{-1}b$，任何字都能化成 $a^i b^j$（$0\le i\le3$，$j=0,1$）：把 $b$ 逐个移过 $a$ 时把 $a$ 的指数取反并对 $4$ 取模。故每个 presentation 至多给出 $8$ 个元素；上面的具体实现又给出至少 $8$ 个（$D_4$ 的 $8$ 个对称、$Q_8$ 的 $8$ 个矩阵互异），所以都恰为 $8$ 阶。\par}
+{\footnotesize\key{区分 $D_4$ 与 $Q_8$}\ \ $D_4$ 中 $a^2,b,ab,a^2b,a^3b$ 都是对合：$b^2=1$，且 $(a^ib)^2=a^i b a^i b=a^i a^{-i} b^2=1$，故对合共 $1+4=5$ 个。$Q_8$ 中 $i^2=j^2=k^2=-1$，非中心元阶全为 $4$，唯一的对合是 $-1$，共 $1$ 个。对合个数不同，故 $D_4\ncong Q_8$；这同时说明 G197(c) 中相同的类方程 $1+1+2+2+2$ 不足以决定同构型。\par}
+{\footnotesize\key{结论}\ \ $8$ 阶群恰有 $5$ 个（两两不同构）：
+\[ C_8,\qquad C_4\times C_2,\qquad C_2^3,\qquad D_4,\qquad Q_8. \]
+交换的三个由指数 $8/4/2$ 区分；非交换的两个由对合数 $5/1$ 区分。Lang I.35 的结论与之一致：非交换 $8$ 阶群恰为 $D_4$（关系 $\tau\sigma\tau=\sigma^3$）与 quaternion group $Q_8$。\par}
+\end{frame}
+
+% ============================================================ 六、§7.4 T/O/I：总览 + G199--G207 逐题详解
+% §7.4 总览 + G199--G207 逐题详细解答（9 题 16 帧）
+
+\begin{frame}[t]{六、\S7.4 总览：$T,O,I$ 的旋转结构与类方程}
+\scriptsize
+\begin{block}{\footnotesize 三个旋转群的“身份证”}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}p{1.7cm}p{2.2cm}p{0.5cm}p{5.9cm}p{3.2cm}@{}}
+\toprule
+群 & 几何载体 & 阶 & 旋转轴结构（条数） & 类方程\\
+\midrule
+$T\cong A_4$ & 正四面体 & 12 & $4$ 条三重（顶点）$+3$ 条二重（对棱中点） & $12=1+3+4+4$\\
+$O\cong S_4$ & 立方体 / 正八面体 & 24 & $3$ 条四重（面心）$+4$ 条三重（体对角线）$+6$ 条二重（棱中点） & $24=1+6+3+8+6$\\
+$I\cong A_5$ & 正十二 / 二十面体 & 60 & $6$ 条五重（面心）$+10$ 条三重（顶点）$+15$ 条二重（棱中点） & $60=1+15+20+12+12$\\
+\bottomrule
+\end{tabular}
+\end{block}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+\begin{block}{\footnotesize 旋转轴 $\to$ 共轭类}
+$T$：$3$ 个半转一类；$8$ 个三阶旋转分成 $4+4$ 两类（$c$ 与 $c^{-1}$ 不共轭）。\\
+$O$：$6$ 个棱轴半转 $=$ 对换，$3$ 个面轴半转 $=$ 双对换，$8$ 个顶点轴 $\pm120^\circ=$ 3-轮换，$6$ 个面轴 $\pm90^\circ=$ 4-轮换。\\
+$I$：$15$ 个棱轴半转（双对换）一类，$20$ 个 3-轮换一类，$24$ 个五重旋转分成 $12+12$ 两类。
+\end{block}
+\end{column}
+\begin{column}{0.46\textwidth}
+\begin{block}{\footnotesize 正规子群清单}
+$T$：$V_4=\{1,$ 3 个半转$\}$；\\
+$O$：$V_4,\ A_4$（$A_4$ 指数 $2$）；\\
+$I$：无（$A_5$ 单）。\\[1pt]
+
+\starpt 这里 $T,O,I$ 都指\textbf{旋转群}：$|T|=12,|O|=24,|I|=60$；若允许反射，阶为 $24,48,120$，结论全变。
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 1/9：G199 内接立方体的稳定化子}
+\label{ex:G199}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G199}（Artin 2e, Ch.~7, \S7.4, Ex.~4.1，印刷 p.~222 / PDF p.~234）：The icosahedral group operates on the set of five inscribed cubes in the dodecahedron. Determine the stabilizer of one of the cubes.（正二十面体群 $I$ 作用在正十二面体的 $5$ 个内接立方体上，求一个立方体的稳定化子。）
+\end{block}
+\key{思路：}用一条五重轴上的 $72^\circ$ 旋转证明 $5$ 个立方体是一个轨道，轨道--稳定化子给出 $|\operatorname{Stab}|=12$；再把稳定化子忠实嵌入 $S_4$，认出 $A_4\cong T$。
+
+\key{详解：}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item 正十二面体内接 $5$ 个立方体：每个立方体用 $8$ 个十二面体顶点，而 $5\times8=40=2\times20$，故每个十二面体顶点恰属于 $2$ 个立方体。
+\item 取一对相对面心，连成五重轴；绕它转 $72^\circ$ 记作 $\rho$。\textbf{$\rho$ 循环置换这 $5$ 个立方体}：$\rho$ 的阶为 $5$，而立方体作为刚体的旋转群阶为 $24$，不含 $5$ 阶元，所以没有立方体被 $\rho$ 固定；$\langle\rho\rangle$ 的轨道长整除 $5$ 且不为 $1$，只能是 $5$。故 $I$ 在 $5$ 个立方体上传递。
+\item 轨道--稳定化子：$|\operatorname{Stab}_I(C)|=|I|/5=60/5=12$。
+\item 设 $H=\operatorname{Stab}_I(C)$。$H$ 中的旋转保持立方体 $C$，故 $H\le O$（$C$ 的旋转群，$|O|=24$），且 $H$ 作用在 $C$ 的 $4$ 条体对角线上。这个作用是忠实的：保持每条体对角线不动的旋转，其轴须与某条重合，而绕一条体对角线的 $120^\circ$ 旋转循环其余 $3$ 条，不逐条保持；故只有恒等。于是 $H\hookrightarrow S_4$。
+\item $|H|=12=|S_4|/2$：$H$ 在 $S_4$ 中指数 $2$，故正规，从而是符号映射的核 $A_4$（$S_4^{\mathrm{ab}}\cong C_2$）。所以 $\operatorname{Stab}_I(C)\cong A_4\cong T$（G204）；等价地，$A_5$ 的 $12$ 阶子群必为 $A_4$（指数为 $5$）。
+\end{enumerate}
+\key{验算：}$60=5\times12$；用标准坐标（$(\pm1,\pm1,\pm1)$ 及 $(0,\pm\frac1\varphi,\pm\varphi)$ 的三个循环置换）表示十二面体顶点：立方体的 $120^\circ$ 顶点轴旋转（坐标轮换）与 $180^\circ$ 面心轴旋转（两个坐标变号）都保持该顶点集，而 $90^\circ$ 面心轴旋转把 $(0,\frac1\varphi,\varphi)$ 送到 $(-\frac1\varphi,0,\varphi)$（不在集合中），故 $H$ 恰由 $1+3+8=12$ 个 $A_4$ 型旋转组成。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 2/9：G200 $S_5$ 的 proper 正规子群（上）}
+\label{ex:G200}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G200}（Artin 2e, Ch.~7, \S7.4, Ex.~4.2，印刷 p.~222 / PDF p.~234）：Is $A_5$ the only proper normal subgroup of $S_5$?
+\end{block}
+\key{先澄清“proper”：}“真子群”按字面包含平凡子群 $1$，而 $1\trianglelefteq S_5$ 也是真的正规子群，所以\textbf{字面答案是“否”}；本题的本意是“非平凡真正规子群”，此时答案是 $A_5$。下面按本意证明。
+
+\key{思路：}把 $N\trianglelefteq S_5$ 与 $A_5$ 相交，用 $A_5$ 单性把问题压成 $N\cap A_5=1$ 或 $A_5$ 两种情形；再用符号映射处理前一种情形。
+
+\key{详解：}设 $1\ne N\trianglelefteq S_5$。
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item $N\cap A_5\trianglelefteq A_5$：对 $a\in A_5$，$a(N\cap A_5)a^{-1}=aNa^{-1}\cap aA_5a^{-1}=N\cap A_5$。
+\item $A_5$ 单（本章已证的外部标准输入），故 $N\cap A_5\in\{1,A_5\}$。
+\item \textbf{情形 $N\cap A_5=A_5$}：即 $A_5\subseteq N$。由 $[S_5:N]$ 整除 $[S_5:A_5]=2$，得 $N=A_5$ 或 $N=S_5$。
+\item 指数 $2$ 的子群必正规：两个左陪集是 $H$ 与 $S_5\setminus H$，两个右陪集也是这两个，故 $gH=Hg$。下面处理 $N\cap A_5=1$（见下页）。
+\end{enumerate}
+\key{具体检查：}$S_5$ 的符号映射 $\operatorname{sgn}:S_5\to\{\pm1\}$ 的核正是 $A_5$；$A_5$ 正规也可以直接看：$\operatorname{sgn}(gag^{-1})=\operatorname{sgn}(a)=1$。
+
+\key{两种读法对照：}
+\begin{center}
+\begin{tabular}{@{}l l l@{}}
+\toprule
+读法 & 正规子群 & 是否只有 $A_5$\\
+\midrule
+字面：proper $=$ 真子群 & $1,\ A_5$ & 否（$1$ 也是真的）\\
+本意：非平凡真正规子群 & $A_5$ & 是\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 2/9：G200 $S_5$ 的 proper 正规子群（下）}
+\scriptsize
+
+\key{详解（续）：情形 $N\cap A_5=1$。}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item 符号映射限制在 $N$ 上：$\ker(\operatorname{sgn}|_N)=N\cap A_5=1$，故 $\operatorname{sgn}|_N$ 单射，$|N|\le2$。
+\item 若 $|N|=2$，写 $N=\{1,z\}$，$z$ 阶为 $2$。对任意 $g\in S_5$，$gzg^{-1}\in N$ 且阶为 $2$，故 $gzg^{-1}=z$，即 $z\in Z(S_5)$。
+\item 但 $Z(S_5)=1$：设 $z\ne1$ 中心，取 $i$ 使 $z(i)=j\ne i$；对任意对换 $(i\,k)$，$z(i\,k)z^{-1}=(z(i)\,z(k))=(i\,k)$，故 $\{z(i),z(k)\}=\{i,k\}$ 对一切 $k\ne i$ 成立。固定 $i$ 取两个不同的 $k$ 得 $z(i)=i$，与 $j\ne i$ 矛盾。故 $z=1$。
+\item 于是 $|N|=2$ 不可能，只能 $N=1$；但已设 $N\ne1$，矛盾。故情形 $N\cap A_5=1$ 不出现。
+\end{enumerate}
+\key{结论：}$S_5$ 的正规子群恰为 $1,\ A_5,\ S_5$；\textbf{非平凡真正规子群只有 $A_5$}，且 $S_5/A_5\cong C_2$。
+
+\key{具体非正规例：}$H=\langle(12)\rangle=\{1,(12)\}$ 不是正规子群：取 $g=(123)\in S_5$，
+\[ g(12)g^{-1}=(23)\notin H. \]
+\starpt 易错点：$A_5$ 的单性不能直接套到 $S_5$；本证明的两把钥匙是 $N\cap A_5$（正规性传递）与符号映射（把 $|N|$ 压到 $\le2$，再用中心排除 $2$）。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 3/9：G201 对合的中心化子}
+\label{ex:G201}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G201}（Artin 2e, Ch.~7, \S7.4, Ex.~4.3，印刷 p.~222 / PDF p.~234）：What is the centralizer of an element of order $2$ of the icosahedral group $I$?
+\end{block}
+\key{思路：}数出 $I$ 中阶 $2$ 元的共轭类大小 $15$，用 $|C(x)|=[I:Z_I(x)]$ 得 $|Z_I(x)|=4$；再在 $A_5$ 模型中具体认出这个 $4$ 阶群是 $V_4$。
+
+\key{详解：}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item $|I|=60$。$I$ 的阶 $2$ 元是半转：正二十面体有 $30$ 条棱，对棱两两配对成 $15$ 条二重轴，每条轴上一个 $180^\circ$ 半转，故恰有 $15$ 个对合。
+\item 取 $A_5$ 在 $5$ 个字母上的模型，对合即双对换型 $(ab)(cd)$，例如 $x=(12)(34)$。$S_5$ 中双对换共 $5!/(2^2\cdot2!)=15$ 个，全在 $A_5$ 中。$C_{S_5}(x)$ 阶为 $120/15=8$，且含奇置换 $(12)$，故 $C_{A_5}(x)=C_{S_5}(x)\cap A_5$ 阶为 $8/2=4$，于是 $A_5$ 中的类大小 $60/4=15$：$15$ 个对合\textbf{同属一个共轭类}。
+\item 类大小公式：$15=|I|/|Z_I(x)|=60/|Z_I(x)|$，故 $|Z_I(x)|=4$。
+\item 具体写出：$Z_I(x)=\{1,(12)(34),(13)(24),(14)(23)\}\cong V_4$。验证两两交换：
+\[ (12)(34)\cdot(13)(24)=(14)(23), \]
+且三者都是双对换、平方为 $1$，故生成 $C_2\times C_2$。（也可直接算 $C_{A_5}(x)=C_{S_5}(x)\cap A_5$，其中 $C_{S_5}(x)=\{1,(12),(34),(12)(34),(13)(24),(14)(23),(1324),(1423)\}$。）
+\end{enumerate}
+\key{几何解释：}取标准二十面体顶点 $(0,\pm1,\pm\varphi)$、$(\pm1,\pm\varphi,0)$、$(\pm\varphi,0,\pm1)$，则 $x,y,z$ 三条坐标轴都是二重轴（各穿过一对对棱的中点）；绕它们的 $180^\circ$ 半转都保持顶点集且两两交换，正是上述三个对合，故 $Z_I(x)\cong V_4$。
+
+\key{验算：}$15\times4=60$，类大小 $\times$ 中心化子阶 $=|I|$，自洽。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 4/9：G202 四面体群的类方程（上）}
+\label{ex:G202}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G202}（Artin 2e, Ch.~7, \S7.4, Ex.~4.4，印刷 p.~222 / PDF p.~234）：(a) Determine the class equation of the tetrahedral group $T$. (b) Prove that $T$ has a normal subgroup of order $4$, and no subgroup of order $6$.
+\end{block}
+\key{思路：}把 $T$ 的 $12$ 个旋转按“$4$ 个顶点上的置换”显式列出，按轮换型分类；关键是 $8$ 个 3-轮换在 $A_4$ 中分裂成两类。
+
+\key{详解（a）：}取正四面体顶点 $1,2,3,4$，$T\hookrightarrow S_4$。$12$ 个旋转的像为
+\[
+1;\quad (12)(34),(13)(24),(14)(23);\quad (123),(134),(142),(243);\quad (132),(143),(124),(234).
+\]
+即：恒等 $1$ 个；半转（绕对棱中点轴，$180^\circ$）$3$ 个，都是双对换；三阶旋转（绕顶点--对面心轴，$\pm120^\circ$）$8$ 个，即全部 3-轮换，分成两类各 $4$，第二类是第一类的逆。
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item \textbf{半转类}：$C_{A_4}((12)(34))=V_4=\{1,(12)(34),(13)(24),(14)(23)\}$ 阶 $4$，类大小 $12/4=3$；具体共轭：$(123)(12)(34)(123)^{-1}=(23)(14)$。
+\item \textbf{3-轮换类}：$C_{A_4}((123))=\langle(123)\rangle$ 阶 $3$，类大小 $12/3=4$；用 $4$ 个类代表共轭，$(123)$ 依次被送到 $(123),(142),(134),(243)$。
+\item \textbf{为何 $c=(123)$ 与 $c^{-1}=(132)$ 不共轭}：$S_4$ 中把 $c$ 送到 $c^{-1}$ 的置换恰是 $(12)c^k$（$k=0,1,2$），全为奇置换（$(12)$ 奇、$c^k$ 偶）；$A_4$ 中没有这样的元素，故 $c,c^{-1}$ 分属两类。
+\end{itemize}
+故 \[12=1+3+4+4.\]
+
+\key{验算：}中心化子阶分别为 $12/3=4$（双对换）、$12/4=3$（3-轮换）；元素计数 $1+3+8=12$。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 4/9：G202 四面体群的类方程（下）}
+\scriptsize
+
+\key{详解（b）：}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \textbf{4 阶正规子群。}$V_4=\{1\}\cup\{(12)(34),(13)(24),(14)(23)\}$ 恰是恒等类与半转类之并，故正规（正规子群 $\Leftrightarrow$ 共轭类之并）。具体验证：对 $g=(123)\in A_4$，$g(12)(34)g^{-1}=(23)(14)=(14)(23)\in V_4$；对 $g=(12)(34)\in V_4$ 显然保持 $V_4$。$|V_4|=1+3=4$。
+\item \textbf{没有 6 阶子群。}反设 $H\le T$，$|H|=6$，则 $[T:H]=2$，故 $H\trianglelefteq T$（指数 $2$ 的子群正规）。
+\item $H$ 正规且含 $1$，故 $H$ 是含 $1$ 的共轭类之并。类大小只有 $1,3,4,4$，于是
+\[ |H|=1+3a+4b+4c,\qquad a,b,c\in\{0,1\}. \]
+逐个列举：
+\[ 1,\quad 1+3=4,\quad 1+4=5,\quad 1+4+4=9,\quad 1+3+4=8,\quad 1+3+4+4=12, \]
+即可能值只有 $1,4,5,8,9,12$，没有 $6$，矛盾。故 $T$ 没有 $6$ 阶子群。
+\end{enumerate}
+\key{具体非正规例：}$\langle(123)\rangle=\{1,(123),(132)\}$ 不是正规子群：取 $g=(12)(34)\in A_4$，
+\[ g(123)g^{-1}=(214)=(142)\notin\langle(123)\rangle. \]
+\starpt 易错点：$6\mid12$ 不保证有 $6$ 阶子群；$A_4$ 的元素阶只有 $1,2,3$（轮换型 $1,2^2,3$），但“没有 6 阶元”本身不够——6 阶子群不必循环，必须用“指数 $2\Rightarrow$ 正规 $\Rightarrow$ 类之并”的论证。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 5/9：G203 八面体群的类方程（上）}
+\label{ex:G203}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G203}（Artin 2e, Ch.~7, \S7.4, Ex.~4.5，印刷 p.~223 / PDF p.~235）：(a) Determine the class equation of the octahedral group $O$. (b) This group contains two proper normal subgroups. Find them, show that they are normal, and show that there are no others.
+\end{block}
+\key{思路：}$O$ 是立方体的旋转群，$|O|=24$；它忠实作用在 $4$ 条体对角线上，共轭类 $=$ 轮换型。用 $|Z(\sigma)|=\prod_k k^{m_k}m_k!$ 逐类核验类大小。
+
+\key{详解（a）：}标号体对角线 $d_1,d_2,d_3,d_4$。$O\to S_4$ 的核平凡：保持每条体对角线不动的旋转只有恒等。于是 $O\hookrightarrow S_4$，$|O|=24=|S_4|$，故 $O\cong S_4$，共轭类 $=$ 轮换型：
+\begin{center}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}l l c c c@{}}
+\toprule
+旋转（轴 / 角度） & 体对角线上的置换型 & 个数 & $|Z|$ & 类大小\\
+\midrule
+恒等 & $1$ & $1$ & $24$ & $1$\\
+棱中点轴 $180^\circ$ & $(12)$ & $6$ & $2^1\cdot2=4$ & $6$\\
+面心轴 $180^\circ$ & $(12)(34)$ & $3$ & $2^2\cdot2!=8$ & $3$\\
+顶点轴 $\pm120^\circ$ & $(123)$ & $8$ & $3\cdot1=3$ & $8$\\
+面心轴 $\pm90^\circ$ & $(1234)$ & $6$ & $4$ & $6$\\
+\bottomrule
+\end{tabular}
+\end{center}
+具体置换（立方体顶点取 $(\pm1,\pm1,\pm1)$）：$180^\circ$ 绕棱中点轴 $(x,y,z)\mapsto(y,x,-z)$ 给出 $(d_1\,d_2)$；$180^\circ$ 绕面心轴 $(x,y,z)\mapsto(-x,-y,z)$ 给出 $(d_1d_2)(d_3d_4)$；$90^\circ$ 绕面心轴 $(x,y,z)\mapsto(-y,x,z)$ 给出 $(d_1d_4d_2d_3)$；$120^\circ$ 绕体对角线 $d_1$ 给出 $(d_1)(d_2d_3d_4)$。
+故 \[24=1+6+3+8+6.\]
+
+\key{验算：}中心化子阶 $24/6=4$、$24/3=8$、$24/8=3$、$24/6=4$ 与上表一致；个数和 $1+6+3+8+6=24$。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 5/9：G203 八面体群的类方程（下）}
+\scriptsize
+
+\key{详解（b）：}设 $N\trianglelefteq O$。正规子群是共轭类之并且含 $1$，故
+\[ |N|=1+3b+8c+6d,\qquad b,c\in\{0,1\},\ d\in\{0,1,2\}, \]
+其中两个 $6$ 分别是棱轴半转（对换）类与面轴 $90^\circ$（4-轮换）类。逐个列出所有含 $1$ 的子集和：
+\begin{center}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{@{}c l@{}}
+\toprule
+$d$ & 和\\
+\midrule
+$0$ & $1,\ 4,\ 9,\ 12$\\
+$1$ & $7,\ 10,\ 15,\ 18$\\
+$2$ & $13,\ 16,\ 21,\ 24$\\
+\bottomrule
+\end{tabular}
+\end{center}
+即 $\{1,4,7,9,10,12,13,15,16,18,21,24\}$；其中整除 $24$ 的只有 $1,4,12,24$。由 Lagrange，$|N|\mid24$，故 $|N|\in\{1,4,12,24\}$：
+\begin{itemize}\setlength{\itemsep}{1pt}
+\item $|N|=4$：只能是 $1+3$，即 $V_4=\{1\}\cup\{3$ 个面轴半转$\}$；
+\item $|N|=12$：只能是 $1+3+8$，即 $A_4=V_4\cup\{8$ 个顶点轴 $\pm120^\circ$ 旋转$\}$；
+\item $|N|=1$ 或 $24$ 是平凡情形。
+\end{itemize}
+所以真正的正规子群恰为 $V_4$ 与 $A_4$。两者都正规：$V_4$ 是两个类之并；$A_4$ 是 $S_4$ 的指数 $2$ 子群（符号映射的核）。
+
+\key{具体共轭验证：}取 $g=(1234)$（面心轴 $90^\circ$，奇置换），$g(12)(34)g^{-1}=(23)(41)=(14)(23)\in V_4$，$g(123)g^{-1}=(234)\in A_4$。
+
+\key{几何对应：}$V_4$ 是恒等 $+$ 三个面轴半转；$A_4$ 是保持一个内接四面体的旋转，指数 $2$ 对应两个内接四面体。
+
+\starpt 易错点：两个 $6$ 元类完全不同（棱轴半转 $=$ 对换，面轴 $90^\circ=$ 4-轮换），不能合并理解；类之并必须同时是子群，子集和只用来筛掉不可能阶。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 6/9：G204 $T\cong A_4$、$O\cong S_4$（上）}
+\label{ex:G204}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G204}（Artin 2e, Ch.~7, \S7.4, Ex.~4.6，印刷 p.~223 / PDF p.~235）：(a) Prove that the tetrahedral group $T$ is isomorphic to $A_4$, and that the octahedral group $O$ is isomorphic to $S_4$. (b) Two tetrahedra can be inscribed into a cube $C$, each one using half the vertices. Relate this to the inclusion $A_4\subset S_4$.
+\end{block}
+\key{思路：}两个群各找一个 $4$ 元集上的忠实作用，比较阶：$T\hookrightarrow S_4$ 的像落在 $A_4$ 且同阶；$O\hookrightarrow S_4$ 且 $|O|=|S_4|$。
+
+\key{详解（a）：}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \textbf{$T\cong A_4$。}$T$ 作用在正四面体的 $4$ 个顶点上。忠实：非恒等旋转至少移动一个顶点。按类型：三阶旋转（顶点轴 $\pm120^\circ$）固定 $1$ 个顶点、循环其余 $3$ 个，给出 3-轮换；半转（对棱中点轴 $180^\circ$）无固定顶点，给出双对换；恒等给 $1$。这些都是偶置换，故像 $\le A_4$；$|T|=12=|A_4|$，故 $T\cong A_4$。
+\item \textbf{$O\cong S_4$。}$O$ 作用在立方体的 $4$ 条体对角线上。核平凡：由下表逐类型检查，每种非恒等旋转在 $4$ 条对角线上都留下非恒等置换。故 $O\hookrightarrow S_4$；$|O|=24=|S_4|$，故 $O\cong S_4$。
+\end{enumerate}
+\key{旋转类型 $\leftrightarrow$ 轮换型：}
+\begin{center}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{@{}l c c c@{}}
+\toprule
+旋转类型 & 个数 & 体对角线置换 & 轮换型\\
+\midrule
+恒等 & $1$ & $1$ & $1$\\
+棱中点轴 $180^\circ$ & $6$ & $(12)$ & $2\cdot1^2$\\
+面心轴 $180^\circ$ & $3$ & $(12)(34)$ & $2^2$\\
+顶点轴 $\pm120^\circ$ & $8$ & $(123)$ & $3\cdot1$\\
+面心轴 $\pm90^\circ$ & $6$ & $(1234)$ & $4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 6/9：G204 $T\cong A_4$、$O\cong S_4$（下）}
+\scriptsize
+
+\key{详解（b）：}把立方体放成 $(\pm1,\pm1,\pm1)$。两个内接正四面体为
+\[
+T_+=\{(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)\}\ (xyz=1),\quad T_-=\{-v:v\in T_+\}\ (xyz=-1).
+\]
+每个四面体从立方体的 $8$ 个顶点中取 $4$ 个交错顶点，棱长 $2\sqrt2$；并且从每条体对角线（顶点对 $\pm v$）中恰取一个端点。
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item $O$ 作用在 $\{T_+,T_-\}$ 上。$90^\circ$ 面心轴旋转 $(x,y,z)\mapsto(-y,x,z)$ 是 4-轮换（奇），它把 $(1,1,1)\mapsto(-1,1,1)$、$(1,-1,-1)\mapsto(1,1,-1)$、$(-1,1,-1)\mapsto(-1,-1,-1)$、$(-1,-1,1)\mapsto(1,-1,1)$，像全在 $T_-$，故 $T_+\mapsto T_-$：作用传递，轨道大小 $2$。
+\item 轨道--稳定化子：$|\operatorname{Stab}_O(T_+)|=24/2=12$，指数 $2$，故 $\operatorname{Stab}_O(T_+)\trianglelefteq O$，且只能是 $S_4$ 的指数 $2$ 子群 $A_4$。
+\item 直接验证 $A_4\le\operatorname{Stab}_O(T_+)$：$180^\circ$ 面心轴旋转 $(x,y,z)\mapsto(-x,-y,z)$ 是双对换（偶），$(1,1,1)\mapsto(-1,-1,1)\in T_+$，$(1,-1,-1)\mapsto(-1,1,-1)\in T_+$，故保持 $T_+$；$120^\circ$ 顶点轴旋转 $(x,y,z)\mapsto(y,z,x)$ 是 3-轮换（偶），把 $T_+$ 的四个顶点仍送到 $T_+$。两者生成 $A_4$（$1+3+8=12$）。
+\item 于是 $\operatorname{Stab}_O(T_+)=A_4$，奇置换交换两个四面体。
+\end{enumerate}
+\key{结论：}$A_4\cong T$ 正是 $T_+$ 的稳定化子，$S_4\cong O$ 是全部旋转；$A_4\subset S_4$ 的指数 $2$ 包含，几何上就是“保持一个内接四面体 vs 交换两个内接四面体”。这也解释了为什么 $T$ 是 $O$ 的子群。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 7/9：G205 小次数作用迫使正规子群}
+\label{ex:G205}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G205}（Artin 2e, Ch.~7, \S7.4, Ex.~4.7，印刷 p.~223 / PDF p.~235）：Let $G$ be a group of order $n$ that operates nontrivially on a set of order $r$. Prove that if $n>r!$, then $G$ has a proper normal subgroup.
+\end{block}
+\key{思路：}非平凡作用给同态 $\varphi:G\to S_r$；核自动正规，只要证明它既真又非平凡。
+
+\key{详解：}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item 取 $r$ 元集 $X$，作用给出同态 $\varphi:G\to S_r$。
+\item 作用非平凡 $\Rightarrow$ 存在 $g\in G$、$x\in X$ 使 $gx\ne x$ $\Rightarrow$ $\varphi(g)\ne1$，即 $\varphi$ 非平凡，故 $\ker\varphi\ne G$：核是真的。
+\item 若 $\ker\varphi=1$，则 $\varphi$ 单射，$n=|G|=|\varphi(G)|\le|S_r|=r!$，与 $n>r!$ 矛盾。故 $\ker\varphi\ne1$。
+\item 核 $\ker\varphi\trianglelefteq G$ 既真又非平凡，就是所求的真正规子群。$\square$
+\end{enumerate}
+\key{具体例子：}$S_3$ 作用在 $A_3$ 的 $2$ 个左陪集 $\{A_3,(12)A_3\}$ 上，$r=2$，$n=6>2!=2$。逐个算：$(123)\cdot A_3=A_3$，$(123)\cdot(12)A_3=(123)(12)A_3=(13)A_3=(12)A_3$（$A_3$ 正规）；而 $(12)\cdot A_3=(12)A_3$，$(12)\cdot(12)A_3=A_3$。故 $(12)$ 交换两个陪集、$A_3$ 逐点固定，这正是符号同态 $\operatorname{sgn}:S_3\to S_2$，核 $\ker(\operatorname{sgn})=A_3=\{1,(123),(132)\}$，阶 $3$，是真正规子群。
+
+\key{边界不可省：}$A_5$ 忠实地作用在 $5$ 个点上（例如作用在 $A_4$ 的 $5$ 个左陪集上），$n=60\le5!=120$，核为 $1$，$A_5$ 单，没有真正规子群。可见条件 $n>r!$ 不能减弱。
+
+\starpt 易错点：非平凡 $\ne$ 忠实；核真 $\Leftrightarrow$ 像非平凡；$r!$ 是 $|S_r|$，不是 $r$。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 8/9：G206 中心能有多大（上）}
+\label{ex:G206}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G206}（Artin 2e, Ch.~7, \S7.4, Ex.~4.8，印刷 p.~223 / PDF p.~235）：(a) Suppose that the centralizer $Z(x)$ of a group element $x$ has order $4$. What can be said about the center of the group? (b) Suppose that the conjugacy class $C(y)$ of an element $y$ has order $4$. What can be said about the center of the group?
+\end{block}
+\key{思路：}中心总在中心化子里面：$Z(G)\subseteq Z(x)$；对 (b) 再用 $|C(y)|=[G:Z(y)]$ 把“类大小”翻译成“中心化子的指数”。
+
+\key{详解（a）：}$Z(G)\subseteq Z(x)$，由 Lagrange 定理 $|Z(G)|\mid|Z(x)|=4$，故
+\[ |Z(G)|\in\{1,2,4\}. \]
+进一步，若 $|Z(G)|=4$，则 $Z(G)=Z(x)$；若还有 $x\in Z(G)$，则 $Z(x)=G$，于是 $|G|=4$ 且 $G$ 交换。
+\begin{center}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}l l l l@{}}
+\toprule
+$G$ & $x$ & $Z(x)$（阶 $4$） & $Z(G)$\\
+\midrule
+$C_4$ & 生成元 $r$ & $C_4$ & $C_4$（阶 $4$）\\
+$D_4$ & 旋转 $r$（$90^\circ$） & $\langle r\rangle\cong C_4$ & $\langle r^2\rangle\cong C_2$（阶 $2$）\\
+$S_4$ & $(12)$ & $\{1,(12),(34),(12)(34)\}\cong C_2\times C_2$ & $1$（阶 $1$）\\
+\bottomrule
+\end{tabular}
+\end{center}
+具体：$D_4=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle$，$srs^{-1}=r^{-1}\ne r$，故 $s\notin Z(r)$，而 $r^k$ 互相交换，故 $Z(r)=\langle r\rangle$；$Z(D_4)=\langle r^2\rangle$。$S_4$ 中与 $(12)$ 交换的置换必须保持 $\{1,2\},\{3,4\}$ 各自不变，故 $Z((12))=\{1,(12),(34),(12)(34)\}$，而 $Z(S_4)=1$。
+
+\key{结论：}(a) 只能得到 $|Z(G)|\in\{1,2,4\}$，三个值都取得到。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 8/9：G206 中心能有多大（下）}
+\scriptsize
+
+\key{详解（b）：}类大小公式给出
+\[ |C(y)|=[G:Z(y)]=4. \]
+又 $Z(G)\subseteq Z(y)$（中心元与 $y$ 交换），于是指标可乘：
+\[ [G:Z(G)]=[G:Z(y)]\,[Z(y):Z(G)]=4\,[Z(y):Z(G)], \]
+故 $4\mid[G:Z(G)]$。这是 (b) 能给出的统一约束：$Z(G)\subseteq Z(y)$，且中心的指数被 $4$ 整除；$|Z(G)|$ 本身不确定（只知道 $|Z(G)|$ 整除 $|Z(y)|=|G|/4$）。
+
+\key{可达例子（均 $|C(y)|=4$）：}
+\begin{center}
+\renewcommand{\arraystretch}{1.06}
+\begin{tabular}{@{}l l c c c@{}}
+\toprule
+$G$ & $y$ & $|Z(y)|$ & $|Z(G)|$ & $[G:Z(G)]$\\
+\midrule
+$A_4$ & $(123)$ & $3$ & $1$ & $12=4\cdot3$\\
+$A_4\times C_2$ & $((123),1)$ & $6$ & $2$ & $12=4\cdot3$\\
+$A_4\times C_4$ & $((123),1)$ & $12$ & $4$ & $12=4\cdot3$\\
+\bottomrule
+\end{tabular}
+\end{center}
+验算第一行：$A_4$ 中 $(123)$ 的类大小 $4$，$Z_{A_4}((123))=\langle(123)\rangle$ 阶 $3$；第二行 $Z(y)=\langle(123)\rangle\times C_2$ 阶 $6$，$24/6=4$；第三行 $Z(y)=\langle(123)\rangle\times C_4$ 阶 $12$，$48/12=4$。
+
+\starpt 易错点：(b) \textbf{不能}推出 $|Z(G)|\in\{1,2,4\}$：取 $G=A_4\times C_3$、$y=((123),1)$，则 $|Z(y)|=9$、$|C(y)|=36/9=4$，而 $|Z(G)|=|1\times C_3|=3$。所以 (a) 的 $\{1,2,4\}$ 是 (a) 的结论，不能照搬到 (b)；两问的结论类型不同：(a) 限制 $|Z(G)|$，(b) 限制 $[G:Z(G)]$。
+\end{frame}
+
+\begin{frame}[t]{六、\S7.4 详解 9/9：G207 半素数阶中心化子交换}
+\label{ex:G207}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源）}
+\ex{G207}（Artin 2e, Ch.~7, \S7.4, Ex.~4.9，印刷 p.~223 / PDF p.~235）：Let $x$ be an element of a group $G$, not the identity, whose centralizer $Z(x)$ has order $pq$, where $p$ and $q$ are primes. Prove that $Z(x)$ is abelian.
+\end{block}
+\key{思路：}令 $C=Z(x)$。关键事实：$x\in Z(C)$，即 $\langle x\rangle\subseteq Z(C)$；再按 $|x|$ 的三种可能把 $C$ 或 $C/Z(C)$ 逼成循环。
+
+\key{详解：}令 $C=Z_G(x)$，$|C|=pq$，$x\ne1$。
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \textbf{$p=q$。}$|C|=p^2$，而 $p^2$ 阶群交换：由类方程 $|C|=|Z(C)|+\sum[C:Z(c_i)]$，每个 $[C:Z(c_i)]$ 被 $p$ 整除，故 $p\mid|Z(C)|$，$|Z(C)|\in\{p,p^2\}$；若 $|Z(C)|=p$，则 $C/Z(C)$ 是 $p$ 阶循环群，由引理 G196 得 $C$ 交换，矛盾。故 $C$ 交换。
+\item \textbf{$p\ne q$。}每个 $c\in C$ 都与 $x$ 交换，故 $x\in Z(C)$，$\langle x\rangle\subseteq Z(C)$。因 $x\ne1$ 且 $|x|\mid pq$，$|x|\in\{p,q,pq\}$。
+\item 若 $|x|=pq$：$|\langle x\rangle|=|C|$，故 $C=\langle x\rangle$ 循环，交换。
+\item 若 $|x|=p$（或 $q$）：$[C:\langle x\rangle]=q$（或 $p$）是素数，故 $C/\langle x\rangle$ 循环。由 $\langle x\rangle\subseteq Z(C)$，$C/Z(C)\cong(C/\langle x\rangle)/(Z(C)/\langle x\rangle)$ 是循环群的商，故 $C/Z(C)$ 循环；由引理 G196，$C$ 交换。
+\end{enumerate}
+\key{引理 G196：}若 $G/Z(G)$ 循环，则 $G$ 交换。证明：设 $G/Z(G)=\langle Z(G)g\rangle$，任意元素形如 $zg^k$（$z\in Z(G)$），两个这样的元素相乘可交换。
+
+\key{具体例子：}$12$ 阶二面体 $D_6=\langle r,s\mid r^6=s^2=1,\ srs=r^{-1}\rangle$ 中取 $x=r$：$Z(r)=\langle r\rangle\cong C_6$，$6=2\cdot3$ 是半素数，且 $\langle r\rangle$ 交换。验算：与 $r$ 交换的只有 $r^k$；反射 $r^ks$ 满足 $(r^ks)r(r^ks)^{-1}=r^{-1}\ne r$，故 $|Z(r)|=6$。
+
+\starpt 推论：$S_3$ 中非恒等元的中心化子阶只能是 $2$ 或 $3$，绝不等于 $6$：若有 $|Z(x)|=6=|S_3|$，则 $Z(x)=S_3$，由 G207 得 $S_3$ 交换，矛盾。
+\end{frame}
+
+% ============================================================
+% §7.5 工具页 + 逐题详细解答（G208--G214，7 题 13 帧；含 2026-10-18 三题）
+% ============================================================
+
+% ------------------------------------------------------------
+% 工具页：轮换型中心化子公式
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 工具：轮换型中心化子公式 $|Z(\sigma)|=\prod_k k^{m_k}m_k!$}
+\scriptsize
+\begin{columns}[T,onlytextwidth]
+  \begin{column}{0.53\textwidth}
+    \begin{block}{\footnotesize 证明：与 $\sigma$ 交换的置换如何计数}
+      \scriptsize
+      设 $\sigma$ 的轮换型为 $1^{m_1}2^{m_2}\cdots n^{m_n}$，即 $\sum_k k\,m_k=n$。
+      \begin{enumerate}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+        \item \key{保型.} 设 $\gamma=(a_1\,a_2\cdots a_k)$ 是 $\sigma$ 的一个 $k$-轮换。由 $\tau\sigma=\sigma\tau$，
+        \[ \sigma(\tau(a_i))=\tau(\sigma(a_i))=\tau(a_{i+1}), \]
+        故 $(\tau(a_1)\cdots\tau(a_k))$ 也是 $\sigma$ 的 $k$-轮换，且 $\tau$ 把 $\gamma$ 送到它。于是 $\tau$ 置换每个长度 $k$ 的轮换的集合。
+        \item \key{计数.} 对固定的 $k$：先把 $m_k$ 个 $k$-轮换整体重排，有 $m_k!$ 种；再为每个 $k$-轮换选其像轮换上的起点（旋转量），每个 $k$ 种，共 $k^{m_k}$ 种。不同长度的轮换互不影响，各 $k$ 的选择独立相乘。
+      \end{enumerate}
+      故
+      \[ |Z(\sigma)|=\prod_{k=1}^{n}k^{m_k}m_k!, \]
+      且 $Z(\sigma)\cong\prod_k(C_k\wr S_{m_k})$（圈积）。
+    \end{block}
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \begin{block}{\footnotesize 推论与两个数值例}
+      \scriptsize
+      轨道--稳定化子 $|C(\sigma)|=[S_n:Z(\sigma)]$ 给出共轭类大小
+      \[ |C(\sigma)|=\frac{n!}{\prod_k k^{m_k}m_k!}. \]
+      \key{例 1} $\sigma=(12)\in S_5$，型 $2\cdot1^3$：
+      \[ |Z|=2^1\cdot1!\cdot1^3\cdot3!=12, \]
+      \[ |C|=120/12=10. \]
+      \key{例 2} $\sigma=(153)(246)\in S_7$，型 $3^2\cdot1$：
+      \[ |Z|=3^2\cdot2!\cdot1=18, \]
+      \[ |C|=5040/18=280. \]
+      \starpt 两例的显式中心化子分别在 G209、G211 两页。
+    \end{block}
+  \end{column}
+\end{columns}
+\end{frame}
+
+% ------------------------------------------------------------
+% G208 上：(a) 相邻对换生成一切对换
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 1/7：G208 相邻对换生成 $S_n$（上）}
+\label{ex:G208}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G208}）}
+\scriptsize
+\ex{G208}（Artin 2e, Ch.~7, \S7.5, Ex.~5.1，印刷 p.~223 / PDF p.~235）；另注 Lang I.38（Ch.~I, Groups, Ex.~38，印刷 pp.~78--79 / PDF pp.~93--94）。\\
+\key{Artin 5.1.} (a) 证明 $(12),(23),\ldots,(n-1,n)$ 生成 $S_n$。(b) 写出 $(1\,2\cdots n)$ 需要多少个对换。(c) 证明 $(1\,2\cdots n)$ 与 $(12)$ 生成 $S_n$。\\
+\key{Lang I.38.} (a) $(12),(13),\ldots,(1n)$ 生成 $S_n$；(b) $(12),(23),\ldots,(n-1,n)$ 生成 $S_n$；(c) $(12)$ 与 $(1\,2\cdots n)$ 生成 $S_n$；(d) $n$ 为素数时，$(1\,2\cdots n)$ 与任意对换 $(rs)$ 生成 $S_n$。
+\end{block}
+\key{思路.} 先造相邻对换，再用两条通道：共轭 $=$ 换标签；$k$-轮换 $=$ 对换之积。
+
+\key{(a) 相邻对换生成一切对换.} 设 $i<j$，沿链“去而复返”（中间的 $(j-1,j)$ 只乘一次；$j=i+1$ 时回程为空）：
+\[
+(i\,j)=\underbrace{(i,i+1)(i+1,i+2)\cdots(j-1,j)}_{\text{去程}}\;\underbrace{(j-2,j-1)\cdots(i+1,i+2)(i,i+1)}_{\text{回程}}.
+\]
+记 $P=(i,i+1)(i+1,i+2)\cdots(j-2,j-1)$（沿链走到 $j-1$），则上式即 $P\,(j-1,j)\,P^{-1}$：$P$ 把 $j-1$ 沿链退回 $i$、固定 $j$，故共轭结果为 $(i\,j)$。以 $n=5,\ i=1,\ j=4$ 具体验证：
+\[ (14)=(12)(23)(34)(23)(12):\quad 1\mapsto2\mapsto3\mapsto4,\quad 4\mapsto3\mapsto2\mapsto1, \]
+而 $2,3$ 各被换两次复原，故右边确为 $(14)$。于是每个对换都是相邻对换之积；又任一 $\sigma$ 是不相交轮换之积，而
+\[ (a_1\,a_2\cdots a_k)=(a_1a_k)(a_1a_{k-1})\cdots(a_1a_3)(a_1a_2), \]
+每个对换再用上式写成相邻对换，故 $\sigma\in\langle(12),(23),\ldots,(n-1,n)\rangle$，即相邻对换生成 $S_n$。$\square$
+\end{frame}
+
+% ------------------------------------------------------------
+% G208 中：(b) n-1 个对换；(c) 长轮换 + (12)
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 1/7：G208 相邻对换生成 $S_n$（中）}
+\scriptsize
+\setlength{\parskip}{1pt}
+\key{(b) $(1\,2\cdots n)$ 恰需 $n-1$ 个对换.} 上界是显式分解
+\[ (1\,2\cdots n)=(12)(23)\cdots(n-1,n), \]
+（$n=4$ 时逐点追踪：$1\mapsto2\mapsto3\mapsto4$，$4\mapsto1$，中间点随链移动，即 $(1234)$）。\\
+下界：对任意置换 $\tau$，记 $\kappa(\tau)$ 为其轮换分解中的轮换个数（不动点算 $1$-轮换）。用对换 $(ab)$ 右乘 $\tau$：
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+  \item 若 $a,b$ 在 $\tau$ 的不同轮换中，则两轮换合并，$\kappa(\tau(ab))=\kappa(\tau)-1$；
+  \item 若 $a,b$ 在 $\tau$ 的同一轮换中，则一个轮换裂成两个，$\kappa(\tau(ab))=\kappa(\tau)+1$。
+\end{itemize}
+故每乘一个对换，$\kappa$ 恰改变 $1$。恒等置换 $\kappa=n$，$n$-轮换 $\kappa=1$，从 $n$ 降到 $1$ 至少要 $n-1$ 步；结合上界，恰为 $n-1$ 个。\\
+\key{(c) 长轮换 $c=(1\,2\cdots n)$ 与 $(12)$ 生成 $S_n$.} 用共轭公式 $\tau(ab)\tau^{-1}=(\tau(a)\,\tau(b))$，取 $\tau=c^{i-1}$（它把 $x\mapsto x+i-1$，下标模 $n$）：
+\[ c^{\,i-1}(12)c^{-(i-1)}=(i,\,i+1),\qquad i=1,\ldots,n-1. \]
+$n=5$ 时显式为 $(12),(23),(34),(45)$。全部相邻对换都属 $\langle c,(12)\rangle$，由 (a) 它等于 $S_n$。$\square$
+
+\key{Lang (a) 星形对换.} 对 $2\le i<j\le n$：
+\[ (ij)=(1i)(1j)(1i), \]
+逐点验证：$1\mapsto i\mapsto i\mapsto1$，$i\mapsto1\mapsto j\mapsto j$，$j\mapsto j\mapsto1\mapsto i$，其余点不动。故一切对换都是星形对换之积；对换生成 $S_n$，所以 $(12),(13),\ldots,(1n)$ 生成 $S_n$。另一方向 $(1j)=(1,j-1)(j-1,j)(1,j-1)$（$j=3,\ldots,n$），从 $(12)$ 归纳知星形对换都属 $\langle(12),\ldots,(n-1,n)\rangle$，两生成系等价。
+\end{frame}
+
+% ------------------------------------------------------------
+% G208 下：Lang (a)-(d) 与素数条件反例
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 1/7：G208 相邻对换生成 $S_n$（下）}
+\scriptsize
+\setlength{\parskip}{1pt}
+\key{Lang (b)(c).} (b) 与 Artin (a) 相同；(c) 与 Artin (c) 相同，证明照搬。\\
+\key{Lang (d) $n$ 素数：$c=(1\,2\cdots n)$ 与任意 $(rs)$ 生成 $S_n$.} 把字母看作 $\mathbb Z_n$。$c^k$ 是平移 $x\mapsto x+k$，故
+\[ c^k(rs)c^{-k}=\bigl(c^k(r),\,c^k(s)\bigr)=(r+k,\,s+k),\qquad k\in\mathbb Z_n, \]
+于是得到一切差为 $d=s-r\ne0$ 的对换 $\{x,x+d\}$。$n$ 素数 $\Rightarrow\gcd(d,n)=1$，$x\mapsto x+d$ 遍历全部 $n$ 个点，图 $G$（顶点 $\mathbb Z_n$，边 $\{x,x+d\}$）连通。（$n=5$、$(rs)=(13)$、$d=2$ 时，$c^k(13)c^{-k}$ 依次为 $(13),(24),(35),(14),(25)$，边组成 $5$-圈 $1-3-5-2-4-1$。）\\
+\key{连通图引理.} 若 $i=v_0,v_1,\ldots,v_m=j$ 是 $G$ 中路径（$m=1$ 时约定回程为空，只剩 $(v_0v_1)$），则
+\[
+(ij)=(v_0v_1)(v_1v_2)\cdots(v_{m-2}v_{m-1})(v_{m-1}v_m)
+\cdot(v_{m-2}v_{m-1})\cdots(v_1v_2)(v_0v_1).
+\]
+记 $P=(v_0v_1)\cdots(v_{m-2}v_{m-1})$，上式即 $P\,(v_{m-1}v_m)\,P^{-1}$：$P$ 把 $v_{m-1}$ 沿路径退回 $v_0$、固定 $v_m$，故由共轭公式等于 $(v_0v_m)$；直观上就是沿路去、沿路回，中间点各被换两次。故图上一切边对换生成 $S_n$，特别 $c$ 与 $(rs)$ 生成 $S_n$。\\
+\starpt 素数条件不可省：$n=6$、$c=(123456)$、$(rs)=(13)$ 时 $d=2$，共轭对换为 $(13),(24),(35),(46),(51),(62)$，图分成 $\{1,3,5\}$ 与 $\{2,4,6\}$ 两个三角形。$\langle c,(13)\rangle$ 保持这个二分划（$c$ 交换两块，$(13)$ 保持两块），保持该分划的置换只有 $2\cdot(3!)^2=72$ 个，真子群；实际枚举 $|\langle c,(13)\rangle|=72<720=|S_6|$。故素数条件不能去掉。
+\end{frame}
+
+% ------------------------------------------------------------
+% G209：S5 中对换的中心化子
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 2/7：G209 $S_5$ 中对换的中心化子}
+\label{ex:G209}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G209}）}
+\scriptsize
+\ex{G209}（Artin 2e, Ch.~7, \S7.5, Ex.~5.2，印刷 p.~223 / PDF p.~235）：求 $(12)$ 在 $S_5$ 中的中心化子。
+\end{block}
+\key{思路.} 与 $(12)$ 交换的置换必须把 $\{1,2\}$ 保持为集合：它不能把 $1$ 送到 $3,4,5$。
+
+\key{详解.} 设 $\tau\sigma=\sigma\tau$，$\sigma=(12)$。由工具页的保型引理，$\tau$ 把 $\sigma$ 的 $2$-轮换 $\{1,2\}$ 送到 $\sigma$ 的 $2$-轮换，即送到 $\{1,2\}$ 自己，故 $\tau(\{1,2\})=\{1,2\}$，于是 $\tau|_{\{1,2\}}\in\{\mathrm{id},(12)\}$。又 $\tau$ 在补集 $\{3,4,5\}$ 上可任意置换，且这样的 $\tau$ 都与 $\sigma$ 交换。因此
+\[ Z_{S_5}((12))=\bigl\{(12)^{\varepsilon}\tau:\ \varepsilon\in\{0,1\},\ \tau\in S_{\{3,4,5\}}\bigr\}, \]
+其中 $S_{\{3,4,5\}}\cong S_3$，两个支撑不交的因子直接相乘，故
+\[ |Z|=2\cdot3!=12,\qquad Z_{S_5}((12))\cong C_2\times S_3. \]
+用公式核对：轮换型 $2\cdot1^3$，
+\[ |Z|=2^1\cdot1!\cdot1^3\cdot3!=2\cdot6=12. \]
+共轭类大小
+\[ |C((12))|=[S_5:Z]=\frac{120}{12}=10, \]
+恰为 $S_5$ 的全部对换：$(12),(13),(14),(15),(23),(24),(25),(34),(35),(45)$，共 $\binom52=10$ 个。$\square$
+\end{frame}
+
+% ------------------------------------------------------------
+% G210 上：15 个分拆与 lcm
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 3/7：G210 $S_7$ 的元素阶（上）}
+\label{ex:G210}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G210}）}
+\scriptsize
+\ex{G210}（Artin 2e, Ch.~7, \S7.5, Ex.~5.3，印刷 p.~223 / PDF p.~235）：确定 $S_7$ 中元素的阶。
+\end{block}
+\key{思路.} $\sigma$ 的阶等于其轮换型各部分的最小公倍数；枚举 $7$ 的全部 $15$ 个分拆，逐个取 $\operatorname{lcm}$，再合并去重。
+
+设轮换型为 $1^{m_1}2^{m_2}\cdots$。不相交轮换的幂互不影响，故
+\[ \sigma^t=\mathrm{id}\iff\text{每个 }k\text{ 都满足 }k\mid t\ (m_k>0)\iff \operatorname{ord}(\sigma)=\operatorname{lcm}\{k:\ m_k>0\}. \]
+$7$ 的分拆共 $p(7)=15$ 个，逐行取 $\operatorname{lcm}$：
+\begin{columns}[T,onlytextwidth]
+  \begin{column}{0.48\textwidth}
+    \centering
+    \renewcommand{\arraystretch}{1.05}\setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}l c@{}}
+      \toprule
+      轮换型 & 阶\\
+      \midrule
+      $7$ & $7$\\
+      $6+1$ & $6$\\
+      $5+2$ & $10$\\
+      $5+1+1$ & $5$\\
+      $4+3$ & $12$\\
+      $4+2+1$ & $4$\\
+      $4+1+1+1$ & $4$\\
+      $3+3+1$ & $3$\\
+      \bottomrule
+    \end{tabular}
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \centering
+    \renewcommand{\arraystretch}{1.05}\setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}l c@{}}
+      \toprule
+      轮换型 & 阶\\
+      \midrule
+      $3+2+2$ & $6$\\
+      $3+2+1+1$ & $6$\\
+      $3+1+1+1+1$ & $3$\\
+      $2+2+2+1$ & $2$\\
+      $2+2+1+1+1$ & $2$\\
+      $2+1+1+1+1+1$ & $2$\\
+      $1+1+1+1+1+1+1$ & $1$\\
+      \bottomrule
+    \end{tabular}
+  \end{column}
+\end{columns}
+\vspace{2pt}
+去重后 $S_7$ 中出现的阶恰为
+\[ \{1,2,3,4,5,6,7,10,12\}, \]
+共 $9$ 个值。$15$ 个分拆的 $\operatorname{lcm}$ 都落在其中，没有遗漏：每个分拆都已在表中列出。$\square$
+\end{frame}
+
+% ------------------------------------------------------------
+% G210 下：每个阶的元素个数
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 3/7：G210 $S_7$ 的元素阶（下）}
+\scriptsize
+\setlength{\parskip}{1pt}
+\key{每个阶的元素个数.} 固定轮换型 $1^{m_1}2^{m_2}\cdots$，元素个数为
+\[ N(1^{m_1}2^{m_2}\cdots)=\frac{7!}{\prod_k k^{m_k}m_k!}; \]
+分母正是工具页的中心化子大小（同一型内轮换的排列 $m_k!$ 与各轮换旋转 $k^{m_k}$ 的重复计数）。逐型累加：
+\begin{center}
+\renewcommand{\arraystretch}{1.08}\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}c l c r@{}}
+\toprule
+阶 & 轮换型 & 计数 & 个数\\
+\midrule
+$1$ & $1^7$ & $5040/5040$ & $1$\\
+$2$ & $2\cdot1^5;\ 2^2\cdot1^3;\ 2^3\cdot1$ & $21+105+105$ & $231$\\
+$3$ & $3\cdot1^4;\ 3^2\cdot1$ & $70+280$ & $350$\\
+$4$ & $4\cdot1^3;\ 4\cdot2\cdot1$ & $210+630$ & $840$\\
+$5$ & $5\cdot1^2$ & $504$ & $504$\\
+$6$ & $6\cdot1;\ 3\cdot2^2;\ 3\cdot2\cdot1^2$ & $840+210+420$ & $1470$\\
+$7$ & $7$ & $720$ & $720$\\
+$10$ & $5\cdot2$ & $504$ & $504$\\
+$12$ & $4\cdot3$ & $420$ & $420$\\
+\midrule
+合计 & & & $5040$\\
+\bottomrule
+\end{tabular}
+\end{center}
+逐项核对：$2\cdot1^5$: $5040/(2\cdot1!\cdot1^5\cdot5!)=5040/240=21$；$3^2\cdot1$: $5040/(3^2\cdot2!\cdot1)=280$；$4\cdot3$: $5040/(4\cdot3)=420$；$6\cdot1$: $5040/6=840$；$3\cdot2^2$: $5040/(3\cdot2^2\cdot2!)=210$。合计
+\[ 1+231+350+840+504+1470+720+504+420=5040=7!.\qquad\square \]
+\end{frame}
+
+% ------------------------------------------------------------
+% G211：两个不交 3-轮换的中心化子
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 4/7：G211 两个不交 3-轮换的中心化子}
+\label{ex:G211}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G211}）}
+\scriptsize
+\ex{G211}（Artin 2e, Ch.~7, \S7.5, Ex.~5.4，印刷 p.~223 / PDF p.~235）：设 $\sigma=(153)(246)$ 是 $S_7$ 中的元素，描述 $Z(\sigma)$，并计算 $|Z(\sigma)|$ 与 $|C(\sigma)|$。
+\end{block}
+\key{思路.} 轮换型 $3^2\cdot1$；点 $7$ 固定，两个 $3$-轮换可各自旋转，也可整体互换。
+
+\key{详解.} 记 $\sigma_1=(153)$，$\sigma_2=(246)$，$\sigma=\sigma_1\sigma_2$。由工具页公式
+\[ |Z(\sigma)|=3^2\cdot2!\cdot1=18,\qquad |C(\sigma)|=\frac{7!}{18}=\frac{5040}{18}=280. \]
+\key{显式中心化子.} 取 $\psi=(12)(45)(36)$，它把 $\sigma_1$ 的支撑送到 $\sigma_2$ 的支撑。用共轭公式 $\psi(x_1\cdots x_k)\psi^{-1}=(\psi(x_1)\cdots\psi(x_k))$，并注意 $\psi$ 的作用是 $1\leftrightarrow2,\ 4\leftrightarrow5,\ 3\leftrightarrow6$：
+\[ \psi\sigma_1\psi^{-1}=(\psi(1)\,\psi(5)\,\psi(3))=(2\,4\,6)=\sigma_2,\qquad \psi\sigma_2\psi^{-1}=(\psi(2)\,\psi(4)\,\psi(6))=(1\,5\,3)=\sigma_1. \]
+故 $\psi\sigma\psi^{-1}=\sigma_2\sigma_1=\sigma$，且 $\psi^2=\mathrm{id}$，$\psi$ 是中心化子中的换位元。于是
+\[ Z(\sigma)=\bigl\{\sigma_1^a\sigma_2^b,\ \psi\,\sigma_1^a\sigma_2^b:\ a,b\in\{0,1,2\}\bigr\},\qquad |Z|=9\cdot2=18, \]
+结构 $(C_3\times C_3)\rtimes C_2=C_3\wr C_2$：$(\sigma_1^a,\sigma_2^b)$ 给出 $9$ 个元素，$\psi$ 不在这 $9$ 个中（它交换两个支撑），故再翻倍为 $18$。\\
+\key{用元素计数核对.} 型 $3^2\cdot1$ 的共轭类大小
+\[ \frac{7!}{3^2\cdot2!\cdot1}=\frac{5040}{18}=280, \]
+也可直接数：选两个 $3$-子集并区分次序 $\binom73\binom43/2=35\cdot4/2=70$ 种，每个 $3$-轮换 $2$ 种方向，共 $70\cdot2\cdot2=280$，与 $|C(\sigma)|$ 一致。$\square$
+\end{frame}
+
+% ------------------------------------------------------------
+% G212：pq 与 qp 的轮换大小相同
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 5/7：G212 $pq$ 与 $qp$ 的轮换大小相同}
+\label{ex:G212}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G212}）}
+\scriptsize
+\ex{G212}（Artin 2e, Ch.~7, \S7.5, Ex.~5.5，印刷 p.~223 / PDF p.~235）：设 $p,q$ 是置换，证明 $pq$ 与 $qp$ 的轮换大小相同。
+\end{block}
+\key{思路.} 两者共轭：$q(pq)q^{-1}=qp$。共轭只改写轮换中的字母，不改变各轮换长度。
+
+\key{详解.} 直接乘：
+\[ q(pq)q^{-1}=q\,p\,q\,q^{-1}=(qp)(qq^{-1})=qp. \]
+\key{共轭不改变轮换型（显式化）.} 设 $pq$ 的不相交轮换分解中有 $(a_1a_2\cdots a_k)$，即 $(pq)(a_i)=a_{i+1}$（下标模 $k$）。则
+\[ (qpq^{-1})(q(a_i))=q\bigl((pq)(a_i)\bigr)=q(a_{i+1}), \]
+所以 $qpq^{-1}=qp$ 有轮换 $(q(a_1)\,q(a_2)\cdots q(a_k))$，长度仍为 $k$；不同轮换的像仍互不相交（$q$ 是双射）。故 $pq$ 与 $qp$ 的轮换大小逐项相同，从而轮换型相同。\\
+\key{具体例子.} $p=(12)$，$q=(23)$：
+\[ pq=(12)(23)=(123),\qquad qp=(23)(12)=(132), \]
+（$pq$ 追踪 $1\mapsto2\mapsto3\mapsto1$；$qp$ 追踪 $1\mapsto3\mapsto2\mapsto1$），两者都是 $3$-轮换。再用共轭核对：
+\[ q(pq)q^{-1}=(23)(123)(23)^{-1}=(q(1)\,q(2)\,q(3))=(1\,3\,2)=qp. \]
+\starpt $pq\ne qp$ 一般成立（上例 $(123)\ne(132)$），但共轭保证两者轮换型相同，故阶也相同；不要把“乘积不交换”误当成“轮换结构不同”。
+\end{frame}
+
+% ------------------------------------------------------------
+% G213 上：4 阶群分类与 3 个 C4
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 6/7：G213 $S_4$ 的 4 阶子群（上）}
+\label{ex:G213}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G213}）}
+\scriptsize
+\ex{G213}（Artin 2e, Ch.~7, \S7.5, Ex.~5.6，印刷 p.~223 / PDF p.~235）：求出 $S_4$ 的全部 $4$ 阶子群，并判断哪些正规。
+\end{block}
+\key{思路.} $4$ 阶群只有两种：$C_4$ 与 $C_2\times C_2$。分别按“$4$-轮换”和“对合”清点。
+
+\key{(i) 循环群 $C_4$.} $S_4$ 的 $4$ 阶元即 $4$-轮换，共 $6$ 个：$(1234),(1243),(1324),(1342),(1423),(1432)$。每个 $4$ 阶循环群含 $\varphi(4)=2$ 个生成元，故 $6/2=3$ 个：
+\[
+\begin{aligned}
+\langle(1234)\rangle&=\{1,(1234),(13)(24),(1432)\},\\
+\langle(1243)\rangle&=\{1,(1243),(14)(23),(1342)\},\\
+\langle(1324)\rangle&=\{1,(1324),(12)(34),(1423)\}.
+\end{aligned}
+\]
+逐个核对平方：$(1234)^2=(13)(24)$，$(1243)^2=(14)(23)$，$(1324)^2=(12)(34)$；三次方分别为 $(1432),(1342),(1423)$，即各自的逆。$6$ 个 $4$-轮换恰好两两配成这 $3$ 个群，无遗漏。
+\end{frame}
+
+% ------------------------------------------------------------
+% G213 下：4 个 Klein 群与正规性判定
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 6/7：G213 $S_4$ 的 4 阶子群（下）}
+\scriptsize
+\setlength{\parskip}{1pt}
+\key{(ii) Klein 四元群 $C_2\times C_2$.} 每个 Klein 子群 $=\{1,a,b,ab\}$，$a,b$ 为对合。$S_4$ 的对合共 $9$ 个：$6$ 个对换 $+\ 3$ 个双对换 $(12)(34),(13)(24),(14)(23)$。清点含 $3$ 个对合的 $4$ 元子群：
+\[
+V=\{1,(12)(34),(13)(24),(14)(23)\},\qquad
+\langle(12),(34)\rangle=\{1,(12),(34),(12)(34)\},
+\]
+\[
+\langle(13),(24)\rangle=\{1,(13),(24),(13)(24)\},\qquad
+\langle(14),(23)\rangle=\{1,(14),(23),(14)(23)\}.
+\]
+没有遗漏：若 Klein 子群含对换，设为 $(12)$，则与 $(12)$ 交换的对合只能是 $(34)$ 与 $(12)(34)$，三者相乘封闭，只能是整个 $\langle(12),(34)\rangle$；三个互补对换对 $\{(12),(34)\},\{(13),(24)\},\{(14),(23)\}$ 给出上述 $3$ 个。若不含对换，则三个非平凡元都是双对换，只能是 $V$。故 $4$ 阶子群共 $3+4=7$ 个。\\
+\key{(iii) 正规性.} $V=\{1\}\cup\{(12)(34),(13)(24),(14)(23)\}$ 是共轭类之并，故正规。其余 $6$ 个不正规，显式共轭：
+\[ (13)\langle(12),(34)\rangle(13)^{-1}=\bigl\langle(13)(12)(13)^{-1},(13)(34)(13)^{-1}\bigr\rangle=\langle(23),(14)\rangle\ne\langle(12),(34)\rangle, \]
+\[ (12)\langle(13),(24)\rangle(12)^{-1}=\langle(23),(14)\rangle,\qquad (12)\langle(14),(23)\rangle(12)^{-1}=\langle(13),(24)\rangle; \]
+\[ (12)(1234)(12)^{-1}=(2\,1\,3\,4)=(1342)\in\langle(1243)\rangle,\qquad (12)\langle(1234)\rangle(12)^{-1}=\langle(1243)\rangle, \]
+\[ (12)\langle(1243)\rangle(12)^{-1}=\langle(1234)\rangle,\qquad (13)\langle(1324)\rangle(13)^{-1}=\langle(1243)\rangle. \]
+故三个非 $V$ 的 Klein 群两两共轭、三个 $C_4$ 群也两两共轭，都不正规。结论：$7$ 个 $4$ 阶子群中只有 $V$ 正规；$S_4$ 唯一的指数 $2$ 子群是 $A_4$（见 G214）。
+\end{frame}
+
+% ------------------------------------------------------------
+% G214 上：唯一性证明
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 7/7：G214 $A_n$ 是唯一的指数 2 子群（上）}
+\label{ex:G214}
+\scriptsize
+\begin{block}{\footnotesize 题面（来源：\ex{G214}）}
+\scriptsize
+\ex{G214}（Artin 2e, Ch.~7, \S7.5, Ex.~5.7，印刷 p.~223 / PDF p.~235）：证明 $A_n$ 是 $S_n$ 中唯一的指数 $2$ 子群。
+\end{block}
+\key{思路.} 指数 $2$ 子群是满同态 $\varphi:S_n\to C_2$ 的核；对换全共轭且生成 $S_n$，故它们在 $\varphi$ 下像相同且非平凡，于是 $\sigma\in H\iff$ 偶数个对换之积。
+
+\key{详解.} 设 $H\le S_n$，$[S_n:H]=2$（$n\ge2$）。
+\begin{enumerate}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+  \item \key{$H$ 正规.} 对 $g\in S_n$：若 $gH\ne H$，则 $gH$ 是 $H$ 之外唯一的左陪集；同理 $Hg$ 也是，故 $gH=Hg$，$H\trianglelefteq S_n$。
+  \item \key{商群与满射.} $|S_n/H|=2$，故 $S_n/H\cong C_2$；取商映射 $\varphi:S_n\to C_2$，则 $\ker\varphi=H$。
+  \item \key{对换像相同.} $S_n$ 中任意两个对换共轭：存在 $g$ 使 $g(ab)g^{-1}=(cd)$。$C_2$ 交换，故
+  \[ \varphi(cd)=\varphi\bigl(g(ab)g^{-1}\bigr)=\varphi(g)\,\varphi(ab)\,\varphi(g)^{-1}=\varphi(ab). \]
+  \item \key{对换像非平凡.} 对换生成 $S_n$（G208(a)）。若所有对换在 $\varphi$ 下都为 $1$，则 $\varphi$ 平凡、$H=S_n$，与指数 $2$ 矛盾。故每个对换 $\tau$ 满足 $\varphi(\tau)=$ 非平凡元。
+  \item \key{判定.} 写 $\sigma=\tau_1\cdots\tau_k$（对换之积），则 $\varphi(\sigma)=(\text{非平凡})^k$，故
+  \[ \sigma\in H\iff k\ \text{为偶数}\iff\operatorname{sgn}(\sigma)=1\iff\sigma\in A_n. \]
+\end{enumerate}
+得 $H=A_n$。$\square$
+\end{frame}
+
+% ------------------------------------------------------------
+% G214 下：存在性、唯一性再解释与边界情形
+% ------------------------------------------------------------
+\begin{frame}[t]{七、\S7.5 详解 7/7：G214 $A_n$ 是唯一的指数 2 子群（下）}
+\scriptsize
+\setlength{\parskip}{1pt}
+\key{存在性.} $A_n=\ker(\operatorname{sgn})$，$[S_n:A_n]=2$，所以指数 $2$ 子群确实存在，且由上面证明恰为 $A_n$。$\square$\\
+\key{“唯一”的另一种解释.} 指数 $2$ 的正规子群与满同态 $S_n\to C_2$ 一一对应（$H\mapsto$ 商映射，$\varphi\mapsto\ker\varphi$）。由 G208，$S_n$ 由对换生成，而对换的像被共轭逼成同一个非平凡元，故这样的满同态至多一个，它就是 $\operatorname{sgn}$。等价地，$n\ge2$ 时 $S_n$ 的换位子群是 $A_n$，故 $S_n^{\mathrm{ab}}\cong C_2$，$\operatorname{Hom}(S_n,C_2)$ 只有平凡与 $\operatorname{sgn}$ 两个。\\
+\key{小 $n$ 的边界情形.}
+\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+  \item $n=1$：$S_1=\{1\}$，$|S_1|/2=1/2$ 非整数，故无指数 $2$ 子群；命题的“唯一”应理解为 $n\ge2$。
+  \item $n=2$：$S_2\cong C_2$，$A_2=\{1\}$，$[S_2:A_2]=2$，唯一。
+  \item $n=3$：$|S_3|=6$，指数 $2$ 子群阶为 $3$，即 $A_3=\langle(123)\rangle$，唯一。
+\end{itemize}
+\key{对照 G213（$S_4$）.} $S_4$ 的 $7$ 个 $4$ 阶子群都不是指数 $2$：$4$ 阶子群的指数是 $24/4=6$；由 Lagrange，指数 $2$ 需阶 $12$，即 $A_4$。$S_4$ 中确实只有 $A_4$ 一个指数 $2$ 子群。\\
+\starpt 常见漏洞：只说“$H$ 是核，而符号同态的核是 $A_n$”，却没证明 $H$ 的商映射就是符号同态。上页第 3--4 步补上了“对换的像被共轭与生成性锁死”这一环，是证明的关键。
+\end{frame}
+
+% ============================================================ 答案速查 A
+\begin{frame}[t]{八、答案速查 A：\S7.2 八题 + \S7.3 四题（12 题）}
+  \label{sec:answers}
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.16}
+  \begin{tabular}{@{}l l l c@{}}
+    \toprule
+    题号 & 题目 & 关键答案 / 结论 & 页\\
+    \midrule
+    LA198 & 5 个 $3\times3$ 矩阵的中心化子 & 对角 / 分块 / 上三角 / $aI+bN+cN^2$ / 中心对称；维数 $3,5,5,3,5$ & \pageref{ex:LA198}\\
+    G125 & 至多 3 个共轭类 & $\{1\},C_2,C_3,S_3$；非交换只能是 $6=1+2+3$ & \pageref{ex:G125}\\
+    G126 & 5 阶正规 $N$ 必中心 & $G\to\operatorname{Aut}(C_5)$，像阶整除 $\gcd(|G|,4)$，$|G|$ 奇 $\Rightarrow N\subseteq Z$ & \pageref{ex:G126}\\
+    G127 & 类方程 $1+4+5+5+5$ & 阶 5 子群存在且正规；阶 4 存在但不正规 & \pageref{ex:G127}\\
+    LA199 & $SL_2(\mathbb F_3)$ 的类方程 & $24=1+1+4+4+4+4+6$；$U_1\nsim U_{-1}$（$\lambda^2=1$） & \pageref{ex:LA199}\\
+    G128 & 满射下的共轭类 & $\varphi(C)=C'$，$|C'|\mid|C|$（用 $\varphi^{-1}(Z_{G'})$） & \pageref{ex:G128}\\
+    G129 & $pq$ 阶必含 $p$ 阶元 & 反证；中心 $\ne1$ 用商群，中心 $=1$ 得 $pq=1+kp$ & \pageref{ex:G129}\\
+    LA200 & $A_d$ 与 $B_d$ 何时共轭 & $GL_2$ 恒共轭；$SL_2\iff |d|>2$（二次型不定） & \pageref{ex:LA200}\\
+    G195 & 不动点定理 & $|S|\equiv|S^G|\pmod p$；$p\nmid|S|\Rightarrow S^G\ne\varnothing$ & \pageref{ex:G195}\\
+    G196 & $G/Z(G)$ 循环 $\Rightarrow$ 交换 & 元素写成 $a^m z$，中心元可交换 & \pageref{ex:G196}\\
+    G197 & 非交换 $p^3$ & $|Z|=p$，$|Z(x)|=p^2$，$p^3=p+(p^2-1)p$ & \pageref{ex:G197}\\
+    G198 & 8 阶群分类 & $C_8,C_4\times C_2,C_2^3,D_4,Q_8$；后两个看对合个数 & \pageref{ex:G198}\\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+% ============================================================ 答案速查 B
+\begin{frame}[t]{八、答案速查 B：\S7.4 九题（几何群与群作用）}
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.22}
+  \begin{tabular}{@{}l l l c@{}}
+    \toprule
+    题号 & 题目 & 关键答案 / 结论 & 页\\
+    \midrule
+    G199 & 内接立方体的稳定化子 & $60/5=12\cong T\cong A_4$（$I$ 在 5 个立方体上传递） & \pageref{ex:G199}\\
+    G200 & $S_5$ 的正常子群 & $1,A_5,S_5$；非平凡真正规子群只有 $A_5$（字面“proper”含 $1$） & \pageref{ex:G200}\\
+    G201 & $I$ 中对合的中心化子 & $60/15=4\cong V_4$（15 个对合全共轭） & \pageref{ex:G201}\\
+    G202 & $T$ 的类方程 & $12=1+3+4+4$；$V_4$ 正规；无 6 阶子群 & \pageref{ex:G202}\\
+    G203 & $O$ 的类方程 & $24=1+6+3+8+6$；真正规子群 $V_4,A_4$ & \pageref{ex:G203}\\
+    G204 & $T\cong A_4$，$O\cong S_4$ & 4 顶点 / 4 体对角线；立方体中两个内接四面体实现 $A_4\subset S_4$ & \pageref{ex:G204}\\
+    G205 & $n>r!$ 必有真正规子群 & 核 $\ker\varphi$ 既真又非平凡 & \pageref{ex:G205}\\
+    G206 & 中心的大小 & (a) $|Z(x)|=4\Rightarrow|Z(G)|\in\{1,2,4\}$；(b) $4\mid[G:Z(G)]$ & \pageref{ex:G206}\\
+    G207 & $|Z(x)|=pq$ $\Rightarrow$ 交换 & $C/\langle x\rangle$ 循环，$C/Z(C)$ 是它的商，用引理 B & \pageref{ex:G207}\\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+% ============================================================ 答案速查 C
+\begin{frame}[t]{八、答案速查 C：\S7.5 七题（对称群，含今天 10-18 的 3 题）}
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.30}
+  \begin{tabular}{@{}l l l c@{}}
+    \toprule
+    题号 & 题目 & 关键答案 / 结论 & 页\\
+    \midrule
+    G208 & $S_n$ 的生成元 & 相邻对换；$(1\cdots n)$ 最少 $n-1$ 个；$c+(12)$ 生成；$n$ 素数 $+$ 任意对换 & \pageref{ex:G208}\\
+    G209 & $S_5$ 中 $(12)$ 的中心化子 & $C_2\times S_3$，$|Z|=12$，类大小 10 & \pageref{ex:G209}\\
+    G210 & $S_7$ 的元素阶 & 9 个值 $1,2,3,4,5,6,7,10,12$（分拆取 lcm）；元素个数和为 5040 & \pageref{ex:G210}\\
+    G211 & $S_7$ 中 $(153)(246)$ & $|Z|=18$，$C_3\wr C_2$，$|C|=280$ & \pageref{ex:G211}\\
+    \rowcolor{accent!6} G212 & $pq$ 与 $qp$ 的轮换大小 & 共轭：$q(pq)q^{-1}=qp$，轮换型不变 & \pageref{ex:G212}\\
+    \rowcolor{accent!6} G213 & $S_4$ 的 4 阶子群 & 7 个：3 个 $C_4$ + 4 个 $V_4$；只有 $V=\{1,\text{双对换}\}$ 正规 & \pageref{ex:G213}\\
+    \rowcolor{accent!6} G214 & $A_n$ 唯一指数 2 & 指数 2 $\Rightarrow$ 正规；对换像非平凡 $\Rightarrow H=\ker(\operatorname{sgn})$ & \pageref{ex:G214}\\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.3em}
+  {\scriptsize\color{ink!70} 粉底三行是今天（10-18）清单新增的 G212--G214。}
+\end{frame}
+
+% ============================================================ 方法卡 1/2
+\begin{frame}[t]{九、方法卡 1/2：看到什么，先试哪一招}
+  \label{sec:methods}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 卡 1：问“类多大”}
+        \scriptsize
+        用 $|C(x)|=[G:Z_G(x)]$ 双向换算：给中心化子尺寸、给类大小、给指数，三者是一回事。\\
+        \key{本周例}：\ex{G209}（$|Z|=12\Rightarrow|C|=10$）、\ex{G211}（$|Z|=18\Rightarrow|C|=280$）、\ex{G201}（$|Z|=4$）。
+      \end{block}
+      \begin{block}{\footnotesize 卡 2：找正规子群}
+        \scriptsize
+        先写类方程，再枚举“含 $1$ 的类之和”，只留整除 $|G|$ 的；整除不了就不是正规子群。\\
+        \key{本周例}：\ex{G127}、\ex{G202}、\ex{G203}。
+      \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 卡 3：正规 $\Rightarrow$ 作用到 $\operatorname{Aut}$}
+        \scriptsize
+        $G\to\operatorname{Aut}(N)$；$|\operatorname{Aut}(N)|$ 与 $|G|$ 互素 $\Rightarrow$ 像平凡 $\Rightarrow N$ 中心。\\
+        \key{本周例}：\ex{G126}（$|N|=5$，$|\operatorname{Aut}|=4$，$|G|$ 奇）。
+      \end{block}
+      \begin{block}{\footnotesize 卡 4：商群循环 $\Rightarrow$ 交换}
+        \scriptsize
+        要排除“$|Z|$ 太大”或证明某个子群交换时，先看 $G/Z(G)$ 是否循环。\\
+        \key{本周例}：\ex{G196}、\ex{G197}(a)、\ex{G207}。
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 方法卡 2/2
+\begin{frame}[t]{九、方法卡 2/2：作用、置换与整除}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 卡 5：$p$-群用不动点}
+        \scriptsize
+        $|S|\equiv|S^G|\pmod p$；共轭作用给 $|Z|\equiv|G|\pmod p$，先把中心“撑”到至少 $p$ 阶。\\
+        \key{本周例}：\ex{G195}、\ex{G197}(a)。
+      \end{block}
+      \begin{block}{\footnotesize 卡 6：作用 $\Rightarrow$ 同态}
+        \scriptsize
+        非平凡作用给 $G\to S_r$，核自动正规（\ex{G205}）；轨道大小 $=[G:G_s]$ 算稳定化子阶（\ex{G199}/\ex{G201}）。
+      \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 卡 7：共轭不变轮换型}
+        \scriptsize
+        共轭只改换轮换的“字母”；$|Z(\sigma)|=\prod_k k^{m_k}m_k!$，再 $|C(\sigma)|=n!/|Z|$。\\
+        \key{本周例}：\ex{G209}、\ex{G211}、\ex{G212}、\ex{G213}。
+      \end{block}
+      \begin{block}{\footnotesize 卡 8：整除排除}
+        \scriptsize
+        类大小整除群阶、子群阶整除群阶；“可能的类方程”与“可能的中心阶”都先过一遍整除性。\\
+        \key{本周例}：\ex{G125}、\ex{G129}、\ex{G206}、\ex{G214}。
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.2em}
+  {\scriptsize\color{ink!70} 八张卡按“先算哪个量 → 用整除筛 → 用作用/同态升级”排列；做题时从上往下试，通常三步内能定位。}
+\end{frame}
+
+% ============================================================ 易错点 1/2
+\begin{frame}[t]{十、易错点 1/2：来源、措辞与共轭}
+  \label{sec:pitfalls}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize LA200：题面维度不一致}
+        \scriptsize
+        矩阵是 $2\times2$，环境群印成 $GL_n(\mathbb R),SL_n(\mathbb R)$。笔记保留原题并标 \texttt{Source issue}，按 $n=2$ 求解；不要悄悄改题面。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G200：“proper”的字面陷阱}
+        \scriptsize
+        字面含平凡子群，答案“否”；本意“非平凡真”，此时 $A_5$ 唯一。两种读法都要交代。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize LA199：$GL$ 与 $SL$ 的类不同}
+        \scriptsize
+        共轭只能把幂零项乘上 $\lambda^2$；$\mathbb F_3^\times$ 的非零平方只有 $1$，故 $U_1\nsim U_{-1}$。换到 $GL_2$ 才合并成一类。
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize G126：“奇阶”不能省}
+        \scriptsize
+        结论只对 $|G|$ 奇成立；10 阶二面体 $D_{10}$ 中 $\langle r\rangle\trianglelefteq D_{10}$ 但不中心，正是反例。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G212：共轭 $\ne$ 相等}
+        \scriptsize
+        $pq$ 与 $qp$ 一般\textbf{不相等}，只是共轭（$q(pq)q^{-1}=qp$）；由共轭得轮换型相同，不能写成 $pq=qp$。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G214：指数 2 自动正规}
+        \scriptsize
+        指数 2 子群必正规，所以“唯一”只需证所有指数 2 子群都等于 $\ker(\operatorname{sgn})$；再用对换生成 $S_n$ 定符号。
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 易错点 2/2
+\begin{frame}[t]{十、易错点 2/2：计数、下界与记号}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize G208：构造与下界要分开写}
+        \scriptsize
+        写出 $n-1$ 个乘积只证“$\le n-1$”；必须补“每个对换至多改变一个轮换数”才能说最少。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G195：只保证“至少一个”}
+        \scriptsize
+        $p\nmid|S|$ 时只能断言 $S^G\ne\varnothing$；不能推出 $|S^G|>1$，也不能反推别的轨道大小。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize 类方程相同 $\ne$ 同构}
+        \scriptsize
+        $D_4$ 与 $Q_8$ 的类方程、中心阶都相同；必须再用元素阶剖面/对合个数区分（$5$ 个 vs $1$ 个）。
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize G213：是 7 个，不是 3 或 4}
+        \scriptsize
+        $3$ 个 $C_4$ + $4$ 个 Klein 子群；别把 $V=\{1,\text{双对换}\}$ 与 $\langle(12),(34)\rangle$ 之类的 4 个 Klein 群混为一谈。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G211：别漏“交换两个 3-轮换”的元}
+        \scriptsize
+        只数 $\sigma_1^a\sigma_2^b$ 得 $9$ 个；必须加上 $\psi=(12)(45)(36)$ 这类把两个 3-轮换互换的元素，才得 $18$。
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize G210：15 个分拆只给 9 个阶}
+        \scriptsize
+        不同分拆的 lcm 会重复（如 $6+1$ 与 $3+2+1+1$ 都得 $6$）；要列完 15 行再去重。
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+  \vspace{0.1em}
+  {\scriptsize\color{ink!70} 记号提醒：$Z(G)=\bigcap_x Z(x)$ 是中心；类大小公式里永远是中心化子 $Z(x)$，说“$N$ 中心”才用 $Z(G)$。}
+\end{frame}
+
+% ============================================================ 自测
+\begin{frame}[t]{十一、讲完当场自测（先盖住答案）}
+  \label{sec:selftest}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.64\textwidth}
+      \begin{block}{\footnotesize 10 个问题}
+        \scriptsize
+        \begin{enumerate}\setlength{\itemsep}{2pt}
+          \item $|Z_{S_5}((12))|$ 是多少？为什么不是 $120/10$？
+          \item $D_4$ 与 $Q_8$ 类方程相同，用什么区分？
+          \item 证明：$|N|=5$、$N\trianglelefteq G$、$|G|$ 奇 $\Rightarrow N\subseteq Z(G)$；把“奇”去掉给反例。
+          \item $U_1$ 与 $U_{-1}$ 在 $SL_2(\mathbb F_3)$ 中共轭吗？为什么？
+          \item 写出非交换 $p^3$ 的类方程，并用 $p=2$ 与 $D_4$ 对账。
+          \item $A_4$ 为什么没有 6 阶子群？
+          \item $I$ 中一个对合的中心化子阶与结构？
+          \item $(1\,2\cdots n)$ 最少用几个对换？证明下界。
+          \item 验证 $(12)(23)$ 与 $(23)(12)$ 共轭，写出共轭元与两者的轮换。
+          \item $S_4$ 有几个 4 阶子群？哪一个是正规的？为什么其余不正规？
+        \end{enumerate}
+      \end{block}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \begin{exampleblock}{\footnotesize 答案页码}
+        \scriptsize
+        \begin{tabular}{@{}rl@{}}
+          1. & \pageref{ex:G209}\\
+          2. & \pageref{ex:G198}\\
+          3. & \pageref{ex:G126}\\
+          4. & \pageref{ex:LA199}\\
+          5. & \pageref{ex:G197}\\
+          6. & \pageref{ex:G202}\\
+          7. & \pageref{ex:G201}\\
+          8. & \pageref{ex:G208}\\
+          9. & \pageref{ex:G212}\\
+          10. & \pageref{ex:G213}\\
+        \end{tabular}
+      \end{exampleblock}
+      \begin{alertblock}{\footnotesize 讲法}
+        \scriptsize
+        先让学生口述“该算哪个量”，再翻详解页对照；答不出的回看方法卡。
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 收尾
+\begin{frame}[t]{十一、收尾：本周数字与一句话}
+  \label{sec:closing}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.52\textwidth}
+      \begin{block}{\footnotesize 本周数字}
+        \scriptsize
+        \renewcommand{\arraystretch}{1.18}
+        \begin{tabular}{@{}ll@{}}
+          清单 & 7 份（10-12 -- 10-18）\\
+          题目 & 28 道（群论 25、线代 3）\\
+          难度 & 入门 7 / 中等 11 / 高级 10\\
+          章节 & \S7.2 8 + \S7.3 4 + \S7.4 9 + \S7.5 7\\
+          含 Lang 交叉题 & 2 道（\ex{G198}、\ex{G208}）\\
+          Random Review & 0 条\\
+          页码总数 & \inserttotalframenumber{} 页\\
+        \end{tabular}
+      \end{block}
+      \begin{exampleblock}{\footnotesize 明天之后的两件事}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item 补 Random Review：抽 \ex{G203}、\ex{LA200}、\ex{G211}，覆盖“类方程 / 矩阵共轭 / 轮换型”。
+          \item 接续 \S7.5 之后：按 Artin Ch.~7 的下一节继续；今天三题（G212--G214）先自己重写一遍详解页再对答案。
+        \end{itemize}
+      \end{exampleblock}
+    \end{column}
+    \begin{column}{0.46\textwidth}
+      \begin{block}{\footnotesize 一句话总结}
+        \scriptsize
+        本周 28 题最终都落在三个量上——$|G|$、$|Z(x)|$、$|C(x)|$；把“群的结构问题”换成“整除性与类之和”，再把“类之和”换成“含 $1$ 的若干共轭类”，就是这一章的通行证。
+      \end{block}
+      \begin{block}{\footnotesize 文件与复编译}
+        \scriptsize
+        源码：\texttt{Attachments/} 目录下\\
+        {\tiny\texttt{daily-exercise-weekly-review-2026-10-12-to-18.tex}}\\
+        编译：\texttt{xelatex} 跑三遍（页码引用需要两遍以上）。\\
+        所有题面/来源以库内 28 篇笔记为准；本讲义不替代原始教材核对。
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}

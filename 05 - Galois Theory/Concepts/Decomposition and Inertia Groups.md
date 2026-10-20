@@ -13,7 +13,7 @@ tags:
   - number-theory
   - ramification
 created: 2026-09-15
-source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VII, §2, printed pp. 339-347, PDF pp. 354-362"
+source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VII, §2, printed pp. 339-347, PDF pp. 354-362; Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. I, §9, printed pp. 55–58, PDF pp. 74–77"
 ---
 
 # Decomposition and Inertia Groups
@@ -21,6 +21,8 @@ source: "Serge Lang, Algebra, rev. 3rd ed., Ch. VII, §2, printed pp. 339-347, P
 ## Definition
 
 Let $A$ be an integrally closed integral domain with quotient field $K$, and let $L$ be a Galois extension of $K$ with Galois group $G=\operatorname{Gal}(L/K)$. Let $B$ be the integral closure of $A$ in $L$.
+
+The stabilizer and inertia definitions can be considered in this general setting. **The degree and ramification formulas below are stated for finite Galois extensions of number fields, $A=\mathcal O_K$, $B=\mathcal O_L$, and nonzero primes**, where residue fields are finite and hence perfect. General Dedekind-domain variants require their own finiteness and residue-separability hypotheses.
 
 Let $\mathfrak p$ be a prime ideal of $A$, and let $\mathfrak P$ be a prime ideal of $B$ lying above $\mathfrak p$ (i.e., $\mathfrak P\cap A=\mathfrak p$).
 
@@ -32,7 +34,7 @@ Let $\mathfrak p$ be a prime ideal of $A$, and let $\mathfrak P$ be a prime idea
 > The fixed subfield $L^{G_{\mathfrak P}}$ is called the **decomposition field** of $\mathfrak P$.
 
 > [!info] Residue Class Field Homomorphism and Inertia Group
-> Each $\sigma\in G_{\mathfrak P}$ induces a ring automorphism $\bar{\sigma}$ of the residue class field $k_{\mathfrak P}=B/\mathfrak P$ fixing $k_{\mathfrak p}=A/\mathfrak p$, defined by:
+> Each $\sigma\in G_{\mathfrak P}$ induces a ring automorphism $\bar{\sigma}$ of the residue field $k_{\mathfrak P}=\operatorname{Frac}(B/\mathfrak P)$ fixing $k_{\mathfrak p}=\operatorname{Frac}(A/\mathfrak p)$, defined by:
 > $$
 > \bar{\sigma}(x\bmod\mathfrak P) = \sigma(x)\bmod\mathfrak P.
 > $$
@@ -42,7 +44,7 @@ Let $\mathfrak p$ be a prime ideal of $A$, and let $\mathfrak P$ be a prime idea
 > $$
 > The fixed subfield $L^{I_{\mathfrak P}}$ is called the **inertia field** of $\mathfrak P$.
 
-When the residue field extension $k_{\mathfrak P}/k_{\mathfrak p}$ is normal and separable, the homomorphism $\mu$ is surjective, yielding the fundamental exact sequence:
+For a general prime, the residue field is $\kappa(\mathfrak p)=A_{\mathfrak p}/\mathfrak pA_{\mathfrak p}=\operatorname{Frac}(A/\mathfrak p)$; the quotient $A/\mathfrak p$ itself is a field only when the prime is maximal. The action on the quotient domain extends to its fraction field. In the finite number-field setting specified above, these primes are maximal, the residue extension is normal and separable, and $\mu$ is surjective, yielding the exact sequence:
 $$
 1 \longrightarrow I_{\mathfrak P} \longrightarrow G_{\mathfrak P} \xrightarrow{\quad\mu\quad} \operatorname{Gal}(k_{\mathfrak P}/k_{\mathfrak p}) \longrightarrow 1.
 $$
@@ -65,7 +67,7 @@ The decomposition and inertia groups connect the global Galois symmetries of fie
    $$
    G_{\mathfrak P'} = \sigma G_{\mathfrak P} \sigma^{-1},\qquad I_{\mathfrak P'} = \sigma I_{\mathfrak P} \sigma^{-1}.
    $$
-3. **Fundamental Degree Identity:** When $[L:K]<\infty$, let $g$ be the number of prime ideals of $B$ lying above $\mathfrak p$, $e=|I_{\mathfrak P}|$ the ramification index, and $f=[k_{\mathfrak P}:k_{\mathfrak p}]$ the residue class degree. Then:
+3. **Fundamental Degree Identity:** For the finite Galois number-field setting above, let $g$ be the number of prime ideals of $B$ lying above $\mathfrak p$, $e=|I_{\mathfrak P}|$ the ramification index, and $f=[k_{\mathfrak P}:k_{\mathfrak p}]$ the residue class degree. Then:
    $$
    [L:K] = e\cdot f\cdot g,\qquad |G_{\mathfrak P}| = e\cdot f.
    $$
@@ -80,8 +82,11 @@ The decomposition and inertia groups connect the global Galois symmetries of fie
 > [!example] Inert Prime in Quadratic Field
 > Consider $K=\mathbb Q$ and $L=\mathbb Q(i)$, with $G=\{1, \tau\}$ where $\tau$ is complex conjugation. The prime $p=3$ remains prime in $\mathbb Z[i]$, so $g=1$, $e=1$, and $f=2$. Here $G_{(3)}=G$, $I_{(3)}=\{1\}$, and the Frobenius automorphism is complex conjugation $\tau$, which induces $a+bi \mapsto (a+bi)^3 = a-bi \pmod 3$.
 
-> [!example] Modulo $p$ Irreducibility and Cyclic Groups
-> If a monic irreducible polynomial $f(X)\in\mathbb Z[X]$ of degree $n$ remains irreducible modulo $p$, then the residue extension is $\mathbb F_{p^n}/\mathbb F_p$, so $f=n$. In the Galois closure, $e\cdot f\cdot g = [K:\mathbb Q] = n$, forcing $e=1$, $g=1$, and $G_{\mathfrak P}=G$. Hence $G\cong\operatorname{Gal}(\mathbb F_{p^n}/\mathbb F_p)$ is cyclic of order $n$.
+> [!warning] Correction: a cyclic decomposition group need not be the whole Galois group
+> The earlier version incorrectly concluded that irreducibility modulo $p$ forces the entire Galois closure to have cyclic group of the polynomial's degree. The degree of a root field was confused with the degree of its splitting field. The correct implication, for a monic polynomial $f\in\mathbb Z[X]$ of degree $n$ with $p$ not dividing its discriminant, is that irreducibility modulo $p$ gives an $n$-cycle as the Frobenius action on its $n$ roots. It need not make the whole group cyclic.
+
+> [!example] A cubic counterexample
+> The polynomial $X^3-2$ is irreducible over $\mathbb Q$ by Eisenstein at $2$, and also irreducible modulo $7$: the cubes in $\mathbb F_7$ are $0,1,6$. Its splitting field is $L=\mathbb Q(\sqrt[3]2,\zeta_3)$. The root field is real of degree $3$, while adjoining the nonreal $\zeta_3$ gives degree $2$ over it, so $[L:\mathbb Q]=6$ and its faithful action on the three roots identifies its Galois group with $S_3$. The polynomial discriminant is $-108$, prime to $7$, so the Frobenius cycle criterion applies: a prime above $7$ has a cyclic order-three decomposition group, a proper subgroup of $S_3$. This independently checked example refutes the earlier whole-group claim.
 
 ## Related Concepts
 
@@ -106,3 +111,5 @@ WHERE contains(file.outlinks, this.file.link)
 - The exact sequence $1\to I_{\mathfrak P}\to G_{\mathfrak P}\to \operatorname{Gal}(k_{\mathfrak P}/k_{\mathfrak p})\to 1$ is Proposition 2.5 in [S2, Ch. VII, §2, printed p. 343, PDF p. 358].
 - Transitivity of the Galois group on primes above $\mathfrak p$ is Proposition 2.1 in [S2, Ch. VII, §2, printed p. 340, PDF p. 355].
 - Infinite Galois generalizations and applications are tested in [S2, Ch. VII, Exs. 1 and 6, printed pp. 352-353, PDF pp. 367-368].
+
+- **Neukirch verification and correction scope:** The finite decomposition-group degree calculation was visually checked in Proposition (9.3) and its proof, printed pp. 55–56 / PDF pp. 74–75. Proposition (9.4), Definition (9.5), and Proposition (9.6), printed pp. 56–57 / PDF pp. 75–76, give the residue map, inertia kernel and separability-qualified orders. The number-field restriction here makes that separability automatic. Frobenius in I.9.2 is posed as an exercise on printed p. 58 / PDF p. 77, whose printed exponent is incorrect; its independent note preserves and corrects it. The cubic counterexample above is an independent deduction, not an assertion quoted from the source. Existing Lang source boundaries are not promoted to a new full verification by these additions.

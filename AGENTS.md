@@ -11,6 +11,7 @@ This repository is an Obsidian vault for organizing abstract algebra and related
 - Do not create a new top-level folder, topic folder, or subfolder unless the user explicitly approves it.
 - Ordinary note work does not authorize creating Codex tasks, branches, commits, pull requests, or other external writes.
 - Also consult `CLAUDE.md` for compatible repository background. If instructions conflict, follow the user's latest request first, then this file.
+- Treat prior artifacts, task briefs, and this file as fallible: verify inherited mathematical claims and source locators before reuse, and correct errors visibly in the new artifact instead of propagating them.
 
 ## 2. Classification Policy: Route by the Primary Computational Toolkit
 
@@ -121,6 +122,21 @@ Even when a note contains a full solution, keep its learning status as `not-star
 - Account for view-level limits: an item not visible in one view may still be present in the Base result set.
 - Do not mark an exercise `completed` merely because a solution was added.
 
+## 8A. Exercise Manager and Daily Exercise Lists
+
+- Daily exercise selection is owned by the **Exercise Manager** plugin. Use its generated lists; do not hand-pick a "random" set, create a daily list manually, or bypass the queue for daily exercise work.
+- The vault's list folder is `10 - Daily Exercise Lists/`. The authoritative value is `settings.listsDir` in `.obsidian/exercise-manager-daily-state.json`; the plugin's built-in default is `09 - Daily Exercise Lists`, so never assume the default. Do not rename or move the folder without updating the setting and moving the existing lists.
+- Treat `Daily Exercise List - YYYY-MM-DD.md` as generated output. Never edit inside `<!-- exercise-manager:exercises:start/end -->` or `<!-- exercise-manager:systematic:start/end -->`, and never hand-edit the exported checkboxes. The plugin preserves text outside the markers and the `Notes` section on re-export; hand-written commentary belongs only there.
+- `.obsidian/exercise-manager-daily-state.json` and its `.bak` are runtime state, not notes. Do not edit, delete, move, or commit them. If the state is corrupt, preserve the files and restore from `.bak`; if that fails, ask the user.
+- Use the plugin while Obsidian is running for generation and progress: "生成今日题单", "补足到 N", "换一题", "撤销最后换题", "导出/更新今日题单", "开始新周期", "完成并推进", "跳过", "退回上一步", "暂停/恢复每日自动出题". Do not simulate these by editing Markdown or state. An agent cannot reliably advance the Systematic Progress queue; ask the user to use the daily-list sidebar.
+- A daily list can change after it is first readable: the plugin generates when Obsidian opens and may add Random Review later. Re-read today's list immediately before acting; if Random Review is unexpectedly empty, ask the user to open Obsidian / generate rather than inventing entries. A review deck built earlier is a snapshot; record its cut-off date and included sections.
+- Random Review and Systematic Progress are independent. Random draws do not advance or reset systematic progress; `开始新周期` resets only random history; random checkboxes do not change note `status` or the no-repeat history.
+- Systematic progress lives in the state file (`completed`/`skipped`), not in note frontmatter; random checkboxes likewise do not change note `status`. Keep the §4 rule: a note's status changes only when the user says so, never because a list box was ticked.
+- Only archived exercise notes with a parseable source are sampled. Preserve the exact `source` string; for new books add structured `source_refs` (for example `- "S2/ch-VI/sec-3/ex-7"`) while keeping `source`. Do not rename or renumber the plugin's S1–S11 source IDs.
+- The plugin root is the junction `.obsidian/plugins/exercise_manager` → `E:\project\tools\exercise_manager`. Do not edit the plugin source or its bundled Python/Node scripts during ordinary vault work unless the user asks; such changes affect multiple vaults and require the plugin's own tests (`node --test` in the plugin root) and its separate repository workflow.
+- CLI/DSH interface (from the plugin root): `tools\lm.cmd info --json`; `tools\lm.cmd search "quotient group" --keyword -k 20 --topic group-theory --tag exercise --json`; `tools\lm.cmd gap --json`; `tools\lm.cmd reading-list --add hits.json`; `python scripts\search_notes.py --related-file "<note>" -k 20 --json`. Keyword mode is the reliable mode for mathematical terms; semantic results are auxiliary.
+- Do not pause, resume, or "fix" automatic generation on the user's behalf by editing state. If the plugin is paused or unavailable, report it and ask before deviating.
+
 ## 9. Hubs, README, and Canvas
 
 - Add new concepts to the relevant topic hub. Ordinary exercises should appear through Dataview or Bases rather than a manually maintained complete list.
@@ -160,6 +176,8 @@ Before delivery, verify at least:
 - external proof inputs and source ambiguities are explicitly labeled;
 - new exercises are discoverable by the Study Progress tag filter;
 - temporary PDF renders and crops have been cleaned up;
+- when the task depends on a generated daily list: its managed blocks and state file were not hand-edited, and the current file was re-read at delivery time;
+- for PDF/deck deliverables: no unresolved `\pageref` and no `??`, no overfull/underfull boxes, and the rendered pages were inspected;
 - `CHANGELOG.md` has been updated and the README Changelog shows exactly its latest three entries;
 - Git status contains no unintended modifications.
 
@@ -170,3 +188,16 @@ Before delivery, verify at least:
 - Report the validation actually performed and any remaining caveats.
 - State source errors, notation conflicts, and unproved dependencies directly.
 - Never claim that an unperformed check, an uncreated file, or an unverified conclusion is complete.
+
+## 12. Derived Review Decks and Large Builds
+
+- A review deck, weekly recap, or similar summary is a derived artifact: its data source is the generated daily lists plus the existing exercise notes. Do not modify exercise notes, frontmatter, status, hubs, Bases, or Canvas while producing it. Record which dates and which list sections (Random Review vs Systematic Progress) are covered; generated lists can change later, so the deck is a snapshot.
+- Store deliverables in `Attachments/` with a range-bearing name such as `daily-exercise-weekly-review-2026-10-12-to-18.tex/.pdf`. The `.tex` must be self-contained (no `\input` of scratch fragments); keep build intermediates and scratch renders outside the vault or delete them before delivery.
+- For a detailed deck, every exercise gets: exact statement with a precise printed/PDF locator; a one-line strategy; a step-by-step derivation showing the intermediate equations; and at least one concrete verification or counterexample. Do not hide steps behind "obvious", "standard", or "easy to check"; name imported standard results and show every `Source issue`.
+- Verify inherited claims. Task briefs, older decks, and even this file can contain false mathematical statements; test them against examples or computation, correct them in the new artifact, and mention the correction in `CHANGELOG.md`. Never copy a false claim forward.
+- Verify quantitative claims independently where feasible (for example Python permutation enumeration or linear algebra) and state what was checked. Cite computational verification only for checks that were actually run.
+- Build with `xelatex` at least three passes. Use `\label`/`\pageref` for all page references; never hard-code page numbers. Before delivery require zero errors, zero `Overfull \vbox`/`\hbox`, zero `Underfull`, zero missing characters, no undefined references, and no `??` in the extracted PDF text. Set PDF title/subject/author with `\hypersetup` (and `\title` for beamer).
+- House Beamer style: 16:9 `ctexbeamer`, `Microsoft YaHei`, the ink/accent palette, collapsible blocks, `\scriptsize` for dense derivations. Do not begin a frame body with a bare `{...}` group: beamer parses it as a subtitle and the vault's custom title template drops it; start with `\leavevmode` or text. Split an overflowing frame instead of shrinking below legibility.
+- Render the finished PDF to PNGs and inspect the pages (at least every changed page; for a from-scratch deck, every page) for clipping, overlap, table overflow, and footer collisions. Fix and re-render; log checks alone are not enough.
+- For long decks, split authoring into disjoint section fragments with one writer per fragment and a shared preamble; each fragment must compile standalone with zero overfull before integration. The lead assembles, recompiles, and revalidates the final file; never let two writers edit the same file. Remove scratch directories afterward.
+- When superseding a previous deck, name the new file for the full covered range, record "supersedes ... (Git history retains the old version)" in `CHANGELOG.md`, remove only the superseded artifact, and never delete user-authored files.
