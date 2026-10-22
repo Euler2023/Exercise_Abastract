@@ -36,6 +36,13 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 - [[08 - Arithmetic Geometry/Concepts/Local Fields|Local Fields]]
 - [[08 - Arithmetic Geometry/Concepts/Adeles and Ideles|Adeles and Ideles]]
 
+### Local and Global Arithmetic Tools
+
+- [[08 - Arithmetic Geometry/Concepts/Henselian Fields and Henselization|Henselian Fields and Henselization]]
+- [[08 - Arithmetic Geometry/Concepts/Replete Ideals and Arakelov Divisors|Replete Ideals and Arakelov Divisors]]
+- [[08 - Arithmetic Geometry/Concepts/Hecke Characters and Their Finite and Infinite Parts|Hecke Characters and Their Finite and Infinite Parts]]
+
+
 ## Core Arithmetic Geometry
 
 ### Function Fields and Covers

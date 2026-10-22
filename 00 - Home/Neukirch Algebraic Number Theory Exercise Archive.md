@@ -19,7 +19,9 @@ This dashboard records the archival coverage of the numbered exercises in Jürge
 > An exercise is **archived** when the vault contains a source-identified exercise note for it. This is separate from the note's learning `status`: an archived exercise may remain `not-started`.
 
 > [!note] Audit scope
-> Chapter I is complete: **75 numbered source exercises, 75 notes, verified coverage 75/75**. Every section has its own source-label set and reconciliation below; §13 and §14 were checked to contain no numbered exercises. On 2026-10-20, the original pages were rechecked and all four exception sets were empty: missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators. Chapter II §1 is separately complete at 6/6, as recorded below. The other six chapters have not had full exercise-set audits; an archived count of zero does not establish a zero source total.
+> **Complete source archive: 293/293 numbered exercises in 293 notes.** Chapters I–VII contain **75, 51, 15, 51, 33, 46, 22** exercises. The 2026-10-23 pass added the remaining **212** notes and preserved the existing 81. Expected source labels and printed/PDF anchors were registered before archival; post-archive reconciliation found **zero missing, duplicate, unexpected or unparsed locators**. Chapter II §2 includes Exercise 9 on printed p. 116 / PDF p. 135.
+>
+> Archive completeness records source coverage. Source defects, corrected formulations, named external proof inputs and the unresolved capital-$K$/lowercase-$k$ ambiguity in VI.7.5 remain visible in the notes. All new learning statuses remain `not-started`.
 
 ## Chapter Coverage
 
@@ -45,6 +47,12 @@ const auditedCoverage = new Map([
     pages: "printed pp. 5, 15, 23, 27-28, 34, 38, 43-44, 52-53, 58, 64-65, 71-72, 84 / PDF pp. 24, 34, 42, 46-47, 53, 57, 62-63, 71-72, 77, 83-84, 90-91, 103; sections 13-14 checked: no numbered exercises",
     reconciled: true,
   }],
+  ["II", {"labels": ["II.1.1", "II.1.2", "II.1.3", "II.1.4", "II.1.5", "II.1.6", "II.2.1", "II.2.2", "II.2.3", "II.2.4", "II.2.5", "II.2.6", "II.2.7", "II.2.8", "II.2.9", "II.3.1", "II.3.2", "II.3.3", "II.3.4", "II.4.1", "II.4.2", "II.4.3", "II.4.4", "II.4.5", "II.4.6", "II.5.1", "II.5.2", "II.5.3", "II.5.4", "II.5.5", "II.5.6", "II.6.1", "II.6.2", "II.6.3", "II.6.4", "II.6.5", "II.7.1", "II.7.2", "II.7.3", "II.8.1", "II.8.2", "II.8.3", "II.8.4", "II.8.5", "II.8.6", "II.9.1", "II.9.2", "II.9.3", "II.9.4", "II.10.1", "II.10.2"], "pages": "printed pp. 106, 115, 116, 123, 134, 142, 152, 159, 165, 166, 176, 181 / PDF pp. 125, 134, 135, 142, 153, 161, 171, 178, 184, 185, 195, 200", "reconciled": true}],
+  ["III", {"labels": ["III.1.1", "III.1.2", "III.1.3", "III.1.4", "III.1.5", "III.1.6", "III.2.1", "III.2.2", "III.2.3", "III.2.4", "III.2.5", "III.4.1", "III.4.2", "III.4.3", "III.4.4"], "pages": "printed pp. 193, 194, 207, 208, 233 / PDF pp. 212, 213, 226, 227, 252", "reconciled": true}],
+  ["IV", {"labels": ["IV.1.1", "IV.1.2", "IV.1.3", "IV.1.4", "IV.1.5", "IV.2.1", "IV.2.2", "IV.2.3", "IV.2.4", "IV.2.5", "IV.2.6", "IV.3.1", "IV.3.2", "IV.3.3", "IV.3.4", "IV.3.5", "IV.3.6", "IV.3.7", "IV.3.8", "IV.4.1", "IV.4.2", "IV.4.3", "IV.4.4", "IV.5.1", "IV.5.2", "IV.5.3", "IV.6.1", "IV.6.2", "IV.6.3", "IV.6.4", "IV.6.5", "IV.6.6", "IV.6.7", "IV.6.8", "IV.6.9", "IV.6.10", "IV.6.11", "IV.6.12", "IV.6.13", "IV.6.14", "IV.6.15", "IV.6.16", "IV.6.17", "IV.6.18", "IV.6.19", "IV.6.20", "IV.7.1", "IV.7.2", "IV.7.3", "IV.7.4", "IV.7.5"], "pages": "printed pp. 264, 265, 274, 283, 284, 290, 298, 299, 305, 306, 307, 308, 309, 310, 314, 315 / PDF pp. 283, 284, 293, 302, 303, 309, 317, 318, 324, 325, 326, 327, 328, 329, 333, 334", "reconciled": true}],
+  ["V", {"labels": ["V.1.1", "V.1.2", "V.1.3", "V.1.4", "V.1.5", "V.1.6", "V.1.7", "V.1.8", "V.1.9", "V.1.10", "V.1.11", "V.2.1", "V.2.2", "V.2.3", "V.2.4", "V.3.1", "V.3.2", "V.3.3", "V.3.4", "V.3.5", "V.3.6", "V.3.7", "V.4.1", "V.4.2", "V.4.3", "V.4.4", "V.4.5", "V.4.6", "V.5.1", "V.5.2", "V.5.3", "V.5.4", "V.5.5"], "pages": "printed pp. 325, 326, 332, 340, 341, 345, 346, 351, 352 / PDF pp. 344, 345, 351, 359, 360, 364, 365, 370, 371", "reconciled": true}],
+  ["VI", {"labels": ["VI.1.1", "VI.1.2", "VI.1.3", "VI.1.4", "VI.1.5", "VI.1.6", "VI.1.7", "VI.1.8", "VI.1.9", "VI.1.10", "VI.1.11", "VI.1.12", "VI.1.13", "VI.1.14", "VI.2.1", "VI.2.2", "VI.2.3", "VI.2.4", "VI.2.5", "VI.3.1", "VI.3.2", "VI.3.3", "VI.3.4", "VI.4.1", "VI.4.2", "VI.4.3", "VI.4.4", "VI.4.5", "VI.5.1", "VI.5.2", "VI.5.3", "VI.5.4", "VI.6.1", "VI.6.2", "VI.6.3", "VI.6.4", "VI.6.5", "VI.6.6", "VI.6.7", "VI.7.1", "VI.7.2", "VI.7.3", "VI.7.4", "VI.7.5", "VI.7.6", "VI.7.7"], "pages": "printed pp. 367, 368, 373, 379, 385, 394, 404, 405, 413, 414 / PDF pp. 386, 387, 392, 398, 404, 413, 423, 424, 432, 433", "reconciled": true}],
+  ["VII", {"labels": ["VII.1.1", "VII.1.2", "VII.1.3", "VII.1.4", "VII.1.5", "VII.2.1", "VII.2.2", "VII.2.3", "VII.2.4", "VII.6.1", "VII.6.2", "VII.6.3", "VII.6.4", "VII.6.5", "VII.6.6", "VII.7.1", "VII.7.2", "VII.7.3", "VII.7.4", "VII.7.5", "VII.7.6", "VII.7.7"], "pages": "printed pp. 433, 434, 443, 484, 493 / PDF pp. 452, 453, 462, 503, 512", "reconciled": true}],
 ]);
 const auditedSections = new Map([
   ["I.1", {
@@ -137,6 +145,57 @@ const auditedSections = new Map([
     pages: "printed p. 106 / PDF p. 125",
     reconciled: true,
   }],
+  ["II.2", {"title": "The p-adic Absolute Value", "labels": ["II.2.1", "II.2.2", "II.2.3", "II.2.4", "II.2.5", "II.2.6", "II.2.7", "II.2.8", "II.2.9"], "pages": "printed pp. 115, 116 / PDF pp. 134, 135", "reconciled": true}],
+  ["II.3", {"title": "Valuations", "labels": ["II.3.1", "II.3.2", "II.3.3", "II.3.4"], "pages": "printed pp. 123 / PDF pp. 142", "reconciled": true}],
+  ["II.4", {"title": "Completions", "labels": ["II.4.1", "II.4.2", "II.4.3", "II.4.4", "II.4.5", "II.4.6"], "pages": "printed pp. 134 / PDF pp. 153", "reconciled": true}],
+  ["II.5", {"title": "Local Fields", "labels": ["II.5.1", "II.5.2", "II.5.3", "II.5.4", "II.5.5", "II.5.6"], "pages": "printed pp. 142 / PDF pp. 161", "reconciled": true}],
+  ["II.6", {"title": "Henselian Fields", "labels": ["II.6.1", "II.6.2", "II.6.3", "II.6.4", "II.6.5"], "pages": "printed pp. 152 / PDF pp. 171", "reconciled": true}],
+  ["II.7", {"title": "Unramified and Tamely Ramified Extensions", "labels": ["II.7.1", "II.7.2", "II.7.3"], "pages": "printed pp. 159 / PDF pp. 178", "reconciled": true}],
+  ["II.8", {"title": "Extensions of Valuations", "labels": ["II.8.1", "II.8.2", "II.8.3", "II.8.4", "II.8.5", "II.8.6"], "pages": "printed pp. 165, 166 / PDF pp. 184, 185", "reconciled": true}],
+  ["II.9", {"title": "Galois Theory of Valuations", "labels": ["II.9.1", "II.9.2", "II.9.3", "II.9.4"], "pages": "printed pp. 176 / PDF pp. 195", "reconciled": true}],
+  ["II.10", {"title": "Higher Ramification Groups", "labels": ["II.10.1", "II.10.2"], "pages": "printed pp. 181 / PDF pp. 200", "reconciled": true}],
+  ["III.1", {"title": "Primes", "labels": ["III.1.1", "III.1.2", "III.1.3", "III.1.4", "III.1.5", "III.1.6"], "pages": "printed pp. 193, 194 / PDF pp. 212, 213", "reconciled": true}],
+  ["III.2", {"title": "Different and Discriminant", "labels": ["III.2.1", "III.2.2", "III.2.3", "III.2.4", "III.2.5"], "pages": "printed pp. 207, 208 / PDF pp. 226, 227", "reconciled": true}],
+  ["III.3", {"title": "Riemann-Roch", "labels": [], "pages": "No numbered exercises; boundary printed p. 224 / PDF p. 243", "reconciled": true}],
+  ["III.4", {"title": "Metrized o-Modules", "labels": ["III.4.1", "III.4.2", "III.4.3", "III.4.4"], "pages": "printed pp. 233 / PDF pp. 252", "reconciled": true}],
+  ["III.5", {"title": "Grothendieck Groups", "labels": [], "pages": "No numbered exercises; boundary printed p. 243 / PDF p. 262", "reconciled": true}],
+  ["III.6", {"title": "The Chern Character", "labels": [], "pages": "No numbered exercises; boundary printed p. 246 / PDF p. 265", "reconciled": true}],
+  ["III.7", {"title": "Grothendieck-Riemann-Roch", "labels": [], "pages": "No numbered exercises; boundary printed p. 255 / PDF p. 274", "reconciled": true}],
+  ["III.8", {"title": "The Euler-Minkowski Characteristic", "labels": [], "pages": "No numbered exercises; boundary printed p. 259 / PDF p. 278", "reconciled": true}],
+  ["IV.1", {"title": "Infinite Galois Theory", "labels": ["IV.1.1", "IV.1.2", "IV.1.3", "IV.1.4", "IV.1.5"], "pages": "printed pp. 264, 265 / PDF pp. 283, 284", "reconciled": true}],
+  ["IV.2", {"title": "Projective and Inductive Limits", "labels": ["IV.2.1", "IV.2.2", "IV.2.3", "IV.2.4", "IV.2.5", "IV.2.6"], "pages": "printed pp. 274 / PDF pp. 293", "reconciled": true}],
+  ["IV.3", {"title": "Abstract Galois Theory", "labels": ["IV.3.1", "IV.3.2", "IV.3.3", "IV.3.4", "IV.3.5", "IV.3.6", "IV.3.7", "IV.3.8"], "pages": "printed pp. 283, 284 / PDF pp. 302, 303", "reconciled": true}],
+  ["IV.4", {"title": "Abstract Valuation Theory", "labels": ["IV.4.1", "IV.4.2", "IV.4.3", "IV.4.4"], "pages": "printed pp. 290 / PDF pp. 309", "reconciled": true}],
+  ["IV.5", {"title": "The Reciprocity Map", "labels": ["IV.5.1", "IV.5.2", "IV.5.3"], "pages": "printed pp. 298, 299 / PDF pp. 317, 318", "reconciled": true}],
+  ["IV.6", {"title": "The General Reciprocity Law", "labels": ["IV.6.1", "IV.6.2", "IV.6.3", "IV.6.4", "IV.6.5", "IV.6.6", "IV.6.7", "IV.6.8", "IV.6.9", "IV.6.10", "IV.6.11", "IV.6.12", "IV.6.13", "IV.6.14", "IV.6.15", "IV.6.16", "IV.6.17", "IV.6.18", "IV.6.19", "IV.6.20"], "pages": "printed pp. 305, 306, 307, 308, 309, 310 / PDF pp. 324, 325, 326, 327, 328, 329", "reconciled": true}],
+  ["IV.7", {"title": "The Herbrand Quotient", "labels": ["IV.7.1", "IV.7.2", "IV.7.3", "IV.7.4", "IV.7.5"], "pages": "printed pp. 314, 315 / PDF pp. 333, 334", "reconciled": true}],
+  ["V.1", {"title": "The Local Reciprocity Law", "labels": ["V.1.1", "V.1.2", "V.1.3", "V.1.4", "V.1.5", "V.1.6", "V.1.7", "V.1.8", "V.1.9", "V.1.10", "V.1.11"], "pages": "printed pp. 325, 326 / PDF pp. 344, 345", "reconciled": true}],
+  ["V.2", {"title": "The Norm Residue Symbol over Qp", "labels": ["V.2.1", "V.2.2", "V.2.3", "V.2.4"], "pages": "printed pp. 332 / PDF pp. 351", "reconciled": true}],
+  ["V.3", {"title": "The Hilbert Symbol", "labels": ["V.3.1", "V.3.2", "V.3.3", "V.3.4", "V.3.5", "V.3.6", "V.3.7"], "pages": "printed pp. 340, 341 / PDF pp. 359, 360", "reconciled": true}],
+  ["V.4", {"title": "Formal Groups", "labels": ["V.4.1", "V.4.2", "V.4.3", "V.4.4", "V.4.5", "V.4.6"], "pages": "printed pp. 345, 346 / PDF pp. 364, 365", "reconciled": true}],
+  ["V.5", {"title": "Generalized Cyclotomic Theory", "labels": ["V.5.1", "V.5.2", "V.5.3", "V.5.4", "V.5.5"], "pages": "printed pp. 351, 352 / PDF pp. 370, 371", "reconciled": true}],
+  ["V.6", {"title": "Higher Ramification Groups", "labels": [], "pages": "No numbered exercises; boundary printed p. 355 / PDF p. 374", "reconciled": true}],
+  ["VI.1", {"title": "Ideles and Idele Classes", "labels": ["VI.1.1", "VI.1.2", "VI.1.3", "VI.1.4", "VI.1.5", "VI.1.6", "VI.1.7", "VI.1.8", "VI.1.9", "VI.1.10", "VI.1.11", "VI.1.12", "VI.1.13", "VI.1.14"], "pages": "printed pp. 367, 368 / PDF pp. 386, 387", "reconciled": true}],
+  ["VI.2", {"title": "Ideles in Field Extensions", "labels": ["VI.2.1", "VI.2.2", "VI.2.3", "VI.2.4", "VI.2.5"], "pages": "printed pp. 373 / PDF pp. 392", "reconciled": true}],
+  ["VI.3", {"title": "The Herbrand Quotient of the Idele Class Group", "labels": ["VI.3.1", "VI.3.2", "VI.3.3", "VI.3.4"], "pages": "printed pp. 379 / PDF pp. 398", "reconciled": true}],
+  ["VI.4", {"title": "The Class Field Axiom", "labels": ["VI.4.1", "VI.4.2", "VI.4.3", "VI.4.4", "VI.4.5"], "pages": "printed pp. 385 / PDF pp. 404", "reconciled": true}],
+  ["VI.5", {"title": "The Global Reciprocity Law", "labels": ["VI.5.1", "VI.5.2", "VI.5.3", "VI.5.4"], "pages": "printed pp. 394 / PDF pp. 413", "reconciled": true}],
+  ["VI.6", {"title": "Global Class Fields", "labels": ["VI.6.1", "VI.6.2", "VI.6.3", "VI.6.4", "VI.6.5", "VI.6.6", "VI.6.7"], "pages": "printed pp. 404, 405 / PDF pp. 423, 424", "reconciled": true}],
+  ["VI.7", {"title": "The Ideal-Theoretic Version of Class Field Theory", "labels": ["VI.7.1", "VI.7.2", "VI.7.3", "VI.7.4", "VI.7.5", "VI.7.6", "VI.7.7"], "pages": "printed pp. 413, 414 / PDF pp. 432, 433", "reconciled": true}],
+  ["VI.8", {"title": "The Reciprocity Law of the Power Residues", "labels": [], "pages": "No numbered exercises; boundary printed p. 417 / PDF p. 436", "reconciled": true}],
+  ["VII.1", {"title": "The Riemann Zeta Function", "labels": ["VII.1.1", "VII.1.2", "VII.1.3", "VII.1.4", "VII.1.5"], "pages": "printed pp. 433, 434 / PDF pp. 452, 453", "reconciled": true}],
+  ["VII.2", {"title": "Dirichlet L-series", "labels": ["VII.2.1", "VII.2.2", "VII.2.3", "VII.2.4"], "pages": "printed pp. 443 / PDF pp. 462", "reconciled": true}],
+  ["VII.3", {"title": "Theta Series", "labels": [], "pages": "No numbered exercises; boundary printed p. 453 / PDF p. 472", "reconciled": true}],
+  ["VII.4", {"title": "The Higher-dimensional Gamma Function", "labels": [], "pages": "No numbered exercises; boundary printed p. 457 / PDF p. 476", "reconciled": true}],
+  ["VII.5", {"title": "The Dedekind Zeta Function", "labels": [], "pages": "No numbered exercises; boundary printed p. 470 / PDF p. 489", "reconciled": true}],
+  ["VII.6", {"title": "Hecke Characters", "labels": ["VII.6.1", "VII.6.2", "VII.6.3", "VII.6.4", "VII.6.5", "VII.6.6"], "pages": "printed pp. 484 / PDF pp. 503", "reconciled": true}],
+  ["VII.7", {"title": "Theta Series of Algebraic Number Fields", "labels": ["VII.7.1", "VII.7.2", "VII.7.3", "VII.7.4", "VII.7.5", "VII.7.6", "VII.7.7"], "pages": "printed pp. 493 / PDF pp. 512", "reconciled": true}],
+  ["VII.8", {"title": "Hecke L-series", "labels": [], "pages": "No numbered exercises; boundary printed p. 504 / PDF p. 523", "reconciled": true}],
+  ["VII.9", {"title": "Values of Dirichlet L-series at Integer Points", "labels": [], "pages": "No numbered exercises; boundary printed p. 517 / PDF p. 536", "reconciled": true}],
+  ["VII.10", {"title": "Artin L-series", "labels": [], "pages": "No numbered exercises; boundary printed p. 527 / PDF p. 546", "reconciled": true}],
+  ["VII.11", {"title": "The Artin Conductor", "labels": [], "pages": "No numbered exercises; boundary printed p. 535 / PDF p. 554", "reconciled": true}],
+  ["VII.12", {"title": "The Functional Equation of Artin L-series", "labels": [], "pages": "No numbered exercises; boundary printed p. 542 / PDF p. 561", "reconciled": true}],
+  ["VII.13", {"title": "Density Theorems", "labels": [], "pages": "No numbered exercises; boundary printed p. 549 / PDF p. 568", "reconciled": true}],
 ]);
 
 const noteFiles = new Map([...chapterTitles.keys()].map(ch => [ch, new Set()]));
@@ -249,12 +308,12 @@ if (unparsed.length > 0) {
 | Chapter | Original title | Source exercise audit |
 |---------|----------------|-----------------------|
 | I | Algebraic Integers | Complete: 75/75 source exercises in 75 notes; §1–§14 reconciled. This batch added 44 notes and reused R329 for I.8.2. §13–§14 have no numbered exercises. Source issues remain visibly recorded in their notes and section warnings. |
-| II | The Theory of Valuations | §1 complete: 6/6 numbered exercises, printed p. 106 / PDF p. 125. The complete chapter total has not been audited. |
-| III | Riemann-Roch Theory | Pending |
-| IV | Abstract Class Field Theory | Pending |
-| V | Local Class Field Theory | Pending |
-| VI | Global Class Field Theory | Pending |
-| VII | Zeta Functions and L-series | Pending |
+| II | The Theory of Valuations | Complete: 51/51 source exercises in 51 notes; all sections reconciled on 2026-10-23. |
+| III | Riemann-Roch Theory | Complete: 15/15 source exercises in 15 notes; all sections reconciled on 2026-10-23. |
+| IV | Abstract Class Field Theory | Complete: 51/51 source exercises in 51 notes; all sections reconciled on 2026-10-23. |
+| V | Local Class Field Theory | Complete: 33/33 source exercises in 33 notes; all sections reconciled on 2026-10-23. |
+| VI | Global Class Field Theory | Complete: 46/46 source exercises in 46 notes; all sections reconciled on 2026-10-23. |
+| VII | Zeta Functions and L-series | Complete: 22/22 source exercises in 22 notes; all sections reconciled on 2026-10-23. |
 
 The chapter titles and order were visually checked on all three original contents pages. The contents end with the bibliography and index and do not list a separate appendix. This contents check is not an audit of the full exercise corpus. [S4, Contents, printed pp. xv-xvii, PDF pp. 16-18]
 
@@ -852,14 +911,13 @@ if (rows.length === 0) {
 
 #### II.1 — The p-adic Numbers
 
-Source-audited and reconciled on 2026-10-20: ordered labels II.1.1–II.1.6, verified total 6, all on printed p. 106 / PDF p. 125. The group ends before the §2 body heading on the same page. Verified coverage 6/6, with one note per numbered exercise; missing labels, duplicate mappings, unexpected labels and unparsed Neukirch locators are all zero. The six notes are R370, R371, R372, R373, F128 and R374 in source order, all remaining `not-started`. No source figure is required. This section audit does not establish the source total of Chapter II.
+Ordered source labels **II.1.1–II.1.6**, verified total **6**; printed pp. 106 / PDF pp. 125. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
 
 ```dataviewjs
 const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
 const targetChapter = "II";
 const targetSection = 1;
 const matches = new Map();
-
 for (const page of dv.pages("#exercise")) {
   if (typeof page.source !== "string") continue;
   for (const rawSegment of page.source.split(";")) {
@@ -869,47 +927,1453 @@ for (const page of dv.pages("#exercise")) {
     const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
     const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
     if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
-    const number = Number(exercise);
-    const label = chapter + "." + targetSection + "." + number;
-    matches.set(label + "\0" + page.file.path, {
-      number, label, path: page.file.path,
-      row: [label, page.file.link, page.topic, page.status, page.difficulty],
-    });
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
   }
 }
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
-const rows = [...matches.values()].sort((a, b) =>
-  a.number - b.number || a.path.localeCompare(b.path)
-);
-if (rows.length === 0) {
-  dv.paragraph("No source-identified exercises are archived for this section yet. This does not establish its source total.");
-} else {
-  dv.table(
-    ["Source exercise", "Archived note", "Topic", "Learning status", "Difficulty"],
-    rows.map(entry => entry.row)
-  );
+#### II.2 — The p-adic Absolute Value
+
+Ordered source labels **II.2.1–II.2.9**, verified total **9**; printed pp. 115, 116 / PDF pp. 134, 135. Reconciled one-to-one on 2026-10-23: coverage **9/9**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
 }
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.3 — Valuations
+
+Ordered source labels **II.3.1–II.3.4**, verified total **4**; printed pp. 123 / PDF pp. 142. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.4 — Completions
+
+Ordered source labels **II.4.1–II.4.6**, verified total **6**; printed pp. 134 / PDF pp. 153. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.5 — Local Fields
+
+Ordered source labels **II.5.1–II.5.6**, verified total **6**; printed pp. 142 / PDF pp. 161. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.6 — Henselian Fields
+
+Ordered source labels **II.6.1–II.6.5**, verified total **5**; printed pp. 152 / PDF pp. 171. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.7 — Unramified and Tamely Ramified Extensions
+
+Ordered source labels **II.7.1–II.7.3**, verified total **3**; printed pp. 159 / PDF pp. 178. Reconciled one-to-one on 2026-10-23: coverage **3/3**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 7;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.8 — Extensions of Valuations
+
+Ordered source labels **II.8.1–II.8.6**, verified total **6**; printed pp. 165, 166 / PDF pp. 184, 185. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 8;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.9 — Galois Theory of Valuations
+
+Ordered source labels **II.9.1–II.9.4**, verified total **4**; printed pp. 176 / PDF pp. 195. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 9;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### II.10 — Higher Ramification Groups
+
+Ordered source labels **II.10.1–II.10.2**, verified total **2**; printed pp. 181 / PDF pp. 200. Reconciled one-to-one on 2026-10-23: coverage **2/2**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "II";
+const targetSection = 10;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
 ```
 
 ### Chapter III — Riemann-Roch Theory
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### III.1 — Primes
+
+Ordered source labels **III.1.1–III.1.6**, verified total **6**; printed pp. 193, 194 / PDF pp. 212, 213. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 1;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.2 — Different and Discriminant
+
+Ordered source labels **III.2.1–III.2.5**, verified total **5**; printed pp. 207, 208 / PDF pp. 226, 227. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.3 — Riemann-Roch
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 224 / PDF p. 243; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.4 — Metrized o-Modules
+
+Ordered source labels **III.4.1–III.4.4**, verified total **4**; printed pp. 233 / PDF pp. 252. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.5 — Grothendieck Groups
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 243 / PDF p. 262; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.6 — The Chern Character
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 246 / PDF p. 265; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.7 — Grothendieck-Riemann-Roch
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 255 / PDF p. 274; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 7;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### III.8 — The Euler-Minkowski Characteristic
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 259 / PDF p. 278; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "III";
+const targetSection = 8;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
 ### Chapter IV — Abstract Class Field Theory
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### IV.1 — Infinite Galois Theory
+
+Ordered source labels **IV.1.1–IV.1.5**, verified total **5**; printed pp. 264, 265 / PDF pp. 283, 284. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 1;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.2 — Projective and Inductive Limits
+
+Ordered source labels **IV.2.1–IV.2.6**, verified total **6**; printed pp. 274 / PDF pp. 293. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.3 — Abstract Galois Theory
+
+Ordered source labels **IV.3.1–IV.3.8**, verified total **8**; printed pp. 283, 284 / PDF pp. 302, 303. Reconciled one-to-one on 2026-10-23: coverage **8/8**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.4 — Abstract Valuation Theory
+
+Ordered source labels **IV.4.1–IV.4.4**, verified total **4**; printed pp. 290 / PDF pp. 309. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.5 — The Reciprocity Map
+
+Ordered source labels **IV.5.1–IV.5.3**, verified total **3**; printed pp. 298, 299 / PDF pp. 317, 318. Reconciled one-to-one on 2026-10-23: coverage **3/3**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.6 — The General Reciprocity Law
+
+Ordered source labels **IV.6.1–IV.6.20**, verified total **20**; printed pp. 305, 306, 307, 308, 309, 310 / PDF pp. 324, 325, 326, 327, 328, 329. Reconciled one-to-one on 2026-10-23: coverage **20/20**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### IV.7 — The Herbrand Quotient
+
+Ordered source labels **IV.7.1–IV.7.5**, verified total **5**; printed pp. 314, 315 / PDF pp. 333, 334. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "IV";
+const targetSection = 7;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
 ### Chapter V — Local Class Field Theory
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### V.1 — The Local Reciprocity Law
+
+Ordered source labels **V.1.1–V.1.11**, verified total **11**; printed pp. 325, 326 / PDF pp. 344, 345. Reconciled one-to-one on 2026-10-23: coverage **11/11**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 1;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### V.2 — The Norm Residue Symbol over Qp
+
+Ordered source labels **V.2.1–V.2.4**, verified total **4**; printed pp. 332 / PDF pp. 351. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### V.3 — The Hilbert Symbol
+
+Ordered source labels **V.3.1–V.3.7**, verified total **7**; printed pp. 340, 341 / PDF pp. 359, 360. Reconciled one-to-one on 2026-10-23: coverage **7/7**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### V.4 — Formal Groups
+
+Ordered source labels **V.4.1–V.4.6**, verified total **6**; printed pp. 345, 346 / PDF pp. 364, 365. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### V.5 — Generalized Cyclotomic Theory
+
+Ordered source labels **V.5.1–V.5.5**, verified total **5**; printed pp. 351, 352 / PDF pp. 370, 371. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### V.6 — Higher Ramification Groups
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 355 / PDF p. 374; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "V";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
 ### Chapter VI — Global Class Field Theory
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### VI.1 — Ideles and Idele Classes
+
+Ordered source labels **VI.1.1–VI.1.14**, verified total **14**; printed pp. 367, 368 / PDF pp. 386, 387. Reconciled one-to-one on 2026-10-23: coverage **14/14**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 1;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.2 — Ideles in Field Extensions
+
+Ordered source labels **VI.2.1–VI.2.5**, verified total **5**; printed pp. 373 / PDF pp. 392. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.3 — The Herbrand Quotient of the Idele Class Group
+
+Ordered source labels **VI.3.1–VI.3.4**, verified total **4**; printed pp. 379 / PDF pp. 398. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.4 — The Class Field Axiom
+
+Ordered source labels **VI.4.1–VI.4.5**, verified total **5**; printed pp. 385 / PDF pp. 404. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.5 — The Global Reciprocity Law
+
+Ordered source labels **VI.5.1–VI.5.4**, verified total **4**; printed pp. 394 / PDF pp. 413. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.6 — Global Class Fields
+
+Ordered source labels **VI.6.1–VI.6.7**, verified total **7**; printed pp. 404, 405 / PDF pp. 423, 424. Reconciled one-to-one on 2026-10-23: coverage **7/7**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.7 — The Ideal-Theoretic Version of Class Field Theory
+
+Ordered source labels **VI.7.1–VI.7.7**, verified total **7**; printed pp. 413, 414 / PDF pp. 432, 433. Reconciled one-to-one on 2026-10-23: coverage **7/7**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 7;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VI.8 — The Reciprocity Law of the Power Residues
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 417 / PDF p. 436; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VI";
+const targetSection = 8;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
 ### Chapter VII — Zeta Functions and L-series
 
-Section archival has not started. Add a separate section heading and query when its source group is audited.
+#### VII.1 — The Riemann Zeta Function
+
+Ordered source labels **VII.1.1–VII.1.5**, verified total **5**; printed pp. 433, 434 / PDF pp. 452, 453. Reconciled one-to-one on 2026-10-23: coverage **5/5**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 1;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.2 — Dirichlet L-series
+
+Ordered source labels **VII.2.1–VII.2.4**, verified total **4**; printed pp. 443 / PDF pp. 462. Reconciled one-to-one on 2026-10-23: coverage **4/4**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 2;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.3 — Theta Series
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 453 / PDF p. 472; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 3;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.4 — The Higher-dimensional Gamma Function
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 457 / PDF p. 476; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 4;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.5 — The Dedekind Zeta Function
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 470 / PDF p. 489; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 5;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.6 — Hecke Characters
+
+Ordered source labels **VII.6.1–VII.6.6**, verified total **6**; printed pp. 484 / PDF pp. 503. Reconciled one-to-one on 2026-10-23: coverage **6/6**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 6;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.7 — Theta Series of Algebraic Number Fields
+
+Ordered source labels **VII.7.1–VII.7.7**, verified total **7**; printed pp. 493 / PDF pp. 512. Reconciled one-to-one on 2026-10-23: coverage **7/7**; missing labels, duplicate mappings, unexpected labels and unparsed locators are all zero. Multipart exercises remain in one note; no source figure is required.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 7;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.8 — Hecke L-series
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 504 / PDF p. 523; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 8;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.9 — Values of Dirichlet L-series at Integer Points
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 517 / PDF p. 536; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 9;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.10 — Artin L-series
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 527 / PDF p. 546; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 10;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.11 — The Artin Conductor
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 535 / PDF p. 554; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 11;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.12 — The Functional Equation of Artin L-series
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 542 / PDF p. 561; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 12;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
+
+#### VII.13 — Density Theorems
+
+No numbered exercises. The empty expected label set was checked at the section boundary, printed p. 549 / PDF p. 568; reconciled coverage **0/0**.
+
+```dataviewjs
+const sourcePrefix = "Jürgen Neukirch, Algebraic Number Theory, English ed., 1999";
+const targetChapter = "VII";
+const targetSection = 13;
+const matches = new Map();
+for (const page of dv.pages("#exercise")) {
+  if (typeof page.source !== "string") continue;
+  for (const rawSegment of page.source.split(";")) {
+    const segment = rawSegment.trim();
+    if (!segment.startsWith(sourcePrefix + ",")) continue;
+    const chapter = segment.match(/\bCh\.\s*([IVXLCDM]+)\b/i)?.[1].toUpperCase();
+    const section = segment.match(/§\s*([1-9]\d*)(?=\s*,)/)?.[1];
+    const exercise = segment.match(/\bExercise\s+([1-9]\d*)(?=\s*(?:,|$))/i)?.[1];
+    if (chapter !== targetChapter || Number(section) !== targetSection || !exercise) continue;
+    const label = chapter + "." + targetSection + "." + exercise;
+    matches.set(label + "\0" + page.file.path, {number:Number(exercise),path:page.file.path,
+      row:[label,page.file.link,page.topic,page.status,page.difficulty]});
+  }
+}
+const rows = [...matches.values()].sort((a,b)=>a.number-b.number || a.path.localeCompare(b.path));
+if (rows.length) dv.table(["Source exercise","Archived note","Topic","Learning status","Difficulty"],rows.map(e=>e.row));
+else dv.paragraph("Source-audited: this section has no numbered exercises; no exercise note is expected.");
+```
 
 ## Source Identity and Numbering
 
@@ -942,9 +2406,9 @@ The exercise groups of Chapter I §1 and §2 both begin with Exercise 1. They es
 
 ## Classification and Source Status
 
-Exercises will be routed by the primary computational or proof method, following the existing vault policy. Chapter titles alone do not determine their destination. Cross-topic prerequisites belong under `Related Concepts`.
+Exercises are routed by the primary computational or proof method, following the existing vault policy. Chapter titles alone do not determine their destination. Cross-topic prerequisites belong under `Related Concepts`.
 
-Future notes must distinguish the printed problem, independently derived solutions, imported results, computational checks, and source errors or unresolved ambiguities. Preserve any defective printed statement visibly before presenting a corrected formulation.
+Notes distinguish the printed problem, independently derived solutions, imported results, computational checks, and source errors or unresolved ambiguities. Preserve any defective printed statement visibly before presenting a corrected formulation.
 
 Chapter I §1 was source-audited on 2026-09-29 against the ordered labels I.1.1-I.1.7, all on printed p. 5 / PDF p. 24. The complete section text on printed pp. 1-5 / PDF pp. 20-24 was visually checked, including the exercise group's end before the §2 heading. No exercise requires a source figure. The separate full-chapter source audit and reconciliation were completed on 2026-10-20, as recorded above.
 
@@ -962,11 +2426,21 @@ Chapter I §5 was source-audited and reconciled on 2026-10-17 against I.5.1-I.5.
 
 Chapter I was finally source-audited and reconciled on 2026-10-20. The ordered section totals are 7, 7, 10, 3, 3, 7, 6, 11, 4, 5, 7, 5, 0 and 0, totaling 75. The original §1–§5 exercise pages (printed pp. 5, 15, 23, 27–28 and 34 / PDF pp. 24, 34, 42, 46–47 and 53) were re-rendered at 200 dpi and their 30 labels rechecked. Together with the independently checked §6–§12 groups, the expected 75 labels map to 75 distinct notes, with no missing, duplicate, unexpected or unparsed entries. Sections §13 and §14 contain no numbered exercises; §14 ends at printed p. 97 / PDF p. 116, PDF p. 117 is blank, and Chapter II begins at printed p. 99 / PDF p. 118. The permanent chapter and section ledgers above retain the source anchors and final status. Learning status remains separate from archive coverage.
 
-Chapter II §1 was source-audited and reconciled on 2026-10-20 against its complete ordered set II.1.1–II.1.6. All six exercises and the first exercise’s printed periodicity hint were visually checked on printed p. 106 / PDF p. 125 at 200 dpi. Definition (1.1), Proposition (1.2), Proposition (1.3), the inverse-limit ring interpretation and the fraction-field construction were checked on printed pp. 100–101 and 103–104 / PDF pp. 119–120 and 122–123. All six solutions are independent derivations and were mathematically cross-reviewed. Exercise 4 concerns $2/3$ and $-2/3$; the dropped numerators in text extraction are not a source error. Exercise 5 treats abstract field automorphisms, including $p=2$, without assuming continuity or importing a later Hensel theorem; its separately archived Lang analogue remains F108. Exercise 6 keeps all four operations in one note, with complete carry, borrow, unit-division and exponent-shift arguments. The existing p-adic concept was expanded, preserving its metadata, partial source-verification status, older content and dynamic exercise query; no new concept, folder or tracker configuration was needed. The six expected labels map one-to-one to six notes, with all source exception sets empty; no incorrect printed assertion was found. Chapter II as a whole remains unaudited.
+Chapter II §1 was source-audited and reconciled on 2026-10-20 against its complete ordered set II.1.1–II.1.6. All six exercises and the first exercise’s printed periodicity hint were visually checked on printed p. 106 / PDF p. 125 at 200 dpi. Definition (1.1), Proposition (1.2), Proposition (1.3), the inverse-limit ring interpretation and the fraction-field construction were checked on printed pp. 100–101 and 103–104 / PDF pp. 119–120 and 122–123. All six solutions are independent derivations and were mathematically cross-reviewed. Exercise 4 concerns $2/3$ and $-2/3$; the dropped numerators in text extraction are not a source error. Exercise 5 treats abstract field automorphisms, including $p=2$, without assuming continuity or importing a later Hensel theorem; its separately archived Lang analogue remains F108. Exercise 6 keeps all four operations in one note, with complete carry, borrow, unit-division and exponent-shift arguments. The existing p-adic concept was expanded, preserving its metadata, partial source-verification status, older content and dynamic exercise query; no new concept, folder or tracker configuration was needed. The six expected labels map one-to-one to six notes, with all source exception sets empty; no incorrect printed assertion was found. Chapter II was subsequently fully audited and reconciled on 2026-10-23 (51/51).
+
+## Final Reconciliation and Proof Status
+
+On 2026-10-23, all remaining original exercise pages were checked from 200 dpi renders. Chapters II–VII reconcile to 51, 15, 51, 33, 46 and 22 unique labels. Together with the previously reconciled Chapter I, the complete expected set has 293 labels and maps to 293 distinct exercise notes. All four source-locator exception sets are empty. Existing 81 notes retain their contents and learning statuses; the 212 new notes are `not-started` and carry structured S4 source references for Exercise Manager.
+
+The archive retains the printed problem and printed hints before any source correction. Independently supplied derivations identify every imported result; false printed claims receive explicit counterexamples or corrected hypotheses. The negative radius in II.5.1 concerns continuous homomorphism extension, not convergence of the exponential series, and is not treated as a source error. The printed logarithm target in that exercise is the un-subscripted rational field and is corrected visibly.
+
+Eight prerequisite concepts were added in the existing concept directories, linked from the topic hubs and from the exercises. Their exercise lists are dynamic outgoing-link queries. Human-readable source citations name Jürgen Neukirch, Algebraic Number Theory, English edition, 1999; S4 is retained only as the vault's stable structured source identity where required.
+
+**Unresolved source ambiguity:** [[02 - Ring Theory/Exercises/Exercise R409 - Class Number One for the Intended Quintic Field|VI.7.5, class number one]]. The original prints the degree-120 splitting field $K$, while the hint switches to $\mathcal O_k$ and uses the degree-five Minkowski bound. The note completely proves the hint's lowercase-$k$ conclusion and preserves the capital-$K$ assertion as unproved. A coverage status of Complete does not erase this distinction.
 
 ## Next Archive Target
 
-**Chapter II §2 — The p-adic Absolute Value.** Chapter II §1 is complete at 6/6. Its exercise group ends before this next section’s body heading on printed p. 106 / PDF p. 125; §2 continues on printed p. 107 / PDF p. 126. The next section’s exercise set and the complete Chapter II total have not yet been audited.
+No numbered source exercise remains unarchived in this book. Further proof work, if undertaken, should resolve the explicitly recorded source ambiguity rather than create a duplicate exercise note.
 
 ## Related Archives
 

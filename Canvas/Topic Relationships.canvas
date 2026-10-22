@@ -47,7 +47,16 @@
 		{"id":"1026092900000010","type":"group","x":-580,"y":-150,"width":430,"height":590,"color":"6","label":"Set Theory and Foundations"},
 		{"id":"1026092900000011","type":"file","file":"09 - Set Theory and Foundations/Concepts/Mathematical Induction and Peano Arithmetic.md","x":-540,"y":-100,"width":340,"height":110},
 		{"id":"1026092900000012","type":"file","file":"09 - Set Theory and Foundations/Concepts/Partially Ordered Sets and Zorns Lemma.md","x":-540,"y":70,"width":340,"height":110},
-		{"id":"1026092900000013","type":"file","file":"09 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic.md","x":-540,"y":240,"width":340,"height":110}
+		{"id":"1026092900000013","type":"file","file":"09 - Set Theory and Foundations/Concepts/Cardinality and Cardinal Arithmetic.md","x":-540,"y":240,"width":340,"height":110},
+		{"id":"0572c1fae2acc98f","type":"group","x":1440,"y":-150,"width":860,"height":960,"color":"5","label":"Local and Global Arithmetic Tools"},
+		{"id":"17487782834f25f0","type":"file","file":"08 - Arithmetic Geometry/Concepts/Henselian Fields and Henselization.md","x":1470,"y":-80,"width":380,"height":170},
+		{"id":"bcf060a768b6c218","type":"file","file":"05 - Galois Theory/Concepts/Higher Ramification Groups and Herbrand Functions.md","x":1890,"y":-80,"width":380,"height":170},
+		{"id":"4ea2e0d06903ec69","type":"file","file":"02 - Ring Theory/Concepts/Different and Discriminant Ideals.md","x":1470,"y":140,"width":380,"height":170},
+		{"id":"352a91be808c169b","type":"file","file":"08 - Arithmetic Geometry/Concepts/Replete Ideals and Arakelov Divisors.md","x":1890,"y":140,"width":380,"height":170},
+		{"id":"b044a4ac96de101b","type":"file","file":"04 - Linear Algebra and Modules/Concepts/Metrized Modules and Determinant Metrics.md","x":1470,"y":360,"width":380,"height":170},
+		{"id":"47142f70bfb57d51","type":"file","file":"05 - Galois Theory/Concepts/Class Field Theory and Reciprocity Maps.md","x":1890,"y":360,"width":380,"height":170},
+		{"id":"178ee08f1a3cafd3","type":"file","file":"02 - Ring Theory/Concepts/Formal Groups and Lubin Tate Modules.md","x":1470,"y":580,"width":380,"height":170},
+		{"id":"3439e7e2258f6a26","type":"file","file":"08 - Arithmetic Geometry/Concepts/Hecke Characters and Their Finite and Infinite Parts.md","x":1890,"y":580,"width":380,"height":170}
 	],
 	"edges":[
 		{"id":"ea1234567890abcde","fromNode":"n1d4e5f6789012345","fromSide":"bottom","toNode":"n2e5f67890123456a","toSide":"top"},
@@ -89,6 +98,13 @@
 		{"id":"ecross5solv2gal12","fromNode":"n9solvablegroups12","fromSide":"right","toNode":"f6ddef01234567890","toSide":"left","color":"6","label":"solvability"},
 		{"id":"1026092900000014","fromNode":"1026092900000011","fromSide":"bottom","toNode":"1026092900000013","toSide":"top","label":"finite and infinite counting"},
 		{"id":"1026092900000015","fromNode":"1026092900000012","fromSide":"right","toNode":"r5c6789abcdef0123","toSide":"left","label":"existence"},
-		{"id":"1026092900000016","fromNode":"1026092900000013","fromSide":"right","toNode":"f4bbcdef012345678","toSide":"top","label":"algebraic closures"}
+		{"id":"1026092900000016","fromNode":"1026092900000013","fromSide":"right","toNode":"f4bbcdef012345678","toSide":"top","label":"algebraic closures"},
+		{"id":"e1f64d9d18d58089","fromNode":"17487782834f25f0","fromSide":"bottom","toNode":"bcf060a768b6c218","toSide":"top"},
+		{"id":"d138664863ca3610","fromNode":"4ea2e0d06903ec69","fromSide":"bottom","toNode":"bcf060a768b6c218","toSide":"top"},
+		{"id":"97497f4e99a4acc6","fromNode":"352a91be808c169b","fromSide":"bottom","toNode":"b044a4ac96de101b","toSide":"top"},
+		{"id":"9d253f81f14b6912","fromNode":"17487782834f25f0","fromSide":"bottom","toNode":"47142f70bfb57d51","toSide":"top"},
+		{"id":"d8ecc30e6cd98432","fromNode":"bcf060a768b6c218","fromSide":"bottom","toNode":"47142f70bfb57d51","toSide":"top"},
+		{"id":"5276b232f092aba3","fromNode":"178ee08f1a3cafd3","fromSide":"bottom","toNode":"47142f70bfb57d51","toSide":"top"},
+		{"id":"b774f314bdea72ad","fromNode":"47142f70bfb57d51","fromSide":"bottom","toNode":"3439e7e2258f6a26","toSide":"top"}
 	]
 }

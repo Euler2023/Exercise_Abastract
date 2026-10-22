@@ -69,6 +69,12 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Hilbert Nullstellensatz|Hilbert Nullstellensatz]]
 - [[02 - Ring Theory/Concepts/Krull Dimension and Catenarity|Krull Dimension and Catenarity]]
 
+### Local and Global Arithmetic Tools
+
+- [[02 - Ring Theory/Concepts/Different and Discriminant Ideals|Different and Discriminant Ideals]]
+- [[02 - Ring Theory/Concepts/Formal Groups and Lubin Tate Modules|Formal Groups and Lubin Tate Modules]]
+
+
 ## Important Rings
 
 | Ring | Notation | Properties |

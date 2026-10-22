@@ -67,6 +67,11 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Topology of Matrix Groups|Topology of Matrix Groups]]
 - [[04 - Linear Algebra and Modules/Concepts/Path Connectedness and Path Components|Path Connectedness and Path Components]]
 
+### Local and Global Arithmetic Tools
+
+- [[04 - Linear Algebra and Modules/Concepts/Metrized Modules and Determinant Metrics|Metrized Modules and Determinant Metrics]]
+
+
 ## Module Theory
 
 ### Foundations
