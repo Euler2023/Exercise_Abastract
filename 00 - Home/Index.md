@@ -71,6 +71,7 @@ GROUP BY true
 - [[00 - Home/Artin Exercise Archive|Artin Exercise Archive]]
 - [[00 - Home/Lang Algebra Exercise Archive|Lang Algebra Exercise Archive]]
 - [[00 - Home/Neukirch Algebraic Number Theory Exercise Archive|Neukirch Algebraic Number Theory Exercise Archive]]
+- [[00 - Home/Diamond-Shurman Modular Forms Exercise Archive|Diamond–Shurman Modular Forms Exercise Archive]]
 
 ## Study Progress
 
