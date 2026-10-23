@@ -34,39 +34,39 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 设 $B=A^G$、$C=(\sigma-1)A$。$B$ 上作用平凡，所以 $h(G,B)=q_{0,p}(B)$；$C$ 上 $N=0$，所以 $h(G,C)=q_{0,\sigma-1}(C)^{-1}$。
+> Set $B=A^G$ and $C=(\sigma-1)A$. The action on $B$ is trivial, so $h(G,B)=q_{0,p}(B)$. On $C$, we have $N=0$, so $h(G,C)=q_{0,\sigma-1}(C)^{-1}$.
 
 > [!hint]- Hint 2
-> 在 $C$ 上使用 cyclotomic ring 恒等式 $p=(\sigma-1)^{p-1}\varepsilon$，把 $q_{0,p}(C)$ 写为 $q_{0,\sigma-1}(C)^{p-1}$。
+> Use the cyclotomic ring identity $p=(\sigma-1)^{p-1}\varepsilon$ on $C$ to express $q_{0,p}(C)$ as $q_{0,\sigma-1}(C)^{p-1}$.
 
 > [!hint]- Hint 3
-> 先别略过有限性：用 $A[p]$ 的有限性把 $B/pB$ 的潜在额外核嵌入有限群 $H^1(G,A[p])$。
+> Do not skip finiteness: use finiteness of $A[p]$ to embed the possible extra kernel from $B/pB$ into the finite group $H^1(G,A[p])$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 采用加法记号，记 $T=\sigma-1$、$B=A^G$、$C=TA$，有题设短正合列。$A[p]$ 与 $A/pA$ 都有限。
+> Use additive notation and write $T=\sigma-1$, $B=A^G$, and $C=TA$, giving the short exact sequence in the statement. Both $A[p]$ and $A/pA$ are finite.
 >
-> **1. 证明 $q_{0,p}(B)$ 可定义。** $B[p]\subseteq A[p]$ 有限。映射 $B/pB\to A/pA$ 的核为 $(B\cap pA)/pB$。对 $a=pb\in B$，$b^g-b$ 取值于 $A[p]$ 并为 cocycle；改变 $b$ 改变 coboundary。若其类为零，可调整 $b$ 使其固定，此时 $a\in pB$。故该核嵌入有限群 $H^1(G,A[p])$，后者有限因为所有函数 $G\to A[p]$ 仅有限个。于是 $B/pB$ 有限。对上述短正合列应用 Exercise 1 的二周期乘法性（微分为 $0,p$），$q_{0,p}(C)$ 亦可定义，且
+> **1. Showing that $q_{0,p}(B)$ is defined.** The group $B[p]\subseteq A[p]$ is finite. The map $B/pB\to A/pA$ has kernel $(B\cap pA)/pB$. For $a=pb\in B$, the expression $b^g-b$ takes values in $A[p]$ and is a cocycle. Changing $b$ changes it by a coboundary. If its class is zero, adjust $b$ to make it fixed; then $a\in pB$. Thus this kernel embeds into the finite group $H^1(G,A[p])$, which is finite because there are only finitely many functions $G\to A[p]$. Hence $B/pB$ is finite. Applying the two-periodic multiplicativity from Exercise 1 to the short exact sequence above, with differentials $0,p$, shows that $q_{0,p}(C)$ is also defined and that
 > $$
 > q_{0,p}(A)=q_{0,p}(B)q_{0,p}(C).
 > $$
 >
-> **2. cyclotomic ring 恒等式。** $\mathbb Z[G]=\mathbb Z[X]/(X^p-1)$，再模掉 $N=\Phi_p(X)$，得到 $\mathbb Z[X]/\Phi_p(X)\simeq\mathbb Z[\zeta]$，$\sigma\mapsto\zeta$。又
+> **2. The cyclotomic ring identity.** We have $\mathbb Z[G]=\mathbb Z[X]/(X^p-1)$. Quotienting further by $N=\Phi_p(X)$ gives $\mathbb Z[X]/\Phi_p(X)\simeq\mathbb Z[\zeta]$, with $\sigma\mapsto\zeta$. Also,
 > $$
 > p=\Phi_p(1)=\prod_{j=1}^{p-1}(1-\zeta^j).
 > $$
-> 每个 $(1-\zeta^j)/(1-\zeta)$ 是代数整数，范数为 $p/p=1$，故为单位（其逆可由首一最小多项式的常数项 $\pm1$ 表达为整系数多项式）。因此乘积给出 $p=(\zeta-1)^{p-1}\varepsilon$，$\varepsilon$ 为单位。
+> Each $(1-\zeta^j)/(1-\zeta)$ is an algebraic integer of norm $p/p=1$, hence a unit: its inverse can be expressed as a polynomial with integer coefficients using the constant term $\pm1$ of its monic minimal polynomial. Taking the product therefore gives $p=(\zeta-1)^{p-1}\varepsilon$ with $\varepsilon$ a unit.
 >
-> **3. 在 $C$ 上计算。** 因 $NT=0$，$NC=0$，所以 $C$ 为上述 cyclotomic ring 的模，$p=T^{p-1}\varepsilon$。$\ker T\subseteq C[p]$，且 $pC\subseteq TC$，所以 $\ker T$ 与 $C/TC$ 均有限。Exercise 2 的复合公式使
+> **3. Calculation on $C$.** Since $NT=0$ and $NC=0$, the group $C$ is a module over the cyclotomic ring above, and $p=T^{p-1}\varepsilon$. We have $\ker T\subseteq C[p]$ and $pC\subseteq TC$, so both $\ker T$ and $C/TC$ are finite. The composition formula from Exercise 2 gives
 > $$
 > q_{0,p}(C)=q_{0,T}(C)^{p-1},
 > $$
-> 因为单位 $\varepsilon$ 的核余核均平凡。又 $NC=0$，故
+> because the unit $\varepsilon$ has trivial kernel and cokernel. Since $NC=0$, we also have
 > $$
 > h(G,C)=\frac{\#C^G}{\#(C/TC)}=q_{0,T}(C)^{-1}.
 > $$
-> $B$ 上作用平凡，$N=p$，故 $h(G,B)=q_{0,p}(B)$。两项有限使 $h(G,A)$ 也由 Herbrand 六边形定义，并由乘法性得到
+> The action on $B$ is trivial and $N=p$, so $h(G,B)=q_{0,p}(B)$. Finiteness of these two terms also makes $h(G,A)$ defined by the Herbrand hexagon. Multiplicativity gives
 > $$
 > \begin{aligned}
 > h(G,A)^{p-1}
@@ -74,7 +74,7 @@ created: '2026-10-23'
 > &=q_{0,p}(B)^p/q_{0,p}(A).
 > \end{aligned}
 > $$
-> 这正是题设公式。
+> This is the formula in the statement.
 
 ## Related Concepts
 
@@ -84,5 +84,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 3, printed p. 315, PDF p. 334]. 独立完成印刷提示中的环同构与单位恒等式，并补足所有 quotient 有限性。
-- **Input:** Herbrand quotient 对短正合列的乘法性为正文已证明 (7.3)，printed p. 312 / PDF p. 331；前两题另给出同类二周期形式。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 3, printed p. 315, PDF p. 334]. Independent completion of the ring isomorphism and unit identity in the printed hint, including finiteness of every quotient used.
+- **Input:** Multiplicativity of the Herbrand quotient on short exact sequences is proved in the main text as (7.3), printed p. 312 / PDF p. 331. The preceding two exercises also give the corresponding two-periodic formulations.

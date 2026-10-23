@@ -29,7 +29,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Check characteristic and zero coefficients. In the valid case fill one zero coordinate at a time while keeping a chosen nonzero coordinate nonzero.
 
 > [!hint]- Stronger hint
@@ -37,15 +37,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue.** 原文没有写出的必要假设是 $\operatorname{char}K\ne2$ 且所有 $a_i\ne0$。若容许零系数，$q=x_1^2$ 在二维有非零零点却无各坐标全非零的零点。特征 $2$ 也有反例：在 $K=\mathbb F_2(t)$ 上，$q=x_1^2+t x_2^2+x_3^2$ 有零点 $(1,0,1)$，但 $q=0$ 强迫 $x_2=0$，否则 $t=((x_1+x_3)/x_2)^2$，矛盾。
-> 以下证明修正版。若已有非零坐标 $\xi$ 对应系数 $a\ne0$，待填零坐标对应 $b\ne0$，则令 $t=b\gamma^2/a$，并取
+> [!success]- Independent derivation
+> **Source issue.** The printed statement omits the necessary assumptions $\operatorname{char}K\ne2$ and $a_i\ne0$ for every coefficient. If zero coefficients are allowed, $q=x_1^2$ in two variables has a nontrivial zero but no zero with every coordinate nonzero. There is also a counterexample in characteristic $2$: over $K=\mathbb F_2(t)$, the form $q=x_1^2+t x_2^2+x_3^2$ has the zero $(1,0,1)$, but $q=0$ forces $x_2=0$, since otherwise $t=((x_1+x_3)/x_2)^2$, a contradiction.
+> We prove the corrected version. Suppose a currently nonzero coordinate $\xi$ has coefficient $a\ne0$, and a zero coordinate to be filled has coefficient $b\ne0$. Set $t=b\gamma^2/a$ and take
 > $$
 > \alpha=\xi\frac{t-1}{t+1},\qquad
 > \beta=\frac{2\xi\gamma}{t+1}.
 > $$
-> 题列恒等式给 $a\alpha^2+b\beta^2=a\xi^2$。只需 $\gamma\ne0$ 且 $t\ne\pm1$，便使两者均非零。禁取的 $\gamma$ 至多有 $1+2+2=5$ 个；$|K|>5$ 保证可选。
-> 从任一非平凡零表示出发，每次用此替换填一个零坐标，保持其他项不变；有限步后全部坐标非零。
+> The identity in the statement gives $a\alpha^2+b\beta^2=a\xi^2$. It suffices to have $\gamma\ne0$ and $t\ne\pm1$ to make both coordinates nonzero. There are at most $1+2+2=5$ forbidden values of $\gamma$, so $|K|>5$ ensures that a choice exists.
+> Starting from any nontrivial zero, apply this replacement to fill one zero coordinate at a time, leaving the other terms unchanged. After finitely many steps every coordinate is nonzero.
 
 ## Related Concepts
 
@@ -56,4 +56,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 4, printed p.385, PDF p.404]。解答为独立推导。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 4, printed p.385, PDF p.404]. The solution is an independent derivation.

@@ -32,7 +32,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Use inverse limits of ray class sequences supported above $p$. For $p=2$, check the real sign groups explicitly.
 
 > [!hint]- Stronger hint
@@ -40,18 +40,18 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue at $p=2$.** 若允许实位置复化（本书把 $\mathbb C/\mathbb R$ 称为未分歧），原印第二式遗漏实符号。例 $K=\mathbb Q,p=2$：右端为 $\mathbb Z_2^\times/\{\pm1\}\cong\mathbb Z_2$，而最大阿贝尔 $2$-分歧圆分扩张的 Galois 群为 $\mathbb Z_2^\times\cong\mathbb Z_2\times C_2$。以下给一般修正版；对奇 $p$ 恢复原式。
-> 令
+> [!success]- Independent derivation
+> **Source issue at $p=2$.** If real places are allowed to become complex, as permitted by the book's convention calling $\mathbb C/\mathbb R$ unramified, the second printed formula omits real signs. For example, take $K=\mathbb Q,p=2$: its right side is $\mathbb Z_2^\times/\{\pm1\}\cong\mathbb Z_2$, while the Galois group of the maximal abelian $2$-ramified cyclotomic extension is $\mathbb Z_2^\times\cong\mathbb Z_2\times C_2$. The general corrected version is given below and recovers the printed formula for odd $p$.
+> Let
 > $$
 > \mathcal U_p=\left(\prod_{v\mid p}U_v\times\{\pm1\}^{r_1}\right)^{(p)}
 > $$
-> 为该紧阿贝尔群的最大 pro-$p$ 商，$E_p$ 为全局单位对角映射到 $\mathcal U_p$ 的闭像。对模 $\prod_{v\mid p}\mathfrak p_v^n$ 的射线正合序列取 $p$-部分再取逆极限；有限单位剩余群的逆极限为局部单位群，符号条件保留全部实符号，故得到
+> be the maximal pro-$p$ quotient of this compact abelian group, and let $E_p$ be the closure of the diagonal image of the global units in $\mathcal U_p$. Take $p$-parts in the ray exact sequence for the moduli $\prod_{v\mid p}\mathfrak p_v^n$ and then pass to the inverse limit. The inverse limits of the finite unit residue groups are the local unit groups, and the sign conditions retain all real signs. This yields
 > $$
 > 1\to\mathcal U_p/E_p\to G(M_p/K)\to\mathrm{Cl}_K(p)\to1.
 > $$
-> 右端有限，按全局类域论，其固定域正是所有有限位置未分歧且无限位置全分裂的最大 $p$-子扩张 $H$。所以核为 $G(M_p/H)$，第一式成立。
-> 若 $p$ 奇，实符号的 $p$-部分平凡，$U_v/U_v^{(1)}$ 阶为 $q_v-1$，与 $p$ 互素。因此 $\mathcal U_p=\prod_{v\mid p}U_v^{(1)}$，且全局单位在此的闭像等于 $\bar E\cap\prod U_v^{(1)}$，恢复原式。若 $p=2$ 且 $K$ 全虚，同样没有实符号修正。
+> The right side is finite. By global class field theory, its fixed field is exactly $H$, the maximal $p$-subextension unramified at all finite places and completely split at all infinite places. Hence the kernel is $G(M_p/H)$, proving the first formula.
+> If $p$ is odd, the $p$-part of the real sign group is trivial. The group $U_v/U_v^{(1)}$ has order $q_v-1$, coprime to $p$. Therefore $\mathcal U_p=\prod_{v\mid p}U_v^{(1)}$, and the closure of the global units in this group equals $\bar E\cap\prod U_v^{(1)}$, recovering the printed formula. If $p=2$ and $K$ is totally imaginary, there is likewise no real-sign correction.
 
 ## Related Concepts
 
@@ -61,4 +61,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 3, printed p.394, PDF p.413]。解答为独立推导。最大 pro-$p$ 商的上标 $(p)$ 与原书主单位 $U_v^{(1)}$ 不同。勿用本题掩盖实位置与窄类群的约定差别。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 3, printed p.394, PDF p.413]. The solution is independently derived. The superscript $(p)$ denoting the maximal pro-$p$ quotient differs from the book's notation $U_v^{(1)}$ for principal units. This exercise must not obscure the convention-dependent distinction between real places and narrow class groups.

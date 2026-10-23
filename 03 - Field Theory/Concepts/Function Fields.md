@@ -4,8 +4,7 @@ aliases:
   - Function Field
   - Rational Function Fields
   - Algebraic Function Fields
-  - 函数域
-  - 有理函数域
+  - Rational Function Field
 topic: field-theory
 tags:
   - concept

@@ -26,35 +26,35 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 任意有限 cover 都可被 connected Galois cover 支配：对开子群取 finite-index normal core。
+> Every finite cover is dominated by a connected Galois cover: take the finite-index normal core of its open subgroup.
 
 > [!hint]- Hint 2
-> Pushforward 用一个共同 Galois refinement；pullback 用 Mackey 方块，但须选 downstairs cover 使其每个 upstairs 分支都支配给定 cover。
+> For pushforward, use a common Galois refinement. For pullback, use a Mackey square, choosing the downstairs cover so that each upstairs component dominates the given cover.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 约定对不连通 $X=\coprod X_i$，$NA(X)=\bigoplus_i NA(X_i)$。只需证 connected maps $h:X\to Z$ 的 $h_*$ 与 $h^*$ 保持这些群。写稳定子群 $H=G_x\subset K=G_{h(x)}$。
+> For disconnected $X=\coprod X_i$, use the convention $NA(X)=\bigoplus_i NA(X_i)$. It suffices to show that $h_*$ and $h^*$ preserve these groups for connected maps $h:X\to Z$. Write the stabilizers as $H=G_x\subset K=G_{h(x)}$.
 >
-> 先记有限 cover 的 refinement 事实。若 $W\to X$ 为 Galois，其稳定子 $N\triangleleft H$ 且 $N$ 在 $K$ 中开。取
+> First record the refinement fact for finite covers. If $W\to X$ is Galois, its stabilizer satisfies $N\triangleleft H$ and $N$ is open in $K$. Set
 > $$
 > M=\bigcap_{k\in K}kNk^{-1}\triangleleft K.
 > $$
-> 交只有有限多个不同因子，故 $M$ 开，并且 $M\subset N$。$Y=G/M\to Z=G/K$ 为 Galois；其 pullback 到 $X$ 的每个分支稳定子都为某个 $H\cap kMk^{-1}=M$，所以每个分支均经 $G/N=W$ 映到 $X$。一般两个 covers 也可用两 stabilizers 的 normal core 得到共同 Galois refinement。
+> The intersection has only finitely many distinct factors, so $M$ is open and $M\subset N$. The cover $Y=G/M\to Z=G/K$ is Galois. Every component of its pullback to $X$ has stabilizer some $H\cap kMk^{-1}=M$, so each component maps to $X$ through $G/N=W$. For two arbitrary covers, the normal core of the two stabilizers likewise gives a common Galois refinement.
 >
-> **Pushforward.** 令 $a\in NA(X)$，任取 Galois $q:Y\to Z$。取一个 connected Galois $p:W\to X$ 和映射 $r:W\to Y$ 使 $hp=qr$（用 stabilizers 的共同 normal core）。因 $a\in p_*A(W)$，写 $a=p_*b$，则
+> **Pushforward.** Let $a\in NA(X)$ and choose any Galois cover $q:Y\to Z$. Choose a connected Galois cover $p:W\to X$ and maps $r:W\to Y$ such that $hp=qr$, using a common normal core of the stabilizers. Since $a\in p_*A(W)$, write $a=p_*b$. Then
 > $$
 > h_*a=h_*p_*b=q_*r_*b\in q_*A(Y).
 > $$
-> 对所有 $q$ 成立，故 $h_*a\in NA(Z)$。
+> This holds for every $q$, so $h_*a\in NA(Z)$.
 >
-> **Pullback.** 令 $a\in NA(Z)$，任取 Galois $p:W\to X$。按上述 core 构造选 Galois $q:Y\to Z$，使 $X\times_ZY=\coprod_jT_j$ 的每个 $T_j\to X$ 都经 $W$ 因子化。写 $a=q_*b$。Mackey 方块给
+> **Pullback.** Let $a\in NA(Z)$ and choose any Galois cover $p:W\to X$. Using the core construction above, choose a Galois cover $q:Y\to Z$ such that every $T_j\to X$ in $X\times_ZY=\coprod_jT_j$ factors through $W$. Write $a=q_*b$. The Mackey square gives
 > $$
 > h^*a=h^*q_*b=\sum_j (T_j\to X)_*(T_j\to Y)^*b.
 > $$
-> 每一项因 pushforward 的传递性都落在 $p_*A(W)$，所以总和亦然。遍历 $p$ 即 $h^*a\in NA(X)$。
+> By transitivity of pushforward, every summand lies in $p_*A(W)$, and therefore so does their sum. Varying $p$ gives $h^*a\in NA(X)$.
 >
-> 对 isomorphisms 两种操作互逆，故 conjugation 也保持 $NA$。所有函子律、additivity 和 Mackey 方块都是 $A$ 中恒等式在稳定子群上的限制；因此这些 subgroup 构成 submodulation。证明没有要求 Galois descent，也不要求任何 norm map 满射。
+> For isomorphisms, the two operations are inverse, so conjugation also preserves $NA$. All functorial laws, additivity, and Mackey squares are restrictions to these subgroups of the corresponding identities in $A$. The subgroups therefore form a submodulation. The proof requires neither Galois descent nor surjectivity of any norm map.
 
 ## Related Concepts
 
@@ -65,5 +65,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 13, printed p. 308, PDF p. 327]. 独立 normal-core refinement 与 Mackey 方块证明。
-- **Boundary:** Universal norm 是所有有限 Galois norm images 的交；不应把“同时属于每个像”误写成存在一个在无限层的共同原像。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 13, printed p. 308, PDF p. 327]. Independent proof using normal-core refinements and Mackey squares.
+- **Boundary:** The universal norm group is the intersection of all finite Galois norm images. Membership in every such image must not be confused with the existence of a common preimage at an infinite level.

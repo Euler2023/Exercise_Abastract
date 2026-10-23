@@ -47,29 +47,29 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 记 $K_\alpha$ 为有限层。所有以下极限均相对于范数；把 $L,K$ 的有限层取成相容公共有向系统。对固定有限 $K_\alpha$，从足够大有限 $L_\beta$ 到 $K_\alpha$ 的范数，在进一步加大 $\beta$ 后由范数传递律不变，因而给范数的各坐标，定义 $N_{L/K}$。
-> 若 $[L:K]<\infty$，可将它下降为某个有限层 $L_0/K_0$；加大 $K_0$ 后使 $L_\alpha=L_0K_\alpha$ 且 $[L_\alpha:K_\alpha]=[L:K]$。基变换下的有限层包含映射与范数交换，故给 $i_{L/K}$。有限 Galois 时每层不变元正好是 $A_{K_\alpha}$；有限群不变元与逆极限交换，得到题列不变元等式及单射。
-> 这里使用的极限精确性原理须说明：在赋值已固定的每个纤维中，解集是紧群 $U_{K_\alpha}$ 的闭陪集。任意有限多个兼容约束可推到一个更高有限层，并在那里用已证有限类域论求解；因此这些闭解集具有有限交性质。紧性给全部约束的共同解。不能一般性地声称任意逆极限保满射。
-> 若 $f_K<\infty$，有限层未分歧次数最终稳定。各有限层规范化赋值相容，定义 $v_K$；前段紧纤维原理给所需每个值的兼容提升，故值群保持 henselian 条件。对有限循环 $L/K$，下降到上述等次数有限层，有限层的两周期复形为
+> [!success]- Independent derivation
+> Write $K_\alpha$ for the finite levels. All limits below use norm transition maps; choose the finite levels of $L,K$ in a compatible common directed system. For fixed finite $K_\alpha$, the norm from a sufficiently large finite $L_\beta$ to $K_\alpha$ is unchanged by further enlarging $\beta$, by transitivity of norms. These maps give each coordinate of the norm and define $N_{L/K}$.
+> If $[L:K]<\infty$, descend it to some finite level $L_0/K_0$. Enlarge $K_0$ so that $L_\alpha=L_0K_\alpha$ and $[L_\alpha:K_\alpha]=[L:K]$. The inclusions at finite levels commute with norms under base change and therefore give $i_{L/K}$. At a finite Galois level, the invariants are exactly $A_{K_\alpha}$. Invariants under a finite group commute with inverse limits, giving the stated invariant-group equality and injectivity.
+> The exactness principle for limits used here requires justification. Within each fiber of a fixed valuation, the solution set is a closed coset of the compact group $U_{K_\alpha}$. Any finite set of compatibility conditions can be moved to a higher common finite level and solved there using finite class field theory already proved. These closed solution sets thus have the finite intersection property, and compactness produces a simultaneous solution. One cannot assert in general that arbitrary inverse limits preserve surjectivity.
+> If $f_K<\infty$, the unramified degrees of the finite levels eventually stabilize. The normalized finite-level valuations are compatible and define $v_K$. The compact-fiber argument above gives a compatible lift of each required value, so the value group retains the henselian conditions. For a finite cyclic $L/K$, descend to the equal-degree finite levels just described, whose two-periodic complexes are
 > $$
 > A_{L_\alpha}\xrightarrow{\sigma-1}A_{L_\alpha}\xrightarrow{N}A_{K_\alpha}.
 > $$
-> 固定赋值后用紧纤维原理提升其解，得到极限中 $\ker N=(\sigma-1)\widehat A_L$；同一原理将有限层的范数商 $A_{K_\alpha}/N A_{L_\alpha}$（阶恒为 $[L:K]$，范数过渡由互反同构为同构）提升为
+> Fix the valuation and lift solutions by the compact-fiber argument to obtain $\ker N=(\sigma-1)\widehat A_L$ in the limit. The same argument lifts the finite-level norm quotients $A_{K_\alpha}/N A_{L_\alpha}$, all of order $[L:K]$ and with norm transition maps identified with isomorphisms by reciprocity, to
 > $$
 > \widehat A_K/N\widehat A_L\cong G(L/K).
 > $$
-> 所以 Tate 的 $H^{-1}$ 平凡、$H^0$ 阶为 $[L:K]$，给极限上的类域公理。
-> 以下补足上述“有限兼容”的构造。取共尾系统，使 $L_\alpha/K_\alpha$ 都是同一个有限 Galois 扩张 $L/K$ 的下降、次数 $n$ 固定。若 $f_K<\infty$，则有限层的绝对惯性次数最终等于 $f_K$；$f_L$ 也有限。舍去初始有限层后，$K_\beta/K_\alpha$、$L_\beta/L_\alpha$ 的相对惯性次数均为 $1$，而 $L_\alpha/K_\alpha$ 的惯性次数 $f$ 与分歧指数 $e$ 固定。因此过渡范数保持规范化赋值，且 $v_{L_\alpha}(A_{K_\alpha})=eZ$，$v_{K_\alpha}(N A_{L_\alpha})=fZ$。这里 $Z$ 是题设的共同值子群；本段先以整数值代表元叙述，除以整数的唯一可除部分不影响有限商。
+> Thus the Tate group $H^{-1}$ is trivial and $H^0$ has order $[L:K]$, giving the class field axiom on the limit.
+> Here are the details of finite compatibility. Choose a cofinal system such that all $L_\alpha/K_\alpha$ descend from the same finite Galois extension $L/K$ and have the fixed degree $n$. If $f_K<\infty$, the absolute inertia degrees of the finite levels eventually equal $f_K$; $f_L$ is also finite. After discarding initial levels, the relative inertia degrees of $K_\beta/K_\alpha$ and $L_\beta/L_\alpha$ are both $1$, while the inertia degree $f$ and ramification index $e$ of $L_\alpha/K_\alpha$ are fixed. The transition norms therefore preserve normalized valuations, and $v_{L_\alpha}(A_{K_\alpha})=eZ$ and $v_{K_\alpha}(N A_{L_\alpha})=fZ$. Here $Z$ is the common value subgroup in the hypotheses. This paragraph first uses integer-valued representatives; dividing by integers in the uniquely divisible part does not change finite quotients.
 >
-> 对一个指定整数值 $c$，各层 $v^{-1}(c)$ 都非空且是紧单位群的陪集。任何有限多个坐标与范数约束可以提升到一个共同较高层 $\gamma$，任取该层值 $c$ 的元素，然后向下取范数，便同时满足这些约束。因此极限中有值 $c$ 的元素。这证明包含标准整数的条件。更一般共同值群 $Z$ 的元素也用完全相同的纤维论证提升；所得到值群仍为 $Z$，故 $Z/mZ=\mathbb Z/m\mathbb Z$ 保留。
+> For a specified integer value $c$, every set $v^{-1}(c)$ is nonempty and is a coset of a compact unit group. Any finite collection of coordinate and norm constraints can be moved to a common higher level $\gamma$. Choose an element there of value $c$ and take norms downwards; it satisfies all those constraints simultaneously. Thus the limit contains an element of value $c$, proving containment of the standard integers. Elements of the more general common value group $Z$ lift by exactly the same fiber argument. The resulting value group remains $Z$, so $Z/mZ=\mathbb Z/m\mathbb Z$ is preserved.
 >
-> 对 $b=(b_\alpha)\in\widehat A_L$ 满足 $Nb=1$，有限层 Hilbert 90 给 $b_\alpha=c_\alpha^{\sigma-1}$。可乘 $A_{K_\alpha}$ 中元素，把 $v(c_\alpha)$ 放在模 $eZ$ 的同一组有限整数代表元内，因为 $Z/eZ=\mathbb Z/e\mathbb Z$。这些 $c_\alpha$ 属于有限个紧纤维的并。任意有限约束选择共同上层 $\gamma$，先在那里解 $b_\gamma=c_\gamma^{\sigma-1}$ 并作此赋值调整，再向下取范数；交换性与过渡赋值不变保证所有低层约束成立。闭集有限交原理便给 $c\in\widehat A_L$，所以 $b=c^{\sigma-1}$。
+> For $b=(b_\alpha)\in\widehat A_L$ satisfying $Nb=1$, finite Hilbert 90 gives $b_\alpha=c_\alpha^{\sigma-1}$. Multiplication by an element of $A_{K_\alpha}$ adjusts $v(c_\alpha)$ into a fixed finite set of integer representatives modulo $eZ$, since $Z/eZ=\mathbb Z/e\mathbb Z$. These $c_\alpha$ lie in a finite union of compact fibers. For finitely many constraints, choose a common upper level $\gamma$, solve $b_\gamma=c_\gamma^{\sigma-1}$ there, make this valuation adjustment, and then take norms downwards. Commutativity and preservation of the transition valuations ensure all lower-level constraints. The finite intersection property for closed sets then gives $c\in\widehat A_L$, and hence $b=c^{\sigma-1}$.
 >
-> 再对 $a=(a_\alpha)\in\widehat A_K$，有限层互反把其剩余类都对应到同一个 $\tau\in G(L/K)$：这是范数—限制相容及各下降群之间限制同构的结果。若 $\tau=1$，每层有 $b_\alpha$ 满足 $Nb_\alpha=a_\alpha$；它们的赋值固定为 $v(a_\alpha)/f$。对有限约束，在共同上层解该范数方程，再向下范数，故紧纤维原理给 $N b=a$。反之范数当然给 $\tau=1$。
+> Next take $a=(a_\alpha)\in\widehat A_K$. Finite-level reciprocity identifies all its residue classes with the same $\tau\in G(L/K)$, by norm–restriction compatibility and the restriction isomorphisms between the descended groups. If $\tau=1$, each level has $b_\alpha$ satisfying $Nb_\alpha=a_\alpha$, with fixed valuation $v(a_\alpha)/f$. For finitely many constraints, solve this norm equation at a common upper level and take norms downwards. The compact-fiber argument yields $N b=a$. Conversely, a norm necessarily gives $\tau=1$.
 >
-> 最后每个 $\tau$ 都能在极限中出现：有限层互反原像的赋值模 $fZ$ 由 $\tau$ 的未分歧分量确定，选固定整数代表 $c$。把任意原像乘一个范数，可将其赋值调整为 $c$；这样的原像集是非空紧闭集。有限多个兼容约束仍由共同上层的原像向下范数满足，因此得到极限原像。此处的有限层满射、固定赋值和共同上层构造分别负责非空性、紧性与有限兼容，未把“逆极限保满射”当一般原理。
-> 有限层互反的范数—限制交换图在每层成立；取相容坐标即给 (3)。无限 $L,L'$ 再取其有限 Galois 子层的逆极限。范数与限制逐坐标定义，因此交换关系不依赖下降层的选择。
+> Finally, every $\tau$ occurs in the limit. The valuation modulo $fZ$ of its finite-level reciprocity preimages is determined by the unramified component of $\tau$. Choose a fixed integer representative $c$. Multiplying any preimage by a norm adjusts its valuation to $c$, and these preimages form a nonempty compact closed set. Finitely many compatibility conditions are again satisfied by taking a preimage at a common upper level and taking norms downwards, producing a preimage in the limit. Finite-level surjectivity, a fixed valuation, and the common-upper-level construction supply nonemptiness, compactness, and finite compatibility, respectively. Preservation of surjectivity by inverse limits is not assumed as a general principle.
+> The norm–restriction diagram for finite-level reciprocity commutes at each level. Taking compatible coordinates gives (3). For infinite $L,L'$, take a further inverse limit over its finite Galois sublevels. Norms and restriction are defined coordinatewise, so commutativity is independent of the chosen descent levels.
 
 ## Related Concepts
 
@@ -80,4 +80,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书200 dpi页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 4, printed p.306, PDF p.325]。解答为独立推导，沿用本章的抽象域、连续离散 $G$-模、限制与范数约定。紧性只用于赋值纤维，未将可能含非紧值群的整个 $A_K$ 当紧空间。有限惯性次数假设用于赋值规范化稳定，不能删去。
+The statement was checked against the original 200 dpi page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 4, printed p.306, PDF p.325]. The solution is independently derived, using this chapter's conventions for abstract fields, continuous discrete $G$-modules, restrictions, and norms. Compactness is used only for valuation fibers; the whole group $A_K$, whose value group may be noncompact, is not treated as compact. The finite-inertia-degree hypothesis ensures stabilization of valuation normalizations and cannot be omitted.

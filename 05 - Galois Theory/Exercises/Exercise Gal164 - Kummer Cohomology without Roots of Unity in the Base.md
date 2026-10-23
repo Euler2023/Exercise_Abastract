@@ -25,27 +25,27 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> $X^n-a$ 在特征不整除 $n$ 时为可分多项式，因此幂映射在可分闭包乘法群上满射。
+> The polynomial $X^n-a$ is separable when the characteristic does not divide $n$, so the power map is surjective on the multiplicative group of the separable closure.
 
 > [!hint]- Hint 2
-> 对 Kummer 短正合列应用前述 $H^1$ 正合列，再使用无限 Hilbert 90。注意不要求 $\mu_n\subseteq K$。
+> Apply the preceding $H^1$ exact sequence to the Kummer short exact sequence, then use infinite Hilbert 90. Note that $\mu_n\subseteq K$ is not required.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 令 $K^s=\overline K$。因为 $n\ne0$ 在 $K$ 中，对任意 $a\in(K^s)^\times$，多项式 $X^n-a$ 的每个根均非零，导数 $nX^{n-1}$ 不在这些根处为零；$K^s$ 可分闭使它存在 $n$ 次根。因此有连续离散 $G_K$-模短正合列
+> Set $K^s=\overline K$. Since $n\ne0$ in $K$, for any $a\in(K^s)^\times$ every root of $X^n-a$ is nonzero and its derivative $nX^{n-1}$ does not vanish at a root. The field $K^s$ is separably closed, so an $n$-th root exists. Thus there is a short exact sequence of continuous discrete $G_K$-modules
 > $$
 > 1\longrightarrow\mu_n\longrightarrow(K^s)^\times\xrightarrow{x\mapsto x^n}(K^s)^\times\longrightarrow1.
 > $$
-> 前题的连续无限 Hilbert 90 及 Exercise 6 已证明的正合列给出
+> The continuous infinite Hilbert 90 theorem from the preceding exercise and the exact sequence proved in Exercise 6 give
 > $$
 > K^\times\xrightarrow{n}K^\times\xrightarrow\delta H^1(G_K,\mu_n)\longrightarrow H^1(G_K,(K^s)^\times)=1.
 > $$
-> 于是 $\delta$ 满射且核为 $K^{\times n}$，得到同构。
+> Hence $\delta$ is surjective with kernel $K^{\times n}$, giving the isomorphism.
 >
-> 同构可直接写为：对 $a\in K^\times$ 选 $\alpha^n=a$，令 $c_a(\sigma)=\sigma(\alpha)/\alpha\in\mu_n$（如用源书右作用则写 $\alpha^{\sigma-1}$）。换根使 cocycle 改变一个 $\mu_n$-coboundary；把 $a$ 乘以 $b^n$、$b\in K^\times$ 不改变类。核为幂类的事实也直接可见：若 $c_a=\zeta^{\sigma-1}$，则 $\alpha/\zeta\in K$，故 $a=(\alpha/\zeta)^n$。
+> The isomorphism can be written directly: for $a\in K^\times$, choose $\alpha^n=a$ and set $c_a(\sigma)=\sigma(\alpha)/\alpha\in\mu_n$, or $\alpha^{\sigma-1}$ in the book's right-action notation. Choosing a different root changes the cocycle by a $\mu_n$-coboundary. Multiplying $a$ by $b^n$ with $b\in K^\times$ leaves its class unchanged. The description of the kernel by power classes is also direct: if $c_a=\zeta^{\sigma-1}$, then $\alpha/\zeta\in K$ and hence $a=(\alpha/\zeta)^n$.
 >
-> 不假设 $\mu_n$ 在底域，所以右边是带有 Galois 作用的 $\mu_n$ 的 $H^1$，一般不能改写为普通字符群 $\operatorname{Hom}(G_K,\mu_n)$；只有作用平凡时才有该额外解释。
+> The roots $\mu_n$ are not assumed to lie in the base field. Thus the cohomology term is $H^1$ of $\mu_n$ with its Galois action and generally cannot be rewritten as the ordinary character group $\operatorname{Hom}(G_K,\mu_n)$. That additional interpretation is available only when the action is trivial.
 
 ## Related Concepts
 
@@ -55,5 +55,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 8, printed p. 284, PDF p. 303]. 独立短正合列应用与显式 cocycle；连续无限 Hilbert 90 的有限层证明已在前题给出。
-- **Boundary:** 若特征整除 $n$，幂映射在可分闭包上未必满射，经典 étale Kummer 序列不能直接应用。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 8, printed p. 284, PDF p. 303]. Independent application of the short exact sequence, with an explicit cocycle. The preceding exercise gives the finite-level proof of continuous infinite Hilbert 90.
+- **Boundary:** If the characteristic divides $n$, the power map on the separable closure need not be surjective, and the classical étale Kummer sequence does not apply directly.

@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Take the inverse limit of finite reciprocity maps. The norm-one factor is compact and the remaining positive-real factor is connected.
 
 > [!hint]- Stronger hint
@@ -29,10 +29,10 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 对所有有限阿贝尔 $L/K$，互反律给连续满同态 $C_K\to G(L/K)$，它们在限制映射下相容，所以得到 $\theta:C_K\to G(K^{\mathrm{ab}}/K)$。每个有限目标离散，故它杀掉 $D_K$。
-> 分裂范数给 $C_K=C_K^0\times\mathbb R_{>0}$，$\theta$ 杀掉第二因子。$C_K^0$ 紧，故其像闭；像在每个有限商上满，所以像在逆极限中稠密；因此 $\theta$ 满。
-> 其核是所有有限阿贝尔范数群的交。全局存在定理（VI.(6.1), printed pp.395–396/PDF414–415）说这些恰是 $C_K$ 的全部闭有限指数子群。VI.§1 Exercises9–10 已把该交识别为 $D_K$。诱导的连续双射 $C_K^0/D_K^0\to G(K^{\mathrm{ab}}/K)$ 从紧空间到 Hausdorff 空间，故是同胚；结合正实因子被除去，得到题列拓扑同构。
+> [!success]- Independent derivation
+> For every finite abelian $L/K$, reciprocity gives a continuous surjective homomorphism $C_K\to G(L/K)$. These maps are compatible with restriction and give $\theta:C_K\to G(K^{\mathrm{ab}}/K)$. Each finite target is discrete, so the map kills $D_K$.
+> Splitting the norm gives $C_K=C_K^0\times\mathbb R_{>0}$, and $\theta$ kills the second factor. The group $C_K^0$ is compact, so its image is closed. The image surjects onto every finite quotient and is therefore dense in the inverse limit. Hence $\theta$ is surjective.
+> Its kernel is the intersection of all finite abelian norm groups. The global existence theorem (VI.(6.1), printed pp.395–396/PDF414–415) identifies these with all closed finite-index subgroups of $C_K$. Exercises 9–10 of VI.§1 identify their intersection as $D_K$. The induced continuous bijection $C_K^0/D_K^0\to G(K^{\mathrm{ab}}/K)$ is a homeomorphism from a compact space to a Hausdorff space. Removing the positive-real factor gives the stated topological isomorphism.
 
 ## Related Concepts
 
@@ -42,4 +42,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 1, printed p.394, PDF p.413]。解答为独立推导。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 1, printed p.394, PDF p.413]. The solution is independently derived.

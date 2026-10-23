@@ -25,45 +25,45 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 这里 $\Omega^1_{L|K}$ 指整数环 $\mathcal O_L/\mathcal O_K$ 的微分模，而非可分域扩张自身的微分（后者为零）。先由导子泛性质得到右正合列。
+> Here $\Omega^1_{L|K}$ means the module of differentials of the integer rings $\mathcal O_L/\mathcal O_K$, not the differentials of the separable field extension itself, which vanish. First use the universal property of derivations to obtain right exactness.
 
 > [!hint]- Hint 2
-> 一般环塔的微分列左端不保证单射；本题需使用数域不同理想的塔公式。
+> For a general tower of rings, the map at the left of the differential sequence need not be injective. This exercise uses the tower formula for differents of number fields.
 
 > [!hint]- Hint 3
-> 逐个 DVR 局部化。循环微分模的长度是不同指数；不同塔公式使中间模的长度恰等于左右两个模的长度之和，从而迫使左映射的核为零。
+> Localize at each DVR. The length of a cyclic differential module is the different exponent. The tower formula makes the length of the middle module equal the sum of the outer lengths, forcing the left-hand kernel to vanish.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 令 $A=\mathcal O_K$、$B=\mathcal O_L$、$C=\mathcal O_M$。遵循本章记号，题中的 $\Omega^1_{L|K}$ 是 $\Omega^1_{B|A}$，另外两项亦同；若把它误读成域的 Kähler 微分，三个模都会为零，便遗漏本题的算术内容。
+> Put $A=\mathcal O_K$, $B=\mathcal O_L$, and $C=\mathcal O_M$. In the notation of this chapter, $\Omega^1_{L|K}$ means $\Omega^1_{B|A}$, and likewise for the other two terms. Interpreting these as Kähler differentials of the fields would make all three modules zero and miss the arithmetic content.
 >
-> **1. 构造右正合列。** 定义
+> **1. Constructing the right exact sequence.** Define
 > $$
 > \phi:C\otimes_B\Omega^1_{B|A}\longrightarrow\Omega^1_{C|A},\qquad c\otimes db\longmapsto c\,db.
 > $$
-> 商模 $Q=\Omega^1_{C|A}/C\,dB$ 上的导子 $C\to Q$ 杀死 $B$，而任意杀死 $B$ 的导子都且仅都经此商因子化。由泛性质，$Q\simeq\Omega^1_{C|B}$。因此
+> The derivation $C\to Q$ into the quotient $Q=\Omega^1_{C|A}/C\,dB$ vanishes on $B$. Every derivation vanishing on $B$ factors uniquely through this quotient. The universal property gives $Q\simeq\Omega^1_{C|B}$. Hence
 > $$
 > C\otimes_B\Omega^1_{B|A}\xrightarrow{\phi}\Omega^1_{C|A}\longrightarrow\Omega^1_{C|B}\longrightarrow0
 > $$
-> 右正合。
+> is right exact.
 >
-> **2. 逐素处计算长度。** 取 $C$ 的非零素理想 $\mathfrak Q$，其下方为 $\mathfrak P\subset B$。记相应不同指数为 $s_{C/A},s_{C/B},s_{B/A}$，以及 $e=e(\mathfrak Q/\mathfrak P)$。前一题所证局部表示 $\Omega\simeq\mathcal O/\mathfrak D$ 给出
+> **2. Computing lengths prime by prime.** Let $\mathfrak Q$ be a nonzero prime of $C$, lying above $\mathfrak P\subset B$. Write $s_{C/A},s_{C/B},s_{B/A}$ for the corresponding different exponents, and set $e=e(\mathfrak Q/\mathfrak P)$. The local description $\Omega\simeq\mathcal O/\mathfrak D$ proved in the preceding exercise gives
 > $$
 > \ell_{C_{\mathfrak Q}}(\Omega^1_{C|A})_{\mathfrak Q}=s_{C/A},\qquad
 > \ell_{C_{\mathfrak Q}}(\Omega^1_{C|B})_{\mathfrak Q}=s_{C/B}.
 > $$
-> 同样 $\Omega^1_{B|A,\mathfrak P}\simeq B_{\mathfrak P}/(\pi_{\mathfrak P}^{s_{B/A}})$，故
+> Likewise, $\Omega^1_{B|A,\mathfrak P}\simeq B_{\mathfrak P}/(\pi_{\mathfrak P}^{s_{B/A}})$, so
 > $$
 > \ell_{C_{\mathfrak Q}}(C\otimes_B\Omega^1_{B|A})_{\mathfrak Q}=e\,s_{B/A}.
 > $$
-> 不同理想塔公式是已独立证明的 III (2.2)(i) [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, printed pp. 195–196, PDF pp. 214–215]：
+> The tower formula for differents is the independently proved III (2.2)(i) [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, printed pp. 195–196, PDF pp. 214–215]:
 > $$
 > \mathfrak D_{M|K}=\mathfrak D_{M|L}\mathfrak D_{L|K}C.
 > $$
-> 取 $v_{\mathfrak Q}$ 得 $s_{C/A}=s_{C/B}+e\,s_{B/A}$。
+> Applying $v_{\mathfrak Q}$ gives $s_{C/A}=s_{C/B}+e\,s_{B/A}$.
 >
-> **3. 得到单射。** 第一步的右正合性意味着 $\ell(\operatorname{im}\phi)=s_{C/A}-s_{C/B}=e\,s_{B/A}$，这与 $\phi$ 定义域的长度相同，故 $\ell(\ker\phi)=0$，即其在 $\mathfrak Q$ 处为单射。在零素处所有微分模都因域扩张可分而为零。每个局部化的核为零，因而全局核为零，得到题设短正合列。
+> **3. Proving injectivity.** Right exactness from Step 1 gives $\ell(\operatorname{im}\phi)=s_{C/A}-s_{C/B}=e\,s_{B/A}$, equal to the length of the domain of $\phi$. Thus $\ell(\ker\phi)=0$, proving injectivity at $\mathfrak Q$. At the zero prime, all differential modules vanish because the field extensions are separable. The kernel vanishes at every localization and therefore globally. This proves the required short exact sequence.
 
 ## Related Concepts
 
@@ -75,5 +75,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §2, Exercise 4, printed p. 208, PDF p. 227]. 独立的泛性质与局部长度证明；不同塔公式取自正文已证明的 (2.2)，未将一般右正合列错误地直接称为短正合。
-- **Boundary:** 左单射依赖数域整数环及其不同理想的塔公式，一般 $A\to B\to C$ 的 Kähler 微分正合列可能在左端存在非零核。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §2, Exercise 4, printed p. 208, PDF p. 227]. This is an independent proof using the universal property and local lengths. The tower formula is the proved formula (2.2); right exactness alone is not mistaken for short exactness.
+- **Boundary:** Injectivity on the left uses number-field integer rings and their tower formula for differents. For general $A\to B\to C$, the Kähler differential sequence may have a nonzero left-hand kernel.

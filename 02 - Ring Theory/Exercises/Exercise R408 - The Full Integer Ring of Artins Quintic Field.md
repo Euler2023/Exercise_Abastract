@@ -22,7 +22,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Use the index–discriminant formula; do not reverse the basis-change divisibility.
 
 > [!hint]- Stronger hint
@@ -30,13 +30,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> $\alpha$ 是首一整系数多项式的根，故为代数整数，$\mathbb Z[\alpha]\subseteq\mathcal O_k$ 为满秩子格。若 $I=[\mathcal O_k:\mathbb Z[\alpha]]$，格的基变换公式给
+> [!success]- Independent derivation
+> Since $\alpha$ is a root of a monic integer polynomial, it is an algebraic integer, and $\mathbb Z[\alpha]\subseteq\mathcal O_k$ is a full-rank sublattice. Put $I=[\mathcal O_k:\mathbb Z[\alpha]]$. The change-of-basis formula for lattices gives
 > $$
 > \operatorname{disc}(1,\alpha,\ldots,\alpha^4)
 > =I^2\,d_k.
 > $$
-> 前题左端为平方自由整数 $2869$。因 $I^2$ 是正整数平方且整除 $2869$，只能 $I=1$。所以 $\mathbb Z[\alpha]=\mathcal O_k$，且 $d_k=2869$。
+> The preceding exercise identifies the left side as the squarefree integer $2869$. Since $I^2$ is a positive integer square dividing $2869$, we must have $I=1$. Thus $\mathbb Z[\alpha]=\mathcal O_k$ and $d_k=2869$.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 3, printed p.413, PDF p.432]。解答为独立推导。
+The statement was checked against the original PDF rendered at 200 dpi [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 3, printed p.413, PDF p.432]. The solution is independently derived.

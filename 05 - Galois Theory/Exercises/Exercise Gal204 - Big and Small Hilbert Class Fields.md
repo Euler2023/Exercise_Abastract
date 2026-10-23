@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > The big and small class fields correspond to the narrow and ordinary class groups. Apply the sign exact sequence.
 
 > [!hint]- Stronger hint
@@ -29,13 +29,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 本书的大 Hilbert 类域允许实位置复化，其 Galois 群为窄类群 $\mathrm{Cl}_K^1$；小 Hilbert 类域要求实位置完全分裂，对应普通类群 $\mathrm{Cl}_K$。两者包含关系为 $H\subseteq K^1$。
-> 原书 VI.(1.11), printed p.366/PDF385 的正合列为
+> [!success]- Independent derivation
+> The book's big Hilbert class field permits real places to become complex and has Galois group the narrow class group $\mathrm{Cl}_K^1$. The small Hilbert class field requires real places to split completely and corresponds to the ordinary class group $\mathrm{Cl}_K$. Their inclusion is $H\subseteq K^1$.
+> The exact sequence VI.(1.11), printed p.366/PDF385, is
 > $$
 > 1\to E/E_+\to\{\pm1\}^r\to\mathrm{Cl}_K^1\to\mathrm{Cl}_K\to1.
 > $$
-> 因此限制映射的核，也就是 $G(K^1/H)$，为 $\{\pm1\}^r/\operatorname{sgn}E$。它是 $\mathbb F_2$-向量空间，维数 $r-t$，得到所求同构。$r=0$ 时 $t=0$，两个 Hilbert 类域相同。
+> Thus the kernel of restriction, namely $G(K^1/H)$, is $\{\pm1\}^r/\operatorname{sgn}E$. It is a vector space over $\mathbb F_2$ of dimension $r-t$, giving the required isomorphism. When $r=0$, we have $t=0$ and the two Hilbert class fields coincide.
 
 ## Related Concepts
 
@@ -45,4 +45,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §6, Exercise 1, printed p.404, PDF p.423]。解答为独立推导；外部输入与本题推导分开标明。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §6, Exercise 1, printed p.404, PDF p.423]. The solution is independently derived; external inputs are distinguished from deductions specific to this exercise.

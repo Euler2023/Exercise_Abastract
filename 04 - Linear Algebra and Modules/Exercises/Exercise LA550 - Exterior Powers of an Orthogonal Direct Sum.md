@@ -25,15 +25,15 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 从右到左把 $M$ 的外向量放在前、$N$ 的外向量放在后，取外积；用局部基验证这是同构。
+> Map from right to left by taking the exterior product, placing the exterior vectors from $M$ before those from $N$. Use local bases to verify that this is an isomorphism.
 
 > [!hint]- Hint 2
-> 不同 $(i,j)$ 分量相互正交。相同 $(i,j)$ 的 Gram 矩阵按 $M,N$ 分为块对角，行列式就是两个外积内积之积。
+> Distinct $(i,j)$ components are orthogonal. For the same $(i,j)$, the Gram matrix is block diagonal with blocks from $M,N$; its determinant is the product of the two exterior-power inner products.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 取 $n\ge0$。对 $i+j=n$ 定义
+> Let $n\ge0$. For $i+j=n$, define
 > $$
 > \begin{aligned}
 > \psi_{i,j}:\bigwedge^iM\otimes\bigwedge^jN&\longrightarrow\bigwedge^n(M\oplus N),\\
@@ -41,13 +41,13 @@ created: '2026-10-23'
 > (m_1,0)\wedge\cdots\wedge(m_i,0)\wedge(0,n_1)\wedge\cdots\wedge(0,n_j).
 > \end{aligned}
 > $$
-> 交错性与平衡性使其良定义。将这些映射相加得 $\psi$。
+> Alternation and balancing make this well-defined. Add these maps to obtain $\psi$.
 >
-> **代数同构。** 在每个素理想处，projective 模局部自由；选局部基 $e_1,\ldots,e_r$、$f_1,\ldots,f_s$。直和的外幂基由有序子集 $e_I\wedge f_J$ 组成，且 $|I|+|J|=n$。这些基恰为 $\psi$ 下右端各基的像，因此每个局部化都是同构；有限模的核、余核局部判别给出全局同构。
+> **Algebraic isomorphism.** At each prime ideal, the projective modules are free after localization. Choose local bases $e_1,\ldots,e_r$ and $f_1,\ldots,f_s$. The exterior-power basis of the direct sum consists of the ordered subsets $e_I\wedge f_J$ with $|I|+|J|=n$. These are precisely the images under $\psi$ of the bases on the right. Thus every localization is an isomorphism, and the local criterion applied to the kernel and cokernel of a map of finite modules gives the global isomorphism.
 >
-> **度量保持。** 外幂度量定义为 Gram 行列式 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, printed p. 228, PDF p. 247]。$M_{\mathbb C}$ 与 $N_{\mathbb C}$ 在直和内正交。若比较 $(i,j)$ 与 $(i',j')$ 且 $i\ne i'$，Gram 矩阵中 $M$ 与 $N$ 的交叉项为零，而来自两个正交空间的行列数不匹配，故矩阵秩小于 $n$，行列式为零。不同分量于是正交。
+> **Preservation of the metric.** The exterior-power metric is defined by the Gram determinant [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, printed p. 228, PDF p. 247]. The spaces $M_{\mathbb C}$ and $N_{\mathbb C}$ are orthogonal in the direct sum. When comparing $(i,j)$ and $(i',j')$ with $i\ne i'$, the cross terms between $M$ and $N$ in the Gram matrix vanish. The numbers of rows and columns from the two orthogonal spaces do not match, so the matrix has rank less than $n$ and its determinant is zero. Thus distinct components are orthogonal.
 >
-> 若 $(i,j)=(i',j')$，Gram 矩阵为块对角，故
+> If $(i,j)=(i',j')$, the Gram matrix is block diagonal, so
 > $$
 > \begin{aligned}
 > \langle\psi_{i,j}(m\otimes n),\psi_{i,j}(m'\otimes n')\rangle
@@ -55,9 +55,9 @@ created: '2026-10-23'
 > &=\langle m,m'\rangle_{\wedge^iM}\langle n,n'\rangle_{\wedge^jN}.
 > \end{aligned}
 > $$
-> 这是右端张量积度量。半双线性延拓和不同分量的正交性说明 $\psi$ 等距。映射与 $F$ 交换且不依赖局部基，故为 canonical isometry。
+> This is the tensor product metric on the right. Sesquilinear extension and the orthogonality of distinct components show that $\psi$ is an isometry. The map commutes with $F$ and is independent of the local bases, so it is a canonical isometry.
 >
-> 当 $n=0$ 时两端均为 $\mathfrak o$；当 $n>r+s$ 时两端均为零，所述论证和结论依然成立。
+> If $n=0$, both sides are $\mathfrak o$; if $n>r+s$, both sides are zero. The argument and conclusion remain valid in these cases.
 
 ## Related Concepts
 
@@ -69,5 +69,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, Exercise 2, printed p. 233, PDF p. 252]. 独立局部基与 Gram 行列式推导，包含代数同构和度量两部分。
-- **Convention:** $\bigwedge^0M=\mathfrak o$，超过秩的外幂为零；右端采用正交直和与张量积度量，不能只证明无度量的模同构。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, Exercise 2, printed p. 233, PDF p. 252]. Independent derivation using local bases and Gram determinants, covering both the algebraic isomorphism and the metrics.
+- **Convention:** $\bigwedge^0M=\mathfrak o$, and exterior powers above the rank vanish. The right side carries the orthogonal direct sum and tensor product metrics; an isomorphism of modules without a metric check would not suffice.

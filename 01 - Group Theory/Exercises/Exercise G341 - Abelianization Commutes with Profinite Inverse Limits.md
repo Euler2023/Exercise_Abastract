@@ -22,36 +22,36 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 对有向紧群系统，逆极限投影的像是所有后继像的交。先把系统替换成这些稳定像，使投影满射。
+> For a directed system of compact groups, the image of an inverse-limit projection is the intersection of all subsequent images. First replace the system by these stable images so that the projections are surjective.
 
 > [!hint]- Hint 2
-> 对下降的紧子群族，交换子闭包与交相容：在每个有限商中这些子群的像最终稳定。
+> For a decreasing family of compact subgroups, taking the closure of the commutator subgroup commutes with intersection: the images of the subgroups in every finite quotient eventually stabilize.
 
 > [!hint]- Hint 3
-> 对满射系统，$[G,G]$ 的闭包投影到各 $G_i$ 的交换子闭包，且相容的交换子闭包坐标可紧性提升；再用紧群短正合列的逆极限正合性。
+> For a surjective system, the closure of $[G,G]$ maps onto the commutator closure of each $G_i$, and compatible coordinates in these closures lift by compactness. Then apply exactness of inverse limits to short exact sequences of compact groups.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 记 $D(H)=\overline{[H,H]}$。对紧群系统，逆极限保持短正合列：给定相容的商坐标，在各坐标的紧纤维乘积中加入相容条件；任意有限多条件可在一个共同后继层提升后投影，故有限交性质保证全局提升。因此
+> Write $D(H)=\overline{[H,H]}$. Inverse limits preserve short exact sequences of compact groups: given compatible quotient coordinates, impose compatibility conditions on the product of their compact fibers. Every finite collection of conditions can be satisfied by lifting to a common subsequent stage and then projecting, so the finite-intersection property gives a global lift. Thus
 > $$
 > 1\longrightarrow\varprojlim D(G_i)\longrightarrow G\longrightarrow\varprojlim G_i^{ab}\longrightarrow1
 > $$
-> 正合。问题归结为证明 $\varprojlim D(G_i)=D(G)$。
+> is exact. It remains to prove $\varprojlim D(G_i)=D(G)$.
 >
-> 令 $H_i=\operatorname{im}(G\to G_i)$。紧性给出 $H_i=\bigcap_{j\ge i}\operatorname{im}(G_j\to G_i)$。对有向下降的紧子群族 $(K_j)$，有
+> Put $H_i=\operatorname{im}(G\to G_i)$. Compactness gives $H_i=\bigcap_{j\ge i}\operatorname{im}(G_j\to G_i)$. For a directed decreasing family of compact subgroups $(K_j)$, one has
 > $$
 > D(\bigcap_jK_j)=\bigcap_jD(K_j).
 > $$
-> 证明是把两边投影到任意有限商：$K_j$ 的像最终稳定，因而其交换子子群也最终稳定；紧性使投影与这些下降交相容。闭子群由所有有限商的像决定，故等式成立。
+> To prove this, project both sides to any finite quotient. The images of $K_j$ eventually stabilize, so their commutator subgroups do as well. Compactness makes projection commute with these decreasing intersections. Closed subgroups are determined by their images in all finite quotients, proving the equality.
 >
-> 现在若 $x=(x_i)\in\varprojlim D(G_i)$，则每个 $x_i$ 属于所有后继 $D(G_j)$ 的像，即所有 $D(\operatorname{im}(G_j\to G_i))$ 的交。由上式，$x_i\in D(H_i)$。
+> Now if $x=(x_i)\in\varprojlim D(G_i)$, each $x_i$ belongs to the images of all subsequent $D(G_j)$, hence to the intersection of all $D(\operatorname{im}(G_j\to G_i))$. The preceding equality gives $x_i\in D(H_i)$.
 >
-> 任一有限交换商 $\chi:G\to A$ 由某个坐标像 $H_i$ 因子化：开核包含有限多个坐标核的交，而有向性使这个交包含某单一后继坐标核。因子映射 $H_i\to A$ 杀死 $D(H_i)$，所以 $\chi(x)=1$。$G/D(G)$ 是 profinite 交换群，其有限商分离点，故 $x\in D(G)$。反向包含由任何同态保持交换子及闭包立即成立。于是 $\varprojlim D(G_i)=D(G)$，上面的正合列给出
+> Any finite abelian quotient $\chi:G\to A$ factors through some coordinate image $H_i$: its open kernel contains the intersection of finitely many coordinate kernels, and directedness makes this intersection contain a single subsequent coordinate kernel. The factor map $H_i\to A$ kills $D(H_i)$, so $\chi(x)=1$. The finite quotients of the profinite abelian group $G/D(G)$ separate its points, hence $x\in D(G)$. The reverse inclusion follows because every homomorphism preserves commutators and their closures. Therefore $\varprojlim D(G_i)=D(G)$, and the exact sequence above gives
 > $$
 > G^{ab}\simeq\varprojlim_iG_i^{ab}.
 > $$
-> 两侧均紧 Hausdorff，所得连续双射是拓扑同构；全程不要求原过渡映射满射。
+> Both sides are compact Hausdorff, so the resulting continuous bijection is a topological isomorphism. No surjectivity assumption on the original transition maps is needed.
 
 ## Related Concepts
 
@@ -60,5 +60,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §2, Exercise 6, printed p. 274, PDF p. 293]. 独立稳定像与紧性论证；未额外假设印刷题面未给出的过渡满射。
-- **Proof input:** 有向紧空间逆极限的有限交构造已在解答中说明。这里 abelianization 始终取闭交换子子群的商。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §2, Exercise 6, printed p. 274, PDF p. 293]. An independent argument using stable images and compactness, without adding the surjectivity assumption absent from the printed statement.
+- **Proof input:** The finite-intersection construction for inverse limits of directed compact spaces is explained in the solution. Abelianization throughout means the quotient by the closed commutator subgroup.

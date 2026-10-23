@@ -22,7 +22,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > One inclusion follows because completions of global abelian extensions are abelian. For the other, realize a local cyclic character globally, allowing a larger global order when necessary.
 
 > [!hint]- Stronger hint
@@ -30,11 +30,11 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 所有域放入同一选定的局部代数闭包，右端指各有限全局阿贝尔子扩张的局部合成域。若 $L/K$ 有限阿贝尔，则 $L_w/K_v$ 的 Galois 群为 $G(L/K)$ 的分解子群，仍阿贝尔，所以 $K^{\mathrm{ab}}K_v\subseteq K_v^{\mathrm{ab}}$。
-> 反向用如下**外部标准输入：弱 Grunwald 存在性形式（允许全局次数增大）**：给定数域的有限多个局部循环扩张，每一个都可包含在某个全局循环扩张的相应完备化中；无需要求全局次数恰等于局部次数。此处只取单一位置 $v$。这个允许增大次数的版本不受精确次数 Grunwald–Wang 特例阻碍。
-> 任意有限阿贝尔 $F/K_v$ 的 Galois 群可嵌入有限个循环商的乘积，因此 $F$ 是有限个循环子扩张的合成。对每个循环子扩张用上述输入取全局循环扩张 $L_i/K$，其选定完备化包含该局部扩张。令 $L=\prod_iL_i$，则 $L/K$ 阿贝尔且 $LK_v\supseteq F$。对所有 $F$ 取并，得到反向包含。
-> 无限位置无需此输入：$\mathbb C$ 无非平凡有限扩张；实位置的 $\mathbb C/\mathbb R$ 由任一在该实嵌入下为负的二次根式实现。
+> [!success]- Independent derivation
+> Place all fields in one chosen local algebraic closure. The right side means the local compositum of all finite global abelian subextensions. If $L/K$ is finite abelian, the Galois group of $L_w/K_v$ is a decomposition subgroup of $G(L/K)$ and remains abelian. Hence $K^{\mathrm{ab}}K_v\subseteq K_v^{\mathrm{ab}}$.
+> For the reverse inclusion, use the following **external standard input: the weak Grunwald existence theorem, allowing the global degree to increase**. Given cyclic local extensions at finitely many places of a number field, each can be embedded in the corresponding completion of some global cyclic extension. The global degree need not equal the local degrees. Here only the single place $v$ is used. This version, which allows a larger degree, is not obstructed by the exceptional Grunwald–Wang cases for prescribed exact degree.
+> The Galois group of any finite abelian $F/K_v$ embeds in a product of finitely many cyclic quotients. Thus $F$ is the compositum of finitely many cyclic subextensions. Apply the input above to each cyclic subextension to obtain a global cyclic extension $L_i/K$ whose chosen completion contains that local extension. Put $L=\prod_iL_i$. Then $L/K$ is abelian and $LK_v\supseteq F$. Taking the union over all $F$ proves the reverse inclusion.
+> Infinite places do not require this input: $\mathbb C$ has no nontrivial finite extension, and $\mathbb C/\mathbb R$ at a real place is realized by adjoining a square root of any element negative under that real embedding.
 
 ## Related Concepts
 
@@ -44,4 +44,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 2, printed p.394, PDF p.413]。解答为独立推导。本解明确依赖允许增大次数的全局实现定理，未声称沿原提示仅用 (5.6)/(5.8) 完成证明，也未声称精确次数的 Grunwald 定理无例外。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 2, printed p.394, PDF p.413]. The solution is independently derived. It explicitly depends on a global realization theorem that permits an increased degree. It does not claim to follow the original hint using only (5.6)/(5.8), or to assert an exception-free Grunwald theorem with prescribed exact degree.

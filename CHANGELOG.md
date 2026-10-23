@@ -2,6 +2,13 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-10-23 (Vault-Wide English Notes and Module Homomorphisms)
+
+- Standardized: Translated the remaining Chinese text in 111 exercise notes, including R391, without deleting problems, hints, proof steps, source issues or scope boundaries. Replaced Chinese aliases in 12 concept notes with existing or equivalent English names. Gal78 retains its full English source title, Chinese-edition identification and exact page locator. Source IDs, structured source references, paths, numbering and learning states are preserved.
+- Completed: Replaced the Module Homomorphisms placeholder with an English definition for unital left modules, kernel/image and quotient constructions, full factorization and first isomorphism proofs, the precise commutative-ring condition for the pointwise Hom module, a noncommutative matrix counterexample, worked examples and dynamic exercise backlinks. Visually checked Artin 14.1.4–14.1.6 on printed pp. 413–414 / PDF pp. 425–426, with the module axioms on printed p. 412 / PDF p. 424. The note explicitly distinguishes the source statements and omitted source proofs from its independent derivations.
+- Prevented recurrence: Added an English-language requirement for mathematical vault notes and a whole-vault language check to AGENTS.md. Retained the existing Chinese review handout as requested; quoted application commands and historical changelog text are outside the mathematical-note cleanup.
+- Verified: Rescanned all 1,932 exercise notes and 264 concept notes: no Chinese text or Chinese fullwidth punctuation remains. The 123 language-cleanup targets preserve all 456 existing display formulas, apart from translated text annotations, and all Wikilink targets; checked 488 path-qualified links across the affected notes. Validated metadata and MathJax delimiters, independently reviewed the new concept proofs and sampled translation fidelity, retained the two pre-existing mathematical changes, preserved the complete changelog and synchronized README's latest three entries. The language pass is not a new proof audit of every existing exercise. No plugin, daily-list state, Git commit or publication was changed.
+
 ### 2026-10-23 (Diamond–Shurman English Notes and Original Exercises Only)
 
 - Updated: Rewrote all six archived Diamond–Shurman exercise notes in English, including statement introductions, hints, complete independent solutions, source issues, proof boundaries and link labels. Preserved the complete original numbered exercises, mathematical derivations, source anchors, metadata, file paths and learning states.

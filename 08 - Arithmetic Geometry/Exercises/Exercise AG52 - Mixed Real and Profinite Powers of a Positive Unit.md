@@ -29,15 +29,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 固定每个复嵌入下 $\epsilon_v$ 的一个复对数 $L_v$；实嵌入因总正可取 $L_v=\log\epsilon_v\in\mathbb R$。对 $\lambda=(x,t)$ 定义有限分量为 $\epsilon_v^x$（前题的连续延拓），无限分量为 $\exp(tL_v)$。
-> 这是从加法群 $\widehat{\mathbb Z}\times\mathbb R$ 到 $I_K^1$ 的连续同态；对角整数 $(n,n)$ 的像为通常主 idèle $\epsilon^n$。有限分量均为单位，故它们绝对值为 $1$；无限分量给出
+> [!success]- Independent derivation
+> Fix a complex logarithm $L_v$ of $\epsilon_v$ at each complex embedding; at real embeddings total positivity allows us to take $L_v=\log\epsilon_v\in\mathbb R$. For $\lambda=(x,t)$, define the finite components to be $\epsilon_v^x$ (the continuous extension from the preceding exercise) and the infinite components to be $\exp(tL_v)$.
+> This is a continuous homomorphism from the additive group $\widehat{\mathbb Z}\times\mathbb R$ to $I_K^1$; the diagonal integer $(n,n)$ maps to the usual principal idèle $\epsilon^n$. All finite components are units, so their absolute values are $1$; the infinite components give
 > $$
 > \mathfrak N(\epsilon^{(x,t)})
 >  =\prod_{v\mid\infty}|\epsilon_v|_v^t
 >  =\left(\prod_v|\epsilon|_v\right)^t=1.
 > $$
-> 末步使用数域的乘积公式。复对数的不同选择改变实参数方向的复相位；这不影响存在性与范数结论。
+> The last step uses the product formula for number fields. Different choices of complex logarithms change the complex phases in the real-parameter direction; this does not affect existence or the norm conclusion.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 5, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。这是连续延拓的存在性构造；从稠密性不能推出唯一性，因为对角 $\mathbb Z$ 在 $\widehat{\mathbb Z}\times\mathbb R$ 中并不稠密。
+The statement was checked against the original book at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 5, printed p. 367, PDF p. 386]. The solution is an independent derivation in this vault; citing its inputs does not mean that the book solves this exercise. This constructs a continuous extension and establishes its existence. Density does not imply uniqueness, because the diagonal $\mathbb Z$ is not dense in $\widehat{\mathbb Z}\times\mathbb R$.

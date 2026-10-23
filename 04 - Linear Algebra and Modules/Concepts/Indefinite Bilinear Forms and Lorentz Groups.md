@@ -3,7 +3,6 @@ title: Indefinite Bilinear Forms and Lorentz Groups
 aliases:
   - Lorentz Groups
   - Indefinite Orthogonal Groups
-  - 不定双线性型与 Lorentz 群
 topic: linear-algebra
 tags:
   - concept

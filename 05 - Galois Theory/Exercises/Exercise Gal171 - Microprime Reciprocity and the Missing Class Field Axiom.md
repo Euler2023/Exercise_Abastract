@@ -41,52 +41,52 @@ created: '2026-10-23'
 > where $K_\alpha|K$ varies over the finite subextensions of $\Sigma|K$, and where the projective limit is taken with respect to the norm maps $N_{K_\beta|K_\alpha}:A_{K_\beta}\to A_{K_\alpha}$. Then there is a surjective homomorphism $v_\Sigma:\widehat A_\Sigma\to Z$ and a homomorphism $N_{\Sigma|K}:\widehat A_\Sigma\to A_K$.
 
 > [!warning] Source issue
-> 印刷引用的 §4 Exercise 5 不存在；有限 Galois 群须取 abelianization；更关键的是 (5.1) 只保证 reciprocity 为同态，不能保证一般 ramified 同构。下文用二次扩张给出明确反例。最后的未完成 norm 商与 norm 完成也须区分。
+> The printed reference to §4, Exercise 5 does not exist. The finite Galois group must be replaced by its abelianization; more fundamentally, (5.1) guarantees only a reciprocity homomorphism, not an isomorphism for general ramified extensions. A quadratic counterexample is given below. The final uncompleted norm quotient must also be distinguished from the norm completion.
 
 ## Hints
 
 > [!hint]- Hint 1
-> 先核对假设：正文此时只证明 reciprocity homomorphism；同构定理需要下一节的 class field axiom (6.1)。目标是交换群，所以非交换 Galois 群还须取 abelianization。
+> Check the hypotheses first: at this point the text has proved only a reciprocity homomorphism. The isomorphism theorem requires the class field axiom (6.1) in the next section. The target is abelian, so a nonabelian Galois group must also be replaced by its abelianization.
 
 > [!hint]- Hint 2
-> 可检验缺少 class field axiom 的后果：把标准 local multiplicative module 与其 unit module 相乘，valuation 只看第一项。unramified 条件保持，但 ramified norm 商多出一项。
+> Test the effect of omitting the class field axiom by taking the product of the usual local multiplicative module and its unit module, with the valuation depending only on the first factor. The unramified conditions remain valid, but a ramified norm quotient acquires an additional factor.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 本题最后的同构断言在印刷假设下为假；不仅是漏写 abelianization。下面给出一个直接 norm 商反例，因此不能为原题补出一个正确的“完整证明”。
+> The final isomorphism claim is false under the printed hypotheses; the missing abelianization is not the only problem. The explicit norm-quotient counterexample below precludes a valid complete proof of the original assertion.
 >
-> **1. 构造仍满足 (5.1) 的 henselian module。** 以 $k=\mathbb Q_3$ 的可分闭包为背景，令 $A_0=(k^{sep})^\times$，$U_0$ 为绝对值 $1$ 的元素子群，取
+> **1. A henselian module still satisfying (5.1).** Work in a separable closure of $k=\mathbb Q_3$. Let $A_0=(k^{sep})^\times$ and let $U_0$ be the subgroup of elements of absolute value $1$. Take
 > $$
 > A=A_0\times U_0,
 > $$
-> valuation 只取第一因子。对有限子扩域 $F/k$，有 $A_F=F^\times\times\mathcal O_F^\times$，且 $v(N_{F/k}A_F)=f_F\mathbb Z$，所以 henselian 条件与通常 local valuation 完全相同。单位核为 $U_0\times U_0$。
+> Let the valuation depend only on the first factor. For a finite subextension $F/k$, we have $A_F=F^\times\times\mathcal O_F^\times$ and $v(N_{F/k}A_F)=f_F\mathbb Z$, so the henselian conditions are exactly those for the usual local valuation. The unit kernel is $U_0\times U_0$.
 >
-> 对有限 unramified 循环扩张 $E/F$，norm $\mathcal O_E^\times\to\mathcal O_F^\times$ 满射：剩余域单位 norm 满射；在 principal-unit successive quotients 上 norm 诱导有限剩余域 trace，trace 满射；逐阶调整并用完备性取极限，得到单位 norm 的满射。因此 $H^0(G(E/F),\mathcal O_E^\times)=1$。若单位 $u$ norm 为 $1$，有限 Hilbert 90 给 $u=b^{\sigma-1}$；unramified 时 $F$ 的 uniformizer 也为 $E$ 的 uniformizer，除去适当整数幂可把 $b$ 调成单位而不改变 coboundary，故 $H^{-1}$ 也为 $1$。对两个因子取乘积，$A$ 仍满足 (5.1)。
+> For a finite unramified cyclic extension $E/F$, the norm $\mathcal O_E^\times\to\mathcal O_F^\times$ is surjective: the norm on residue-field units is surjective, and on successive principal-unit quotients the norm induces the surjective trace of finite residue fields. Correcting successively and passing to a limit by completeness gives surjectivity on units. Thus $H^0(G(E/F),\mathcal O_E^\times)=1$. If a unit $u$ has norm $1$, finite Hilbert 90 gives $u=b^{\sigma-1}$. Since the extension is unramified, a uniformizer of $F$ is also a uniformizer of $E$. Dividing $b$ by a suitable integral power of it makes it a unit without changing the coboundary, so $H^{-1}$ is also $1$. Taking the product of both factors shows that $A$ still satisfies (5.1).
 >
-> **2. 一个二次 ramified 商已否定同构。** 取 $L=\mathbb Q_3(\sqrt3)$、$K=\mathbb Q_3$，则 $G(L/K)$ 为二阶循环群。对任意单位 $u\in\mathcal O_L^\times$，两个共轭在剩余域 $\mathbb F_3$ 中相同，所以
+> **2. A quadratic ramified quotient already disproves the isomorphism.** Take $L=\mathbb Q_3(\sqrt3)$ and $K=\mathbb Q_3$, so $G(L/K)$ is cyclic of order two. For every unit $u\in\mathcal O_L^\times$, the two conjugates have the same image in the residue field $\mathbb F_3$, and hence
 > $$
 > N_{L/K}(u)\bmod3=(\bar u)^2=1.
 > $$
-> 因此 $-1\in\mathcal O_K^\times$ 不是单位 norm。它也不是 $L^\times$ 的 norm：若 norm 的 valuation 为零，$f=1$ 使原元素 valuation 必为零，已经回到单位情形。于是两个商
+> Thus $-1\in\mathcal O_K^\times$ is not a norm of a unit. Nor is it a norm from $L^\times$: if the norm has valuation zero, $f=1$ forces the original element to have valuation zero, reducing to the unit case. Therefore both quotients
 > $$
 > K^\times/N_{L/K}L^\times,\qquad
 > \mathcal O_K^\times/N_{L/K}\mathcal O_L^\times
 > $$
-> 都至少有两个元素，而
+> have at least two elements, whereas
 > $$
 > A_K/N_{L/K}A_L\simeq
 > (K^\times/NL^\times)\times(\mathcal O_K^\times/N\mathcal O_L^\times)
 > $$
-> 至少有四个元素，不可能与二阶 $G(L/K)$ 同构。该反例的 Galois 群已经交换，所以只补 $G^{ab}$ 仍不能修复印刷断言。
+> has at least four elements and cannot be isomorphic to the group $G(L/K)$ of order two. The Galois group in this counterexample is already abelian, so inserting $G^{ab}$ alone does not repair the printed assertion.
 >
-> **3. 可正确保留的有限层内容。** 在仅有 (5.1) 时，正文 (5.6) 给 canonical homomorphisms $r_{L/K}:G(L/K)^{ab}\to A_K/N A_L$；(5.8) 给 norm/限制相容性。它们在全部有限 Galois 层形成 canonical 的 reciprocity 系统，因此 microprime 可确定其在 norm 完成
+> **3. The valid finite-level content.** Under (5.1) alone, (5.6) of the text gives canonical homomorphisms $r_{L/K}:G(L/K)^{ab}\to A_K/N A_L$, and (5.8) gives compatibility with norms and restriction. Together these form a canonical reciprocity system over all finite Galois levels. A microprime therefore determines a compatible image in the norm completion
 > $$
 > \varprojlim_{E/K\ finite\ Galois}A_K/N_{E/K}A_E
 > $$
-> 中的相容像。若还要求像落在未完成的 $A_K/N_{\bar k/K}A_{\bar k}$，必须另证印刷提示中的 norm-compatible prime elements 存在并说明从该商到完成的像；不能仅把二者当成同一对象。
+> shown above. To require that this image come from the uncompleted quotient $A_K/N_{\bar k/K}A_{\bar k}$, one must additionally prove existence of the norm-compatible prime elements in the printed hint and identify the image of that quotient in the completion. The quotient and its completion cannot simply be treated as the same object.
 >
-> 若补入后续 class field axiom (6.1)，正文一般 reciprocity theorem 才给有限层 $G(L/K)^{ab}$ 的同构。本题按原打印形式已被第二步反驳，故本笔记不把未证的未完成商提升或原同构断言列为完成结果。
+> With the later class field axiom (6.1), the general reciprocity theorem in the text does give isomorphisms for finite-level groups $G(L/K)^{ab}$. Step 2 disproves the exercise as printed. This note therefore does not present either the unproved lift to the uncompleted quotient or the original isomorphism claim as an established result.
 
 ## Related Concepts
 
@@ -98,6 +98,6 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, Exercise 3, printed p. 299, PDF p. 318]. 题面与全部印刷提示保留；独立反例否定仅由 (5.1) 推出的同构，有限层 canonical homomorphism 与兼容性引用正文 (5.6)、(5.8)，printed pp. 294–296 / PDF pp. 313–315。
-- **Source issues:** §4 实际只有 Exercises 1–4，印刷引用 1–5 越界；最后同构还漏 abelianization 与 class field axiom。microprime 定义另须沿用 §4 对闭交换子群的假设。不能把这些遗漏当作已经满足的假设。
-- **Proof boundary:** 本文给出原题为假的完整反驳及可成立的有限层替代；未声称已证明提示中一般 norm 逆极限的 valuation 满射性，也未将未完成的 norm 商静默等同于完成。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, Exercise 3, printed p. 299, PDF p. 318]. The statement and all printed hints are preserved. An independent counterexample disproves the isomorphism under (5.1) alone. The finite-level canonical homomorphisms and their compatibility use (5.6) and (5.8) in the text, printed pp. 294–296 / PDF pp. 313–315.
+- **Source issues:** Section 4 has only Exercises 1–4, so the printed reference to 1–5 exceeds its range. The final isomorphism also omits abelianization and the class field axiom. The microprime definition additionally requires the hypothesis on closed abelian subgroups from §4. These omissions cannot be treated as hypotheses already satisfied.
+- **Proof boundary:** This note completely disproves the original assertion and gives the valid finite-level replacement. It does not claim to prove surjectivity of the valuation on the general norm inverse limit in the hint, and does not silently identify the uncompleted norm quotient with its completion.

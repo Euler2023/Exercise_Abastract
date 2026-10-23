@@ -2,7 +2,6 @@
 title: Riemann Surfaces
 aliases:
   - Riemann Surface
-  - 黎曼曲面
 topic: arithmetic-geometry
 tags:
   - concept

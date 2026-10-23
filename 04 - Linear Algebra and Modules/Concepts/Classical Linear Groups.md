@@ -2,13 +2,10 @@
 title: Classical Linear Groups
 aliases:
   - Classical Matrix Groups
-  - 经典线性群
   - Orthogonal Matrix
   - Orthogonal Matrices
-  - 正交矩阵
   - Unitary Matrix
   - Unitary Matrices
-  - 酉矩阵
 topic: linear-algebra
 tags:
   - concept

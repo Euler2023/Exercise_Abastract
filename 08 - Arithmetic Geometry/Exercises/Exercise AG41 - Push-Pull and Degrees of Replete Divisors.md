@@ -25,28 +25,28 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 先在单个素除子 $\mathfrak p$ 上计算 push-pull；所需系数是 $\sum_{\mathfrak P\mid\mathfrak p}e_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}$。
+> First compute push-pull on a single prime divisor $\mathfrak p$. The coefficient needed is $\sum_{\mathfrak P\mid\mathfrak p}e_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}$.
 
 > [!hint]- Hint 2
-> 次数定义为 $\sum\nu_{\mathfrak p}\log\mathfrak N(\mathfrak p)$，并且 $\mathfrak N(\mathfrak P)=\mathfrak N(\mathfrak p)^{f_{\mathfrak P\mid\mathfrak p}}$。
+> Degree is defined as $\sum\nu_{\mathfrak p}\log\mathfrak N(\mathfrak p)$, and $\mathfrak N(\mathfrak P)=\mathfrak N(\mathfrak p)^{f_{\mathfrak P\mid\mathfrak p}}$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 沿用前两题的 $\tau:K\hookrightarrow L$，把 $K$ 与 $\tau K$ 识别，记 $d=[L:K]$。本节 (1.2)(i)–(ii) 给出（包括无穷处）
+> Retain $\tau:K\hookrightarrow L$ from the preceding two exercises, identify $K$ with $\tau K$, and write $d=[L:K]$. This section's (1.2)(i)–(ii) give, including at infinite places,
 > $$
 > \sum_{\mathfrak P\mid\mathfrak p}e_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}=d,\qquad
 > \log\mathfrak N(\mathfrak P)=f_{\mathfrak P\mid\mathfrak p}\log\mathfrak N(\mathfrak p).
 > $$
-> 这些是已证明的源输入 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.2), printed p. 184, PDF p. 203]。
+> These are proved inputs from the source [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.2), printed p. 184, PDF p. 203].
 >
-> 对单个底域素除子，
+> For a single prime divisor of the base field,
 > $$
 > \tau_*\tau^*(\mathfrak p)=\sum_{\mathfrak P\mid\mathfrak p}e_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}\mathfrak p=d\mathfrak p.
 > $$
-> 按加法与实系数线性延拓，$\tau_*\tau^*D=dD$；故在除子群上已成立，在除子类群上也成立。
+> Extending additively and linearly in real coefficients gives $\tau_*\tau^*D=dD$. The identity therefore already holds on divisor groups, and hence on divisor class groups.
 >
-> 对 $D_L=\sum_{\mathfrak P}\nu_{\mathfrak P}\mathfrak P$，
+> For $D_L=\sum_{\mathfrak P}\nu_{\mathfrak P}\mathfrak P$, one has
 > $$
 > \begin{aligned}
 > \deg(\tau_*D_L)
@@ -54,7 +54,7 @@ created: '2026-10-23'
 > &=\sum_{\mathfrak P}\nu_{\mathfrak P}\log\mathfrak N(\mathfrak P)=\deg(D_L).
 > \end{aligned}
 > $$
-> 对 $D_K=\sum_{\mathfrak p}\nu_{\mathfrak p}\mathfrak p$，
+> For $D_K=\sum_{\mathfrak p}\nu_{\mathfrak p}\mathfrak p$, one has
 > $$
 > \begin{aligned}
 > \deg(\tau^*D_K)
@@ -63,7 +63,7 @@ created: '2026-10-23'
 > &=d\deg(D_K).
 > \end{aligned}
 > $$
-> 例如 $L=\mathbb Q(i)$、$K=\mathbb Q$，实无穷处 $\infty$ 的 pullback 是唯一复无穷处 $\mathfrak P$，其 $e=1,f=2$。$\deg\mathfrak P=2$ 而 $\deg\infty=1$，pushforward 为 $2\infty$，逐式验证三条恒等式。
+> For example, take $L=\mathbb Q(i)$ and $K=\mathbb Q$. The pullback of the real infinite place $\infty$ is the unique complex infinite place $\mathfrak P$, with $e=1,f=2$. One has $\deg\mathfrak P=2$ and $\deg\infty=1$, while the pushforward is $2\infty$. These values verify each of the three identities.
 
 ## Related Concepts
 
@@ -74,5 +74,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 6, printed p. 194, PDF p. 213]. 独立求和证明；原页第一条次数等式里的 $D$ 属于 $L$，第二条里的 $D$ 属于 $K$，故解答分记 $D_L,D_K$，避免把两个不同定义域混用。
-- **Boundary:** 这里证明的是 $\tau_*\tau^*=d$；反向复合一般不是乘以 $d$。Galois 情形反向复合对应对全部自同构共轭的求和。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 6, printed p. 194, PDF p. 213]. An independent summation proof. In the first printed degree identity, $D$ is a divisor of $L$; in the second, it is a divisor of $K$. The solution therefore writes $D_L,D_K$ to distinguish the two domains.
+- **Boundary:** The identity proved here is $\tau_*\tau^*=d$. The reverse composition is generally not multiplication by $d$; in the Galois case it corresponds to the sum over all conjugates under automorphisms.

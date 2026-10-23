@@ -22,7 +22,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Choose a common polynomial degree divisible by all ramified local degrees. Approximate a product of local primitive polynomials at each ramified place, and impose linear disjointness using Hilbert irreducibility with approximation.
 
 > [!hint]- Stronger hint
@@ -30,16 +30,16 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 设 $S$ 为 $L/K$ 的有限分歧位置集。若需要所有实位置也分裂，可把发生复化的实位置一并加入。各有限 $v\in S$ 选一个 $L_w/K_v$ 的本原多项式。取整数 $N\ge2$，被所有这些局部次数整除；在 $v$ 处取若干平移后互异的本原多项式之积，总次数为 $N$。在需要复化的实位置，取 $N$ 偶数并选无实根的可分多项式。
-> 这些局部可分多项式各有系数开邻域，使附近多项式的每个不可约因子仍给包含 $L_w$ 的局部扩张，这是 Hensel 因子提升与 Krasner 引理。由弱逼近，存在全局首一次数 $N$ 多项式的系数开集满足全部局部条件。
-> **外部标准输入：带弱逼近及线性不交条件的 Hilbert 不可约定理。** 数域上，通用首一次数 $N$ 多项式的参数 Hilbert 集与上述有限多个局部开集相交；还能要求所得根域与固定有限扩张 $L$ 线性不交，并可得到无限多个不同根域。这是比本题更一般的 Hilbertian 专化定理，本解不重证它。
-> 取这样的不可约多项式 $g$，令 $K'=K(\beta)$。每个 $v\in S$ 的每个 $K'_u$ 都包含相应 $L_w$，故
+> [!success]- Independent derivation
+> Let $S$ be the finite set of places ramified in $L/K$. If splitting at all real places is required, include the real places that become complex. For each finite $v\in S$, choose a primitive polynomial for $L_w/K_v$. Choose an integer $N\ge2$ divisible by all these local degrees. At $v$, take a product of distinct translates of primitive polynomials, of total degree $N$. At real places that must become complex, take $N$ even and choose a separable polynomial with no real roots.
+> Each local separable polynomial has an open coefficient neighborhood in which every irreducible factor still defines a local extension containing $L_w$, by Hensel factor lifting and Krasner's lemma. Weak approximation gives an open set of coefficients of global monic degree-$N$ polynomials satisfying all these local conditions.
+> **External standard input: Hilbert irreducibility with weak approximation and linear-disjointness conditions.** Over a number field, the parameter Hilbert set for the generic monic degree-$N$ polynomial meets the prescribed finitely many local open sets. The resulting root field can also be required to be linearly disjoint from a fixed finite extension $L$, with infinitely many distinct root fields obtained. This is a Hilbertian specialization theorem more general than the exercise, and is not reproved here.
+> Choose such an irreducible polynomial $g$ and put $K'=K(\beta)$. For every $v\in S$, each $K'_u$ contains the corresponding $L_w$. Thus
 > $$
 > LK'\otimes_{K'}K'_u
 > $$
-> 是若干个 $K'_u$ 的乘积，在这些位置没有相对分歧。$v\notin S$ 时 $L/K$ 已未分歧；有限 étale 扩张在任意局部基变换下仍 étale，所以也不产生新分歧。线性不交保证 $L\cap K'=K$。Hilbert 定理的无限性结论给无限多个所求 $K'$。
-> 若 $L=K$，任取无限多个有限扩张即得结论。
+> is a product of copies of $K'_u$, so there is no relative ramification at these places. For $v\notin S$, the extension $L/K$ is already unramified. A finite étale extension remains étale under any local base change, so no new ramification arises there either. Linear disjointness gives $L\cap K'=K$. The infinitude assertion in Hilbert's theorem supplies infinitely many such $K'$.
+> If $L=K$, any infinite collection of finite extensions gives the conclusion.
 
 ## Related Concepts
 
@@ -50,4 +50,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 7, printed p.414, PDF p.433]。解答为独立推导。此证明采用有明确边界的 Hilbert 不可约输入，未冒称完全沿原提示仅由弱逼近推出全局不可约和线性不交。
+The statement was checked against the original pages rendered at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 7, printed p.414, PDF p.433]. The solution is independently derived and uses Hilbert irreducibility with an explicit proof boundary. It does not claim to follow the printed hint using weak approximation alone to establish global irreducibility and linear disjointness.

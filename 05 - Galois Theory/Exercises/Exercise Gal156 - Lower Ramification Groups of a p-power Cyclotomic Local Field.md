@@ -53,7 +53,6 @@ created: '2026-10-23'
 ## Related Concepts
 
 - [[05 - Galois Theory/Concepts/Higher Ramification Groups and Herbrand Functions|Higher Ramification Groups and Herbrand Functions]]
-
 - [[05 - Galois Theory/Concepts/Decomposition and Inertia Groups|Decomposition and Inertia Groups]]
 - [[08 - Arithmetic Geometry/Concepts/Local Fields|Local Fields]]
 - [[05 - Galois Theory/Concepts/Galois Extensions|Galois Extensions]]

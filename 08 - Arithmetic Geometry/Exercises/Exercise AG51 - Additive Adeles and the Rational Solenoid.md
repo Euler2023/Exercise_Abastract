@@ -31,15 +31,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue.** (ii)–(iii) 的分母印为 $\mathbb Z$，按此原文不成立：对角元 $1/n+\mathbb Z$ 是非零 $n$ 阶扭元；且投影到 $\mathbb Q_p/\mathbb Z_p$ 给出无限离散商，所以商既不紧也不连通。以下证明预期修正版 $\mathbb A_{\mathbb Q}/\mathbb Q$。
-> (i) 有限 adèle $a=(a_p)$ 只有有限多个非整分量，故存在正整数 $d$ 使 $da\in\prod_p\mathbb Z_p=\widehat{\mathbb Z}$。于是 $\mathbb A_{\mathbb Q,f}=\bigcup_{d\ge1}d^{-1}\widehat{\mathbb Z}=\widehat{\mathbb Z}\otimes\mathbb Q$。
-> 中国剩余定理给每个有限 adèle $a_f$ 一个 $q\in\mathbb Q$，使 $a_f-q\in\widehat{\mathbb Z}$；两个这种 $q$ 相差整数。因此
+> [!success]- Independent derivation
+> **Source issue.** The denominator in (ii)–(iii) is printed as $\mathbb Z$, making those assertions false as written. The diagonal class $1/n+\mathbb Z$ is a nonzero element of order $n$, and projection to $\mathbb Q_p/\mathbb Z_p$ gives an infinite discrete quotient, so the quotient is neither compact nor connected. We prove the intended correction, $\mathbb A_{\mathbb Q}/\mathbb Q$, below.
+> (i) A finite adèle $a=(a_p)$ has only finitely many nonintegral components, so a positive integer $d$ exists with $da\in\prod_p\mathbb Z_p=\widehat{\mathbb Z}$. Thus $\mathbb A_{\mathbb Q,f}=\bigcup_{d\ge1}d^{-1}\widehat{\mathbb Z}=\widehat{\mathbb Z}\otimes\mathbb Q$.
+> The Chinese remainder theorem gives, for each finite adèle $a_f$, a rational number $q\in\mathbb Q$ such that $a_f-q\in\widehat{\mathbb Z}$. Any two such $q$ differ by an integer. Hence
 > $$
 > \mathbb A_{\mathbb Q}/\mathbb Q\cong(\widehat{\mathbb Z}\times\mathbb R)/\mathbb Z,
 > $$
-> 其中 $\mathbb Z$ 对角嵌入。每个类有 $\widehat{\mathbb Z}\times[0,1]$ 内的代表，故商紧。$\{0\}\times\mathbb R$ 的像连通且稠密：对任意 $[x,t]$，取整数 $n_j\to-x$ 于 $\widehat{\mathbb Z}$，则 $[0,t+n_j]=[-n_j,t]\to[x,t]$。故整个商连通。
-> 对 $y=[a]\in\mathbb A_{\mathbb Q}/\mathbb Q$，$x=[a/n]$ 满足 $nx=y$。若 $nx=0$，则代表元 $b$ 满足 $nb=q\in\mathbb Q$，故 $b=q/n$ 本来就是对角有理数，$x=0$。所以乘 $n$ 是双射。
+> where $\mathbb Z$ is embedded diagonally. Every class has a representative in $\widehat{\mathbb Z}\times[0,1]$, so the quotient is compact. The image of $\{0\}\times\mathbb R$ is connected and dense: for any $[x,t]$, choose integers $n_j\to-x$ in $\widehat{\mathbb Z}$. Then $[0,t+n_j]=[-n_j,t]\to[x,t]$. Thus the entire quotient is connected.
+> For $y=[a]\in\mathbb A_{\mathbb Q}/\mathbb Q$, the class $x=[a/n]$ satisfies $nx=y$. If $nx=0$, a representative $b$ satisfies $nb=q\in\mathbb Q$, so $b=q/n$ is already a diagonal rational number and $x=0$. Multiplication by $n$ is therefore bijective.
 
 ## Related Concepts
 
@@ -50,4 +50,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 1, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。保留原印 $\mathbb Z$，解答明确改为 $\mathbb Q$；不要把原题无条件标为真。
+The statement was checked against the original pages rendered at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 1, printed p. 367, PDF p. 386]. The solution is independently derived in this vault; citing an input does not mean that the book solves this exercise. The printed $\mathbb Z$ is preserved, and the solution explicitly replaces it by $\mathbb Q$. The original statement must not be marked unconditionally true.

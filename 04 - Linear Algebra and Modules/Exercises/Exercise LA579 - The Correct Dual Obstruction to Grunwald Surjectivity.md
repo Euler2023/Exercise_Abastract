@@ -32,7 +32,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Use Exercise4(iii) on a vector supported inside $S$. Distinguish a class locally trivial outside $S$ from one locally trivial at every place; the latter cannot obstruct a local prescription.
 
 > [!hint]- Stronger hint
@@ -40,20 +40,20 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue.** 原印“injective”一般过强。令
+> [!success]- Independent derivation
+> **Source issue.** The printed condition of injectivity is too strong in general. Set
 > $$
 > B_S=\ker\left(H^1(K,\mu_n)\to\prod_{v\notin S}H^1(K_v,\mu_n)\right),\quad
 > B_\varnothing=\ker\left(H^1(K,\mu_n)\to\prod_vH^1(K_v,\mu_n)\right).
 > $$
-> 正确充要条件为 $B_S=B_\varnothing$，而不是 $B_S=0$。
-> 证明：局部完美配对把 $F_S=\prod_{v\in S}H^1(K_v,\mathbb Z/n)$ 的对偶识别为 $\prod_{v\in S}H^1(K_v,\mu_n)$。把一个右向量在 $S$ 外补零；它湮灭全部全局特征，按 Exercise4(iii) 当且仅当它是某个全局 Kummer 类的局部化。这些向量恰为 $\operatorname{loc}_S(B_S)$，其核是 $B_\varnothing$。因此全局限制映射的像的湮灭子为 $B_S/B_\varnothing$；$F_S$ 有限，故限制映射满射当且仅当该商为零。
-> **原等价的明确反例。** 取 $K=\mathbb Q(\sqrt7)$，$n=8$，$S=\varnothing$。左映射到空积必满；但 $a=16$ 非全局八次幂，因为 $K$ 为实域，实八次根只有 $\pm\sqrt2$，而 $\sqrt2\notin\mathbb Q(\sqrt7)$。它却在每个局部域为八次幂：
-> - 对奇素数 $p$，令 $d=p-1$。若 $v_2(d)\le2$，$\gcd(8,d)\mid4$，所以 $16=2^4$ 在 $\mathbb F_p^\times$ 为八次幂；若 $v_2(d)\ge3$，则 $p\equiv1\bmod8$，二次互反补充律给 $2=u^2$，从而 $16=u^8$。两种情形都以 Hensel 引理提升到 $\mathbb Q_p$，再嵌入每个 $K_v$。
-> - 因 $-7\equiv1\bmod8$ 是 $\mathbb Q_2$ 的平方，$K_v=\mathbb Q_2(\sqrt7)\cong\mathbb Q_2(i)$；$(1+i)^8=16$。
-> - 实位置有正实八次根。
-> 所以 $B_\varnothing\ne0$，原注入性断言错误。
-> **原题充分条件的有效解释。** 第一条件直接由 VI.§1 Exercise2(i) 给 $B_S=0$。第二条件中，“nonsplit”须沿本书解释为只有一个上方素点，即其在 $E_2=K(\mu_{2^\nu})$ 中分解群等于全体 $G(E_2/K)$。若存在这样的 $v\mid2$ 且 $v\notin S$，VI.§1 Exercise2 的仿射上循环证明已消去所有奇素数部分；剩余 $2$-部分上循环因子化到 $G(E_2/K)$。局部 $n$ 次幂给一个被该局部分解群固定的 $X^n-a$ 的根，因此仿射 cocycle 在该分解群上为余边界；分解群既是整个群，它便在全群为余边界，故 $B_S=0$。这给两种条件下的满射性。
+> The correct necessary and sufficient condition is $B_S=B_\varnothing$, rather than $B_S=0$.
+> To prove this, the perfect local pairings identify the dual of $F_S=\prod_{v\in S}H^1(K_v,\mathbb Z/n)$ with $\prod_{v\in S}H^1(K_v,\mu_n)$. Extend a vector on the right by zero outside $S$. By Exercise 4(iii), it annihilates every global character if and only if it is the localization of a global Kummer class. These vectors are exactly $\operatorname{loc}_S(B_S)$, whose kernel is $B_\varnothing$. Thus the annihilator of the image of global restriction is $B_S/B_\varnothing$. Since $F_S$ is finite, restriction is surjective if and only if this quotient is zero.
+> **Explicit counterexample to the printed equivalence.** Take $K=\mathbb Q(\sqrt7)$, $n=8$, and $S=\varnothing$. The map on the left to the empty product is necessarily surjective. But $a=16$ is not a global eighth power: $K$ is real, so its only possible real eighth roots are $\pm\sqrt2$, whereas $\sqrt2\notin\mathbb Q(\sqrt7)$. Nevertheless, it is an eighth power in every completion:
+> - For an odd prime $p$, set $d=p-1$. If $v_2(d)\le2$, then $\gcd(8,d)\mid4$, so $16=2^4$ is an eighth power in $\mathbb F_p^\times$. If $v_2(d)\ge3$, then $p\equiv1\bmod8$, and the supplementary law of quadratic reciprocity gives $2=u^2$, hence $16=u^8$. In both cases, Hensel's lemma lifts the root to $\mathbb Q_p$, which embeds into each $K_v$.
+> - Since $-7\equiv1\bmod8$ is the square of $\mathbb Q_2$, we have $K_v=\mathbb Q_2(\sqrt7)\cong\mathbb Q_2(i)$ and $(1+i)^8=16$.
+> - At real places, a positive real eighth root exists.
+> Thus $B_\varnothing\ne0$, disproving the printed injectivity assertion.
+> **Valid interpretation of the original sufficient conditions.** The first condition gives $B_S=0$ directly by VI.§1 Exercise 2(i). In the second condition, nonsplit must be interpreted in the book's sense of having only one prime above it: its decomposition group in $E_2=K(\mu_{2^\nu})$ is all of $G(E_2/K)$. Suppose such a $v\mid2$ exists and $v\notin S$. The affine-cocycle proof of VI.§1 Exercise 2 already eliminates all odd-prime parts, and the remaining $2$-primary cocycle factors through $G(E_2/K)$. Being a local $n$-th power gives a root of $X^n-a$ fixed by this local decomposition group. Thus the affine cocycle is a coboundary on that decomposition group. Since this is the whole group, it is a coboundary globally, so $B_S=0$. This proves surjectivity under either condition.
 
 ## Related Concepts
 
@@ -65,4 +65,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书 printed pp.404–405/PDF pp.423–424。解答为独立推导。不将 nonsplit 译为“不完全分裂”；那会把分解群为全体的必要用法改成仅非平凡。一般处处局部幂核可以非零，上例已直接验证。
+The statement was checked against the original printed pp.404–405 / PDF pp.423–424. The solution is an independent derivation. Nonsplit is not interpreted as merely not completely split: that would weaken the necessary use of the full decomposition group to mere nontriviality. The kernel of the everywhere-local power map can be nonzero, as the example above directly verifies.

@@ -22,21 +22,21 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 令 $L^\times$ 取离散拓扑。连续 cocycle 的像有限，故它下降到一个有限 Galois 子扩张。
+> Give $L^\times$ the discrete topology. A continuous cocycle has finite image, so it descends to a finite Galois subextension.
 
 > [!hint]- Hint 2
-> 使用有限 Noether–Hilbert 90，找到同一个有限子扩域中的 coboundary 元素，再回到整个群。
+> Use finite Noether–Hilbert 90 to find an element of the same finite subextension witnessing a coboundary, then return to the whole group.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 记 $G=G(L/K)$，$L^\times$ 带离散拓扑且按自然 Galois 作用成为连续模。取连续 cocycle $f:G\to L^\times$。其像有限。选开正规 $N$，使 $f|_N=1$ 且 $N$ 固定全部像元素；此选择可由紧性有限像及有限多个稳定子取正规核获得。
+> Write $G=G(L/K)$ and give $L^\times$ the discrete topology, making it a continuous module under its natural Galois action. Let $f:G\to L^\times$ be a continuous cocycle. Its image is finite. Choose an open normal subgroup $N$ such that $f|_N=1$ and $N$ fixes every image element. Such a subgroup is obtained using compactness, finiteness of the image, and the normal cores of finitely many stabilizers.
 >
-> 于是 $f$ 经有限群 $G/N$ 因子化，且取值 $E^\times$，其中 $E=L^N$ 为有限 Galois 扩张 $E/K$。已证明的 Noether 形式 (3.8) 给出 $b\in E^\times$，使
+> Then $f$ factors through the finite group $G/N$ with values in $E^\times$, where $E=L^N$ is a finite Galois extension of $E/K$. The proved Noether formulation (3.8) gives $b\in E^\times$ such that
 > $$
 > f(\sigma N)=b^{\sigma-1}\quad(\sigma\in G).
 > $$
-> 该有限命题及其证明在 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, printed p. 283, PDF p. 302]，已图核；它只处理有限 Galois 扩张，并非本无限结论的循环引用。将公式看作 $L^\times$ 中的公式，原 cocycle 也为 coboundary。因此每个类平凡，$H^1(G,L^\times)=1$。
+> This finite statement and its proof were checked against the page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, printed p. 283, PDF p. 302]. It concerns only finite Galois extensions, so using it here does not circularly invoke the infinite conclusion. Viewed in $L^\times$, the formula also makes the original cocycle a coboundary. Thus every class is trivial and $H^1(G,L^\times)=1$.
 
 ## Related Concepts
 
@@ -46,5 +46,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 7, printed p. 284, PDF p. 303]. 独立有限层下降，输入仅为源书已证明的有限命题 (3.8)。
-- **Topology:** 此处 $H^1$ 指连续 cocycle；删除连续性不能沿用本证明。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 7, printed p. 284, PDF p. 303]. Independent descent to a finite level; the only input is the finite statement (3.8) proved in the book.
+- **Topology:** Here $H^1$ uses continuous cocycles. The proof does not extend to cocycles without the continuity assumption.

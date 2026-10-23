@@ -27,8 +27,8 @@ created: '2026-10-23'
 > $$
 > into the group $C_K^0=\{[\alpha]\in C_K\mid\mathfrak N([\alpha])=1\}$, with kernel $\mathbb Z^t\times\mathbb Z^s$.
 
-> [!note] 前题的根单位约定
-> 若 $K$ 全虚，沿用 Exercise 6 的可见修正：$\epsilon_i$ 是总正单位模根单位后的自由基的提升。有限根单位由复相位处理，不额外加入 profinite 参数。
+> [!note] Root-of-unity convention from the preceding exercise
+> If $K$ is totally imaginary, retain the visible correction from Exercise 6: the $\epsilon_i$ are lifts of a free basis of the totally positive units modulo roots of unity. Finite roots of unity are handled by complex phases, without additional profinite parameters.
 
 ## Hints
 
@@ -40,13 +40,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 各幂映射和 $\phi_j$ 连续且保持乘法，有限乘积后再投影 $I_K\to C_K$，给所需连续同态。前题 (i) 证明像的范数恒为 $1$，故像落在这里用 $C_K^0$ 表示的范数一子群。
-> 参数落在核中，当且仅当所得 idèle 是主 idèle。前题 (ii) 精确刻画为：每个 $\lambda_i=(x_i,t_i)$ 是 $(n_i,n_i)$，且所有 $y_j$ 是整数。因此
+> [!success]- Independent derivation
+> Each power map and each $\phi_j$ is continuous and multiplicative. Taking their finite product and then projecting $I_K\to C_K$ gives the required continuous homomorphism. Part (i) of the preceding exercise proves that its image always has norm $1$, so it lies in the norm-one subgroup denoted here by $C_K^0$.
+> A parameter lies in the kernel if and only if the resulting idèle is principal. Part (ii) of the preceding exercise characterizes this precisely: each $\lambda_i=(x_i,t_i)$ is of the form $(n_i,n_i)$, and every $y_j$ is an integer. Therefore
 > $$
 > \ker f=\operatorname{diag}(\mathbb Z)^t\times\mathbb Z^s.
 > $$
-> 注意本节 $C_K^0$ 只表示范数一子群；它一般不等于单位元连通分支，后者记为 $D_K^0$。
+> Here $C_K^0$ denotes only the norm-one subgroup. In general it is not the identity component, which is denoted by $D_K^0$.
 
 ## Related Concepts
 
@@ -57,4 +57,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 7, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。
+The statement was checked against the original book at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 7, printed p. 367, PDF p. 386]. The solution is an independent derivation in this vault; citing its inputs does not mean that the book solves this exercise.

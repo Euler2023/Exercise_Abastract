@@ -25,8 +25,8 @@ created: '2026-10-23'
 > form a group, and have absolute norm $\mathfrak N(\alpha)=1$.
 > (ii) $\alpha$ is a principal ideal if and only if $\lambda_i\in\mathbb Z\subseteq\widehat{\mathbb Z}\times\mathbb R$ and $y_j\in\mathbb Z\subseteq\mathbb R$.
 
-> [!warning] Source issue / 自由基与主 idèle
-> 全虚数域的“总正单位群”含全部根单位，通常没有字面意义的 $\mathbb Z$-基；本题及 Exercises 7–10 应选其模有限扭子群后的自由基的提升。原文 (ii) 的 “principal ideal”在此 idèle 参数化中应读作 “principal idèle”。下文保留原题并对该修正版完整证明。
+> [!warning] Source issue / Free basis and principal idèles
+> For a totally imaginary number field, the “group of totally positive units” contains all roots of unity and generally has no literal $\mathbb Z$-basis; in this exercise and Exercises 7–10, choose lifts of a free basis modulo its finite torsion subgroup. In (ii), “principal ideal” should read “principal idèle” in this idèle parametrization. The original statement is retained above; below we prove this corrected version in full.
 
 ## Hints
 
@@ -38,15 +38,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **记号补足。** 若 $K$ 全虚，总正单位群含根单位而不是自由群；应将“$\mathbb Z$-basis”解释为模其有限扭子群后的自由部分的一组提升。若有实嵌入，总正根单位仅为 $1$。
-> (i) 每个参数方向都是连续同态，所以这些 idèle 构成子群。单位参数的范数由前题为 $1$，$\phi_k(y)$ 的绝对值也为 $1$，故乘积范数为 $1$。
-> (ii) 若参数均为对角整数且 $y_j$ 整，则 $\alpha=\prod_i\epsilon_i^{n_i}$ 主。反之设 $\alpha$ 主，对应 $a\in K^\times$。有限分量为单位，实分量正，故 $a$ 是总正单位，写为 $\zeta\prod_i\epsilon_i^{n_i}$，$\zeta$ 为有限根单位。记 $\lambda_i=(x_i,t_i)$。有限分量给 $\prod_i\epsilon_i^{x_i-n_i}=\zeta$。设 $\zeta$ 阶为 $w$，取 $w$ 次幂并用前题的 profinite 独立性，得 $w(x_i-n_i)=0$，于是 $x_i=n_i$，再得 $\zeta=1$。
-> 比较无限分量绝对值，得到
+> [!success]- Independent derivation
+> **Clarification of notation.** If $K$ is totally imaginary, the group of totally positive units contains roots of unity and is not free; “$\mathbb Z$-basis” must mean a choice of lifts of a basis for the free quotient by its finite torsion subgroup. If there is a real embedding, the only totally positive root of unity is $1$.
+> (i) Each parameter direction is a continuous homomorphism, so these idèles form a subgroup. The unit parameters have norm $1$ by the preceding exercise, and $\phi_k(y)$ also has absolute value $1$, so their product has norm $1$.
+> (ii) If all parameters are diagonal integers and all $y_j$ are integers, then $\alpha=\prod_i\epsilon_i^{n_i}$ is principal. Conversely, suppose that $\alpha$ is principal, corresponding to $a\in K^\times$. Its finite components are units and its real components are positive, so $a$ is a totally positive unit. Write it as $\zeta\prod_i\epsilon_i^{n_i}$, where $\zeta$ is a root of unity. Put $\lambda_i=(x_i,t_i)$. The finite components give $\prod_i\epsilon_i^{x_i-n_i}=\zeta$. If $\zeta$ has order $w$, raise this equality to the $w$th power and use the profinite independence from the preceding exercise to obtain $w(x_i-n_i)=0$. Thus $x_i=n_i$, and then $\zeta=1$.
+> Comparing the absolute values of the infinite components gives
 > $$
 > \sum_i(t_i-n_i)(\log|\epsilon_i|_v)_{v\mid\infty}=0.
 > $$
-> Dirichlet 单位定理的对数向量线性独立性迫使 $t_i=n_i$。最后除去这些单位后，各复分量为 $e^{2\pi iy_j}=1$，故 $y_j\in\mathbb Z$。
+> The linear independence of the logarithmic vectors in Dirichlet’s unit theorem forces $t_i=n_i$. After removing these unit factors, each complex component is $e^{2\pi iy_j}=1$, so $y_j\in\mathbb Z$.
 
 ## Related Concepts
 
@@ -57,4 +57,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 6, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。原文 (ii) 的“principal ideal”在 idèle 语境解释为 principal idèle。全虚域的根单位须按解答显式分离。
+The statement was checked against the original book at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 6, printed p. 367, PDF p. 386]. The solution is an independent derivation in this vault; citing its inputs does not mean that the book solves this exercise. In the idèle setting, “principal ideal” in (ii) is interpreted as “principal idèle.” For totally imaginary fields, roots of unity must be separated explicitly as in the solution.

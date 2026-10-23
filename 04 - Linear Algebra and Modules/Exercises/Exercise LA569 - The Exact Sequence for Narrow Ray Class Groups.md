@@ -25,7 +25,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Lift a residue unit to a totally positive integer and send it to its principal ideal class. Check dependence on lifts before computing the kernel.
 
 > [!hint]- Stronger hint
@@ -33,11 +33,11 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 此处遵守 Neukirch 的约定：每个射线模都附带所有实位置的正性条件，故 $\mathrm{Cl}_K^1$ 是窄理想类群。令 $E_+=\mathcal O_{K,+}^\times$，$E_\mathfrak m=E_+\cap(1+\mathfrak m)$。
-> 由前题，每个 $\bar u\in(\mathcal O_K/\mathfrak m)^\times$ 可取总正提升 $u$。定义 $\bar u\mapsto[(u)]_\mathfrak m$。若 $u'$ 为另一总正提升，则 $u/u'$ 总正且同余 $1$，故两主理想同射线类；映射良定义且为同态。
-> 其核恰为 $\operatorname{im}E_+$：若 $(u)$ 在射线群平凡，存在总正 $b\equiv1\pmod{\mathfrak m}$ 使 $(u)=(b)$，故 $u/b\in E_+$；反向直接成立。$E_+$ 到剩余单位群的核为 $E_\mathfrak m$，给左端单射。
-> 忘掉有限同余条件的 $\mathrm{Cl}^\mathfrak m\to\mathrm{Cl}^1$ 满射，因为前题保证每个窄类有与 $\mathfrak m$ 互素的代表。其核由总正主理想生成，正好是中间映射的像。因此全序列正合。
+> [!success]- Independent derivation
+> Use Neukirch's convention here: every ray modulus includes positivity conditions at all real places, so $\mathrm{Cl}_K^1$ is the narrow ideal class group. Set $E_+=\mathcal O_{K,+}^\times$ and $E_\mathfrak m=E_+\cap(1+\mathfrak m)$.
+> By the preceding exercise, every $\bar u\in(\mathcal O_K/\mathfrak m)^\times$ has a totally positive lift $u$. Define $\bar u\mapsto[(u)]_\mathfrak m$. If $u'$ is another totally positive lift, then $u/u'$ is totally positive and congruent to $1$. The two principal ideals therefore have the same ray class. This makes the map well-defined and a homomorphism.
+> Its kernel is exactly $\operatorname{im}E_+$. Indeed, if $(u)$ is trivial in the ray class group, there is a totally positive $b\equiv1\pmod{\mathfrak m}$ with $(u)=(b)$, hence $u/b\in E_+$. The converse follows directly. The kernel of the map from $E_+$ to the residue unit group is $E_\mathfrak m$, giving injectivity on the left.
+> The map $\mathrm{Cl}^\mathfrak m\to\mathrm{Cl}^1$ that forgets the finite congruence conditions is surjective, since the preceding exercise gives a representative prime to $\mathfrak m$ for every narrow class. Its kernel consists of totally positive principal ideals and is exactly the image of the middle map. Thus the entire sequence is exact.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 13, printed p.368, PDF p.387]。解答为独立推导。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 13, printed p.368, PDF p.387]. The solution is an independent derivation.

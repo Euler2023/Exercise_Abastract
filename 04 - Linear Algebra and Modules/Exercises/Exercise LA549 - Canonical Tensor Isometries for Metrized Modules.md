@@ -29,45 +29,45 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 先写出交换、结合和分配映射在纯张量上的公式，它们的逆映射由同样的普遍性质构造。
+> First write the symmetry, associativity, and distributivity maps on pure tensors. Construct their inverses using the same universal properties.
 
 > [!hint]- Hint 2
-> 张量积度量在纯张量上是内积的乘积，直和度量是两内积之和。验证纯张量后用半双线性延拓。
+> On pure tensors, the tensor product metric is the product of the inner products; the direct sum metric is their sum. Check pure tensors, then extend sesquilinearly.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 令 $K$ 为数域、$\mathfrak o=\mathcal O_K$，采用源书的 $K_{\mathbb C}=K\otimes_{\mathbb Q}\mathbb C$ 上的 Hermitian 度量。各嵌入分量可分别验证；张量积与直和度量定义见 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, printed p. 228, PDF p. 247]。
+> Let $K$ be a number field and $\mathfrak o=\mathcal O_K$. Use the book's Hermitian metrics over $K_{\mathbb C}=K\otimes_{\mathbb Q}\mathbb C$. Each embedding component can be checked separately; the tensor product and direct sum metrics are defined in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, printed p. 228, PDF p. 247].
 >
-> **1. 交换。** 映射 $c(m\otimes n)=n\otimes m$ 对平衡关系良定义，且 $c^2=1$。纯张量满足
+> **1. Symmetry.** The map $c(m\otimes n)=n\otimes m$ respects the balancing relations, so it is well-defined, and $c^2=1$. For pure tensors,
 > $$
 > \langle c(m\otimes n),c(m'\otimes n')\rangle
 > =\langle n,n'\rangle_N\langle m,m'\rangle_M
 > =\langle m\otimes n,m'\otimes n'\rangle.
 > $$
-> 由半双线性延拓，$c$ 保持整个度量。
+> Sesquilinear extension shows that $c$ preserves the entire metric.
 >
-> **2. 结合。** 由三重平衡映射的普遍性质，$a((m\otimes n)\otimes\ell)=m\otimes(n\otimes\ell)$ 为同构，其逆改变括号回去。两侧纯张量内积都等于
+> **2. Associativity.** The universal property for balanced trilinear maps makes $a((m\otimes n)\otimes\ell)=m\otimes(n\otimes\ell)$ an isomorphism; its inverse restores the original parentheses. The inner products of pure tensors on both sides equal
 > $$
 > \langle m,m'\rangle_M\langle n,n'\rangle_N\langle\ell,\ell'\rangle_L,
 > $$
-> 所以 $a$ 为等距。
+> Thus $a$ is an isometry.
 >
-> **3. 分配。** 令
+> **3. Distributivity.** Define
 > $$
 > d(m\otimes(n,\ell))=(m\otimes n,m\otimes\ell).
 > $$
-> 逆映射为 $(m\otimes n,0)\mapsto m\otimes(n,0)$、$(0,m\otimes\ell)\mapsto m\otimes(0,\ell)$ 后加法延拓。对纯张量，原内积为
+> Its inverse is given by $(m\otimes n,0)\mapsto m\otimes(n,0)$ and $(0,m\otimes\ell)\mapsto m\otimes(0,\ell)$, extended additively. For pure tensors, the original inner product is
 > $$
 > \langle m,m'\rangle_M\bigl(\langle n,n'\rangle_N+\langle\ell,\ell'\rangle_L\bigr),
 > $$
-> 像的直和内积则为
+> The direct sum inner product of their images is
 > $$
 > \langle m,m'\rangle_M\langle n,n'\rangle_N+\langle m,m'\rangle_M\langle\ell,\ell'\rangle_L,
 > $$
-> 二者相等。延拓后 $d$ 为等距。
+> These are equal. Extending shows that $d$ is an isometry.
 >
-> 三种映射均直接由模的普遍性质定义，不依赖基；其复化与源书的共轭 involution $F$ 交换。因此它们是源书意义下 metrized 模的 canonical isometries。允许模中存在挠元素，因为代数同构对任意模成立，而度量定义在复化上，挠部分在复化后为零。
+> All three maps are defined directly by the universal properties of modules and do not depend on bases. Their complexifications commute with the book's conjugation involution $F$. They are therefore canonical isometries of metrized modules in the book's sense. Torsion is allowed: the algebraic isomorphisms hold for arbitrary modules, while the metrics are defined on the complexifications, where the torsion parts vanish.
 
 ## Related Concepts
 
@@ -79,5 +79,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, Exercise 1, printed p. 233, PDF p. 252]. 独立构造并逐一核对度量。
-- **Section boundary:** 此页运行页眉是 §5，但正文的 §5 标题在本组四题之后；本题属于 §4，不能按页眉误编成 III.5.1。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, Exercise 1, printed p. 233, PDF p. 252]. Independent constructions with a separate metric check for each map.
+- **Section boundary:** The running header on this page says §5, but the heading for §5 occurs after these four exercises. This exercise belongs to §4 and must not be misnumbered III.5.1 on the basis of the running header.

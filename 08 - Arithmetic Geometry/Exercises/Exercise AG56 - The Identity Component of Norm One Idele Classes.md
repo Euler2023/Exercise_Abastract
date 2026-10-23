@@ -19,8 +19,8 @@ created: '2026-10-23'
 > [!question] Neukirch VI.1.9
 > The group $D_K^0$ is the intersection of all closed subgroups of finite index in $C_K^0$, and it is the connected component of $1$ in $C_K^0$.
 
-> [!note] 前题的根单位约定
-> 若 $K$ 全虚，沿用 Exercise 6 的可见修正：$\epsilon_i$ 是总正单位模根单位后的自由基的提升。有限根单位由复相位处理，不额外加入 profinite 参数。
+> [!note] Root-of-unity convention from the preceding exercise
+> If $K$ is totally imaginary, retain the visible correction from Exercise 6: the $\epsilon_i$ are lifts of a free basis of the totally positive units modulo roots of unity. Finite roots of unity are handled by complex phases, without additional profinite parameters.
 
 ## Hints
 
@@ -32,15 +32,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 设 $H_\infty$ 为在所有有限位置等于 $1$、在实位置正、且范数为 $1$ 的无限 idèle 子群。对数绝对值在超平面 $\sum_v\log|a_v|_v=0$ 中取值，复相位为圆；故 $H_\infty\cong\mathbb R^t\times(S^1)^s$ 连通。单位定理的对数基说明它恰为前题参数中各 profinite 坐标为 $0$ 的像。因此其在 $C_K^0$ 中的闭包就是 $D_K^0$：整数在 $\widehat{\mathbb Z}$ 稠密，可通过对角单位关系把所有 profinite 坐标逼近出来。
-> 原书已证 $C_K^0$ 紧（VI.(1.6), printed p.362/PDF381）。商 $C_K^0/D_K^0$ 是 profinite：用有限理想类代表分解 idèle，移去 $H_\infty$ 后只余紧的有限单位群 $\prod_{v\nmid\infty}U_v$ 和有限多个理想类陪集；再除去单位闭包，得到一个紧全不连通群。有限单位群的开同余子群给这一商的开子群基。
-> 把上述 profinite 结论精确化如下。记 $Q=C_K^0/D_K^0$，以有限部分的赋值理想定义连续映射 $Q\to\operatorname{Cl}_K$；它良定义，因为 $D_K^0$ 的代表在有限处都是单位。若理想类为零，可用一个主 idèle 消去全部有限赋值，得到有限单位部分与一个范数一无限部分。再除以 $H_\infty\subseteq D_K^0$，无限部分只剩实处的符号。因此该映射的核是 profinite 群
+> [!success]- Independent derivation
+> Let $H_\infty$ be the subgroup of infinite idèles which equal $1$ at all finite places, are positive at the real places, and have norm $1$. Their logarithmic absolute values lie in the hyperplane $\sum_v\log|a_v|_v=0$, and their complex phases form circles; hence $H_\infty\cong\mathbb R^t\times(S^1)^s$ is connected. The logarithmic basis from the unit theorem shows that this is exactly the image of the parameters in the preceding exercise with all profinite coordinates zero. Its closure in $C_K^0$ is therefore $D_K^0$: since the integers are dense in $\widehat{\mathbb Z}$, the diagonal unit relations allow us to approximate every profinite coordinate.
+> The book has proved that $C_K^0$ is compact (VI.(1.6), printed p.362/PDF381). The quotient $C_K^0/D_K^0$ is profinite: decompose idèles using finitely many ideal-class representatives; after removing $H_\infty$, what remains is the compact group of finite units $\prod_{v\nmid\infty}U_v$ and finitely many ideal-class cosets. Quotienting further by the closure of the units gives a compact, totally disconnected group. The open congruence subgroups of the finite unit group give a basis of open subgroups in this quotient.
+> To make this profiniteness argument precise, put $Q=C_K^0/D_K^0$. The valuation ideal of the finite part defines a continuous map $Q\to\operatorname{Cl}_K$; it is well defined because representatives of $D_K^0$ are units at all finite places. If the ideal class is zero, a principal idèle removes all finite valuations, leaving finite units and an infinite part of norm one. After quotienting by $H_\infty\subseteq D_K^0$, only the signs at the real places remain in the infinite part. Thus the kernel of this map is the continuous image in $Q$ of the profinite group
 > $$
 > P=\left(\prod_{v\nmid\infty}\mathcal O_v^\times\right)\times\{\pm1\}^{r_1}
 > $$
-> 在 $Q$ 中的连续像。$P$ 紧而 $Q$ Hausdorff，故这个像是 $P$ 除以一个闭子群，仍是 profinite，且它是 $Q$ 的开子群，因为理想类群有限。紧群具有开 profinite 子群时本身 profinite：先在这个子群中取任意小的开子群，再与有限多个共轭相交，得到原群中任意小的开正规子群。这里群为阿贝尔，甚至无需取共轭。这样同时补上了实符号的有限部分，并未把一般全不连通空间的连续像误当作全不连通。
-> 所以 $C_K^0/D_K^0$ 的单位连通分支平凡，原群的单位连通分支恰为 $D_K^0$。每个闭有限指数子群对应有限离散商，必须包含连通群 $D_K^0$。反之 profinite 商中每个非单位元均可由某个有限商分离，拉回其核即得不包含该元的闭有限指数子群。故所求交恰为 $D_K^0$。
+> Since $P$ is compact and $Q$ is Hausdorff, this image is a quotient of $P$ by a closed subgroup and is again profinite. It is open in $Q$ because the ideal class group is finite. A compact group with an open profinite subgroup is itself profinite: take arbitrarily small open subgroups of that subgroup and intersect their finitely many conjugates to obtain arbitrarily small open normal subgroups of the original group. Here the group is abelian, so even the conjugation step is unnecessary. This also accounts for the finite group of real signs, without incorrectly treating the continuous image of a general totally disconnected space as totally disconnected.
+> Thus the identity component of $C_K^0/D_K^0$ is trivial, and the identity component of the original group is exactly $D_K^0$. Every closed subgroup of finite index gives a finite discrete quotient and must contain the connected group $D_K^0$. Conversely, every nonidentity element of the profinite quotient is separated by some finite quotient. Pulling back its kernel gives a closed subgroup of finite index which excludes that element. The required intersection is therefore exactly $D_K^0$.
 
 ## Related Concepts
 
@@ -51,4 +51,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 9, printed p.368, PDF p.387]。解答为独立推导。“有限单位群与有限理想类”商的论证使用限制积拓扑；不能把 $I_K/K^\times$ 的连通性误判为各局部分量连通性的直接乘积。
+The statement was checked against images of the original book. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 9, printed p.368, PDF p.387]. The solution is an independent derivation. The quotient argument using finite units and finitely many ideal classes uses the restricted product topology. Connectedness of $I_K/K^\times$ cannot be determined by simply taking the product of the connected components of its local factors.

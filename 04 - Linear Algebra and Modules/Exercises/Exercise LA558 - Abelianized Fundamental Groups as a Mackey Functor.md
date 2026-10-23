@@ -26,30 +26,30 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 对开子群 $U\subset V$，covariant map 来自 inclusion，contravariant map 是 transfer $V^{ab}\to U^{ab}$。
+> For an open subgroup $U\subset V$, the covariant map comes from inclusion, and the contravariant map is the transfer $V^{ab}\to U^{ab}$.
 
 > [!hint]- Hint 2
-> 用 transfer 的陪集代表公式；把 $W/V$ 的代表按 $U$ 轨道分组，得到 double-coset 公式。连续性可在有限商逐层检查。
+> Use the coset-representative formula for transfer. Group the representatives of $W/V$ into $U$ orbits to obtain the double-coset formula. Continuity can be checked level by level in finite quotients.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 对每个开子群 $U$ 定义 $M_U=U/\overline{[U,U]}$，给 profinite quotient topology。Inclusion 给连续 $i_U^V:U^{ab}\to V^{ab}$；transfer 给 $t_U^V:V^{ab}\to U^{ab}$。具体选 $V/U$ 的左陪集代表 $R$，写 $vr=r' u(v,r)$，则
+> For each open subgroup $U$, define $M_U=U/\overline{[U,U]}$ with its profinite quotient topology. Inclusion gives a continuous map $i_U^V:U^{ab}\to V^{ab}$, and transfer gives $t_U^V:V^{ab}\to U^{ab}$. Specifically, choose representatives $R$ for the left cosets of $V/U$ and write $vr=r' u(v,r)$. Then
 > $$
 > t_U^V(\bar v)=\prod_{r\in R}\overline{u(v,r)}.
 > $$
-> 不同代表改变结果一个在 $U^{ab}$ 中相消的 telescope；对 $vw$，陪集置换使乘积成为两次乘积之积，所以是同态。有限乘积和有限个连续分片给出连续性。共轭 $U\mapsto\sigma U\sigma^{-1}$ 给同构，并令 contravariant map 为其逆。
+> Changing representatives introduces telescoping factors that cancel in $U^{ab}$. For $vw$, the coset permutation rewrites the product as the product of the two individual products, proving that the map is a homomorphism. A finite product of finitely many continuous pieces gives continuity. Conjugation $U\mapsto\sigma U\sigma^{-1}$ induces an isomorphism; take its inverse as the contravariant map.
 >
-> Transfer 的传递性可选嵌套代表 $R_{W/V}R_{V/U}$：上述乘积先对第二层代表，再对第一层代表求积，等于一次对 $W/U$ 求积。Inclusion 的传递性及 conjugation compatibility 由定义直接成立。
+> To prove transitivity of transfer, choose nested representatives $R_{W/V}R_{V/U}$. Taking the product first over the second-level representatives and then over the first-level representatives equals taking the product once over $W/U$. Transitivity of inclusion and compatibility with conjugation follow directly from the definitions.
 >
-> 还需 Mackey 公式。对 $U,V\subset W$，把有限 $W$-set $W/U$ 限制到 $V$ 后按 $V$ 轨道分解；轨道由 $V\backslash W/U$ 编号。计算 $t_U^W$ 在 $v\in V$ 上的值时，每个轨道内的代表只相互置换；该轨道的稳定子为 $V\cap\sigma U\sigma^{-1}$。该轨道贡献恰为：先 transfer 从 $V$ 到此稳定子，再共轭至 $U\cap\sigma^{-1}V\sigma$，最后 inclusion 到 $U$。对所有轨道取积即得
+> We still need the Mackey formula. For $U,V\subset W$, restrict the finite $W$-set $W/U$ to $V$ and decompose it into $V$ orbits, indexed by $V\backslash W/U$. When evaluating $t_U^W$ on $v\in V$, the representatives within each orbit only permute one another. The stabilizer of that orbit is $V\cap\sigma U\sigma^{-1}$. Its contribution is exactly transfer from $V$ to this stabilizer, followed by conjugation into $U\cap\sigma^{-1}V\sigma$ and then inclusion into $U$. Taking the product over all orbits gives
 > $$
 > t_U^W i_V^W=\sum_{\sigma\in U\backslash W/V}
 > i_{U\cap\sigma V\sigma^{-1}}^U\,c(\sigma)\,t_{V\cap\sigma^{-1}U\sigma}^{V}.
 > $$
-> 这里用 additive notation 表示 pro-abelian groups 的和；写成乘法就是各轨道贡献的乘积。此推导逐个陪集因子列出，没有假设 $W$ 有限，因只用有限指数陪集集。
+> Here additive notation denotes the sum of maps of pro-abelian groups; in multiplicative notation, it is the product of the orbit contributions. The derivation accounts for each coset factor and does not assume that $W$ is finite, since only coset sets of finite index are used.
 >
-> Exercise 11 的修正重构遂适用；finite products 与 finite sums 在 pro-abelian groups 中一致，所有构造连续。对任意有限 $G$-set 取各轨道稳定子群的 abelianization 的有限积。于是 $\pi_{ab}$ 是所需 modulation，且题面所给 $f^*,f_*$ 正是 transfer 与 inclusion。
+> The corrected reconstruction in Exercise 11 now applies. Finite products and finite sums agree for pro-abelian groups, and all constructions are continuous. For any finite $G$-set, take the finite product of the abelianizations of its orbit stabilizers. This makes $\pi_{ab}$ the required modulation, and the maps $f^*,f_*$ in the statement are precisely transfer and inclusion.
 
 ## Related Concepts
 
@@ -60,5 +60,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 12, printed p. 308, PDF p. 327]. 独立陪集乘积与 double-coset 推导。Transfer 的原公式为 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, printed pp. 296–297, PDF pp. 315–316]；这里只把该显式公式作输入，并补所需函子律。
-- **Topology:** Abelianization 使用闭交换子群。没有把无限 profinite group 的抽象 abelianization 错当 Hausdorff quotient。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 12, printed p. 308, PDF p. 327]. Independent derivation using coset products and double cosets. The original transfer formula is in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, printed pp. 296–297, PDF pp. 315–316]. Only that explicit formula is imported here; the required functorial laws are supplied.
+- **Topology:** Abelianization uses the closed commutator subgroup. The abstract abelianization of an infinite profinite group is not mistaken for a Hausdorff quotient.

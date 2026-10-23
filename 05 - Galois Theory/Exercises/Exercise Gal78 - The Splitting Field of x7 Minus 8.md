@@ -10,7 +10,7 @@ tags:
   - composita
   - semidirect-products
   - source-erratum
-source: "Yu Pin, Groups and Galois Theory (群与 Galois 理论), §5.6.2, Example 5.26, printed p. 184, PDF p. 184"
+source: "Yu Pin, Groups and Galois Theory (Chinese edition), §5.6.2, Example 5.26, printed p. 184, PDF p. 184"
 created: 2026-08-13
 ---
 
@@ -209,7 +209,7 @@ is not normal. Two complementary subgroups give an internal semidirect product w
 
 ## Notes
 
-- **Source statement:** Yu Pin, *Groups and Galois Theory* (《群与 Galois 理论》), §5.6.2, Example 5.26, printed p. 184, physical PDF p. 184.
+- **Source statement:** Yu Pin, *Groups and Galois Theory* (Chinese edition), §5.6.2, Example 5.26, printed p. 184, physical PDF p. 184.
 - **Source issue:** The source's degree calculation and subgroup orders are retained, but its cyclic/direct-product conclusion is explicitly rejected.
 - **Proof status:** The corrected group calculation above is an independent derivation in this vault. The imported standard inputs are Eisenstein's criterion, the degree of a cyclotomic field, and the normal-subgroup criterion in the Fundamental Theorem of Galois Theory.
 - No source image is retained because the original page contains only searchable text, formulas, and a field diagram that is not needed to solve the problem.

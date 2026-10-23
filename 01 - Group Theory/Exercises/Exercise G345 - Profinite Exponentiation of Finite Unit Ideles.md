@@ -29,12 +29,12 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 每个 $U_v=\mathcal O_v^\times$ 是有限群 $U_v/(1+\mathfrak p_v^r)$ 的逆极限，故 $I_f^1$ 是 profinite 群。给任意开正规子群 $N$，$\alpha N$ 在有限商内有某阶 $d_N$。定义
+> [!success]- Independent derivation
+> Each $U_v=\mathcal O_v^\times$ is the inverse limit of the finite groups $U_v/(1+\mathfrak p_v^r)$, so $I_f^1$ is profinite. For any open normal subgroup $N$, let $d_N$ be the order of $\alpha N$ in the finite quotient. Define
 > $$
 > \alpha^xN=(\alpha N)^{\,x\bmod d_N}.
 > $$
-> 若 $N'\subseteq N$，这些元素投影一致，故定义唯一的 $\alpha^x\in\varprojlim_N I_f^1/N=I_f^1$。每个有限商坐标仅依赖 $x$ 的有限同余类，因而映射连续。它在整数上就是通常幂；整数在 $\widehat{\mathbb Z}$ 稠密，故连续延拓唯一。逐个有限商计算得 $\alpha^{x+y}=\alpha^x\alpha^y$ 与 $(\alpha^x)^y=\alpha^{xy}$。
+> If $N'\subseteq N$, these elements have the same projection, so they define a unique $\alpha^x\in\varprojlim_N I_f^1/N=I_f^1$. Each finite quotient coordinate depends only on a finite congruence class of $x$, making the map continuous. On the integers it is ordinary exponentiation. Since the integers are dense in $\widehat{\mathbb Z}$, the continuous extension is unique. Checking in each finite quotient gives $\alpha^{x+y}=\alpha^x\alpha^y$ and $(\alpha^x)^y=\alpha^{xy}$.
 
 ## Related Concepts
 
@@ -45,4 +45,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 3, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。
+The statement was checked against the original pages rendered at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 3, printed p. 367, PDF p. 386]. The solution is independently derived in this vault; citing an input does not mean that the book solves this exercise.

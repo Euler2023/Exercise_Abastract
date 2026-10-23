@@ -17,7 +17,7 @@ created: '2026-10-23'
 ## Problem Statement
 
 > [!question] Neukirch IV.§6, Exercise 2
-> Under the hypotheses of exercise 1, Kummer theory and class field theory yield, via Pontryagin duality $G(L/K)\times\operatorname{Hom}(G(L/K),\mu_n)\to\mu_n$, a nondegenerate bilinear mapping (the abstract “Hilbert symbol”)
+> Under the hypotheses of exercise 1, Kummer theory and class field theory yield, via Pontryagin duality $G(L/K)\times\operatorname{Hom}(G(L/K),\mu_n)\to\mu_n$, a nondegenerate bilinear mapping (the abstract "Hilbert symbol")
 > $$
 > (\ ,\ ):A_K/A_K^n\times A_K/A_K^n\longrightarrow\mu_n.
 > $$
@@ -32,14 +32,14 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 前题证明范数群等于幂子群，所以互反律给 $\operatorname{rec}:A_K/A_K^n\xrightarrow{\sim}G(L/K)$。Kummer 同构把 $b\in A_K$ 的类送到特征
+> [!success]- Independent derivation
+> The preceding exercise identifies the norm group with the power subgroup, so reciprocity gives $\operatorname{rec}:A_K/A_K^n\xrightarrow{\sim}G(L/K)$. The Kummer isomorphism sends the class of $b\in A_K$ to the character
 > $$
 > \chi_b(\sigma)=\frac{\sigma\beta}{\beta},\qquad\beta^n=b.
 > $$
-> $\mu_n$ 被 $G_K$ 固定，故换根 $\beta$ 不改变特征；$b$ 乘一个 $n$ 次幂也不改变它。定义 $(\bar a,\bar b)=\chi_b(\operatorname{rec}(\bar a))$。两条同构和评价配对均为群同态，故两变量分别乘法双线性。
-> 若 $\bar a\ne1$，$\operatorname{rec}(\bar a)$ 为非单位元；有限阿贝尔群的 $\mu_n$-特征分离点，存在 $\chi_b$ 使评价非 $1$。若 $\bar b\ne1$，非平凡 $\chi_b$ 在某个群元上非平凡，而互反映射满，故存在 $\bar a$ 检测它。两侧均非退化。
-> 本题仅给一般抽象配对；交换、反对称或 Steinberg 关系需要额外结构，不从此构造自动得出。
+> Since $\mu_n$ is fixed by $G_K$, replacing the root $\beta$ does not change the character. Multiplying $b$ by an $n$th power does not change it either. Define $(\bar a,\bar b)=\chi_b(\operatorname{rec}(\bar a))$. Both isomorphisms and the evaluation pairing are group homomorphisms, so the pairing is multiplicatively bilinear in the two variables.
+> If $\bar a\ne1$, then $\operatorname{rec}(\bar a)$ is not the identity. The $\mu_n$-characters of a finite abelian group separate points, so some $\chi_b$ has evaluation different from $1$. If $\bar b\ne1$, the nontrivial character $\chi_b$ is nontrivial on some group element; surjectivity of reciprocity provides a detecting $\bar a$. Thus the pairing is nondegenerate on both sides.
+> This exercise constructs a general abstract pairing only. Symmetry, antisymmetry, and Steinberg relations require additional structure and do not follow automatically from this construction.
 
 ## Related Concepts
 
@@ -50,4 +50,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书200 dpi页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 2, printed p.305, PDF p.324]。解答为独立推导，沿用本章的抽象域、连续离散 $G$-模、限制与范数约定。
+The statement was checked against the original 200 dpi page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 2, printed p.305, PDF p.324]. The solution is independently derived, using this chapter's conventions for abstract fields, continuous discrete $G$-modules, restrictions, and norms.

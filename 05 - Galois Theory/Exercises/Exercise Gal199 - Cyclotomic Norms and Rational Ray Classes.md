@@ -20,11 +20,11 @@ created: '2026-10-23'
 > Let $\zeta$ be a primitive $m$-th root of unity. Show that the norm group $N_{\mathbb Q(\zeta)|\mathbb Q}C_{\mathbb Q}$ equals the ray class group mod $\mathfrak m=(m)$ in $C_{\mathbb Q}$.
 
 > [!warning] Source issue / proof scope
-> The printed norm has the wrong domain subscript; “ray class group in the idele class group” denotes its congruence subgroup here.
+> The printed norm has the wrong domain subscript; "ray class group in the idele class group" denotes its congruence subgroup here.
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Identify the rational ray class quotient with $(\mathbb Z/m\mathbb Z)^\times$ and compare its action on $\zeta$.
 
 > [!hint]- Stronger hint
@@ -32,15 +32,15 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 由原书 VI.(1.10)（printed p.366/PDF385），有 $C_\mathbb Q/C_\mathbb Q^{(m)}\cong(\mathbb Z/m\mathbb Z)^\times$，其理想表述把与 $m$ 互素主理想的正生成元 $a$ 送到 $a\bmod m$。
-> 另一方面，圆分扩张的 Frobenius 在素数 $\ell\nmid m$ 处按 $\zeta\mapsto\zeta^\ell$ 作用。因此全局互反映射在上述射线商上正是
+> [!success]- Independent derivation
+> By VI.(1.10) of the book (printed p.366/PDF385), we have $C_\mathbb Q/C_\mathbb Q^{(m)}\cong(\mathbb Z/m\mathbb Z)^\times$. In the ideal formulation, the positive generator $a$ of a principal ideal coprime to $m$ is sent to $a\bmod m$.
+> On the other hand, Frobenius in the cyclotomic extension acts at a prime $\ell\nmid m$ by $\zeta\mapsto\zeta^\ell$. Thus global reciprocity on this ray quotient is precisely
 > $$
 > (\mathbb Z/m\mathbb Z)^\times
 > \longrightarrow\operatorname{Gal}(\mathbb Q(\zeta)/\mathbb Q),
 > \quad \bar a\longmapsto(\zeta\mapsto\zeta^a),
 > $$
-> 这是同构。它的核在 $C_\mathbb Q$ 中正是 $C_\mathbb Q^{(m)}$。全局互反律的范数核性质于是给所求等式。Neukirch 的模 $(m)$ 已隐含实位置正性，故不会遗漏无限位置的符号条件。
+> This is an isomorphism. Its kernel in $C_\mathbb Q$ is exactly $C_\mathbb Q^{(m)}$. The norm-kernel property of global reciprocity gives the desired equality. Neukirch's modulus $(m)$ already incorporates positivity at the real place, so the sign condition at infinity is included.
 
 ## Related Concepts
 
@@ -50,6 +50,6 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 2, printed p.385, PDF p.404]。解答为独立推导。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 2, printed p.385, PDF p.404]. The solution is independently derived.
 
-- **Source issue (domain and terminology):** 原图 printed p.385/PDF404 确写 $N_{\mathbb Q(\zeta)|\mathbb Q}C_{\mathbb Q}$，其 norm 的定义域应为 $C_{\mathbb Q(\zeta)}$。原文“ray class group ... in $C_{\mathbb Q}$”在这里须解释为相应的 ray congruence **subgroup**；解答计算的是这个子群，不把一个有限商群当成其自身的核。
+- **Source issue (domain and terminology):** The original image at printed p.385/PDF404 does say $N_{\mathbb Q(\zeta)|\mathbb Q}C_{\mathbb Q}$; the domain of the norm should be $C_{\mathbb Q(\zeta)}$. Here the phrase "ray class group ... in $C_{\mathbb Q}$" must mean the corresponding ray congruence **subgroup**. The solution computes this subgroup rather than treating a finite quotient group as its own kernel.

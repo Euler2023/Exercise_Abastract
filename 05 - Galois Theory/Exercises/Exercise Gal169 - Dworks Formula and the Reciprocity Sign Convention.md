@@ -24,43 +24,43 @@ created: '2026-10-23'
 > with $y\in U_{\widetilde L}$, then $r_{L|K}(\sigma)=N(y)\bmod N_{L|K}A_L$, where $N=N_{\widetilde L|\widetilde K}$ (B. Dwork, see [122], chap. XIII, §5).
 
 > [!warning] Source issue
-> 印刷式的方向与正文 $r(\varphi)=\pi$ 的归一化不一致。下文从正文定义推得 $r(\sigma)=N(y)^{-1}$，并给出保留正号时所需的方程修正；未把印刷公式直接作为已证结论。
+> The direction of the printed formula disagrees with the normalization $r(\varphi)=\pi$ in the main text. The derivation below gives $r(\sigma)=N(y)^{-1}$ from the definitions in the text and states the corrected equation needed to retain the positive sign. The printed formula is not assumed to be proved.
 
 ## Hints
 
 > [!hint]- Hint 1
-> 以正文的 $r(\varphi)=\pi$ 归一化检查方向。取 $\tau=\sigma\varphi$ 的固定域 $E$ 与 prime element $\pi_E$。
+> Check the direction using the normalization $r(\varphi)=\pi$ in the text. Take the fixed field $E$ of $\tau=\sigma\varphi$ and a prime element $\pi_E$.
 
 > [!hint]- Hint 2
-> 令 $u=\pi_E/\pi$。在 $U_{\widetilde L}$ 对 $G(L/K)$ 的 coinvariants 中，$[uy]$ 被 $\varphi$ 固定，可应用正文 (5.4)。
+> Put $u=\pi_E/\pi$. In the $G(L/K)$-coinvariants of $U_{\widetilde L}$, the class $[uy]$ is fixed by $\varphi$, so (5.4) of the main text applies.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 沿用正文记号 $\widetilde K$ 为最大 unramified 扩张，$\widetilde L=L\widetilde K$；$\varphi$ 为 $\widetilde L/L$ 的 Frobenius。全分歧和 abelian 性使
+> Retain the notation of the text: $\widetilde K$ is the maximal unramified extension, $\widetilde L=L\widetilde K$, and $\varphi$ is the Frobenius of $\widetilde L/L$. Total ramification and commutativity give
 > $$
 > G(\widetilde L/K)\simeq G(L/K)\times G(\widetilde K/K),
 > $$
-> 故 $\sigma,\varphi$ 可取为交换的提升。给定方程先说明
+> Thus $\sigma,\varphi$ may be chosen as commuting lifts. The given equation first implies
 > $$
 > N(y)^{\varphi-1}=N(\pi^{\sigma-1})=1,
 > $$
-> 所以 $N(y)\in A_K$，其 residue 类确有意义。
+> Hence $N(y)\in A_K$, so its residue class is well-defined.
 >
-> 下面直接按正文 (5.2)、(5.4)、(5.6) 推导，追踪反号。令 $\tau=\sigma\varphi$，$E$ 为其固定域。$d_K(\tau)=1$；正文 (4.5) 给出 $E/K$ 有限、$\widetilde E=\widetilde L$，且 $\tau$ 为 $E$ 的 Frobenius。选 $\pi_E\in A_E$ prime，置 $u=\pi_E/\pi\in U_{\widetilde L}$。因 $\pi_E^\tau=\pi_E$ 且 $\pi^\varphi=\pi$，
+> We now derive the formula directly from (5.2), (5.4), and (5.6) of the text, tracking the inverse. Put $\tau=\sigma\varphi$ and let $E$ be its fixed field. We have $d_K(\tau)=1$; by (4.5), $E/K$ is finite, $\widetilde E=\widetilde L$, and $\tau$ is the Frobenius of $E$. Choose a prime element $\pi_E\in A_E$ and put $u=\pi_E/\pi\in U_{\widetilde L}$. Since $\pi_E^\tau=\pi_E$ and $\pi^\varphi=\pi$,
 > $$
 > u^{\tau-1}=\pi^{1-\sigma}=y^{1-\varphi}.
 > $$
-> 在 $U_{\widetilde L}/I_{G(L/K)}U_{\widetilde L}$ 中 $\sigma$ 作用平凡，所以 $\tau$ 与 $\varphi$ 的作用相同，故 $[uy]^{\varphi-1}=1$。正文已证明的引理 (5.4) 因而给出 $N(uy)\in N_{L/K}A_L$。另一方面，$E\widetilde K=\widetilde L$、$E\cap\widetilde K=K$，所以
+> The action of $\sigma$ on $U_{\widetilde L}/I_{G(L/K)}U_{\widetilde L}$ is trivial, so $\tau$ and $\varphi$ act identically there, giving $[uy]^{\varphi-1}=1$. Lemma (5.4), proved in the main text, therefore yields $N(uy)\in N_{L/K}A_L$. On the other hand, $E\widetilde K=\widetilde L$ and $E\cap\widetilde K=K$, so
 > $$
 > N(u)=\frac{N_{E/K}(\pi_E)}{N_{L/K}(\pi)}
 > \equiv r_{L/K}(\sigma)\pmod{N_{L/K}A_L}.
 > $$
-> 于是
+> Consequently
 > $$
 > r_{L/K}(\sigma)\equiv N(y)^{-1}\pmod{N_{L/K}A_L}.
 > $$
-> 这与印刷公式相差一个逆。保持正文 arithmetic Frobenius $r(\varphi)=\pi$ 时，可修正为上式；等价地，若希望保留印刷的 $r(\sigma)=N(y)$，应把条件改为 $y^{\varphi-1}=\pi^{1-\sigma}$。改变整个 reciprocity 的 Frobenius 归一化也会反转结果，但必须同时改变正文定义，不能只在本题默改。
+> This is the inverse of the printed expression. With the arithmetic Frobenius normalization $r(\varphi)=\pi$ of the main text, the formula must be corrected as above. Equivalently, to retain the printed conclusion $r(\sigma)=N(y)$, replace the condition by $y^{\varphi-1}=\pi^{1-\sigma}$. Reversing the Frobenius normalization of the entire reciprocity map also reverses the result, but requires changing the definitions in the main text as well, rather than silently changing this exercise alone.
 
 ## Related Concepts
 
@@ -71,5 +71,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, Exercise 1, printed p. 298, PDF p. 317]. 原印刷方程及结论完整保留。上述为按正文已证明引理 (5.4) 和定义 (5.2)/(5.6) 的独立方向审查；引用锚点分别 printed pp. 291–295 / PDF pp. 310–314。原引参考 [122] 未另查，未声称其同样采用本书归一化。
-- **Convention:** 若源书在不同位置混用左右作用或 geometric Frobenius，必须显式统一后再引用本题；本解把 $\sigma,\varphi$ 作为本书正文所用的实际 automorphisms 处理。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §5, Exercise 1, printed p. 298, PDF p. 317]. The printed equation and conclusion are retained in full. The argument independently checks the direction using the proved lemma (5.4) and definitions (5.2)/(5.6), at printed pp. 291–295 / PDF pp. 310–314. The cited reference [122] was not separately checked; no claim is made that it uses the same normalization as this book.
+- **Convention:** If left and right actions or geometric Frobenius conventions differ between source passages, reconcile them explicitly before invoking this exercise. This solution treats $\sigma,\varphi$ as the actual automorphisms used in the main text.

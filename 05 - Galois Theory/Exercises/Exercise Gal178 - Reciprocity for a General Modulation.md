@@ -21,7 +21,7 @@ created: '2026-10-23'
 > $$
 > 0\longrightarrow U(Y)\xrightarrow{f^*}U(X)\xrightarrow{\varphi_{X|Y}^*-1}U(X)\xrightarrow{f_*}U(Y)\longrightarrow0
 > $$
-> is exact, and that $A(Y)^{[X:Y]}\subset f_*A(X)$ for every Galois mapping $f:X\to Y$ (the latter is a consequence of the condition which will be imposed in exercise 19). Then the pair $(d,v)$ gives, for every Galois mapping $f:X\to Y$, a canonical “reciprocity homomorphism”
+> is exact, and that $A(Y)^{[X:Y]}\subset f_*A(X)$ for every Galois mapping $f:X\to Y$ (the latter is a consequence of the condition which will be imposed in exercise 19). Then the pair $(d,v)$ gives, for every Galois mapping $f:X\to Y$, a canonical "reciprocity homomorphism"
 > $$
 > r_{X|Y}:G(X|Y)\longrightarrow A(Y)/f_*A(X).
 > $$
@@ -29,57 +29,57 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> Unit exactness 与 $v(A)=Z$ 先推出 unramified Galois descent；一般 ramified descent 并非假设。
+> Unit exactness together with $v(A)=Z$ first gives unramified Galois descent. General ramified descent is not assumed.
 
 > [!hint]- Hint 2
-> 在 $L$ 的 unramified tower 上用 injective restrictions 取 colimit，选 Frobenius lift $s$，令 $E$ 为其不动对象。定义 $r(s)=N_{E/K}\pi_E$。
+> Form the colimit using injective restrictions in the unramified tower of $L$. Choose a Frobenius lift $s$ and let $E$ be its fixed object. Define $r(s)=N_{E/K}\pi_E$.
 
 > [!hint]- Hint 3
-> 移植正文5.4的 coinvariant 计算：最后的 $z^{[M:K]}$ 只须属于 $N_{M/K}A(M)$，恰是本题另加的条件。
+> Adapt the coinvariant calculation in §5.4 of the text. Its final $z^{[M:K]}$ need only belong to $N_{M/K}A(M)$, which is exactly the additional hypothesis in this exercise.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 用源书 field-like notation 记 connected objects 为 $K,L,E$，$N$ 为 covariant map，restriction 为拉回。以下所有写成包含的 $A(E)\subset A(M)$ 都只沿 unramified maps；没有假定一般 descent。模块写乘法。
+> Use the source's field-like notation: connected objects are denoted by $K,L,E$, $N$ is the covariant map, and restriction is pullback. Every inclusion $A(E)\subset A(M)$ below is along an unramified map; general descent is not assumed. Write modules multiplicatively.
 >
-> **1. Unramified descent.** 若 $M/E$ unramified，restriction 在 valuation 上为恒等。若 $a\in A(E)$ 拉回为 $1$，则 $v(a)=0$，所以 $a\in U(E)$，unit exactness 给 $a=1$。若 $b\in A(M)^{G(M/E)}$，选 $a\in A(E)$ 使 $v(a)=v(b)$（每处像均为 $Z$）；$b/a\in U(M)$ 且不动，unit exactness 使其来自 $U(E)$。故 $A(E)\simeq A(M)^{G(M/E)}$。Mackey 方块于是把 unramified norm 识别为循环作用之和。
+> **1. Unramified descent.** If $M/E$ is unramified, restriction acts identically on valuations. If $a\in A(E)$ pulls back to $1$, then $v(a)=0$, so $a\in U(E)$; unit exactness gives $a=1$. If $b\in A(M)^{G(M/E)}$, choose $a\in A(E)$ with $v(a)=v(b)$, since the image at every object is $Z$. The element $b/a\in U(M)$ is fixed, so unit exactness makes it come from $U(E)$. Thus $A(E)\simeq A(M)^{G(M/E)}$. The Mackey square then identifies the unramified norm with the sum of the cyclic action.
 >
-> **2. Tower 与定义。** 给有限 Galois $L/K$，令 $\widetilde K$ 为 $d_K$ 定义的 unramified tower，$\widetilde L=L\widetilde K$。沿 $M/L$ unramified 的 restriction 取并 $A_{\widetilde L}$，并类似定义 $A_{\widetilde K}$。Mackey 方块定义相容的 $N=N_{\widetilde L/\widetilde K}$。记 $H=G(\widetilde L/\widetilde K)$，选 $\phi\in G(\widetilde L/K)$ 满足 $d_K(\phi)=1$。若 $s$ 的 $d_K(s)=n>0$，其闭循环子群在 $\widetilde L$ 的不动对象 $E$ 为有限 degree，$\widetilde L/E$ unramified。选 $\pi_E\in A(E)$，$v_E(\pi_E)=1$，定义 $R(s)=N_{E/K}(\pi_E)$ 模所有 finite-level norms。
+> **2. The tower and the definition.** For finite Galois $L/K$, let $\widetilde K$ be the unramified tower defined by $d_K$, and put $\widetilde L=L\widetilde K$. Take the union $A_{\widetilde L}$ under restriction along the unramified maps $M/L$, and define $A_{\widetilde K}$ similarly. Mackey squares define compatible maps $N=N_{\widetilde L/\widetilde K}$. Write $H=G(\widetilde L/\widetilde K)$ and choose $\phi\in G(\widetilde L/K)$ with $d_K(\phi)=1$. If $s$ has $d_K(s)=n>0$, the fixed object $E$ of its closed cyclic subgroup in $\widetilde L$ has finite degree, and $\widetilde L/E$ is unramified. Choose $\pi_E\in A(E)$ and $v_E(\pi_E)=1$, and define $R(s)=N_{E/K}(\pi_E)$ modulo all finite-level norms.
 >
-> Prime 的选择无关：两者比为 $u\in U(E)$，对任意有限 Galois $M/K\subset\widetilde L$，共同 refinement 可取含 $E$，此时 $M/E$ unramified，unit norm 满射，故 $N_{E/K}u\in N_{M/K}A(M)$。
+> The choice of prime element is immaterial. The ratio of two choices lies in $u\in U(E)$. For any finite Galois $M/K\subset\widetilde L$, a common refinement can be chosen to contain $E$. Then $M/E$ is unramified and its unit norm is surjective, giving $N_{E/K}u\in N_{M/K}A(M)$.
 >
-> **3. 两个 norm calculations。** 记 $\phi_n=1+\phi+\cdots+\phi^{n-1}$。若 $E$ 为 $s$ 的不动对象且 $d_K(s)=n$，Mackey base change 对 $E\widetilde K=\widetilde L$ 给
+> **3. Two norm calculations.** Write $\phi_n=1+\phi+\cdots+\phi^{n-1}$. If $E$ is the fixed object of $s$ and $d_K(s)=n$, Mackey base change for $E\widetilde K=\widetilde L$ gives
 > $$
 > N_{E/K}a=N(a^{\phi_n})=N(a)^{\phi_n}.
 > $$
-> 原因是 $E^0=E\cap\widetilde K$ 的 degree 为 $n$，$N_{E^0/K}$ 为 $\phi_n$，而 $N_{E/E^0}$ base change 后为 $N$。
+> Indeed, $E^0=E\cap\widetilde K$ has degree $n$, $N_{E^0/K}$ is $\phi_n$, and the base change of $N_{E/E^0}$ is $N$.
 >
-> 下面证明关键 unit calculation。若 $u\in U_{\widetilde L}$ 的 $H$-coinvariant class 被 $\phi$ 固定，则有有限关系
+> We next prove the key unit calculation. If the $H$-coinvariant class of $u\in U_{\widetilde L}$ is fixed by $\phi$, there is a finite relation
 > $$
 > u^{\phi-1}=\prod_i u_i^{\tau_i-1},\qquad \tau_i\in H.
 > $$
-> 选 finite Galois $M/K\subset\widetilde L$ 含所有 $u,u_i$ 并含 $L$；置 $n=[M:K]$、$s=\phi^n$。$s$ 固定 $M$，令 $E$ 为 $s$ 的不动对象，$E_n/E$ 为 degree $n$ 的 unramified extension。Unit norm 满射给 $\widetilde u,\widetilde u_i\in U(E_n)$，满足 $\widetilde u^{s_n}=u$、$\widetilde u_i^{s_n}=u_i$。因为 $n=[M:K]$ 且 $L\subset M$，$s=\phi^n$ 在 $L$ 上恒等；每个 $\tau_i\in H$ 在 $\widetilde K$ 上恒等，所以 $s$ 与 $\tau_i$ 在生成 $\widetilde L=L\widetilde K$ 的两部分上都交换。因此 $s$ centralizes $H$，$E,E_n$ 均被 $H$ 保持，norm $s_n$ 与每个 $\tau_i$ 交换。由关系，两边 lift 的差之 norm 为 $1$，unit exactness 给
+> Choose finite Galois $M/K\subset\widetilde L$ containing all $u,u_i$ and containing $L$, and put $n=[M:K]$ and $s=\phi^n$. The element $s$ fixes $M$. Let $E$ be the fixed object of $s$, and let $E_n/E$ be the unramified extension of degree $n$. Surjectivity of the unit norm gives $\widetilde u,\widetilde u_i\in U(E_n)$ satisfying $\widetilde u^{s_n}=u$ and $\widetilde u_i^{s_n}=u_i$. Since $n=[M:K]$ and $L\subset M$, $s=\phi^n$ acts identically on $L$. Each $\tau_i\in H$ acts identically on $\widetilde K$, so $s$ and $\tau_i$ commute on both parts generating $\widetilde L=L\widetilde K$. Thus $s$ centralizes $H$, the groups $E,E_n$ are preserved by $H$, and the norm $s_n$ commutes with every $\tau_i$. The relation says that the norm of the discrepancy between the two lifts is $1$. Unit exactness gives
 > $$
 > \widetilde u^{\phi-1}=y^{s-1}\prod_i\widetilde u_i^{\tau_i-1}
 > =(y^{\phi_n})^{\phi-1}\prod_i\widetilde u_i^{\tau_i-1}.
 > $$
-> 作用 $N$ 后各 augmentation 因子消失，故 $N(\widetilde u)=N(y^{\phi_n})z$，其中 $z\in U_{\widetilde K}$ 被 $\phi$ 固定，因第1步 $z\in U(K)$。再作用 $s_n$，并置 $y_0=y^{s_n}\in U(E)$，得到
+> After applying $N$, all augmentation factors disappear. Hence $N(\widetilde u)=N(y^{\phi_n})z$, where $z\in U_{\widetilde K}$ is fixed by $\phi$ and, by Step 1, $z\in U(K)$. Apply $s_n$ and put $y_0=y^{s_n}\in U(E)$ to obtain
 > $$
 > N(u)=N(y_0^{\phi_n})z^n=N_{E/K}(y_0)z^n\in N_{M/K}A(M).
 > $$
-> 首项因 $E\supset M$ 为 norm；末项由本题 $A(K)^n\subset N_{M/K}A(M)$。这里正是一般 modulation 不能偷换为 module norm 的位置。遍历 $M$ 得到所需 universal-norm congruence。
+> The first term is a norm because $E\supset M$. For the final term, use the hypothesis $A(K)^n\subset N_{M/K}A(M)$. This is exactly where a general modulation must not be replaced silently by a module norm. Varying $M$ gives the required universal-norm congruence.
 >
-> **4. 乘法性。** 若 $s_1s_2=s_3$，记 $n_i=d_K(s_i)$、$\tau_i=s_i^{-1}\phi^{n_i}$。把 $s_1$ 共轭为 $s_4=\phi^{-n_2}s_1\phi^{n_2}$，相应 $\pi_4=\pi_1^{\phi^{n_2}}$，则 $\tau_3=\tau_2\tau_4$ 且 $N_{E_4/K}\pi_4=N_{E_1/K}\pi_1$。令
+> **4. Multiplicativity.** If $s_1s_2=s_3$, write $n_i=d_K(s_i)$ and $\tau_i=s_i^{-1}\phi^{n_i}$. Conjugate $s_1$ to $s_4=\phi^{-n_2}s_1\phi^{n_2}$, with the corresponding $\pi_4=\pi_1^{\phi^{n_2}}$. Then $\tau_3=\tau_2\tau_4$ and $N_{E_4/K}\pi_4=N_{E_1/K}\pi_1$. Put
 > $$
 > u=\pi_3^{\phi_{n_3}}\pi_4^{-\phi_{n_4}}\pi_2^{-\phi_{n_2}}.
 > $$
-> 因 $n_3=n_2+n_4$，$v(u)=0$。又
+> Since $n_3=n_2+n_4$, we have $v(u)=0$. Also,
 > $$
 > u^{\phi-1}=\pi_3^{\tau_3-1}\pi_4^{1-\tau_4}\pi_2^{1-\tau_2}.
 > $$
-> 写 $\pi_3=u_3\pi_4$、$\pi_2=u_2^{-1}\pi_4$、$\pi_4^{\tau_2}=u_4\pi_4$；三个 $u_i$ 都为 units。由 $(\tau_3-1)+(1-\tau_2)+(1-\tau_4)=(1-\tau_2)(1-\tau_4)$ 得 $u^{\phi-1}=\prod_{i=2}^4u_i^{\tau_i-1}$。第3步使 $N(u)$ 为 universal norm，第一条 norm calculation 遂给 $R(s_1s_2)=R(s_1)R(s_2)$。
+> Write $\pi_3=u_3\pi_4$, $\pi_2=u_2^{-1}\pi_4$, and $\pi_4^{\tau_2}=u_4\pi_4$. All three $u_i$ are units. The identity $(\tau_3-1)+(1-\tau_2)+(1-\tau_4)=(1-\tau_2)(1-\tau_4)$ gives $u^{\phi-1}=\prod_{i=2}^4u_i^{\tau_i-1}$. Step 3 makes $N(u)$ a universal norm, and the first norm calculation then yields $R(s_1s_2)=R(s_1)R(s_2)$.
 >
-> **5. 降到有限 quotient。** 每个 $\sigma\in G(L/K)$ 都有 positive-integral-degree Frobenius lift $s$：在与其 finite unramified restriction 相容的整数类中取正整数。若两个 lifts degree 相同，则它们在 $L$ 与 $\widetilde K$ 上相同，所以相同；若 degree 不同，较大者为较小者乘一个在 $L$ 上恒等的 positive lift $t$，其不动对象包含 $L$，所以 $R(t)\in N_{L/K}A(L)$。乘法性使 $R(s)$ 模 $N_{L/K}A(L)$ 与 lift 无关，并给同态 $r_{L/K}$。公式是所有 choices 无关的，故 canonical。上面的 tower proof 是正文 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, IV.§5, (5.3)–(5.6), printed pp.292–295, PDF pp.311–314] 的逐步 Mackey 改写；其中 norm calculations 的原页已实际图核。
+> **5. Descent to the finite quotient.** Every $\sigma\in G(L/K)$ has a Frobenius lift $s$ of positive integral degree: choose a positive integer in the congruence class compatible with its finite unramified restriction. Two lifts of the same degree agree on $L$ and $\widetilde K$ and hence are equal. If the degrees differ, the lift of larger degree is the smaller one multiplied by a positive lift $t$ acting identically on $L$. Its fixed object contains $L$, so $R(t)\in N_{L/K}A(L)$. Multiplicativity makes $R(s)$ modulo $N_{L/K}A(L)$ independent of the lift and gives the homomorphism $r_{L/K}$. The formula is independent of all choices and is therefore canonical. This tower proof is a step-by-step Mackey reformulation of [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, IV.§5, (5.3)–(5.6), printed pp.292–295, PDF pp.311–314]; the original pages for the norm calculations were inspected as rendered images.
 
 ## Related Concepts
 
@@ -90,5 +90,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 18, printed p.309, PDF p.328]. 独立改写正文 Frobenius norm construction；unit exactness 只推出 unramified descent。
-- **Hypotheses:** 这里的 $v$ 是前题定义的 henselian modulation valuation，并使用 Exercise15经校准的 $e/f$ 方向。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 18, printed p.309, PDF p.328]. An independent reformulation of the Frobenius norm construction in the text. Unit exactness gives only unramified descent.
+- **Hypotheses:** Here $v$ is the henselian modulation valuation defined in the preceding exercise, and the corrected $e/f$ direction of Exercise 15 is used.

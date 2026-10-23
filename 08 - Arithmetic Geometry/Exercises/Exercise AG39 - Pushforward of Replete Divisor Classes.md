@@ -29,32 +29,32 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 需证的是主除子被映为主除子；形式求和本身已给出加法同态。
+> The required point is that principal divisors map to principal divisors; the formal summation already defines an additive homomorphism.
 
 > [!hint]- Hint 2
-> 有限处利用局部范数的赋值公式，无穷处利用 $v_\infty=-\log|\cdot|$；同一恒等式是 $v_{\mathfrak p}(N_{L/\tau K}a)=\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}v_{\mathfrak P}(a)$。
+> At finite places use the valuation formula for local norms, and at infinite places use $v_\infty=-\log|\cdot|$. Both give the identity $v_{\mathfrak p}(N_{L/\tau K}a)=\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}v_{\mathfrak P}(a)$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 域同态 $\tau$ 单射。将 $K$ 经 $\tau$ 识别为 $L$ 的子域，证明后再用 $\tau^{-1}$ 还原；以下写成 $K\subset L$。有限处 $f_{\mathfrak P\mid\mathfrak p}$ 为正整数，故整数系数仍被映到整数系数；无穷处允许实系数。有限支撑在映射后仍有限，因而题设给出良定义的加法同态 $\operatorname{Div}(\overline{\mathcal O}_L)\to\operatorname{Div}(\overline{\mathcal O}_K)$。
+> The field homomorphism $\tau$ is injective. Identify $K$ with its image in $L$ and apply $\tau^{-1}$ afterward; write $K\subset L$ for the proof. At finite places, $f_{\mathfrak P\mid\mathfrak p}$ is a positive integer, so integer coefficients remain integer coefficients. Real coefficients are allowed at infinite places. Finite support remains finite under the map, so the given formula defines a well-defined additive homomorphism $\operatorname{Div}(\overline{\mathcal O}_L)\to\operatorname{Div}(\overline{\mathcal O}_K)$.
 >
-> 对 $a\in L^\times$，要证明
+> For $a\in L^\times$, we must prove
 > $$
 > \tau_*(\operatorname{div}_L(a))=\operatorname{div}_K(N_{L/K}a).
 > $$
-> 有限处：局部化后的范数分解与赋值公式给出
+> At a finite place, the localized norm decomposition and valuation formula give
 > $$
 > N_{L/K}a=\prod_{\mathfrak P\mid\mathfrak p}N_{L_{\mathfrak P}/K_{\mathfrak p}}a,\qquad
 > v_{\mathfrak p}(N_{L/K}a)=\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}v_{\mathfrak P}(a).
 > $$
-> 无穷处：若 $K_{\mathfrak p}=\mathbb R$，实扩展分量的范数是该实嵌入值，复扩展分量的范数是复模平方；取 $-\log$ 后分别产生系数 $1$、$2$。若 $K_{\mathfrak p}=\mathbb C$，每个分量为 $\mathbb C/\mathbb C$，系数为 $1$。因此仍为同一求和公式。它正是本节 (1.2)(iv) 及范数分解的应用 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, printed pp. 184–185, PDF pp. 203–204]。
+> At an infinite place with $K_{\mathfrak p}=\mathbb R$, the norm on a real extension component is its real embedding value, and the norm on a complex component is the square of the complex modulus. Taking $-\log$ gives coefficients 1 and 2, respectively. If $K_{\mathfrak p}=\mathbb C$, every component is $\mathbb C/\mathbb C$, with coefficient 1. Thus the same summation formula applies. This is an application of this section's (1.2)(iv) and the norm decomposition [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, printed pp. 184–185, PDF pp. 203–204].
 >
-> 逐处比较系数便得所需主除子等式。于是主除子子群被映入主除子子群，商映射
+> Comparing coefficients at every place proves the principal-divisor identity. Thus the subgroup of principal divisors maps into the subgroup of principal divisors, and the quotient map
 > $$
 > [D]\longmapsto[\tau_*D]
 > $$
-> 不依赖代表元。恢复原同态时，右边的范数元素应写成 $\tau^{-1}(N_{L/\tau K}a)\in K^\times$。
+> is independent of the representative. Returning to the original homomorphism, the norm element on the right must be written as $\tau^{-1}(N_{L/\tau K}a)\in K^\times$.
 
 ## Related Concepts
 
@@ -65,5 +65,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 4, printed pp. 193–194, PDF pp. 212–213]. 独立逐处推导。无穷处的 inertia degree 为局部域次数；本书约定 $\mathbb C/\mathbb R$ 的 $e=1,f=2$，不能套入另一套将其称作 ramified 的记号。
-- **Source anchors:** 本节 (1.6)(v) 的 replete ideal 范数兼容式及其证明在 printed pp. 187–188 / PDF pp. 206–207，与上述除子计算一致。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 4, printed pp. 193–194, PDF pp. 212–213]. An independent derivation place by place. The inertia degree at infinity is the local field degree. The book's convention for $\mathbb C/\mathbb R$ is $e=1,f=2$; a different convention calling this extension ramified must not be substituted.
+- **Source anchors:** The compatibility of replete-ideal norms in (1.6)(v) and its proof appear on printed pp. 187–188 / PDF pp. 206–207, consistently with the divisor calculation above.

@@ -4,10 +4,7 @@ aliases:
   - Irreducible Spaces
   - Irreducible Components
   - Topological Irreducibility
-  - 不可约空间
-  - 不可约性
-  - 不可约分支
-  - 泛点
+  - Generic Points
 topic: arithmetic-geometry
 tags:
   - concept

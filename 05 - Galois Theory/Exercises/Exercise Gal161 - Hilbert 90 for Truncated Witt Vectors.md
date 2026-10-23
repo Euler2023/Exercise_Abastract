@@ -22,33 +22,33 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 公理要求每个有限循环 $L/K$ 上的 $\ker N/(\sigma-1)W_n(L)$ 为零。可先证明更强的 $H^1(G,W_n(L))=0$。
+> The axiom requires $\ker N/(\sigma-1)W_n(L)=0$ for every finite cyclic $L/K$. First prove the stronger assertion $H^1(G,W_n(L))=0$.
 
 > [!hint]- Hint 2
-> 使用加法群的 $G$-等变短正合列 $0\to W_{n-1}(L)\xrightarrow V W_n(L)\xrightarrow{a\mapsto a_0}L\to0$，把 cocycle 的首坐标先消掉。
+> Use the $G$-equivariant short exact sequence of additive groups $0\to W_{n-1}(L)\xrightarrow V W_n(L)\xrightarrow{a\mapsto a_0}L\to0$ to eliminate the first coordinate of a cocycle.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 连续性先由逐坐标作用得到：每个 Witt 向量只有有限个坐标，这些坐标属于某有限可分扩域，故稳定子开。固定域也逐坐标识别，$A^{G_L}=W_n(L)$。
+> Continuity follows from the coordinatewise action: a Witt vector has finitely many coordinates, contained in a finite separable extension, so its stabilizer is open. Invariants are also identified coordinatewise, giving $A^{G_L}=W_n(L)$.
 >
-> 对任意有限 Galois 扩张 $L/K$，证明 $H^1(G(L/K),W_n(L))=0$。$n=1$ 是前题已经独立证明的加法 Hilbert 90。对 $n>1$，Witt 加法的首坐标是普通加法，且 Verschiebung 给出 $G$-等变加法短正合列
+> For any finite Galois extension $L/K$, prove $H^1(G(L/K),W_n(L))=0$. The case $n=1$ is the additive Hilbert 90 proved independently in the preceding exercise. For $n>1$, the first coordinate of Witt addition is ordinary addition, and Verschiebung gives the $G$-equivariant short exact sequence of additive groups
 > $$
 > 0\longrightarrow W_{n-1}(L)\xrightarrow V W_n(L)\xrightarrow{\pi_0}L\longrightarrow0.
 > $$
-> 该列的精确性直接由坐标 $V(a_0,\ldots)=(0,a_0,\ldots)$ 及 Witt 加法的三角形式给出。
+> Exactness follows directly from $V(a_0,\ldots)=(0,a_0,\ldots)$ and the triangular form of Witt addition.
 >
-> 令 $z:G\to W_n(L)$ 为 cocycle。其首坐标 $\pi_0z$ 是取值 $L$ 的加法 cocycle，故为 $b_0^{\sigma}-b_0$。选任意 $b\in W_n(L)$ 首坐标为 $b_0$，则
+> Let $z:G\to W_n(L)$ be a cocycle. Its first coordinate $\pi_0z$ is an additive cocycle in $L$, hence has the form $b_0^{\sigma}-b_0$. Choose any $b\in W_n(L)$ with first coordinate $b_0$. Then
 > $$
 > z'(\sigma)=z(\sigma)-(b^\sigma-b)
 > $$
-> 首坐标为零，故唯一写成 $Vz''(\sigma)$。$V$ 为单射且与作用交换，所以 $z''$ 是取值 $W_{n-1}(L)$ 的 cocycle。由归纳，$z''(\sigma)=c^\sigma-c$。于是
+> has first coordinate zero, so it is uniquely $Vz''(\sigma)$. Since $V$ is injective and commutes with the action, $z''$ is a cocycle in $W_{n-1}(L)$. Induction gives $z''(\sigma)=c^\sigma-c$. Hence
 > $$
 > z(\sigma)=(b+Vc)^\sigma-(b+Vc),
 > $$
-> 完成归纳。
+> This completes the induction.
 >
-> 若 $G$ 循环、生成元为 $\sigma$，一个 norm-zero 元素 $a$ 给出 cocycle $z(\sigma^j)=\sum_{i=0}^{j-1}a^{\sigma^i}$；$Na=0$ 使此公式对群阶取模良定义。该 cocycle 是 coboundary，故 $a=(\sigma-1)b$。因此 $\ker N=(\sigma-1)W_n(L)$，正是公理 (3.1) 的加法形式。公理原页为 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, printed p. 278, PDF p. 297]。
+> If $G$ is cyclic with generator $\sigma$, a norm-zero element $a$ defines the cocycle $z(\sigma^j)=\sum_{i=0}^{j-1}a^{\sigma^i}$. The condition $Na=0$ makes the formula well defined modulo the group order. This cocycle is a coboundary, so $a=(\sigma-1)b$. Thus $\ker N=(\sigma-1)W_n(L)$, precisely the additive form of axiom (3.1). The axiom appears in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, printed p. 278, PDF p. 297].
 
 ## Related Concepts
 
@@ -58,5 +58,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 2, printed p. 283, PDF p. 302]. 独立消去 cocycle 坐标的归纳证明；并未将 Artin–Schreier–Witt 分类本身作为输入。
-- **Boundary:** Witt 加法不是一般的逐坐标加法；证明只对首坐标使用普通加法，其余部分通过真正的加法同态 $V$ 处理。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 2, printed p. 283, PDF p. 302]. This is an independent induction eliminating cocycle coordinates; the Artin–Schreier–Witt classification itself is not used as an input.
+- **Boundary:** Witt addition is not generally coordinatewise addition. Ordinary addition is used only for the first coordinate; the remaining coordinates are handled by the actual additive homomorphism $V$.

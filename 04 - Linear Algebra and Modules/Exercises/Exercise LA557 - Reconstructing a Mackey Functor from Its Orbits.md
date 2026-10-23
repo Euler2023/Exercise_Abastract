@@ -39,47 +39,47 @@ created: '2026-10-23'
 > **Printed hint:** If $X$ is an arbitrary finite $G$-set, then the disjoint union $A_X=\coprod_{x\in X}A(G/G_x)$ is again a $G$-set, because $c(\sigma)_*A(G/G_x)=A(G/G_{\sigma x})$. Define $A(X)$ to be the group $A(X)=\operatorname{Hom}_X(X,A_X)$ of all $G$-equivariant sections $X\to A_X$ of the projection $A_X\to X$.
 
 > [!warning] Source issue
-> 按本节 double functor 的明示定义，题面缺少 $A^*(c)=A_*(c)^{-1}$。Solution 给出 $C_3$ 反例并证明加入该必要条件后的完整版本。
+> With the explicit definition of a double functor in this section, the statement is missing $A^*(c)=A_*(c)^{-1}$. The solution gives a counterexample with $C_3$ and proves the full version with this necessary condition added.
 
 ## Hints
 
 > [!hint]- Hint 1
-> 先检查同构 $c$：Mackey pullback 方块迫使 $c_*c^*=1$。题面给出的 double functor 是否已包含这项？
+> First check an isomorphism $c$: a Mackey pullback square forces $c_*c^*=1$. Is this already included in the definition of a double functor used in the statement?
 
 > [!hint]- Hint 2
-> 在补充 $A^*(c)=A_*(c)^{-1}$ 后，$A(X)$ 是在每个轨道选择一个稳定子群处群的有限直积。对任意映射逐点用 restriction 定义 pullback，沿纤维的稳定子轨道用 induction 定义 pushforward。
+> After adding $A^*(c)=A_*(c)^{-1}$, define $A(X)$ as a finite product, choosing for each orbit the group attached to a stabilizer. For an arbitrary map, define pullback pointwise by restriction and pushforward by induction over the stabilizer orbits in each fiber.
 
 > [!hint]- Hint 3
-> 把一个 pullback 方块按左右轨道分解；纤维积 $(G/U)\times_{G/W}(G/V)$ 的轨道由 $U\backslash W/V$ 编号，恰得到所印 induction formula。
+> Decompose a pullback square into orbits on both sides. The orbits of the fiber product $(G/U)\times_{G/W}(G/V)$ are indexed by $U\backslash W/V$, giving precisely the printed induction formula.
 
 ## Solution
 
 > [!success]- Independent derivation
-> **题面缺少一项同构兼容条件。** 本节 double functor 的定义只说两个函子在对象上一致；Mackey 性还迫使对每个同构 $c$ 有 $A^*(c)=A_*(c)^{-1}$。这是取 $c$ 与其逆构成的 pullback 方块所得。仅所印 induction formula 不能补回该条件。
+> **The statement is missing an isomorphism compatibility condition.** The definition of a double functor in this section only requires the two functors to agree on objects. The Mackey property also forces $A^*(c)=A_*(c)^{-1}$ for every isomorphism $c$. Apply it to the pullback square formed by $c$ and its inverse. The printed induction formula alone does not recover this condition.
 >
-> 反例：令 $G=C_3=\langle s\rangle$，$A(G/1)=\mathbb Z[\zeta_3]$，$A(G/G)=0$。在 $G/1$ 的自同构上令 $c(s)_*$ 为乘 $\zeta_3$，令所有 $c(s)^*$ 为恒等；两个轨道之间的 maps 均为零。它确为 double functor：与投影的任何复合均为零。唯一非平凡 induction formula 为
+> For a counterexample, let $G=C_3=\langle s\rangle$, $A(G/1)=\mathbb Z[\zeta_3]$, and $A(G/G)=0$. On automorphisms of $G/1$, let $c(s)_*$ act by multiplication by $\zeta_3$ and let every $c(s)^*$ be the identity. Set all maps between the two orbits to zero. This is a double functor: every composite involving the projection is zero. The only nontrivial induction formula is
 > $$
 > \operatorname{Res}_1^G\operatorname{Ind}_G^1=0=1+\zeta_3+\zeta_3^2.
 > $$
-> 其余公式或为零或为函子的恒等式。然而 $c(s)_*c(s)^*$ 为乘 $\zeta_3$ 而非恒等，故不能延拓为 Mackey functor。
+> The other formulas are either zero or functorial identities. But $c(s)_*c(s)^*$ is multiplication by $\zeta_3$ rather than the identity, so this cannot extend to a Mackey functor.
 >
-> **修正版本及证明。** 补充对 orbit isomorphisms 的 inverse compatibility。记 $M_U=A(G/U)$。按 hint，把 $A(X)$ 定义为满足 $a_{\sigma x}=c(\sigma)_*a_x$ 的族 $(a_x)_{x\in X}$。$g\in G_x$ 时 $c(g):G/G_x\to G/G_x$ 是恒等，所以每个轨道可任意选择一个 $a_x\in M_{G_x}$，其它坐标唯一确定；因此 $A(X)\simeq\prod_{G\backslash X}M_{G_x}$，不依赖轨道代表的选择。
+> **Corrected version and proof.** Add inverse compatibility for orbit isomorphisms. Write $M_U=A(G/U)$. Following the hint, define $A(X)$ to consist of families $(a_x)_{x\in X}$ satisfying $a_{\sigma x}=c(\sigma)_*a_x$. When $g\in G_x$, the map $c(g):G/G_x\to G/G_x$ is the identity. Thus one may choose an arbitrary $a_x\in M_{G_x}$ for each orbit, after which all other coordinates are uniquely determined. Consequently $A(X)\simeq\prod_{G\backslash X}M_{G_x}$, independently of the choice of orbit representatives.
 >
-> 对 $f:X\to Y$，有 $G_x\subset G_{f(x)}$，定义
+> For $f:X\to Y$, we have $G_x\subset G_{f(x)}$. Define
 > $$
 > (f^*b)_x=\operatorname{Res}_{G_x}^{G_{f(x)}}b_{f(x)}.
 > $$
-> 对 $y\in Y$，将有限纤维 $f^{-1}(y)$ 按 $G_y$ 轨道分解，定义
+> For $y\in Y$, decompose the finite fiber $f^{-1}(y)$ into $G_y$ orbits and define
 > $$
 > (f_*a)_y=\sum_{x\in G_y\backslash f^{-1}(y)}\operatorname{Ind}_{G_y}^{G_x}a_x.
 > $$
-> 换纤维代表时 conjugation 的自然性使每项相同；换 $y$ 为 $\sigma y$ 则整体乘 $c(\sigma)_*$。这两个自然性关系都是 $B_0(G)$ 中投影与 $c(\sigma)$ 的交换关系，已由函子性保证。因此 maps 良定义，并满足 $G$-equivariance。
+> Changing a fiber representative leaves each term unchanged by the naturality of conjugation. Replacing $y$ by $\sigma y$ applies $c(\sigma)_*$ to the whole expression. Both naturality relations are commutation relations between projections and $c(\sigma)$ in $B_0(G)$ and are already guaranteed by functoriality. Thus the maps are well-defined and $G$-equivariant.
 >
-> Pullback 的复合律来自 restriction 的复合律。Pushforward 的复合律来自把复合纤维先按中间纤维分组，再用 induction 的传递性求和。恒等映射分别给恒等；不交并给有限直积，也就是有限直和。
+> The composition law for pullback follows from that for restriction. For pushforward, group a composite fiber by the intermediate fiber, then use the transitivity of induction in the sums. Identity maps induce identities. Disjoint unions give finite products, which are also finite direct sums.
 >
-> 最后检查 pullback 方块。所有 groups 与 maps 对有限轨道直和相容，故只需检查两个映射 $G/U\to G/W\leftarrow G/V$。纤维积的轨道由 $U\backslash W/V$ 编号，第 $\sigma$ 个轨道的稳定子为 $U\cap\sigma V\sigma^{-1}$；按上述定义计算两条路线，左边正是 $\operatorname{Res}_U^W\operatorname{Ind}_W^V$，右边正是题面所印和式。因此假设给出 Mackey 方块。一般方块由这些轨道方块取直和而得。
+> It remains to check a pullback square. All groups and maps respect finite direct sums of orbits, so it suffices to check two maps $G/U\to G/W\leftarrow G/V$. The orbits of the fiber product are indexed by $U\backslash W/V$, and the stabilizer of the $\sigma$-th orbit is $U\cap\sigma V\sigma^{-1}$. Computing the two routes using the definitions, the left side is exactly $\operatorname{Res}_U^W\operatorname{Ind}_W^V$ and the right side is the sum printed in the statement. The hypothesis therefore gives the Mackey square. General squares are finite direct sums of these orbit squares.
 >
-> 反之，任一延拓必须在不交并上取直和，在轨道映射上给已有 maps；以上公式由分解纤维和 Mackey 方块强制。故延拓在 canonical isomorphism 的意义下唯一。原文若已把 inverse compatibility 隐含在 double functor 的术语中，则上述反例被该额外约定排除，而修正后的证明直接适用。
+> Conversely, any extension must take direct sums on disjoint unions and give the prescribed maps on orbit maps. Decomposition of fibers and the Mackey squares force the formulas above. Thus the extension is unique up to canonical isomorphism. If inverse compatibility is already implicit in the book's use of the term double functor, that additional convention excludes the counterexample, and the corrected proof applies directly.
 
 ## Related Concepts
 
@@ -90,5 +90,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 11, printed p. 308, PDF p. 327]. 原题及完整 printed hint 已保留。独立证明明确加入同构兼容，未将一般 modulation 等同于 $G$-module。
-- **Uniqueness:** 有限直和的对象选择只能给自然同构意义的唯一；不应理解成任意 chosen models 的字面相等。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 11, printed p. 308, PDF p. 327]. The original problem and the full printed hint are retained. The independent proof explicitly adds isomorphism compatibility and does not identify an arbitrary modulation with a $G$-module.
+- **Uniqueness:** Choices of models for finite direct sums give uniqueness only up to natural isomorphism, not literal equality of arbitrary chosen models.

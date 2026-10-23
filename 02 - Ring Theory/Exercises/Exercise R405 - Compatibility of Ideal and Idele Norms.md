@@ -25,7 +25,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Compare the exponent of each prime of $K$ on both sides.
 
 > [!hint]- Stronger hint
@@ -33,19 +33,19 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 对每个有限素点 $\mathfrak p$，局部范数赋值公式为
+> [!success]- Independent derivation
+> For every finite prime $\mathfrak p$, the valuation formula for the local norm is
 > $$
 > v_\mathfrak p(N_{L_\mathfrak P/K_\mathfrak p}x)
 > =f_{\mathfrak P/\mathfrak p}\,v_\mathfrak P(x).
 > $$
-> 因此左端在 $\mathfrak p$ 处的指数为 $\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P/\mathfrak p}v_\mathfrak P(\alpha_\mathfrak P)$。另一方面理想范数满足 $N(\mathfrak P)=\mathfrak p^{f_{\mathfrak P/\mathfrak p}}$，故
+> Consequently the exponent at $\mathfrak p$ on the left is $\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P/\mathfrak p}v_\mathfrak P(\alpha_\mathfrak P)$. On the other hand, the ideal norm satisfies $N(\mathfrak P)=\mathfrak p^{f_{\mathfrak P/\mathfrak p}}$, so
 > $$
 > N((\alpha))
 > =N\left(\prod_\mathfrak P\mathfrak P^{v_\mathfrak P(\alpha_\mathfrak P)}\right)
 > =\prod_\mathfrak p\mathfrak p^{\sum_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P/\mathfrak p}v_\mathfrak P(\alpha_\mathfrak P)}.
 > $$
-> 所有素理想指数一致，证毕。实际上该计算不需要 Galois 假设。
+> The exponents agree at every prime ideal, proving the claim. In fact, the calculation does not require the Galois hypothesis.
 
 ## Related Concepts
 
@@ -57,4 +57,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 3, printed p.373, PDF p.392]。解答为独立推导。
+The statement was checked against the source image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 3, printed p.373, PDF p.392]. The solution is independently derived.

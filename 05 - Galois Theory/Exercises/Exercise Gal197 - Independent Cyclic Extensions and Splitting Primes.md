@@ -24,7 +24,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Pairwise disjointness need not give independence from a compositum. Test three quadratic fields before proving a corrected statement.
 
 > [!hint]- Stronger hint
@@ -32,13 +32,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue / 反例。** 取 $K=\mathbb Q$，$L_1=\mathbb Q(\sqrt6)$，$L_2=\mathbb Q(\sqrt2)$，$L_3=\mathbb Q(\sqrt3)$。三者两两交为 $\mathbb Q$；然而在 $L_2,L_3$ 均完全分裂的未分歧素点，在它们的合成域中完全分裂，也必在子域 $L_1$ 完全分裂。所以原结论不成立。
-> 预期修正版为 $L_1\not\subseteq F=L_2\cdots L_r$。因 $[L_1:K]=p$，这等价于 $L_1\cap F=K$。令 $M=L_1F$。则
+> [!success]- Independent derivation
+> **Source issue / counterexample.** Take $K=\mathbb Q$, $L_1=\mathbb Q(\sqrt6)$, $L_2=\mathbb Q(\sqrt2)$, and $L_3=\mathbb Q(\sqrt3)$. Their pairwise intersections are $\mathbb Q$. However, an unramified prime splitting completely in both fields $L_2,L_3$ splits completely in their compositum, and therefore also in its subfield $L_1$. The original conclusion is false.
+> The intended corrected condition is $L_1\not\subseteq F=L_2\cdots L_r$. Since $[L_1:K]=p$, this is equivalent to $L_1\cap F=K$. Put $M=L_1F$. Then
 > $$
 > \operatorname{Gal}(M/F)\xrightarrow{\sim}\operatorname{Gal}(L_1/K)=C_p.
 > $$
-> 取此子群的非单位元 $\sigma$。它在每个 $L_i$（$i>1$）上平凡，而在 $L_1$ 上为阶 $p$ 的生成元。引用 Čebotarev 的存在性部分（Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, VII.(13.4), printed p.545/PDF564），有无穷多个素点的 Frobenius 为 $\sigma$（$M/K$ 阿贝尔，不涉及共轭歧义）。这些素点有且仅有所需分裂行为。
+> Choose a nonidentity element $\sigma$ of this subgroup. It is trivial on each $L_i$ for $i>1$, but restricts on $L_1$ to a generator of order $p$. By the existence part of Čebotarev (Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, VII.(13.4), printed p.545/PDF564), infinitely many primes have Frobenius $\sigma$. The group $M/K$ is abelian, so there is no conjugacy ambiguity. These primes have exactly the required splitting behavior.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §3, Exercise 4, printed p.379, PDF p.398]。解答为独立推导。
+The statement was checked against the original page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §3, Exercise 4, printed p.379, PDF p.398]. The solution is independently derived.

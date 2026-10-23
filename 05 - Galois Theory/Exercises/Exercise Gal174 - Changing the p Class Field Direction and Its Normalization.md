@@ -33,21 +33,21 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue / 值域规范化。** IV.§5 Exercise2 的原定义要求值子群包含标准 $\mathbb Z\subseteq\mathbb Z_p$。题目对任意满射 $d'$ 的字面断言未必保持这一规范化。取 $G=\mathbb Z_p$，加法模 $A=\mathbb Z$，作用平凡，$d=\mathrm{id}$，$v=\mathrm{id}$；有限指数 $p^r$ 扩张的范数为乘 $p^r$，Tate 群阶满足类域公理。若 $d'=u d$，$u\in\mathbb Z_p^\times\setminus\mathbb Q$，则题定义 $v'=u v$，像 $u\mathbb Z$ 不含 $1$。因此必须允许重新选择 $\mathbb Z_p$ 坐标或放宽“含标准整数”的规范化，才有无条件的预期表述。
-> 因此，按“包含固定的标准整数”这一严格定义，原题的第一个断言已被反例完全否定，不能继续声称它给出同一定义下的第二个类域论。这里没有用一个未经证明的值群商条件来补齐该断言。
+> [!success]- Independent derivation
+> **Source issue / normalization of the value group.** The original definition in IV.§5, Exercise 2 requires the value subgroup to contain the standard $\mathbb Z\subseteq\mathbb Z_p$. The literal assertion for an arbitrary surjection $d'$ need not preserve this normalization. Take $G=\mathbb Z_p$, the additive module $A=\mathbb Z$ with trivial action, $d=\mathrm{id}$, and $v=\mathrm{id}$. Norms in finite extensions of index $p^r$ are multiplication by $p^r$, and the Tate group orders satisfy the class field axiom. If $d'=u d$ and $u\in\mathbb Z_p^\times\setminus\mathbb Q$, the definition in the exercise gives $v'=u v$, whose image $u\mathbb Z$ does not contain $1$. Thus the intended unconditional statement requires allowing a new choice of $\mathbb Z_p$ coordinate or relaxing the normalization that the value group contain the standard integers.
+> Under the strict definition requiring containment of the fixed standard integers, the counterexample therefore completely disproves the first assertion. It cannot then be claimed to produce a second class field theory satisfying that same definition. No unproved condition on value-group quotients is used here to fill this gap.
 >
-> 可完整说明的是**同一方向的坐标重标特殊情形**。若 $d'=u d$，将新目标 $\mathbb Z_p$ 的坐标同时乘 $u^{-1}$，则
+> A complete argument is available for the **special case of rescaling coordinates in the same direction**. If $d'=u d$, simultaneously multiply the coordinate of the new target $\mathbb Z_p$ by $u^{-1}$. Then
 > $$
 > u^{-1}d'=d,\qquad u^{-1}v'=v.
 > $$
-> 第二个等式来自旧互反映射在旧 $\mathbb Z_p$-塔上的规范化 $d\circ\operatorname{Artin}=v$；故 $v'=d'\circ\operatorname{Artin}=u v$。重标后恰好恢复原来的两个映射，并不是建立了一个新的不同方向的理论。若原值群为 $Z=v(A_k)$，则未重标的像是 $uZ$；乘 $u^{-1}$ 给出
+> The second equality follows from the normalization $d\circ\operatorname{Artin}=v$ of the old reciprocity map on the old $\mathbb Z_p$-tower; hence $v'=d'\circ\operatorname{Artin}=u v$. Rescaling recovers the two original maps, rather than constructing a theory in a different direction. If the original value group is $Z=v(A_k)$, the unrescaled image is $uZ$. Multiplication by $u^{-1}$ gives
 > $$
 > uZ/p^r uZ\xrightarrow{\sim} Z/p^rZ\cong\mathbb Z/p^r\mathbb Z.
 > $$
-> 对任意有限层，范数像同样从 $f_KZ$ 变为 $f_KuZ$，重标后恢复 $f_KZ$；单位核不变，故其 Tate 群与类域公理也完全不变。互反构造所用的赋值、Frobenius 坐标和范数在重标后逐项等于旧数据，因此剩余符号相同。这证明这个特殊情形的坐标不变性，同时明确了值群商条件为何保持。
+> At every finite level, the norm image likewise changes from $f_KZ$ to $f_KuZ$ and returns to $f_KZ$ after rescaling. The unit kernel is unchanged, so its Tate groups and the class field axiom are unchanged. After rescaling, the valuation, Frobenius coordinate, and norms in the reciprocity construction coincide term by term with the old data, so the residue symbols coincide. This proves coordinate invariance in this special case and explains explicitly why the condition on value-group quotients is preserved.
 >
-> 若拒绝重标而仍要求 $uZ$ 包含固定的标准 $\mathbb Z$，就必须另外核实该包含；它在上面的 $Z=\mathbb Z$、$u\notin\mathbb Q$ 反例中失败。对任意不同 $\mathbb Z_p$-方向 $d'$ 的预期互反独立性，本笔记不声称已经证明，也不把它当作原题字面断言成立的理由。
+> If rescaling is disallowed and $uZ$ must still contain the fixed standard $\mathbb Z$, that inclusion requires a separate check. It fails in the counterexample with $Z=\mathbb Z$ and $u\notin\mathbb Q$ above. This note does not claim to prove the expected reciprocity independence for an arbitrary different $\mathbb Z_p$-direction $d'$, or use that expectation to justify the literal assertion.
 
 ## Related Concepts
 
@@ -58,4 +58,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书200 dpi页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 3, printed p.305, PDF p.324]。解答为独立推导，沿用本章的抽象域、连续离散 $G$-模、限制与范数约定。原题按严格定义被反例否定。附加推导仅证明同一方向的同时坐标重标，不声称任意新方向已满足值群条件或已经证明一般互反独立性。
+The statement was checked against the original 200 dpi page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 3, printed p.305, PDF p.324]. The solution is independently derived, using this chapter's conventions for abstract fields, continuous discrete $G$-modules, restrictions, and norms. The counterexample disproves the exercise under the strict definition. The additional argument proves only simultaneous coordinate rescaling in the same direction; it does not claim that an arbitrary new direction satisfies the value-group condition or that general reciprocity independence has been proved.

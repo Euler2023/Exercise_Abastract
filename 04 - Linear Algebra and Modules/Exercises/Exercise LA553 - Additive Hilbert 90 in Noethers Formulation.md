@@ -23,21 +23,21 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 正规基生成元的迹不为零，否则其全部共轭之和是一条非平凡线性关系。因此可找到迹为 $1$ 的 $c\in L$。
+> A normal basis generator has nonzero trace; otherwise the sum of all its conjugates would be a nontrivial linear relation. Thus one can find $c\in L$ with trace $1$.
 
 > [!hint]- Hint 2
-> 用右作用 cocycle 记号 $z(\sigma\tau)=z(\sigma)^\tau+z(\tau)$，尝试 $b=-\sum_\sigma z(\sigma)c^\sigma$。
+> In the right-action cocycle notation $z(\sigma\tau)=z(\sigma)^\tau+z(\tau)$, try $b=-\sum_\sigma z(\sigma)c^\sigma$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 先取 Noether 命题背景中的有限 Galois 扩张，记 $G=G(L/K)$。正规基定理给出 $\theta\in L$，使 $(\theta^\sigma)_{\sigma\in G}$ 为 $K$-基。其和 $\operatorname{Tr}_{L/K}\theta$ 不可能为零，否则该基的全部系数为 $1$ 的线性组合为零。故可令 $c=\theta/\operatorname{Tr}\theta$，使 $\sum_\sigma c^\sigma=1$；这在特征整除 $|G|$ 时也成立。
+> First take the finite Galois extension in the setting of Noether's theorem, and write $G=G(L/K)$. The normal basis theorem gives $\theta\in L$ such that $(\theta^\sigma)_{\sigma\in G}$ is a $K$-basis. Its sum $\operatorname{Tr}_{L/K}\theta$ cannot vanish, since that would be a linear relation among the basis vectors with every coefficient equal to $1$. Thus we may set $c=\theta/\operatorname{Tr}\theta$, giving $\sum_\sigma c^\sigma=1$. This also works when the characteristic divides $|G|$.
 >
-> 对任意加法 $1$-cocycle $z:G\to L$，采用源书的右作用约定，定义
+> For any additive $1$-cocycle $z:G\to L$, use the book's right-action convention and define
 > $$
 > b=-\sum_{\sigma\in G}z(\sigma)c^\sigma.
 > $$
-> 由 cocycle 式 $z(\sigma)^\tau=z(\sigma\tau)-z(\tau)$，有
+> The cocycle identity $z(\sigma)^\tau=z(\sigma\tau)-z(\tau)$ gives
 > $$
 > \begin{aligned}
 > b^\tau
@@ -46,9 +46,9 @@ created: '2026-10-23'
 > =b+z(\tau).
 > \end{aligned}
 > $$
-> 所以 $z(\tau)=b^\tau-b$ 为 coboundary，$H^1(G,L)=0$。这给出完整 Noether 型结论，而不仅是循环群的 norm-zero 版本。
+> Thus $z(\tau)=b^\tau-b$ is a coboundary and $H^1(G,L)=0$. This proves the full Noether formulation, rather than only the norm-zero formulation for a cyclic group.
 >
-> 若把题中的 Galois 扩张理解为无限扩张，则对连续 cocycle 仍成立：其像有限，选开正规 $N$ 同时固定全部像并使 $z|_N=0$，则 cocycle 经有限群 $G/N$ 作用于有限子扩域 $L^N$ 因子化；应用刚证明的有限情形，再 inflation 回 $G$ 即可。
+> If the Galois extension in the question is interpreted as infinite, the conclusion still holds for continuous cocycles. Their images are finite. Choose an open normal subgroup $N$ that fixes every element of the image and satisfies $z|_N=0$. The cocycle then factors through the finite group $G/N$ acting on the finite intermediate extension $L^N$. Apply the finite case just proved, then inflate back to $G$.
 
 ## Related Concepts
 
@@ -58,5 +58,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 1, printed p. 283, PDF p. 302]. 独立迹为一与 cocycle 计算，保留正规基提示；正规基定理是明确输入。
-- **Routing:** 正规基、迹和线性求和构造承担主要工作，归 linear-algebra。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §3, Exercise 1, printed p. 283, PDF p. 302]. Independent trace-one construction and cocycle calculation, retaining the normal-basis hint. The normal basis theorem is an explicit input.
+- **Routing:** The normal basis, trace, and linear summation construction do the main work, so the exercise is routed to linear algebra.

@@ -27,7 +27,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Interpret ideal groups as equivalence classes over moduli. The index is the inertia-group order; the least power records the Frobenius order after removing inertia.
 
 > [!hint]- Stronger hint
@@ -35,11 +35,11 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 先澄清不同模数的理想群约定：指数 $(H_\mathfrak p:H^\mathfrak f)$ 须在共同模数下限制后计算；而 $\mathfrak p^f\in H_\mathfrak p$ 使用其与 $\mathfrak p$ 互素的较小 conductor 的代表。否则把 $\mathfrak p$ 加入允许的理想生成元后直接作字面指数，会得到错误的无限指数。
-> 经 Artin 同构 $J_K^\mathfrak f/H^\mathfrak f\cong G(L/K)$，题设扩大的理想群对应于惯性子群 $I_\mathfrak p$。其固定域 $Z=L^{I_\mathfrak p}$ 在 $\mathfrak p$ 处未分歧，且是 $L$ 内在该处未分歧的最大子域；这正给导子可去掉 $\mathfrak p$ 的最小扩群。因此 $e=|I_\mathfrak p|$ 为分歧指数。
-> 在 $Z/K$ 中，$\mathfrak p$ 的 Frobenius 在商群 $G/I_\mathfrak p$ 的阶，按理想 Artin 映射恰为 $\mathfrak p^f$ 首次属于 $H_\mathfrak p$ 的最小正指数。它也是剩余扩张次数 $f=|D_\mathfrak p/I_\mathfrak p|$。
-> 因为 $L/K$ Galois，所有上方素点的 $e,f$ 相同。基本等式 $\sum_{\mathfrak P\mid\mathfrak p}e_\mathfrak P f_\mathfrak P=[L:K]$ 给 $r=[L:K]/ef$，理想分解随即为题列形式。
+> [!success]- Independent derivation
+> First clarify the ideal-group convention for different moduli. The index $(H_\mathfrak p:H^\mathfrak f)$ must be computed after restriction to a common modulus. In contrast, $\mathfrak p^f\in H_\mathfrak p$ uses representatives for its smaller conductor coprime to $\mathfrak p$. Otherwise, simply adjoining $\mathfrak p$ to the allowed ideal generators and taking a literal index gives an incorrect infinite index.
+> Under the Artin isomorphism $J_K^\mathfrak f/H^\mathfrak f\cong G(L/K)$, the enlarged ideal group in the question corresponds to the inertia subgroup $I_\mathfrak p$. Its fixed field $Z=L^{I_\mathfrak p}$ is unramified at $\mathfrak p$ and is the largest subfield of $L$ with that property. This is precisely the minimal enlargement of the ideal group allowing $\mathfrak p$ to be removed from the conductor. Thus $e=|I_\mathfrak p|$ is the ramification index.
+> In $Z/K$, the order of the Frobenius of $\mathfrak p$ in the quotient $G/I_\mathfrak p$ is, by the ideal Artin map, exactly the least positive exponent for which $\mathfrak p^f$ belongs to $H_\mathfrak p$. It is also the residue-extension degree $f=|D_\mathfrak p/I_\mathfrak p|$.
+> Since $L/K$ is Galois, the values $e,f$ agree for all primes above the given prime. The fundamental identity $\sum_{\mathfrak P\mid\mathfrak p}e_\mathfrak P f_\mathfrak P=[L:K]$ gives $r=[L:K]/ef$, and the ideal factorization follows in the stated form.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 1, printed p.413, PDF p.432]。解答为独立推导。
+The statement was checked against the original 200 dpi images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 1, printed p.413, PDF p.432]. The solution is independently derived.

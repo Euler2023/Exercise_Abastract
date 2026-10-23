@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > The factorization modulo $2$ has degrees $2$ and $3$, yielding a transposition by cubing. A transitive group of prime degree containing a transposition is symmetric.
 
 > [!hint]- Stronger hint
@@ -29,14 +29,14 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 前题不可约性使 $G\le S_5$ 在五个根上传递。模 $2$ 有
+> [!success]- Independent derivation
+> Irreducibility from the preceding exercise makes $G\le S_5$ transitive on the five roots. Modulo $2$, one has
 > $$
 > X^5+X+1=(X^2+X+1)(X^3+X^2+1),
 > $$
-> 两因子均不可约且互异。因 $2\nmid2869$，未分歧 Frobenius 的循环型为 $(2)(3)$；取其立方得到单个换位。
-> 为避免借用五次传递子群分类，考虑 $G$ 中这个换位的所有共轭，并以它们所交换的根对为五顶点图的边。图的连通分支被 $G$ 置换；由传递性，它们大小相同并整除素数 $5$。图至少有一条边，所以分支不可能全为单点，只能图连通。
-> 连通图的边换位生成全部 $S_5$：沿路径可通过共轭逐步得到任意两顶点的换位。因此这些共轭换位生成 $S_5\subseteq G$，所以 $G=S_5$，$[K:\mathbb Q]=120$。模 $2$ 的因式分解也已运行符号运算复核。
+> Both factors are irreducible and distinct. Since $2\nmid2869$, the unramified Frobenius has cycle type $(2)(3)$; its cube is a single transposition.
+> To avoid using the classification of transitive quintic subgroups, consider all conjugates of this transposition in $G$. Form a graph on the five roots, with an edge for each pair exchanged by such a conjugate. The group $G$ permutes its connected components. Transitivity makes the components have equal sizes dividing the prime $5$. The graph has an edge, so its components cannot all be singletons. It must therefore be connected.
+> The edge transpositions of a connected graph generate all of $S_5$: successive conjugations along a path produce the transposition of any two vertices. Thus the conjugate transpositions generate $S_5\subseteq G$, and $G=S_5$, with $[K:\mathbb Q]=120$. The factorization modulo $2$ has also been checked by symbolic computation.
 
 ## Related Concepts
 
@@ -46,4 +46,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 4, printed p.414, PDF p.433]。解答为独立推导。Frobenius 循环型来自已证明的未分歧素点因式分解定理；不是从判别式非平方单独推断 $S_5$。
+The statement was checked against the original pages rendered at 200 dpi. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 4, printed p.414, PDF p.433]. The solution is an independent derivation. The Frobenius cycle type uses the proved theorem on factorization at unramified primes; $S_5$ is not inferred merely from the discriminant being nonsquare.

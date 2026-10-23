@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Multiply a given ideal by a totally positive principal ideal congruent to $1$ modulo the modulus. Choose the generator inside the inverse ideal using the Chinese remainder theorem.
 
 > [!hint]- Stronger hint
@@ -29,10 +29,10 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 取给定射线类代表分式理想 $\mathfrak b$，且 $\mathfrak b$ 与 $\mathfrak m$ 互素。设固定非零整理想为 $\mathfrak a$。要找 $x\in K^\times$，满足 $x\equiv1\pmod{\mathfrak m}$、所有实嵌入下 $x>0$，并使 $(x)\mathfrak b$ 整且与 $\mathfrak a$ 互素。
-> 取格理想 $L=\mathfrak b^{-1}$。在 $\mathfrak p\mid\mathfrak a$ 处要求 $x$ 在 $L_\mathfrak p/\mathfrak pL_\mathfrak p$ 中非零；这等价于 $v_\mathfrak p(x)=-v_\mathfrak p(\mathfrak b)$。在 $\mathfrak p\mid\mathfrak m$ 处，$\mathfrak b_\mathfrak p=\mathcal O_\mathfrak p$，故可要求 $x\equiv1$。这些是两两兼容的有限剩余条件，由理想的中国剩余定理得到 $x_0\in L$。
-> 它们的齐次解包含某个非零整理想 $\mathfrak c\subseteq L$。取正整数 $N\in\mathfrak c$，则 $x_0+kN$ 在每个实嵌入下随 $k\to+\infty$ 变正，同时保持全部有限同余条件。取这种 $x$。于是 $(x)\mathfrak b$ 是整理想，与 $\mathfrak a$ 互素，且与 $\mathfrak b$ 同射线类。
+> [!success]- Independent derivation
+> Represent the given ray class by a fractional ideal $\mathfrak b$ coprime to $\mathfrak m$. Let $\mathfrak a$ be the fixed nonzero integral ideal. We seek $x\in K^\times$ with $x\equiv1\pmod{\mathfrak m}$, with $x>0$ under every real embedding, and such that $(x)\mathfrak b$ is integral and coprime to $\mathfrak a$.
+> Take the lattice ideal $L=\mathfrak b^{-1}$. At each $\mathfrak p\mid\mathfrak a$, require $x$ to be nonzero in $L_\mathfrak p/\mathfrak pL_\mathfrak p$; equivalently, $v_\mathfrak p(x)=-v_\mathfrak p(\mathfrak b)$. At $\mathfrak p\mid\mathfrak m$, we have $\mathfrak b_\mathfrak p=\mathcal O_\mathfrak p$, so we may require $x\equiv1$. These finitely many residue conditions are compatible, and the Chinese remainder theorem for ideals supplies $x_0\in L$.
+> The homogeneous solutions contain a nonzero integral ideal $\mathfrak c\subseteq L$. Choose a positive integer $N\in\mathfrak c$. Then $x_0+kN$ becomes positive at every real embedding as $k\to+\infty$, while preserving all finite congruences. Choose such an $x$. The ideal $(x)\mathfrak b$ is then integral, coprime to $\mathfrak a$, and in the same ray class as $\mathfrak b$.
 
 ## Related Concepts
 
@@ -44,4 +44,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 11, printed p.368, PDF p.387]。解答为独立推导。
+The statement was checked against the source image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 11, printed p.368, PDF p.387]. The solution is independently derived.

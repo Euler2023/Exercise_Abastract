@@ -25,38 +25,38 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 在完备局部情形 $\mathcal O=\mathfrak o[x]$ 下，由多项式表示直接得到 $\Omega^1\simeq\mathcal O/(f'(x))\,dx$。不要把一般的整闭包误判为全局单生成。
+> In the complete local case $\mathcal O=\mathfrak o[x]$, the polynomial presentation gives $\Omega^1\simeq\mathcal O/(f'(x))\,dx$. A general integral closure need not be generated globally by one element.
 
 > [!hint]- Hint 2
-> 全局微分模是有限长度模，只在有限多个素理想处非零。每个非零局部化模的剩余空间维数至多为 $1$。
+> The global differential module has finite length and is nonzero at only finitely many prime ideals. The residue space of each nonzero localization has dimension at most $1$.
 
 > [!hint]- Hint 3
-> 在每个支撑素理想 $\mathfrak P$ 选一个 $x_{\mathfrak P}\in\mathcal O$ 使 $dx_{\mathfrak P}$ 局部生成，再用 CRT 令 $x\equiv x_{\mathfrak P}\pmod{\mathfrak P^2}$；Leibniz 公式和 Nakayama 引理保证 $dx$ 同时生成全部局部化。
+> At each prime $\mathfrak P$ in the support, choose $x_{\mathfrak P}\in\mathcal O$ so that $dx_{\mathfrak P}$ generates locally. Use CRT to choose $x\equiv x_{\mathfrak P}\pmod{\mathfrak P^2}$. The Leibniz rule and Nakayama lemma then make $dx$ generate all localizations simultaneously.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 沿用 §2 的背景：$L/K$ 有限可分，$\mathfrak o$ 为 Dedekind 环，$\mathcal O$ 为其在 $L$ 中的整闭包，相关剩余域扩张均可分。我们先证明本题所需的局部微分表示，再做全局拼接；不把正文 (2.7) 当黑箱，因为它的印刷证明本身指向本题。
+> Use the setting of §2: $L/K$ is finite separable, $\mathfrak o$ is a Dedekind ring, $\mathcal O$ is its integral closure in $L$, and the relevant residue-field extensions are separable. We first establish the local description needed here and then patch globally. We do not use (2.7) as a black box, since its printed proof refers to this exercise.
 >
-> **1. 单生成局部情形。** 若 $B=A[t]/(f(t))=A[x]$，$f$ 首一且为 $x$ 的最小多项式，则任意 $A$-导子由 $dx$ 决定，而关系 $f(x)=0$ 的微分为 $f'(x)dx=0$。反过来，$h(x)\mapsto h'(x)\bmod f'(x)$ 是良定义的导子，因为改变代表元 $h$ 为 $h+gf$ 后导数只改变 $g(x)f'(x)$。故由导子的泛性质有
+> **1. The local case with one algebra generator.** Suppose $B=A[t]/(f(t))=A[x]$, where $f$ is monic and is the minimal polynomial of $x$. Every $A$-derivation is determined by $dx$, and differentiating $f(x)=0$ gives $f'(x)dx=0$. Conversely, $h(x)\mapsto h'(x)\bmod f'(x)$ is a well-defined derivation: replacing $h$ by $h+gf$ changes the derivative by $g(x)f'(x)$. The universal property of derivations therefore gives
 > $$
 > \Omega^1_{B|A}\simeq B/(f'(x))\,dx.
 > $$
-> 在完备离散赋值情形，II (10.4) 保证可选这样的 $x$；III (2.4) 给出 $(f'(x))=\mathfrak D_{B|A}$。这两个已证明输入分别见 printed p. 178 / PDF p. 197 及 printed pp. 197–198 / PDF pp. 216–217。
+> In the complete discrete valuation setting, II (10.4) supplies such an $x$, and III (2.4) gives $(f'(x))=\mathfrak D_{B|A}$. These proved inputs appear on printed p. 178 / PDF p. 197 and printed pp. 197–198 / PDF pp. 216–217, respectively.
 >
-> **2. 局部表示推广到一般情形。** $\Omega=\Omega^1_{\mathcal O|\mathfrak o}$ 有限生成，且 $\Omega\otimes_{\mathcal O}L=\Omega^1_{L|K}=0$：对每个 $y\in L$，其可分最小多项式的微分给出 $f'(y)dy=0$，$f'(y)\ne0$ 在域中可逆。因此 $\Omega$ 是有限生成挠模，只支撑在有限多个素理想处。
+> **2. Passing from the local description to the general setting.** The module $\Omega=\Omega^1_{\mathcal O|\mathfrak o}$ is finitely generated, and $\Omega\otimes_{\mathcal O}L=\Omega^1_{L|K}=0$. Indeed, for each $y\in L$, differentiation of its separable minimal polynomial gives $f'(y)dy=0$, with $f'(y)\ne0$ invertible in the field. Thus $\Omega$ is a finitely generated torsion module supported at finitely many prime ideals.
 >
-> 微分的基变换与局部化兼容；这直接来自导子的泛性质。对 $\mathfrak P\mid\mathfrak p$ 先在底环作 $\mathfrak p$-进完备化，再取对应 $\mathfrak P$ 分量，得到 $\Omega\otimes\widehat{\mathcal O}_{\mathfrak P}=\Omega^1_{\widehat{\mathcal O}_{\mathfrak P}|\widehat{\mathfrak o}_{\mathfrak p}}$。由第一步，它是一个循环模，annihilator 是完成后的不同理想。不同理想与完成兼容由 III (2.2)(iii) 及证明给出 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, printed pp. 195–196, PDF pp. 214–215]。完成为忠实平坦，故
+> Differentials commute with base change and localization, directly by their universal property. For $\mathfrak P\mid\mathfrak p$, complete the base ring $\mathfrak p$-adically and take the component corresponding to $\mathfrak P$. This gives $\Omega\otimes\widehat{\mathcal O}_{\mathfrak P}=\Omega^1_{\widehat{\mathcal O}_{\mathfrak P}|\widehat{\mathfrak o}_{\mathfrak p}}$. By Step 1, this module is cyclic and its annihilator is the completed different. Compatibility of the different with completion is proved in III (2.2)(iii) [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, printed pp. 195–196, PDF pp. 214–215]. Completion is faithfully flat, so
 > $$
 > \dim_{\kappa(\mathfrak P)}\Omega_{\mathfrak P}/\mathfrak P\Omega_{\mathfrak P}\le1,\qquad
 > \operatorname{Ann}_{\mathcal O_{\mathfrak P}}\Omega_{\mathfrak P}=\mathfrak D\mathcal O_{\mathfrak P}.
 > $$
 >
-> **3. 用 CRT 拼接成一个实际的 $dx$。** 在每个 $\Omega_{\mathfrak P}\ne0$ 的素理想处，$\Omega$ 由全局元素的微分 $da$ 生成，故其中某个 $dx_{\mathfrak P}$ 在上述至多一维的剩余空间非零。Nakayama 引理使其生成 $\Omega_{\mathfrak P}$。CRT 给出 $x\in\mathcal O$，满足 $x-x_{\mathfrak P}\in\mathfrak P^2$ 对全部支撑素理想成立。
+> **3. Patching an actual differential $dx$ by CRT.** At each prime with $\Omega_{\mathfrak P}\ne0$, the module $\Omega$ is generated by differentials $da$ of global elements. At least one such $dx_{\mathfrak P}$ therefore has nonzero image in the residue space of dimension at most one. Nakayama lemma makes it a generator of $\Omega_{\mathfrak P}$. CRT supplies $x\in\mathcal O$ with $x-x_{\mathfrak P}\in\mathfrak P^2$ for all primes in the support.
 >
-> 在局部 DVR 中，由 Leibniz 公式有 $d(\mathfrak P^2)\subseteq\mathfrak P\Omega_{\mathfrak P}$，所以 $dx$ 与 $dx_{\mathfrak P}$ 在 $\Omega_{\mathfrak P}/\mathfrak P\Omega_{\mathfrak P}$ 中相同。再次用 Nakayama，$dx$ 生成所有非零局部化；其他处微分模本来为零。因此 $\mathcal O\,dx=\Omega$。
+> In the local DVR, the Leibniz rule gives $d(\mathfrak P^2)\subseteq\mathfrak P\Omega_{\mathfrak P}$. Hence $dx$ and $dx_{\mathfrak P}$ have the same image in $\Omega_{\mathfrak P}/\mathfrak P\Omega_{\mathfrak P}$. By Nakayama lemma again, $dx$ generates every nonzero localization; the other localizations are already zero. Thus $\mathcal O\,dx=\Omega$.
 >
-> **4. 确定核。** 满射 $\mathcal O\to\Omega$，$a\mapsto a\,dx$ 的核等于 $\operatorname{Ann}_{\mathcal O}\Omega$，因为 $dx$ 已生成整个模。第二步给出这个 annihilator 在每个素理想处都等于 $\mathfrak D$ 的局部化。Dedekind 环中理想由全部局部化决定，故核为 $\mathfrak D$，得到题设短正合列。左箭头是理想的包含映射，右箭头依赖所选生成微分 $dx$。
+> **4. Identifying the kernel.** The surjection $\mathcal O\to\Omega$, $a\mapsto a\,dx$, has kernel $\operatorname{Ann}_{\mathcal O}\Omega$, since $dx$ generates the module. Step 2 identifies its localization at every prime with the localization of $\mathfrak D$. Ideals in a Dedekind ring are determined by their localizations, so the kernel is $\mathfrak D$. This gives the required short exact sequence. The left arrow is the inclusion of the ideal, and the right arrow depends on the chosen generating differential $dx$.
 
 ## Related Concepts
 
@@ -68,6 +68,6 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §2, Exercise 3, printed p. 208, PDF p. 227]. 全局 CRT 拼接与局部微分表示均已写出；未把正文引用本题的 (2.7) 作为独立输入，避免循环。
-- **Imported algebraic inputs:** 微分的基变换泛性质、Noetherian 局部环完成的忠实平坦性、Nakayama 引理以及有限模/理想的局部判别。它们是交换代数输入，而非该题在原书中已有完整解答的证据。
-- **Boundary:** $\Omega$ 由一个 $dx$ 生成不意味着 $\mathcal O=\mathfrak o[x]$。前一题的全局 common-index-divisor 反例正说明二者应区别。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §2, Exercise 3, printed p. 208, PDF p. 227]. Both the local differential description and the global CRT patching are supplied. Formula (2.7), whose proof refers to this exercise, is not used as an independent input; this avoids circularity.
+- **Imported algebraic inputs:** The universal property governing base change of differentials, faithful flatness of completion of a Noetherian local ring, Nakayama lemma, and local criteria for finite modules and ideals. These are commutative-algebra inputs, not evidence that the textbook already gives a complete solution to this exercise.
+- **Boundary:** Generation of $\Omega$ by one $dx$ does not imply $\mathcal O=\mathfrak o[x]$. The global common-index-divisor counterexample in the preceding exercise illustrates the distinction.

@@ -26,7 +26,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Choose a $K$-basis of $L$ and use the same multiplication matrices after tensoring with $\mathbb A_K$.
 
 > [!hint]- Stronger hint
@@ -34,13 +34,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 前题的“几乎处处整基”使基变换给 $\mathbb A_L\cong L\otimes_K\mathbb A_K$，为秩 $[L:K]$ 的自由 $\mathbb A_K$-模。因此乘法矩阵迹定义良好。
-> (i) 在 $v$ 处分解 $L\otimes_KK_v=\prod_{w\mid v}L_w$。乘法算子成为分块对角矩阵，迹为各块迹之和，即所需公式；整元的局部迹为整，所以结果确实是 adèle。
-> (ii) 取 $L/K$ 的基 $b_i$ 和 $M/L$ 的基 $c_j$，则 $b_ic_j$ 是 $M/K$ 的基。按 $c_j$ 先取对角块迹，再按 $b_i$ 取迹，给塔式公式。
-> (iii) 数域扩张可分。在 $M$ 上，乘法矩阵经所有 $K$-嵌入对角化，其特征值为 $\sigma\alpha$，嵌入对应 $G/H$。迹因此为各共轭之和；这可逐局部因子验证，故对 adèle 同样成立。
-> (iv) $\alpha$ 来自基代数时，乘法矩阵为 $\alpha I_{[L:K]}$，迹为 $[L:K]\alpha$。
-> (v) 对角 $x\in L$ 的乘法矩阵原来就在 $M_n(K)$ 中；扩标量后的迹是 $\operatorname{Tr}_{L/K}(x)\in K$ 的对角嵌入。五项均证。
+> [!success]- Independent derivation
+> The integral basis at almost all places from the preceding exercise gives, by base change, $\mathbb A_L\cong L\otimes_K\mathbb A_K$, a free $\mathbb A_K$-module of rank $[L:K]$. Thus the trace of a multiplication matrix is well-defined.
+> (i) At $v$, decompose $L\otimes_KK_v=\prod_{w\mid v}L_w$. Multiplication becomes a block diagonal matrix, whose trace is the sum of the traces of its blocks, giving the required formula. The local trace of an integral element is integral, so the result is indeed an adèle.
+> (ii) Choose a basis $b_i$ of $L/K$ and a basis $c_j$ of $M/L$. Then $b_ic_j$ is a basis of $M/K$. Taking the traces of the diagonal blocks first with respect to $c_j$ and then taking the trace with respect to $b_i$ gives the tower formula.
+> (iii) Extensions of number fields are separable. Over $M$, the multiplication matrix diagonalizes under all $K$-embeddings, with eigenvalues $\sigma\alpha$; the embeddings correspond to $G/H$. The trace is therefore the sum of the conjugates. This can be checked in each local factor, so it also holds for adèles.
+> (iv) If $\alpha$ comes from the base algebra, the multiplication matrix is $\alpha I_{[L:K]}$ and its trace is $[L:K]\alpha$.
+> (v) For diagonal $x\in L$, the multiplication matrix already has entries in $M_n(K)$. After extending scalars, its trace is the diagonal embedding of $\operatorname{Tr}_{L/K}(x)\in K$. This proves all five assertions.
 
 ## Related Concepts
 
@@ -52,4 +52,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 5, printed p.373, PDF p.392]。解答为独立推导。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 5, printed p.373, PDF p.392]. The solution is an independent derivation.

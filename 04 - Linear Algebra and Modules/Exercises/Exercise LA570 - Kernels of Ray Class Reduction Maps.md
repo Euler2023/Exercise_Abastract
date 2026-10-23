@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > For the ordinary class group keep both finite residues and signs. For a smaller modulus use the kernel of the residue reduction map and divide by the appropriate positive units.
 
 > [!hint]- Stronger hint
@@ -29,21 +29,21 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 记 $r_1$ 为实位置数，$E=\mathcal O_K^\times$，$E_{\mathfrak m'}^+=\{\epsilon\in E:\epsilon>0,\ \epsilon\equiv1\bmod\mathfrak m'\}$。第一核为
+> [!success]- Independent derivation
+> Let $r_1$ be the number of real places, and set $E=\mathcal O_K^\times$ and $E_{\mathfrak m'}^+=\{\epsilon\in E:\epsilon>0,\ \epsilon\equiv1\bmod\mathfrak m'\}$. The first kernel is
 > $$
 > \ker(\mathrm{Cl}^\mathfrak m\to\mathrm{Cl})
 > \cong
 > \frac{(\mathcal O_K/\mathfrak m)^\times\times\{\pm1\}^{r_1}}
 > {\{(\bar\epsilon,(\operatorname{sgn}\sigma(\epsilon))_\sigma):\epsilon\in E\}}.
 > $$
-> 证明：每个落在普通类群单位元的射线类由某个主理想 $(a)$ 表示。$a$ 的有限剩余和实符号记录它模射线主理想的差异；生成元改为 $\epsilon a$ 正好除去上列单位像。弱逼近与中国剩余定理实现任意剩余和符号组合，因此没有其他限制。
-> 令 $\rho:(\mathcal O_K/\mathfrak m)^\times\to(\mathcal O_K/\mathfrak m')^\times$ 为约化，$R=\ker\rho$。则第二核为
+> To prove this, every ray class mapping to the identity in the ordinary class group is represented by a principal ideal $(a)$. The finite residue and real signs of $a$ record its class modulo ray principal ideals. Replacing the generator by $\epsilon a$ precisely divides out the unit image in the displayed formula. Weak approximation and the Chinese remainder theorem realize every combination of residues and signs, so there are no further restrictions.
+> Let $\rho:(\mathcal O_K/\mathfrak m)^\times\to(\mathcal O_K/\mathfrak m')^\times$ be reduction, and put $R=\ker\rho$. The second kernel is
 > $$
 > \ker(\mathrm{Cl}^\mathfrak m\to\mathrm{Cl}^{\mathfrak m'})
 > \cong R/\operatorname{im}(E_{\mathfrak m'}^+\to R).
 > $$
-> 确实，核中的理想可写为 $(a)$，其中 $a$ 总正且 $a\equiv1\bmod\mathfrak m'$；其模 $\mathfrak m$ 类在 $R$。两生成元相差 $E_{\mathfrak m'}^+$，而模 $\mathfrak m$ 同余 $1$ 的差异给平凡射线类。前题的正提升构造保证每个 $R$ 元实现。也可将单位像写成 $E_{\mathfrak m'}^+/E_\mathfrak m^+$。
+> Indeed, an ideal in the kernel can be written as $(a)$, where $a$ is totally positive and $a\equiv1\bmod\mathfrak m'$. Its class modulo $\mathfrak m$ lies in $R$. Two generators differ by $E_{\mathfrak m'}^+$, while a ratio congruent to $1$ modulo $\mathfrak m$ gives the trivial ray class. The positive-lift construction in the preceding exercise realizes every element of $R$. The unit image may also be written as $E_{\mathfrak m'}^+/E_\mathfrak m^+$.
 
 ## Related Concepts
 
@@ -54,4 +54,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 14, printed p.368, PDF p.387]。解答为独立推导。第一式中的 $\mathrm{Cl}_K$ 是普通理想类群；$\mathrm{Cl}_K^1$ 是窄类群，两者不能混用。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 14, printed p.368, PDF p.387]. The solution is an independent derivation. In the first formula, $\mathrm{Cl}_K$ is the ordinary ideal class group; $\mathrm{Cl}_K^1$ is the narrow class group. They must not be confused.

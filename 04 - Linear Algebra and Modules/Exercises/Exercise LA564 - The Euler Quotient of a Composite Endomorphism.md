@@ -26,28 +26,28 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 这里 $q_{0,f}(A)=\#(A/fA)/\#\ker f$，是端同态的 cokernel/kernel 比。
+> Here $q_{0,f}(A)=\#(A/fA)/\#\ker f$ is the ratio of the cokernel order to the kernel order of an endomorphism.
 
 > [!hint]- Hint 2
-> 写出 $f$、$g$、$gf$ 的核和余核的六项正合列，再取有限群阶数。
+> Write the six-term exact sequence of kernels and cokernels for $f$, $g$, and $gf$, then take the orders of the finite groups.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 按定义，$q_{0,f}(A)=\#\operatorname{coker}f/\#\ker f$。考虑下列正合列：
+> By definition, $q_{0,f}(A)=\#\operatorname{coker}f/\#\ker f$. Consider the exact sequence
 > $$
 > 0\to\ker f\to\ker(gf)\xrightarrow f\ker g\xrightarrow\delta\operatorname{coker}f\xrightarrow{\bar g}\operatorname{coker}(gf)\to\operatorname{coker}g\to0,
 > $$
-> 其中 $\delta(y)=y\bmod fA$，$\bar g(a\bmod fA)=ga\bmod gfA$，最后一箭头为自然商映射。
+> where $\delta(y)=y\bmod fA$, $\bar g(a\bmod fA)=ga\bmod gfA$, and the last arrow is the natural quotient map.
 >
-> 核处正合性由 $f(a)\in\ker g\iff gf(a)=0$ 及 $\ker f$ 的定义得到。在 $\ker g$，$\delta(y)=0$ 当且仅当 $y=fa$，此时 $a\in\ker(gf)$。在 $\operatorname{coker}f$，$ga\in gfA$ 当且仅当 $a$ 模 $fA$ 可由一个 $\ker g$ 元素表示。在 $\operatorname{coker}(gf)$，到 $\operatorname{coker}g$ 的核恰为 $gA/gfA$，也是 $\bar g$ 的像。因此整列正合。
+> Exactness at the kernel terms follows from the definitions of $f(a)\in\ker g\iff gf(a)=0$ and $\ker f$. At $\ker g$, we have $\delta(y)=0$ if and only if $y=fa$, in which case $a\in\ker(gf)$. At $\operatorname{coker}f$, the condition $ga\in gfA$ is equivalent to $a$ having, modulo $fA$, a representative in $\ker g$. At $\operatorname{coker}(gf)$, the kernel of the map to $\operatorname{coker}g$ is exactly $gA/gfA$, which is also the image of $\bar g$. Thus the entire sequence is exact.
 >
-> 取有限群阶数的交替乘积，整理得
+> Taking the alternating product of the finite group orders and rearranging gives
 > $$
 > \frac{\#\operatorname{coker}(gf)}{\#\ker(gf)}
 > =\frac{\#\operatorname{coker}g}{\#\ker g}\frac{\#\operatorname{coker}f}{\#\ker f}.
 > $$
-> 即所求。上述证明事实上不需要 $f,g$ 交换；题面的交换假设当然足够。
+> This is the desired formula. In fact, the proof does not require $f,g$ to commute; the commutativity assumption in the statement is certainly sufficient.
 
 ## Related Concepts
 
@@ -56,5 +56,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 2, printed p. 314, PDF p. 333]. 独立核余核正合列证明。
-- **Boundary:** “defined”指所用核与余核都有限，而非把两个无限基数形式相除。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 2, printed p. 314, PDF p. 333]. Independent proof using the kernel-cokernel exact sequence.
+- **Boundary:** Being defined means that both the kernel and cokernel in question are finite, rather than formally dividing two infinite cardinalities.

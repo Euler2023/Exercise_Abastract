@@ -5,8 +5,7 @@ aliases:
   - Hermitian Forms
   - Hermitian Matrix
   - Hermitian Matrices
-  - 厄米矩阵
-  - 自伴矩阵
+  - Self-Adjoint Matrix
 topic: linear-algebra
 tags:
   - concept

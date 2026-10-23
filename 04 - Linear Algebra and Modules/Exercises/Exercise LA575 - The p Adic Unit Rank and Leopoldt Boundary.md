@@ -30,7 +30,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > The principal unit product has rank $\sum_{v\mid p}[K_v:\mathbb Q_p]$. Take ranks in the preceding exact sequence, keeping the unnumbered conjecture outside the proof claim.
 
 > [!hint]- Stronger hint
@@ -38,19 +38,19 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 对每个 $v\mid p$，充分深的主单位群通过 $p$-进对数同构于 $\mathfrak p_v^n$ 的加法群，后者是秩 $[K_v:\mathbb Q_p]$ 的自由 $\mathbb Z_p$-模。有限指数及有限扭子群不改变秩，所以
+> [!success]- Independent derivation
+> For each $v\mid p$, the $p$-adic logarithm identifies a sufficiently deep principal unit group with the additive group of $\mathfrak p_v^n$, a free $\mathbb Z_p$-module of rank $[K_v:\mathbb Q_p]$. Passing to a subgroup of finite index and removing finite torsion do not change rank, so
 > $$
 > \operatorname{rank}_{\mathbb Z_p}\prod_{v\mid p}U_v^{(1)}
 > =\sum_{v\mid p}[K_v:\mathbb Q_p]=[K:\mathbb Q].
 > $$
-> 闭子群 $\bar E(p)$ 为有限生成 $\mathbb Z_p$-模；$\mathrm{Cl}_K(p)$ 和无限位置符号均有限。前题的正合列（包含必要的 $p=2$ 符号修正）在张量 $\mathbb Q_p$ 后正合，于是
+> The closed subgroup $\bar E(p)$ is a finitely generated $\mathbb Z_p$-module; $\mathrm{Cl}_K(p)$ and the signs at infinite places are finite. The exact sequence in the preceding exercise, including the necessary correction to the sign of $p=2$, remains exact after tensoring with $\mathbb Q_p$. Thus
 > $$
 > \operatorname{rank}G(M_p/K)
 > =[K:\mathbb Q]-\operatorname{rank}\bar E(p).
 > $$
-> 这证明编号习题的秩恒等式。
-> **证明边界。** 后面的 Leopoldt 等式是额外猜想，不能由上述恒等式推出。仅将 $[K:\mathbb Q]=r_1+2r_2$ 代入，可证明两个猜想表述等价；本题没有证明一般 Leopoldt 猜想。
+> This proves the rank identity in the numbered exercise.
+> **Proof boundary.** The subsequent Leopoldt equality is an additional conjecture and does not follow from the rank identity above. Substitution of $[K:\mathbb Q]=r_1+2r_2$ proves that the two formulations of the conjecture are equivalent. This exercise does not prove the general Leopoldt conjecture.
 
 ## Related Concepts
 
@@ -61,6 +61,6 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 4, printed p.394, PDF p.413]。解答为独立推导。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §5, Exercise 4, printed p.394, PDF p.413]. The solution is an independent derivation.
 
 - **Historical source context:** The unnumbered Leopoldt Problem is retained as a statement from the 1999 source. The exercise solution proves the displayed rank identity; it does not prove the conjecture or make a claim about its present research status.

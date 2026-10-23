@@ -29,18 +29,18 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 因 $A^n\subseteq A$ 总成立，题设 $A\subseteq A^n$ 即 $n$-可除性。Kummer 理论给
+> [!success]- Independent derivation
+> Since $A^n\subseteq A$ always holds, the hypothesis $A\subseteq A^n$ means $n$-divisibility. Kummer theory gives
 > $$
 > A_K/A_K^n\cong\operatorname{Hom}(G(L/K),\mu_n).
 > $$
-> 这里最大 exponent 整除 $n$ 的阿贝尔扩张吸收全部阶整除 $n$ 的连续特征；$L/K$ 有限保证两边为有限群。
-> 本章互反同构给 $A_K/N_{L/K}A_L\cong G(L/K)$。其 exponent 整除 $n$，所以 $A_K^n\subseteq N_{L/K}A_L$。另一方面，有限阿贝尔群 $G(L/K)$ 的 exponent 整除 $n$，因此其 $\mu_n$-对偶与它同阶。于是
+> The maximal abelian extension of exponent dividing $n$ captures every continuous character of order dividing $n$. Finiteness of $L/K$ ensures that the groups on both sides are finite.
+> The reciprocity isomorphism in this chapter gives $A_K/N_{L/K}A_L\cong G(L/K)$. Its exponent divides $n$, so $A_K^n\subseteq N_{L/K}A_L$. Conversely, the finite abelian group $G(L/K)$ has exponent dividing $n$, and therefore has the same order as its $\mu_n$-dual. Hence
 > $$
 > [A_K:A_K^n]=|\operatorname{Hom}(G(L/K),\mu_n)|
 > =|G(L/K)|=[A_K:N_{L/K}A_L].
 > $$
-> 已包含的两个有限指数子群指数相同，故相等。
+> The two subgroups, already known to be nested, have the same finite index and are therefore equal.
 
 ## Related Concepts
 
@@ -51,4 +51,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书200 dpi页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 1, printed p.305, PDF p.324]。解答为独立推导，沿用本章的抽象域、连续离散 $G$-模、限制与范数约定。“exponent $n$”按本章对应理解为 exponent 整除 $n$；有限性是比较阶数时的实际假设。
+The statement was checked against the original 200 dpi page images. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 1, printed p.305, PDF p.324]. The solution is independently derived, using this chapter's conventions for abstract fields, continuous discrete $G$-modules, restrictions, and norms. Here "exponent $n$" means exponent dividing $n$, as in the correspondence of this chapter; finiteness is essential when comparing orders.

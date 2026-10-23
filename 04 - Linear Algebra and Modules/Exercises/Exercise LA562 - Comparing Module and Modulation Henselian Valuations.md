@@ -24,41 +24,41 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 对来自离散 $G$-module 的 modulation，$A(G/G_K)=A^{G_K}$，restriction 是 inclusion，norm 是 group norm。旧定义由 $v_k$ 给 $v_K=\frac1{f_K}v_kN_{K/k}$。
+> For the modulation arising from a discrete $G$-module, $A(G/G_K)=A^{G_K}$, restriction is inclusion, and the norm is the group norm. The old definition uses $v_k$ to obtain $v_K=\frac1{f_K}v_kN_{K/k}$.
 
 > [!hint]- Hint 2
-> 新定义的自然性恰为 $v_L(a)=e_{L/K}v_K(a)$、$v_KN_{L/K}=f_{L/K}v_L$。再用 image 均为同一个 $Z$ 比较 norm-image 条件。
+> Naturality in the new definition is exactly $v_L(a)=e_{L/K}v_K(a)$ and $v_KN_{L/K}=f_{L/K}v_L$. Then compare the norm-image conditions using the common image $Z$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 先限定在 Exercise 10 所述来自离散 $G$-module $M$ 的 modulation：$A(K)=M^{G_K}$，covariant maps 是 norm，contravariant maps 是 inclusion。记 $f_K=[\widehat{\mathbb Z}:d(G_K)]$。旧定义 (4.6) 为 $v_k:A(k)\to\widehat{\mathbb Z}$，其像 $Z$ 包含 $\mathbb Z$、模每个 $n$ 与 $\mathbb Z$ 相同，并要求
+> First restrict to the modulations of Exercise 10 arising from a discrete $G$-module $M$: $A(K)=M^{G_K}$, with norm maps covariantly and inclusions contravariantly. Write $f_K=[\widehat{\mathbb Z}:d(G_K)]$. The old definition (4.6) is $v_k:A(k)\to\widehat{\mathbb Z}$. Its image $Z$ contains $\mathbb Z$ and agrees with $\mathbb Z$ modulo every $n$; it also requires
 > $$
 > v_k(N_{K/k}A(K))=f_KZ.
 > $$
-> 它定义
+> It defines
 > $$
 > v_K(a)=\frac1{f_K}v_k(N_{K/k}a),
 > $$
-> 像恰为 $Z$。
+> Its image is exactly $Z$.
 >
-> 对 $L/K$，norm 的传递性立即给
+> For $L/K$, transitivity of the norm immediately gives
 > $$
 > v_K(N_{L/K}a)=f_{L/K}v_L(a),
 > $$
-> 因为 $f_L=f_Kf_{L/K}$。对 $a\in A(K)$，group norm $N_{L/K}a=[L:K]a=e_{L/K}f_{L/K}a$（用 additive notation）；于是
+> because $f_L=f_Kf_{L/K}$. For $a\in A(K)$, the group norm is $N_{L/K}a=[L:K]a=e_{L/K}f_{L/K}a$ in additive notation. Thus
 > $$
 > v_L(a)=\frac1{f_L}v_kN_{L/k}a=e_{L/K}v_K(a).
 > $$
-> Conjugation 下的自然性来自 norm 的 conjugation compatibility 和基域上的 $G$-不动性。以上正是 $v:A\to\boldsymbol{\mathbb Z}$ 的全部自然性条件，其中 $\boldsymbol{\mathbb Z}$ 按 Exercise 15 的正确方向取 $f^*=e$、$f_*=f$。所以旧定义给出新定义。
+> Naturality under conjugation follows from compatibility of the norm with conjugation and $G$-invariance on the base field. These are exactly all the naturality conditions for $v:A\to\boldsymbol{\mathbb Z}$, where $\boldsymbol{\mathbb Z}$ has the corrected direction from Exercise 15: $f^*=e$ and $f_*=f$. Thus the old definition gives the new one.
 >
-> 反之，若有 modulation valuation，其每个 connected point 的 image 为同一 $Z$，则取基点 component $v_k$。对 $K/k$ 的 covariant map，自然性给
+> Conversely, suppose a modulation valuation has the same image $Z$ at every connected point. Take its base-point component $v_k$. Naturality for the covariant map associated with $K/k$ gives
 > $$
 > v_kN_{K/k}=f_Kv_K,
 > $$
-> 故 $v_kN_{K/k}A(K)=f_KZ$，旧定义的 norm-image 条件成立；上述公式也唯一恢复 $v_K$。两种定义在来自 modules 的子类上因而等价。
+> Hence $v_kN_{K/k}A(K)=f_KZ$, which is the norm-image condition of the old definition. The formula above also recovers $v_K$ uniquely. Thus the definitions are equivalent on the subclass arising from modules.
 >
-> **新定义更广。** Exercise 10 的 descent equivalence 表明，只有满足 Galois descent 的 modulations 才来自离散 $G$-modules。新定义不添加 descent；因此不能把任意新 henselian valuation 自动改写成某个旧 module valuation。旧定义及 normalization 的输入位置为 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §4, (4.6)–(4.7), printed pp. 288–289, PDF pp. 307–308]。
+> **The new definition is broader.** The descent equivalence in Exercise 10 shows that only modulations satisfying Galois descent arise from discrete $G$-modules. The new definition does not impose descent. Thus an arbitrary new henselian valuation cannot automatically be rewritten as an old module valuation. The old definition and normalization are in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §4, (4.6)–(4.7), printed pp. 288–289, PDF pp. 307–308].
 
 ## Related Concepts
 
@@ -69,5 +69,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 17 and the preceding valuation definition, printed p. 309, PDF p. 328]. 独立对照，明确限定 equivalence 的 Galois-descent 子类。
-- **Source issue inherited:** 所用 valuation modulation 采用 Exercise 15 中经证明的正确 $e/f$ 方向；若照印刷图反读，自然性会与 (4.7) 相反。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §6, Exercise 17 and the preceding valuation definition, printed p. 309, PDF p. 328]. Independent comparison, with equivalence explicitly restricted to the subclass satisfying Galois descent.
+- **Inherited source issue:** The valuation modulation uses the corrected direction of $e/f$ proved in Exercise 15. Reading the printed diagram in the reversed direction would make naturality contradict (4.7).

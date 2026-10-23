@@ -3,7 +3,6 @@ title: Colimits
 aliases:
   - Colimit
   - Categorical Colimits
-  - 余极限
 topic: module-theory
 tags:
   - concept

@@ -22,19 +22,19 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 商群紧且 Hausdorff。需证明商单位元有开正规子群基。
+> The quotient group is compact and Hausdorff. Show that its identity has a basis of open normal subgroups.
 
 > [!hint]- Hint 2
-> 若 $O$ 为包含 $H$ 的开集，取开正规 $N\subseteq O$；则 $HN/H$ 是商中的开正规子群，并包含在给定商邻域中。
+> If $O$ is an open set containing $H$, take an open normal subgroup $N\subseteq O$. Then $HN/H$ is an open normal subgroup of the quotient contained in the prescribed quotient neighborhood.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 令 $q:G\to G/H$ 为商映射。连续像保持紧性，所以商紧；闭正规子群商为 Hausdorff：若 $g\notin H$，闭性及乘法连续性给出小邻域把 $gH$ 与 $H$ 分开，再平移即可分离任意不同陪集。
+> Let $q:G\to G/H$ be the quotient map. A continuous image of a compact space is compact, so the quotient is compact. The quotient by a closed normal subgroup is Hausdorff: if $g\notin H$, closedness and continuity of multiplication provide small neighborhoods separating $gH$ from $H$, and translation then separates any two distinct cosets.
 >
-> 若 $W$ 是商单位元的邻域，则 $q^{-1}(W)$ 是包含 $H$ 的邻域。选 $G$ 的开正规基本子群 $N\subseteq q^{-1}(W)$。由于 $q^{-1}(W)$ 是 $H$-饱和的，$HN\subseteq q^{-1}(W)$。$HN$ 是正规子群，并因包含开子群 $N$ 而开，故 $HN/H=q(N)$ 为商中的开正规子群。这里商映射开，因为 $q^{-1}(q(U))=UH$ 是开集的平移并。
+> If $W$ is a neighborhood of the quotient identity, then $q^{-1}(W)$ is a neighborhood containing $H$. Choose a basic open normal subgroup $N\subseteq q^{-1}(W)$ of $G$. Since $q^{-1}(W)$ is $H$-saturated, $HN\subseteq q^{-1}(W)$. The subgroup $HN$ is normal and is open because it contains the open subgroup $N$. Hence $HN/H=q(N)$ is an open normal subgroup of the quotient. Here the quotient map is open because $q^{-1}(q(U))=UH$ is a union of translates of an open set.
 >
-> 因此 $G/H$ 为紧 Hausdorff 群且具有开正规邻域基，符合本节 profinite 群定义。
+> Thus $G/H$ is a compact Hausdorff group with a neighborhood basis of open normal subgroups, as required by the definition of a profinite group used in this section.
 
 ## Related Concepts
 
@@ -43,5 +43,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §1, Exercise 4, printed p. 265, PDF p. 284]. 独立商拓扑证明。
-- **Boundary:** $H$ 的闭性必要；非闭正规子群的商可能不是 Hausdorff。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §1, Exercise 4, printed p. 265, PDF p. 284]. An independent proof using the quotient topology.
+- **Boundary:** Closedness of $H$ is essential: the quotient by a nonclosed normal subgroup need not be Hausdorff.

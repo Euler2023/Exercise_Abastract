@@ -5,7 +5,7 @@ aliases:
   - Inverse Limits
   - Colimits and Projective Limits
   - Directed Colimits
-  - 有向直极限
+  - Directed Colimit
 topic: module-theory
 tags:
   - concept

@@ -4,7 +4,7 @@ This repository is an Obsidian vault for organizing abstract algebra and related
 
 ## 1. Core Principles
 
-- Communicate with the user in Chinese by default. Match the language and style of neighboring notes; retain standard English mathematical terminology when it prevents ambiguity.
+- Communicate with the user in Chinese by default. Write mathematical vault notes in English, including exercise statements, hints, solutions, concept explanations, source issues, link labels, and aliases. Existing mixed-language notes do not establish a language precedent. Preserve explicitly requested Chinese deliverables and exact quoted application commands.
 - The user's explicit instructions in the current turn override this file. If the user changes the classification policy, update the entire active batch instead of mechanically following an earlier plan.
 - Before editing, inspect nearby notes, templates, topic hubs, trackers, and Git status. Reuse the existing structure.
 - Preserve all existing user changes. Do not overwrite, revert, or opportunistically clean up unrelated work.
@@ -172,6 +172,7 @@ Before delivery, verify at least:
 - no obsolete paths, old numbers, or pre-move files remain;
 - display-math delimiters such as `$$` are balanced;
 - all formulas use Obsidian `$...$` or `$$...$$` delimiters, with no LaTeX document delimiters `\(...\)` or `\[...\]` remaining;
+- exercise and concept notes contain no residual Chinese prose, headings, callout labels, aliases, or formula annotations; check the entire files, not only the active textbook batch;
 - the problem statement, notation, and page anchors match the PDF;
 - external proof inputs and source ambiguities are explicitly labeled;
 - new exercises are discoverable by the Study Progress tag filter;

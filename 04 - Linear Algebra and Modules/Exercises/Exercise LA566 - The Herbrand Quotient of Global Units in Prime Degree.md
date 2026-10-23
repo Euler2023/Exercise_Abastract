@@ -22,43 +22,43 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 对有限生成交换群 $B$，$q_{0,p}(B)=p^{\operatorname{rank}B}$，有限挠部分的 kernel/cokernel 贡献相消。
+> For a finitely generated abelian group $B$, one has $q_{0,p}(B)=p^{\operatorname{rank}B}$. The kernel and cokernel contributions from its finite torsion subgroup cancel.
 
 > [!hint]- Hint 2
-> 用 Dirichlet 单位定理：$\operatorname{rank}\mathcal O_F^\times=r_F+s_F-1$。固定单位为 $\mathcal O_K^\times$。
+> Use Dirichlet's unit theorem: $\operatorname{rank}\mathcal O_F^\times=r_F+s_F-1$. The fixed units are $\mathcal O_K^\times$.
 
 > [!hint]- Hint 3
-> 奇素数次数时无 real-to-complex ramification；次数 $2$ 时令 $t$ 为变复的实素处数。
+> In odd prime degree, there is no real-to-complex ramification. In degree $2$, let $t$ be the number of real places that become complex.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 按 $\mathcal O_L$ 的数域整数环含义，设 $p=[L:K]$，$U_F=\mathcal O_F^\times$，$m_F=r_F+s_F$ 为无穷素处数。Dirichlet 单位定理给出 $U_F\simeq\mu(F)\times\mathbb Z^{m_F-1}$；源书对单位格的陈述见 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.11), printed p. 191, PDF p. 210]。
+> Interpret $\mathcal O_L$ as rings of integers of number fields. Set $p=[L:K]$ and $U_F=\mathcal O_F^\times$, and let $m_F=r_F+s_F$ denote the numbers of infinite places. Dirichlet's unit theorem gives $U_F\simeq\mu(F)\times\mathbb Z^{m_F-1}$. The book's unit lattice statement is in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.11), printed p. 191, PDF p. 210].
 >
-> 有限交换群 $T$ 的 $p$-乘法核与余核阶相同，因为 $\#T=\#T[p]\,\#pT$。所以
+> On a finite abelian group $T$, multiplication by $p$ has kernel and cokernel of the same order, since $\#T=\#T[p]\,\#pT$. Thus
 > $$
 > q_{0,p}(U_F)=p^{m_F-1}.
 > $$
-> 又 $U_L^G=U_K$：不动元素在 $K$ 中，而整性及逆元整性等价于在 $\mathcal O_K$ 中为单位。Exercise 3 因而给出
+> Also, $U_L^G=U_K$: a fixed element lies in $K$, and integrality of it and its inverse is equivalent to being a unit in $\mathcal O_K$. Exercise 3 therefore gives
 > $$
 > h(G,U_L)^{p-1}=p^{p(m_K-1)-(m_L-1)}.
 > $$
 >
-> 若 $p$ 奇，则一个实处若变复，其局部分解群阶为 $2$，不可能整除奇数 $p$；因此每个无穷处都产生 $p$ 个同类型处，$m_L=pm_K$。代入得到 $h(G,U_L)^{p-1}=p^{-(p-1)}$，Herbrand quotient 为正有理数，所以
+> If $p$ is odd, a real place becoming complex would have local decomposition group of order $2$, which cannot divide the odd number $p$. Thus each infinite place gives $p$ places of the same type, and $m_L=pm_K$. Substitution gives $h(G,U_L)^{p-1}=p^{-(p-1)}$. Since the Herbrand quotient is a positive rational number,
 > $$
 > h(G,U_L)=1/p.
 > $$
-> 若 $p=2$，设 $t$ 为 $K$ 中在 $L$ 中变复的实处数。每个这类处只产生一个复处，而其余无穷处产生两个，故 $m_L=2m_K-t$，得到
+> If $p=2$, let $t$ be the number of real places of $K$ that become complex in $L$. Each such place gives just one complex place, while every other infinite place gives two. Hence $m_L=2m_K-t$, giving
 > $$
 > h(G,U_L)=2^{t-1}.
 > $$
-> 统一写为
+> The two cases can be written uniformly as
 > $$
 > h(G,U_L)=\frac{\prod_{v\mid\infty}[L_w:K_v]}{[L:K]},
 > $$
-> 其中每个 $v$ 选任一 $w\mid v$；只有 real-to-complex 的局部次数贡献因子 $2$。
+> where for each $v$ we choose any $w\mid v$. Only the real-to-complex local degrees contribute a factor of $2$.
 >
-> 核对：$\mathbb Q(i)/\mathbb Q$ 有 $t=1$，单位群有限，其 Herbrand quotient 为 $1$；实二次扩张有 $t=0$，结果为 $1/2$。
+> As checks, $\mathbb Q(i)/\mathbb Q$ has $t=1$ and a finite unit group, so its Herbrand quotient is $1$. For a real quadratic extension, $t=0$ and the result is $1/2$.
 
 ## Related Concepts
 
@@ -68,5 +68,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 4, printed p. 315, PDF p. 334]. 独立由前题公式与单位秩计算。
-- **Scope:** 这里解释为数域的全局单位群。若 $L/K$ 指非阿基米德 local fields，则单位群不是此有限生成离散群，不能套用 Dirichlet 秩；local-unit Herbrand quotient 需另算，通常为 $1$。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 4, printed p. 315, PDF p. 334]. Independent calculation from the preceding formula and the unit ranks.
+- **Scope:** The groups here are global unit groups of number fields. If $L/K$ denotes nonarchimedean local fields, the unit groups are not the finitely generated discrete groups used here, and Dirichlet's rank formula does not apply. The local-unit Herbrand quotient requires a separate calculation and is usually $1$.

@@ -33,10 +33,10 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 设 $E=\mathcal O_K^\times$，取自由商 $E/\mu(K)\cong\mathbb Z^r$ 的一组基。令 $B\in M_{r,t}(\mathbb Z)$ 的列为各 $\epsilon_i$ 在该基的坐标；独立性说 $B$ 的列在 $\mathbb Q$ 上独立。
-> 给任意 $n\ge1$，选整数 $a_i\equiv x_i\pmod{2n\widehat{\mathbb Z}}$。从假设得 $u=\prod_i\epsilon_i^{a_i}$ 在每个有限 $K_v$ 中为 $2n$ 次幂，因为 $a_i-x_i=2ny_i$ 且局部有限单位群上可连续取幂。VI.§1 Exercise2 应用于指数 $2n$，得到 $u\in K^{\times n}$。若 $u=b^n$，则所有有限赋值 $v(b)=v(u)/n=0$，故 $b\in E$，从而 $Ba\in n\mathbb Z^r$。
-> 于是 $Bx\equiv0\pmod n$ 对所有 $n$ 成立，$Bx=0$ 于 $\widehat{\mathbb Z}^r$。取有理左逆并清分母，存在整数矩阵 $C$ 和非零整数 $d$ 使 $CB=dI_t$，故 $dx=0$。$\widehat{\mathbb Z}=\prod_\ell\mathbb Z_\ell$ 无扭，故 $x=0$。
+> [!success]- Independent derivation
+> Set $E=\mathcal O_K^\times$ and choose a basis of the free quotient $E/\mu(K)\cong\mathbb Z^r$. Let the columns of $B\in M_{r,t}(\mathbb Z)$ be the coordinates of the $\epsilon_i$ in this basis. Independence means that the columns of $B$ are linearly independent over $\mathbb Q$.
+> Given any $n\ge1$, choose integers $a_i\equiv x_i\pmod{2n\widehat{\mathbb Z}}$. The hypothesis implies that $u=\prod_i\epsilon_i^{a_i}$ is a $2n$-th power in every finite completion $K_v$, because $a_i-x_i=2ny_i$ and exponentiation extends continuously on the unit group at a finite place. Applying VI.§1 Exercise 2 with exponent $2n$ gives $u\in K^{\times n}$. If $u=b^n$, then every finite valuation satisfies $v(b)=v(u)/n=0$. Thus $b\in E$ and therefore $Ba\in n\mathbb Z^r$.
+> Thus $Bx\equiv0\pmod n$ for every $n$, so $Bx=0$ in $\widehat{\mathbb Z}^r$. Take a rational left inverse and clear denominators. There are an integer matrix $C$ and a nonzero integer $d$ such that $CB=dI_t$, hence $dx=0$. Since $\widehat{\mathbb Z}=\prod_\ell\mathbb Z_\ell$ is torsion-free, $x=0$.
 
 ## Related Concepts
 
@@ -48,4 +48,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 页面图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 4, printed p. 367, PDF p. 386]。解答为本库独立推导，引用的输入不等于原书已解本题。这里“independent”指模根单位后的乘法独立；并不假定这些单位本身已经构成全单位群的一组基。
+The statement was checked against a 200 dpi image of the original page [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 4, printed p. 367, PDF p. 386]. The solution is an independent derivation in this vault; citing inputs does not mean that the book solves this exercise. Here independent means multiplicatively independent modulo roots of unity. The given units are not assumed already to form a basis of the full unit group.

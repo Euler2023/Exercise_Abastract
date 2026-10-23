@@ -3,7 +3,6 @@ title: Irreducible Polynomials
 aliases:
   - Irreducible Polynomial
   - Polynomial Irreducibility
-  - 不可约多项式
 topic: ring-theory
 tags:
   - concept

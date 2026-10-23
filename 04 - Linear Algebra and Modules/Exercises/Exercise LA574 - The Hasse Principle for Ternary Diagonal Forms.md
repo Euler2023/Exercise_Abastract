@@ -24,7 +24,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Use the preceding exercise locally to make $z\ne0$, divide by $z^2$, and reduce to the preceding norm equation.
 
 > [!hint]- Stronger hint
@@ -32,13 +32,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 设 $K$ 为数域。全局非平凡零点显然给每个局部非平凡零点。反向，假设每个 $K_v$ 中各有非平凡零点。$K_v$ 特征 $0$、元素多于五，且 $a,b,c$ 非零；上一题修正版给一个 $z\ne0$ 的局部零点。令 $u=x/z$，$w=y/z$，得
+> [!success]- Independent derivation
+> Let $K$ be a number field. A nontrivial global zero gives a nontrivial zero in every completion. Conversely, suppose there is a nontrivial zero in every $K_v$. The field $K_v$ has characteristic $0$ and more than five elements, and $a,b,c$ are nonzero. The corrected version of the preceding exercise gives a local zero with $z\ne0$. Set $u=x/z$ and $w=y/z$. Then
 > $$
 > u^2-\left(-\frac ba\right)w^2=-\frac ca
 > $$
-> 处处局部可解。VI.§4 Exercise3 的二次范数 Hasse 原理给 $u,w\in K$ 的全局解。于是 $(u,w,1)$ 是原三元形式的非平凡全局零点。
-> 这里只证明题目的三元情形；原书附带的任意维数 Minkowski–Hasse 定理仍需其指明的额外代数归纳，不把该附带陈述算成本题已证明。
+> is solvable in every completion. The Hasse principle for quadratic norms in VI.§4 Exercise 3 gives a global solution $u,w\in K$. Hence $(u,w,1)$ is a nontrivial global zero of the original ternary form.
+> This proves only the ternary case requested in the exercise. The accompanying Minkowski–Hasse theorem in arbitrary dimension still requires the additional algebraic induction indicated by the book; that accompanying statement is not counted as proved here.
 
 ## Related Concepts
 
@@ -49,4 +49,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 5, printed p.385, PDF p.404]。解答为独立推导。
+The statement was checked against the original page image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §4, Exercise 5, printed p.385, PDF p.404]. The solution is an independent derivation.

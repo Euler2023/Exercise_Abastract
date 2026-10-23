@@ -26,27 +26,27 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 固定一个底层微素点及其本原代表 $s$。在有限 Galois 层，上方微素点由 $\overline{\langle s\rangle}$ 在有限商的陪集表示描述。
+> Fix a microprime of the base field and a primitive representative $s$. At a finite Galois level, the microprimes above it are described by the coset representation of $\overline{\langle s\rangle}$ in the finite quotient.
 
 > [!hint]- Hint 2
-> 取所有有限层的逆极限，得到 $G/\overline{\langle s\rangle}$；其点可等价解释为实际的共轭元素，而不再取共轭类。
+> Take the inverse limit over all finite levels to obtain $G/\overline{\langle s\rangle}$. Its points may equivalently be interpreted as actual conjugate elements, rather than conjugacy classes.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 保留前两题关于闭交换子群的假设。对底层微素点 $\mathfrak p=[s]_G$，令 $C=\overline{\langle s\rangle}=C_G(s)$。有限 Galois 层 $L_\alpha/k$ 对应开正规 $H_\alpha$。前题给出纤维
+> Retain the hypothesis on closed abelian subgroups from the preceding two exercises. For a base microprime $\mathfrak p=[s]_G$, put $C=\overline{\langle s\rangle}=C_G(s)$. A finite Galois level $L_\alpha/k$ corresponds to an open normal subgroup $H_\alpha$. The preceding exercise identifies the fiber as
 > $$
 > \operatorname{spec}(L_\alpha)_{\mathfrak p}\simeq H_\alpha\backslash G/C.
 > $$
-> 所有 $H_\alpha$ 的交为 $1$。紧性使
+> The intersection of all $H_\alpha$ is $1$. Compactness gives
 > $$
 > \varprojlim_\alpha H_\alpha\backslash G/C\simeq G/C:
 > $$
-> 相容陪集纤维形成紧闭集合的有限交族，给出代表元；若两个代表在全部有限商中相同，则它们之差属于闭子群 $C$，故给同一点。
+> The compatible coset fibers form a family of compact closed sets with the finite intersection property, producing a representative. If two representatives agree in every finite quotient, their quotient belongs to the closed subgroup $C$, so they determine the same point.
 >
-> 映射 $gC\mapsto gsg^{-1}$ 为双射到 $s$ 的实际共轭元素集合：单射恰由 $C=C_G(s)$ 保证。因此将所有底层微素点的纤维并起来，$\operatorname{spec}(\bar k)$ 可识别为 $G$ 中所有本原 Frobenius **元素本身**，而 $\operatorname{spec}(k)$ 只记它们的共轭类。等价地，每一点对应其实际嵌入 $G$ 的带正整数度生成元的最大 procyclic 子群；该生成元由 $d$ 唯一确定。
+> The map $gC\mapsto gsg^{-1}$ is a bijection onto the set of actual conjugates of $s$: injectivity follows precisely from $C=C_G(s)$. Taking the union of the fibers over all base microprimes thus identifies $\operatorname{spec}(\bar k)$ with the primitive Frobenius **elements themselves** in $G$, whereas $\operatorname{spec}(k)$ records only their conjugacy classes. Equivalently, each point corresponds to a maximal procyclic subgroup with its actual embedding in $G$ and a generator of positive integral degree; that generator is uniquely determined by $d$.
 >
-> 这并不是把有限层定义机械应用到平凡的 $G_{\bar k}$：对无限层，题面已经改用逆极限定义，所保留的是全部有限层兼容的“位置”。
+> This does not apply the finite-level definition mechanically to the trivial group $G_{\bar k}$. At an infinite level, the statement instead uses an inverse-limit definition, retaining the compatible positions at all finite levels.
 
 ## Related Concepts
 
@@ -58,4 +58,4 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §4, Exercise 3, printed p. 290, PDF p. 309]. 独立逐纤维逆极限计算；一般无限 $L$ 的定义由有限层的组合相容性保证良定义。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §4, Exercise 3, printed p. 290, PDF p. 309]. An independent fiberwise inverse-limit calculation. For a general infinite $L$, well-definedness follows from compatibility of the finite-level constructions.

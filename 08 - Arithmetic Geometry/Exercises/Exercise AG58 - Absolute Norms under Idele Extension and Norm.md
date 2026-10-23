@@ -27,7 +27,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Use normalized local absolute values: $|x|_w=|x|_v^{[L_w:K_v]}$ for $x\in K_v$, and $|N_{L_w/K_v}y|_v=|y|_w$.
 
 > [!hint]- Stronger hint
@@ -35,20 +35,20 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 采用数域乘积公式的标准绝对值，有限位置为 $|x|_\mathfrak p=(\#\kappa_\mathfrak p)^{-v_\mathfrak p(x)}$，复位置为通常复模平方。局部扩张公式给
+> [!success]- Independent derivation
+> Use the standard absolute values for the number-field product formula: at finite places, $|x|_\mathfrak p=(\#\kappa_\mathfrak p)^{-v_\mathfrak p(x)}$, and at complex places, use the square of the usual complex modulus. The local extension formula gives
 > $$
 > \prod_{w\mid v}|\alpha_v|_w
 > =|\alpha_v|_v^{\sum_{w\mid v}[L_w:K_v]}
 > =|\alpha_v|_v^{[L:K]}.
 > $$
-> 对 $v$ 连乘即第一式。第二式用局部乘积范数定义：
+> Taking the product over $v$ gives the first identity. For the second, use the definition by products of local norms:
 > $$
 > |(N_{L/K}\alpha)_v|_v
 > =\prod_{w\mid v}|N_{L_w/K_v}\alpha_w|_v
 > =\prod_{w\mid v}|\alpha_w|_w.
 > $$
-> 再对全部位置连乘即可。只有有限多个有限位置的因子不为 $1$，所以这些乘积合法。
+> Now take the product over all places. Only finitely many finite places have factors different from $1$, so these products are well defined.
 
 ## Related Concepts
 
@@ -59,4 +59,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 2, printed p.373, PDF p.392]。解答为独立推导。
+The statement was checked against images of the original book. [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §2, Exercise 2, printed p.373, PDF p.392]. The solution is an independent derivation.

@@ -29,23 +29,23 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 本题沿用前一题的域同态 $\tau:K\to L$。对 $a\in K^\times$，比较 $\tau^*\operatorname{div}_K(a)$ 与 $\operatorname{div}_L(\tau a)$ 的系数。
+> Use the field homomorphism $\tau:K\to L$ from the preceding exercise. For $a\in K^\times$, compare coefficients in $\tau^*\operatorname{div}_K(a)$ and $\operatorname{div}_L(\tau a)$.
 
 > [!hint]- Hint 2
-> 有限处 $v_{\mathfrak P}(\tau a)=e_{\mathfrak P\mid\mathfrak p}v_{\mathfrak p}(a)$；无穷处本书的 $e$ 等于 $1$，并且同一嵌入值的通常模不变。
+> At finite places, $v_{\mathfrak P}(\tau a)=e_{\mathfrak P\mid\mathfrak p}v_{\mathfrak p}(a)$. At infinite places the book takes $e=1$, and the usual modulus of the same embedded value is unchanged.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 沿用 Exercise 4 的 $\tau:K\hookrightarrow L$。对每个有限素处，分歧指数是正整数，所以 pullback 的有限系数仍为整数。一个底域素处上方只有有限多个素处，原有限支撑因而仍为有限支撑；无穷处实系数也允许。因此题设公式首先定义了 replete 除子群间的加法同态。
+> Retain $\tau:K\hookrightarrow L$ from Exercise 4. At every finite place the ramification index is a positive integer, so the finite coefficients of the pullback remain integers. There are finitely many places above each base-field place, so finite support remains finite; real coefficients are allowed at infinite places. Thus the formula first defines an additive homomorphism between the replete divisor groups.
 >
-> 设 $a\in K^\times$。对有限处 $\mathfrak P\mid\mathfrak p$，归一离散赋值的延拓公式给出
+> Let $a\in K^\times$. At a finite place $\mathfrak P\mid\mathfrak p$, the extension formula for normalized discrete valuations gives
 > $$
 > v_{\mathfrak P}(\tau a)=e_{\mathfrak P\mid\mathfrak p}v_{\mathfrak p}(a).
 > $$
-> 对无穷处，$v_{\mathfrak p}(a)=-\log|\sigma(a)|$；若 $\widetilde\sigma:L\to\mathbb C$ 延拓 $\sigma\circ\tau^{-1}$，则 $|\widetilde\sigma(\tau a)|=|\sigma(a)|$。本书约定无穷处 $e_{\mathfrak P\mid\mathfrak p}=1$，故上式也在无穷处成立。这是本节 (1.2)(iii) 的具体应用 [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, printed p. 184, PDF p. 203]。
+> At an infinite place, $v_{\mathfrak p}(a)=-\log|\sigma(a)|$. If $\widetilde\sigma:L\to\mathbb C$ extends $\sigma\circ\tau^{-1}$, then $|\widetilde\sigma(\tau a)|=|\sigma(a)|$. Since the book takes $e_{\mathfrak P\mid\mathfrak p}=1$ at infinity, the same formula holds there. This applies (1.2)(iii) of this section [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, printed p. 184, PDF p. 203].
 >
-> 逐处代入得到
+> Substitution at each place gives
 > $$
 > \begin{aligned}
 > \tau^*(\operatorname{div}_K a)
@@ -54,7 +54,7 @@ created: '2026-10-23'
 > =\operatorname{div}_L(\tau a).
 > \end{aligned}
 > $$
-> 主除子因此被映为主除子，$[D]\mapsto[\tau^*D]$ 在商群上良定义并保持加法。
+> Principal divisors therefore map to principal divisors, so $[D]\mapsto[\tau^*D]$ is well defined on the quotient and preserves addition.
 
 ## Related Concepts
 
@@ -65,5 +65,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 5, printed p. 194, PDF p. 213]. 独立推导；题面本身承接 Exercise 4 的 $\tau$，本笔记已将该假设在解答开头补明。
-- **Convention:** 在本书无穷处定义下，$\mathbb C/\mathbb R$ 对 pullback 的系数为 $e=1$；次数 $2$ 出现在 pushforward 的 $f$ 中。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 5, printed p. 194, PDF p. 213]. An independent derivation. The statement inherits $\tau$ from Exercise 4; this hypothesis is made explicit at the start of the solution.
+- **Convention:** Under the book's definitions at infinity, the pullback coefficient for $\mathbb C/\mathbb R$ is $e=1$. The degree 2 occurs in the pushforward coefficient $f$.

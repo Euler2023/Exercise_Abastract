@@ -3,7 +3,6 @@ title: Symplectic Groups
 aliases:
   - Real Symplectic Group
   - SP2n
-  - 辛群
 topic: linear-algebra
 tags:
   - concept

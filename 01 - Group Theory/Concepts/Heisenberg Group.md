@@ -3,7 +3,6 @@ title: Heisenberg Group
 aliases:
   - Heisenberg Groups
   - Real Heisenberg Group
-  - 海森堡群
 topic: group-theory
 tags:
   - concept
@@ -24,7 +23,9 @@ status: not-started
 
 > [!info] Definition (Three-Dimensional Real Heisenberg Group)
 > The **three-dimensional real Heisenberg group** is
-> $$H=\left\{h(a,b,c)=\begin{bmatrix}1&a&b\\0&1&c\\0&0&1\end{bmatrix}:a,b,c\in\mathbb R\right\}$$
+> $$
+> H=\left\{h(a,b,c)=\begin{bmatrix}1&a&b\\0&1&c\\0&0&1\end{bmatrix}:a,b,c\in\mathbb R\right\}
+> $$
 >
 > with matrix multiplication as its group operation.
 

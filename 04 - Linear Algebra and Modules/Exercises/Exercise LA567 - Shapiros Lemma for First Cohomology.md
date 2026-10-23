@@ -22,49 +22,49 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 本节的 Ind 是所有满足 $f(xh)=f(x)^h$ 的函数，实质是 coinduction，未要求有限支撑。评价 $f\mapsto f(1)$ 诱导 Shapiro 映射。
+> In this section, Ind consists of all functions satisfying $f(xh)=f(x)^h$, with no finite-support condition; it is coinduction. Evaluation $f\mapsto f(1)$ induces the Shapiro map.
 
 > [!hint]- Hint 2
-> 选 $G/\mathfrak g$ 的代表 $r(x)$，写 $x=r(x)h(x)$。对 cocycle $c:\mathfrak g\to A$，令 $t(\sigma,x)=r(\sigma x)^{-1}\sigma r(x)$。
+> Choose representatives $r(x)$ of $G/\mathfrak g$ and write $x=r(x)h(x)$. For a cocycle $c:\mathfrak g\to A$, set $t(\sigma,x)=r(\sigma x)^{-1}\sigma r(x)$.
 
 > [!hint]- Hint 3
-> 逆构造为 $z_c(\sigma)(x)=c(t(\sigma,x))^{h(x)}$。证明两个构造在 cohomology 上互逆，必须追踪 coboundary。
+> The inverse construction is $z_c(\sigma)(x)=c(t(\sigma,x))^{h(x)}$. To show that the two constructions are inverse on cohomology, track coboundaries as well.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 按源书本节定义，记 $I=\operatorname{Ind}_G^{\mathfrak g}(A)$，其元素是全部函数 $f:G\to A$，满足 $f(xh)=f(x)^h$；右作用为 $f^\sigma(x)=f(\sigma x)$。采用乘法的交换模块与右 cocycle 约定。
+> Following the definition in this section of the book, write $I=\operatorname{Ind}_G^{\mathfrak g}(A)$. Its elements are all functions $f:G\to A$ satisfying $f(xh)=f(x)^h$, with right action $f^\sigma(x)=f(\sigma x)$. Use multiplicative notation for the abelian modules and the right-cocycle convention.
 >
-> **1. 评价映射。** 对 $z\in Z^1(G,I)$，定义 $c(h)=z(h)(1)$。因
+> **1. Evaluation.** For $z\in Z^1(G,I)$, define $c(h)=z(h)(1)$. Since
 > $$
 > c(hk)=z(h)(k)z(k)(1)=c(h)^k c(k),
 > $$
-> 它是 $\mathfrak g$-cocycle。若 $z(\sigma)=b^{\sigma-1}$，则 $c(h)=b(h)/b(1)=b(1)^{h-1}$，所以评价诱导 $H^1(G,I)\to H^1(\mathfrak g,A)$。
+> this is a $\mathfrak g$-cocycle. If $z(\sigma)=b^{\sigma-1}$, then $c(h)=b(h)/b(1)=b(1)^{h-1}$, so evaluation induces $H^1(G,I)\to H^1(\mathfrak g,A)$.
 >
-> **2. 逆 cocycle 构造。** 为每个左陪集选代表 $r$，含 $1$，写 $x=r(x)h(x)$。令
+> **2. Inverse construction of cocycles.** Choose a representative $r$ for every left coset, including $1$, and write $x=r(x)h(x)$. Set
 > $$
 > t(\sigma,x)=r(\sigma x)^{-1}\sigma r(x)\in\mathfrak g,\qquad
 > z_c(\sigma)(x)=c(t(\sigma,x))^{h(x)}.
 > $$
-> 因 $r(xh)=r(x)$、$h(xh)=h(x)h$，$z_c(\sigma)$ 满足 induced-function 关系。又
+> Since $r(xh)=r(x)$ and $h(xh)=h(x)h$, the function $z_c(\sigma)$ satisfies the induced-function relation. Also,
 > $$
 > t(\sigma\tau,x)=t(\sigma,\tau x)t(\tau,x),\qquad
 > h(\tau x)=t(\tau,x)h(x).
 > $$
-> 代入 $c$ 的 cocycle 式，得到 $z_c(\sigma\tau)(x)=z_c(\sigma)(\tau x)z_c(\tau)(x)$，即 $z_c$ 为 $G$-cocycle。对 $h\in\mathfrak g$、$x=1$，有 $t(h,1)=h$，故评价恢复 $c$。
+> Substituting the cocycle identity for $c$ gives $z_c(\sigma\tau)(x)=z_c(\sigma)(\tau x)z_c(\tau)(x)$, so $z_c$ is a $G$-cocycle. For $h\in\mathfrak g$ and $x=1$, we have $t(h,1)=h$, so evaluation recovers $c$.
 >
-> 若 $c(h)=a^{h-1}$，取 induced 函数 $b(x)=a^{h(x)}$，则
+> If $c(h)=a^{h-1}$, take the induced function $b(x)=a^{h(x)}$. Then
 > $$
 > z_c(\sigma)(x)=a^{h(\sigma x)}/a^{h(x)}=b^{\sigma-1}(x).
 > $$
-> 因此逆构造在 cohomology 上良定义。
+> Thus the inverse construction is well-defined on cohomology.
 >
-> **3. 评价的核为零。** 对一般 $z$，定义 $b(r)=z(r)(1)$，再按 induced 关系延拓 $b(rh)=b(r)^h$。以 $z'=z/b^{\sigma-1}$ 归一化，则 $z'(r)(1)=1$，并且评价到 $\mathfrak g$ 的 cocycle 不变。写 $x=r(x)h(x)$，cocycle 式给 $z'(x)(1)=c(h(x))$。因此
+> **3. Evaluation has zero kernel.** For a general $z$, define $b(r)=z(r)(1)$ and extend by the induced relation $b(rh)=b(r)^h$. Normalize by $z'=z/b^{\sigma-1}$. Then $z'(r)(1)=1$, and the cocycle obtained by evaluation on $\mathfrak g$ is unchanged. Write $x=r(x)h(x)$; the cocycle identity gives $z'(x)(1)=c(h(x))$. Therefore
 > $$
 > z'(\sigma)(x)=\frac{z'(\sigma x)(1)}{z'(x)(1)}
 > =\frac{c(h(\sigma x))}{c(h(x))}=c(t(\sigma,x))^{h(x)}=z_c(\sigma)(x).
 > $$
-> 所以每个类都等于其评价再逆构造的类，两个映射互逆。所得同构不依赖代表元选择，因为评价映射本身没有选择。
+> Every class therefore equals the class obtained by evaluation followed by the inverse construction, so the maps are inverse. The resulting isomorphism is independent of representatives, since evaluation itself involves no choices.
 
 ## Related Concepts
 
@@ -73,5 +73,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 5, printed p. 315, PDF p. 334]. 独立显式 cocycle 与 coboundary 证明。Ind 的定义在本节 printed pp. 312–313 / PDF pp. 331–332；它是全函数 coinduction，不能误换成无限指数时的有限支撑 induction。
-- **Boundary:** 此证明实际不要求 $\mathfrak g$ 正规；题面较强的正规假设当然足够。这里讨论抽象群；若转为连续 profinite cohomology，需连同 continuous coinduction 的拓扑条件一起重述。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 5, printed p. 315, PDF p. 334]. Independent proof with explicit cocycles and coboundaries. Ind is defined on printed pp. 312–313 / PDF pp. 331–332 of this section as coinduction using all functions. It must not be replaced by finite-support induction when the index is infinite.
+- **Boundary:** The proof does not actually require $\mathfrak g$ to be normal; the stronger normality assumption in the problem is certainly sufficient. These are abstract groups. A version for continuous profinite cohomology must also specify the topological hypotheses for continuous coinduction.

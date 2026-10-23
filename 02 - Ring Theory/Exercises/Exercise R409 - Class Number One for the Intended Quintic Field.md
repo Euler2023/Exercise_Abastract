@@ -29,7 +29,7 @@ proof_status: source-ambiguity
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Compute the Minkowski bound for the degree-five field $k$. Check whether the hint can apply to the degree-120 splitting field $K$.
 
 > [!hint]- Stronger hint
@@ -37,17 +37,17 @@ proof_status: source-ambiguity
 
 ## Solution
 
-> [!success]- 独立推导
-> **Source issue.** 原题印大写 $K$，而提示明确使用小写 $k$ 的整数环和五次域的 Minkowski 界。以下证明提示所指的修正版 $h_k=1$；不能据此声称已经证明度 $120$ 的分裂域 $K$ 的类数。
-> 令 $r=5^{-1/4}$。$f'=5X^4-1$ 的实临界点为 $\pm r$，且 $f(-r)=1+4r/5>0$，$f(r)=1-4r/5>0$。所以五次多项式只有一个实根，$k$ 的签名为 $(r_1,r_2)=(1,2)$。
-> Minkowski 理想类界给每类一个整理想 $\mathfrak a$，满足
+> [!success]- Independent derivation
+> **Source issue.** The printed problem uses uppercase $K$, while the hint explicitly uses the integer ring of lowercase $k$ and the Minkowski bound for a quintic field. We prove the intended corrected assertion $h_k=1$. This does not prove the class-number assertion for the degree-$120$ splitting field $K$.
+> Put $r=5^{-1/4}$. The real zeros of $f'=5X^4-1$ are $\pm r$, with $f(-r)=1+4r/5>0$ and $f(r)=1-4r/5>0$. The quintic therefore has exactly one real root, and the signature of $k$ is $(r_1,r_2)=(1,2)$.
+> The Minkowski ideal-class bound gives an integral ideal $\mathfrak a$ in every class with
 > $$
 > N\mathfrak a\le
 > \left(\frac4\pi\right)^2\frac{5!}{5^5}\sqrt{2869}
 > \approx3.3344<4.
 > $$
-> 因此若其范数不为 $1$，只能为 $2$ 或 $3$，而整理想的素数范数强迫它是剩余次数一的素理想。因 $\mathcal O_k=\mathbb Z[\alpha]$，这样的素理想对应 $f$ 在 $\mathbb F_2$ 或 $\mathbb F_3$ 中的根。直接代入分别所有 $2$、$3$ 个剩余类，均得非零，故不存在。这迫使 $N\mathfrak a=1$，$\mathfrak a=\mathcal O_k$，每个理想类平凡。
-> Minkowski 数值界已实际计算复核，所得 $3.3343926176$。
+> If its norm is not $1$, it must therefore be $2$ or $3$. An integral ideal of prime norm is a prime ideal of residue degree one. Since $\mathcal O_k=\mathbb Z[\alpha]$, such primes correspond to roots of $f$ in $\mathbb F_2$ or $\mathbb F_3$. Substitution into all $2$ and all $3$ residue classes gives nonzero values, so there are no such primes. Hence $N\mathfrak a=1$, $\mathfrak a=\mathcal O_k$, and every ideal class is trivial.
+> The numerical Minkowski bound was independently computed as $3.3343926176$.
 
 ## Related Concepts
 
@@ -58,6 +58,6 @@ proof_status: source-ambiguity
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 5, printed p.414, PDF p.433]。解答为独立推导。原大写 $K$ 的类数断言在本笔记中保持未证明；只有有提示支持的小写 $k$ 修正版已完成。
+The statement was checked against the original PDF rendered at 200 dpi [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 5, printed p.414, PDF p.433]. The solution is independently derived. The original assertion about the class number of uppercase $K$ remains unproved in this note; only the hint-supported corrected assertion for lowercase $k$ has been established.
 
 - **Source context:** Here $f=X^5-X+1$, $k=\mathbb Q(\alpha)$, and $K$ is its degree-$120$ splitting field from Exercises 2–4. The printed hint also begins with capital $K$ and later writes $\mathcal O_k$; both are preserved above.

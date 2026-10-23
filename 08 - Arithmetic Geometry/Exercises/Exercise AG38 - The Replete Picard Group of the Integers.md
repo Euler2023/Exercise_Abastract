@@ -22,25 +22,25 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 把任意 replete ideal 写作 $(q)\times r$，其中 $q,r>0$；$\mathbb Q$ 只有一个无穷处。
+> Write a replete ideal as $(q)\times r$ with $q,r>0$; $\mathbb Q$ has just one infinite place.
 
 > [!hint]- Hint 2
-> 其范数是 $qr$。replete principal ideal $[q]$ 的有限部分是 $(q)$，无穷部分是 $q^{-1}$，故范数等于 $1$。
+> Its norm is $qr$. The finite part of the replete principal ideal $[q]$ is $(q)$ and its infinite part is $q^{-1}$, so its norm is $1$.
 
 ## Solution
 
 > [!success]- Independent derivation
-> 这里 $\overline{\mathbb Z}$ 表示本章包含无穷处的 replete 记号，并非 $\mathbb Z$ 的整闭包。任意 $\mathbb Z$ 的非零分式理想唯一写成 $(q)=q\mathbb Z$，其中 $q\in\mathbb Q_{>0}$。因此
+> Here $\overline{\mathbb Z}$ is the chapter's replete notation, including the infinite place, not the integral closure of $\mathbb Z$. Every nonzero fractional ideal of $\mathbb Z$ is uniquely $(q)=q\mathbb Z$ with $q\in\mathbb Q_{>0}$. Hence
 > $$
 > J(\overline{\mathbb Z})=\{((q),r):q\in\mathbb Q_{>0},\ r\in\mathbb R_{>0}\},\qquad \mathfrak N((q),r)=qr.
 > $$
-> 无穷处定义 $v_\infty(a)=-\log|a|$，所以 $[a]=((|a|),|a|^{-1})$。于是 $\mathfrak N([a])=1$，范数在商群上良定义并为同态。
+> At the infinite place, $v_\infty(a)=-\log|a|$, so $[a]=((|a|),|a|^{-1})$. Thus $\mathfrak N([a])=1$, and the norm induces a well-defined homomorphism on the quotient group.
 >
-> **满射：** 对任意 $t>0$，replete ideal $((1),t)$ 的范数为 $t$。
+> **Surjectivity:** For every $t>0$, the replete ideal $((1),t)$ has norm $t$.
 >
-> **单射：** 若 $\mathfrak N((q),r)=1$，则 $r=q^{-1}$，所以 $((q),r)=[q]$，在 Picard 商群中为零类。更直接地，任意 $((q),r)$ 乘以 $[q^{-1}]$ 都化为 $((1),qr)$，故每个类恰有一个有限部分平凡的代表。
+> **Injectivity:** If $\mathfrak N((q),r)=1$, then $r=q^{-1}$, so $((q),r)=[q]$ represents the zero class in the Picard group. More directly, multiplying any $((q),r)$ by $[q^{-1}]$ reduces it to $((1),qr)$, so every class has exactly one representative with trivial finite part.
 >
-> 逆同态是 $t\mapsto[((1),t)]$。若考虑书中赋予的拓扑，它也是拓扑同构：逆映射由 $\mathbb R_{>0}\hookrightarrow J(\overline{\mathbb Z})$ 再接商映射得到，连续；范数本身连续。
+> The inverse homomorphism is $t\mapsto[((1),t)]$. With the topology used in the book, this is also a topological isomorphism: the inverse is the continuous inclusion $\mathbb R_{>0}\hookrightarrow J(\overline{\mathbb Z})$ followed by the quotient map, and the norm itself is continuous.
 
 ## Related Concepts
 
@@ -51,5 +51,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 3, printed p. 193, PDF p. 212]. 独立计算，使用本节 replete ideal、principal ideal 及范数的定义 (1.4)–(1.5)，printed pp. 185–186 / PDF pp. 204–205；没有引用本题作为输入。
-- **Notation:** 普通 $\operatorname{Pic}(\mathbb Z)$ 为平凡群；加入无穷处后才得到这里的 $\mathbb R_{>0}$。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, Exercise 3, printed p. 193, PDF p. 212]. An independent calculation using this section's definitions of replete ideals, principal ideals, and their norms in (1.4)–(1.5), printed pp. 185–186 / PDF pp. 204–205. The exercise itself is not used as an input.
+- **Notation:** The ordinary group $\operatorname{Pic}(\mathbb Z)$ is trivial. The infinite place is what produces $\mathbb R_{>0}$ here.

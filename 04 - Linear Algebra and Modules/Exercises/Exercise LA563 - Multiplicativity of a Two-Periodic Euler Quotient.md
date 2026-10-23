@@ -26,34 +26,34 @@ created: '2026-10-23'
 ## Hints
 
 > [!hint]- Hint 1
-> 应在带有两个相容端同态的短正合列上理解乘法性，且两个同调商均须有限。
+> Interpret multiplicativity on a short exact sequence equipped with two compatible endomorphisms; both homology quotients must be finite.
 
 > [!hint]- Hint 2
-> 两个交替的微分给出二周期复形；短正合复形给出循环的六项同调正合列。
+> The two alternating differentials define a two-periodic complex. A short exact sequence of complexes gives a cyclic six-term exact sequence in homology.
 
 ## Solution
 
 > [!success]- Independent derivation
-> “乘法性”的精确定义如下：设 $0\to A\to B\to C\to0$ 为交换群短正合列，三个群都带端同态 $f,g$，所有箭头与 $f,g$ 交换，且各群上 $fg=gf=0$。令
+> The precise meaning of multiplicativity is as follows. Let $0\to A\to B\to C\to0$ be a short exact sequence of abelian groups. Equip all three groups with endomorphisms $f,g$, require every arrow to commute with $f,g$, and assume $fg=gf=0$ on each group. Set
 > $$
 > H_f(X)=\ker(f:X\to X)/gX,\qquad H_g(X)=\ker(g:X\to X)/fX.
 > $$
-> 当这些群有限时，$q_{f,g}(X)=\#H_f(X)/\#H_g(X)$。结论是：若三个对象中任意两个的两项同调有限，则第三个也有限，并有 $q(B)=q(A)q(C)$。
+> When these groups are finite, $q_{f,g}(X)=\#H_f(X)/\#H_g(X)$. The assertion is that if both homology groups of any two objects are finite, then those of the third are finite as well, and $q(B)=q(A)q(C)$.
 >
-> 构造连接映射 $H_f(C)\to H_g(A)$：对 $c\in\ker f_C$ 取提升 $b\in B$，则 $fb\in A$ 且 $gfb=0$，映到 $[fb]$。换提升改变 $fA$，换代表元 $c$ 为 $c+gc'$ 时可换提升为 $b+gb'$，而 $fgb'=0$，所以映射良定义。交换 $f,g$ 得另一连接映射 $H_g(C)\to H_f(A)$。
+> Construct the connecting map $H_f(C)\to H_g(A)$. For $c\in\ker f_C$ choose a lift $b\in B$. Then $fb\in A$ and $gfb=0$, giving an element of $[fb]$. Changing the lift changes $fA$. Replacing the representative $c$ by $c+gc'$ allows the lift to be replaced by $b+gb'$, and $fgb'=0$. Thus the map is well-defined. Interchanging $f,g$ gives the other connecting map $H_g(C)\to H_f(A)$.
 >
-> 由这两个连接映射及包含/投影，得到六项循环正合列
+> Together with inclusion and projection, these two connecting maps give the cyclic six-term exact sequence
 > $$
 > H_f(A)\to H_f(B)\to H_f(C)\to H_g(A)\to H_g(B)\to H_g(C)\to H_f(A).
 > $$
-> 例如 $[c]$ 的连接像为零意味着 $fb=fa$，故 $b-a\in\ker f_B$ 提升 $c$，证明该处核等于像。若 $[a]\in H_g(A)$ 在 $H_g(B)$ 中为零，写 $a=fb$，则 $c$ 为 $b$ 的像且 $fc=0$，连接像即为 $[a]$。其余两类位置分别由投影核是 $A$ 及同样交换 $f,g$ 的论证得到。
+> For example, if the connecting image of $[c]$ is zero, then $fb=fa$, so $b-a\in\ker f_B$ lifts $c$, proving that the kernel equals the image at this term. If $[a]\in H_g(A)$ is zero in $H_g(B)$, write $a=fb$. Then $c$ is the image of $b$, with $fc=0$, and its connecting image is $[a]$. The other two types of terms follow from the fact that the kernel of projection is $A$ and from the same argument with $f,g$ interchanged.
 >
-> 有限群正合六边形中，按各箭头像的阶相乘并约去，得
+> In a six-term exact cycle of finite groups, multiplying the orders of the images of the arrows and cancelling gives
 > $$
 > \#H_f(A)\,\#H_f(C)\,\#H_g(B)
 > =\#H_f(B)\,\#H_g(A)\,\#H_g(C).
 > $$
-> 这正是 $q(B)=q(A)q(C)$；同一正合列也说明任两对象的同调有限会迫使第三个的同调有限。
+> This is exactly $q(B)=q(A)q(C)$. The same exact sequence also shows that finiteness of the homology of any two objects forces finiteness for the third.
 
 ## Related Concepts
 
@@ -62,5 +62,5 @@ created: '2026-10-23'
 
 ## Notes
 
-- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 1, printed p. 314, PDF p. 333]. 独立补明命题所作用的短正合列与有限性条件，并构造连接箭头。
-- **Boundary:** 缺少箭头与 $f,g$ 交换的条件时，没有上述复形短正合列，也就不能直接声称该 quotient 乘法。
+- **Source and proof status:** [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. IV, §7, Exercise 1, printed p. 314, PDF p. 333]. Independent specification of the short exact sequence and finiteness assumptions, with construction of the connecting arrows.
+- **Boundary:** Without commutation of the arrows with $f,g$, there is no such short exact sequence of complexes, so multiplicativity of this quotient cannot be asserted directly.

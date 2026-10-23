@@ -6,8 +6,6 @@ aliases:
   - Compact Spaces
   - Quasi-Compact Spaces
   - Quasicompactness
-  - 紧致性
-  - 拟紧性
 topic: arithmetic-geometry
 tags:
   - concept

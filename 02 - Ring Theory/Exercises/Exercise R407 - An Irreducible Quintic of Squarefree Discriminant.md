@@ -23,7 +23,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > Reduce modulo $3$ and test the three irreducible quadratics. Compute the discriminant as a resultant with the derivative.
 
 > [!hint]- Stronger hint
@@ -31,21 +31,21 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 模 $3$ 时，$f(0)=f(1)=f(2)=1$，无一次因子。$\mathbb F_3[X]$ 的首一不可约二次多项式只有
+> [!success]- Independent derivation
+> Modulo $3$, we have $f(0)=f(1)=f(2)=1$, so there is no linear factor. The only monic irreducible quadratic polynomials in $\mathbb F_3[X]$ are
 > $$
 > X^2+1,\quad X^2+X+2,\quad X^2+2X+2.
 > $$
-> $X^5-X+1$ 除以它们的余式分别为 $1,X+1,X+1$，均非零。五次多项式若可约，必有一次或二次不可约因子，故模 $3$ 不可约；Gauss 引理给其在 $\mathbb Q$ 上不可约。
-> 设 $F=X^5+aX+b$，$F'=5X^4+a$。对 $F'$ 的四个根 $\rho$，$F(\rho)=b+(4a/5)\rho$，所以
+> Dividing $X^5-X+1$ by these gives remainders $1,X+1,X+1$, all nonzero. A reducible quintic must have an irreducible factor of degree one or two. Hence the polynomial is irreducible modulo $3$, and Gauss lemma gives irreducibility over $\mathbb Q$.
+> Set $F=X^5+aX+b$, so $F'=5X^4+a$. At each of the four roots $\rho$ of $F'$, we have $F(\rho)=b+(4a/5)\rho$. Therefore
 > $$
 > \operatorname{disc}F
 > =\operatorname{Res}(F,F')
 > =5^5\prod_{\rho^4=-a/5}\left(b+\frac{4a}{5}\rho\right)
 > =5^5b^4+4^4a^5.
 > $$
-> 取 $a=-1,b=1$ 得 $3125-256=2869=19\cdot151$，两个因子均素，故判别式平方自由。
-> 已运行符号运算独立复核：三个二次余式、判别式及 $2869$ 的素因子分解均与上述手算一致。
+> Setting $a=-1,b=1$ gives $3125-256=2869=19\cdot151$. Both factors are prime, so the discriminant is squarefree.
+> Independent symbolic calculations checked the three quadratic remainders, the discriminant, and the prime factorization of $2869$, agreeing with these hand calculations.
 
 ## Related Concepts
 
@@ -58,4 +58,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已与原书 200 dpi 图像核对。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 2, printed p.413, PDF p.432]。解答为独立推导。计算仅复核这些有限代数数据；不可约性论证仍由文中的有限域因子检验给出。
+The statement was checked against the original PDF rendered at 200 dpi [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §7, Exercise 2, printed p.413, PDF p.432]. The solution is independently derived. Computation checks only these finite algebraic data; irreducibility is proved by the finite-field factor test above.

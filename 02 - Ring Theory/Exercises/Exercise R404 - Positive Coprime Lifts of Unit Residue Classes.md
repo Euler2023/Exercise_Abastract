@@ -21,7 +21,7 @@ created: '2026-10-23'
 
 ## Hints
 
-> [!hint]- 提示
+> [!hint]- Hint
 > At primes of the fixed ideal outside the modulus prescribe residue $1$; then add a sufficiently large positive rational integer in the common modulus.
 
 > [!hint]- Stronger hint
@@ -29,13 +29,13 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- 独立推导
-> 取剩余单位类 $\bar u$，固定非零整理想 $\mathfrak a$。令 $\mathfrak a_0$ 为 $\mathfrak a$ 中不整除 $\mathfrak m$ 的素因子的乘积。由中国剩余定理可取 $u_0\in\mathcal O$ 使
+> [!success]- Independent derivation
+> Let $\bar u$ be a unit residue class, and fix a nonzero integral ideal $\mathfrak a$. Let $\mathfrak a_0$ be the product of the prime divisors of $\mathfrak a$ that do not divide $\mathfrak m$. By the Chinese remainder theorem, choose $u_0\in\mathcal O$ such that
 > $$
 > u_0\equiv u\pmod{\mathfrak m},\qquad u_0\equiv1\pmod{\mathfrak a_0}.
 > $$
-> 在同时整除 $\mathfrak a$ 与 $\mathfrak m$ 的素点，$\bar u$ 为单位已保证 $u_0$ 不被该素点整除；其余整除 $\mathfrak a$ 的素点由第二条件处理。
-> 取正整数 $N\in\mathfrak m\mathfrak a_0$。对足够大的整数 $k$，$\sigma(u_0)+kN>0$ 对所有实嵌入 $\sigma$ 成立。因此 $u=u_0+kN$ 总正，保持原剩余类，且 $(u)$ 与 $\mathfrak a$ 互素。
+> At primes dividing both $\mathfrak a$ and $\mathfrak m$, the unit condition on $\bar u$ ensures that $u_0$ is not divisible by the prime. The second congruence handles all other primes dividing $\mathfrak a$.
+> Choose a positive integer $N\in\mathfrak m\mathfrak a_0$. For sufficiently large integers $k$, we have $\sigma(u_0)+kN>0$ for every real embedding $\sigma$. Thus $u=u_0+kN$ is totally positive, represents the original residue class, and has $(u)$ coprime to $\mathfrak a$.
 
 ## Related Concepts
 
@@ -47,4 +47,4 @@ created: '2026-10-23'
 
 ## Notes
 
-题面已核对原书图像。[Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 12, printed p.368, PDF p.387]。解答为独立推导。
+The statement was checked against the source image [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. VI, §1, Exercise 12, printed p.368, PDF p.387]. The solution is independently derived.
