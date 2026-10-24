@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $x\in E_\alpha$. By the definition of a span, there are eigenvectors $v_1,\ldots,v_r$ with $Av_i=\alpha v_i$ and scalars $c_1,\ldots,c_r\in k$ such that $x=\sum_i c_iv_i$. Linearity gives
 >
 > $$

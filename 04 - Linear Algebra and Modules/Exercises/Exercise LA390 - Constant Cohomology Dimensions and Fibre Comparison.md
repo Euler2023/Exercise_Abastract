@@ -52,7 +52,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\mathfrak m$ be the maximal ideal. Extend the complex by zero outside its stated degrees. Put $N=\operatorname{rank}_AK^i$, and write
 >
 > $$

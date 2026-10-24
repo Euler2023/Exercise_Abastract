@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $\mu=\min_\nu v_p(a_\nu)$, omitting zero coefficients, and put $h=p^{-\mu}f$. Let $n$ be the smallest index whose coefficient in $h$ is a unit. Then $\bar h=X^n\bar V$ in $\mathbb F_p[[X]]$, where $\bar V$ is a unit. The independently proved division theorem, Exercise II.2.8, gives $X^n=qh+r$, $\deg r<n$. Reducing modulo $p$ shows
 > $$
 > X^n=\bar q X^n\bar V+\bar r.

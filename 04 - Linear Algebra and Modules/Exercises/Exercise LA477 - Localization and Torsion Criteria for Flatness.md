@@ -43,7 +43,9 @@ The proposition is in [S2, Ch. XVI, §3, printed p. 613, PDF p. 628]. The rings 
 
 ## Solution
 
-> [!success]- Independent proofs of (i), (ii), and the corrected (iii)
+> [!success]- Solution
+> **Proof scope:** Independent proofs of (i), (ii), and the corrected (iii)
+>
 > We use the flatness criterion that $F$ is flat if and only if $F\otimes_R-$ preserves injections. All tensor products below are over the displayed commutative base ring.
 >
 > **Localization facts.** For any $R$-module $U$, there is a natural isomorphism

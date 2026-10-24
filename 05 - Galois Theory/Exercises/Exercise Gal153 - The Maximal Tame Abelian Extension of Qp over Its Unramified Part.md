@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The maximal unramified extension $T/\mathbb Q_p$ is abelian, with Galois group $\widehat{\mathbb Z}$ generated topologically by residue Frobenius. In the maximal tame Galois group, tame inertia is the pro-prime-to-$p$ cyclic group $\prod_{\ell\ne p}\mathbb Z_\ell(1)$: its character description is $\operatorname{Hom}(\mathbb Z_{(p)}/\mathbb Z,\overline{\mathbb F}_p^*)$, where $\mathbb Z_{(p)}$ here denotes rational numbers with denominator prime to $p$. A lift of Frobenius acts on this inertia by multiplication by $p$, by the residue action in II.9.1.
 >
 > Pass to the maximal abelian quotient. Conjugation becomes trivial, so every inertia element $\tau$ satisfies $\tau^{p-1}=1$. The quotient of this procyclic inertia by its $(p-1)$-st powers is cyclic of order $p-1$. Therefore $[V:T]\le p-1$, proving finiteness.

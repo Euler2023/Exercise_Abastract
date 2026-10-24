@@ -36,7 +36,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation of all positive Pell solutions
+> [!success]- Solution
+> **Proof scope:** Independent derivation of all positive Pell solutions
+>
 > **1. Model the formations.** Let $x\ge1$ be the side length of each of the thirteen original square formations, and $y\ge1$ the side length after Harold joins. Then
 > $$
 > 13x^2+1=y^2,

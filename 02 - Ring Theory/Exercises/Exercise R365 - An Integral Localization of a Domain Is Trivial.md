@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the source convention $1\in S$, $0\notin S$. Since $A$ is a domain, the canonical map $A\to A_S$ is injective and identifies $A_S$ with the subring of $\operatorname{Frac}(A)$ consisting of the fractions $a/s$.
 >
 > Fix $s\in S$. By integrality, $x=1/s$ satisfies some monic equation

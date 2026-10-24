@@ -38,7 +38,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\alpha=\sqrt[3]{2}$, $K=\mathbb Q(\alpha)$, and $R=\mathbb Z[\alpha]$. The monic cubic $T^3-2$ has no integer root: by the rational-root lemma, a rational root would be one of $\pm1,\pm2$, and none is a root. A reducible cubic over a field has a linear factor, so this polynomial is irreducible over $\mathbb Q$. Hence $[K:\mathbb Q]=3$ and
 > $$
 > R=\mathbb Z\oplus\mathbb Z\alpha\oplus\mathbb Z\alpha^2.

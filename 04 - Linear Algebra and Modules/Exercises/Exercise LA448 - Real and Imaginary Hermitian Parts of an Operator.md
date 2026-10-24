@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > The defining adjoint identity and nondegeneracy give $(X+Y)^*=X^*+Y^*$, $(cX)^*=\overline c\,X^*$, and $(X^*)^*=X$: in each case substitute the proposed adjoint into the identity and use uniqueness. Therefore
 >
 > $$

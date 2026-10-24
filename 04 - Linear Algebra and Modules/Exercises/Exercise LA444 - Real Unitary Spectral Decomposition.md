@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > In this real setting, “unitary” means orthogonal: $U$ preserves the given positive definite form. It is injective because $\langle Uv,Uv\rangle=\langle v,v\rangle$, and hence invertible in finite dimension.
 >
 > Complexify its matrix. The fundamental theorem of algebra supplies a nonzero complex eigenvector $z=x+iy$ with eigenvalue $\lambda=a+ib$. Comparing real and imaginary parts gives

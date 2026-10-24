@@ -47,7 +47,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent calculation with the bar resolution
+> [!success]- Solution
+> **Proof scope:** Independent calculation with the bar resolution
+>
 > Let $R=\mathbb Z[G]$. The corrected bar resolution has $F_q$ free over $R$ on $[x_1|\cdots|x_q]$, including one empty basis vector in degree $0$. Consequently
 > $$
 > C^q(G,A)=\operatorname{Hom}_R(F_q,A)\cong\operatorname{Map}(G^q,A),

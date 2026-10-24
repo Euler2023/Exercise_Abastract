@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ be a number field and $\mathfrak o=\mathcal O_K$. Use the book's Hermitian metrics over $K_{\mathbb C}=K\otimes_{\mathbb Q}\mathbb C$. Each embedding component can be checked separately; the tensor product and direct sum metrics are defined in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §4, printed p. 228, PDF p. 247].
 >
 > **1. Symmetry.** The map $c(m\otimes n)=n\otimes m$ respects the balancing relations, so it is well-defined, and $c^2=1$. For pure tensors,

@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Let $A$ be the stated domain, $F=\operatorname{Frac}(A)$, and $\mathfrak p\ne0$ a prime. Dimension one makes $\mathfrak p$ maximal. A regular prime here means that the local ring $A_{\mathfrak p}$ is a discrete valuation ring; equivalently its maximal ideal is principal in this one-dimensional Noetherian local domain. This is the source's regular/nonsingular convention, made explicit in §13.
 >

@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All ideals here are nonzero integral ideals. Unique prime-ideal factorization makes their divisor sets finite. For the ideal Möbius function,
 > $$
 > \sum_{\mathfrak d\mid\mathfrak e}\mu(\mathfrak d)

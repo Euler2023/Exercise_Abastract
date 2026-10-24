@@ -39,7 +39,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K = \mathbf{C}(x)$ where $x$ is transcendental over $\mathbf{C}$, and let $\zeta = e^{2\pi i/3} \in \mathbf{C}$.
 >
 > ### 1. Verification of the Group Relations

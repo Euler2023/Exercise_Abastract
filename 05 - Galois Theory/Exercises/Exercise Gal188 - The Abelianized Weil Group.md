@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We use the usual Weil topology: $I_K$ is open with its profinite topology and $W_K/I_K=\mathbb Z$ is discrete. Abelianization means quotient by the **closed** commutator subgroup. Choose a Frobenius lift $\Phi\in G_K$. Its integer powers split the Weil quotient, so
 > $$
 > W_K=I_K\rtimes\langle\Phi\rangle,\qquad W_K^{\rm ab}=C\times\mathbb Z,

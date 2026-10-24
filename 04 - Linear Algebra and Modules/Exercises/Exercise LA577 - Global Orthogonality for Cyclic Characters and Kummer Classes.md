@@ -54,7 +54,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > (i) The local input is the perfect pairing of finite groups
 > $$
 > H^1(K_v,\mathbb Z/n)\times K_v^\times/K_v^{\times n}\to\mathbb Z/n,

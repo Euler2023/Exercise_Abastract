@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the standard absolute values for the number-field product formula: at finite places, $|x|_\mathfrak p=(\#\kappa_\mathfrak p)^{-v_\mathfrak p(x)}$, and at complex places, use the square of the usual complex modulus. The local extension formula gives
 > $$
 > \prod_{w\mid v}|\alpha_v|_w

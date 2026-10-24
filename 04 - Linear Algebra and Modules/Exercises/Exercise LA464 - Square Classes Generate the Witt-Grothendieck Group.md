@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > For $a\in k^*$, let $\langle a\rangle$ be the one-dimensional symmetric bilinear form with Gram matrix $(a)$. If $b=au^2$ with $u\in k^*$, multiplication by $u$ is an isometry from $\langle b\rangle$ to $\langle a\rangle$, since $a(ux)(uy)=bxy$. Thus $[\langle a\rangle]_G$ depends only on the square class $\bar a$.
 >
 > The universal property of a free abelian group gives a homomorphism

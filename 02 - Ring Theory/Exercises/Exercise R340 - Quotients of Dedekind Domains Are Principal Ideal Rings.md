@@ -39,7 +39,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation of the corrected statement
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the corrected statement
+>
 > The counterexample in the source warning refutes the printed domain assertion. We prove that every ideal of the quotient is principal.
 >
 > **1. A quotient by a prime power.** Let $\mathfrak p$ be a nonzero prime ideal of $R$ and let $n\ge1$. By the ideal-correspondence theorem, every ideal of $R/\mathfrak p^n$ is $J/\mathfrak p^n$ for an ideal $J$ satisfying $\mathfrak p^n\subseteq J\subseteq R$. Since $J\ne0$, unique prime-ideal factorization and reversal of containment and divisibility give

@@ -43,7 +43,9 @@ The quotient-field hypothesis makes $A$ an integral domain, so here “principal
 
 ## Solution
 
-> [!success]- Independent proof using matrix units and a row basis
+> [!success]- Solution
+> **Proof scope:** Independent proof using matrix units and a row basis
+>
 > Assume $n,r\ge1$; if either is zero, $T=L=0$ and the assertion is immediate. All matrix units below have size $n\times n$. Write $g=E_{11}$, and identify the submodule $gT$ with $A^r$ by taking the first row. Let $W\subseteq A^r$ correspond to $gL$.
 >
 > Since $A$ is a PID and $L$ is a submodule of the finite free module $T$, it is finite free. The same is true for $W\subseteq A^r$. Its rank is $r$: the given rank of $L$ means its $K$-linear span inside $\operatorname{Mat}_{n\times r}(K)$ is the entire space. Applying the $K$-linear projection $g$ gives

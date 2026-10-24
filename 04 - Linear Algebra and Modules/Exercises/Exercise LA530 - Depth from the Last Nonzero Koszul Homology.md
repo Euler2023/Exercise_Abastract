@@ -52,7 +52,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $H_p(M)=H_pK(x;M)$, zero outside $0\le p\le r$. Since $H_0(M)=M/IM\ne0$, there is a greatest nonzero degree $s$. We prove $q+s=r$ by induction on $q$.
 >
 > If $q=0$, every $a\in I$ satisfies $aM\subseteq IM\ne M$. Were $a$ injective on $M$, it would give a one-term regular sequence, contradicting maximality. Therefore every element of $I$ is a zero divisor on $M$. The finite associated-prime lemma and prime avoidance, proved in the linked Koszul concept, imply $I\subseteq\mathfrak p=\operatorname{ann}(m)$ for some $m\ne0$. The top differential then gives

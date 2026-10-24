@@ -36,7 +36,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Fix the standard ordered basis $e_1,\ldots,e_n$ of $F^n$. A matrix $A$ is invertible exactly when its columns $Ae_1,\ldots,Ae_n$ form an ordered basis. For the first column there are $q^n-1$ nonzero choices. Once $r$ independent columns have been chosen, their span contains exactly $q^r$ vectors, so the next column has $q^n-q^r$ possible values. Multiplication gives
 >
 > $$

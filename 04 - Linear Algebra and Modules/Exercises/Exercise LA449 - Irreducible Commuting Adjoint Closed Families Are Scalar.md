@@ -40,7 +40,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > If $E=0$, every endomorphism is zero and the conclusion holds. Otherwise fix $B_0\in S$ and define $H,K$ as in Hint 1. The adjoint calculation in LA448 gives $H^*=H$, $K^*=K$, and $B_0=H+iK$.
 >
 > For every $C\in S$, the hypotheses give $CB_0=B_0C$ and $CB_0^*=B_0^*C$. Taking the corresponding linear combinations shows $CH=HC$ and $CK=KC$.

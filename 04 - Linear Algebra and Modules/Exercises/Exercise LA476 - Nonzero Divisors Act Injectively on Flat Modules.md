@@ -31,7 +31,9 @@ Here $R$ is commutative, and the hypothesis on $a$ says that multiplication by $
 
 ## Solution
 
-> [!success]- Independent proof by tensoring a multiplication map
+> [!success]- Solution
+> **Proof scope:** Independent proof by tensoring a multiplication map
+>
 > Since $a$ is not a zero-divisor, the sequence
 >
 > $$

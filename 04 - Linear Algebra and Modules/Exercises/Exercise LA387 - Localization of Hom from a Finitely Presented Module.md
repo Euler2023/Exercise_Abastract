@@ -32,7 +32,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The canonical map is
 > $$
 > \Phi(f/s)(m/t)=f(m)/(st).

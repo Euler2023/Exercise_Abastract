@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $k,\nu\ge0$ be integers. Use the positive index $k+1$ in the generalized difference formula:
 > $$
 > B_{k+1,\chi}(jm)-B_{k+1,\chi}((j-1)m)

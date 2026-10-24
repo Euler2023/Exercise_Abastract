@@ -33,7 +33,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Step 1: Reduction to a polynomial ring via Noether normalization
 > 
 > Let $R = k[x_1, \ldots, x_n]$ be an affine domain over $k$, with quotient field $K = k(x)$.

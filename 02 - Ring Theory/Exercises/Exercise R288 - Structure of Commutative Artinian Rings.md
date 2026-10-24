@@ -59,7 +59,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > We assume rings have identity. The zero ring satisfies the assertions with empty spectra and the empty product interpreted as the zero ring, so suppose $A\ne0$. Artinian means that every descending chain of ideals stabilizes. Equivalently, every nonempty collection of ideals has a minimal member.
 >
 > ### (a) Every prime is maximal

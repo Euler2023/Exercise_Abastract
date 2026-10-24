@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > By (7.13), printed p. 159 / PDF p. 178, $K_n/K$ is totally ramified of degree $e=(p-1)p^{n-1}$, its integer ring is $\mathbb Z_p[\zeta]$, and $\pi=\zeta-1$ is a uniformizer. For a nonidentity $\sigma_a$, write $k=v_p(a-1)$, so $0\le k<n$. The root $\zeta^{a-1}$ has order $p^{n-k}$, and applying the same uniformizer valuation at that level gives
 > $$
 > v_{K_n}(\sigma_a\pi-\pi)

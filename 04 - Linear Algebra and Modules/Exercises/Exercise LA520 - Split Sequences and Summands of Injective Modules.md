@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a)** Identify $I_1$ with its image in $I_2$. Injectivity of $I_1$ extends $\operatorname{id}_{I_1}$ to $r:I_2\to I_1$. Then $I_2=I_1\oplus\ker r$: write $x=r(x)+(x-r(x))$, and the intersection is zero. The quotient map restricts to an isomorphism $\ker r\to I_3$. Its inverse supplies a section, so the sequence splits.
 >
 > **(c)** Given $X'\subseteq X$ and $f:X'\to M$, include $M$ in $I$, extend the resulting map to $F:X\to I$ by injectivity, and compose with the projection $I\to M$. This extends $f$, proving $M$ injective.

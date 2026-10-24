@@ -30,7 +30,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\mathcal I$ be the set of finitely generated submodules of $M$, ordered by inclusion. This is directed: if $P,Q\in\mathcal I$, then
 >
 > $$

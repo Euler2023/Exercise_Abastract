@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The transition maps are inflation as $N$ shrinks. They are compatible with inflation to $H^1(G,A)$ and give a natural map from the direct limit to $H^1(G,A)$.
 >
 > **Surjectivity.** For a continuous cocycle $f:G\to A$, compactness and discreteness of $A$ make $f(G)$ finite. Since $f(1)=1$, there is an open normal subgroup $N_0$ with $f|_{N_0}=1$. Each image element has an open stabilizer. Intersect the normal cores of these finitely many stabilizers with $N_0$ to obtain an open normal subgroup $N$ such that $f|_N=1$ and which fixes all of $f(G)$. Then $f(gn)=f(g)^nf(n)=f(g)$, so $f$ factors through $G/N$ with values in $A^N$. This gives a cocycle on the finite quotient whose inflation is the original $f$.

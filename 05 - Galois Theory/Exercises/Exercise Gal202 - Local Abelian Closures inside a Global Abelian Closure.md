@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Place all fields in one chosen local algebraic closure. The right side means the local compositum of all finite global abelian subextensions. If $L/K$ is finite abelian, the Galois group of $L_w/K_v$ is a decomposition subgroup of $G(L/K)$ and remains abelian. Hence $K^{\mathrm{ab}}K_v\subseteq K_v^{\mathrm{ab}}$.
 > For the reverse inclusion, use the following **external standard input: the weak Grunwald existence theorem, allowing the global degree to increase**. Given cyclic local extensions at finitely many places of a number field, each can be embedded in the corresponding completion of some global cyclic extension. The global degree need not equal the local degrees. Here only the single place $v$ is used. This version, which allows a larger degree, is not obstructed by the exceptional Grunwald–Wang cases for prescribed exact degree.
 > The Galois group of any finite abelian $F/K_v$ embeds in a product of finitely many cyclic quotients. Thus $F$ is the compositum of finitely many cyclic subextensions. Apply the input above to each cyclic subextension to obtain a global cyclic extension $L_i/K$ whose chosen completion contains that local extension. Put $L=\prod_iL_i$. Then $L/K$ is abelian and $LK_v\supseteq F$. Taking the union over all $F$ proves the reverse inclusion.

@@ -39,7 +39,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $B=S^{-1}A$, and write $J^c=\varphi_S^{-1}(J)$ for contraction. For every ideal $I\subseteq A$, the fraction membership criterion gives
 >
 > $$

@@ -41,7 +41,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $R=\mathbb Z/N\mathbb Z$. Multiplicativity of determinant makes $\det:GL_2(R)\to R^\times$ a homomorphism whose kernel is, by definition, $SL_2(R)$. For every $d\in R^\times$, the matrix $s(d)=\operatorname{diag}(1,d)$ is invertible and has determinant $d$. Thus $s:R^\times\to GL_2(R)$ is a homomorphic section of determinant. This proves exactness at every term.
 >
 > More explicitly, for $A\in GL_2(R)$ put $d=\det A$. Then

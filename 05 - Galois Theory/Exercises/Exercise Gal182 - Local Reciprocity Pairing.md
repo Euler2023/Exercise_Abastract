@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $B=K^*/K^{*n}$. The structure $K^*\cong\pi^{\mathbb Z}\times\mu_{q-1}\times U_K^{(1)}$, with $U_K^{(1)}$ a finite torsion group times a free $\mathbb Z_p$-module of finite rank, shows that $B$ is finite. Kummer theory gives $H^1(K,\mu_n)=B$. Local reciprocity and its existence theorem identify continuous $\mathbb Z/n\mathbb Z$-valued characters of $G_K$ with $\operatorname{Hom}(B,\mathbb Z/n\mathbb Z)$: the character is composed with $\operatorname{rec}_K$; conversely every character of the finite quotient $B$ defines a finite abelian extension by the existence theorem.
 >
 > The stated pairing is consequently the evaluation pairing $B^\vee\times B\to\mathbb Z/n\mathbb Z$. A finite abelian group of exponent dividing $n$ is a product of cyclic groups of orders dividing $n$; on each cyclic factor its characters separate points and have the same number of elements. This proves perfection on both sides.

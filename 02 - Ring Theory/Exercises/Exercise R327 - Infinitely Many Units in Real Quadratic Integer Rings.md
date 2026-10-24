@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\theta=\sqrt d$ and $R=\mathbb Z[\theta]$. Since $d>1$ is squarefree, $\theta$ is irrational. Conjugation sends $a+b\theta$ to $a-b\theta$, and the norm is
 >
 > $$

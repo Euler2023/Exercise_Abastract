@@ -33,7 +33,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > We say that $k$ is **relatively algebraically closed** in $K$ when every element of $K$ algebraic over $k$ lies in $k$. Freeness ensures that a transcendence basis of either factor remains algebraically independent over the other. We do not replace freeness by a cardinal equality when transcendence degrees are infinite.
 >
 > ### 1. When $K/k$ is separable

@@ -52,7 +52,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent classification and root-space construction
+> [!success]- Solution
+> **Proof scope:** Independent classification and root-space construction
+>
 > **(a).** Conjugacy in $S_4$ is determined by cycle type. The types, with their class sizes, are
 >
 > $$

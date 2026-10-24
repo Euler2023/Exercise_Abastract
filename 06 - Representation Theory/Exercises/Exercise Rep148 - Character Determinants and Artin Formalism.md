@@ -108,7 +108,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation, with the printed and corrected functions distinguished
+> [!success]- Solution
+> **Proof scope:** Independent derivation, with the printed and corrected functions distinguished
+>
 > **1. Quotients under the stated sufficient hypotheses.** Use the categorical quotient property: any $H$-invariant map from $U$ to an object with trivial $H$-action factors uniquely through $\pi_H:U\to U/H$. If $H\triangleleft G$, the map $\pi_H\circ g$ is $H$-invariant, since
 > $$
 > \pi_Hgh=\pi_H(ghg^{-1})g=\pi_Hg.

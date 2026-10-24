@@ -33,7 +33,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $n=[K:\mathbb Q]=|G|$. Since $\alpha\in B$, its minimal polynomial $f(X)=\operatorname{Irr}(\alpha,\mathbb Q,X)$ has integer coefficients and is monic of degree $n$.
 > 
 > Let $\bar{f}(X)=f(X)\bmod p\in\mathbb F_p[X]$. By hypothesis, $\bar{f}(X)$ is irreducible of degree $n$ over $\mathbb F_p=\mathbb Z/p\mathbb Z$.

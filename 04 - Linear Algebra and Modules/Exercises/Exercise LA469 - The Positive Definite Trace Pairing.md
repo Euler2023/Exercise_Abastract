@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Writing $X=(x_{ij})$ and $Y=(y_{ij})$, we have
 > $$
 > \operatorname{tr}(X\,{}^tY)=\sum_i\sum_j x_{ij}y_{ij}.

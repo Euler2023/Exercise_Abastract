@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The preceding exercise identifies the norm group with the power subgroup, so reciprocity gives $\operatorname{rec}:A_K/A_K^n\xrightarrow{\sim}G(L/K)$. The Kummer isomorphism sends the class of $b\in A_K$ to the character
 > $$
 > \chi_b(\sigma)=\frac{\sigma\beta}{\beta},\qquad\beta^n=b.

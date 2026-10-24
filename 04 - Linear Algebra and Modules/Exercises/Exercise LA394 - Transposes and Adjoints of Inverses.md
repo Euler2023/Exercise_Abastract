@@ -32,7 +32,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a)** For square matrices over a commutative ring, $\,{}^t(BC)={}^tC\,{}^tB$. Hence
 > $$
 > {}^t(A^{-1})\,{}^tA={}^t(AA^{-1})=I,\qquad

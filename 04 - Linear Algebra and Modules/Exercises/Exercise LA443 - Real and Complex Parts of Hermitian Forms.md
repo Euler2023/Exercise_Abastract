@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution, including the convention correction
+> [!success]- Solution
+> **Proof scope:** Independent solution, including the convention correction
+>
 > **(a).** A Hermitian form is additive in each variable and homogeneous for real scalars in either variable. Taking real and imaginary parts therefore makes $g$ and $f$ real bilinear. The identity $h(y,x)=\overline{h(x,y)}$ gives $g(y,x)=g(x,y)$ and $f(y,x)=-f(x,y)$. In particular $2f(x,x)=0$ in $\mathbb R$, so $f(x,x)=0$: $f$ is alternating. This argument works with either Hermitian linearity convention.
 >
 > **Why (b) fails with Lang's convention.** On $E=\mathbb C$, take $g(x,y)=i\overline{x}y$. It is real bilinear and complex linear in $y$, and

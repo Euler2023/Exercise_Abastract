@@ -44,7 +44,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Part (a): Characterization of Logarithmic Derivatives via $(D + x)$
 > 
 > 1. **The operator identity**:

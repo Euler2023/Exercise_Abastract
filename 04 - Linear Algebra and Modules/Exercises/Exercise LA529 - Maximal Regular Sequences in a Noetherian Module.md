@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > For every regular extension $a_1,\ldots,a_j$ of the given sequence, consider $M_j=(a_1,\ldots,a_j)M$. This family of submodules is nonempty. The ascending chain condition on submodules of $M$ implies that it has a maximal member: otherwise repeated selection of a larger member would produce an infinite strictly ascending chain. Choose an extension $a_1,\ldots,a_q$ representing that member.
 >
 > Suppose one could adjoin $a_{q+1}\in I$ regularly. Then $Q=M/M_q\ne0$ by the regular-sequence definition, and multiplication by $a_{q+1}$ on $Q$ is injective. Hence $a_{q+1}Q\ne0$, and therefore

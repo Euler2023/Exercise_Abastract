@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Every quadratic number field can be written as $K=\mathbb Q(\sqrt d)$ with $d$ squarefree and $d\ne0,1$: completing the square in an irreducible quadratic gives a nonsquare rational radicand, and clearing its square factors gives this integer form.
 >
 > **1. Produce the odd-prime square roots.** For an odd prime $p$, let $\chi(a)=(a/p)$ for $a\in\mathbb F_p^\times$ and $\chi(0)=0$, and choose $\zeta_p=e^{2\pi i/p}$. Put

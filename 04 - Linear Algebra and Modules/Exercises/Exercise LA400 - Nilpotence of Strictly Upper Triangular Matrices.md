@@ -30,7 +30,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For $r\ge1$, the $(i,j)$ entry of $N^r$ is a sum of products
 > $$
 > a_{i i_1}a_{i_1 i_2}\cdots a_{i_{r-1}j}.

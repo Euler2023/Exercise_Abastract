@@ -39,7 +39,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $a \in \mathbf{Z}$ be square-free, $a \ne 0, \pm 1$.
 >
 > ---

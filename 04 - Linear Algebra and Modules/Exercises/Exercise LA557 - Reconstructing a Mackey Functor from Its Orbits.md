@@ -54,7 +54,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **The statement is missing an isomorphism compatibility condition.** The definition of a double functor in this section only requires the two functors to agree on objects. The Mackey property also forces $A^*(c)=A_*(c)^{-1}$ for every isomorphism $c$. Apply it to the pullback square formed by $c$ and its inverse. The printed induction formula alone does not recover this condition.
 >
 > For a counterexample, let $G=C_3=\langle s\rangle$, $A(G/1)=\mathbb Z[\zeta_3]$, and $A(G/G)=0$. On automorphisms of $G/1$, let $c(s)_*$ act by multiplication by $\zeta_3$ and let every $c(s)^*$ be the identity. Set all maps between the two orbits to zero. This is a double functor: every composite involving the projection is zero. The only nontrivial induction formula is

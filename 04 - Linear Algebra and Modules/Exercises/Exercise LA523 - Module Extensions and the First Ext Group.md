@@ -50,7 +50,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > An isomorphism of extensions is required to be the identity on the fixed end modules $N,M$. We use the displayed cokernel description of $\operatorname{Ext}^1$, which also follows by applying $\operatorname{Hom}(-,N)$ to a projective resolution starting with $P$.
 >
 > If $u'$ is another lift, $\pi(u'-u)=0$, so $u'-u=ih$ for a unique $h:P\to N$. Then $v'-v=hw$, so they give the same cokernel class. An isomorphism of extensions transports a lift and leaves this class unchanged.

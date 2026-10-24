@@ -28,7 +28,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Choose an algebraic closure $\Omega$ containing $K$, a root $\alpha$ of $h$, and a root $\beta$ of $g$. Both are roots of the irreducible polynomial $f$, so the isomorphism
 > $$
 > k(\alpha)\longrightarrow k(\beta),\qquad\alpha\longmapsto\beta

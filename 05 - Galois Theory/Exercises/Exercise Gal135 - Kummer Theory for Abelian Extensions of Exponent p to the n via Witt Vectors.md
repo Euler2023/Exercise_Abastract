@@ -42,7 +42,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a field of characteristic $p > 0$, and let $W_n(k)$ be the additive group of truncated Witt vectors of length $n$ with entries in $k$.
 > The Artin-Schreier-Witt operator $\wp: W_n(\bar{k}) \to W_n(\bar{k})$ is $\wp(\xi) = F\xi - \xi$, which is an additive homomorphism with kernel $W_n(\mathbf{F}_p) \cong \mathbf{Z}/p^n\mathbf{Z}$.
 >

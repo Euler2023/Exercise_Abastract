@@ -38,7 +38,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $A(X)=\partial_2F(X,0)\in R[[X]]$. Its constant term is $1$, so it is invertible. Write $A(X)^{-1}=1+\sum_{n\ge1}a_nX^n$. Since $R$ is a $\mathbb Q$-algebra we can integrate term by term:
 > $$
 > \ell(X)=\int_0^X A(T)^{-1}dT

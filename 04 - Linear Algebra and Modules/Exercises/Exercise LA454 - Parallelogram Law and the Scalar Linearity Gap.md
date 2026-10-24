@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the corrected statement and counterexample to the printed converse
+> [!success]- Solution
+> **Proof scope:** Independent proof of the corrected statement and counterexample to the printed converse
+>
 > **Necessity.** If $f(x)=B(x,x)$ for a symmetric $R$-bilinear map $B$, expand $B(x+y,x+y)$ and $B(x-y,x-y)$. The mixed terms cancel and give the parallelogram identity. The same argument works for any symmetric biadditive $B$.
 >
 > **Elementary consequences of the law.** Since multiplication by $2$ is injective on $F$, substitution $x=y=0$ gives $2f(0)=4f(0)$ and hence $f(0)=0$. Taking $x=0$ then gives $f(-y)=f(y)$, while $y=x$ gives $f(2x)=4f(x)$.

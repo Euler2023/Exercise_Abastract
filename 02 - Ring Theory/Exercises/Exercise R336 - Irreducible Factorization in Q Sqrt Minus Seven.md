@@ -31,7 +31,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $s=\sqrt{-7}$, $K=\mathbb Q(s)$, and $\omega=(1+s)/2$. The quadratic integer-ring calculation in [[02 - Ring Theory/Exercises/Exercise R333 - Integral Bases and Discriminants of Quadratic Number Fields|Exercise R333, Step 3]] gives
 > $$
 > \mathcal O_K=\mathbb Z[\omega]

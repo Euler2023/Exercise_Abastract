@@ -51,7 +51,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k = \mathbb{F}_q$, and let $K = k(X)$ be the rational function field in one variable.
 >
 > ---

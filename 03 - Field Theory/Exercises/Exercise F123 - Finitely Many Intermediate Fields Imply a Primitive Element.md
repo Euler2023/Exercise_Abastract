@@ -34,7 +34,9 @@ created: 2026-10-02
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > **1. Prove that $K/F$ is finite.** Among the intermediate fields, there are only finitely many distinct fields of the form $F(\alpha)$, with $\alpha\in K$. List these as
 > $$
 > F(\alpha_1),\ldots,F(\alpha_r).

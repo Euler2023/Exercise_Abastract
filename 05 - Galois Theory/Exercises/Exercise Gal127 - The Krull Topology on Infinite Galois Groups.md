@@ -51,7 +51,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K/k$ be an arbitrary Galois extension (normal and separable, possibly infinite), and let $G = \operatorname{Gal}(K/k)$.
 >
 > ---

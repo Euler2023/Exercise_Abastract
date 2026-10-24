@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Each $U_v=\mathcal O_v^\times$ is the inverse limit of the finite groups $U_v/(1+\mathfrak p_v^r)$, so $I_f^1$ is profinite. For any open normal subgroup $N$, let $d_N$ be the order of $\alpha N$ in the finite quotient. Define
 > $$
 > \alpha^xN=(\alpha N)^{\,x\bmod d_N}.

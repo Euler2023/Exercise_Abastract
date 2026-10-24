@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent counterexample and derivation
+> [!success]- Solution
+> **Proof scope:** Independent counterexample and derivation
+>
 > **Source issue.** Under the printed general-modulation hypotheses this fails for the same counterexample as Exercise 19. Recall the complete construction there: $G=A_5\times\widehat{\mathbb Z}$, the genuine global idèle-class base $\mathcal B$, and the Mackey summand $T$ supported at $H\supseteq A_5$, with $T(G/(A_5\times m\widehat{\mathbb Z}))=\operatorname{Map}(\mathbb Z/m,\mathbb F_2)$. Put $A=\mathcal B\oplus T$ and $v(b,t)=v(b)$. That solution verifies the henselian value group, all Mackey squares, every unramified unit exact sequence, the power condition, both cyclic norm axioms, and the prime-degree reciprocity isomorphisms. No conclusion of the false Exercise 19 is assumed here.
 >
 > At the base orbit $G/G$, let $t\ne0$ be the element of its direct summand $T(G/G)=\mathbb F_2$. Any group homomorphism

@@ -33,7 +33,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $A=\mathfrak o$ and $K=\operatorname{Frac}(A)$. By the source definition, a fractional ideal $\mathfrak a$ is nonzero. The ideal-group theorem for a Dedekind domain gives
 > $$
 > \mathfrak a^{-1}=\{b\in K:b\mathfrak a\subseteq A\},

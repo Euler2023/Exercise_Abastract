@@ -58,7 +58,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $E/k$ be a separable extension of degree $n$, and let $\sigma_1, \dots, \sigma_n$ be the distinct $k$-embeddings of $E$ into an algebraic closure $k^{\mathrm{a}}$.
 >
 > ---

@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The printed statement is false without weights. In a nontrivial totally ramified abelian extension take $x=y=z_1=1$ and any nonidentity $\sigma_1$. The displayed hypothesis holds, but its claimed conclusion would say $1=\sigma_1^{-1}$. The valid statement replaces $\sigma$ by
 > $$
 > \sigma=\prod_i\sigma_i^{v_L(z_i)},

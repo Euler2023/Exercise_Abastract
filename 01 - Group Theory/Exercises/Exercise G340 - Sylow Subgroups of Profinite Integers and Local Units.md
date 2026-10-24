@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **The additive group $\widehat{\mathbb Z}$.** The Chinese remainder theorem gives $\widehat{\mathbb Z}\simeq\prod_\ell\mathbb Z_\ell$. The subgroup
 > $$
 > P=\mathbb Z_p\times\prod_{\ell\ne p}\{0\}

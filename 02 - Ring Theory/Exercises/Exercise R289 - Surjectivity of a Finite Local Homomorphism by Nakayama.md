@@ -37,7 +37,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > We use the local form of Nakayama's lemma: if $(R,\mathfrak m)$ is a commutative local ring, $E$ is a finitely generated $R$-module, and $E=\mathfrak mE$, then $E=0$. This is Lang's Lemma 4.1 specialized to a local ring [S2, Ch. X, §4, printed pp. 424-425, PDF pp. 439-440].
 >
 > **First application, over $B$.** Let

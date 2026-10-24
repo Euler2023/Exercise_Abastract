@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > It suffices to treat a primitive $p^n$-th root, since the general case follows by restriction. Write $K=\mathbb Q_p$, $L=K(\zeta)$, $\lambda=\zeta-1$, and $d=[L:K]=p^{n-1}(p-1)$. First let $u$ be a positive integer prime to $p$, and define $\sigma\in G(L/K)$ by $\sigma(\zeta)=\zeta^{u^{-1}}$.
 >
 > We use the power-series existence statement V(2.3), proved independently of the cyclotomic reciprocity theorem in the source [printed p.330, PDF p.349]. With

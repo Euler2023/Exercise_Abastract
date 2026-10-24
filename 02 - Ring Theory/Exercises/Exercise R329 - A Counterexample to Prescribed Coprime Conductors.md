@@ -45,7 +45,9 @@ In the section's notation, $\mathfrak o$ is a Dedekind domain with fraction fiel
 
 ## Solution
 
-> [!success]- Independent derivation of a counterexample
+> [!success]- Solution
+> **Proof scope:** Independent derivation of a counterexample
+>
 > ### 1. Construct the cubic field and an integral order
 > Let
 > $$

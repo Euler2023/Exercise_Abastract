@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The first identity holds for $n\ge1$ in every commutative ring, without the characteristic restriction:
 > $$
 > W_n(Va)=\sum_{i=1}^np^ia_{i-1}^{p^{n-i}}=pW_{n-1}(a).

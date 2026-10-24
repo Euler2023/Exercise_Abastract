@@ -34,7 +34,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > ### Trace representation and real completion
 > Since $F/\mathbb Q$ is finite and separable, the trace pairing $(u,v)\mapsto\operatorname{Tr}_{F/\mathbb Q}(uv)$ is nondegenerate. Hence there is a unique $\beta\in F$ with
 > $$

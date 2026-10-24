@@ -34,7 +34,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $B=\mathbb Z[\varepsilon]$. Since $\varepsilon^2=\varepsilon+1$ and $\varepsilon'=1-\varepsilon$ satisfies the same relation, the displayed sequence has $a_0=0$, $a_1=1$, and
 > $$
 > a_{n+2}=a_{n+1}+a_n.

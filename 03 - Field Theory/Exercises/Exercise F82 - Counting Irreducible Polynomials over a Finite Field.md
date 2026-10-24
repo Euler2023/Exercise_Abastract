@@ -39,7 +39,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $K_n$ be the roots of $X^{q^n}-X$ in an algebraic closure of $k$. The derivative is $-1$, so it has $q^n$ distinct roots. Frobenius shows that the roots are closed under addition and multiplication; a nonzero root has its inverse among them. They contain $k$, because $a^q=a$ for $a\in k$. Thus $K_n$ is a field and $[K_n:k]=n$.
 >
 > Let $\alpha$ be a root of the irreducible $f$ and put $d=\deg f$. Then $k(\alpha)$ has $q^d$ elements. If $f\mid X^{q^n}-X$, then $k(\alpha)\subseteq K_n$, so the tower law gives $d\mid n$.

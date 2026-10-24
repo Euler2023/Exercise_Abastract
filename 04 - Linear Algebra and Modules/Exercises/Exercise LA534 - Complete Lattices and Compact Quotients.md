@@ -31,7 +31,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > By the source definition, a lattice has the form
 > $$
 > \Gamma=\mathbb Zv_1+\cdots+\mathbb Zv_r,

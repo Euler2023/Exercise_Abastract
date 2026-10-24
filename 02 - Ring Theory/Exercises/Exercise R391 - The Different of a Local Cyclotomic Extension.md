@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $p$ be prime, $n\ge1$, $L=\mathbb Q_p(\zeta)$, and let $\mathfrak P$ be the maximal ideal of its ring of integers. Normalize the valuation by $v_L(\mathfrak P)=1$. Write
 > $$
 > f(X)=\Phi_{p^n}(X)=\frac{X^{p^n}-1}{X^{p^{n-1}}-1}=\sum_{j=0}^{p-1}X^{jp^{n-1}},\qquad e=\deg f=p^{n-1}(p-1).

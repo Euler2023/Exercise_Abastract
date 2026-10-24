@@ -47,7 +47,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation of the stronger nonzero conclusion
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the stronger nonzero conclusion
+>
 > Let $n\ge1$ be finite, let $A=(a_{ij})\in M_n(\mathbb R)$ be the coefficient matrix, and assume the source hypotheses
 > $$
 > \det A\ne0,\qquad c_i>0\ (1\le i\le n),

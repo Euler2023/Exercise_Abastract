@@ -54,7 +54,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent counterexamples and proof of the corrected assertions
+> [!success]- Solution
+> **Proof scope:** Independent counterexamples and proof of the corrected assertions
+>
 > Put $N_G=\sum_{g\in G}g$ and $n=|G|$.
 >
 > **(a), the printed category.** A $G$-linear section of $\varepsilon$ would send $1\in\mathbb Z$ to an invariant element of $\mathbb Z[G]$. Such elements are exactly $mN_G$ with $m\in\mathbb Z$, since invariance under left translation forces all coefficients to agree. Its augmentation is $mn$, which cannot be $1$ if $n>1$.

@@ -47,7 +47,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent resolution and corrected cohomology calculation
+> [!success]- Solution
+> **Proof scope:** Independent resolution and corrected cohomology calculation
+>
 > Let $R=\mathbb Z[G]$ and $N=\sum_{j=0}^{n-1}\sigma^j$. Since $\sigma^n=1$,
 > $$
 > (1-\sigma)N=N(1-\sigma)=0,\qquad

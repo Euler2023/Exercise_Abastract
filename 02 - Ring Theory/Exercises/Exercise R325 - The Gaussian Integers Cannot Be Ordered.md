@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here an ordering means a total order compatible with addition and multiplication: $a<b$ implies $a+c<b+c$, and $0<a$, $0<b$ imply $0<ab$.
 >
 > In any ring with such an order, if $a\ne0$, totality gives $a>0$ or $a<0$. In the first case $a^2>0$. In the second, $-a>0$, so again $a^2=(-a)^2>0$.

@@ -42,7 +42,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $L/\mathbb Q$ be a number field of degree $n=[L:\mathbb Q]$, and let $\mathfrak o_L$ be its ring of algebraic integers. There are exactly $n$ distinct embeddings of $L$ into $\mathbb C$, denoted $\sigma_1,\ldots,\sigma_n$.
 > 
 > ### Step 1: The geometric embedding

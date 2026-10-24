@@ -33,7 +33,9 @@ Digits are always chosen from $0,1,\ldots,p-1$. The rules work from the lowest p
 
 ## Solution
 
-> [!success]- Independent derivation of all four digit rules
+> [!success]- Solution
+> **Proof scope:** Independent derivation of all four digit rules
+>
 > **1. Conventions and the criterion for equality.** Fix a prime $p$; it may be $2$. For every integer $t$, including a negative integer, let $[t]_p$ denote its unique representative in $\{0,\ldots,p-1\}$. Then
 > $$
 > t=[t]_p+p\left\lfloor\frac tp\right\rfloor.

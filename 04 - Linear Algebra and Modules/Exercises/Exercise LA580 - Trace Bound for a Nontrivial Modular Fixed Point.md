@@ -32,7 +32,9 @@ created: 2026-10-23
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > The following is an independent derivation. Let
 > $$
 > \gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(\mathbb Z),\qquad \tau=x+iy,\quad y>0.

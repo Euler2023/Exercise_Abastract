@@ -37,7 +37,9 @@ proof_status: source-ambiguity
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The printed problem uses uppercase $K$, while the hint explicitly uses the integer ring of lowercase $k$ and the Minkowski bound for a quintic field. We prove the intended corrected assertion $h_k=1$. This does not prove the class-number assertion for the degree-$120$ splitting field $K$.
 > Put $r=5^{-1/4}$. The real zeros of $f'=5X^4-1$ are $\pm r$, with $f(-r)=1+4r/5>0$ and $f(r)=1-4r/5>0$. The quintic therefore has exactly one real root, and the signature of $k$ is $(r_1,r_2)=(1,2)$.
 > The Minkowski ideal-class bound gives an integral ideal $\mathfrak a$ in every class with

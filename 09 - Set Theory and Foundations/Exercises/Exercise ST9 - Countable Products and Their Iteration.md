@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Use $\mathbb N=\{0,1,\ldots\}$ to index a denumerable product and choose a pairing bijection $\pi:\mathbb N\to\mathbb N^2$. An array $(s_{i,j})$ is an element of $(S')'$. Define its flattened sequence by $t_n=s_{\pi(n)}$. Conversely recover the entry $s_{i,j}=t_{\pi^{-1}(i,j)}$. These operations are inverse, proving
 >
 > $$

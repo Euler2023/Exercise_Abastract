@@ -33,7 +33,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > **(a)** For $A\in R$, the product $AE_{11}$ has first column equal to the first column of $A$ and all other columns zero. Thus $L=RE_{11}$. It is closed under addition and additive inverses, and $B(AE_{11})=(BA)E_{11}\in L$ for every $B\in R$, so it is a left ideal.
 >
 > **(b)** Let $0\ne M\in L'\subseteq L$. Its first column $v\in k^n$ is nonzero. Extend $v$ to a basis of $k^n$ and choose $B\in R$ with $Bv=e_1$. Since the other columns of $M$ vanish, $BM=E_{11}$. The left ideal $L'$ contains $BM$, hence contains $RE_{11}=L$. Therefore $L'=L$.

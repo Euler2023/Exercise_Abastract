@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > For a finite extension in characteristic $p>0$, Lang's separable/inseparable degree theorem gives
 > $$
 > [L:K]=[L:K]_s[L:K]_i,\qquad [L:K]_i=p^r

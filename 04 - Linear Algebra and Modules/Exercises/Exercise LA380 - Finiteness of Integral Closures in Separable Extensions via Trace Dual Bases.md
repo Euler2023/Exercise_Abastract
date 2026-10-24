@@ -45,7 +45,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $A$ be an integral domain (entire ring) with fraction field $K$, integrally closed in $K$. Let $L/K$ be a finite separable field extension of degree $n=[L:K]$, and let $B$ be the integral closure of $A$ in $L$. We assume $A$ is Noetherian.
 > 
 > ### Step 1: Constructing a $K$-basis of $L$ consisting of elements of $B$

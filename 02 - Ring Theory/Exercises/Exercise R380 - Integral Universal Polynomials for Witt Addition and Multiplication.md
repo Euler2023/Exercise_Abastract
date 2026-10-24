@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Work in the torsion-free polynomial ring $R=\mathbb Z[X_0,X_1,\ldots,Y_0,Y_1,\ldots]$, with $\phi$ fixing integers and raising each variable to its $p$-th power. Fermat's theorem gives $\phi(a)\equiv a^p\pmod p$ for every $a\in R$. We use the elementary binomial fact that $u\equiv v\pmod p$ implies $u^{p^r}\equiv v^{p^r}\pmod{p^{r+1}}$, proved by iterating $(v+p^kh)^p\equiv v^p\pmod{p^{k+1}}$ for $k\ge1$.
 >
 > **Ghost criterion.** A sequence $g_n\in R$ equals $W_n(a_0,a_1,\ldots)$ for uniquely determined $a_i\in R$ if and only if

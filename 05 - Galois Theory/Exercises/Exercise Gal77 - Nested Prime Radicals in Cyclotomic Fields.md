@@ -68,7 +68,9 @@ created: 2026-08-12
 
 ## Solution
 
-> [!success]- Complete solution
+> [!success]- Solution
+> **Proof scope:** Complete solution
+>
 > Put
 > $$
 > \theta=\sqrt[p]{2021+\sqrt[q]{a}}.

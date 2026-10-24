@@ -37,7 +37,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > **(a)** Work first in $\mathbb Z[[t]]$. Each coefficient in the Euler product involves only finitely many monic polynomials of bounded degree, so expansion is well defined. Unique factorization gives
 > $$
 > \prod_p(1-t^{\deg p})^{-1}

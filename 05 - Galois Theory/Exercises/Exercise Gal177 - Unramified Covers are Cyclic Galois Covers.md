@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $I_K=\ker(d|_K)$ and $I_H=H\cap I_K$. By the unramified condition $[I_K:I_H]=1$, we have $I_K\subset H$. If $k\in K$ and $d(k)\in d(H)$, choose $h\in H$ with $d(h)=d(k)$. Then $kh^{-1}\in I_K\subset H$, and hence $k\in H$. Therefore
 > $$
 > H=(d|_K)^{-1}(d(H)).

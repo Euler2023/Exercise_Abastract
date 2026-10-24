@@ -33,7 +33,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Step 1: Finiteness of transcendence degree
 > 
 > Let $K = k(x_1, \ldots, x_n)$ be a finitely generated extension of $k$.

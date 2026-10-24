@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction, uniqueness proof, and generalization
+> [!success]- Solution
+> **Proof scope:** Independent construction, uniqueness proof, and generalization
+>
 > Write $x\cdot y=f(x,y)$. Alternation gives $x\cdot x=0$ and, by expanding $(x+y)\cdot(x+y)=0$, $x\cdot y=-y\cdot x$. In any basis the matrix $M$ therefore has zero diagonal and satisfies $M^{\mathsf T}=-M$. A basis change by $P\in GL_n(\mathbb Z)$ replaces it by $P^{\mathsf T}MP$.
 >
 > **1. A reducing basis operation.** If the form is zero, take $r=0$ and any basis. Otherwise some matrix entry is nonzero. Permute basis vectors and change a sign to arrange $a=e_1\cdot e_2>0$. Suppose $b=e_1\cdot e_j$ is not divisible by $a$, with $j\ge3$. Put $d=\gcd(a,b)>0$, write $a=da_0$, $b=db_0$, and choose integers $s,t$ with $sa_0+tb_0=1$. Replace

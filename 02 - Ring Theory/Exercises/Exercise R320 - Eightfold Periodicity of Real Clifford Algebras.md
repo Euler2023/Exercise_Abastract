@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the conventions of R318: generators of $C_n$ square to $-1$, those of $C'_n$ square to $1$, and distinct orthonormal generators anticommute. Put $C_0=C'_0=\mathbb R$. Tensor products here are ordinary real algebra tensor products.
 >
 > **(a) The two shifts.** In $C_2$, let $u^2=v^2=-1$ and $uv=-vu$. Then $w=uv$ satisfies $w^2=-1$, $wu=-uw$, and $wv=-vw$. In $C'_n\otimes C_2$, the elements

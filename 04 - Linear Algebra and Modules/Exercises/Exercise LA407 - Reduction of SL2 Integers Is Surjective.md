@@ -38,7 +38,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $R=\mathbb Z/N\mathbb Z$. The case $N=1$ has a trivial target, so suppose $N>1$. Let $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(R)$. Because $ad-bc=1$, the pair $(a,c)$ generates the unit ideal of $R$. For every prime $p\mid N$, at least one of $a,c$ is nonzero modulo $p$. If $c\equiv0\pmod p$, then $a+tc\ne0\pmod p$ for every $t$; if $c\not\equiv0\pmod p$, choose $t$ to avoid the single residue $-a/c$. The Chinese remainder theorem supplies one $t\in R$ meeting these conditions for all $p\mid N$. Therefore $u=a+tc$ is a unit of $R$.
 >
 > Left multiplication by $E_{12}(t)=I+tE_{12}$ changes the first column to $(u,c)^T$. Left multiplication by $E_{21}(-cu^{-1})$ then changes it to $(u,0)^T$. The resulting determinant-one matrix has the shape $\begin{pmatrix}u&v\\0&u^{-1}\end{pmatrix}$, which is a product of $\operatorname{diag}(u,u^{-1})$ and an upper elementary matrix. The diagonal factor is elementary too: with

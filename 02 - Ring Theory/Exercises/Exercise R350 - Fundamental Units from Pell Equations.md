@@ -45,7 +45,9 @@ Here the square root is positive in the selected real embedding. A fundamental u
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Translate units into the two Pell equations.** By the quadratic integral-basis calculation in [[02 - Ring Theory/Exercises/Exercise R333 - Integral Bases and Discriminants of Quadratic Number Fields|Exercise R333]],
 > $$
 > d=\begin{cases}D,&D\equiv1\pmod4,\\4D,&D\equiv2,3\pmod4.\end{cases}

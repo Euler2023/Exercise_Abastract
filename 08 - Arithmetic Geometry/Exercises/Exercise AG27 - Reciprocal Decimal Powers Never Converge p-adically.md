@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The successive differences satisfy
 > $$
 > |x_{n+1}-x_n|_p=|9|_p|10|_p^{-(n+1)}.

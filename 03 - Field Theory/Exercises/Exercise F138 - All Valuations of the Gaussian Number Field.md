@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > There is one archimedean class, represented by $|a+bi|_\infty=\sqrt{a^2+b^2}$: the two embeddings into $\mathbb C$ differ by conjugation and hence have equal absolute values.
 >
 > For each odd prime $p\equiv1\pmod4$, the polynomial $X^2+1$ has two simple roots modulo $p$, which lift to $\pm\gamma\in\mathbb Q_p$. There are exactly two extensions, $|a+bi|_{p,+}=|a+b\gamma|_p$ and $|a+bi|_{p,-}=|a-b\gamma|_p$. They are distinct because the two local factors give different prime ideals, equivalently different valuation rings.

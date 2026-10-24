@@ -33,7 +33,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > The ordered-field construction of Chapter XI, §1 makes $\mathfrak o$ the ring of elements of $K$ that are not infinitely large over $F$, and $\mathfrak m$ the ideal of elements infinitely small over $F$. Its residue field $\mathfrak o/\mathfrak m$ contains an embedded copy of $F$: every $a\in F$ is in $\mathfrak o$, and a nonzero $a\in F$ is not in $\mathfrak m$ because $|a|$ is not smaller than every positive element of $F$.
 >
 > Assume that $\mathfrak o/\mathfrak m$ is not algebraic over $F$. Choose $x\in\mathfrak o$ whose residue $\bar x$ is transcendental over $F$. For every nonzero polynomial $g(T)\in F[T]$, its value $g(x)$ belongs to $\mathfrak o$ and has residue $g(\bar x)\ne0$. Therefore $g(x)\notin\mathfrak m$, so $g(x)$ is a unit of the local ring $\mathfrak o$ and $1/g(x)\in\mathfrak o$.

@@ -33,7 +33,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a field of characteristic 0, and fix a positive integer $n \ge 1$.
 >
 > ### 1. Adjunction of Roots of Unity

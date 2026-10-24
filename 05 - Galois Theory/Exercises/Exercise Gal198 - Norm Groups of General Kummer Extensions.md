@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\mu_m\subseteq K$, let $D$ be a finite subgroup of $K^\times/K^{\times m}$, and put $L=K(\sqrt[m]{D})$. This describes every finite Kummer extension without requiring the cyclic factors of $D$ to have equal orders. Choose a finite generating set $d_1,\ldots,d_r$ for $D$. The explicit local conditions defining the norm group are
 > $$
 > N_{L/K}C_L=

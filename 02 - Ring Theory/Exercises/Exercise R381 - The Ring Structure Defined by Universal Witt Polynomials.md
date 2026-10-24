@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The polynomials from Exercise II.4.2 have integral coefficients, so they evaluate on every commutative ring $A$ with identity. For a torsion-free ring the ghost map $a\mapsto(W_0(a),W_1(a),\ldots)$ is injective: equality of coordinates through $n-1$ leaves $p^n(a_n-b_n)=0$, hence $a_n=b_n$.
 >
 > Now take the universal torsion-free polynomial ring in the coordinates of three vectors $a,b,c$. The ghost maps of $(a+b)+c$ and $a+(b+c)$ coincide because ordinary addition is associative. Injectivity proves their equality there. Each coordinate of the asserted equality is a polynomial identity over $\mathbb Z$, so evaluation proves associativity for all $A$. The same argument proves commutativity of both operations, associativity of multiplication and both distributive laws.

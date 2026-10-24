@@ -61,7 +61,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We first specify the differential used in (a). The exterior algebra on $\Omega^1_{A/R}$ has the unique graded derivation of degree one satisfying
 > $$
 > d(a_0\,da_1\wedge\cdots\wedge da_i)=da_0\wedge da_1\wedge\cdots\wedge da_i.

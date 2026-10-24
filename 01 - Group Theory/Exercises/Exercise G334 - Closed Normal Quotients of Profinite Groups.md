@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $q:G\to G/H$ be the quotient map. A continuous image of a compact space is compact, so the quotient is compact. The quotient by a closed normal subgroup is Hausdorff: if $g\notin H$, closedness and continuity of multiplication provide small neighborhoods separating $gH$ from $H$, and translation then separates any two distinct cosets.
 >
 > If $W$ is a neighborhood of the quotient identity, then $q^{-1}(W)$ is a neighborhood containing $H$. Choose a basic open normal subgroup $N\subseteq q^{-1}(W)$ of $G$. Since $q^{-1}(W)$ is $H$-saturated, $HN\subseteq q^{-1}(W)$. The subgroup $HN$ is normal and is open because it contains the open subgroup $N$. Hence $HN/H=q(N)$ is an open normal subgroup of the quotient. Here the quotient map is open because $q^{-1}(q(U))=UH$ is a union of translates of an open set.

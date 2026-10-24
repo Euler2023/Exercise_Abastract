@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Work over any commutative $\mathbb Q$-algebra, or over the fraction field of a characteristic-zero coefficient ring. For $F(X,Y)=X+Y+XY$,
 > $$
 > \partial_2F(X,0)=1+X,\qquad (1+X)^{-1}=\sum_{j\ge0}(-1)^jX^j.

@@ -30,7 +30,7 @@ created: 2026-09-06
 
 ## Solution 
 
-> [!success]- Solution 
+> [!success]- Solution
 > Let $S$ be the subfield of elements of $E$ separable over $k$. Lang's decomposition theorem says $S/k$ is finite separable, $E/S$ is purely inseparable, and
 > $$
 > [E:S]=[E:k]_i=p^r.

@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from the convergent series
+> [!success]- Solution
+> **Proof scope:** Independent derivation from the convergent series
+>
 > Denote by $A^*$ the adjoint for the real positive definite scalar product. The adjoint is a continuous real-linear map on the finite-dimensional operator space, with $(A^m)^*=(A^*)^m$. Thus taking adjoints commutes with the convergent exponential series and with any convergent logarithm series.
 >
 > **(a), symmetric case.** The real symmetric spectral theorem gives an orthonormal basis in which $A=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)$ with $\lambda_i\in\mathbb R$. Evaluation of the exponential series gives $\exp A=\operatorname{diag}(e^{\lambda_1},\ldots,e^{\lambda_n})$ in the same basis. This is symmetric and all its eigenvalues are strictly positive. Explicitly, its quadratic form is $\sum_i e^{\lambda_i}x_i^2>0$ for $x\ne0$.

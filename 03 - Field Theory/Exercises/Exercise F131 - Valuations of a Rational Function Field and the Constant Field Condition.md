@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > **The literal unrestricted assertion is false.** Take $k=\mathbb Q$ and the $p$-adic Gauss absolute value on $\mathbb Q(t)$: for a polynomial $f=\sum a_it^i$ put $|f|=\max_i|a_i|_p$, and extend by quotients. Multiplicativity follows by scaling to integral coefficients with nonzero reductions and using that the product of two nonzero polynomials over $\mathbb F_p$ is nonzero. It restricts nontrivially to $\mathbb Q$, so it is not equivalent to any listed valuation. The corrected classification concerns nontrivial valuations **trivial on $k$**.
 >
 > Let $|\ |$ be such a valuation. Integers have absolute value at most one, since they lie in $k$, so the valuation is nonarchimedean. If $|t|>1$, the terms of a polynomial have distinct absolute values, and the leading term is strictly largest. Hence $|f|=|t|^{\deg f}$. For $f/g$ this gives a positive power of the degree absolute value, and the associated additive valuation is $v_\infty(f/g)=\deg g-\deg f$.

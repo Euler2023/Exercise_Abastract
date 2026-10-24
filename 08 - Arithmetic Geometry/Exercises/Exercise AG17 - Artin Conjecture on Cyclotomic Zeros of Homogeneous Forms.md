@@ -37,7 +37,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > **Proof status.** The general assertion is archived as a conjecture. No general proof is supplied or claimed. The source explicitly calls its answer unknown. The related formulation that $\mathbb Q^{\mathrm{ab}}$ is a $C_1$ field is also presented as a conjecture in Hélène Esnault's *Rational points over $C_1$ fields*, §1. That stronger field-wide formulation implies the displayed exercise, since every finite family of elements of $\mathbb Q^{\mathrm{ab}}$ lies in a cyclotomic field. This note does not assert an equivalence between the rational-coefficient exercise and every possible field-wide formulation.
 >
 > Here are independently justified special cases.

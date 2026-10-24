@@ -56,7 +56,9 @@ Here $K$ is a number field of degree $n\ge1$ with $r$ real embeddings and $s$ pa
 
 ## Solution
 
-> [!success]- Independent derivation by elementary integration
+> [!success]- Solution
+> **Proof scope:** Independent derivation by elementary integration
+>
 > Let $n=r+2s\ge1$. We first assume $t>0$ and calculate with the canonical metric and measure. The cases $t\le0$ will be handled separately.
 >
 > ### 1. Express the canonical measure in real coordinates

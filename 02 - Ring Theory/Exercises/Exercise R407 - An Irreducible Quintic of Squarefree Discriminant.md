@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Modulo $3$, we have $f(0)=f(1)=f(2)=1$, so there is no linear factor. The only monic irreducible quadratic polynomials in $\mathbb F_3[X]$ are
 > $$
 > X^2+1,\quad X^2+X+2,\quad X^2+2X+2.

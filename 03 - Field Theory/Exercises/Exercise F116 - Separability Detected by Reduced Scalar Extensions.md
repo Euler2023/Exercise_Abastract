@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the three equivalent conditions
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the three equivalent conditions
+>
 > As usual, “has no nilpotent elements” means no **nonzero** nilpotent elements, or equivalently that the algebra is reduced. We prove the equivalence of:
 >
 > (i) $E/k$ is separable;

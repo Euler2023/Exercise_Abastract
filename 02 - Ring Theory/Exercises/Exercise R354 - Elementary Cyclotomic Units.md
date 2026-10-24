@@ -35,7 +35,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation with an explicit inverse
+> [!success]- Solution
+> **Proof scope:** Independent derivation with an explicit inverse
+>
 > Put $K=\mathbb Q(\zeta)$ and let $k\in\mathbb Z$ satisfy $(k,m)=1$. Choose its representative $r\in\{1,\ldots,m-1\}$. The value of the displayed quotient is unchanged because $\zeta^k=\zeta^r$.
 >
 > The element $\zeta$ is integral, since it satisfies $T^m-1=0$. Therefore every element of $\mathbb Z[\zeta]$ is an algebraic integer. Also $\zeta\ne1$ and $\zeta^r\ne1$, so the denominators below are nonzero. A finite geometric sum gives

@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent deduction from the preceding radical results
+> [!success]- Solution
+> **Proof scope:** Independent deduction from the preceding radical results
+>
 > Assume $R\ne0$, as required by Lang's convention. Let $d=\dim_kR$. Every left ideal is a $k$-vector subspace of $R$, and every strict inclusion in a descending chain lowers its dimension. There can be at most $d$ strict decreases, so $R$ is left Artinian.
 >
 > Put $N=J(R)$. By the radical-nilpotence result proved in R304, there is an integer $r\ge1$ such that $N^r=0$. For each $x\in N$ we then have

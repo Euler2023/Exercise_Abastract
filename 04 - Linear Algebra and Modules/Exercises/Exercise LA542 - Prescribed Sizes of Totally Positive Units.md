@@ -33,7 +33,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation following the Minkowski hint
+> [!success]- Solution
+> **Proof scope:** Independent derivation following the Minkowski hint
+>
 > Let $n=[K:\mathbb Q]$ and enumerate the real embeddings as $\tau_1,\ldots,\tau_n$. Since $T$ is nonempty and proper, $n\ge2$. Put $q=|T|$, so $1\le q\le n-1$.
 >
 > **1. State the unit-lattice input.** Define

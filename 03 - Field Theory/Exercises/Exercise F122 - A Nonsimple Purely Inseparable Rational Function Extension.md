@@ -33,7 +33,9 @@ created: 2026-10-02
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Here $x,y$ are algebraically independent variables over $\mathbb F_p$, and $p$ is prime. Write
 > $$
 > E=\mathbb F_p(x,y),\qquad F=\mathbb F_p(x^p,y^p).

@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For connected $X$, write $N_f=f_*A(Y)$. Given two subgroups arising from $f_1,f_2$, choose a common Galois refinement $q$. Then $N_q\subset N_{f_1}\cap N_{f_2}$. These subgroups and their translates therefore define a group topology. The kernel of separation is $\bigcap_fN_f=NA(X)$.
 >
 > Give $Q_f=A(X)/N_f$ the discrete topology. The inverse limit $\widehat A(X)$ is a complete Hausdorff prodiscrete group: it is a closed subgroup of a product of discrete groups, and compatible coordinates converge when they are eventually constant in each coordinate. The natural map $A(X)\to\widehat A(X)$ has dense image. For any finite set of coordinates, choose a common successor $q$; any representative in $Q_q$ of its compatible coordinate realizes all these finitely many coordinates simultaneously. The kernel is $NA(X)$. Thus this is the separated completion for the norm topology, without assuming finite quotients.

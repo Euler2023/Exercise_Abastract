@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Using the chosen base points, identify $X=G/H,Y=G/J$, where $H=G_x\subseteq J=G_y$ and $f(gH)=gJ$. The fiber over $y$ is $J/H$. A $G$-equivariant automorphism is uniquely determined by the image of $H$, which must be $aH$ with $a\in J$ to lie over $Y$. Being well defined and bijective requires $a\in N_J(H)$. Thus, using inverses to remove the antihomomorphism arising from right multiplication,
 > $$
 > \operatorname{Aut}_Y(X)\cong N_J(H)/H.

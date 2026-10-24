@@ -29,7 +29,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Solution of the intended presentation
+> [!success]- Solution
+> **Proof scope:** Solution of the intended presentation
+>
 > Since the defining polynomial is monic of degree three,
 >
 > $$

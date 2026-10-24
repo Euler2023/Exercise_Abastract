@@ -33,7 +33,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $R$ be a Dedekind domain and $I\subseteq R$ an integral ideal. If $I=(0)$, choose $a=b=0$, so $I=(a,b)$. Assume now that $I\ne(0)$.
 >
 > Choose any $0\ne a\in I$. Since $(a)\subseteq I$, the quotient $I/(a)$ is an ideal of the quotient ring $R/(a)$. The corrected result of [[02 - Ring Theory/Exercises/Exercise R340 - Quotients of Dedekind Domains Are Principal Ideal Rings|Exercise I.3.5]] says that this quotient ring is a principal ideal ring. Therefore there is an element $\overline b\in I/(a)$ with

@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the corrected shuffle formula. For an ordered partition $I\sqcup J=\{1,\ldots,r+s\}$, with $I=(i_1<\cdots<i_r)$ and $J=(j_1<\cdots<j_s)$, let $\epsilon(I,J)$ be the sign of the list $(i_1,\ldots,i_r,j_1,\ldots,j_s)$. Define
 >
 > $$

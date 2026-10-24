@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Identify diagonal matrices with their diagonal vectors in $\mathbb R^n$. The trace map is the nonzero functional $(h_1,\ldots,h_n)\mapsto\sum_i h_i$, so its kernel $\mathfrak a$ has dimension $n-1$.
 >
 > (a) Consider $D:\mathfrak a\to\mathbb R^{n-1}$ with coordinates $\alpha_i(H)$. If $D(H)=0$, all the $h_i$ have a common value $c$, and $0=\operatorname{tr}H=nc$ forces $c=0$. Thus $D$ is injective, hence an isomorphism between spaces of equal dimension. Pulling back the coordinate functionals gives a basis $\alpha_1,\ldots,\alpha_{n-1}$ of $\mathfrak a^\vee$.

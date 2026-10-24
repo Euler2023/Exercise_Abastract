@@ -42,7 +42,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently completed Howe–Tan argument
+> [!success]- Solution
+> **Proof scope:** Independently completed Howe–Tan argument
+>
 > Let $n\ge3$, $d\ge0$, and $\mathcal H=\operatorname{Har}_{\mathbb C}(n,d)$. Define the action by $(g\cdot P)(x)=P(g^{-1}x)$. Since $g$ is orthogonal, $\Delta(g\cdot P)=g\cdot(\Delta P)$, so $\mathcal H$ is stable. Rotation-invariance of $d\sigma$ gives a unitary representation for the printed Hermitian product, which is linear in its first argument.
 >
 > The product is positive definite. If its value on $(P,P)$ is zero, continuity makes $P$ vanish on the sphere. Homogeneity gives $P(x)=\|x\|^dP(x/\|x\|)=0$ for every nonzero real $x$, and a complex-coefficient polynomial vanishing on all of $\mathbb R^n$ is zero. Thus every invariant subspace has an invariant orthogonal complement.

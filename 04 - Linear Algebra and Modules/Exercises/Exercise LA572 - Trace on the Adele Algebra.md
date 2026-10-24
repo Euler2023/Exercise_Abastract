@@ -34,7 +34,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The integral basis at almost all places from the preceding exercise gives, by base change, $\mathbb A_L\cong L\otimes_K\mathbb A_K$, a free $\mathbb A_K$-module of rank $[L:K]$. Thus the trace of a multiplication matrix is well-defined.
 > (i) At $v$, decompose $L\otimes_KK_v=\prod_{w\mid v}L_w$. Multiplication becomes a block diagonal matrix, whose trace is the sum of the traces of its blocks, giving the required formula. The local trace of an integral element is integral, so the result is indeed an adèle.
 > (ii) Choose a basis $b_i$ of $L/K$ and a basis $c_j$ of $M/L$. Then $b_ic_j$ is a basis of $M/K$. Taking the traces of the diagonal blocks first with respect to $c_j$ and then taking the trace with respect to $b_i$ gives the tower formula.

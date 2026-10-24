@@ -41,7 +41,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Step 1: The space of derivations of $K/k$
 > 
 > Let $K = k(z_1, \ldots, z_r)$ be the rational function field in $r$ variables over $k$.

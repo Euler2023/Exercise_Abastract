@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\varphi:A\to B$. The map
 > $$
 > u(b\otimes da)=b\,d(\varphi(a))

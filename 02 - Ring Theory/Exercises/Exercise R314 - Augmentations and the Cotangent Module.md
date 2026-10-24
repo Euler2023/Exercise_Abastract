@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The structure map $R\to A$ is split by $\varepsilon$, so it is injective and $A=R\oplus I$. An $R$-derivation $D:A\to M_\varepsilon$ vanishes on $R$ and satisfies $D(ij)=0$ for $i,j\in I$. Hence restriction gives an $R$-linear map $\bar D:I/I^2\to M$.
 >
 > Conversely, given $u:I/I^2\to M$, define $D(a)=u(a-\varepsilon(a)\bmod I^2)$. Writing $a=r+i$, $b=s+j$ gives $ab=rs+rj+si+ij$, and therefore

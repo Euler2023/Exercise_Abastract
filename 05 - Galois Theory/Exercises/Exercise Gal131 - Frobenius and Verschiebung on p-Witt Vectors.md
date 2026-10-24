@@ -50,7 +50,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $p$ be a fixed prime number. Consider the ring of $p$-typical Witt vectors, whose components are indexed by $n \ge 0$, corresponding to the powers $p^n$ in the big Witt vector ring.
 >
 > ---

@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\varphi$ be Frobenius on $\widehat K$, write $\pi=u\bar\pi$, and use Lemma (2.1) to choose $\varepsilon\in U_{\widehat K}$ with $\varepsilon^{\varphi-1}=u$. Corollary (2.3) gives a unique integral series
 > $$
 > \theta(X)=\varepsilon X+O(X^2),\qquad e\circ\theta=\theta^\varphi\circ\bar e.

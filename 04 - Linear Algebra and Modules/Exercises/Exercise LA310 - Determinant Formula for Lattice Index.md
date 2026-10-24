@@ -29,7 +29,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Solution of the intended statement
+> [!success]- Solution
+> **Proof scope:** Solution of the intended statement
+>
 > Let the columns of $C$ be a basis of $M$ and the columns of $B$ a basis of $L$. Because $L\subset M$, there is an integer matrix $A$ such that
 >
 > $$

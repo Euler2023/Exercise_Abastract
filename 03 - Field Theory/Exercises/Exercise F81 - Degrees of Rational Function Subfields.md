@@ -33,7 +33,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > **(a)** Choose $y\in K\setminus F$, and write $y=f(x)/g(x)$ with $f,g\in F[X]$, $g\ne0$. The polynomial $f(T)-yg(T)\in K[T]$ vanishes at $x$. It is nonzero: if every coefficient vanished, comparison with any nonzero coefficient of $g$ would give $y\in F$. Thus $x$ is algebraic over $K$.
 >
 > **(b)** Here $x$ remains transcendental as in (a), and a rational function entails $g\ne0$. The coprimality and $n\ge1$ imply $y\notin F$: otherwise $f=yg$, so the common divisor $g$ would force both polynomials to be constant. By (a), $x$ is algebraic over $F(y)$. If $y$ were algebraic over $F$, transitivity would make $x$ algebraic over $F$. Hence $y$ is transcendental.

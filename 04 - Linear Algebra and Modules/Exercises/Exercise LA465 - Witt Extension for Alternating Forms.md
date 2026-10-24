@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent constructive proof in every characteristic
+> [!success]- Solution
+> **Proof scope:** Independent constructive proof in every characteristic
+>
 > Put $R=\operatorname{rad}(\omega|_F)$ and choose a vector-space complement $U$ with $F=R\oplus U$. The sum is orthogonal because $R$ pairs to zero with all of $F$. If $u\in U$ is orthogonal to $U$, it is also orthogonal to $R$, hence belongs to $R$; therefore $u=0$. Thus $U$ is nondegenerate. The same holds for $U'=\sigma(U)$, and $R'=\sigma(R)$ is the radical of $F'$, because $\sigma$ is an isometry onto $F'$.
 >
 > A nondegenerate subspace splits off orthogonally, so $E=U\perp U^\perp$. Its complement $U^\perp$ is nondegenerate and contains the totally isotropic subspace $R$. Choose a basis $r_1,\ldots,r_s$ of $R$. The functionals $z\mapsto\omega(r_i,z)$ on $U^\perp$ are linearly independent: any dependence would place a nonzero combination of the $r_i$ in the radical of $U^\perp$. Consequently the linear map from $U^\perp$ to $k^s$ given by these functionals has rank $s$ and is surjective. We can choose $z_1,\ldots,z_s$ with $\omega(r_i,z_j)=\delta_{ij}$.

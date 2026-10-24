@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > **Source input.** The class group $\operatorname{Cl}(K)$ of nonzero fractional ideals modulo principal ideals is finite, by Theorem (6.3), printed p. 36 / PDF p. 55. Choose a nonzero integral representative $\mathfrak a_i$ of each of its $h$ classes. Such representatives exist by clearing denominators of fractional ideals.
 >

@@ -39,7 +39,9 @@ created: 2026-10-02
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > **1. Obtain a uniform bound for simple subextensions.** For each $\alpha\in K$, the assumed nonzero annihilating polynomial proves that $\alpha$ is algebraic over $F$. Let $m_\alpha\in F[X]$ be its monic minimal polynomial. Polynomial division gives $m_\alpha\mid f_\alpha$, hence
 > $$
 > [F(\alpha):F]=\deg m_\alpha\le\deg f_\alpha\le n.

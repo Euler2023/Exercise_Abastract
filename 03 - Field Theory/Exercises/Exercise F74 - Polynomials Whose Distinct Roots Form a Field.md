@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $S$ be the root set, assumed to be a field with the inherited operations. It is finite and contains its prime field, so its characteristic is a prime $p$, and $S$ has $p^n$ elements for some $n\ge1$. The ambient splitting field, its subfield $k$, and $S$ have the same characteristic.
 >
 > Every $a\in S$ satisfies $a^{p^n}=a$: this holds for zero, and for nonzero elements it follows from Lagrange's theorem in $S^\times$. Thus $X^{p^n}-X$ vanishes on all of $S$. It has degree $p^n$ and derivative $-1$, hence exactly these simple roots. Since $f$ is monic and all its roots are distinct, $\deg f=|S|=p^n$ and

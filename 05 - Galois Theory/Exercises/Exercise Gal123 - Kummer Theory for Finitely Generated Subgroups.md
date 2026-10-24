@@ -53,7 +53,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K$ be a field of characteristic 0, $\Gamma \le K^*$ a finitely generated subgroup, and $N$ an odd positive integer.
 >
 > ---

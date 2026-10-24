@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For every finite abelian $L/K$, reciprocity gives a continuous surjective homomorphism $C_K\to G(L/K)$. These maps are compatible with restriction and give $\theta:C_K\to G(K^{\mathrm{ab}}/K)$. Each finite target is discrete, so the map kills $D_K$.
 > Splitting the norm gives $C_K=C_K^0\times\mathbb R_{>0}$, and $\theta$ kills the second factor. The group $C_K^0$ is compact, so its image is closed. The image surjects onto every finite quotient and is therefore dense in the inverse limit. Hence $\theta$ is surjective.
 > Its kernel is the intersection of all finite abelian norm groups. The global existence theorem (VI.(6.1), printed pp.395–396/PDF414–415) identifies these with all closed finite-index subgroups of $C_K$. Exercises 9–10 of VI.§1 identify their intersection as $D_K$. The induced continuous bijection $C_K^0/D_K^0\to G(K^{\mathrm{ab}}/K)$ is a homeomorphism from a compact space to a Hausdorff space. Removing the positive-real factor gives the stated topological isomorphism.

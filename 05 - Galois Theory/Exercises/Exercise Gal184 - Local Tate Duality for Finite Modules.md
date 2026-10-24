@@ -34,7 +34,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All cohomology is continuous and $K/\mathbb Q_p$ is finite. The pairing takes values in $\mathbb Q/\mathbb Z$ (or its subgroup killed by the exponent of $A$):
 > $$
 > \langle x,y\rangle_K=\operatorname{inv}_K(x\smile y),\qquad H^1(K,A)\times H^1(K,A')\longrightarrow\mathbb Q/\mathbb Z.

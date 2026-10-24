@@ -41,7 +41,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $n$ be a positive integer, and let $\zeta, \zeta'$ be primitive $n$-th roots of unity in $\mathbb C$.
 > 
 > ### Part (a): $(1-\zeta')/(1-\zeta)$ is an Algebraic Integer

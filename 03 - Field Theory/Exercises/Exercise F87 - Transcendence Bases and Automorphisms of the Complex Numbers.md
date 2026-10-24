@@ -32,7 +32,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### 1. Size of a transcendence basis
 >
 > Choose a transcendence basis $B$ of $\mathbb C/\mathbb Q$. Then $\mathbb C$ is algebraic over $\mathbb Q(B)$. If $B$ were finite or countable, $\mathbb Q(B)$ and its algebraic closure would be countable, which is impossible. Put $\kappa=|B|$, now an infinite cardinal. Every rational function uses finitely many elements of $B$, so

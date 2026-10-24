@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Retain §10's hypotheses: $L/K$ finite Galois with a uniquely extended discrete valuation, and residue characteristic $p>0$. Put $G=\operatorname{Gal}(L/K)$, $H=\operatorname{Gal}(L/K')$. This H need not be normal. Both lower filtrations use the same normalized valuation of L, so their defining inequalities immediately give $H_s=H\cap G_s$ for all $s\ge-1$.
 >
 > Let $\varphi_G,\varphi_H$ be their increasing Herbrand functions, with inverses $\psi_G,\psi_H$; for $s\ge0$, $\varphi_G(s)=\int_0^s[G_0:G_t]^{-1}dt$, and similarly for H, extending by the identity on $[-1,0]$. The definition of upper numbering is $G^u=G_{\psi_G(u)}$ and $H^u=H_{\psi_H(u)}$. Substitution into the lower subgroup equality gives the exact answer

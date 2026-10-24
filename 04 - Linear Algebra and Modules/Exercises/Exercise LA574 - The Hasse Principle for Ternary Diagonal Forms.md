@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ be a number field. A nontrivial global zero gives a nontrivial zero in every completion. Conversely, suppose there is a nontrivial zero in every $K_v$. The field $K_v$ has characteristic $0$ and more than five elements, and $a,b,c$ are nonzero. The corrected version of the preceding exercise gives a local zero with $z\ne0$. Set $u=x/z$ and $w=y/z$. Then
 > $$
 > u^2-\left(-\frac ba\right)w^2=-\frac ca

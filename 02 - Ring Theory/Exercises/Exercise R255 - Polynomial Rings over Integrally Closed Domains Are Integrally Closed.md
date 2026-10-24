@@ -33,7 +33,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $A$ be an integral domain (entire ring) with fraction field $K$, and let $t$ be transcendental over $K$. The fraction field of the polynomial ring $A[t]$ is the rational function field $L=K(t)$.
 > 
 > Suppose $u\in K(t)$ is integral over $A[t]$. We must show that $u\in A[t]$.

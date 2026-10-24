@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\bar u$ be a unit residue class, and fix a nonzero integral ideal $\mathfrak a$. Let $\mathfrak a_0$ be the product of the prime divisors of $\mathfrak a$ that do not divide $\mathfrak m$. By the Chinese remainder theorem, choose $u_0\in\mathcal O$ such that
 > $$
 > u_0\equiv u\pmod{\mathfrak m},\qquad u_0\equiv1\pmod{\mathfrak a_0}.

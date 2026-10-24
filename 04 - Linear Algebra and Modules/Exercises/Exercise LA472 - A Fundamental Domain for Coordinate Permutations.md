@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The space $\mathfrak a$ and the inequalities are those of Exercises 26 and 28: for $H=\operatorname{diag}(h_1,\ldots,h_n)$, we have $\sum_i h_i=0$ and
 > $$
 > H\ge0\quad\Longleftrightarrow\quad

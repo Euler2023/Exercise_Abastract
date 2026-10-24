@@ -50,7 +50,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by comparison of kernels
+> [!success]- Solution
+> **Proof scope:** Independent derivation by comparison of kernels
+>
 > For any $A$-module $Q$, define
 >
 > $$

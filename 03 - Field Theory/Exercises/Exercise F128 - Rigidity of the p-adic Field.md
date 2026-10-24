@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Complete independent solution
+> [!success]- Solution
+> **Proof scope:** Complete independent solution
+>
 > Fix a prime number $p$, and let $\sigma:\mathbb Q_p\longrightarrow\mathbb Q_p$ be an arbitrary field automorphism. We do not assume that $\sigma$ is continuous. We use the description
 >
 > $$

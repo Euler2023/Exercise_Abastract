@@ -33,7 +33,9 @@ Here $p$ is the odd prime used in the surrounding source discussion. Solutions a
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\Delta=b^2-4ac$ in $\mathbb F_p$. The identity
 > $$
 > (2ax+b)^2-\Delta=4a(ax^2+bx+c)

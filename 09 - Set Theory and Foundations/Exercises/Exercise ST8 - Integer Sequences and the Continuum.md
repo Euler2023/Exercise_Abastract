@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Let $B=\{0,1\}^{\mathbb Z^+}$. The map $b\mapsto(j\mapsto b_j+1)$ injects $B$ into $(\mathbb Z^+)^{\mathbb Z^+}$. Conversely the graph map
 >
 > $$

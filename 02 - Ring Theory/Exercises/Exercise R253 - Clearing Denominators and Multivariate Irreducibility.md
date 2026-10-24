@@ -41,7 +41,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Write $R=k[x_1,\ldots,x_n]$ and $K=\operatorname{Frac}(R)$. Interpret $P$ as the monic minimal polynomial and write each coefficient in reduced fractional form. Let $\varphi$ be an lcm of their denominators.
 >
 > To show $\varphi P$ is primitive, consider an irreducible $\pi\in R$. If $\pi\nmid\varphi$, the leading coefficient $\varphi$ is not divisible by $\pi$. If $\pi\mid\varphi$, choose a coefficient whose reduced denominator has the largest $\pi$-exponent among all denominators. Multiplication by $\varphi$ clears exactly that exponent; its numerator is not divisible by $\pi$, so this coefficient of $\varphi P$ is not divisible by $\pi$. Thus no irreducible divides all coefficients.

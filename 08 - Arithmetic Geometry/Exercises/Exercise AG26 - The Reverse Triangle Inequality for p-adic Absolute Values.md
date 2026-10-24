@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > From $|x|_p\le|x-y|_p+|y|_p$ we get $|x|_p-|y|_p\le|x-y|_p$. Interchanging the variables gives its negative as another lower bound. Taking the larger of the two proves the assertion, including $x=y$ and zero arguments.
 >
 > For the stronger statement, suppose $|x|_p>|y|_p$. The ultrametric bound gives $|x-y|_p\le|x|_p$. If strict inequality held, applying that same bound to $x=(x-y)+y$ would give $|x|_p<|x|_p$. Hence $|x-y|_p=|x|_p$. If $|x|_p=|y|_p$, the requested lower bound is zero; cancellation may make $|x-y|_p$ arbitrarily small. For example $x=1$, $y=1+p^N$ gives $|x-y|_p=p^{-N}$.

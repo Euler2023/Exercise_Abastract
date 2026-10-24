@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by induction on the group order
+> [!success]- Solution
+> **Proof scope:** Independent derivation by induction on the group order
+>
 > We prove the assertion by induction on $|G|$. It is immediate for the trivial group. Suppose $G\ne1$. The class equation shows that $|Z(G)|$ is divisible by $p$: each noncentral conjugacy class has size a positive power of $p$, and so $|Z(G)|\equiv|G|\equiv0\pmod p$. Thus the center is nontrivial. An element of the center has order $p^a$ for some $a\ge1$, and its $p^{a-1}$-st power gives a central element $z$ of order $p$.
 >
 > Since the identity commutes with $\rho(z)$, the binomial theorem in characteristic $p$ gives

@@ -46,7 +46,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > The order $d$ is positive. We use $0^0=1$, so a zero root gives the sequence $(1,0,0,\ldots)$. When the roots are not in $K$, the root-sequence statements are interpreted over a field $L$ containing them; take $L=K$ if they already lie in $K$.
 >
 > **(a)** Multiplying $\alpha^d=\sum_{j=1}^du_j\alpha^{d-j}$ by $\alpha^{n-d}$ proves the recurrence for $n\ge d$. This also works for $\alpha=0$, including $n=d$ under the convention above.

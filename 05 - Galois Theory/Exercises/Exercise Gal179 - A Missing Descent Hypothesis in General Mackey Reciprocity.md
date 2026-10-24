@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent counterexample and derivation
+> [!success]- Solution
+> **Proof scope:** Independent counterexample and derivation
+>
 > **Source issue.** Under the printed definition of a general $G$-modulation, the statement is false. The following counterexample checks all open subgroups, all Mackey squares, the unit sequence of Exercise 18, the cyclic norm axioms, and the prime-degree assumption. Its base is an actual global class formation, not the generally invalid guess $H\mapsto H^{ab}$ with transfer descent.
 >
 > **1. A genuine base.** Take a number field $k$ with a finite $A_5$-Galois extension $E/k$. Such a pair is concrete: the splitting field of $X^5-X+1$ over $\mathbb Q$ has group $S_5$ and discriminant $2869$, and over $k=\mathbb Q(\sqrt{2869})$ its group is $A_5$. Irreducibility modulo $3$ gives transitivity; factorization modulo $2$ has degrees $2,3$, so the group contains a transposition by cubing that element. A transitive group of prime degree is primitive, and a primitive permutation group containing a transposition is the full symmetric group: the graph of conjugate transpositions has invariant connected components and hence is connected, so those transpositions generate $S_5$. These elementary checks are also used in the independent solution VI.§7 Exercise 4.

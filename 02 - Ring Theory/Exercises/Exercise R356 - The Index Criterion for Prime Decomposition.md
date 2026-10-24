@@ -33,7 +33,9 @@ Here $\mathfrak o=\mathcal O_K$, $\theta$ is integral over $\mathfrak o$, $L=K(\
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $B=\mathfrak o[\theta]$. The powers $1,\theta,\ldots,\theta^{d-1}$, with $d=[L:K]$, are a $K$-basis, so $B$ is a full integer lattice in $L$ contained in the full lattice $\mathcal O$. Thus $I=[\mathcal O:B]$ is a finite positive integer.
 >
 > Every element of the finite additive group $\mathcal O/B$ is killed by its order $I$. Hence $I\mathcal O\subseteq B$. In fact

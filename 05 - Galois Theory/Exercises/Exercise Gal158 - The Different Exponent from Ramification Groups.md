@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the discrete valuation setting of this chapter: $L/K$ is finite Galois, the discrete valuations are normalized, the integer rings are $\mathcal O/\mathfrak o$, and the residue extension is separable. First use the proved II (10.4) to choose $\mathcal O=\mathfrak o[x]$. The same page also gives
 > $$
 > G_i=\{\sigma\in G:v_L(\sigma x-x)\ge i+1\}.

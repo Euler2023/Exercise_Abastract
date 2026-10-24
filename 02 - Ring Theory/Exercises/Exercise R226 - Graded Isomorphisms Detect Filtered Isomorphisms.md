@@ -59,7 +59,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $A_{-1}=B_{-1}=0$.
 >
 > **(a) Construction on graded pieces.** For every $i\ge0$, define

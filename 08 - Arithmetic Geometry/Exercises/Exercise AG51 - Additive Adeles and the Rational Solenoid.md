@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The denominator in (ii)–(iii) is printed as $\mathbb Z$, making those assertions false as written. The diagonal class $1/n+\mathbb Z$ is a nonzero element of order $n$, and projection to $\mathbb Q_p/\mathbb Z_p$ gives an infinite discrete quotient, so the quotient is neither compact nor connected. We prove the intended correction, $\mathbb A_{\mathbb Q}/\mathbb Q$, below.
 > (i) A finite adèle $a=(a_p)$ has only finitely many nonintegral components, so a positive integer $d$ exists with $da\in\prod_p\mathbb Z_p=\widehat{\mathbb Z}$. Thus $\mathbb A_{\mathbb Q,f}=\bigcup_{d\ge1}d^{-1}\widehat{\mathbb Z}=\widehat{\mathbb Z}\otimes\mathbb Q$.
 > The Chinese remainder theorem gives, for each finite adèle $a_f$, a rational number $q\in\mathbb Q$ such that $a_f-q\in\widehat{\mathbb Z}$. Any two such $q$ differ by an integer. Hence

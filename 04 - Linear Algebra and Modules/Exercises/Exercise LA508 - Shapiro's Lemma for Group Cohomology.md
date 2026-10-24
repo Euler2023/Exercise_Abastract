@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent injective-resolution proof and identification of the prescribed map
+> [!success]- Solution
+> **Proof scope:** Independent injective-resolution proof and identification of the prescribed map
+>
 > Use
 > $$
 > M_G^S(B)=\{f:G\to B:f(sg)=s f(g)\},

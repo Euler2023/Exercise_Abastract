@@ -30,7 +30,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > A common fixed vector is an element of
 > $$
 > U_k=\bigcap_{M\in S}\ker(M-I:k^n\to k^n).

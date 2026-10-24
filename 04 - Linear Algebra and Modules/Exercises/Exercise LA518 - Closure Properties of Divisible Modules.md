@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Work over a domain $A$ with the divisibility convention of XX.19: $aM=M$ for every $a\ne0$. The same proof applies if a specified multiplicative set of scalars is used.
 >
 > For a quotient $M/N$ and $m+N$, choose $x\in M$ with $ax=m$; then $a(x+N)=m+N$. Thus a quotient of a divisible module is divisible.

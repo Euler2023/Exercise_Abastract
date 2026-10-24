@@ -32,7 +32,7 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution 
+> [!success]- Solution
 > Set $K=k(t^p,u^p)$ and $E=k(t,u)$.
 >
 > **(a)** The $p^2$ monomials $t^iu^j$, $0\le i,j<p$, are linearly independent over $K$. Indeed, clearing denominators in a relation gives a polynomial identity

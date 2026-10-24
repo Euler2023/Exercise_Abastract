@@ -63,7 +63,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the corrected formulas
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the corrected formulas
+>
 > All series are formal, with coefficients in the complex class functions on the finite group $G$. No analytic convergence is involved. Put $d=\dim E$, and fix $x\in G$. If $m$ is the order of $x$, then $\rho(x)^m=I$, and $X^m-1$ has distinct roots over $\mathbb C$. Choose an eigenbasis $e_1,\ldots,e_d$ with eigenvalues $\alpha_1,\ldots,\alpha_d$.
 >
 > **(a) Symmetric and exterior eigenbases.** The monomials $e_1^{a_1}\cdots e_d^{a_d}$ with $a_i\ge0$ and $\sum a_i=r$ form a basis of $S^r(E)$. Their eigenvalues are $\alpha_1^{a_1}\cdots\alpha_d^{a_d}$. Summing over all degrees gives

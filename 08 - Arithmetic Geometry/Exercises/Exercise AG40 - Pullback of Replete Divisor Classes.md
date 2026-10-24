@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Retain $\tau:K\hookrightarrow L$ from Exercise 4. At every finite place the ramification index is a positive integer, so the finite coefficients of the pullback remain integers. There are finitely many places above each base-field place, so finite support remains finite; real coefficients are allowed at infinite places. Thus the formula first defines an additive homomorphism between the replete divisor groups.
 >
 > Let $a\in K^\times$. At a finite place $\mathfrak P\mid\mathfrak p$, the extension formula for normalized discrete valuations gives

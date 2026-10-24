@@ -30,7 +30,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $M=(m_{ab})$. For fixed $i,j$, let $E_{ji}$ have a $1$ in row $j$, column $i$, and zeros elsewhere. The $(a,a)$ entry of $ME_{ji}$ equals $m_{aj}\delta_{ia}$, so
 > $$
 > \operatorname{tr}(ME_{ji})=\sum_a m_{aj}\delta_{ia}=m_{ij}.

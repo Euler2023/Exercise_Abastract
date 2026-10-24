@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The book's big Hilbert class field permits real places to become complex and has Galois group the narrow class group $\mathrm{Cl}_K^1$. The small Hilbert class field requires real places to split completely and corresponds to the ordinary class group $\mathrm{Cl}_K$. Their inclusion is $H\subseteq K^1$.
 > The exact sequence VI.(1.11), printed p.366/PDF385, is
 > $$

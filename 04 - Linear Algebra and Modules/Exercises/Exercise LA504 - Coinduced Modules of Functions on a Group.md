@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent verification
+> [!success]- Solution
+> **Proof scope:** Independent verification
+>
 > Give $M_G(B)$ pointwise addition. The prescribed operators satisfy
 > $$
 > [x]([z]f)(y)=f(yxz)=[xz]f(y),\qquad[1]f=f,

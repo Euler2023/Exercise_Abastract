@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Assume $n\ge1$. A matrix $X=(x_{ij})$ lies in $\mathfrak n$ exactly when $x_{ij}=0$ for $i\ge j$. This condition is preserved by addition and scalar multiplication, so $\mathfrak n$ is an $F$-vector subspace of $\operatorname{Mat}_n(F)$.
 >
 > If $X,Y\in\mathfrak n$, then

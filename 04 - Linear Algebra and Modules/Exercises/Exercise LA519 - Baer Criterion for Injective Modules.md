@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Consider pairs $(N,g)$ with $M'\subseteq N\subseteq M$ and $g:N\to Q$ extending $f$, ordered by extension. This is a set, is nonempty, and every chain has an upper bound: union its domains and use the compatible maps there. Zorn's lemma gives a maximal pair $(N,g)$.
 >
 > If $N\ne M$, choose $x_0\in M\setminus N$. Set $J=\{a:ax_0\in N\}$ and $\varphi(a)=g(ax_0)$. This is an ideal and an $A$-linear map. By hypothesis extend it to $\widetilde\varphi:A\to Q$. Define

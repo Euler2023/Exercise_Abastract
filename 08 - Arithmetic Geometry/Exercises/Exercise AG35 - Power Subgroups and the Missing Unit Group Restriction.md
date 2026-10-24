@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Choose a uniformizer $\pi$. The unit group $U=\mathfrak o^*$ is an open neighborhood of $1$ in the usual valuation topology. For every positive $n$, $\pi^n\in K^{*n}$ has nonzero valuation and is outside $U$. Consequently no $K^{*n}$ is contained in this neighborhood, so the printed basis assertion is false. Each such subgroup is nevertheless open: the logarithm construction in II.5.4 exhibits a deep principal-unit group inside it.
 >
 > The corrected assertion is that the subgroups $U^n$ form a neighborhood basis of $1$ in $U$, and hence in $K^*$ because $U$ itself is open. First each $U^n$ is open, by the same logarithm argument giving $U^{(r+v(n))}\subset U^n$ for $r>e/(p-1)$. Second, given a neighborhood, choose $s\ge1$ with $U^{(s)}$ contained in it. The quotient $U/U^{(s)}$ is finite: reduction modulo the finite ring $\mathfrak o/\mathfrak p^s$ identifies it with that ring's unit group. Let $n$ be its order. Lagrange's theorem yields $U^n\subset U^{(s)}$, proving cofinality. Finally $K^{*n}\cap U=U^n$: if $x^n$ has valuation zero, then $nv(x)=0$, so $x\in U$.

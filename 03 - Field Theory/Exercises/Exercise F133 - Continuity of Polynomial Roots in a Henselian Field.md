@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Fix the unique extension of the henselian absolute value to an algebraic closure, supplied by (6.2), printed p. 144 / PDF p. 163. Given the required precision, choose $\delta>0$ less than that precision and less than every nonzero $|\alpha_i-\alpha_j|$. Choose $\eta>0$ with
 > $$
 > \eta\max_{1\le i\le r,\ 0\le j<n}|\alpha_i|^j<\delta^n.

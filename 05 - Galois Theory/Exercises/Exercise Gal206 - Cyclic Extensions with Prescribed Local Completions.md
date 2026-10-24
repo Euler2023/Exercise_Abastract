@@ -34,7 +34,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Clarification of the hypotheses.** Here $n$ must be the least common multiple of $d_v=[L_v:K_v]$, and the sufficient condition in Exercise 6 must be checked for this $n$. Checking it for an unrelated $n$ does not allow arbitrary local degrees to be prescribed. If $S$ is empty, take $n=1,L=K$.
 > For nonempty $S$, the local cyclic extensions give continuous surjective characters $\chi_v:G_{K_v}\to\mathbb Z/d_v$. Embed them into $\mathbb Z/n$ using $1\mapsto n/d_v$; their kernels still fix exactly $L_v$. Exercise 6 proves that, under its applicable sufficient conditions, the global restriction map
 > $$

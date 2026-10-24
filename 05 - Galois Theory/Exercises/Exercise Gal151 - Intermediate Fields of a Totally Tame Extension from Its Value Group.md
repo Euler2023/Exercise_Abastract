@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Retain the henselian base hypothesis of §7, and let the residue characteristic be $p$. Total tameness means equal residue fields and prime-to-$p$ ramification, with no defect. The radical construction in (7.7), printed pp. 155–156 / PDF pp. 174–175, gives for every $\delta\in\Delta/\Gamma$ an element $a_\delta\in L^*$ in that value coset such that $a_\delta^{m_\delta}\in K$ for some $m_\delta$ prime to $p$. Choose $a_0=1$.
 >
 > **Uniqueness up to a K-scalar.** If $a,b$ are two such elements in the same coset, choose $c\in K^*$ with $v(c)=v(a/b)$. Then $u=a/(bc)$ is a unit with some prime-to-$p$ power $u^m\in K$. Its residue lies in the common residue field. Choose $d\in\mathfrak o_K^*$ with that residue. The element $(u/d)^m\in1+\mathfrak p_K$ has a unique $m$-th root in $1+\mathfrak p_K$ by Hensel, because $m$ is a unit. Uniqueness also holds in $L$, so that root equals $u/d$. Thus $a/b\in K^*$.

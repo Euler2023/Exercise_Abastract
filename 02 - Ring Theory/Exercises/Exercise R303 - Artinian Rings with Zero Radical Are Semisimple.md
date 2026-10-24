@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation using a finite separating family
+> [!success]- Solution
+> **Proof scope:** Independent derivation using a finite separating family
+>
 > Assume $R\ne0$, and write $N=J(R)$. The term Artinian means left Artinian. Every nonzero unital ring has a maximal left ideal: apply Zorn's lemma to the proper left ideals, whose chains have proper unions because a union containing $1$ already has a member containing $1$.
 >
 > **If $N=0$, obtain a finite family.** Consider the nonempty collection of finite nonempty intersections of maximal left ideals. By the descending chain condition, it has a minimal member

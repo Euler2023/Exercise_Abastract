@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The series $U=\tau(f)$ is invertible because its constant coefficient $a_n$ is a $p$-adic unit: solve successive coefficients of $UU^{-1}=1$, dividing each time by $a_n$. Write $f=pP+X^nU$, where $P$ is a polynomial of degree less than $n$. Let $R=\mathbb Z_p[[X]]$ with the $p$-adic filtration $p^kR$. It is separated, and complete: a compatible family in $R/p^kR$ gives a unique $p$-adic coefficient for each degree, giving an element of $R$ with the stipulated simultaneous reductions.
 >
 > For $h=qU$, put $T(h)=\tau((P/U)h)$. This additive $\mathbb Z_p$-linear operator maps $p^kR$ into itself. Therefore

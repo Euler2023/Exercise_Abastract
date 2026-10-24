@@ -28,7 +28,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > A nontrivial zero means a vector not all of whose coordinates vanish. No restriction on characteristic is imposed.
 >
 > **Quadratic forms: simple odd-degree extensions.** Suppose a quadratic form $q$ is anisotropic over $k$, meaning that $q(v)=0$ for $v\in k^n$ forces $v=0$, but becomes isotropic over a simple odd-degree extension. Choose such an extension $k(\theta)$ of smallest odd degree $m$, and let $p(T)$ be the monic irreducible polynomial of $\theta$.

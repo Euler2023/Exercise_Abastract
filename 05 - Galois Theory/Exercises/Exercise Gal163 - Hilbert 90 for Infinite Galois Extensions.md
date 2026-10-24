@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $G=G(L/K)$ and give $L^\times$ the discrete topology, making it a continuous module under its natural Galois action. Let $f:G\to L^\times$ be a continuous cocycle. Its image is finite. Choose an open normal subgroup $N$ such that $f|_N=1$ and $N$ fixes every image element. Such a subgroup is obtained using compactness, finiteness of the image, and the normal cores of finitely many stabilizers.
 >
 > Then $f$ factors through the finite group $G/N$ with values in $E^\times$, where $E=L^N$ is a finite Galois extension of $E/K$. The proved Noether formulation (3.8) gives $b\in E^\times$ such that

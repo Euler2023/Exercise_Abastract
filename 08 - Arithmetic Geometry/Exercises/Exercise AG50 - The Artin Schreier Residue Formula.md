@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $B_K(x,a)=\operatorname{Tr}_{\kappa/\mathbb F_p}\operatorname{Res}(x\,d\log a)$. It is additive in $x$ and multiplicative-additive in $a$. We prove that it is the class-field symbol, including its sign.
 >
 > First we verify that $B_K(z^p-z,a)=0$. On Laurent differentials define

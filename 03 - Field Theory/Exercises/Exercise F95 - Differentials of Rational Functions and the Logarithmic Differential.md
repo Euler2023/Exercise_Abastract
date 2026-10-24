@@ -40,7 +40,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Step 1: Differential of a Rational Function
 > 
 > Let $K = k(z_1, \ldots, z_r)$ be the field of rational functions in $r$ algebraically independent variables over $k$.

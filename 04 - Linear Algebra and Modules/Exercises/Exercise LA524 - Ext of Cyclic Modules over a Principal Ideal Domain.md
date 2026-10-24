@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a), corrected range.** Since $R$ is a domain, multiplication by $a\ne0$ is injective. Thus
 > $$
 > 0\longrightarrow R\xrightarrow{\cdot a}R\longrightarrow R/aR\longrightarrow0

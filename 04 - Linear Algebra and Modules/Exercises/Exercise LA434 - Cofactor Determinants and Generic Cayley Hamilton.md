@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by universal specialization
+> [!success]- Solution
+> **Proof scope:** Independent derivation by universal specialization
+>
 > Assume $n\ge1$; for $n=1$ use the empty-minor determinant $1$. Let $R=\mathbb Z[x_{ij}:1\le i,j\le n]$, let $X=(x_{ij})$, and let $C=(c_{ij})$ be its cofactor matrix. The monomial $x_{11}\cdots x_{nn}$ occurs with coefficient $1$ in $\det X$, so $\det X\ne0$ in the domain $R$.
 >
 > Cofactor expansion gives

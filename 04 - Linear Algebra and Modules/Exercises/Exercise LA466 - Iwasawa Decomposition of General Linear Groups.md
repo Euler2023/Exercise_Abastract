@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Work over $\mathbb F=\mathbb R$ or $\mathbb C$, with $\langle x,y\rangle=\sum_\ell x_\ell\overline{y_\ell}$, linear in the first variable. Let $r_1,\ldots,r_n$ be the independent rows of $g\in GL_n(\mathbb F)$. Recursively for $i=n,n-1,\ldots,1$, set
 > $$
 > v_i=r_i-\sum_{j>i}\langle r_i,q_j\rangle q_j,\qquad

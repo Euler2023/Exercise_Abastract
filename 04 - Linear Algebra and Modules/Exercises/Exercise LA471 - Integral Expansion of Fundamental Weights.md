@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Recall from [[04 - Linear Algebra and Modules/Exercises/Exercise LA468 - Coordinate Differences and Dual Bases on Trace Zero Diagonals|Exercise LA468]] that $\alpha_j(H)=h_j-h_{j+1}$ and $\alpha_i'(H)=\sum_{\ell=1}^i h_\ell$ on the trace-zero diagonal space. Telescoping gives
 > $$
 > h_\ell=h_n+\sum_{j=\ell}^{n-1}\alpha_j(H).

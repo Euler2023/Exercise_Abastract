@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Take $m\ge1$ and choose $\alpha$ with $\alpha^m=a$; this defines the symbol $\alpha$ used at the end of the printed question. First assume $\mathfrak a\ne0$. Then $a\ne0$ and $a\in\mathcal O_K$, since $(a)=\mathfrak a^m\subseteq\mathcal O_K$. The equation $T^m-a$ shows that $\alpha$ is integral over $\mathcal O_K$, hence over $\mathbb Z$. Thus $\alpha\in\mathcal O_L$, and $L/K$ is a finite extension of degree at most $m$.
 >

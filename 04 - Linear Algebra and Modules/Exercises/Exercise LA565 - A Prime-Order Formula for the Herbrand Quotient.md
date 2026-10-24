@@ -44,7 +44,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use additive notation and write $T=\sigma-1$, $B=A^G$, and $C=TA$, giving the short exact sequence in the statement. Both $A[p]$ and $A/pA$ are finite.
 >
 > **1. Showing that $q_{0,p}(B)$ is defined.** The group $B[p]\subseteq A[p]$ is finite. The map $B/pB\to A/pA$ has kernel $(B\cap pA)/pB$. For $a=pb\in B$, the expression $b^g-b$ takes values in $A[p]$ and is a cocycle. Changing $b$ changes it by a coboundary. If its class is zero, adjust $b$ to make it fixed; then $a\in pB$. Thus this kernel embeds into the finite group $H^1(G,A[p])$, which is finite because there are only finitely many functions $G\to A[p]$. Hence $B/pB$ is finite. Applying the two-periodic multiplicativity from Exercise 1 to the short exact sequence above, with differentials $0,p$, shows that $q_{0,p}(C)$ is also defined and that

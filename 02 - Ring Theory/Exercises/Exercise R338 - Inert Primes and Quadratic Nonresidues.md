@@ -34,7 +34,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation for the intended quadratic case
+> [!success]- Solution
+> **Proof scope:** Independent derivation for the intended quadratic case
+>
 > Assume $d$ is a squarefree integer with $d\neq1$, let $K=\mathbb Q(\sqrt d)$, and put $\delta=\sqrt d$. The condition that no prime divisor of $2d$ is $p$ in particular excludes $d=0$ and gives $p\neq2$. Thus $K$ is genuinely quadratic and $2$ is invertible in $\mathbb F_p$.
 >
 > **1. Use the full integer ring.** The calculation in [[02 - Ring Theory/Exercises/Exercise R333 - Integral Bases and Discriminants of Quadratic Number Fields|Exercise R333, Step 3]] gives

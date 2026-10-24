@@ -35,7 +35,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > ### 1. The multiplier ring
 > The group $M=\mathbb Z[\sqrt2]$ is a ring containing $1$. If $\alpha M\subseteq M$, then $\alpha=\alpha\cdot1\in M$; conversely any element of this ring preserves it. Thus $\mathfrak o=\mathbb Z[\sqrt2]$.

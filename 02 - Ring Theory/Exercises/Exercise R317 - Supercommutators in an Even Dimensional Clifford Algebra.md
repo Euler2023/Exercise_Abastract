@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here “generated” is understood as real linear span. Set $n=2m$. First suppose $n>0$. A nondegenerate real symmetric form has an orthogonal basis with $g(e_j,e_j)=c_j\in\{1,-1\}$. One can construct it inductively: some $v$ has $g(v,v)\ne0$, since otherwise polarization would give $g=0$; split off $\mathbb Rv$, whose orthogonal complement is again nondegenerate, and rescale each resulting vector.
 >
 > The Clifford relations are $e_j^2=c_j$ and $e_ie_j=-e_je_i$ for $i\ne j$. By the ordered-basis argument of R316, $F_{n-1}$ has basis the monomials $e_I$ for proper subsets $I\subsetneq\{1,\ldots,n\}$.

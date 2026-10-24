@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $w=x_1\wedge\cdots\wedge x_p$. The $x_i$ are linearly independent: a linear dependence expressing one vector in terms of the others makes the wedge zero by multilinearity and alternation. Extend them to a basis $x_1,\ldots,x_p,e_{p+1},\ldots,e_n$ of $E$. For
 >
 > $$

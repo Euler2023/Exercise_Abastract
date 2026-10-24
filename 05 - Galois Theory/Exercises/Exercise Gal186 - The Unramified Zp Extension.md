@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Finite unramified extensions correspond to finite residue-field extensions and are unique of each degree. Since $\widehat{\mathbb Z}$ has a unique quotient isomorphic to $\mathbb Z_p$ (the projection onto its $p$-factor), its fixed-field correspondence gives a unique unramified $\mathbb Z_p$-extension, namely
 > $$
 > K_\infty^{\rm nr}=\bigcup_{m\ge0}K_{p^m},

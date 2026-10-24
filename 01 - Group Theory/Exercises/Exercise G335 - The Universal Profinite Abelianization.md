@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $D=[G,G]$ be the abstract commutator subgroup and put $G'=\overline D$. This is a closed normal subgroup, so the preceding exercise makes $G^{ab}=G/G'$ profinite. The quotient $G/G'$ is abelian because all commutators become the identity.
 >
 > Let $f:G\to A$ be continuous, with $A$ abelian. For every $x,y\in G$, $f(xyx^{-1}y^{-1})=1$, so $D\subseteq\ker f$. Since $A$ is Hausdorff, $\{1\}$ is closed, making $\ker f$ closed. Thus $G'\subseteq\ker f$. The unique abstract factor homomorphism is therefore

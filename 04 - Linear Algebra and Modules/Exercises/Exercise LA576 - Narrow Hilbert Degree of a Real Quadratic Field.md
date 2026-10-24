@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The original problem calls $\epsilon$ totally positive but distinguishes the cases of norm $\pm1$. A totally positive unit necessarily has norm $+1$. The corrected version takes a fundamental unit $\eta$, which may be chosen with $\eta>1$ at the first real embedding, without imposing positivity at the second real embedding.
 > The units of a real quadratic field are $\{\pm\eta^n:n\in\mathbb Z\}$. If $N(\eta)=-1$, the signs of $\eta$ at the two real embeddings are opposite. Together with the signs $(-,-)$ of $-1$, they generate all four sign patterns. Thus $[E:E_+]=4$ and $t=2$. The preceding exercise gives $[K^1:H]=2^{2-2}=1$.
 > If $N(\eta)=+1$, choosing $\eta>1$ also makes the other real embedding positive. The only unit sign patterns are then $(+,+)$ and $(-,-)$. Thus $[E:E_+]=2$ and $t=1$, giving $[K^1:H]=2$.

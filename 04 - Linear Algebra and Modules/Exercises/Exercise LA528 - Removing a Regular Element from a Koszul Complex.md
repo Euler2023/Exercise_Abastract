@@ -77,7 +77,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > We prove the corrected statement specified above. Put $C=K(x_1,\ldots,x_{r-1};M)$ and identify the degree-$p$ term with pairs $(v,w)$ representing $v+w\wedge e_r$. With final parameter $a$, the differential is
 >
 > $$

@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The compositum $K/k$ of the Galois extensions $K_i/k$ is Galois. Restriction gives a continuous homomorphism
 > $$
 > r:G(K/k)\longrightarrow\prod_iG(K_i/k).

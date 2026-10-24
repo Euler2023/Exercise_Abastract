@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation under the corrected hypothesis
+> [!success]- Solution
+> **Proof scope:** Independent derivation under the corrected hypothesis
+>
 > Choose $C\ge0$ such that $|h(f(x))-dh(x)|\le C$ for every $x\in S$. Write $f^0=\operatorname{id}_S$ and $f^n$ for the $n$-fold iterate, and define
 >
 > $$

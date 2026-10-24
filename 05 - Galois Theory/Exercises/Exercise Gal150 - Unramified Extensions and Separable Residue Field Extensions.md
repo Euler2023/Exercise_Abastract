@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Fix an algebraic closure with its unique extended valuation. For a finite separable residue extension $\lambda=\kappa(\bar a)$, lift the monic minimal polynomial $\bar f$ to a monic $f\in\mathfrak o_K[X]$ and take a root $a$. Its reduction is a root of $\bar f$; after choosing the specified residue embedding it is $\bar a$. The inequalities
 > $$
 > [K(a):K]\le\deg f=\deg\bar f=[\lambda:\kappa]\le[K(a):K]

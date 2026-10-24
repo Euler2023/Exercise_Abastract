@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the representations and idempotents
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the representations and idempotents
+>
 > **(a).** Conjugation relabels cycles, so cycle type is invariant. All transpositions are conjugate, and the two $3$-cycles are conjugate. Thus the three classes are $\{1\}$, $\{(12),(13),(23)\}$, and $\{(123),(132)\}$, of sizes $1,3,2$.
 >
 > **(b).** In a one-dimensional complex representation, all transpositions have the same scalar $\varepsilon$, because they are conjugate. Their squares are $1$, so $\varepsilon=\pm1$. Since transpositions generate $S_3$, there are at most two such representations. Both occur: the trivial character $1$ and the sign character $\mathrm{sgn}$. They factor through $S_3/A_3\simeq C_2$.

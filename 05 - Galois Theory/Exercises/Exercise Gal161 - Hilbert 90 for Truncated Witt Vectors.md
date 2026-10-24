@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Continuity follows from the coordinatewise action: a Witt vector has finitely many coordinates, contained in a finite separable extension, so its stabilizer is open. Invariants are also identified coordinatewise, giving $A^{G_L}=W_n(L)$.
 >
 > For any finite Galois extension $L/K$, prove $H^1(G(L/K),W_n(L))=0$. The case $n=1$ is the additive Hilbert 90 proved independently in the preceding exercise. For $n>1$, the first coordinate of Witt addition is ordinary addition, and Verschiebung gives the $G$-equivariant short exact sequence of additive groups

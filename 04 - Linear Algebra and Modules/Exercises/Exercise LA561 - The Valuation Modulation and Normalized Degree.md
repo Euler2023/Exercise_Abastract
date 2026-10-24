@@ -42,7 +42,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Checking the arrow directions.** With $Y$ on the left and $X$ on the right, the source diagram labels the rightward arrow $f$ and the leftward arrow $e$. This is incompatible with the subsequent homomorphism $d:\pi_{ab}\to\boldsymbol{\mathbb Z}$. The correct maps are
 > $$
 > f^*:\boldsymbol{\mathbb Z}(Y)\longrightarrow\boldsymbol{\mathbb Z}(X),\quad z\longmapsto e_{X|Y}z,

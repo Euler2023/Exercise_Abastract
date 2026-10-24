@@ -47,7 +47,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation with the zero-operator boundary
+> [!success]- Solution
+> **Proof scope:** Independent derivation with the zero-operator boundary
+>
 > Put $V=\operatorname{End}_k(E)$. For each $r\ge1$, there is a linear map
 >
 > $$

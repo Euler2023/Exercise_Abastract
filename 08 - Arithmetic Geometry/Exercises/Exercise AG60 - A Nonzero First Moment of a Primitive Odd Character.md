@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\chi$ be primitive of conductor $m$ and odd, so $\chi(-1)=-1$. It is nontrivial. Choose a unit $u$ with $\chi(u)\ne1$ and permute the units modulo $m$ by multiplication by $u$; this proves
 > $$
 > \sum_{a=1}^m\chi(a)=0.

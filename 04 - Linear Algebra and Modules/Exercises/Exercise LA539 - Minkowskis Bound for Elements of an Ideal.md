@@ -49,7 +49,9 @@ Here $n=[K:\mathbb Q]\ge1$, and the signature of $K$ is $(r,s)$: there are $r$ r
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ have degree $n=r+2s\ge1$ and signature $(r,s)$, and let $d_K$ be its field discriminant. Fix a nonzero integral ideal $\mathfrak a$ and write
 > $$
 > A=(\mathcal O_K:\mathfrak a),\qquad

@@ -40,7 +40,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue at $p=2$.** If real places are allowed to become complex, as permitted by the book's convention calling $\mathbb C/\mathbb R$ unramified, the second printed formula omits real signs. For example, take $K=\mathbb Q,p=2$: its right side is $\mathbb Z_2^\times/\{\pm1\}\cong\mathbb Z_2$, while the Galois group of the maximal abelian $2$-ramified cyclotomic extension is $\mathbb Z_2^\times\cong\mathbb Z_2\times C_2$. The general corrected version is given below and recovers the printed formula for odd $p$.
 > Let
 > $$

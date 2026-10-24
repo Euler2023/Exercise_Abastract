@@ -44,7 +44,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived corrected solution
+> [!success]- Solution
+> **Proof scope:** Independently derived corrected solution
+>
 > The determinant is a surjective homomorphism $GL_n(F)\to F^\times$: $\operatorname{diag}(a,1,\ldots,1)$ has determinant $a$ for every $a\in F^\times$. Its kernel is $SL_n(F)$. Because $|F^\times|=q-1$, Exercise 15 gives
 >
 > $$

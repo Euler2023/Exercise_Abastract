@@ -30,7 +30,9 @@ The modules and tensor products are over one commutative ring $R$, as in the cha
 
 ## Solution
 
-> [!success]- Independent proof by preservation of injections
+> [!success]- Solution
+> **Proof scope:** Independent proof by preservation of injections
+>
 > Let $u:U\to V$ be an injective homomorphism of $R$-modules. Since $N$ is flat,
 >
 > $$

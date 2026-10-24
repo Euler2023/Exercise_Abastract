@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the isotypic induction argument
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the isotypic induction argument
+>
 > Let $E$ carry $\rho$. By Maschke's theorem, $\operatorname{Res}_S^G E$ is a direct sum of irreducible $S$-modules. For each irreducible character $\psi$ occurring in this restriction, let $E_\psi$ be the sum of all simple $S$-submodules with character $\psi$. Then
 >
 > $$

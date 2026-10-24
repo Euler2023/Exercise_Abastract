@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Let $\kappa=|K|$, an infinite cardinal. For each $d\ge0$, polynomials of degree at most $d$ identify with $K^{d+1}$, so there are $\kappa$ of them. A countable union gives $|K[t]|=\kappa$: the upper bound follows from $\kappa\aleph_0=\kappa$, and constant polynomials give the lower bound.
 >
 > For each nonzero $f\in K[t]$, its root set $R_f\subseteq E$ has at most $\deg f$ elements. This uses the factor theorem and induction on degree, and does not require separability. Algebraicity gives

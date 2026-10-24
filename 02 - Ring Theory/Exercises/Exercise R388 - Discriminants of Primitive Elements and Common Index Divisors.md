@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here $\mathfrak d$ is the discriminant ideal in the base ring, whereas $\mathfrak D$ is the different in the extension ring. These must be distinguished. Put $n=[L:K]$.
 >
 > **1. The complete local case.** The proved generation lemma [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. II, §10, (10.4), printed p. 178, PDF p. 197] gives $\mathcal O=\mathfrak o[\beta]$ under the complete discrete valuation and separable residue-extension hypotheses. Hence $1,\beta,\ldots,\beta^{n-1}$ is an $\mathfrak o$-basis and $\mathfrak d_{L|K}=(d(\beta))$.

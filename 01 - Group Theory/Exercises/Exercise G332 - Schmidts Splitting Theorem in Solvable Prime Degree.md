@@ -35,7 +35,9 @@ The two prime factors are distinct. A solvable extension is understood in the Ga
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Prove the group-theoretic assertion in the printed hint.** Let $G\le S_p$ be faithful, solvable, and transitive. Choose a minimal nontrivial normal subgroup $V$ of $G$. Its commutator subgroup is characteristic in $V$, hence normal in $G$. Solvability implies that this commutator subgroup is proper; minimality forces it to be trivial. Thus $V$ is abelian. If $\ell$ divides $|V|$, its subgroup of elements killed by $\ell$ is nontrivial and characteristic, so equals $V$. Consequently $V$ is an elementary abelian $\ell$-group.
 >
 > Normality of $V$ makes $G$ permute its orbits, and transitivity of $G$ makes them all have equal size. This size divides $p$. If it were $1$, every element of $V$ would fix every letter, contradicting faithfulness. Thus $V$ is transitive on the $p$ letters, and $p$ divides $|V|$. Hence $\ell=p$. Since $V\le S_p$ and $p!$ has only one factor $p$, Lagrange's theorem gives $|V|=p$. Its transitive action is regular.

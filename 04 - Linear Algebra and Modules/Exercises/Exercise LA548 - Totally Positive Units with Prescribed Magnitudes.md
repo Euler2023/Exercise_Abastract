@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Set $S=T$ as explained in the warning. Write $n=[K:\mathbb Q]$ and $q=|T|$; then $1\le q\le n-1$. Define
 > $$
 > v_\tau=\begin{cases}n-q,&\tau\in T,\\-q,&\tau\notin T.\end{cases}

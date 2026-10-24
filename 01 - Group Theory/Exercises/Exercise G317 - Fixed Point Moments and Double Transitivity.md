@@ -34,7 +34,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Solution under the intended finite hypothesis
+> [!success]- Solution
+> **Proof scope:** Solution under the intended finite hypothesis
+>
 > **(a)** The action on $S$ is transitive, so Burnside's formula gives
 >
 > $$

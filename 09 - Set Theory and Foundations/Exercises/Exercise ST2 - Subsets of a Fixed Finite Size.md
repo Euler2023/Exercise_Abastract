@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > For $n=1$, the singleton map is a bijection $A\to\Phi_1$. For $n>1$, fix an $(n-1)$-element set $F\subseteq A$. The map $a\mapsto F\cup\{a\}$ injects $A\setminus F$ into $\Phi_n$, since $a$ is the unique element outside $F$ in its image.
 >
 > Choose a denumerable subset $D\subseteq A$ containing $F$, by adjoining $F$ to a denumerable subset of its infinite complement. Enumerate $D=\{d_1,d_2,\ldots\}$ with its first $n-1$ elements equal to $F$. Send $d_j$ to $d_{j+n-1}$ and fix all points outside $D$. This is a bijection $A\to A\setminus F$. Compose it with the preceding injection to obtain $|A|\le|\Phi_n|$.

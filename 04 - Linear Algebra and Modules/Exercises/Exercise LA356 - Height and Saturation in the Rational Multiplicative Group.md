@@ -47,7 +47,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > **(a)** Clearly $h(x)\ge0$. If $n>0$ and $x=a/b$ is reduced, then $a^n/b^n$ is reduced, so
 >
 > $$

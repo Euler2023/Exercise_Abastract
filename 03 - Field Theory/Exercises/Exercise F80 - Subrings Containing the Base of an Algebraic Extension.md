@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $R$ be a subring with $F\subseteq R\subseteq E$, and let $0\ne a\in R$. Its monic minimal polynomial over $F$ has the form
 > $$
 > X^m+c_{m-1}X^{m-1}+\cdots+c_1X+c_0

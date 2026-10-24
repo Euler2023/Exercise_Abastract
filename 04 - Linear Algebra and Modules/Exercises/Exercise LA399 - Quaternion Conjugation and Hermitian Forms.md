@@ -45,7 +45,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation, with the source correction
+> [!success]- Solution
+> **Proof scope:** Independent derivation, with the source correction
+>
 > Put $u=a_1i+a_2j+a_3k$. Each cross term in $u^2$ cancels with its reverse because distinct quaternion units anticommute. Hence
 > $$
 > u^2=-(a_1^2+a_2^2+a_3^2),\qquad

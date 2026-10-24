@@ -34,7 +34,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Put $\delta=i\alpha^2$, $M=\mathbb Q(\delta)$, and $E=\mathbb Q(\beta)$ with $\beta=(1+i)\alpha$. Then
 > $$
 > \delta^2=-5,\qquad\beta^2=2\delta,\qquad\beta^4=-20.

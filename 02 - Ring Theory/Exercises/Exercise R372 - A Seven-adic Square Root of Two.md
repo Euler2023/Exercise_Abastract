@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We construct compatible roots modulo $7^n$ directly, rather than assuming Hensel's lemma.
 >
 > Start with $r_1=3$. Suppose $0\le r_n<7^n$ and $r_n^2\equiv2\pmod{7^n}$, with $r_n\equiv3\pmod7$. Set

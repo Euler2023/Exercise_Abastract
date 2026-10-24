@@ -47,7 +47,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the natural adjunction
+> [!success]- Solution
+> **Proof scope:** Independent proof of the natural adjunction
+>
 > Write $\operatorname{Coind}_S^G B=M_G^S(B)$ with the function convention in the info callout. If $\varphi:A\to B$ is $S$-linear, define
 > $$
 > J(\varphi)(a)(x)=\varphi(xa).

@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $K^{(\mathfrak m)}=\{a\in K^*:v_{\mathfrak p}(a)=0\text{ for }\mathfrak p\mid\mathfrak m\}$, and let $P^{(\mathfrak m)}$ be its principal-ideal image in $J^{\mathfrak m}$. Reduction modulo $\mathfrak m$ defines $\chi_f(a)$ for every such fraction. Define
 > $$
 > \phi((a))=\chi_f(a)\chi_\infty(a),\qquad a\in K^{(\mathfrak m)}.

@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $\kappa=|K|$. By Cantor's theorem choose a set $\Omega\supseteq K$ with $|\Omega|>\kappa$, for example by adjoining a disjoint copy of $\mathcal P(K)$ to $K$.
 >
 > Let $\mathcal S$ consist of all subsets $E\subseteq\Omega$ containing $K$, together with two binary operations on $E$ that make it a field extending the given operations of $K$ and algebraic over $K$. This is a set: the carriers lie in $\mathcal P(\Omega)$, and operation graphs lie in $\mathcal P(\Omega^3)$. It is nonempty because the original field $K$ is an element. Order it by inclusion of carriers and agreement of the two operations on the smaller carrier.

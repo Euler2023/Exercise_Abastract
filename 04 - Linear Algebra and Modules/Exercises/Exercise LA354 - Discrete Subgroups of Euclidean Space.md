@@ -39,7 +39,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $V=\operatorname{span}_{\mathbb R}A$ and $m=\dim_{\mathbb R}V\le n$. We prove by induction on $m$ that $A$ is free of rank $m$. The case $m=0$ is immediate.
 >
 > Choose $m-1$ real-linearly independent elements of $A$, let $V_0$ be their span, and put $A_0=A\cap V_0$. The finiteness condition is inherited by $A_0$. By induction, after replacing the chosen elements by a basis if necessary, there are $v_1,\ldots,v_{m-1}\in A_0$ such that

@@ -41,7 +41,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- solultion
+> [!success]- Solution
 > Let $E/\mathbb Q$ be a number field of degree $n=[E:\mathbb Q]$, and let $\mathfrak o_E$ be its ring of algebraic integers. Let $U=\mathfrak o_E^\times$ denote the multiplicative group of units of $\mathfrak o_E$.
 > 
 > Let $\sigma_1,\ldots,\sigma_n: E \hookrightarrow \mathbb C$ be the $n$ distinct embeddings of $E$ into $\mathbb C$.

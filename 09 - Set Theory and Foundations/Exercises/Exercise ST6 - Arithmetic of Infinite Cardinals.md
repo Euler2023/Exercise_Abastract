@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Use disjoint tagged copies for $B\sqcup C$. Bijections between representatives induce bijections on products and function sets, as in Exercise 7.
 >
 > For (a), define

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $b_n=a^{p^n}$. Fermat's theorem gives $a^{p-1}\in1+p\mathbb Z_p$ (for $p=2$ this says that $a$ is odd). The binomial estimate $(1+p^ku)^p\in1+p^{k+1}\mathbb Z_p$ yields
 > $$
 > b_{n+1}/b_n=(a^{p-1})^{p^n}\in1+p^{n+1}\mathbb Z_p.

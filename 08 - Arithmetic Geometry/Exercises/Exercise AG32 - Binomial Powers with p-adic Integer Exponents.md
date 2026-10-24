@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > For fixed $n$, $\binom Zn=Z(Z-1)\cdots(Z-n+1)/n!$ is a polynomial over $\mathbb Q_p$ and hence continuous. Nonnegative integers are dense in $\mathbb Z_p$, and their binomial coefficients are ordinary integers. Since $\mathbb Z_p$ is closed, $\binom zn\in\mathbb Z_p$. If $v_{\mathfrak p}(x)>0$, the series terms have valuation at least $n v_{\mathfrak p}(x)$; hence the series converges in complete $K$, uniformly for $z\in\mathbb Z_p$. Its sum is continuous in $z$ because the finite partial sums are continuous and the tails have a uniform bound.
 >
 > Define $(1+x)^z$ by the continuous $\mathbb Z_p$-action on $U^{(1)}$. For completeness this action exists because $U^{(1)}/U^{(r)}$ is a finite $p$-group: the successive quotients $U^{(j)}/U^{(j+1)}$ are additive residue fields, by (3.10), printed p. 122 / PDF p. 141. Integer exponents sufficiently close $p$-adically therefore give equal powers in each such quotient, and completeness assembles their compatible limits. For every nonnegative integer $m$ the binomial theorem gives the stated identity, with the terms for $n>m$ zero. Approximate $z$ by these integers and use continuity on both sides to obtain the identity for all $z$.

@@ -35,7 +35,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Analysis of the printed statement
+> [!success]- Solution
+> **Proof scope:** Analysis of the printed statement
+>
 > The quotient map
 >
 > $$

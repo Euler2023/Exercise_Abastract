@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > First suppose $n\ge1$ and $1\le p\le n$, and write $c=\binom{n-1}{p-1}$ and $r=\binom np$. For a local basis $e_1,\ldots,e_n$ of $M$, set $e_I=e_{i_1}\wedge\cdots\wedge e_{i_p}$ and order all increasing $p$-element subsets $I$ lexicographically. Define
 > $$
 > \bigwedge_{|I|=p}e_I\longmapsto(e_1\wedge\cdots\wedge e_n)^{\otimes c}.

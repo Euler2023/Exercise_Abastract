@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $H_\infty$ be the subgroup of infinite idèles which equal $1$ at all finite places, are positive at the real places, and have norm $1$. Their logarithmic absolute values lie in the hyperplane $\sum_v\log|a_v|_v=0$, and their complex phases form circles; hence $H_\infty\cong\mathbb R^t\times(S^1)^s$ is connected. The logarithmic basis from the unit theorem shows that this is exactly the image of the parameters in the preceding exercise with all profinite coordinates zero. Its closure in $C_K^0$ is therefore $D_K^0$: since the integers are dense in $\widehat{\mathbb Z}$, the diagonal unit relations allow us to approximate every profinite coordinate.
 > The book has proved that $C_K^0$ is compact (VI.(1.6), printed p.362/PDF381). The quotient $C_K^0/D_K^0$ is profinite: decompose idèles using finitely many ideal-class representatives; after removing $H_\infty$, what remains is the compact group of finite units $\prod_{v\nmid\infty}U_v$ and finitely many ideal-class cosets. Quotienting further by the closure of the units gives a compact, totally disconnected group. The open congruence subgroups of the finite unit group give a basis of open subgroups in this quotient.
 > To make this profiniteness argument precise, put $Q=C_K^0/D_K^0$. The valuation ideal of the finite part defines a continuous map $Q\to\operatorname{Cl}_K$; it is well defined because representatives of $D_K^0$ are units at all finite places. If the ideal class is zero, a principal idèle removes all finite valuations, leaving finite units and an infinite part of norm one. After quotienting by $H_\infty\subseteq D_K^0$, only the signs at the real places remain in the infinite part. Thus the kernel of this map is the continuous image in $Q$ of the profinite group

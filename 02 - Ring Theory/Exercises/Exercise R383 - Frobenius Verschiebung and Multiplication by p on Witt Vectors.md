@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > In a universal torsion-free polynomial ring, the ghost coordinates of $V(a+b)$ and $Va+Vb$ coincide: the zeroth is zero, and the $n$-th for $n\ge1$ is $p(W_{n-1}(a)+W_{n-1}(b))$. Ghost injectivity and evaluation give additivity over all rings. Over $k$, Frobenius commutes with evaluation of every integral polynomial modulo $p$. Thus $F(S(a,b))=S(Fa,Fb)$ and $F(P(a,b))=P(Fa,Fb)$ coordinate by coordinate; it also preserves $(1,0,\ldots)$. Hence $F$ is a ring homomorphism.
 >
 > To verify multiplication by $p$, work over $R=\mathbb Z[a_0,a_1,\ldots]$. The ghost criterion proved in II.4.2 applies to $g_n=W_{n+1}(a)$ because $g_n-\phi(g_{n-1})=p^{n+1}a_{n+1}$. It gives integral polynomials $\Phi_i$ with $W_n(\Phi a)=W_{n+1}(a)$. We claim $\Phi_i\equiv a_i^p\pmod p$. For $i=0$, $\Phi_0=a_0^p+pa_1$. Assuming the claim through $n-1$, compare $W_n(\Phi a)$ and $W_n(Fa)$; their difference is $p^{n+1}a_{n+1}$. The lower-coordinate terms in this difference are divisible by $p^{n+1}$ by the binomial congruence used in II.4.2. The remaining term is $p^n(\Phi_n-a_n^p)$, proving the induction step.

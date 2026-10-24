@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation using Smith normal form
+> [!success]- Solution
+> **Proof scope:** Independent derivation using Smith normal form
+>
 > Put $A=(a_{ij})\in M_n(\mathbb Z)$ and use the basis $v_1,\ldots,v_n$ to identify $\Gamma$ with $\mathbb Z^n$. With column coordinates, the generators $w_i$ form the columns of $A^{\mathsf T}$, so
 >
 > $$

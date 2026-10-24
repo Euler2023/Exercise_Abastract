@@ -33,7 +33,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Choose $m\ge0$ so that $\alpha=p^m a\in\mathbb Z_p$. Shifting by this finite number of digit positions preserves eventual periodicity and rationality. Use the unique digits $\alpha=\sum_{j\ge0}d_jp^j$, $0\le d_j<p$.
 >
 > **1. An eventually periodic expansion is rational.** Suppose the period begins at index $\ell\ge0$ and has length $n\ge1$. Define the integers

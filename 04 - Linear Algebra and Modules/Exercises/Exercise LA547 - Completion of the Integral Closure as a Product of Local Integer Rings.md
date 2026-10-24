@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $\pi$ generate the maximal ideal of $\mathfrak o$. Separability and the integral-basis finiteness theorem imply that $\mathcal O$ is finite over $\mathfrak o$; it is torsion-free, hence free, since $\mathfrak o$ is a PID. We import this source finiteness theorem, I (2.11), together with unique prime factorization in the integral closure. Let $P_w$ be its maximal ideals above $(\pi)$ and write $\pi\mathcal O=\prod_wP_w^{e_w}$.
 >
 > For every $n\ge1$, CRT gives the canonical ring isomorphism

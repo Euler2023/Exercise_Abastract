@@ -49,7 +49,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All tensor products in this proof are over $\mathbb R$ and carry the ordinary tensor-product algebra structure.
 >
 > **The complex tensor square.** Define

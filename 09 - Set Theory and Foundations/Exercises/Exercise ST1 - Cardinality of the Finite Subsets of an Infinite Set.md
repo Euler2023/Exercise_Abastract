@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $\Phi_0=\{\varnothing\}$. For $n\ge1$, a fixed well-order of $A$ orders every $n$-element subset increasingly, giving an injection $\Phi_n\to A^n$. The finite-power theorem gives $|A^n|=|A|$, so $|\Phi_n|\le|A|$. Also $|\Phi_0|=1\le|A|$. The well-order uses the same choice assumption as Lang; the cardinal-product results are proved in the linked concept.
 >
 > Choose injections $j_n:\Phi_n\to A$. Then

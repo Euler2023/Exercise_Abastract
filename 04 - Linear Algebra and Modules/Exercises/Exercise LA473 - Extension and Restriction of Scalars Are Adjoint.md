@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the natural isomorphism
+> [!success]- Solution
+> **Proof scope:** Independent proof of the natural isomorphism
+>
 > Define
 >
 > $$

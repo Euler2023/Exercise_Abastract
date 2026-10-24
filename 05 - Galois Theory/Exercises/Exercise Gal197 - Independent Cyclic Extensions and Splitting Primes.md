@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue / counterexample.** Take $K=\mathbb Q$, $L_1=\mathbb Q(\sqrt6)$, $L_2=\mathbb Q(\sqrt2)$, and $L_3=\mathbb Q(\sqrt3)$. Their pairwise intersections are $\mathbb Q$. However, an unramified prime splitting completely in both fields $L_2,L_3$ splits completely in their compositum, and therefore also in its subfield $L_1$. The original conclusion is false.
 > The intended corrected condition is $L_1\not\subseteq F=L_2\cdots L_r$. Since $[L_1:K]=p$, this is equivalent to $L_1\cap F=K$. Put $M=L_1F$. Then
 > $$

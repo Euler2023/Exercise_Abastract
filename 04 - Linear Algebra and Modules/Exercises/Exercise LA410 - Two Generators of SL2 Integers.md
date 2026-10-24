@@ -35,7 +35,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL_2(\mathbb Z)$. Since $ad-bc=1$, the integers $a,c$ are coprime. We have
 >
 > $$

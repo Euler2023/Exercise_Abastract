@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Set $K^s=\overline K$. Since $n\ne0$ in $K$, for any $a\in(K^s)^\times$ every root of $X^n-a$ is nonzero and its derivative $nX^{n-1}$ does not vanish at a root. The field $K^s$ is separably closed, so an $n$-th root exists. Thus there is a short exact sequence of continuous discrete $G_K$-modules
 > $$
 > 1\longrightarrow\mu_n\longrightarrow(K^s)^\times\xrightarrow{x\mapsto x^n}(K^s)^\times\longrightarrow1.

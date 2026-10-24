@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent trace and double-counting proof
+> [!success]- Solution
+> **Proof scope:** Independent trace and double-counting proof
+>
 > **(a).** By definition, $\mathbb C[S]$ has the basis $\{e_s:s\in S\}$ and $\sigma e_s=e_{\sigma s}$. The matrix entry on the diagonal at $s$ is $1$ if $\sigma s=s$, and $0$ otherwise. Therefore
 >
 > $$

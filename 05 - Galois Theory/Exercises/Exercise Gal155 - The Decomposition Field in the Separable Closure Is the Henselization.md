@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent identification from the source's decomposition-field intersection
+> [!success]- Solution
+> **Proof scope:** Independent identification from the source's decomposition-field intersection
+>
 > Embed the chosen separable closure $K_s$ into a separable closure of the completion $K_v$, compatibly with the selected extension $\bar v$. Let $D$ be its decomposition group and $Z=K_s^D$.
 >
 > The source's localization identification (9.6), printed p. 170 / PDF p. 189, identifies $D$ with the Galois group of the localization of $K_s$ over $K_v$. In particular its fixed elements that lie in $K_s$ are precisely the elements of the embedded $K_v$. This is exactly the source's intersection statement (9.8)(iii), printed pp. 171–172 / PDF pp. 190–191:

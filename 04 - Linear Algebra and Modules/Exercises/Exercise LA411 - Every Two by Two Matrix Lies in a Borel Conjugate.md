@@ -31,7 +31,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Solution of the intended statement
+> [!success]- Solution
+> **Proof scope:** Solution of the intended statement
+>
 > Let $A\in GL_2(k)$. Its characteristic polynomial $\det(TI-A)$ has degree two and therefore has a root $\lambda\in k$ by hypothesis. Thus $\det(\lambda I-A)=0$ and there is a nonzero $v\in k^2$ with $Av=\lambda v$. Extend $v$ to a basis $(v,w)$ of $k^2$. In that basis, $A$ preserves the first coordinate line, so its matrix is upper triangular with nonzero diagonal entries. If $g$ is the change-of-basis matrix with columns $v,w$, then $g^{-1}Ag\in B$ and $A\in gBg^{-1}$. Since every conjugate of $B$ is contained in $GL_2(k)$, this proves
 >
 > $$

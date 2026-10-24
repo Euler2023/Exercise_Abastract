@@ -44,7 +44,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the action, character, and irreducibility
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the action, character, and irreducibility
+>
 > **The action in (a).** For each $(\sigma_1,\sigma_2)$, the map $(x,y)\mapsto\rho_1(\sigma_1)x\otimes\rho_2(\sigma_2)y$ is bilinear. The tensor universal property gives a unique linear map $A_{\sigma_1,\sigma_2}$ with the stated action on pure tensors. On such tensors,
 > $$
 > A_{\sigma_1,\sigma_2}A_{\tau_1,\tau_2}(x\otimes y)

@@ -36,7 +36,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $s=\sqrt{-47}$ and $K=\mathbb Q(s)$. Since $-47\equiv1\pmod4$, [[02 - Ring Theory/Exercises/Exercise R333 - Integral Bases and Discriminants of Quadratic Number Fields|Exercise R333, Step 3]] gives
 > $$
 > \mathcal O_K=\mathbb Z\left[\frac{1+s}{2}\right]

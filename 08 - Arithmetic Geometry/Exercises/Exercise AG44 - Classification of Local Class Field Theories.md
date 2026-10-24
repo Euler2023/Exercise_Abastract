@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $d_K:G_K\to\widehat{\mathbb Z}$ be the usual unramified degree map. The answer is
 > $$
 > d=u d_K\quad(u\in\widehat{\mathbb Z}^{\,*}),\qquad v=\varepsilon v_K\quad(\varepsilon\in\{1,-1\}).

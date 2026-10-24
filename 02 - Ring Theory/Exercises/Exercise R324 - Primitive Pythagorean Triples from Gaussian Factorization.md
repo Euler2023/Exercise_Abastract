@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Integer coprimality and parity.** If a rational prime divides two of $x,y,z$, the equation implies that it divides the third. Thus $\gcd(x,y,z)=1$ implies pairwise coprimality. The legs cannot both be even. They cannot both be odd either, because squares modulo $4$ are $0$ or $1$, whereas $x^2+y^2$ would be $2$ modulo $4$. After interchanging $x,y$, take $x$ odd and $y$ even. Then $z$ is odd.
 >
 > **2. Coprimality in the Gaussian ring.** Suppose a Gaussian prime $\pi$ divides both $x+iy$ and $x-iy$. Then it divides $2x$ and $2iy$, and hence $2y$. Since $\gcd(x,y)=1$, integer Bézout coefficients $r,s$ satisfy $rx+sy=1$, so $\pi$ divides $2rx+2sy=2$.

@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of lattices, absolute irreducibility, and exhaustion
+> [!success]- Solution
+> **Proof scope:** Independent derivation of lattices, absolute irreducibility, and exhaustion
+>
 > **Arithmetic and algebra inputs.** We use the standard arithmetic fact that the ring of integers of a number field is Dedekind and that its localization at a nonzero prime is a discrete valuation ring. Thus $A$ is a PID with fraction field $F$, and every finitely generated torsion-free $A$-module is free. We also use Maschke's theorem and the finite-dimensional Artin–Wedderburn theorem: a group algebra over a field whose characteristic does not divide $|G|$ is semisimple, and over a splitting field it is a product of full matrix algebras. These are named inputs, not assertions about the modular case $p\mid|G|$.
 >
 > **(a) Construct a stable free lattice.** Choose an $F$-basis $v_1,\ldots,v_d$ of $V$ and set $L=\bigoplus_jAv_j$. Put

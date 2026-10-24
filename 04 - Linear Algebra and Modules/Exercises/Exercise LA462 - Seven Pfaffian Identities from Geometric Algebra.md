@@ -77,7 +77,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proofs of all seven properties
+> [!success]- Solution
+> **Proof scope:** Independent proofs of all seven properties
+>
 > **A universal definition and change-of-variables identity.** For every perfect matching $\mathcal M$ of $\{1,\ldots,2m\}$, order each pair as $i_r<j_r$ and order the pairs by $i_1<\cdots<i_m$. Let $\epsilon(\mathcal M)$ be the sign of the permutation $(i_1,j_1,\ldots,i_m,j_m)$. Define
 >
 > $$

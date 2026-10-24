@@ -30,7 +30,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation valid in every characteristic
+> [!success]- Solution
+> **Proof scope:** Independent derivation valid in every characteristic
+>
 > If $g(x,x)=0$ for all $x\in E$, the form is alternating and there is nothing further to prove. Otherwise choose $e\in E$ with $c=g(e,e)\ne0$, and put
 >
 > $$

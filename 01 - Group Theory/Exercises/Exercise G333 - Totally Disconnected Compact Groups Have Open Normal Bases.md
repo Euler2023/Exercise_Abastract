@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Obtaining a clopen basis from total disconnectedness.** For a compact Hausdorff space $X$ and $x\in X$, let $Q$ be the intersection of all clopen sets containing $x$. To prove that $Q$ is connected, suppose $Q=C\sqcup D$ is a separation into two nonempty closed subsets, with $x\in C$. By normality of a compact Hausdorff space, choose disjoint open sets $U,V$ containing $C,D$, respectively. The set $X\setminus(U\cup V)$ is compact. Each of its points lies outside $Q$, so some clopen set containing $x$ excludes that point. Intersecting finitely many such sets gives a clopen set $W$ with $Q\subseteq W\subseteq U\cup V$. Then $W\cap U$ is a clopen set containing $x$ but excluding $D\subseteq Q$, a contradiction. Thus $Q$ is connected and is exactly the connected component of $x$. If $X$ is totally disconnected, then $Q=\{x\}$. Applying the same finite-intersection argument to the compact complement of any neighborhood produces a clopen set containing $x$ and contained in that neighborhood.
 >
 > **2. Producing an open subgroup from a clopen neighborhood.** In the group $G$, take a clopen set $U$ with $1\in U\subseteq O$. Continuity of multiplication and compactness of $U$ give a symmetric open neighborhood $V$ of $1$ such that $VU\subseteq U$: for each $u\in U$, choose $V_uW_u\subseteq U$, cover $U$ by finitely many $W_u$, and take a symmetric neighborhood contained in the intersection of the corresponding $V_u$. For $v\in V$, both $vU\subseteq U$ and $v^{-1}U\subseteq U$ hold, so $vU=U$.

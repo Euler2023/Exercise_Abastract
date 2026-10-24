@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction of the embedding and splitting
+> [!success]- Solution
+> **Proof scope:** Independent construction of the embedding and splitting
+>
 > In $M(G,A)$ the coefficient group is the underlying abelian group of $A$, and the $G$-action is right translation: $([g]f)(x)=f(xg)$. The map $\varepsilon_A$ is additive because $x(a+b)=xa+xb$. For $g,x\in G$,
 > $$
 > ([g]\varepsilon_A(a))(x)=f_a(xg)=x(ga)=f_{ga}(x).

@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by a complete character basis
+> [!success]- Solution
+> **Proof scope:** Independent derivation by a complete character basis
+>
 > Let $\chi_1,\ldots,\chi_r$ be all irreducible characters of $G_1$, and let $\psi_1,\ldots,\psi_s$ be all irreducible characters of $G_2$. The character-basis theorem says that $r,s$ are the respective numbers of conjugacy classes.
 >
 > For $1\le i\le r$ and $1\le j\le s$, put $\theta_{ij}(g,h)=\chi_i(g)\psi_j(h)$. The preceding exercise constructs an irreducible representation with this character. Directly factoring the finite sums gives

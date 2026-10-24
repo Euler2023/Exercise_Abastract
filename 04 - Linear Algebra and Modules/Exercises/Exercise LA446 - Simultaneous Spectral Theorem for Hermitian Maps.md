@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > We first prove the Hermitian spectral fact needed here. Use Lang's convention that the inner product is linear in its first variable. For a Hermitian operator $C$ on a nonzero finite-dimensional complex space, the fundamental theorem of algebra gives an eigenvector $v\ne0$, say $Cv=\lambda v$. Then
 >
 > $$

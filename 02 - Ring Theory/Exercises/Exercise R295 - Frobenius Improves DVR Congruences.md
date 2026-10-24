@@ -35,7 +35,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Complete derivation under the corrected hypothesis
+> [!success]- Solution
+> **Proof scope:** Complete derivation under the corrected hypothesis
+>
 > Assume $\operatorname{char}k=p>0$. Because the image of the integer $p$ in $k$ is zero, $p\in\pi\mathfrak o$; this includes the equal-characteristic case, where $p=0$ in $F$. Suppose $a-b=\pi^s c$ for some $s\ge1$ and $c\in\mathfrak o$. The binomial theorem gives
 >
 > $$

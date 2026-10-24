@@ -38,7 +38,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Since $\mathfrak q\subseteq\mathfrak p$, an element of $S\cap\mathfrak q$ also lies in $S\cap\mathfrak p$. Conversely, if $s\in S\cap\mathfrak p$, then $\mathfrak p=\sqrt{\mathfrak q}$ gives $s^n\in\mathfrak q$ for some $n\ge1$. As $s^n\in S$, this yields $S\cap\mathfrak q\ne\varnothing$.
 >
 > Assume from now on that both intersections are empty, and write $B=S^{-1}A$. For any ideal $I\subseteq A$, the fraction criterion is

@@ -32,7 +32,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\mathfrak o$ be the valuation ring of the place $\varphi$ and $\mathfrak m$ its maximal ideal. The induced map identifies the residue field $\mathfrak o/\mathfrak m$ with a subfield of the real field $L$. Hence $-1$ cannot be a sum of squares in $\mathfrak o/\mathfrak m$.
 >
 > Suppose for contradiction that

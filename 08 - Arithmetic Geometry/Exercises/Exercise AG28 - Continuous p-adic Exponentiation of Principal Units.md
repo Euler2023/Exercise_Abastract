@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Put $U_k=1+p^k\mathbb Z_p$. The binomial expansion shows $U_k^p\subset U_{k+1}$: the linear term has valuation at least $k+1$, the intermediate terms at least $2k+1$, and the final term at least $kp\ge k+1$. This last inequality includes $k=1,p=2$. By induction $\epsilon^{p^n}\in U_{n+1}$. Integer powers, including negative ones, preserve $U_{n+1}$, since $(1+u)^{-1}=1-u/(1+u)$ has the same divisibility. Therefore
 > $$
 > a-b\in p^n\mathbb Z\quad\Longrightarrow\quad \epsilon^a/\epsilon^b\in U_{n+1}.

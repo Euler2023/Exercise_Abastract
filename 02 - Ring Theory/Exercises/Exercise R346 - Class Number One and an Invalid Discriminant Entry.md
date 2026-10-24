@@ -34,7 +34,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > ### 1. Identify the source issue
 > For a quadratic field $\mathbb Q(\sqrt d)$ with squarefree $d\ne1$, its discriminant is $d$ if $d\equiv1\pmod4$ and $4d$ otherwise. In particular it is $0$ or $1$ modulo $4$. Since $11\equiv3\pmod4$, no quadratic field has discriminant $11$. We prove the claim for the seven valid entries without assigning a field to that impossible entry.

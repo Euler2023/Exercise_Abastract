@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The expression $\det(v'_j(v_i))$ is multilinear in each $v_i$ and each $v'_j$. If two $v_i$ agree, two rows agree and the determinant vanishes; if two $v'_j$ agree, two columns agree and it vanishes. Applying the universal property of the exterior power to the two groups of variables therefore gives a well-defined bilinear pairing
 >
 > $$

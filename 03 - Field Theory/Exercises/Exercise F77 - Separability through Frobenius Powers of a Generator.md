@@ -28,7 +28,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Suppose first that $\alpha$ is separable over $K$. Fix $n\ge1$ and put $M=K(\alpha^{p^n})$. The minimal polynomial over $M$ divides the separable minimal polynomial over $K$, so $K(\alpha)/M$ is separable. It is also purely inseparable because $\alpha^{p^n}\in M$. A polynomial which is separable and has only one distinct root must have degree one. Thus $\alpha\in M$, proving equality.
 >
 > Conversely write the irreducible polynomial of $\alpha$ as

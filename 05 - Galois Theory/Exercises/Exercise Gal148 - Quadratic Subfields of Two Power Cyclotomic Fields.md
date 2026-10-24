@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $E=\mathbb Q(\zeta_{2^q})$, where $q\ge3$, and put $\zeta_8=\zeta_{2^q}^{2^{q-3}}$. The elements
 > $$
 > i=\zeta_8^2,\qquad u=\zeta_8+\zeta_8^{-1},\qquad v=\zeta_8-\zeta_8^{-1}

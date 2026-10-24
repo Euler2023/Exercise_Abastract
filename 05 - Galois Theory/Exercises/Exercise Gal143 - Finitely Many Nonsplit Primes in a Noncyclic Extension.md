@@ -33,7 +33,9 @@ In the source, nonsplit means that there is only one prime of $L$ above the base
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $G=\operatorname{Gal}(L/K)$, assumed noncyclic, and let $\mathfrak p$ be unramified. For a prime $\mathfrak P$ above it, the decomposition-inertia exact sequence is
 > $$
 > 1\longrightarrow I_{\mathfrak P}\longrightarrow D_{\mathfrak P}

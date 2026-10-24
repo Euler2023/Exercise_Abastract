@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The projection $a\mapsto a_0$ is a ring homomorphism $W(k)\to k$, since $S_0=a_0+b_0$ and $P_0=a_0b_0$. Its kernel is $VW(k)$. The coordinate Frobenius is bijective because $k$ is perfect. II.4.5 therefore gives $pW(k)=VW(k)$, and inductively $p^rW(k)=V^rW(k)$. Multiplication by $p=VF$ is injective, since both maps are injective.
 >
 > An element $a$ with $a_0=0$ cannot be a unit, by projection. If $a_0\ne0$, solve $ab=(1,0,\ldots)$ recursively. Set $b_0=a_0^{-1}$. In the $n$-th Witt multiplication polynomial the coefficient of $b_n$ modulo $p$ is $a_0^{p^n}$, and all other terms depend only on the earlier $b_i$ and given $a_i$: this follows from the triangular ghost equation by isolating $p^nb_n$ and reducing its quotient modulo $p$. Thus the equation for coordinate $n$ has exactly one solution in $k$. This constructs $b$ and proves the unit criterion.

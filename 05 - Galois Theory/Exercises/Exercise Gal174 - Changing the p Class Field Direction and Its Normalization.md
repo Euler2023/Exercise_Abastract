@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue / normalization of the value group.** The original definition in IV.§5, Exercise 2 requires the value subgroup to contain the standard $\mathbb Z\subseteq\mathbb Z_p$. The literal assertion for an arbitrary surjection $d'$ need not preserve this normalization. Take $G=\mathbb Z_p$, the additive module $A=\mathbb Z$ with trivial action, $d=\mathrm{id}$, and $v=\mathrm{id}$. Norms in finite extensions of index $p^r$ are multiplication by $p^r$, and the Tate group orders satisfy the class field axiom. If $d'=u d$ and $u\in\mathbb Z_p^\times\setminus\mathbb Q$, the definition in the exercise gives $v'=u v$, whose image $u\mathbb Z$ does not contain $1$. Thus the intended unconditional statement requires allowing a new choice of $\mathbb Z_p$ coordinate or relaxing the normalization that the value group contain the standard integers.
 > Under the strict definition requiring containment of the fixed standard integers, the counterexample therefore completely disproves the first assertion. It cannot then be claimed to produce a second class field theory satisfying that same definition. No unproved condition on value-group quotients is used here to fill this gap.
 >

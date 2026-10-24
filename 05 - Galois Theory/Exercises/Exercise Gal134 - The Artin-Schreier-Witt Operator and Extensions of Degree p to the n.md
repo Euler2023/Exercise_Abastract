@@ -40,7 +40,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a field of characteristic $p > 0$, $\bar{k}$ an algebraic closure, and $W_n(k)$ the ring of truncated Witt vectors of length $n$ with components $(x_0, x_1, \dots, x_{n-1})$.
 > The Artin-Schreier-Witt operator $\wp: W_n(\bar{k}) \to W_n(\bar{k})$ is defined by:
 > $$

@@ -31,7 +31,9 @@ All characters below are over $\mathbb C$, and $PSL_2(\mathbb F_5)=SL_2(\mathbb 
 
 ## Solution
 
-> [!success]- Independent isomorphism proofs and the complete character table
+> [!success]- Solution
+> **Proof scope:** Independent isomorphism proofs and the complete character table
+>
 > **The isomorphism $SL_2(\mathbb F_4)\cong A_5$.** Put $G_4=SL_2(\mathbb F_4)$. Its natural action on the one-dimensional subspaces of $\mathbb F_4^2$ gives a homomorphism to $S_5$, since there are $4+1=5$ such subspaces. A matrix fixing every line is scalar: the coordinate lines make it diagonal, and the line spanned by $(1,1)$ makes its two diagonal entries equal. A scalar $aI$ in $G_4$ has $a^2=1$. In characteristic two this forces $a=1$. The action is therefore faithful.
 >
 > The order calculation $\#SL_2(\mathbb F_q)=q(q^2-1)$ gives $\#G_4=60$. Its image has index two in $S_5$ and must be $A_5$. To justify uniqueness here, an index-two subgroup is the kernel of a nontrivial homomorphism $S_5\to\{\pm1\}$. All transpositions are conjugate and generate $S_5$, so such a homomorphism sends every transposition to $-1$ and is the sign homomorphism. This proves the claimed isomorphism.

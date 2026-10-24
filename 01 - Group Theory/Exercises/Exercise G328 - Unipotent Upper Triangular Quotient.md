@@ -28,7 +28,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > The matrices are over the field $k$ of the surrounding matrix exercises. Define
 >
 > $$

@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Let $x=(x_1,\ldots,x_r)$. In degree $p$, $K_p(x)$ is free with basis indexed by the $p$-element subsets of $\{1,\ldots,r\}$. Hence
 >
 > $$

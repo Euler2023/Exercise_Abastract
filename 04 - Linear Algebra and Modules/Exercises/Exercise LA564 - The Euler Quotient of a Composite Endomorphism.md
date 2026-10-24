@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > By definition, $q_{0,f}(A)=\#\operatorname{coker}f/\#\ker f$. Consider the exact sequence
 > $$
 > 0\to\ker f\to\ker(gf)\xrightarrow f\ker g\xrightarrow\delta\operatorname{coker}f\xrightarrow{\bar g}\operatorname{coker}(gf)\to\operatorname{coker}g\to0,

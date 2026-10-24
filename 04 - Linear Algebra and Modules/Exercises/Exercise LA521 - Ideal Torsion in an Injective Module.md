@@ -30,7 +30,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The union $Q^{(\mathfrak a)}=\bigcup_n\operatorname{Ann}_Q(\mathfrak a^n)$ is a submodule, since the annihilator submodules increase. By Baer's criterion take an ideal $J\subseteq A$ and $f:J\to Q^{(\mathfrak a)}$. Noetherianity gives finitely many generators of $J$; taking the maximum of exponents killing their images gives $k$ with $\mathfrak a^kf(J)=0$.
 >
 > We prove the needed intersection lemma rather than assume it. The Rees ring

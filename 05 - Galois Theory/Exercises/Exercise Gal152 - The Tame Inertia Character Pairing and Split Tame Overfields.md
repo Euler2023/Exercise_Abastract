@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Write $A=v(L^*)$, $B=v(K^*)$, and $\chi(L/K)=\operatorname{Hom}(A/B,\lambda^*)$, with the character topology in an infinite extension. The canonical map sends $\tau\in I$ to $\chi_\tau(v(x)\bmod B)=\overline{\tau(x)/x}$. Independence of the representative follows because replacing $x$ by $axu$, $a\in K^*$ and $u$ a unit, multiplies the ratio by $\tau(u)/u$, whose residue is one. The source proves its kernel is wild inertia $R$ and surjectivity in (9.15), printed p. 175 / PDF p. 194. Tameness makes $R=1$, by (9.12)–(9.14). Thus this is an isomorphism and $I$ is abelian.
 >
 > Every element of $G$ preserves the unique extended valuation, so acts trivially on $A/B$. Give the character group the action $(\bar\sigma\chi)(d)=\bar\sigma(\chi(d))$ through its action on residues. Direct calculation gives

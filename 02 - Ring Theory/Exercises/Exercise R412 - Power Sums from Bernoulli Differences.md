@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For an integer $k\ge0$, the generating-function subtraction gives
 > $$
 > B_{k+1}(j)-B_{k+1}(j-1)=(k+1)j^k\qquad(j\ge1).

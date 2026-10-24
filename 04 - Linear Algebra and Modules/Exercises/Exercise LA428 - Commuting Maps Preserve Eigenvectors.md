@@ -30,7 +30,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since $v$ is an eigenvector, $v\ne0$ and $Av=\alpha v$ for some $\alpha\in k$. The commutation relation and linearity imply
 >
 > $$

@@ -33,7 +33,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $f(T)=T^3-T-4$, $K=\mathbb Q(\theta)$, and $f(\theta)=0$. Modulo $3$, $f$ becomes $T^3-T-1$, which has value $-1$ at every element of $\mathbb F_3$. A cubic without a root over a field is irreducible. The monic reduction criterion, which follows from Gauss's lemma, therefore proves that $f$ is irreducible over $\mathbb Q$. Hence $[K:\mathbb Q]=3$; also $\theta$ is integral because $f$ is monic.
 >
 > **1. An integral order with the proposed basis.** Put

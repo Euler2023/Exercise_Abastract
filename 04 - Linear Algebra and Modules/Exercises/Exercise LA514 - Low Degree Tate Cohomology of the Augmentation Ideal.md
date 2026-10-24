@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent norm computation and dimension shifting
+> [!success]- Solution
+> **Proof scope:** Independent norm computation and dimension shifting
+>
 > Put $n=|G|$ and $N_G=\sum_{g\in G}g$. The invariants of $\mathbb Z[G]$ are $\mathbb ZN_G$: invariance under every left translation makes all coefficients equal. Since $\varepsilon(mN_G)=mn$, we get
 > $$
 > I_G^G=I_G\cap\mathbb ZN_G=0.

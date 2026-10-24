@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\mathfrak o=\mathfrak o_K$, $S=\mathfrak o[[X]]$, $e=[\pi]_F$, and $F(n)=\ker[\pi^n]_F$. Source Proposition (5.2) gives $\#F(n)=q^n$, and Theorem (5.4) gives the totally ramified Galois division fields and their scalar action. Evaluating a bounded integral series at division points of positive valuation is legitimate; coefficients after translating $X$ by such a point are convergent $p$-adic sums. The notation $X+_F\lambda$ means $F(X,\lambda)$, not ordinary addition.
 >
 > Let $L_1=K(F(1))$. Each translated series $h(F(X,\lambda))$ has coefficients in $\mathfrak o_{L_1}$: at every fixed power of $X$, the defining infinite sum converges because $\lambda$ has positive valuation and all input coefficients are integral. There are $q$ division points, so their finite product lies in $\mathfrak o_{L_1}[[X]]$.

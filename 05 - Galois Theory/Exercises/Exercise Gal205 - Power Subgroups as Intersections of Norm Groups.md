@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here "exponent $n$" means exponent dividing $n$, as customary in class field theory. Restricting instead to sufficiently many extensions of exact exponent $n$ would require a separate existence argument; these interpretations should not be mixed.
 > By VI.§5, Exercise 1, we have $C_K/D_K\cong G=\operatorname{Gal}(K^{\mathrm{ab}}/K)$. The connected component $D_K$ is built from solenoids, circles, and real lines and is divisible, so $D_K=(D_K)^n\subseteq(C_K)^n$. Therefore
 > $$

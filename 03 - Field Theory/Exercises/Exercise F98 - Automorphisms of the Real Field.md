@@ -29,7 +29,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. If $x>0$, then $x=y^2$ for some $y\in\mathbb R^\times$. Thus $\varphi(x)=\varphi(y)^2>0$. For any $a<b$, the difference $b-a$ is positive, so
 > $$
 > \varphi(b)-\varphi(a)=\varphi(b-a)>0.

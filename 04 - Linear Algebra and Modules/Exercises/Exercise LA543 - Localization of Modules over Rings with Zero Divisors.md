@@ -36,7 +36,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We use commutative rings with identity and unital modules, and take $1\in S$, as is implicit in the printed map to $(a,1)$. If a multiplicatively closed set was given without $1$, adjoining $1$ gives this convention.
 >
 > **1. Verify the equivalence relation.** Reflexivity uses the witness $1$; symmetry changes only a sign. For transitivity suppose

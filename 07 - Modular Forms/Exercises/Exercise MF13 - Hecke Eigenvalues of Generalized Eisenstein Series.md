@@ -71,7 +71,9 @@ created: 2026-10-23
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > This is an independent derivation of (a)–(d). The input consists of the modular forms and Fourier expansions established in Theorem 4.5.1 (printed p. 129 / PDF p. 143), §4.6 (printed pp. 132–133 / PDF pp. 146–147), §4.8 (printed pp. 140–141 / PDF pp. 154–155), and Proposition 5.2.2(b), formula (5.4) (printed pp. 171–172 / PDF pp. 185–186). The conclusion of Proposition 5.2.3 is not assumed.
 >
 > Write $s(n)=\sigma_{k-1}^{\psi,\varphi}(n)$ and set $s(x)=0$ whenever $x$ is not a positive integer. This convention is used only for positive-degree Fourier coefficients; the constant term is treated separately.

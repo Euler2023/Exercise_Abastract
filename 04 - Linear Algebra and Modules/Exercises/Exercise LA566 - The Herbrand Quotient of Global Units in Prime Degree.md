@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Interpret $\mathcal O_L$ as rings of integers of number fields. Set $p=[L:K]$ and $U_F=\mathcal O_F^\times$, and let $m_F=r_F+s_F$ denote the numbers of infinite places. Dirichlet's unit theorem gives $U_F\simeq\mu(F)\times\mathbb Z^{m_F-1}$. The book's unit lattice statement is in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.11), printed p. 191, PDF p. 210].
 >
 > On a finite abelian group $T$, multiplication by $p$ has kernel and cokernel of the same order, since $\#T=\#T[p]\,\#pT$. Thus

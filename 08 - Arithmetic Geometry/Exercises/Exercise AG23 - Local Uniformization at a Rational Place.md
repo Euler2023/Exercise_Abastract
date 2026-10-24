@@ -37,7 +37,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Complete derivation
+> [!success]- Solution
+> **Proof scope:** Complete derivation
+>
 > Since $x\in\mathfrak m$ generates the maximal ideal of a DVR, it has valuation $1$. Any nonzero polynomial in $x$ over $k$ has valuation equal to its smallest nonzero exponent, so $x$ is transcendental over $k$. Thus $K/k(x)$ is finite and, by hypothesis, separable. By the primitive element theorem choose $z_0$ with $K=k(x,z_0)$. Multiplying by a suitable nonzero polynomial in $k[x]$ clears denominators in a monic equation, giving $z\in K$ integral over $k[x]$ and still $K=k(x,z)$. Because the valuation ring $\mathfrak o$ contains $k[x]$ and is integrally closed, $z\in\mathfrak o$.
 >
 > The residue map $k\to\mathfrak o/\mathfrak m$ is an isomorphism. Successively subtract the constant residue and divide by $x$ to obtain a unique formal series $z=\sum_{j\ge0}a_jx^j$ in the completion $\widehat{\mathfrak o}\cong k\lbrack\lbrack x\rbrack\rbrack$. If $[K:k(x)]=1$, choose $y=0$; then $K=k(x,y)$ and $f(X,Y)=Y$ has $D_2f=1$. We therefore assume the degree $n\ge2$.

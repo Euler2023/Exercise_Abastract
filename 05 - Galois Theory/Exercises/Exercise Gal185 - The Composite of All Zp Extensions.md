@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $d=[K:\mathbb Q_p]$. The structure theorem II (5.7) gives
 > $$
 > K^*\cong\pi^{\mathbb Z}\times\mu_{q-1}\times T\times\mathbb Z_p^d,

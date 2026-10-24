@@ -59,7 +59,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > **(a) From a right splitting to a left splitting.** Suppose $\varphi:M''\to M$ satisfies $g\varphi=\operatorname{id}_{M''}$. For $m\in M$,
 >
 > $$

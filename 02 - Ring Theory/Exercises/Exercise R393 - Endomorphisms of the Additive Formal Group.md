@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Under the interpretation of source Proposition (4.3), an endomorphism is a power series $h(X)=\sum_{n\ge1}a_nX^n$ with
 > $$
 > h(X+Y)=h(X)+h(Y).

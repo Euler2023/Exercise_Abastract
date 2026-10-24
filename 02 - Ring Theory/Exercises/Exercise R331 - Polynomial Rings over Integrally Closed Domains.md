@@ -34,7 +34,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K=\operatorname{Frac}(A)$. The fraction field of $A[t]$ is $K(t)$: it contains $K$ and $t$, and every fraction of polynomials over $A$ belongs to $K(t)$. Let $u\in K(t)$ be integral over $A[t]$. We must prove $u\in A[t]$.
 >
 > ### 1. The element $u$ is a polynomial over $K$

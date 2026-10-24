@@ -48,7 +48,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $F$ be a field of characteristic 0. Let $t_1,\ldots,t_n$ be algebraically independent variables over $F$, and let $s_1,\ldots,s_n$ be the elementary symmetric polynomials:
 > $$
 > s_k = \sum_{1\le j_1 < \cdots < j_k \le n} t_{j_1}\cdots t_{j_k}.

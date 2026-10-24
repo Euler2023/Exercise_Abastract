@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation following the source hint
+> [!success]- Solution
+> **Proof scope:** Independent derivation following the source hint
+>
 > Primary decomposition gives $E=\bigoplus_iE_i$ and $F=\bigoplus_jF_j$. Jordan form shows $\dim E_i=n_i$ and $\dim F_j=m_j$: these dimensions count the total block sizes for the corresponding eigenvalues. If either space is zero, both sides of the desired formula are the empty product $1$.
 >
 > Choose bases of each $E_i,F_j$. Their pairwise pure tensors form a basis of $E\otimes_kF$, partitioned into bases of $E_i\otimes_kF_j$. This proves the direct-sum and dimension statements in the hint.

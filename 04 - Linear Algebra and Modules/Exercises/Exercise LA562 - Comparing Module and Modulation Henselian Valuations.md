@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > First restrict to the modulations of Exercise 10 arising from a discrete $G$-module $M$: $A(K)=M^{G_K}$, with norm maps covariantly and inclusions contravariantly. Write $f_K=[\widehat{\mathbb Z}:d(G_K)]$. The old definition (4.6) is $v_k:A(k)\to\widehat{\mathbb Z}$. Its image $Z$ contains $\mathbb Z$ and agrees with $\mathbb Z$ modulo every $n$; it also requires
 > $$
 > v_k(N_{K/k}A(K))=f_KZ.

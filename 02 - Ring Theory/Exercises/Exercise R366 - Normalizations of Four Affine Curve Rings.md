@@ -43,7 +43,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Write $A_1,A_2,A_3,A_4$ for the four rings, in printed order. Every one is Noetherian by Hilbert's basis theorem and the fact that a quotient of a Noetherian ring is Noetherian. These two elementary commutative-algebra facts are the named external inputs here. For a reduced ring that is not a domain, normalization means integral closure in its **total quotient ring**, obtained by inverting all non-zero-divisors.
 >

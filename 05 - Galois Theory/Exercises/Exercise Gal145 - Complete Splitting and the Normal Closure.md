@@ -33,7 +33,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We use the following orbit description, including its proof. Let $N/K$ be finite Galois, let $G=\operatorname{Gal}(N/K)$, fix a prime $\mathfrak P$ of its integral closure above $\mathfrak p$, and let $D$ stabilize $\mathfrak P$. For an intermediate field $F$ put $H_F=\operatorname{Gal}(N/F)$. Let $D$ act by left multiplication on $G/H_F$. Its orbits correspond to the primes of $F$ above $\mathfrak p$ via
 > $$
 > gH_F\longmapsto g^{-1}\mathfrak P\cap F.

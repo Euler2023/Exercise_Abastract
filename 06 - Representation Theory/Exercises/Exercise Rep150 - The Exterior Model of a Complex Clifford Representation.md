@@ -53,7 +53,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The setting inherited from Exercise 17 is a real vector space $E$ of dimension $2m$ with a nondegenerate symmetric bilinear form $g$. We prove the statement with the three corrections displayed above. Extend $g$ complex bilinearly. Since $J^2=-I$ and $T^2+1=(T-i)(T+i)$ has distinct roots,
 >
 > $$

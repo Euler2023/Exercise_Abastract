@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $n=[K:\mathbb Q]$, $V=\prod_{\mathfrak p\mid\infty}K_{\mathfrak p}$, and $f_{\mathfrak p}=[K_{\mathfrak p}:\mathbb R]\in\{1,2\}$. At a complex place, the book's normalized absolute value is the square of the usual complex modulus; the Euclidean coordinates below use the usual real absolute value or complex modulus. We use finiteness of the ideal class group and Dirichlet's unit-lattice theorem. These inputs and their combination are explicitly stated in [Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, Ch. III, §1, (1.11)–(1.12), printed p. 191, PDF p. 210]. Strong approximation itself is not used as an input.
 >
 > **1. The required inhomogeneous lattice covering bound.** For a nonzero fractional ideal $\mathfrak a$ and positive numbers $c_{\mathfrak p}$, put

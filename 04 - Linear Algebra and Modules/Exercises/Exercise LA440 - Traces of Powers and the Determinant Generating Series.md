@@ -48,7 +48,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution with the source issues corrected explicitly
+> [!success]- Solution
+> **Proof scope:** Independent solution with the source issues corrected explicitly
+>
 > Let $n=\dim_kV$, and extend scalars to an algebraic closure $\overline k$. Trace and determinant are given by polynomials in the matrix entries, so this does not change their values. An endomorphism over $\overline k$ has an upper triangular matrix: choose an eigenvector, pass to the induced map on the quotient by its invariant line, and induct on dimension, lifting a triangularizing basis of the quotient. The eigenvector exists because a positive-degree characteristic polynomial has a root.
 >
 > Let $\lambda_1,\ldots,\lambda_n$ be the diagonal entries in such a basis, including multiplicities. Powers of an upper triangular matrix have diagonal entries $\lambda_i^m$, hence

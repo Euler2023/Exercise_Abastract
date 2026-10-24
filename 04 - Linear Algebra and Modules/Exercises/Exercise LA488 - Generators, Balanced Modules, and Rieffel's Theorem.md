@@ -46,7 +46,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent complete proof of Morita's criterion and its Rieffel consequence
+> [!success]- Solution
+> **Proof scope:** Independent complete proof of Morita's criterion and its Rieffel consequence
+>
 > All modules are left modules. Set $S=\operatorname{End}_R(E)$ with its ordinary composition product. Its evaluation action on $E$ commutes with the given $R$-action, which defines $\lambda:R\to\operatorname{End}_S(E)$.
 >
 > If $R$ is the zero ring, its only unital module is $E=0$ and all assertions of the criterion hold directly. We therefore assume $R\ne0$ in the criterion's proof below.

@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > **Counterexample to the printed statement.** In characteristic $p$, let $k=\mathbb F_p(t_1,t_2,\ldots)$, where the variables are algebraically independent, and $K=k((T))$ with its $T$-adic valuation. Put $L=k^{1/p}((U))$ and embed $K$ by $T=U^p$. Every Laurent series $x\in L$ satisfies $x^p\in k((U^p))=K$, so $L/K$ is algebraic and purely inseparable of exponent one. It has infinite degree: for every $r$, the $p^r$ monomials $\prod_{j=1}^r t_j^{e_j/p}$ with $0\le e_j<p$ are linearly independent over $k$, by uniqueness of rational-function monomials after taking $p$-th powers. They remain independent over $k((T))$, by coefficient comparison in Laurent series. Both $K$ and $L$ are complete Laurent-series fields. Giving $U$ value $1/p$ makes the valuation of $L$ extend that of $K$. Thus an infinite complete algebraic extension does exist.
 >
 > **Corrected separable version.** Assume $K$ complete with a nontrivial nonarchimedean absolute value and $L/K$ algebraic separable. Suppose $L$ is complete. We import Baire's category theorem for complete metric spaces and the source's uniqueness of extension of the absolute value to finite extensions, (4.8), printed p. 131 / PDF p. 150.

@@ -38,7 +38,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $A$ be the $r\times n$ matrix whose rows are $A_1,\ldots,A_r$. The solutions of the homogeneous system are precisely $\ker(A:k^n\to k^r)$.
 >
 > **(a)** Since $\operatorname{rank}_k A\le r<n$, rank-nullity gives

@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution using the invariant-factor theorem
+> [!success]- Solution
+> **Proof scope:** Independent solution using the invariant-factor theorem
+>
 > Give $E$ the $k[t]$-module structure $f(t)v=f(A)v$, and give $E'$ the corresponding structure for $A'$. A $k$-linear map $F$ satisfies $FA=A'F$ if and only if it is $k[t]$-linear: the forward implication follows by taking powers and then linear combinations of the identity $FA=A'F$, and the reverse implication follows by taking $f(t)=t$.
 >
 > Lang's Theorem XIV.2.1 gives, for a nonzero finite-dimensional space, a decomposition

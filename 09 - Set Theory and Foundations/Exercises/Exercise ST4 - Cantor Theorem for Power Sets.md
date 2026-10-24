@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > The map $B\mapsto\varphi_B$ is a bijection $\mathcal P(A)\to\{0,1\}^A$. Distinct subsets have different membership functions, and the inverse sends $u$ to $u^{-1}(\{1\})$. The empty subset corresponds to the zero function, extending the hint to all of $S$.
 >
 > The singleton map $a\mapsto\{a\}$ is injective, proving $|A|\le|S|$. If $f:A\to S$ were surjective, define $D=\{a:a\notin f(a)\}$ and choose $d$ with $f(d)=D$. Then

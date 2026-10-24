@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $R=\mathbb Z[\sqrt2]$, use conjugation $\overline{a+b\sqrt2}=a-b\sqrt2$, and put
 >
 > $$

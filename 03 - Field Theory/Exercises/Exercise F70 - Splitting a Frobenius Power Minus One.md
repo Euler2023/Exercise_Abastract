@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Over $\mathbb F_p$, repeated application of $(a+b)^p=a^p+b^p$ gives
 > $$
 > X^{p^s}-1=(X-1)^{p^s}.

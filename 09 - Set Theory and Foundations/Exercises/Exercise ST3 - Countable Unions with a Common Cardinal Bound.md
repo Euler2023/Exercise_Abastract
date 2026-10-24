@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Because $A_1$ is infinite and injects into $A$, the set $A$ is infinite. Choose injections $f_i:A_i\to A$. For $x\in U=\bigcup_{i\ge1}A_i$, let $i(x)$ be the least positive index with $x\in A_{i(x)}$. Then
 >
 > $$

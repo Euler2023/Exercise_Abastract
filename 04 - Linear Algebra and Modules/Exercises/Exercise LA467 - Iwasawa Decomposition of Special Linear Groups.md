@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here $U$ consists of real upper triangular matrices with all diagonal entries $1$, $A$ consists of positive diagonal matrices of determinant $1$, and $K=SO(n)$. By [[04 - Linear Algebra and Modules/Exercises/Exercise LA466 - Iwasawa Decomposition of General Linear Groups|Exercise LA466]], every $g\in SL_n(\mathbb R)$ has a unique factorization $g=uak$ with $u\in U$, $a$ positive diagonal, and $k$ orthogonal, initially without imposing determinant $1$ on the last two factors.
 >
 > Taking determinants gives

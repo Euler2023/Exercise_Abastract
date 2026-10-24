@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Every nontrivial valuation of this algebraic extension restricts nontrivially to $\mathbb Q$: an algebraic element over a trivially valued field must have value one, by the largest-term argument in its monic equation and the same argument for its inverse. Ostrowski therefore reduces the restriction to the usual real or one $p$-adic value. Extensions are indexed by irreducible local factors, as in (8.1)–(8.2), printed pp. 161–162 / PDF pp. 180–181.
 >
 > Over $\mathbb R$, $X^2-5$ has two real roots, giving exactly the two displayed embeddings. For odd $p\ne5$, Hensel and reduction show that $5$ is a square in $\mathbb Q_p$ exactly when it is a square modulo $p$. Quadratic reciprocity gives $(5/p)=(p/5)$. If the symbol is $1$, the two distinct roots give the two displayed absolute values. If it is $-1$, the local polynomial is irreducible, so there is one valuation; the unique-extension norm formula gives the square root of $|a^2-5b^2|_p$.

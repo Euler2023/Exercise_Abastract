@@ -30,7 +30,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a)** For $n\ge1$ and $t\in T$, define $f:n\mathbb Z\to T$ by $f(nk)=kt$. Injectivity extends it to $F:\mathbb Z\to T$. Then $nF(1)=F(n)=t$. Thus multiplication by every positive integer is onto.
 >
 > **(b)** “Principal entire ring” means a principal ideal domain. A module $Q$ is $A$-divisible if $aQ=Q$ for every $0\ne a\in A$. If $Q$ is injective, define $aA\to Q$ by $ar\mapsto rq$ for any $q\in Q$. The domain hypothesis makes this well defined. Extending to $A$ supplies $y$ with $ay=q$.

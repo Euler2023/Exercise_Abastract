@@ -28,7 +28,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\alpha=(3+2\sqrt6)/(1-\sqrt6)$. Since $\sqrt6\ne1$, the denominator is nonzero. Rationalizing gives
 > $$
 > \alpha=\frac{(3+2\sqrt6)(1+\sqrt6)}{1-6}

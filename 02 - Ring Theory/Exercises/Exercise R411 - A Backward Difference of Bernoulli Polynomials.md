@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the source's convention
 > $$
 > \sum_{k\ge0}B_k(x)\frac{t^k}{k!}=\frac{te^{(x+1)t}}{e^t-1}.

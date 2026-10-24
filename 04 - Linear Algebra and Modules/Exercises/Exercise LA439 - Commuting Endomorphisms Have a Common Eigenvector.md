@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution of the nonzero version
+> [!success]- Solution
+> **Proof scope:** Independent solution of the nonzero version
+>
 > Assume $E\ne0$. Its characteristic polynomial $\det(tI-A)$ has positive degree and hence has a root $\lambda\in k$, since $k$ is algebraically closed. Thus $A-\lambda I$ is singular and $E_\lambda=\ker(A-\lambda I)$ is nonzero.
 >
 > If $v\in E_\lambda$, then

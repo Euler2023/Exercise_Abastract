@@ -42,7 +42,9 @@ Here $\mathcal O=\mathcal O_L$ and $G_{\mathfrak P}$ is the decomposition group.
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Refute the printed exponent.** In $L=\mathbb Q(i)$ one has $\mathcal O=\mathbb Z[i]$. The polynomial $X^2+1$ is irreducible modulo $3$, so $\mathcal O/(3)\cong\mathbb F_9$. The ideal $(3)$ is prime and occurs to exponent one in $3\mathcal O$, hence is unramified, with residue degree $2$. Every $\mathbb Q$-automorphism fixes the integer $2$. The printed congruence with $q=2$ would force $2\equiv2^2=1\bmod(3)$, impossible. Thus the literal printed claim is false.
 >
 > **2. Prove the finite-field statement with the correct exponent.** Put

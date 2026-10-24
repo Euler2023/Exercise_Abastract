@@ -39,7 +39,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **The valid finite-level conclusion.** Retain $G_0=G_K$ and the open normal subgroup $H=G_L$ from the preceding exercise. Fix a primitive base Frobenius $s$ and $C=\overline{\langle s\rangle}$. The action of $G_0/H$ on the fiber $H\backslash G_0/C$ is transitive. A stabilizer is conjugate to $CH/H$, a finite image of the procyclic group $C$, so it is finite cyclic. At an infinite Galois level, inverse limits of the finite levels give transitivity on each fiber and a procyclic stabilizer, which need not be a finite cyclic group.
 >
 > **Transitivity on the entire spectrum, as printed, is false.** The action preserves the underlying base microprime. Unless there is only one base microprime, it cannot be transitive on all of $\operatorname{spec}(L)$. The same counterexample below gives at least three base microprimes; even $L=K$ then disproves transitivity on the whole spectrum.

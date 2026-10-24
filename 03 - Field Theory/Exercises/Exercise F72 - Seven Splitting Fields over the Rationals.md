@@ -30,7 +30,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Take the positive real roots $\rho=\sqrt[3]2$, $\eta=\sqrt[5]7$, and primitive roots of unity $\zeta_m=e^{2\pi i/m}$.
 >
 > | Part | Splitting field | Degree over $\mathbb Q$ |

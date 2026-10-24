@@ -40,7 +40,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Solution valid for finite and infinite $k$
+> [!success]- Solution
+> **Proof scope:** Solution valid for finite and infinite $k$
+>
 > Define the semilinear action $T_\sigma(v)=A(\sigma)\sigma(v)$ on $V=K^n$. The cocycle identity gives $T_\sigma T_\tau=T_{\sigma\tau}$ and $T_1=I$. Let $W=V^G$ be its $k$-space of fixed vectors. For every $v\in V$, the unnormalized sum $w(v)=\sum_{\sigma\in G}T_\sigma(v)$ belongs to $W$, since the group permutes its summands.
 >
 > We claim that $KW=V$. If not, choose a nonzero $K$-linear functional $\ell:V\to K$ vanishing on $KW$. For arbitrary $v\in V$ and $a\in K$,

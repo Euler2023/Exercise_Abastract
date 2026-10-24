@@ -35,7 +35,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Write the transition maps of the inverse system as
 >
 > $$

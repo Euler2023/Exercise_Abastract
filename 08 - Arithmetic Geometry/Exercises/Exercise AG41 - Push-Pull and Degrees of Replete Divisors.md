@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Retain $\tau:K\hookrightarrow L$ from the preceding two exercises, identify $K$ with $\tau K$, and write $d=[L:K]$. This section's (1.2)(i)–(ii) give, including at infinite places,
 > $$
 > \sum_{\mathfrak P\mid\mathfrak p}e_{\mathfrak P\mid\mathfrak p}f_{\mathfrak P\mid\mathfrak p}=d,\qquad

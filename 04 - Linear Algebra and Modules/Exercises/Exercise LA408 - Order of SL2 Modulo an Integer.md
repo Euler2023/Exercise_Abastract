@@ -41,7 +41,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Fix a prime $p$ and $e\ge1$. The reduction map $SL_2(\mathbb Z/p^{j+1}\mathbb Z)\to SL_2(\mathbb Z/p^j\mathbb Z)$ is surjective for every $j\ge1$: lift the four entries of a determinant-one matrix arbitrarily, obtaining a matrix $B$ whose determinant is a unit congruent to $1$ modulo $p^j$, then replace $B$ by $B\operatorname{diag}(1,(\det B)^{-1})$.
 >
 > A matrix in the kernel has the form $I+p^jX$ modulo $p^{j+1}$, where $X\in M_2(\mathbb F_p)$. Its determinant is $1+p^j\operatorname{tr}X$ modulo $p^{j+1}$, because $2j\ge j+1$. Hence it lies in $SL_2$ exactly when $\operatorname{tr}X=0$. There are $p^3$ such matrices, one free choice for each off-diagonal entry and one diagonal entry. Exercise 16 gives $|SL_2(\mathbb F_p)|=p(p^2-1)$, so

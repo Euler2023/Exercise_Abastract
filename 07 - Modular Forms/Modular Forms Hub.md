@@ -21,6 +21,7 @@ Modular forms are complex analytic functions on the upper half-plane that satisf
 - [[07 - Modular Forms/Concepts/Modular Group|Modular Group]] ($\text{SL}_2(\mathbb{Z})$ and $\text{PSL}_2(\mathbb{Z})$)
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
+- [[07 - Modular Forms/Concepts/Modular Curves and Moduli|Modular Curves and Moduli]]
 
 ### Basic Definitions
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]

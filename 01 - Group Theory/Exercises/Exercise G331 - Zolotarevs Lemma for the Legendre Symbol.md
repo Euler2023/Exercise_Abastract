@@ -33,7 +33,9 @@ The prime $p$ is odd, as in the source's Legendre-symbol discussion.
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since $a$ is invertible modulo $p$, distinct $\nu$ have distinct $r_\nu$, so these representatives form the stated permutation. Identify $1,\ldots,p-1$ with the nonzero residue classes. Under this identification, $\pi$ is the multiplication permutation
 > $$
 > M_a:\mathbb F_p^\times\longrightarrow\mathbb F_p^\times,

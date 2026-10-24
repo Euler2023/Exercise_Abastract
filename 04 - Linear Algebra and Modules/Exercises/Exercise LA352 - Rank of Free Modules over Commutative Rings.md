@@ -31,7 +31,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > The generalized statement is: **any two bases of a free module over a nonzero commutative ring with identity have the same cardinality.** This common cardinality is the rank of the free module.
 >
 > Let $B=(e_i)_{i\in I}$ and $C=(f_j)_{j\in J}$ be two bases of the same free $R$-module $M$. Choose a maximal ideal $\mathfrak m\subset R$ and put $k=R/\mathfrak m$. From the first basis,

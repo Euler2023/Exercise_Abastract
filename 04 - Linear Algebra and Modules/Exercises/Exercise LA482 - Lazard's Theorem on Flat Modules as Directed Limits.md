@@ -68,7 +68,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation with an explicit directed partially ordered set
+> [!success]- Solution
+> **Proof scope:** Independent derivation with an explicit directed partially ordered set
+>
 > All modules and tensor products are over $A$. We use the element description of directed limits proved in LA481: each element has a representative at one stage, and such a representative is zero in the limit exactly when it becomes zero at a later stage.
 >
 > **(i)$\Rightarrow$(ii).** Let $u:N'\hookrightarrow N$ be an injection. Each finite free $F_i\simeq A^{r_i}$ is flat, since tensoring with it is the finite direct-sum functor $N\mapsto N^{r_i}$. Thus $u\otimes\operatorname{id}_{F_i}$ is injective for every $i$. By LA481, the tensor of $u$ with $E\simeq\varinjlim_iF_i$ identifies with

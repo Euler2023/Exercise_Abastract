@@ -42,7 +42,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\iota_i:M_i\to\bigoplus_iM_i$ be the canonical inclusions. Define
 >
 > $$

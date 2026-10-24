@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here the source's $\mathbb R$ denotes $K\otimes_{\mathbb Q}\mathbb R$, not just the scalar field: its multiplicative group is $R^*\cong(\mathbb R^*)^{r_1}\times(\mathbb C^*)^{r_2}$. The subgroup is
 > $$
 > \mathfrak o^{\mathfrak m}=\{\varepsilon\in\mathfrak o^*: \varepsilon\equiv1\pmod{\mathfrak m}\}.

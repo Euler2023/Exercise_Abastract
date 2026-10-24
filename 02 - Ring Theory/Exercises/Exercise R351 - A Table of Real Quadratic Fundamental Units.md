@@ -39,7 +39,9 @@ In the continued hint, $d$ is the field discriminant, whereas the table uses the
 
 ## Solution
 
-> [!success]- Independent finite verification
+> [!success]- Solution
+> **Proof scope:** Independent finite verification
+>
 > We use [[02 - Ring Theory/Exercises/Exercise R350 - Fundamental Units from Pell Equations|Exercise R350]]: the least positive solution to $x^2-dy^2=-4$ gives a fundamental unit if the negative equation is solvable; otherwise use the least positive solution to $x^2-dy^2=4$. The quadratic discriminant formula gives
 > $$
 > (D,d)=(2,8),(3,12),(5,5),(6,24),(7,28),(10,40).

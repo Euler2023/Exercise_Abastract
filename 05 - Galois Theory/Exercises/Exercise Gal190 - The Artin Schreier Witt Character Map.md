@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the corrected extension of exponent dividing $p^n$, as explained in the source warning. The equations $\wp\xi=x$ can be solved recursively in $\overline K$: the first is $\xi_0^p-\xi_0=x_0$, and each later equation is $\xi_i^p-\xi_i=x_i+$ an expression in previously chosen coordinates. Each polynomial has derivative $-1$, so its roots belong to the separable closure. If $\xi$ is a solution, every conjugate differs from it by an element of $W_n(\mathbb F_p)$, by Exercise 3. Its splitting field is therefore abelian of exponent dividing $p^n$ and lies in $L$.
 >
 > Replacing $\xi$ by another solution adds a Frobenius-fixed vector, which is fixed by $G_K$; thus the character is independent of the choice. For $\sigma,\tau$,

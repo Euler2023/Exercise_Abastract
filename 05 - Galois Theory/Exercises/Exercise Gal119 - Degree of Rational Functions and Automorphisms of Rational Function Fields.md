@@ -57,7 +57,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a field and $k(X)$ the rational function field in one variable over $k$.
 >
 > ---

@@ -34,7 +34,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $Q=M/N$. The image of $\mathfrak m M$ under the projection $M\to Q$ is $\mathfrak m Q$, because both are the finite sums of elements $a(m+N)$ with $a\in\mathfrak m$ and $m\in M$. Thus the assumed equality implies
 > $$
 > Q=\mathfrak m Q.

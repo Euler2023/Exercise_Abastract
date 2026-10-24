@@ -42,7 +42,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > Let $X = \{x_i\}_{i \in I}$ be a transcendence base of $E/k$, and let $Y = \{y_j\}_{j \in J}$ be a transcendence base of $K/E$.
 > We must prove that:
 > 1. $X \cap Y = \emptyset$;

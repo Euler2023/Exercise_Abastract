@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Fix an open normal subgroup $N$ and put $m=\exp(G/N)$. The convergence $a_i\to a$ means that eventually $a_i\equiv a\pmod m$ in the finite discrete quotient $\mathbb Z/m\mathbb Z$. Consequently, eventually
 > $$
 > \sigma^{a_i}N=(\sigma N)^{a_i}=(\sigma N)^{a\bmod m}=\sigma^aN.

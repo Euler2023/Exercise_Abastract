@@ -48,7 +48,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Counterexample and corrected Artin–Tate statement
+> [!success]- Solution
+> **Proof scope:** Counterexample and corrected Artin–Tate statement
+>
 > Let $S=\{1,2\}$ and let the nontrivial element $\tau\in C_2$ interchange $1$ and $2$. Identify $\mathbb Z(S)$ with $\mathbb Z^2$, so $\tau(a,b)=(b,a)$, and set
 >
 > $$

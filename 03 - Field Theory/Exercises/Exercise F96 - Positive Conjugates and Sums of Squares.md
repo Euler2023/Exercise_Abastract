@@ -35,7 +35,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > ### Corrected assertion
 > Put $K=\mathbb Q(\alpha)$. Suppose first that $\alpha\ne0$ is a sum of squares, say $\alpha=\sum_{i=1}^m x_i^2$ with $x_i\in K$. Under any embedding $\sigma:K\hookrightarrow\mathbb R$,
 > $$

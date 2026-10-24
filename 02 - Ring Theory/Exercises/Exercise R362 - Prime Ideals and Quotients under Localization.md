@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $A$ be commutative with identity and let $1\in S$, $0\notin S$. Write $\iota:A\to A_S$ for $a\mapsto a/1$; this map need not be injective.
 >
 > **1. Extend a prime and compute the quotient.** Fix a prime $\mathfrak p$ with $\mathfrak p\cap S=\varnothing$, and let $\bar S$ be the image of $S$ in the domain $A/\mathfrak p$. Define

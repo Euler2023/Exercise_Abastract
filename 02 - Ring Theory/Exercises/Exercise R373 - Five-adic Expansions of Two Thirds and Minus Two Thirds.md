@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The denominator $3$ is prime to $5$, so both numbers are in $\mathbb Z_5$ and have no negative-power digits. We list digits from the constant term toward higher powers.
 >
 > For $z\in\mathbb Z_{(5)}$, choose its digit $d\in\{0,1,2,3,4\}$ modulo $5$ and write $z=d+5z'$. The successive states here are

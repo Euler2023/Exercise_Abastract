@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > The precise assertion is: for every real $B>0$ there is an integer $N$ such that every number field $K$ with $[K:\mathbb Q]\ge N$ has $|d_K|>B$. It is not necessary to fix a signature.
 >

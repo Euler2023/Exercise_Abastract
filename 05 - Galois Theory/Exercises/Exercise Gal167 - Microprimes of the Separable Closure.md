@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Retain the hypothesis on closed abelian subgroups from the preceding two exercises. For a base microprime $\mathfrak p=[s]_G$, put $C=\overline{\langle s\rangle}=C_G(s)$. A finite Galois level $L_\alpha/k$ corresponds to an open normal subgroup $H_\alpha$. The preceding exercise identifies the fiber as
 > $$
 > \operatorname{spec}(L_\alpha)_{\mathfrak p}\simeq H_\alpha\backslash G/C.

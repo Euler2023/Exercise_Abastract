@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the action and corrected separation theorem
+> [!success]- Solution
+> **Proof scope:** Independent proof of the action and corrected separation theorem
+>
 > Write $\rho:G\to\operatorname{End}_k(E)$ for the given injective monoid homomorphism. For $r\ge1$, tensor multilinearity defines
 >
 > $$

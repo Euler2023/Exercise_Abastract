@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of all four equivalences
+> [!success]- Solution
+> **Proof scope:** Independent derivation of all four equivalences
+>
 > Write $T=M\otimes_A-$, and suppress the subscript $A$ on tensors. We use right exactness of tensor product and its elementary quotient identification
 >
 > $$

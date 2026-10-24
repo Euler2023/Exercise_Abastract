@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The hypotheses inherited from section 4 are: $k$ is a field, $E$ is finite-dimensional, and $g$ is a symmetric bilinear form. Lang's convention is $v^2=g(v,v)1$. Set $F_{-1}=0$ and $F_0=k1$; $F_i$ is the span of products of at most $i$ vectors. We prove the assertion in every characteristic, including degenerate forms.
 >
 > Let $e_1,\ldots,e_n$ be any basis. The relations

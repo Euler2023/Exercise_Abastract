@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation of the corrected assertions
+> [!success]- Solution
+> **Proof scope:** Independent derivation of the corrected assertions
+>
 > Let $A=k[t_1,\ldots,t_n]$ and let $\pi:P\to A$ be the homomorphism sending each free variable to its commuting counterpart. In degree one the variables form a basis on both sides, so $\pi|_{P_1}$ is an isomorphism of vector spaces. Put $y_i=\pi(x_i)$. Distinct $x_i$ give distinct $y_i$, and nonzero $x_i$ give nonzero $y_i$.
 >
 > Applying $\pi$ to the relations gives

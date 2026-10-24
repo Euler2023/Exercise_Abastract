@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For any derivation $D:A\to M$, where $M$ is an $S^{-1}A$-module, define
 > $$
 > \widetilde D(a/s)=s^{-1}D(a)-as^{-2}D(s).

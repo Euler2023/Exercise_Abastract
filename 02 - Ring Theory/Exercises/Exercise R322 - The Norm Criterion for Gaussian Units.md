@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For $\alpha=a+bi$ with $a,b\in\mathbb Z$, define $\overline\alpha=a-bi$. Conjugation respects products, so
 > $$
 > N(\alpha\beta)=\alpha\beta\overline\alpha\,\overline\beta

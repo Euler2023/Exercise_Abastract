@@ -42,7 +42,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $A$ be a Dedekind ring with quotient field $K$.
 > 
 > ### Part 1: Content in $A[X]$ and Multiplicativity

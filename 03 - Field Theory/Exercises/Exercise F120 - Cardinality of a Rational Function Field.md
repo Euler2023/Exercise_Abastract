@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $\kappa=|K|$. Polynomials of degree at most $d$ correspond to coefficient lists in $K^{d+1}$, of cardinality $\kappa$. Since every polynomial has some finite degree, the countable-union bound gives $|K[t]|\le\kappa\aleph_0=\kappa$. Constant polynomials yield equality.
 >
 > Every element of $K(t)$ is $f/g$ for $f,g\in K[t]$ with $g\ne0$. Hence the map

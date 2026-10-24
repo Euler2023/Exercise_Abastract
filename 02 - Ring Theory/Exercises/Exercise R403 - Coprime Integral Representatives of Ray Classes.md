@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Represent the given ray class by a fractional ideal $\mathfrak b$ coprime to $\mathfrak m$. Let $\mathfrak a$ be the fixed nonzero integral ideal. We seek $x\in K^\times$ with $x\equiv1\pmod{\mathfrak m}$, with $x>0$ under every real embedding, and such that $(x)\mathfrak b$ is integral and coprime to $\mathfrak a$.
 > Take the lattice ideal $L=\mathfrak b^{-1}$. At each $\mathfrak p\mid\mathfrak a$, require $x$ to be nonzero in $L_\mathfrak p/\mathfrak pL_\mathfrak p$; equivalently, $v_\mathfrak p(x)=-v_\mathfrak p(\mathfrak b)$. At $\mathfrak p\mid\mathfrak m$, we have $\mathfrak b_\mathfrak p=\mathcal O_\mathfrak p$, so we may require $x\equiv1$. These finitely many residue conditions are compatible, and the Chinese remainder theorem for ideals supplies $x_0\in L$.
 > The homogeneous solutions contain a nonzero integral ideal $\mathfrak c\subseteq L$. Choose a positive integer $N\in\mathfrak c$. Then $x_0+kN$ becomes positive at every real embedding as $k\to+\infty$, while preserving all finite congruences. Choose such an $x$. The ideal $(x)\mathfrak b$ is then integral, coprime to $\mathfrak a$, and in the same ray class as $\mathfrak b$.

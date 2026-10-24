@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > For distinct nonzero primes $\mathfrak p_i$ of a Dedekind domain $A$ with fraction field $K$, the valuation inequality $v_i(x-a_i)\ge N_i$ is a congruence modulo $\mathfrak p_i^{N_i}$ when $x,a_i\in A$. The prime powers are pairwise comaximal, and CRT produces an integral $x$ satisfying all the inequalities.
 >
 > For arbitrary $a_i\in K$, choose $0\ne d\in A$ with $da_i\in A$. Choose integers $M_i\ge0$ with $M_i-v_i(d)\ge N_i$. CRT produces $y\in A$ such that $y-da_i\in\mathfrak p_i^{M_i}$ for all $i$. Then $x=y/d$ satisfies the requested approximation. Thus (3.4) for this finite family of nonarchimedean prime valuations follows from CRT; varying $N_i$ gives any prescribed positive error bounds.

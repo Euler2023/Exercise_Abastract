@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Regard $A$ as a submodule of $B$ and write $\pi$ for the quotient map. Exactness at the first two terms of the invariant sequence follows directly from the definition of the kernel. For $c\in C^G$, choose $b\in B$ with $\pi(b)=c$. Then
 > $$
 > z_b(\sigma)=b^{\sigma-1}\in A.

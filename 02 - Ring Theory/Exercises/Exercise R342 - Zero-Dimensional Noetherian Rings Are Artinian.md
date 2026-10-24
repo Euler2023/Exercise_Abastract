@@ -40,7 +40,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All rings here are commutative with identity. The zero ring satisfies the assertion immediately, so suppose $R\ne0$.
 >
 > ### 1. Find a zero product of prime ideals

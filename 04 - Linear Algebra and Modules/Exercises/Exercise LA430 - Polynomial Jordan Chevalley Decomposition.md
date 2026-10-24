@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > If $E=0$, all operators are zero and the conclusion holds with $g=0$. Otherwise use the primary decomposition from Lang XIV §2: $E=\bigoplus_iE_i$, where $E_i=\ker(A-\lambda_i I)^{m_i}$ for the factorization in the hint. On $E_i$ set $S=\lambda_i I$ and $N=A-\lambda_i I$. Combining bases of the $E_i$ makes $S$ diagonal, and $N^m=0$ for $m=\max_i m_i$. Each $E_i$ is $A$-invariant, so the definitions also give $SN=NS$ and $A=S+N$.
 >
 > The ideals $((t-\lambda_i)^{m_i})$ are pairwise comaximal. The Chinese remainder theorem gives $g\in k[t]$ with the prescribed residues $\lambda_i$. The additional condition $g(0)=0$ is consistent: if some $\lambda_i=0$, it already follows from that component; otherwise $(t)$ is coprime to every primary factor and can be included as one more congruence. On $E_i$, the operator $g(A)-\lambda_i I$ is zero because its polynomial is divisible by $(t-\lambda_i)^{m_i}$. Thus $S=g(A)$ and $N=A-g(A)$.

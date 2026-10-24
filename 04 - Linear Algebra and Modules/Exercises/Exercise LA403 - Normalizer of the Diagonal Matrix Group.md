@@ -31,7 +31,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived corrected solution
+> [!success]- Solution
+> **Proof scope:** Independently derived corrected solution
+>
 > Assume $|F|>2$. The group $D$ fixes each coordinate line $Fe_i$ as a common eigenspace. These are its **only** common eigenlines. Indeed, choose $\lambda\in F^\times$ with $\lambda\ne1$ and set $d_i=\operatorname{diag}(1,\ldots,\lambda,\ldots,1)$. A vector with nonzero components in two different coordinates cannot be an eigenvector for every $d_i$: choosing $i$ to be one of those coordinates gives different eigenvalues on its two nonzero components.
 >
 > If $g\in N$, then for any common $D$-eigenline $L$, the line $gL$ is again a common $D$-eigenline, since $g^{-1}Dg=D$. Thus $g$ permutes the lines $Fe_1,\ldots,Fe_n$. Equivalently, $g$ has exactly one nonzero entry in each row and column: it is a monomial matrix. Conversely, every monomial matrix permutes diagonal entries under conjugation and therefore normalizes $D$.

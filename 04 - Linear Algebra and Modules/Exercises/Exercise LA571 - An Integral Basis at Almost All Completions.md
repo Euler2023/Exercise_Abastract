@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $M=\sum_i\mathcal O_K\omega_i\subset L$. Both it and $\mathcal O_L$ are full $\mathcal O_K$-lattices, so there is a nonzero $d\in\mathcal O_K$ such that $d\mathcal O_L\subseteq M\subseteq d^{-1}\mathcal O_L$. Localizing and completing at $\mathfrak p\nmid d$ gives
 > $$
 > M\otimes_{\mathcal O_K}\mathcal O_\mathfrak p

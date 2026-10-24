@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Under Kummer theory the indicated map on the second factor sends the class of $b\in L^*$ to that of $N_{L/K}b$. This is also the corestriction map: choosing a root $\beta^n=b$, multiplying its conjugates over representatives of $G_K/G_L$ gives an $n$-th root of $N_{L/K}b$, and the associated Kummer cocycle is the product defining corestriction.
 >
 > The norm compatibility of local reciprocity gives

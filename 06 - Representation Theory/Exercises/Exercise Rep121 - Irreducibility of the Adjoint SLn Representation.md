@@ -45,7 +45,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived proof
+> [!success]- Solution
+> **Proof scope:** Independently derived proof
+>
 > Assume $n\ge2$. The case $n=1$ is addressed in Notes.
 >
 > **(a)** Each off-diagonal matrix unit has trace zero and the $n(n-1)$ such units are linearly independent. A trace-zero diagonal matrix has the form $\operatorname{diag}(a_1,\ldots,a_n)$ with $\sum_i a_i=0$. Setting $b_i=a_1+\cdots+a_i$ gives

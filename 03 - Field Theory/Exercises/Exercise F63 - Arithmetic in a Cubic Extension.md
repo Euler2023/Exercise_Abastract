@@ -36,7 +36,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Put $f(X)=X^3+X^2+X+2$. Its possible rational roots are $\pm1,\pm2$, and direct substitution excludes all four. Thus $f$ is irreducible and $1,\alpha,\alpha^2$ is a basis of $E/\mathbb Q$.
 >
 > Since $\alpha^3=-\alpha^2-\alpha-2$, multiplication by $\alpha$ gives $\alpha^4=2-\alpha$. Consequently

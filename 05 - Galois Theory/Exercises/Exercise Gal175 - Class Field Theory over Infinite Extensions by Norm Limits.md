@@ -47,7 +47,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $K_\alpha$ for the finite levels. All limits below use norm transition maps; choose the finite levels of $L,K$ in a compatible common directed system. For fixed finite $K_\alpha$, the norm from a sufficiently large finite $L_\beta$ to $K_\alpha$ is unchanged by further enlarging $\beta$, by transitivity of norms. These maps give each coordinate of the norm and define $N_{L/K}$.
 > If $[L:K]<\infty$, descend it to some finite level $L_0/K_0$. Enlarge $K_0$ so that $L_\alpha=L_0K_\alpha$ and $[L_\alpha:K_\alpha]=[L:K]$. The inclusions at finite levels commute with norms under base change and therefore give $i_{L/K}$. At a finite Galois level, the invariants are exactly $A_{K_\alpha}$. Invariants under a finite group commute with inverse limits, giving the stated invariant-group equality and injectivity.
 > The exactness principle for limits used here requires justification. Within each fiber of a fixed valuation, the solution set is a closed coset of the compact group $U_{K_\alpha}$. Any finite set of compatibility conditions can be moved to a higher common finite level and solved there using finite class field theory already proved. These closed solution sets thus have the finite intersection property, and compactness produces a simultaneous solution. One cannot assert in general that arbitrary inverse limits preserve surjectivity.

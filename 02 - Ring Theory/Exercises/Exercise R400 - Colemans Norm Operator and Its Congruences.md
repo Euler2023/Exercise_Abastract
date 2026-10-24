@@ -53,7 +53,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\mathfrak o=\mathfrak o_K$, $S=\mathfrak o[[X]]$, $e=[\pi]_F$, and $F(n)=\ker[\pi^n]_F$. Source Proposition (5.2) gives $\#F(n)=q^n$, and Theorem (5.4) gives the totally ramified Galois division fields and their scalar action. Evaluating a bounded integral series at division points of positive valuation is legitimate; coefficients after translating $X$ by such a point are convergent $p$-adic sums. The notation $X+_F\lambda$ means $F(X,\lambda)$, not ordinary addition.
 >
 > The preceding two exercises prove existence and uniqueness of $\mathcal N$. We will also use this consequence of $e\equiv X^q\pmod\pi$: composition by $e$ detects divisibility by every $\pi^r$. Indeed, if the least coefficient valuation of $A\in S$ is $m<r$, divide by $\pi^m$; its nonzero reduction $\bar A$ remains nonzero after substituting $X^q$. Hence $A(e)\notin\pi^rS$. This proves

@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > For $x,y\in K$, if $x^p=y^p$, then $(x-y)^p=0$. A field has no nonzero nilpotents, so $x=y$. Thus $F:x\mapsto x^p$ is injective and, since $K$ is finite, bijective. Every $a\in K$ consequently has exactly one $p$th root in $K$.
 >
 > Explicitly, the root is $a^{p^{n-1}}$, because every element of $K$ satisfies $a^{p^n}=a$: for $a\ne0$ this follows from Lagrange's theorem in the multiplicative group of order $p^n-1$, and it also holds for $a=0$.

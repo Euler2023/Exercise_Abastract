@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The apparent singularity of $F(t)=te^t/(e^t-1)$ at zero is removable, and it is also a well-defined element of $\mathbb Q[[t]]$. In $\mathbb Q[x][[t]]$ we have
 > $$
 > F(t)e^{xt}=\left(\sum_{k\ge0}B_k\frac{t^k}{k!}\right)\left(\sum_{j\ge0}x^j\frac{t^j}{j!}\right).

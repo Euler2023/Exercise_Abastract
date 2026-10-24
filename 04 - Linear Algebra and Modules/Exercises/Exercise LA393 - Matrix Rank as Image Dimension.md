@@ -29,7 +29,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $A$ be an $m\times n$ matrix over a field $k$, and let $L_A:k^n\to k^m$ be $x\mapsto Ax$. Its image is the span of the columns $Ae_1,\ldots,Ae_n$ of $A$. Therefore the column rank of $A$ is exactly $\dim_k\operatorname{im}L_A$. Rank-nullity gives
 > $$
 > \operatorname{rank}A=\dim_k\operatorname{im}L_A=n-\dim_k\ker L_A.

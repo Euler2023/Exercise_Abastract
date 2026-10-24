@@ -33,7 +33,9 @@ As in the surrounding source discussion, $p$ is an odd prime.
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Quadratic reciprocity gives
 > $$
 > \left(\frac3p\right)\left(\frac p3\right)

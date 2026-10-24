@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\chi_1,\ldots,\chi_s$ be the distinct irreducible complex characters of $G$. By definition of $X(G)$ and character orthogonality, every $f\in X(G)$ has a unique expansion
 > $$
 > f=\sum_{i=1}^s n_i\chi_i,\qquad n_i\in\mathbb Z,

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Irreducibility from the preceding exercise makes $G\le S_5$ transitive on the five roots. Modulo $2$, one has
 > $$
 > X^5+X+1=(X^2+X+1)(X^3+X^2+1),

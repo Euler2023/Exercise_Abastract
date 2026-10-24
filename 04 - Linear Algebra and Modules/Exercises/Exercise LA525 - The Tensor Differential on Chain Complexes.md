@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Take complexes of modules over a fixed commutative ring; more generally, take a right-module and a left-module complex with compatible scalar-linear differentials. For each $p,q$, the maps $d_K\otimes1$ and $1\otimes d_L$ are defined on the tensor product and land respectively in the $(p-1,q)$ and $(p,q-1)$ summands. Their signed sum defines the proposed homomorphism there. The direct-sum universal property assembles these maps into $d_n$. Pure tensors generate every summand, so the prescribed values give uniqueness. Finite support of each element ensures the construction also works for unbounded complexes.
 >
 > For a pure tensor of bidegree $(p,q)$, expansion gives

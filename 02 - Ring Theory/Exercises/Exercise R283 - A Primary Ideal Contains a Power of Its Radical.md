@@ -30,7 +30,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Because $\mathfrak q$ is $\mathfrak p$-primary,
 >
 > $$

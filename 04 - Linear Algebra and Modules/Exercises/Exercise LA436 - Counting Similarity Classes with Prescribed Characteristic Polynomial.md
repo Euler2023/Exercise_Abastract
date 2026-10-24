@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution of the literal and inferred questions
+> [!success]- Solution
+> **Proof scope:** Independent solution of the literal and inferred questions
+>
 > **Literal statement.** For $A\in GL_2(\mathbb C)$, the characteristic polynomial $\det(tI-A)$ has degree $2$ and constant term $\det A\ne0$. Neither printed polynomial satisfies either condition. Consequently there are no such matrices, and both answers are $0$.
 >
 > **Inferred part (a), in $M_6(\mathbb C)$.** Write $J_m(\lambda)$ for a size-$m$ Jordan block with eigenvalue $\lambda$. Jordan canonical form says that a similarity class is uniquely specified by the multiset of block sizes at each eigenvalue. The multiplicities of $0,-1,1$ are $3,2,1$. The possible blocks on the zero-primary part are

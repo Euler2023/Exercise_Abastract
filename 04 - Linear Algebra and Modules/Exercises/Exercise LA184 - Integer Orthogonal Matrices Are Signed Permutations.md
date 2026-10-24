@@ -36,7 +36,9 @@ created: 2026-08-24
 
 ## Solution
 
-> [!success]- Proof 1: Column Inner Products
+> [!success]- Solution
+> ### Proof 1: Column Inner Products
+>
 > ### 1. Read orthogonality through the columns
 >
 > Let $n\ge1$ and $A=(a_{ij})\in O_n(\mathbb Z)$. Write $c_j$ for column $j$. The $j$th row of $A^{\mathsf T}$ is $c_j^{\mathsf T}$, so
@@ -109,7 +111,9 @@ created: 2026-08-24
 > $$
 > the **signed permutation group**, also called the **hyperoctahedral group**.
 
-> [!success]- Proof 2: Shortest Lattice Vectors
+> [!success]- Solution
+> ### Proof 2: Shortest Lattice Vectors
+>
 > Fix $n\ge1$ and $A\in O_n(\mathbb Z)$. Since $A^{-1}=A^{\mathsf T}$ also has integer entries, $A$ is a bijective isometry of the [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|integer lattice]] $\mathbb Z^n$.
 >
 > Its shortest nonzero vectors are precisely $\{\pm e_1,\ldots,\pm e_n\}$: for a nonzero integer vector, $\|z\|^2=\sum_i z_i^2\ge1$, with equality exactly when one coordinate is $\pm1$ and all others are $0$.

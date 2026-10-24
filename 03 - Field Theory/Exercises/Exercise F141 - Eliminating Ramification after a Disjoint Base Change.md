@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $S$ be the finite set of places ramified in $L/K$. If splitting at all real places is required, include the real places that become complex. For each finite $v\in S$, choose a primitive polynomial for $L_w/K_v$. Choose an integer $N\ge2$ divisible by all these local degrees. At $v$, take a product of distinct translates of primitive polynomials, of total degree $N$. At real places that must become complex, take $N$ even and choose a separable polynomial with no real roots.
 > Each local separable polynomial has an open coefficient neighborhood in which every irreducible factor still defines a local extension containing $L_w$, by Hensel factor lifting and Krasner's lemma. Weak approximation gives an open set of coefficients of global monic degree-$N$ polynomials satisfying all these local conditions.
 > **External standard input: Hilbert irreducibility with weak approximation and linear-disjointness conditions.** Over a number field, the parameter Hilbert set for the generic monic degree-$N$ polynomial meets the prescribed finitely many local open sets. The resulting root field can also be required to be linearly disjoint from a fixed finite extension $L$, with infinitely many distinct root fields obtained. This is a Hilbertian specialization theorem more general than the exercise, and is not reproved here.

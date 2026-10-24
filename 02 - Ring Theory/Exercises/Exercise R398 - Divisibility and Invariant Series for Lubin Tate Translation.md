@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\mathfrak o=\mathfrak o_K$, $S=\mathfrak o[[X]]$, $e=[\pi]_F$, and $F(n)=\ker[\pi^n]_F$. Source Proposition (5.2) gives $\#F(n)=q^n$, and Theorem (5.4) gives the totally ramified Galois division fields and their scalar action. Evaluating a bounded integral series at division points of positive valuation is legitimate; coefficients after translating $X$ by such a point are convergent $p$-adic sums. The notation $X+_F\lambda$ means $F(X,\lambda)$, not ordinary addition.
 >
 > **(i)** The series $e$ has $e(X)\equiv X^q\pmod\pi$ and linear coefficient $\pi$. The Weierstrass preparation/division theorem over the complete DVR $\mathfrak o$ writes $e=UP$, where $U\in S^*$ and $P\in\mathfrak o[X]$ is monic of degree $q$, with all lower coefficients divisible by $\pi$. It also gives $g=Ph+r$ with $h\in S$ and $r\in\mathfrak o[X]$ of degree less than $q$. This named power-series division theorem is an imported algebraic input. The roots of $P$ are exactly the $q$ distinct elements of $F(1)$. If $g$ vanishes there, then $r$ vanishes at all $q$ roots. Over the field containing these roots a polynomial of degree less than $q$ with $q$ distinct roots is zero. Thus $r=0$ and $g=e(U^{-1}h)$, as asserted.

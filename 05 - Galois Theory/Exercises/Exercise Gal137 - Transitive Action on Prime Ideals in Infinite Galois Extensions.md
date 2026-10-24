@@ -37,7 +37,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $A$ be an integral domain, integrally closed in its fraction field $K$. Let $L$ be an arbitrary (possibly infinite) Galois extension of $K$ with Galois group $G=\operatorname{Gal}(L/K)$. Let $B$ be the integral closure of $A$ in $L$, and let $\mathfrak p$ be a prime ideal of $A$.
 > 
 > ### Part 1: Generalization of Proposition 2.1 (Transitivity of $G$ on Prime Ideals)

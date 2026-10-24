@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Under the hypotheses of the preceding exercise, choose a primitive Frobenius element $s$ in $G_K$ representing the microprime downstairs, and write $H=G_L$ and $C=\overline{\langle s\rangle}$. The right action $s$ partitions the finite left-coset set $H\backslash G_K$ into orbits indexed by $H\backslash G_K/C$.
 >
 > In the orbit $HgC$, the least return time is $f_g>0$, and the primitive representative of the corresponding microprime upstairs is $g s^{f_g}g^{-1}\in H$. Since $d$ is a homomorphism to an abelian group, conjugation preserves $d$. Thus

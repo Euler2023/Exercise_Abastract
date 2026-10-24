@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > In dimension one the only relation is $e^2=\pm1$. Thus $C_1\cong\mathbb R[t]/(t^2+1)\cong\mathbb C$, sending $e$ to $i$.
 >
 > For the positive form, evaluation at $1,-1$ defines

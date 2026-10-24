@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The isomorphisms in question are formal $\mathfrak o_K$-module isomorphisms defined over $\mathfrak o_K$, as in Definition (4.4). Write $\bar\pi=u\pi$ with $u\in U_K$. Suppose $h:F\to G$ is such an isomorphism. It commutes with all scalars, so it identifies the kernels of $[\pi^n]$ on $F$ and $G$. Since $[u^n]$ is an invertible scalar map on $G$, the kernels of $[\pi^n]_G$ and $[\bar\pi^n]_G$ agree. Thus $h$ identifies the level-$n$ division points for $F$ at $\pi$ with those for $G$ at $\bar\pi$.
 >
 > The integral series $h$ and its inverse can be evaluated on these points, which have positive valuation. Their coefficients lie in $K$, so the two division fields are equal for every $n$. We now import the later proved, logically independent Corollary (5.6): the level-$n$ division field for uniformizer $\pi$ is the class field of

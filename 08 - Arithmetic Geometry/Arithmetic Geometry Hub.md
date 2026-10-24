@@ -58,6 +58,8 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 - [[08 - Arithmetic Geometry/Concepts/Local-Global Principles|Local-Global Principles]]
 
 ### Key Objects
+- [[08 - Arithmetic Geometry/Concepts/Complex Tori and Isogenies|Complex Tori and Isogenies]]
+- [[08 - Arithmetic Geometry/Concepts/Weierstrass Elliptic Functions|Weierstrass Elliptic Functions]]
 - [[08 - Arithmetic Geometry/Concepts/Elliptic Curves Arithmetic|Elliptic Curves (Arithmetic)]]
 - [[08 - Arithmetic Geometry/Concepts/Abelian Varieties|Abelian Varieties]]
 - [[08 - Arithmetic Geometry/Concepts/Curves over Number Fields|Curves over Number Fields]]

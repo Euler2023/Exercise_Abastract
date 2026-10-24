@@ -38,7 +38,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently expanded solution of the printed proof route
+> [!success]- Solution
+> **Proof scope:** Independently expanded solution of the printed proof route
+>
 > Put $r^2=\sum_{i=1}^nX_i^2$ and $W=\operatorname{span}_k\{H_c^d:r^2(c)=0\}$. Exercise 33(i), proved in [[04 - Linear Algebra and Modules/Exercises/Exercise LA415 - Fischer Pairing and Harmonic Decomposition|Exercise LA415]], gives $W\subseteq\operatorname{Har}(n,d)$.
 >
 > Let $Q\in\operatorname{Har}(n,d)$ be orthogonal to $W$ for the Fischer pairing. For any isotropic $c$, Exercise 33(j) with $m=d$ gives

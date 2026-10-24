@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from cyclic simple modules
+> [!success]- Solution
+> **Proof scope:** Independent derivation from cyclic simple modules
+>
 > The intersection $N$ is a left ideal because intersections preserve addition, additive inverses, and multiplication on the left. If $R=0$, there are no simple unital $R$-modules, and the empty intersection of maximal left ideals is $R=0$; all assertions follow. We may therefore take $R\ne0$.
 >
 > **(a), annihilation of simple modules.** Let $E$ be simple and $x\in E$ nonzero. The cyclic submodule $Rx$ is nonzero, hence equals $E$. Thus

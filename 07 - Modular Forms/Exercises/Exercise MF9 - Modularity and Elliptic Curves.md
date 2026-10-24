@@ -43,7 +43,9 @@ created: 2026-01-19
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > This is an independent derivation using the book's genus and dimension theorems. All substitutions, normalizations, and the quotient argument for $\Gamma_1(N)$ are supplied below. Page references refer to Fred Diamond and Jerry Shurman, *A First Course in Modular Forms*, GTM 228, 2005, corrected fourth printing, 2016.
 >
 > **Conventions and inputs from the book.** Put $q=e^{2\pi i\tau}$ and $\sigma_1(n)=\sum_{d\mid n,\ d>0}d$. The book defines

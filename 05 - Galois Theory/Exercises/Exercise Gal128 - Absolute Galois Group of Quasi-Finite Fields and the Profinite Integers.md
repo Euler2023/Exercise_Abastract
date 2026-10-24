@@ -38,7 +38,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a field satisfying the hypothesis: for each integer $n \ge 1$, there exists a unique extension $k_n$ of degree $n$ within a fixed algebraic closure $k^{\mathrm{a}}$, and $k_n/k$ is cyclic. Such fields are called **quasi-finite fields** (finite fields $\mathbf{F}_q$ are the primary example).
 >
 > ---

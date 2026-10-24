@@ -64,7 +64,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $k=A/\mathfrak m$ and $\beta^j:H^j(K)\otimes_Ak\to H^j(K\otimes_Ak)$. Write $Z^j=\ker d^j$ and $B^j=\operatorname{Im}d^{j-1}$, extending the complex by zero outside its finite range.
 >
 > The standing surjectivity of $\beta^i$ lets us apply Exercise 18, proved in [[04 - Linear Algebra and Modules/Exercises/Exercise LA391 - Surjective Fibre Comparison Splits the Differential|Exercise LA391]]. In particular $Z^i$ is finite free, $K^i=Z^i\oplus C$ for some finite free complement $C$, and the image of $d^i$ is a direct summand of $K^{i+1}$.

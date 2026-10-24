@@ -41,7 +41,9 @@ Here $K=\operatorname{Frac}(\mathfrak o)$, and $Cl_K$ is the source's notation f
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Fix an ideal class $C\in Cl_K$. Choose a fractional ideal in $C^{-1}$ and multiply it by a nonzero denominator in $\mathfrak o$. This does not change its class and produces a nonzero integral ideal $\mathfrak a$ with
 > $$
 > [\mathfrak a]=C^{-1}.

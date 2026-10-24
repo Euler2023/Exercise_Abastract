@@ -42,7 +42,9 @@ created: 2026-10-23
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > This is an independent derivation. The modular-form inputs are the following identity from Exercise 3.5.4:
 > $$
 > f_0=\eta(\tau)^2\eta(11\tau)^2

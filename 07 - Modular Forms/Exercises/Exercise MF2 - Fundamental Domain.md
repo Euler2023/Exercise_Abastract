@@ -53,7 +53,9 @@ created: 2026-01-19
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > We prove all of (a) and (b), distinguishing the input proved in the text from the independent deductions below. Write
 > $$
 > G=SL_2(\mathbb Z),\quad \rho=\mu_3=-\frac12+\frac{\sqrt3}{2}i,

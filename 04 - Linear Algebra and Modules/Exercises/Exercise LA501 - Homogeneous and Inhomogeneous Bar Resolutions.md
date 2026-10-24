@@ -42,7 +42,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent verification of the corrected bar differential
+> [!success]- Solution
+> **Proof scope:** Independent verification of the corrected bar differential
+>
 > Use lower indices for chain degrees. Define the $\mathbb Z[G]$-linear map
 > $$
 > \Phi_i:F_i\longrightarrow E_i,\qquad

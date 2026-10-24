@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\eta:A\to B$ be a homomorphism of $G$-modulations. Define $K(X)=\ker\eta_X$ and $C(X)=\operatorname{coker}\eta_X$ object by object. Since $\eta$ commutes with both $f^*,f_*$, every restriction and transfer preserves the kernels and induces a map on the quotients. Thus both $K,C$ have double-functor structures.
 > Kernels and cokernels of finite products are computed componentwise, giving $K(X\sqcup Y)=K(X)\times K(Y)$ and $C(X\sqcup Y)=C(X)\times C(Y)$. The Mackey identity for every pullback square holds in $A,B$ and remains valid after restriction to the kernels or projection to the cokernels. Hence $K,C$ are again $G$-modulations and satisfy the universal properties of kernels and cokernels object by object.
 > The zero functor is a zero object, and objectwise direct sums give finite biproducts. Addition in the homomorphism groups makes the category additive. Images and coimages are also computed objectwise. The map $\operatorname{coim}\eta_X\to\operatorname{im}\eta_X$ is an isomorphism in the category of abelian groups and is compatible with all structure maps, so the coimage-to-image map of the entire functor is an isomorphism. Additivity, existence of kernels and cokernels, and equality of coimage and image give the axioms of an abelian category.

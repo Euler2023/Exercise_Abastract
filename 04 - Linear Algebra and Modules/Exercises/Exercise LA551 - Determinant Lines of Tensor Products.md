@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $r=\operatorname{rk}M$ and $s=\operatorname{rk}N$. First suppose $r,s>0$. On a localization where both modules are free, choose bases $e_1,\ldots,e_r$ and $f_1,\ldots,f_s$, and order the tensor product basis lexicographically in $(a,b)$. Define the determinant-line map by sending
 > $$
 > \bigwedge_{a=1}^{r}\bigwedge_{b=1}^{s}(e_a\otimes f_b)

@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Choose an infinite place $v_0$. If it is real, put $r>0$ in that component; if it is complex, put $r^{1/2}>0$ in that component; put $1$ in all other components. With the standard normalization in which the complex absolute value is the square of the usual modulus, this gives a continuous group section $s:\mathbb R_{>0}\to C_K$ satisfying $\mathfrak N(s(r))=r$.
 > The map
 > $$

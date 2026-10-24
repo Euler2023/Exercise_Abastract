@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Let $n=[K:\mathbb Q]=r+2s$. Since $K\ne\mathbb Q$, one has $n\ge2$. Apply the independently proved I.5.3 to the integral ideal $\mathcal O_K$, whose index is $1$. A resulting nonzero $\alpha\in\mathcal O_K$ has $|N(\alpha)|\ge1$, because its field norm is a nonzero integer. Consequently
 > $$

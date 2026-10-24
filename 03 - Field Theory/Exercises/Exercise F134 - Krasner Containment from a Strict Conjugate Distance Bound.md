@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Retain the section hypothesis that $K$ is henselian. By (6.2), printed p. 144 / PDF p. 163, its valuation has a unique extension to $\overline K$. For every $K$-automorphism $\sigma$ of the closure, composing the valuation with $\sigma$ gives another extension, hence the same one. If $\sigma$ fixes $\beta$, then
 > $$
 > |\sigma\alpha-\beta|=|\sigma(\alpha-\beta)|=|\alpha-\beta|,

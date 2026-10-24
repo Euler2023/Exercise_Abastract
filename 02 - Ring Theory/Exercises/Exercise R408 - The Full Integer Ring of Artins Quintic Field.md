@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since $\alpha$ is a root of a monic integer polynomial, it is an algebraic integer, and $\mathbb Z[\alpha]\subseteq\mathcal O_k$ is a full-rank sublattice. Put $I=[\mathcal O_k:\mathbb Z[\alpha]]$. The change-of-basis formula for lattices gives
 > $$
 > \operatorname{disc}(1,\alpha,\ldots,\alpha^4)

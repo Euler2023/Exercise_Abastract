@@ -51,7 +51,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]-
+> [!success]- Solution
 > ### Part (a): Separability of $k_u(x)$ over $k_u(y)$
 > 
 > Let $K = k(x) = k(x_1, \ldots, x_n)$ have transcendence degree $r \ge 1$ over $k$, and assume $K/k$ is separable.

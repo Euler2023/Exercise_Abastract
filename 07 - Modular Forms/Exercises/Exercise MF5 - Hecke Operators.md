@@ -51,7 +51,9 @@ created: 2026-01-19
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > This is an independent derivation. The proved source inputs are Proposition 5.3.1 and formula (5.14) (printed pp. 180–181 / PDF pp. 194–195), together with the operator definitions and coprime multiplication relation in §5.3 (printed p. 179 / PDF p. 193). The forward direction of Proposition 5.8.5, which is the claim to be proved, is not used as an input.
 >
 > **Step 1: identify the eigenvalue for every $n\ge1$.** Write $T_nf=\lambda_nf$. By Definition 5.8.1, normalization means $a_1(f)=1$, so condition (1) already holds. The general coefficient formula is

@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation over a field that need not split the group
+> [!success]- Solution
+> **Proof scope:** Independent derivation over a field that need not split the group
+>
 > Put $A=k[G]$ and $m=|G|$. We first recall the complete-reducibility argument with its exact hypothesis. If $U$ is a submodule of a finite-dimensional $G$-space $V$, choose a $k$-linear projection $p:V\to U$. Since $m$ is invertible in $k$, the average
 >
 > $$

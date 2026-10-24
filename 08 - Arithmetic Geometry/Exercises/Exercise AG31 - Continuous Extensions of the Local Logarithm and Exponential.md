@@ -40,7 +40,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $V=\overline{\mathbb Q}_p$ and
 > $$
 > B=\{x\in V:v_p(x)>1/(p-1)\}.

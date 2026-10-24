@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction and connecting-sign calculation
+> [!success]- Solution
+> **Proof scope:** Independent construction and connecting-sign calculation
+>
 > All Hom groups in the short exact sequence are over $\mathbb Z$, with the action
 > $$
 > (g\cdot F)(v)=gF(g^{-1}v).

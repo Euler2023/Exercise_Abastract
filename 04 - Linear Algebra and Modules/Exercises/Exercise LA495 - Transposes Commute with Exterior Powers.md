@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $f^\vee(\lambda)=\lambda\circ f$. By the determinant pairing of LA494, for $v_i\in E$ and $\lambda_j\in F^\vee$,
 >
 > $$

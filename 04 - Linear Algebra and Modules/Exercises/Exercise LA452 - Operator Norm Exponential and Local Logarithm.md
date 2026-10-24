@@ -52,7 +52,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation with explicit convergence domains
+> [!success]- Solution
+> **Proof scope:** Independent derivation with explicit convergence domains
+>
 > **(a), the operator norm.** Write $\|\cdot\|$ for both vector and operator norms. The continuous function $x\mapsto\|Ax\|$ attains a finite maximum on the compact unit sphere. Homogeneity shows that
 >
 > $$

@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $A=\mathcal O_K$, $B=\mathcal O_L$, and $C=\mathcal O_M$. In the notation of this chapter, $\Omega^1_{L|K}$ means $\Omega^1_{B|A}$, and likewise for the other two terms. Interpreting these as Kähler differentials of the fields would make all three modules zero and miss the arithmetic content.
 >
 > **1. Constructing the right exact sequence.** Define

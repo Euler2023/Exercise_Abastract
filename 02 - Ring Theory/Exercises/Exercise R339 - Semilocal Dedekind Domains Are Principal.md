@@ -33,7 +33,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $R$ for the Dedekind domain. The zero ideal is $(0)$ and the unit ideal is $(1)$. By unique prime-ideal factorization, if $R$ has no nonzero prime ideals, it has no nonzero proper ideals, so the conclusion already holds. We may therefore list all its nonzero prime ideals as $\mathfrak p_1,\ldots,\mathfrak p_r$, with $r\ge1$.
 >
 > Let $\mathfrak a$ be any nonzero integral ideal. Its factorization has the form

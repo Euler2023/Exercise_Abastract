@@ -39,7 +39,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > The independence in the question is over $\mathbb Q$: the $n$ elements form a rational basis of $K$ and an integer basis of $M$. The set $\mathfrak o$ contains $1$ and is closed under addition, subtraction, and multiplication, because the corresponding operations preserve $M$. It is a subring of $K$.
 >

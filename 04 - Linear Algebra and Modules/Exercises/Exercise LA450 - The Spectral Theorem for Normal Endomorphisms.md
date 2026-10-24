@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent statement and proof
+> [!success]- Solution
+> **Proof scope:** Independent statement and proof
+>
 > **Spectral theorem.** An operator on a finite-dimensional positive definite complex Hermitian space is normal if and only if there is an orthonormal basis consisting of its eigenvectors. Equivalently, its matrix in an orthonormal basis is unitarily similar to a diagonal matrix.
 >
 > Suppose $B$ is normal. For any normal $C$, the adjoint identity gives

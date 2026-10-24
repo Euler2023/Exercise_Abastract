@@ -33,7 +33,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > If $A$ is trivial, take $L=\mathbb Q$. Otherwise the structure theorem for finite abelian groups gives
 > $$
 > A\cong C_{d_1}\times\cdots\times C_{d_t},\qquad d_i\ge2.

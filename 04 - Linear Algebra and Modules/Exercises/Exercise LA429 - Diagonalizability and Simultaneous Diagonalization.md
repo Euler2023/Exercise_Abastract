@@ -45,7 +45,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation expanding the printed hints
+> [!success]- Solution
+> **Proof scope:** Independent derivation expanding the printed hints
+>
 > We use the convention that the minimal polynomial of the unique endomorphism of the zero space is $1$. In that case the product in (a) is empty, and all the basis assertions hold using the empty basis. We may otherwise suppose $E\ne0$.
 >
 > **(a) Diagonalizability gives distinct linear factors.** Let $\mathcal B$ be an eigenbasis, and let $\lambda_1,\ldots,\lambda_m$ be the distinct eigenvalues appearing in it. For any polynomial $f\in k[t]$ and basis vector $v$ with eigenvalue $\lambda_i$, induction on powers gives $f(S)v=f(\lambda_i)v$. Consequently,

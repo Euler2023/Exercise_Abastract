@@ -42,7 +42,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We use the usual quaternion orientation $xy=z$; then $yx=-z$, $yz=x$, and $zx=y$. The displayed matrices use this orientation.
 >
 > **(a).** Both $1$ and $-1$ are central. For instance $yxy^{-1}=-x$. Conjugation preserves the cyclic subgroup $\{1,-1,x,-x\}$: conjugation by $x$ fixes $x$, and conjugation by $y$ sends $x$ to $-x$; these two elements generate $Q$. Consequently the class of $x$ is exactly $\{x,-x\}$. The other two cases are identical. The five classes are

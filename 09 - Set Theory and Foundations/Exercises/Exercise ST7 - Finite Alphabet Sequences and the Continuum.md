@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Assume the corrected hypothesis $n\ge2$. Relabel $J_2$ as $\{0,1\}$ and write $B=\{0,1\}^{\mathbb Z^+}$.
 >
 > Choose distinct binary words of a common length $k$ for the $n$ letters, with $2^k\ge n$. Concatenation gives an injection $J_n^{\mathbb Z^+}\to B$, since fixed-length blocks can be uniquely decoded. Choosing two distinct letters gives an injection $B\to J_n^{\mathbb Z^+}$. Schroeder–Bernstein proves equality of (a) and (b).

@@ -33,7 +33,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k = \mathbf{Q}$ (or any field of characteristic 0), and let $K = k(t)$ be the rational function field in one variable $t$ over $k$.
 >
 > ### 1. Construction of the Subfields $E$ and $F$

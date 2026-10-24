@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > First clarify the ideal-group convention for different moduli. The index $(H_\mathfrak p:H^\mathfrak f)$ must be computed after restriction to a common modulus. In contrast, $\mathfrak p^f\in H_\mathfrak p$ uses representatives for its smaller conductor coprime to $\mathfrak p$. Otherwise, simply adjoining $\mathfrak p$ to the allowed ideal generators and taking a literal index gives an incorrect infinite index.
 > Under the Artin isomorphism $J_K^\mathfrak f/H^\mathfrak f\cong G(L/K)$, the enlarged ideal group in the question corresponds to the inertia subgroup $I_\mathfrak p$. Its fixed field $Z=L^{I_\mathfrak p}$ is unramified at $\mathfrak p$ and is the largest subfield of $L$ with that property. This is precisely the minimal enlargement of the ideal group allowing $\mathfrak p$ to be removed from the conductor. Thus $e=|I_\mathfrak p|$ is the ramification index.
 > In $Z/K$, the order of the Frobenius of $\mathfrak p$ in the quotient $G/I_\mathfrak p$ is, by the ideal Artin map, exactly the least positive exponent for which $\mathfrak p^f$ belongs to $H_\mathfrak p$. It is also the residue-extension degree $f=|D_\mathfrak p/I_\mathfrak p|$.

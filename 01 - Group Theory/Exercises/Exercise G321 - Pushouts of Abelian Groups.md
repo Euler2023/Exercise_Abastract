@@ -38,7 +38,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Solution for the corrected arrows
+> [!success]- Solution
+> **Proof scope:** Solution for the corrected arrows
+>
 > Let $P=(X\oplus Y)/W$ and define $i_X(x)=[(x,0)]$, $i_Y(y)=[(0,y)]$. Since $(f(z),-g(z))$ vanishes in $P$, one has $i_Xf=i_Yg$. If homomorphisms $u:X\to Q$ and $v:Y\to Q$ satisfy $uf=vg$, then
 >
 > $$

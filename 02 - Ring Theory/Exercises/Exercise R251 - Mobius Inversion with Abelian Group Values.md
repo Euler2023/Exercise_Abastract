@@ -32,7 +32,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > For a positive integer $m$ with distinct prime divisors $p_1,\ldots,p_r$, only squarefree divisors contribute to the Möbius sum, and
 > $$
 > \sum_{d\mid m}\mu(d)=(1-1)^r.

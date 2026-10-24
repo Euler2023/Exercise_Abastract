@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Write $q=\#(\mathfrak o/\mathfrak p)$ and normalize $|a|_{\mathfrak p}=q^{-v_{\mathfrak p}(a)}$. The correct first identity for $a\ne0$ is
 > $$
 > \mu(a\mathfrak o)=|a|_{\mathfrak p}=q^{-v_{\mathfrak p}(a)}.

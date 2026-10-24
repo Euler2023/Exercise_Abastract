@@ -35,7 +35,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Complete derivation under the corrected hypotheses
+> [!success]- Solution
+> **Proof scope:** Complete derivation under the corrected hypotheses
+>
 > Assume that $k$ is perfect of characteristic $p>0$. For $\alpha\in k$ and each integer $\nu\ge0$, choose $a_\nu\in\mathfrak o$ reducing to $\alpha^{p^{-\nu}}$. Set $s_\nu=a_\nu^{p^\nu}$. The reductions of $a_{\nu+1}^p$ and $a_\nu$ are both $\alpha^{p^{-\nu}}$, so Exercise 15, applied with initial exponent $r=1$, gives
 >
 > $$

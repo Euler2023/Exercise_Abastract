@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by inverse maps
+> [!success]- Solution
+> **Proof scope:** Independent derivation by inverse maps
+>
 > We tensor over $k$ and let $k'$ be any extension field. Multiplying $f$ by a nonzero scalar does not change its ideal, so we may take $f$ monic. The evaluation map identifies $k(\alpha)$ with $k[X]/(f)$: irreducibility makes this quotient a field, and its image is $k[\alpha]=k(\alpha)$.
 >
 > Define a $k'$-algebra homomorphism

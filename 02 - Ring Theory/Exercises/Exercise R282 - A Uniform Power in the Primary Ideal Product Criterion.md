@@ -36,7 +36,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > If $\mathfrak a\subseteq\mathfrak q$, there is nothing further to prove. Otherwise choose $a\in\mathfrak a\setminus\mathfrak q$ and a finite generating set
 >
 > $$

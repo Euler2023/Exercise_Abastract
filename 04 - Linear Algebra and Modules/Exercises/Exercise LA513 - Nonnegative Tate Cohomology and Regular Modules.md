@@ -50,7 +50,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction of the corrected special cohomology
+> [!success]- Solution
+> **Proof scope:** Independent construction of the corrected special cohomology
+>
 > Let $N=T_G$ denote the norm and define $\widehat H^q$ as in the warning, for $q\ge0$.
 >
 > **1. The printed definition is impossible in general.** Put $n=|G|>1$. The map $\mathbb Z\hookrightarrow\mathbb Z[G]$, $1\mapsto N_G=\sum_g g$, is an equivariant injection, with $\mathbb Z$ trivial. But

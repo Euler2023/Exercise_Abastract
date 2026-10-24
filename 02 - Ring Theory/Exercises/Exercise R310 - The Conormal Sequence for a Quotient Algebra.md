@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Identify $B\otimes_A\Omega^1_{A/R}$ with $\Omega^1_{A/R}/I\Omega^1_{A/R}$. The rule $\bar i\mapsto di\bmod I\Omega$ kills $I^2$, since $d(ij)=i\,dj+j\,di$. It is $B$-linear: $d(ai)=a\,di+i\,da\equiv a\,di$. Let $Q$ be its cokernel. The map
 > $$
 > \bar a\longmapsto da\bmod(I\Omega+dI)

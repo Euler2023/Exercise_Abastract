@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here $G^c=[G,G]$ and the right side is an additive abelian group. The augmentation is additive and multiplicative, since multiplying two finite sums multiplies their coefficient sums. Thus its kernel is a two-sided ideal.
 >
 > The identity in the hint implies that $x\mapsto x-1\bmod I_G^2$ is a homomorphism from $G$ to the additive group $I_G/I_G^2$. It therefore factors through a homomorphism $\alpha:G_{\mathrm{ab}}\to I_G/I_G^2$. Every element $\sum n_xx$ of $I_G$ has $\sum n_x=0$ and equals $\sum n_x(x-1)$, so $\alpha$ is onto.

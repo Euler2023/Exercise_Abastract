@@ -40,7 +40,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Each power map and each $\phi_j$ is continuous and multiplicative. Taking their finite product and then projecting $I_K\to C_K$ gives the required continuous homomorphism. Part (i) of the preceding exercise proves that its image always has norm $1$, so it lies in the norm-one subgroup denoted here by $C_K^0$.
 > A parameter lies in the kernel if and only if the resulting idèle is principal. Part (ii) of the preceding exercise characterizes this precisely: each $\lambda_i=(x_i,t_i)$ is of the form $(n_i,n_i)$, and every $y_j$ is an integer. Therefore
 > $$

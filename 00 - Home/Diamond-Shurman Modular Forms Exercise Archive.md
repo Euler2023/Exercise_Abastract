@@ -27,6 +27,13 @@ This dashboard records the archival coverage of the numbered exercises in Fred D
 > [!note] Faithful restoration of the legacy notes — 2026-10-23
 > The three formerly composite MF2, MF5 and MF9 notes now each preserve one complete numbered exercise. Three companion notes separate the other original exercises, giving six distinct numbered source mappings. All original subparts are retained. The earlier independent practice questions have been removed, and all six notes are written in English. Live coverage below derives from source provenance, and learning status remains unchanged.
 
+> [!note] Chapter 1 complete — 36/36 — 2026-10-24
+> All 36 ordered source labels were rechecked on the original exercise pages at 200 dpi and reconciled one-to-one with 36 complete exercise notes: §1.1, 1.1.1–1.1.9 (9/9); §1.2, 1.2.1–1.2.11 (11/11); §1.3, 1.3.1–1.3.3 (3/3); §1.4, 1.4.1–1.4.5 (5/5); §1.5, 1.5.1–1.5.8 (8/8). The printed/PDF page ranges are respectively 7–10/22–25, 21–24/36–39, 31/46, 36–37/51–52, and 42–44/57–59. The section label arrays below retain the exact expected set, including every original subpart within its numbered exercise.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed Chapter 1 locators 0**. The note ranges are MF14–MF34 (21), LA582–LA587 (6), AG65–AG69 (5), G347–G349 (3), and R425 (1), routed by the principal proof toolkit. All learning states remain `not-started`. Whole-book numbered coverage is now **42/354**, with 312 labels still unarchived and no duplicate, unexpected or unparsed source mappings.
+>
+> Each note contains its complete English problem, progressive hints and a complete independent solution with named imported inputs. Source/proof boundaries and printed defects are visible: the derivative in 1.1.9; the growth exponent and limit needed in 1.2.6; the lemma/hint references in 1.2.11; the exact-order boundary in 1.5.4 at N=1; and the auxiliary double-d generator sum referenced by 1.5.8. The weight-two endpoint, literal equality in 1.5.7, meromorphic domains and the two discriminant normalizations are explicitly distinguished. Figure 1.1, printed p. 11 / PDF p. 26, is retained as a direct crop; the original Weil-pairing square is faithfully transcribed.
+
 ## Quick Navigation
 
 - [[00 - Home/Diamond-Shurman Modular Forms Exercise Archive#Chapter 1|1. Modular Forms, Elliptic Curves, and Modular Curves]]
@@ -1384,7 +1391,7 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 - **Language and scope:** archived problem statements, hints, independent solutions and source/proof notes for this book are written in English. Each exercise note contains its complete original numbered exercise; the earlier independently composed practice questions are excluded.
 - **Provenance:** a generic book title is insufficient to count an exercise. The queries recognize numbered full-book citations and stable structured source references. Readable source fields should retain the complete author/title/edition and printed/PDF anchors.
 - **Reconciliation:** missing labels are expected before archival. “Complete” requires all expected labels mapped, no duplicate or unexpected mappings, and no outstanding source-matching notes in the corresponding scope. Notes without an identifiable chapter remain a whole-book reconciliation issue and do not block an independently reconciled chapter or section. The coverage ledger does not certify proof completeness or alter learning status.
-- **Next source group:** §1.1, Exercises 1.1.1–1.1.9, printed pp. 7–10 / PDF pp. 22–25.
+- **Next source group:** Chapter 2, §2.1, Exercises 2.1.1–2.1.3, printed p. 47 / PDF p. 62. Chapter 2 already has 2.3.2 and 2.3.5 archived; preserve those mappings when continuing.
 
 ## Related Navigation
 

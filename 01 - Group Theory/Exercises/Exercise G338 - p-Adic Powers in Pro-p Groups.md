@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For each open normal subgroup $N$, write $\exp(G/N)=p^{m_N}$. Define
 > $$
 > (\sigma^a)_N=(\sigma N)^{a\bmod p^{m_N}}.

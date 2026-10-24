@@ -48,7 +48,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction and completeness proof
+> [!success]- Solution
+> **Proof scope:** Independent construction and completeness proof
+>
 > We work over $\mathbb C$ and read subscripts $r$ modulo $n$.
 >
 > **(a).** In a one-dimensional representation, put $\sigma\mapsto a$ and $\tau\mapsto b$. Commutativity of scalars and the conjugation relation give $a=a^{-1}$, so $a=\pm1$; also $b^2=1$, hence $b=\pm1$. Conversely, since $n$ is even, each pair $(a,b)\in\{\pm1\}^2$ satisfies all the defining relations. The four representations are distinct and exhaust the one-dimensional representations.

@@ -37,7 +37,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All modules are unital over a commutative ring $A$. Localization sends $f$ to $f_S(m/s)=f(m)/s$; the witness relation shows this is well-defined. We prove injectivity and surjectivity separately. The implication (ii)$\Rightarrow$(iii) in either chain holds because maximal ideals are prime.
 >
 > **1. The injectivity equivalence.** Suppose $f$ is injective and $f(m)/s=0$ in $N_S$. There is $t\in S$ with $tf(m)=f(tm)=0$. Hence $tm=0$, so $m/s=0$. Thus every localization is injective, proving (i)$\Rightarrow$(ii).

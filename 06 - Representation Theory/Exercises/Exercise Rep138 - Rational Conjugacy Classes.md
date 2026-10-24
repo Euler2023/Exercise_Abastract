@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation using cyclotomic Galois action
+> [!success]- Solution
+> **Proof scope:** Independent derivation using cyclotomic Galois action
+>
 > Fix $\sigma\in C$ and let $m$ be its order. For any complex representation $\rho$, its matrix $\rho(\sigma)$ satisfies $X^m-1$, a polynomial with distinct roots over $\mathbb C$. It is therefore diagonalizable, with eigenvalues $\zeta_m^{a_1},\ldots,\zeta_m^{a_d}$, where $\zeta_m$ is a primitive $m$-th root of unity. Hence
 > $$
 > \chi(\sigma)=\sum_{i=1}^d\zeta_m^{a_i}\in\mathbb Q(\zeta_m).

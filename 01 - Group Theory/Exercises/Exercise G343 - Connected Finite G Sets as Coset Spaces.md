@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $X$ be a nonempty finite transitive $G$-set and choose $x\in X$. The stabilizer $H=G_x$ is the inverse image of the discrete singleton $\{x\}$ under the continuous map $g\mapsto gx$, so it is open. The orbit-stabilizer map
 > $$
 > G/H\to X,\qquad gH\mapsto gx

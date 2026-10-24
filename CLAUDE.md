@@ -89,6 +89,7 @@ exercise_abstract/
   created: YYYY-MM-DD
   ```
 - Required sections: Problem Statement, Hints (collapsible), Solution (collapsible), Related Concepts
+- Use the exact solution callout header `> [!success]- Solution`. Keep proof scope, provenance, source corrections, and method names in the body or Notes rather than the callout title.
 
 #### Concept Files
 - Location: `[Topic]/Concepts/`

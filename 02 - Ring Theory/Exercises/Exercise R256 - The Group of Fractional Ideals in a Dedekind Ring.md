@@ -48,7 +48,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $\mathfrak o$ be an integral domain (entire ring) with quotient field $K$. We are given that $\mathfrak o$ satisfies the three classical Dedekind axioms:
 > 1. $\mathfrak o$ is Noetherian;
 > 2. $\mathfrak o$ is integrally closed in $K$;

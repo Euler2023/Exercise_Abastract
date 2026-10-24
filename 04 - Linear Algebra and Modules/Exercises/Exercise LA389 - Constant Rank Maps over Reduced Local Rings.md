@@ -52,7 +52,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $I=\operatorname{Im}f$ and $C=F/I$. Let $b=\operatorname{rank}_A F$ and let $r$ be the common fibre rank of $f$.
 >
 > **(a) First the cokernel.** Tensoring $E\to F\to C\to0$ with $k(\mathfrak p)$ is right exact. Hence

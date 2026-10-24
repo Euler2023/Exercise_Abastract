@@ -48,7 +48,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution valid also for singular maps
+> [!success]- Solution
+> **Proof scope:** Independent solution valid also for singular maps
+>
 > Choose bases of $V$ and $W$, and denote the matrices of the endomorphisms by the same letters $A,B$. There is an invertible matrix $C$ with $\langle v,w\rangle=v^{\mathsf T}Cw$. It is invertible because the pairing is non-singular and both spaces have the same finite dimension. The given equality for all coordinate vectors becomes
 >
 > $$

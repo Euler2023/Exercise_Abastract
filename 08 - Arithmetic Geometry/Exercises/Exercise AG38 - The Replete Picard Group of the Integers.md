@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here $\overline{\mathbb Z}$ is the chapter's replete notation, including the infinite place, not the integral closure of $\mathbb Z$. Every nonzero fractional ideal of $\mathbb Z$ is uniquely $(q)=q\mathbb Z$ with $q\in\mathbb Q_{>0}$. Hence
 > $$
 > J(\overline{\mathbb Z})=\{((q),r):q\in\mathbb Q_{>0},\ r\in\mathbb R_{>0}\},\qquad \mathfrak N((q),r)=qr.

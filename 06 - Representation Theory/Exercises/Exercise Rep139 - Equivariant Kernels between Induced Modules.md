@@ -51,7 +51,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent counterexamples and explicit corrected isomorphism
+> [!success]- Solution
+> **Proof scope:** Independent counterexamples and explicit corrected isomorphism
+>
 > **1. Both printed defects matter.** Take a nontrivial finite group $G$, $R=\mathbb C$, $H_1=H_2=1$, and $F_1=F_2=\mathbb C$. The induced spaces are regular representations of dimension $|G|$. The printed left side has dimension $|G|^2$, whereas the printed kernel module is the space of all functions $G\to\mathbb C$, of dimension $|G|$. They cannot be isomorphic.
 >
 > Correcting only Hom does not fix the other problem. Take $H_1=H_2=G=S_3$ and let both representations be the standard irreducible complex representation $\rho$ of dimension $2$. If $f$ satisfies the printed rule and $A=f(1)$, using $(h_1,h_2)=(g,1)$ and $(1,g)$ gives

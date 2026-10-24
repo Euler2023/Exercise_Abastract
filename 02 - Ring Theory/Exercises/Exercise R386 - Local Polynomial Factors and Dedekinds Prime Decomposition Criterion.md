@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $L=K(\alpha)$, with $\alpha$ integral and monic minimal polynomial $F$. Proposition II (8.2), printed p. 162 / PDF p. 181, identifies the extensions of a valuation $v$ with the irreducible factors $F_j$ in $K_v[X]$, and identifies the corresponding completion with $K_v[X]/(F_j)$. It therefore gives the local degrees $[L_w:K_v]=\deg F_j$.
 >
 > Dedekind's criterion I (8.3) applies when $\mathfrak p$ does not divide the index of the power order in the integral closure. This says precisely that after localization at $\mathfrak p$ the two integer rings agree: $\mathcal O_{L,(\mathfrak p)}=\mathfrak o_{K,\mathfrak p}[\alpha]$. If

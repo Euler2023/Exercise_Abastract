@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $D(H)=\overline{[H,H]}$. Inverse limits preserve short exact sequences of compact groups: given compatible quotient coordinates, impose compatibility conditions on the product of their compact fibers. Every finite collection of conditions can be satisfied by lifting to a common subsequent stage and then projecting, so the finite-intersection property gives a global lift. Thus
 > $$
 > 1\longrightarrow\varprojlim D(G_i)\longrightarrow G\longrightarrow\varprojlim G_i^{ab}\longrightarrow1

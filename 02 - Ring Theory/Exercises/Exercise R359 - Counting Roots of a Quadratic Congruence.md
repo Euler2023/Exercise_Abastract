@@ -33,7 +33,9 @@ Solutions are counted as residue classes modulo the odd prime $p$. We use the us
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Work in the field $\mathbb F_p$. If $a=0$, the equation $x^2=0$ has only the root $x=0$, because a field has no nonzero nilpotents. The count is $1=1+0$.
 >
 > If $a\ne0$ and $\left(\frac ap\right)=-1$, there is no root by the definition of a quadratic nonresidue, giving the count $0=1-1$.

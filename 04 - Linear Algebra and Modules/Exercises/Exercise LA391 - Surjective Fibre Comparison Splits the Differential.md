@@ -58,7 +58,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $k=A/\mathfrak m$, $E=K^i$, $F=K^{i+1}$, $f=d^i$, and $a=d^{i-1}$. Write a bar for tensoring with $k$, and extend the complex by zero at its endpoints.
 >
 > **1. Isolate the part of $f$ visible modulo $\mathfrak m$.** Let $r=\operatorname{rank}_k\overline f$. If $r>0$, permute bases so that an $r\times r$ minor with nonzero residue is the upper-left block $U$. Its determinant is a unit of the local ring, so $U$ is invertible. Writing

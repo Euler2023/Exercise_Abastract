@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof inside the semisimple algebra
+> [!success]- Solution
+> **Proof scope:** Independent proof inside the semisimple algebra
+>
 > Regard $R$ as a left module over itself. Since $R$ is semisimple, every left ideal has a complementary left ideal. The map
 >
 > $$

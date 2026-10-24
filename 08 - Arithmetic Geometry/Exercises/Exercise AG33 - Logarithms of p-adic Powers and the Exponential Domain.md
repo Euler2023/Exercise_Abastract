@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Interpret the second printed expression as $\log((1+x)^z)$, which is the intended homomorphism identity. Put $u=1+x\in U^{(1)}$ and $z\in\mathbb Z_p$. For nonnegative integers $m$, the logarithm homomorphism gives $\log(u^m)=m\log u$. Taking $m_j\to z$ and using continuity of the power action and logarithm proves
 > $$
 > \log(u^z)=z\log u

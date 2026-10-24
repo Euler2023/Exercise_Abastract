@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $n=\prod_{i=1}^r p_i^{e_i}$ with distinct odd primes. For every nonempty subset $I$ put
 > $$
 > D_I=\prod_{i\in I}p_i^*,\qquad

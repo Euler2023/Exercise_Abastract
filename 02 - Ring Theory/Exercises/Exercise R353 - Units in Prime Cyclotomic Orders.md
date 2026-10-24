@@ -42,7 +42,9 @@ In the first displayed formula, the source's $(\zeta)$ means the cyclic subgroup
 
 ## Solution
 
-> [!success]- Independent derivation, including the unit decomposition
+> [!success]- Solution
+> **Proof scope:** Independent derivation, including the unit decomposition
+>
 > Write $R=\mathbb Z[\zeta]$ and $R^+=\mathbb Z[\zeta+\zeta^{-1}]$. The polynomial $\Phi_p(T)=1+T+\cdots+T^{p-1}$ is irreducible over $\mathbb Q$: $\Phi_p(T+1)=((T+1)^p-1)/T$ is Eisenstein at $p$. Thus $[\mathbb Q(\zeta):\mathbb Q]=p-1$, its embeddings send $\zeta$ to $\zeta^j$ for $1\le j\le p-1$, and the only rational relation among $1,\zeta,\ldots,\zeta^{p-1}$ is a multiple of their sum.
 >
 > **1. An elementary absolute-value lemma.** Suppose $w\in R$ and all its conjugates have absolute value $1$. Write

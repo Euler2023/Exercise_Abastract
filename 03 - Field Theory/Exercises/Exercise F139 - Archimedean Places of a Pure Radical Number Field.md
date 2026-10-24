@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Assume $n\ge1$. Eisenstein at $2$ makes $X^n-2$ irreducible, so the field has degree $n$, with embeddings sending the positive real generator $\alpha=2^{1/n}$ to $\alpha\zeta_n^j$, $0\le j<n$. When $n$ is odd there is exactly one real root; when $n$ is even there are exactly two. Put $r_1=1$ in the odd case and $r_1=2$ in the even case, and $r_2=(n-r_1)/2$.
 >
 > Each real embedding gives one extension of the ordinary absolute value, and each pair of conjugate nonreal embeddings gives one, because conjugation preserves complex modulus. The completion classification (8.1) identifies exactly these pairs; it does not identify two different real embeddings or two different complex pairs. Thus the number is

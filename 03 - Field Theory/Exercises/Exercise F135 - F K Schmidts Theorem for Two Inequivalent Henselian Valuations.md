@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $v,w$ be the two nontrivial inequivalent henselian valuations. A henselian valuation here is nonarchimedean, by Definition (6.1), printed p. 143 / PDF p. 162. Let $f\in K[X]$ be monic separable irreducible of degree $n$, with root $\alpha$. If $n=1$ there is nothing to prove. Otherwise choose $\delta>0$ smaller than the distances from $\alpha$ to all its other $K$-conjugates in the unique $v$-valued algebraic closure.
 >
 > Root continuity (II.6.1, independently proved by a product estimate) gives a positive bound on the coefficients ensuring that any monic $g$ that close to $f$ for $v$ has a root $\beta$ with $|\alpha-\beta|_v<\delta$. Choose distinct $c_1,\ldots,c_n\in K$, possible because a nontrivially valued field is infinite, and put $h=\prod(X-c_i)$. The simple-root form of Hensel's lemma for $w$ gives a positive coefficient bound such that a monic $g$ sufficiently $w$-close to $h$ has one $K$-root near each $c_i$. To see the hypothesis explicitly, each $h'(c_i)\ne0$; make $g(c_i)$ small and $g'(c_i)$ close to $h'(c_i)$, scale variable and polynomial to the valuation ring, and enforce $|g(c_i)|_w<|g'(c_i)|_w^2$. Choose disjoint root neighborhoods. The $n$ roots so obtained exhaust all roots of $g$, and all belong to $K$.

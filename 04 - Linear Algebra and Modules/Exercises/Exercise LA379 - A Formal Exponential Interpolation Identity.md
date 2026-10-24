@@ -56,7 +56,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Use $R=\mathbb Q[[x_1,\ldots,x_d]]$, $\mathfrak m=(x_1,\ldots,x_d)$, and $g(T)=\prod_i(T-x_i)$, with $d\ge1$.
 >
 > **(a): existence and interpolation.** Monic division makes $A=R[T]/(g)$ a free $R$-module with basis $1,T,\ldots,T^{d-1}$. It is complete for the $\mathfrak m$-adic topology. Since all nonleading coefficients of $g$ belong to $\mathfrak m$, we have $T^d\in\mathfrak m A$, so $T$ is topologically nilpotent. Each $T-x_i$ is also topologically nilpotent: in a sufficiently high power, every binomial summand has either a high power of $T$ or a high power of $x_i$.

@@ -36,7 +36,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $[K:k]=n\ge1$, so $K$ has $q^n$ elements. The map $\sigma(x)=x^q$ is additive in characteristic $p$ and fixes every element of $k$, hence is $k$-linear. It is injective, so bijective on the finite set $K$. Lagrange's theorem in $K^\times$ gives $x^{q^n}=x$ for every $x\in K$, including zero. Thus $\sigma^n=I$, and the monic minimal polynomial $m_\sigma(T)$ divides $T^n-1$.
 >
 > Suppose a nonzero polynomial $h(T)=\sum_{i=0}^d c_iT^i\in k[T]$ of degree $d<n$ annihilates $\sigma$. Then

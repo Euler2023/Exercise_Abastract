@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > In characteristic $p>0$, for $x\in L^*$ choose $r$ such that $x^{p^r}\in K$ and define $w(x)=p^{-r}v(x^{p^r})$, with $w(0)=\infty$. Increasing $r$ multiplies the numerator value by the same power of $p$, so the definition is independent of the choice. Given $x,y$, choose a common such $r$. Multiplicativity follows from $(xy)^{p^r}=x^{p^r}y^{p^r}$, and
 > $$
 > w(x+y)=p^{-r}v(x^{p^r}+y^{p^r})\ge\min\{w(x),w(y)\}

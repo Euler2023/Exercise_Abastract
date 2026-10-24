@@ -33,7 +33,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We take natural $n$ to mean $n\ge1$. If $n=1$, every prime has the required residue. If the primes were $p_1,\ldots,p_k$, a prime divisor of $p_1\cdots p_k+1$ would be absent from the list, a contradiction.
 >
 > Assume $n>1$. Write $\Phi_d\in\mathbb Z[X]$ for the monic cyclotomic polynomial, using the identities

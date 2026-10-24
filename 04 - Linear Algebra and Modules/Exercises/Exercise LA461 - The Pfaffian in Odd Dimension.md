@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution through the universal polynomial
+> [!success]- Solution
+> **Proof scope:** Independent solution through the universal polynomial
+>
 > Let $R_0=\mathbb Z[t_{ij}:1\le i<j\le n]$, and define $T$ by $T_{ij}=t_{ij}$ for $i<j$, $T_{ji}=-t_{ij}$, and $T_{ii}=0$. If $n$ is odd, then
 >
 > $$

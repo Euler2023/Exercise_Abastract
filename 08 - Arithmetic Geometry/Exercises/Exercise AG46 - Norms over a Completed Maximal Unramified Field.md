@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $F=\widehat K$, $E=\widehat L$, and $G=G(L/K)=G(E/F)$. Completion preserves this finite totally ramified extension and its group; both residue fields are $\overline\kappa$. We use two explicitly named external inputs. The Witt residue theorem for a complete discretely valued field with perfect residue field gives
 > $$
 > 0\longrightarrow\operatorname{Br}(\kappa_F)\longrightarrow\operatorname{Br}(F)

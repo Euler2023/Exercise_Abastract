@@ -28,7 +28,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Lang calls $Q\subsetneq M$ primary if multiplication by every $a\in A$ on $M/Q$ is either injective or nilpotent. Its belonging prime is $\sqrt{\operatorname{ann}_A(M/Q)}$ [S2, Ch. X, §3, printed p. 421, PDF p. 436].
 >
 > Write $\pi:M\to M/N$. For each $Q\supseteq N$, the map

@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Put $\gamma=\sqrt2+\sqrt3$. Then $\gamma^{-1}=\sqrt3-\sqrt2$, so
 > $$
 > \sqrt3=\frac{\gamma+\gamma^{-1}}2,\qquad

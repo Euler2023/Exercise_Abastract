@@ -33,7 +33,9 @@ In the section's setting, $\mathfrak o$ is an arbitrary Dedekind domain with fra
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since every element of $\mathcal O\cap K$ is integral over $\mathfrak o$ and $\mathfrak o$ is integrally closed, $\mathcal O\cap K=\mathfrak o$.
 >
 > The inclusion $\mathfrak a\subseteq\mathfrak a\mathcal O\cap\mathfrak o$ follows from $1\in\mathcal O$. If $\mathfrak a=0$, the reverse inclusion holds because all rings embed in the field $L$. Otherwise $\mathfrak a$ is invertible. For $x\in\mathfrak a\mathcal O\cap\mathfrak o$,

@@ -34,7 +34,9 @@ created: 2026-10-02
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $K=F(\alpha)$ and let $f\in F[X]$ be the monic minimal polynomial of $\alpha$ over $F$. Since $\alpha$ is algebraic, $[K:F]=\deg f$ is finite. Consequently every intermediate field $E$ has finite degree over $F$ and $K$ has finite degree over $E$.
 >
 > **1. Attach a divisor to $E$.** Let

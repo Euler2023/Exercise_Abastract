@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a)** For $n=0$ the formula is the identity $xy=xy$; for $n=1$ it is the derivation rule. Suppose it holds for $n$. Differentiating each summand gives
 > $$
 > \sum_{i=0}^n\binom ni\left(D^{i+1}(x)D^{n-i}(y)+D^i(x)D^{n+1-i}(y)\right).

@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All ring homomorphisms here preserve identity, and all rings are commutative. We take $1\in S$. Define
 > $$
 > \widetilde f:A_S\longrightarrow B,\qquad

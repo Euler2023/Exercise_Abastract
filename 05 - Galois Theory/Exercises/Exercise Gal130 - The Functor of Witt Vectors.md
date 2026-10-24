@@ -63,7 +63,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $x_1, x_2, \dots$ be algebraically independent indeterminates over $\mathbf{Z}$.
 >
 > ---

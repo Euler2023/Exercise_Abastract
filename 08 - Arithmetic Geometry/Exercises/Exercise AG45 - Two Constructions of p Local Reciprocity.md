@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $\operatorname{rec}$ denote ordinary unramified local reciprocity, with a uniformizer acting as arithmetic Frobenius. Choose the cyclotomic degree map and the logarithmic valuation compatibly as in V.1.8. Formula (2.4) says precisely that
 > $$
 > \widehat v=\widehat d\circ\operatorname{rec}

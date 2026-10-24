@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Set $A=\mathbb Z[\sqrt a]$, $B=A[\sqrt{-b}]$, and $L=\mathbb Q(\sqrt a,\sqrt{-b})$. The real and imaginary quadratic fields are distinct, and their intersection is $\mathbb Q$, so $[L:\mathbb Q]=4$. Thus $1,\sqrt a,\sqrt{-b},\sqrt a\sqrt{-b}$ is a rational basis and the displayed integer expression for each element of $B$ is unique. We prove the stronger identity $B^\times=A^\times$.
 >

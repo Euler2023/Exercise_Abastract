@@ -34,7 +34,9 @@ created: 2026-09-15
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $A$ and $B$ be integral domains (entire rings) with $A\subseteq B$, such that $B$ is an integral extension of $A$.
 > 
 > Let $Q_1$ and $Q_2$ be prime ideals of $B$ satisfying:

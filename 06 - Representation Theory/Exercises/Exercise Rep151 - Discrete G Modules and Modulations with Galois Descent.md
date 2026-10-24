@@ -34,7 +34,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use additive notation in the solution; in multiplicative notation, the fiber sum is the norm product. For any finite $G$-set, define
 > $$
 > A_M(X)=\operatorname{Map}_G(X,M),\quad

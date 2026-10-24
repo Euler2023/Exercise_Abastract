@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $L=\nabla_D$. Contraction of the connection gives $L(ax)=D(a)x+aL(x)$. Induction exactly as for the iterated Leibniz rule yields
 > $$
 > L^n(ax)=\sum_{i=0}^n\binom ni D^i(a)L^{n-i}(x).

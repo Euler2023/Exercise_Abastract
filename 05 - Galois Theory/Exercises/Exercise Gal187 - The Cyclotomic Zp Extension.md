@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $C=\mathbb Q_p(\mu_{p^\infty})$. Cyclotomic Galois theory identifies $G(C/\mathbb Q_p)$ with $\mathbb Z_p^*$. Since $K/\mathbb Q_p$ is finite, $K\cap C$ is finite over $\mathbb Q_p$ and is contained in a finite cyclotomic layer. Thus
 > $$
 > G(L/K)\cong G(C/(K\cap C))

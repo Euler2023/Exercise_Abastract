@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We use commutative rings with identity, $1\in S,T$, and the fraction construction of localization. To cover all printed multiplicative subsets, we also allow a multiplicative set containing $0$: its localization is the zero ring. The visible convention below explains why this boundary is needed.
 >
 > **1. Construct the canonical maps.** Let $B=A_{ST}$ and $C=(A_S)_{T^*}$. The canonical map $A\to C$ sends all elements of $S$ to units at the first stage and all elements of $T$ to units at the second. Thus it sends every $st\in ST$ to a unit. The universal property gives a map

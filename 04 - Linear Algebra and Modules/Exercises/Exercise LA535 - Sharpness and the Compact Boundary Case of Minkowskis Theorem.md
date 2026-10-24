@@ -36,7 +36,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $n\ge1$ and let $\Gamma$ be a complete lattice in the Euclidean vector space $V$ of dimension $n$. Choose a lattice basis $b_1,\ldots,b_n$ and define the linear isomorphism
 > $$
 > B:\mathbb R^n\longrightarrow V,\qquad

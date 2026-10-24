@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the corrected criterion and a counterexample to the printed one
+> [!success]- Solution
+> **Proof scope:** Independent proof of the corrected criterion and a counterexample to the printed one
+>
 > Let $U$ be an irreducible $S$-module with character $\psi$, and put $M=\mathbb C[G]\otimes_{\mathbb C[S]}U$. The formula $[g]\psi(s)=\psi(g^{-1}sg)$ defines an action of $G$ on the characters of $S$, because $S$ is normal. Thus $I=I_G(\psi)$ is a subgroup. It contains $S$, since characters are invariant under inner conjugation.
 >
 > If $T$ is a set of representatives of the left cosets of $S$, then

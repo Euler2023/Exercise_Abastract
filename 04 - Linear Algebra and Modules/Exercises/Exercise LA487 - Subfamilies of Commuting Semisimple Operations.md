@@ -30,7 +30,9 @@ A set $T$ of operators is semisimple here when $E$ is semisimple as a module ove
 
 ## Solution
 
-> [!success]- Independent deduction from the commutative semisimple criterion
+> [!success]- Solution
+> **Proof scope:** Independent deduction from the commutative semisimple criterion
+>
 > Let $T\subseteq S$, and put $B=k[T]$. The elements of $S$ commute, so $R=k[S]$ is commutative; its subalgebra $B$ is commutative as well. Both algebras are finite-dimensional over $k$, since they are $k$-subspaces of the finite-dimensional space $\operatorname{End}_k(E)$.
 >
 > A commutative semisimple ring is a finite product of fields, by the complete proof of Lang XVII.6 in [[02 - Ring Theory/Exercises/Exercise R305 - Commutative Semisimple Rings Are Products of Fields|Exercise R305]]. Consequently $R$ is reduced: if $r^m=0$, each coordinate of $r$ in those fields is zero, so $r=0$.

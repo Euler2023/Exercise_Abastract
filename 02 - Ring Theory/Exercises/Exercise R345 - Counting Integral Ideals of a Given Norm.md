@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 >
 > Fix the number field $K$ and take $n\ge1$; the ideals counted are nonzero integral ideals. Factor
 > $$

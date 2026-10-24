@@ -45,7 +45,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Derivation from stated analytic inputs
+> [!success]- Solution
+> **Proof scope:** Derivation from stated analytic inputs
+>
 > Let $v:K^\times\to\mathbb Z$ be the normalized valuation of $\mathfrak o$. Nonzero constants lie in $\mathfrak o$ together with their inverses, so $v(c)=0$ for every $c\in\mathbb C^\times$.
 >
 > **1. The coordinate $z$ cannot have a pole at $v$.** Suppose $t=v(z)<0$. Choose a prime $p$ and digits $0\le v_i\le p-1$ such that the $p$-adic integer $S=\sum_{i\ge1}v_i p^i$ is not rational. Such a digit string exists because there are uncountably many $p$-adic digit strings but only countably many rational numbers. By the Weierstrass zero-set theorem, choose an entire function $f$ whose only zeros are the distinct $a_i\to\infty$, with zero orders $v_i p^i$ when $v_i>0$. For each $n$, define

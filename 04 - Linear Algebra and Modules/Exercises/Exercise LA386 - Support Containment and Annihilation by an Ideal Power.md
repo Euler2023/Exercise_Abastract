@@ -30,7 +30,9 @@ The chapter uses commutative rings, and $\subset$ allows equality.
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $J=\operatorname{ann}_A(M)$. By [[04 - Linear Algebra and Modules/Exercises/Exercise LA385 - Support of a Finite Module and Its Annihilator|Exercise LA385 (Lang X.11)]],
 > $$
 > \mathcal Z(J)=\operatorname{supp}(M)\subseteq\mathcal Z(I).

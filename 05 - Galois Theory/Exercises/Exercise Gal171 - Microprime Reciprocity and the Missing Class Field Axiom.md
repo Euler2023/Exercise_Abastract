@@ -53,7 +53,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The final isomorphism claim is false under the printed hypotheses; the missing abelianization is not the only problem. The explicit norm-quotient counterexample below precludes a valid complete proof of the original assertion.
 >
 > **1. A henselian module still satisfying (5.1).** Work in a separable closure of $k=\mathbb Q_3$. Let $A_0=(k^{sep})^\times$ and let $U_0$ be the subgroup of elements of absolute value $1$. Take

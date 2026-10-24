@@ -50,7 +50,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Use the corrected characteristic relation
 > $$
 > 1-uX+vX^2=(1-\alpha_1X)(1-\alpha_2X),

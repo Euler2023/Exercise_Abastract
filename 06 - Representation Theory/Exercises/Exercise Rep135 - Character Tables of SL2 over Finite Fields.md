@@ -31,7 +31,9 @@ Here $F=\mathbb F_q$ is a finite field, as in the preceding exercise. All charac
 
 ## Solution
 
-> [!success]- Complete tables and independent restriction argument
+> [!success]- Solution
+> **Proof scope:** Complete tables and independent restriction argument
+>
 > **Notation and class representatives.** Let $K=\mathbb F_{q^2}$ and let
 >
 > $$

@@ -32,7 +32,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > **(b) implies (a).** In characteristic zero, the derivative of every nonconstant polynomial is nonzero. Thus an irreducible polynomial is relatively prime to its derivative and is separable.
 >
 > In characteristic $p>0$, suppose Frobenius is surjective. If an irreducible nonconstant polynomial $f$ were inseparable, then $f'=0$, so

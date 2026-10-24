@@ -44,7 +44,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation, with the necessary hypothesis in (d)
+> [!success]- Solution
+> **Proof scope:** Independent derivation, with the necessary hypothesis in (d)
+>
 > Write $g\cdot X=gXg^{-1}$ and take $n\ge1$. The trace identity
 > $$
 > \operatorname{tr}(XY)=\sum_{i,j}x_{ij}y_{ji}

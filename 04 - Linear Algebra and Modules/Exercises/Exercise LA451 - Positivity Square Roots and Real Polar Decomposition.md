@@ -33,7 +33,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation using the real symmetric spectral theorem
+> [!success]- Solution
+> **Proof scope:** Independent derivation using the real symmetric spectral theorem
+>
 > Write $A^*$ for the adjoint relative to the given real scalar product; its matrix in an orthonormal basis is the transpose. We use Lang's real symmetric spectral theorem, Theorem XV.7.1 and Corollary 7.2: every symmetric operator on this finite-dimensional positive definite space has an orthonormal eigenbasis.
 >
 > **(a).** If $A\geq0$ and $Av=\lambda v$ with $v\ne0$, then $0\leq\langle Av,v\rangle=\lambda\|v\|^2$, so $\lambda\geq0$. Conversely, take an orthonormal eigenbasis $e_i$ and write $x=\sum_i x_ie_i$. Then

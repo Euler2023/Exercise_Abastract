@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The product is bilinear and commutative, has identity $(1,0)$, and is associative: either association of $(b,x),(c,y),(e,z)$ gives $(bce,bc\,z+be\,y+ce\,x)$. Thus the inclusion $B\to B\oplus M$ is a unital ring homomorphism and defines the required algebra. The ideal $0\oplus M$ has square zero.
 >
 > Write an additive map $F:A\to B\oplus M$ as $(\varphi,D)$ using the two projections. Multiplicativity says exactly

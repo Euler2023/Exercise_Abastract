@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Put $m=\deg f$, $n=\deg g$, and $r=[F(\alpha,\beta):F(\alpha)]$. Since $g(\beta)=0$, its minimal polynomial over $F(\alpha)$ divides $g$, so $r\le n$. The two degree towers give
 > $$
 > mr=[F(\alpha,\beta):F]

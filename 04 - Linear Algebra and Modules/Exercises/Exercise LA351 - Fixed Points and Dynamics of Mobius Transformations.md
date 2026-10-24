@@ -40,7 +40,9 @@ created: 2026-08-28
 
 ## Solution
 
-> [!success]- Solution under the non-scalar hypothesis
+> [!success]- Solution
+> **Proof scope:** Solution under the non-scalar hypothesis
+>
 > **(a)** A finite fixed point satisfies
 >
 > $$

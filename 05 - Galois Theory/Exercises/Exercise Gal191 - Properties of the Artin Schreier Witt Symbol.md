@@ -45,7 +45,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Throughout take $L/K$ to be the maximal abelian extension of exponent dividing $p^n$, as required by the correction in Exercise 4.
 >
 > (i) Restriction compatibility of the norm residue symbol sends $(a,L/K)$ to $(a,K(\xi)/K)$. Inserting this in $\chi_x(\sigma)=\sigma\xi-\xi$ proves the formula. The extension $K(\xi)/K$ is finite cyclic of degree dividing $p^n$; its action on $\xi$ is faithful.

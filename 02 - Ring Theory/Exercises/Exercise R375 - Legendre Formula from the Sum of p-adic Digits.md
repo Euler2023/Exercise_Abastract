@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Each integer $m\le n$ contributes once for every power $p^j$ dividing $m$. Thus the following finite sums count the same pairs $(m,j)$:
 > $$
 > v_p(n!)=\sum_{m=1}^n v_p(m)=\sum_{j\ge1}\left\lfloor\frac n{p^j}\right\rfloor.

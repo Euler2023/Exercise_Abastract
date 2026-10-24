@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The ambient hypotheses of the Hilbert-symbol section include $\operatorname{char}K\ne2$ and $a,b\in K^*$. By V (3.2)(iii), the left side says that $a$ is a norm from $K(\sqrt b)$.
 >
 > If $b$ is a square, both assertions hold: the Kummer extension is trivial, and $(x,y,z)=(0,1,\sqrt b)$ is a nonzero solution. Now suppose $b$ is not a square. If the symbol is $1$, choose $z,y\in K$ with

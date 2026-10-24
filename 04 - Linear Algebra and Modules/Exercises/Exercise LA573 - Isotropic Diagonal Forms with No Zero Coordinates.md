@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The printed statement omits the necessary assumptions $\operatorname{char}K\ne2$ and $a_i\ne0$ for every coefficient. If zero coefficients are allowed, $q=x_1^2$ in two variables has a nontrivial zero but no zero with every coordinate nonzero. There is also a counterexample in characteristic $2$: over $K=\mathbb F_2(t)$, the form $q=x_1^2+t x_2^2+x_3^2$ has the zero $(1,0,1)$, but $q=0$ forces $x_2=0$, since otherwise $t=((x_1+x_3)/x_2)^2$, a contradiction.
 > We prove the corrected version. Suppose a currently nonzero coordinate $\xi$ has coefficient $a\ne0$, and a zero coordinate to be filled has coefficient $b\ne0$. Set $t=b\gamma^2/a$ and take
 > $$

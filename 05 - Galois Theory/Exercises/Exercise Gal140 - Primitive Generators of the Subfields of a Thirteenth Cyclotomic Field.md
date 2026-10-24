@@ -39,7 +39,9 @@ The complete mathematical task, including both parts, is restated above. The [of
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Write $\zeta=\zeta_{13}$ throughout.
 >
 > ### (a) The order of $2$ modulo $13$

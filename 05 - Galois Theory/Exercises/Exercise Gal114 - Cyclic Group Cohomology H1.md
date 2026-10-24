@@ -43,7 +43,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $n = |G|$, so that $G = \{1, \sigma, \sigma^2, \dots, \sigma^{n-1}\}$.
 >
 > ### 1. Cocycle Condition on Powers of $\sigma$

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $T$ be the union of the fields $\mathbb Q_p(\mu_m)$ for $(m,p)=1$. These are finite unramified extensions by (7.12), printed p. 158 / PDF p. 177; their composites are unramified by (7.3), so $T$ is contained in the maximal unramified extension $K_{\rm nr}$.
 >
 > Conversely, let $E/\mathbb Q_p$ be finite unramified of degree $f$. Its residue field is $\mathbb F_{p^f}$. The polynomial $X^{p^f-1}-1$ splits there into distinct roots, and Hensel lifts all of them to roots in $E$. Choose the lift $\zeta$ of a generator of $\mathbb F_{p^f}^*$. Its order is exactly $p^f-1$: it divides this number by construction, and its residue already has that order. Thus $\mathbb Q_p(\zeta)\subseteq E$ and its residue field contains all of $\mathbb F_{p^f}$. Residue degree never exceeds extension degree, so

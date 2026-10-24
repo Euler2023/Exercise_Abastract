@@ -55,7 +55,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put
 > $$
 > Q_j(X)=1-(1-X)^{p^j},\qquad h_j=Q_j^{-1}-\frac12\quad(j\ge0),\qquad T_j(\omega)=\operatorname{Res}(h_j\omega).

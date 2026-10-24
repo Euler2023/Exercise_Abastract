@@ -25,7 +25,7 @@ created: 2026-08-12
 
 ## Solution
     
- > [!success] Solution
+> [!success]- Solution
 > 
 > Decompose $G = \operatorname{Gal}(K/F) \cong A \times B \times C$, where:
 > - $A = \langle a \rangle \cong C_2$ ($a^2 = 1$)

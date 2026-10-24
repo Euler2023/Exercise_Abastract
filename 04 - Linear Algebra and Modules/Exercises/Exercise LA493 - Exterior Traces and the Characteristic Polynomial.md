@@ -40,7 +40,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Choose a basis $e_1,\ldots,e_n$, with $f(e_j)=\sum_i a_{ij}e_i$. For increasing subsets $I,J$ of size $r$, multilinearity gives
 >
 > $$

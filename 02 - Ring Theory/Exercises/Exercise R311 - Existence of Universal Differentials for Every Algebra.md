@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $P=R[X_b\mid b\in B]$ and send $X_b$ to $b$. This defines a surjective $R$-algebra map $\pi:P\to B$; let $I=\ker\pi$. Exercise 6 constructs $\Omega^1_{P/R}=\bigoplus_{b\in B}P\,dX_b$. Exercise 8 then constructs
 > $$
 > \Omega^1_{B/R}=

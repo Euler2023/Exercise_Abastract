@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ be a number field and $A$ a finite discrete continuous $G_K$-module. Since the characteristic is $0$, its order is unrestricted. Equip $A'=\operatorname{Hom}(A,\overline K^\times)$ with the natural Galois action; evaluation gives $A\otimes A'\to\overline K^\times$.
 > (i) Each local pairing is
 > $$

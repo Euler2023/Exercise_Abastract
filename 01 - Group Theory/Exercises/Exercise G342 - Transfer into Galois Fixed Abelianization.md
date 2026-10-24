@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\Gamma=G_K$, $H=G_L\triangleleft\Gamma$, and $Q=\Gamma/H$. For $q\in Q$, choose a lift $\gamma\in\Gamma$ and define $q[h]=[\gamma h\gamma^{-1}]$ on $H^{\mathrm{ab}}$. Another lift has the form $\gamma h_0$, and the two conjugations differ by an inner automorphism of $H$, which acts trivially on its abelianization. The action is therefore independent of the lift and satisfies the group-action laws. Continuity follows from finite quotients and continuous conjugation.
 > The finite-index transfer is defined by a product over coset representatives. Changing representatives changes the product only by commutators in $H$, giving a continuous homomorphism $\Gamma^{\mathrm{ab}}\to H^{\mathrm{ab}}$. It is natural with respect to conjugation:
 > $$

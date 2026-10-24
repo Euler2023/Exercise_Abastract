@@ -40,7 +40,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The printed condition of injectivity is too strong in general. Set
 > $$
 > B_S=\ker\left(H^1(K,\mu_n)\to\prod_{v\notin S}H^1(K_v,\mu_n)\right),\quad

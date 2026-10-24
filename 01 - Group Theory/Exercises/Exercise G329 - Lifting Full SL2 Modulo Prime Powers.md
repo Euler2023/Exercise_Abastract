@@ -34,7 +34,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived congruence-filtration proof
+> [!success]- Solution
+> **Proof scope:** Independently derived congruence-filtration proof
+>
 > Write $R_n=\mathbb Z/p^n\mathbb Z$. If $n=1$, the claim is its hypothesis. Suppose $n\ge2$. For $1\le i\le n$ let
 >
 > $$

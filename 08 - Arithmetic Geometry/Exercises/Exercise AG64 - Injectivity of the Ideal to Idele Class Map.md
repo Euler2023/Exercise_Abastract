@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the source's exact definitions
 > $$
 > C(\mathfrak m)=I/(I_f^{\mathfrak m}K^*),

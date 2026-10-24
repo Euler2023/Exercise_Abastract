@@ -40,7 +40,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Write $\mathfrak m$ for the maximal ideal and $r$ for the common fibre dimension. We use the following elementary local form of Nakayama: if a finite module $Q$ satisfies $Q=\mathfrak mQ$, then $Q=0$. To see this, choose generators $q_1,\ldots,q_s$ and express $q_i=\sum_jc_{ij}q_j$ with every $c_{ij}\in\mathfrak m$. Multiplication by the adjugate of $I-(c_{ij})$ shows that $\det(I-(c_{ij}))$ annihilates every $q_i$. This determinant belongs to $1+\mathfrak m$, hence is a unit, so all generators vanish.
 >
 > Choose $x_1,\ldots,x_r\in E$ lifting a basis of $E/\mathfrak mE$. The quotient $Q=E/\sum_jAx_j$ is finite and satisfies $Q=\mathfrak mQ$, hence is zero. Thus the map

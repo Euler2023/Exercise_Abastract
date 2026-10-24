@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $K$ have $q$ elements. In characteristic two, the square map is bijective by the injectivity of Frobenius, so every $a$ is $x^2+0^2$.
 >
 > Suppose the characteristic is odd. The nonzero square map has fibers $\{x,-x\}$, each of size two. Hence

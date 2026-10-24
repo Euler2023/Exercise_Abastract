@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation without assuming Artinian implies Noetherian
+> [!success]- Solution
+> **Proof scope:** Independent derivation without assuming Artinian implies Noetherian
+>
 > **(a).** Choose $q\ge1$ with $J^q=0$, and let $E$ be any simple left $R$-module. The set $JE$ of finite sums of products $jx$ is a submodule, because $r(jx)=(rj)x$ and $rj\in J$. Hence $JE=0$ or $JE=E$. If $JE=E$, induction gives $J^mE=E$ for every $m\ge1$, whereas $J^qE=0$, contradicting $E\ne0$. Thus $JE=0$ for every simple module.
 >
 > For every maximal left ideal $L$, apply this to the simple module $R/L$. Each $j\in J$ then satisfies $j(1+L)=0$, so $j\in L$. Taking the intersection gives $J\subseteq N$.

@@ -28,7 +28,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Choose $\alpha$ in an algebraic closure with $\alpha^{p^n}=a$, and let $m(X)$ be its monic minimal polynomial over $K$. Since
 > $$
 > X^{p^n}-a=(X-\alpha)^{p^n},

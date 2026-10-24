@@ -34,7 +34,9 @@ Here $\mathcal Z(I)=\{\mathfrak p:I\subseteq\mathfrak p\}$, as recalled immediat
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > If $\operatorname{ann}(M)\nsubseteq\mathfrak p$, take $s\in\operatorname{ann}(M)\setminus\mathfrak p$. Multiplication by $s/1$ on $M_{\mathfrak p}$ is both zero and invertible, so $M_{\mathfrak p}=0$. Contrapositively,
 > $$
 > \operatorname{supp}(M)\subseteq\mathcal Z(\operatorname{ann}(M)).

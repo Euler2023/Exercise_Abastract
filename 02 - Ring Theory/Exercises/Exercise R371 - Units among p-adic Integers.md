@@ -31,7 +31,9 @@ created: 2026-10-20
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the ring identification
 > $$
 > \mathbb Z_p=\varprojlim_n\mathbb Z/p^n\mathbb Z.

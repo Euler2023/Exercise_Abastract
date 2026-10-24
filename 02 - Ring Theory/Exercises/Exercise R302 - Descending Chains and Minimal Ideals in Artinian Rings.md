@@ -38,7 +38,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from the descending chain condition
+> [!success]- Solution
+> **Proof scope:** Independent derivation from the descending chain condition
+>
 > **(a).** Let $R$ be a finite dimensional algebra over $k$, of dimension $d$. A left ideal $L$ is stable under addition and under multiplication by each scalar element $c1_R$, so it is a $k$-vector subspace of $R$. In a strictly descending chain of left ideals, their dimensions are strictly decreasing nonnegative integers bounded above by $d$. There can be at most $d$ strict decreases. Thus $R$ is Artinian.
 >
 > **(b).** Let $J\ne0$ be a left ideal. Consider the nonempty collection of nonzero left ideals contained in $J$; it contains $J$ itself. If it had no minimal member, we could choose $L_1$ in it, then $L_2\subsetneq L_1$ in it, then $L_3\subsetneq L_2$, and continue. This would be an infinite strictly descending chain of left ideals, contradicting the Artinian condition. Hence it has a minimal member $L\ne0$.

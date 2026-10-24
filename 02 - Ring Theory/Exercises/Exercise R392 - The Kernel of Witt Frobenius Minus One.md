@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For $a=(a_0,\ldots,a_{n-1})\in W_n(\overline K)$, the Witt Frobenius is
 > $$
 > Fa=(a_0^p,\ldots,a_{n-1}^p),

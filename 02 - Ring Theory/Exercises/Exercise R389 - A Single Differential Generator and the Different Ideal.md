@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the setting of §2: $L/K$ is finite separable, $\mathfrak o$ is a Dedekind ring, $\mathcal O$ is its integral closure in $L$, and the relevant residue-field extensions are separable. We first establish the local description needed here and then patch globally. We do not use (2.7) as a black box, since its printed proof refers to this exercise.
 >
 > **1. The local case with one algebra generator.** Suppose $B=A[t]/(f(t))=A[x]$, where $f$ is monic and is the minimal polynomial of $x$. Every $A$-derivation is determined by $dx$, and differentiating $f(x)=0$ gives $f'(x)dx=0$. Conversely, $h(x)\mapsto h'(x)\bmod f'(x)$ is a well-defined derivation: replacing $h$ by $h+gf$ changes the derivative by $g(x)f'(x)$. The universal property of derivations therefore gives

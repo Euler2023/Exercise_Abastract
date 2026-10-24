@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Take $M=K(\mu_m,\alpha)$ and $\alpha^m=a$. **Cited input: the existence part of the Čebotarev theorem** (Jürgen Neukirch, Algebraic Number Theory, English ed., 1999, VII.§13, (13.4), printed p.545/PDF564): every conjugacy class occurs as Frobenius at infinitely many unramified primes. Since $X^m-a$ has a local root almost everywhere, every $g\in G=\operatorname{Gal}(M/K)$ fixes one of these roots.
 > Write $g(\alpha)=\zeta^{c(g)}\alpha$ and $g(\zeta)=\zeta^{\chi(g)}$. Then
 > $$

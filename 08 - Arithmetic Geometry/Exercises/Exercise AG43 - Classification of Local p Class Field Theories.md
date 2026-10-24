@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use arithmetic local reciprocity $\operatorname{rec}_K$ as a fixed reference. All choices are as follows. Choose any continuous surjection $d:G_K\to\mathbb Z_p$ and put $\chi=d\circ\operatorname{rec}_K$.
 >
 > * If $d$ is nonzero on inertia, choose any $c\in\mathbb Z_p^*$ and put $v=c\chi$; its image is $\mathbb Z_p$.

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Fix a complex logarithm $L_v$ of $\epsilon_v$ at each complex embedding; at real embeddings total positivity allows us to take $L_v=\log\epsilon_v\in\mathbb R$. For $\lambda=(x,t)$, define the finite components to be $\epsilon_v^x$ (the continuous extension from the preceding exercise) and the infinite components to be $\exp(tL_v)$.
 > This is a continuous homomorphism from the additive group $\widehat{\mathbb Z}\times\mathbb R$ to $I_K^1$; the diagonal integer $(n,n)$ maps to the usual principal idèle $\epsilon^n$. All finite components are units, so their absolute values are $1$; the infinite components give
 > $$

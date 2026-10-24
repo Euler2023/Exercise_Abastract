@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For each open subgroup $U$, define $M_U=U/\overline{[U,U]}$ with its profinite quotient topology. Inclusion gives a continuous map $i_U^V:U^{ab}\to V^{ab}$, and transfer gives $t_U^V:V^{ab}\to U^{ab}$. Specifically, choose representatives $R$ for the left cosets of $V/U$ and write $vr=r' u(v,r)$. Then
 > $$
 > t_U^V(\bar v)=\prod_{r\in R}\overline{u(v,r)}.

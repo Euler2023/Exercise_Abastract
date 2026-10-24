@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the notation of [[04 - Linear Algebra and Modules/Exercises/Exercise LA468 - Coordinate Differences and Dual Bases on Trace Zero Diagonals|Exercise LA468]]. The restriction of $B_t$ is positive definite by [[04 - Linear Algebra and Modules/Exercises/Exercise LA469 - The Positive Definite Trace Pairing|Exercise LA469]]. Its map $\mathfrak a\to\mathfrak a^\vee$ is injective and hence, by equal dimensions, an isomorphism. This gives existence and uniqueness of every representative $H_\alpha$.
 >
 > Since $\operatorname{tr}(H_jH)=h_j-h_{j+1}=\alpha_j(H)$, we have $H_{\alpha_j}=H_j$. Put $W_i=H_{\alpha_i'}$. Then

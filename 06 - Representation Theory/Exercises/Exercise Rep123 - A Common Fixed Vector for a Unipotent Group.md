@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation using the source's Burnside theorem
+> [!success]- Solution
+> **Proof scope:** Independent derivation using the source's Burnside theorem
+>
 > Write $d=\dim_k E>0$. The proof uses the following named source theorem, with its hypotheses unchanged: if $K$ is algebraically closed, $W$ is a nonzero finite-dimensional $K$-space, and a multiplicative submonoid $H\subseteq GL(W)$ has no invariant subspaces other than $0,W$, then
 > $$
 > K[H]=\operatorname{span}_K H=\operatorname{End}_K(W).

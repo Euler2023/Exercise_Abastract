@@ -57,7 +57,7 @@ The body must contain at least:
 
 1. `Problem Statement`: use a `> [!question]` callout and preserve the exact problem and its multipart structure.
 2. `Hints`: use collapsed `> [!hint]-` callouts, ordered from weaker to stronger.
-3. `Solution`: use a collapsed `> [!success]-` callout and provide a complete derivation.
+3. `Solution`: use the exact collapsed callout header `> [!success]- Solution` and provide a complete derivation. Put proof provenance, corrected hypotheses, proof-status limits, and alternative-method names in the callout body or `Notes`, not in the callout title.
 4. `Related Concepts`: link the main prerequisites and any cross-topic concepts.
 5. `Notes`: record method boundaries, alternative approaches, source status, or source ambiguities.
 

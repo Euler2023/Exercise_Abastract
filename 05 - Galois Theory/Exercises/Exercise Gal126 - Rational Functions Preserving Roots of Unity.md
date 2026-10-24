@@ -37,7 +37,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $f(z) = \frac{P(z)}{Q(z)} \in K(z)$, where $K$ is a number field (a finite extension of $\mathbf{Q}$) and $P, Q \in K[z]$ are relatively prime polynomials.
 > Let $\boldsymbol{\mu} \subset \mathbf{C}^*$ denote the group of all roots of unity.
 > We are given that the set

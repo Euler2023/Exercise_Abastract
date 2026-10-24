@@ -30,7 +30,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $\mathfrak m$ be the unique maximal ideal of $A$, and let $e^2=e$.
 >
 > First, an element of $A$ is a nonunit precisely when it lies in $\mathfrak m$. A member of a proper ideal cannot be a unit. Conversely, if $a$ is a nonunit, then $(a)$ is a proper ideal, hence is contained in a maximal ideal; uniqueness forces $a\in\mathfrak m$.

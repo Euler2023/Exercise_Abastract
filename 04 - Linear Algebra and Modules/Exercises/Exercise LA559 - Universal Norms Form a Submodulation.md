@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For disconnected $X=\coprod X_i$, use the convention $NA(X)=\bigoplus_i NA(X_i)$. It suffices to show that $h_*$ and $h^*$ preserve these groups for connected maps $h:X\to Z$. Write the stabilizers as $H=G_x\subset K=G_{h(x)}$.
 >
 > First record the refinement fact for finite covers. If $W\to X$ is Galois, its stabilizer satisfies $N\triangleleft H$ and $N$ is open in $K$. Set

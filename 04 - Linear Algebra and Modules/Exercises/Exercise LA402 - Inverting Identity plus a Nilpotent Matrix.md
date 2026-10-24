@@ -30,7 +30,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Choose $m\ge1$ with $N^m=0$ and define
 > $$
 > S=\sum_{j=0}^{m-1}(-N)^j=I-N+N^2-\cdots+(-1)^{m-1}N^{m-1}.

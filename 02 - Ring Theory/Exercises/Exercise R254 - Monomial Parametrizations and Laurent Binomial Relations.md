@@ -35,7 +35,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $d=\gcd(|m|,|n|)$, $m_0=m/d$, and $n_0=n/d$. Rescale the variables by $U=X/a$, $V=Y/b$. The map
 > $$
 > k[U^{\pm1},V^{\pm1}]\longrightarrow k[t^{\pm1}],

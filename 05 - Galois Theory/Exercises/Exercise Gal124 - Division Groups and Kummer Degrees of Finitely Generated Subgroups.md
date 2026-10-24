@@ -41,7 +41,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K$ be a field of characteristic $\ne p$. We are given:
 > - $\boldsymbol{\mu}_p \subset K$ if $p$ is odd; $\boldsymbol{\mu}_4 \subset K$ if $p = 2$;
 > - $\Gamma \le K^*$ is finitely generated and $p$-pure in $K$: $z \in K, z^p \in \Gamma \implies z \in \Gamma$;

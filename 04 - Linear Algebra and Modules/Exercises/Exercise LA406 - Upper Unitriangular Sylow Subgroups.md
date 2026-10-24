@@ -29,7 +29,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Let $U$ be the upper unitriangular subgroup and write $q=p^f$. There are $n(n-1)/2$ entries strictly above the diagonal, each with $q$ choices, so
 >
 > $$

@@ -71,7 +71,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof with all norm bases specified
+> [!success]- Solution
+> **Proof scope:** Independent proof with all norm bases specified
+>
 > For a commutative $R$-algebra $T$, write $B_T=T\otimes_R B$. The given basis of $B$ identifies $B_T$ with $T^r$: the mutually inverse maps are
 >
 > $$

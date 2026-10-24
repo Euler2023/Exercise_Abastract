@@ -25,7 +25,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Write $n=[F(\alpha):F]$, an odd integer, and $M=F(\alpha^2)$. The element $\alpha$ is a root of $X^2-\alpha^2\in M[X]$, so $[E:M]\le2$. The tower law says
 > $$
 > n=[E:M][M:F].

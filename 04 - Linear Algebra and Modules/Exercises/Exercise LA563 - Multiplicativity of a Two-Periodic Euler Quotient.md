@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The precise meaning of multiplicativity is as follows. Let $0\to A\to B\to C\to0$ be a short exact sequence of abelian groups. Equip all three groups with endomorphisms $f,g$, require every arrow to commute with $f,g$, and assume $fg=gf=0$ on each group. Set
 > $$
 > H_f(X)=\ker(f:X\to X)/gX,\qquad H_g(X)=\ker(g:X\to X)/fX.

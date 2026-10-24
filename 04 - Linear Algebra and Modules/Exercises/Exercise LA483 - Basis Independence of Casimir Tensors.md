@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All tensor products are over $k$. Nondegeneracy says that
 > $$
 > b:E\longrightarrow E^\vee,\qquad b(y)(z)=B(y,z)

@@ -53,7 +53,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K/k$ be a field extension and $G \le \operatorname{Aut}_k(K)$ with fixed field $K^G = k$.
 >
 > ---

@@ -40,7 +40,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Complete derivation
+> [!success]- Solution
+> **Proof scope:** Complete derivation
+>
 > Work in the intended curve setting inherited from Exercise 18, as specified in the source-issue notice. Then $A=k[x,y]\cong k[X,Y]/(f)$, and $\mathfrak m_0=(x-a,y-b)A$ is the kernel of evaluation at $(a,b)$. Set $B=A_{\mathfrak m_0}$. It is a local domain with maximal ideal $\mathfrak m_0B$ and residue field $k$.
 >
 > Since $f(a,b)=0$, polynomial division by $X-a$ and $Y-b$ gives

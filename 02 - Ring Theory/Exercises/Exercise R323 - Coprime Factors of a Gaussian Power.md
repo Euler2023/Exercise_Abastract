@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We take $n$ to be a positive integer, as intended by the power notation. The ring $\mathbb Z[i]$ is Euclidean and hence a UFD, by the source's Proposition (1.2), printed pp. 1-2 / PDF pp. 20-21. Relatively prime means that every common divisor is a unit.
 >
 > **Zero case.** If $\alpha\beta=0$, the integral-domain property gives $\alpha=0$ or $\beta=0$. If $\alpha=0$, then $\beta$, being a common divisor of $0$ and $\beta$, must be a unit. Take $\xi=0$, $\eta=1$, $\varepsilon'=1$, and $\varepsilon''=\beta$. The case $\beta=0$ is symmetric. Both cannot vanish because a nonunit, such as $1+i$, would then be a common divisor.

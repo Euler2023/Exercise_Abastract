@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $R=\mathbb Z[\sqrt{-d}]$, where $d$ is any integer greater than $1$. Complex conjugation maps $R$ to itself and sends $a+b\sqrt{-d}$ to $a-b\sqrt{-d}$. Define
 > $$
 > N(a+b\sqrt{-d})=(a+b\sqrt{-d})(a-b\sqrt{-d})=a^2+db^2.

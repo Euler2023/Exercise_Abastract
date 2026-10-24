@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The source defines
 > $$
 > L(f,w)=\int_0^\infty(f(u)-f(\infty))u^w\frac{du}{u},

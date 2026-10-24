@@ -34,7 +34,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $B=\mathbb Q[t^2,t^3]\subseteq\mathbb Q[t]$ and define the ring homomorphism
 > $$
 > \varphi:\mathbb Q[X,Y]\longrightarrow\mathbb Q[t],

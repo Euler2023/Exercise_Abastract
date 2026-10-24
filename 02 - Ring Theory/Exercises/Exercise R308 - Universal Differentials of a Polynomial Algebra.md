@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > All sums are finite for each polynomial, so $d$ is well defined. Formal differentiation is additive, vanishes on $R$, and satisfies the product rule; checking a product of two monomials proves these identities over any commutative coefficient ring.
 >
 > Let $M$ be an $A$-module and $D:A\to M$ an $R$-derivation. Induction gives $D(X_\alpha^n)=nX_\alpha^{n-1}D(X_\alpha)$ for $n\ge1$. Repeated multiplication and additivity therefore give

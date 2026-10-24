@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > If $x'=xu$ and $y'=yw$ with $u,w\in\mathfrak o^*$, then $x'/y'=(x/y)(u/w)$ belongs to $\mathfrak o$ exactly when $x/y$ does. Thus the relation is well-defined. It is reflexive and transitive because $1\in\mathfrak o$ and the ring is closed under products. If both $x/y$ and its inverse belong to $\mathfrak o$, then $x/y$ is a unit, so the two cosets coincide; this proves antisymmetry. For every nonzero $x/y$ the defining valuation-ring property says that it or its inverse belongs to the ring. Thus the order is total. Multiplying both representatives by $z\in K^*$ leaves their ratio unchanged, proving compatibility with the group law, which becomes translation invariance in additive notation.
 >
 > Define $\infty$ to be larger than every element of $\Gamma$, with $\infty+\gamma=\infty$. The first property is by definition, and the second is the quotient homomorphism property, including zero by this convention. For the third, assume $x,y\ne0$ and $v(x)\ge v(y)$. Then $x/y\in\mathfrak o$ and $(x+y)/y=1+x/y\in\mathfrak o$. If $x+y\ne0$, this says $v(x+y)\ge v(y)$; if the sum is zero, its value is $\infty$ and the same inequality holds. Zero arguments are immediate. Finally $\mathfrak o=\{x:v(x)\ge0\}$ and $\mathfrak o^*=\{x:v(x)=0\}$, showing that the construction recovers the given ring. The ordered group need not embed in $\mathbb R$; no rank-one assumption was made.

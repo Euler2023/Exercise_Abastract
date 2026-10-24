@@ -32,7 +32,9 @@ created: 2026-10-02
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Use the positive real square roots and set
 > $$
 > K=\mathbb Q(\sqrt2,\sqrt3,\sqrt5),

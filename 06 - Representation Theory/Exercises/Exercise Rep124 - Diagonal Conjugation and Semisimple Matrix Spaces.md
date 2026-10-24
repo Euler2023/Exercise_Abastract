@@ -42,7 +42,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation over an arbitrary field
+> [!success]- Solution
+> **Proof scope:** Independent derivation over an arbitrary field
+>
 > The group action is well-defined: $c(1)$ is the identity and
 > $$
 > c(ab)M=abM(ab)^{-1}=a(bMb^{-1})a^{-1}=c(a)c(b)M.

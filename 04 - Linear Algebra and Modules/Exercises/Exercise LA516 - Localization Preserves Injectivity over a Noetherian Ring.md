@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Set $B=S^{-1}A$. By Baer's criterion it suffices to extend a $B$-linear map $f:\mathfrak b\to S^{-1}I$, where $\mathfrak b$ is an ideal of $B$. Let $J$ be its inverse image in $A$; then $\mathfrak b=S^{-1}J$.
 >
 > Since $A$ is Noetherian, $J$ has a finite presentation $A^m\to A^n\to J\to0$: take finitely many generators, then finitely many generators of the kernel. Applying Hom identifies $\operatorname{Hom}_A(J,I)$ with a kernel in $I^n\to I^m$. Localization is exact and commutes with finite direct sums, so localizing this kernel proves the Hom isomorphism in the hint.

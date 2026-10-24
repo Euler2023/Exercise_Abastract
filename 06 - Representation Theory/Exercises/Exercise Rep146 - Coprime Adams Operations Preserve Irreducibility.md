@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent counterexample and proof under the corrected hypothesis
+> [!success]- Solution
+> **Proof scope:** Independent counterexample and proof under the corrected hypothesis
+>
 > **1. The printed claim fails.** Let $\chi$ be the character of the standard two-dimensional representation of $S_3$, obtained by removing the constant line from the permutation representation on three letters. Counting fixed letters and subtracting $1$ gives its values $2,0,-1$ on the identity, transpositions, and three-cycles. The corresponding class sizes are $1,3,2$, so its squared norm is $(4+0+2)/6=1$, confirming irreducibility.
 >
 > Squaring sends every transposition to the identity and every three-cycle to a three-cycle. Thus $\Psi^2\chi$ has values $2,2,-1$. If $\varepsilon$ denotes the sign character, direct comparison on these three classes gives

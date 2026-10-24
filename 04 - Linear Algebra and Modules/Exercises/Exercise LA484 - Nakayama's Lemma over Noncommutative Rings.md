@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by eliminating a generator
+> [!success]- Solution
+> **Proof scope:** Independent derivation by eliminating a generator
+>
 > By R301, $N$ is a two-sided ideal. We first establish exactly the inverse property needed for left modules.
 >
 > **Left-inverse lemma.** For every $a\in N$, there is $b\in R$ with $b(1-a)=1$. Indeed, if $R(1-a)$ were a proper left ideal, Zorn's lemma would place it in a maximal left ideal $L$. Since $a\in N\subseteq L$ and $1-a\in L$, we would have $1\in L$, a contradiction. Hence $R(1-a)=R$, which gives the required $b$. We do not need a right-inverse assertion.

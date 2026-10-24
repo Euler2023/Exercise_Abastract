@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Conventions and source inputs.** Double complexes here are first quadrant, with anticommuting differentials of degrees $(1,0),(0,1)$, as defined in §9, printed p. 819 / PDF p. 834. Their total differential is the sum. The same proof works if either lower bound is shifted by a fixed finite amount.
 >
 > **(a) Exact columns imply exact total complex.** Let $C^{p,q}$ have exact columns and fixed lower bounds $p\ge0$, $q\ge q_0$. A total cocycle $z$ in degree $n$ has only finitely many possible components. Its component in the least occupied column, say $p$, is vertically closed, because no horizontal differential arrives from a smaller occupied column. Exactness supplies a vertical primitive $y^{p,n-p-1}$. Subtracting $d_{\mathrm{Tot}}y$ removes that column and can introduce a component only in column $p+1$. Repeat. Once $n-p=q_0$, a vertically closed component is zero, since exactness at the bottom says its kernel is the image of the zero term below it. Hence the process stops after finitely many steps and writes $z$ as a total boundary.

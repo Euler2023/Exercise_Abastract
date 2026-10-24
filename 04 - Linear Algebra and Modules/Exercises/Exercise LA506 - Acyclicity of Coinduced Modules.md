@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent cochain contraction
+> [!success]- Solution
+> **Proof scope:** Independent cochain contraction
+>
 > Write $M=M_G(B)$, with $(g\cdot u)(x)=u(xg)$. A degree-$q$ cochain is a function $f:G^q\to M$. For $q\ge1$ define
 > $$
 > (sf)(g_1,\ldots,g_{q-1})(x)=f(x,g_1,\ldots,g_{q-1})(1).

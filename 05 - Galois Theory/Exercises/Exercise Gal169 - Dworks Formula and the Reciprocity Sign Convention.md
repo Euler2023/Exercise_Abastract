@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Retain the notation of the text: $\widetilde K$ is the maximal unramified extension, $\widetilde L=L\widetilde K$, and $\varphi$ is the Frobenius of $\widetilde L/L$. Total ramification and commutativity give
 > $$
 > G(\widetilde L/K)\simeq G(L/K)\times G(\widetilde K/K),

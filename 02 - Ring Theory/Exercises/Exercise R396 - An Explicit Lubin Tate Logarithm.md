@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $\mathfrak o=\mathfrak o_K$, with residue field $\mathbb F_q$. All series substitutions are formal and have zero constant term. The linear coefficient of $f$ is $1$, so $f^{-1}\in K[[X]]$ exists. Over $K$, conjugation immediately gives a commutative associative formal group and scalar maps. We prove the missing integral assertions.
 >
 > **An integral difference lemma.** For integral zero-constant series $U,V$ with $U-V\in\pi\mathfrak o[[\mathbf X]]$, one has

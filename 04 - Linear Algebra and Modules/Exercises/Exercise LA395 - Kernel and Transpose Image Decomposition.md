@@ -44,7 +44,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **(a)** Suppose $\,{}^tLw=0$. For every $v\in V$,
 > $$
 > \langle Lv,w\rangle=\langle v,{}^tLw\rangle=0.

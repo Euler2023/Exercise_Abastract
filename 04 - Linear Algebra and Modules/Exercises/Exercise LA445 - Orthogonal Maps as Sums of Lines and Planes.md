@@ -42,7 +42,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > Finite dimensionality makes $I,T,T^2,\ldots$ linearly dependent, so a nonzero real polynomial $q$ satisfies $q(T)=0$. Factor $q$ over $\mathbb R$ into irreducible factors, all of degree one or two by the fundamental theorem of algebra. At least one factor $p$ has $p(T)$ noninvertible, since otherwise the product $q(T)$ would be invertible. Choose $v\ne0$ with $p(T)v=0$.
 >
 > Let $d=\deg p\in\{1,2\}$, take $p$ monic, and put $W=\operatorname{span}_{\mathbb R}\{v,Tv,\ldots,T^{d-1}v\}$. The equation $p(T)v=0$ expresses $T^dv$ in this span, so $T(W)\subseteq W$ and $1\leq\dim W\leq2$. Since $T$ is invertible, its restriction to $W$ is injective and hence onto. For $x\in W^\perp$ and $w\in W$,

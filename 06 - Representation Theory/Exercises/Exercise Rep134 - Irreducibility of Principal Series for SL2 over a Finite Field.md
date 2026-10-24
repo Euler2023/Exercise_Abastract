@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent double-coset calculation using the proved kernel isomorphism
+> [!success]- Solution
+> **Proof scope:** Independent double-coset calculation using the proved kernel isomorphism
+>
 > Put $q=|F|$ and
 > $$
 > n(u)=\begin{pmatrix}1&u\\0&1\end{pmatrix},\qquad

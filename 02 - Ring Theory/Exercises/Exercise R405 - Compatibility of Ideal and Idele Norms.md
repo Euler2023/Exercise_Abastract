@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For every finite prime $\mathfrak p$, the valuation formula for the local norm is
 > $$
 > v_\mathfrak p(N_{L_\mathfrak P/K_\mathfrak p}x)

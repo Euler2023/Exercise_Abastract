@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Suppose $p\ne q$. Choose an integer $c$ by the Chinese remainder theorem as follows: require $p\mid c$ if $p$ is odd, or $8\mid c$ if $p=2$. At an odd $q$, require $c\bmod q$ to be a nonzero nonsquare. If $q=2$ (so $p$ is odd), require $c\equiv3\pmod8$. These conditions involve coprime moduli and hence have a common solution.
 >
 > For every $x\in\mathbb Z_p$, $1+cx^2$ is a square in $\mathbb Q_p$. For odd $p$, construct a square root starting at $1$ modulo $p$ and lift one digit at a time: if $y_n^2\equiv1+cx^2\pmod{p^n}$, the next digit is the unique solution of a linear congruence with coefficient $2y_n$ nonzero modulo $p$. At $p=2$, every $A\equiv1\pmod8$ has a square root: starting at $y_2=1$, maintain $y_n^2\equiv A\pmod{2^{n+1}}$ and choose $y_{n+1}=y_n+t2^n$, $t\in\{0,1\}$, so that $y_nt\equiv(A-y_n^2)/2^{n+1}\pmod2$. Then $y_{n+1}^2\equiv A\pmod{2^{n+2}}$. Compatible roots define a root in the inverse limit.

@@ -30,7 +30,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Put $K_0=0$ and $K_j=\ker T^j$ for $j\ge1$. Since $T^m=0$, the chain reaches $K_m=E$. Choose a basis $\mathcal B_1$ of $K_1$; successively extend it to bases $\mathcal B_2,\ldots,\mathcal B_m$ of $K_2,\ldots,K_m$. Order the final basis $\mathcal B_m$ so that the vectors added at each stage occur after all vectors from the preceding stage.
 >
 > If a basis vector $v$ first appears in $\mathcal B_j$, then $v\in K_j$ and

@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > First record two finite-group facts, both consequences of the finite Sylow theorem. If $F\twoheadrightarrow E$, the image of a Sylow $p$-subgroup of $F$ is a Sylow $p$-subgroup of $E$. Given a Sylow subgroup $S$ of $E$, taking a Sylow subgroup in its inverse image lifts it to a Sylow subgroup whose image is $S$. If a $p$-subgroup $Q$ of that inverse image is prescribed, choose a Sylow subgroup containing $Q$.
 >
 > **(i) Existence.** For each open normal subgroup $N$, let $\mathcal S_N$ be the set of Sylow $p$-subgroups of the finite group $G/N$. Taking images maps Sylow subgroups of a finer quotient to those of a coarser quotient, and the lifting fact above makes the transition maps surjective. An inverse limit of nonempty finite sets is nonempty: their product is compact, the compatibility conditions are closed, and any finite collection of conditions can be satisfied in a single finer quotient. Choose a compatible family $(P_N)$ and put

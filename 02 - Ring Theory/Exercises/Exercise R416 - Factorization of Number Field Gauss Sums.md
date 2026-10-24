@@ -41,7 +41,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ be the number field, $\mathfrak o$ its integer ring, and $\mathfrak d$ its different. The Chinese remainder ring isomorphism sends $x\bmod\mathfrak m$ to $(x\bmod\mathfrak m_i)_i$. Taking units gives the first displayed decomposition.
 >
 > Define the sum map

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Let $H\subset K^*$ have finite index $n$. Since $K^*/H$ is an abelian group of order $n$, Lagrange's theorem gives $K^{*n}\subseteq H$. Write $v=v_{\mathfrak p}$, $v(p)=e$, and choose an integer $r>e/(p-1)$. The inverse series isomorphisms in (5.5) identify $U^{(r)}=1+\mathfrak p^r$ with $\mathfrak p^r$. Multiplication by the nonzero integer $n$ maps that ideal onto $\mathfrak p^{r+v(n)}$: $n=\pi^{v(n)}\eta$ for a unit $\eta$. Therefore for every $u\in U^{(r+v(n))}$, the element $b=\exp(n^{-1}\log u)$ belongs to $U^{(r)}$ and satisfies $b^n=u$. Thus
 > $$
 > U^{(r+v(n))}\subseteq K^{*n}\subseteq H.

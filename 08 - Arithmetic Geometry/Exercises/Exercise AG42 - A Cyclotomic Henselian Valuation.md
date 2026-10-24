@@ -38,7 +38,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $P=1+p\mathbb Z_p$ for odd $p$ and $P=1+4\mathbb Z_2$ for $p=2$. Extend $\log$ from $P$ to $\mathbb Q_p^*$ by $\log p=0$ and by killing its finite root-of-unity factor. The cyclotomic reciprocity formula V (2.4), proved independently in the source, says that the cyclotomic character of $\operatorname{rec}(a)$ on units is $a^{-1}$; it is trivial on $p$. Thus
 > $$
 > \widehat d\circ\operatorname{rec}:P\longrightarrow\mathbb Z_p

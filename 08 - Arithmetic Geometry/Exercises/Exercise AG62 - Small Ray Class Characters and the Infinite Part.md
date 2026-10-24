@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Set $K^{\mathfrak m}=\{\alpha\in K^*: \alpha\equiv1\pmod{\mathfrak m}\}$, and let $\bar P^{\mathfrak m}=\{(\alpha):\alpha\in K^{\mathfrak m}\}$. A Größencharakter has
 > $$
 > \chi((\alpha))=\chi_f(\alpha)\chi_\infty(\alpha)

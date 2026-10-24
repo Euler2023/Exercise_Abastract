@@ -45,7 +45,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > The product poset is directed: given $(i,j)$ and $(i',j')$, choose $i''\ge i,i'$ in $I$ and $j''\ge j,j'$ in $J$. Then $(i'',j'')$ is an upper bound in $I\times J$.
 >
 > **Direct limits.** Fix $i$ and form

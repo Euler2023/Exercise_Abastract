@@ -38,7 +38,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\mathfrak o=\mathfrak o_K$, $S=\mathfrak o[[X]]$, $e=[\pi]_F$, and $F(n)=\ker[\pi^n]_F$. Source Proposition (5.2) gives $\#F(n)=q^n$, and Theorem (5.4) gives the totally ramified Galois division fields and their scalar action. Evaluating a bounded integral series at division points of positive valuation is legitimate; coefficients after translating $X$ by such a point are convergent $p$-adic sums. The notation $X+_F\lambda$ means $F(X,\lambda)$, not ordinary addition.
 >
 > The integer ring of $L_{n+1}$ is $\mathfrak o[\lambda]$, so choose $h_1\in\mathfrak o[X]$ with $h_1(\lambda)=u$. Because $\lambda$ is a uniformizer and $u$ is a unit, reduction shows $h_1(0)\in\mathfrak o^*$; hence $h_1\in S^*$.

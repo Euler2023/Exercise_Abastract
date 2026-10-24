@@ -46,7 +46,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > ### Nondegenerate interval
 > Assume first that $\alpha<\beta$. Put $a=t-\alpha$, $b=\beta-t$, and $s=\beta-\alpha>0$, so $a+b=s$. Let
 > $$

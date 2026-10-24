@@ -42,7 +42,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation and precise two-variable extension
+> [!success]- Solution
+> **Proof scope:** Independent derivation and precise two-variable extension
+>
 > **Additive limit.** For $n\ge0$ put $g_n(x)=2^{-n}f(2^nx)$. The defect bound applied twice to the same argument gives
 >
 > $$

@@ -39,7 +39,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use the source's field-like notation: connected objects are denoted by $K,L,E$, $N$ is the covariant map, and restriction is pullback. Every inclusion $A(E)\subset A(M)$ below is along an unramified map; general descent is not assumed. Write modules multiplicatively.
 >
 > **1. Unramified descent.** If $M/E$ is unramified, restriction acts identically on valuations. If $a\in A(E)$ pulls back to $1$, then $v(a)=0$, so $a\in U(E)$; unit exactness gives $a=1$. If $b\in A(M)^{G(M/E)}$, choose $a\in A(E)$ with $v(a)=v(b)$, since the image at every object is $Z$. The element $b/a\in U(M)$ is fixed, so unit exactness makes it come from $U(E)$. Thus $A(E)\simeq A(M)^{G(M/E)}$. The Mackey square then identifies the unramified norm with the sum of the cyclic action.

@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use multiplicative notation and the book's right action. Inflation composes $\bar f:G/\mathfrak g\to A^{\mathfrak g}$ with the quotient map; restriction restricts a cocycle to $\mathfrak g$. Both preserve cocycles and coboundaries, so they are well-defined on $H^1$. An inflated cocycle equals $1$ on $\mathfrak g$, so the composite is zero.
 >
 > **Injectivity of inflation.** If an inflated cocycle satisfies $f(g)=a^{g-1}$, then for $h\in\mathfrak g$ we have $1=f(h)=a^{h-1}$, hence $a\in A^{\mathfrak g}$. The original quotient-group cocycle is therefore already a coboundary in $A^{\mathfrak g}$, and its class is zero.

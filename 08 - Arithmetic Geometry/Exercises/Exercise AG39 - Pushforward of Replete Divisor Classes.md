@@ -36,7 +36,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The field homomorphism $\tau$ is injective. Identify $K$ with its image in $L$ and apply $\tau^{-1}$ afterward; write $K\subset L$ for the proof. At finite places, $f_{\mathfrak P\mid\mathfrak p}$ is a positive integer, so integer coefficients remain integer coefficients. Real coefficients are allowed at infinite places. Finite support remains finite under the map, so the given formula defines a well-defined additive homomorphism $\operatorname{Div}(\overline{\mathcal O}_L)\to\operatorname{Div}(\overline{\mathcal O}_K)$.
 >
 > For $a\in L^\times$, we must prove

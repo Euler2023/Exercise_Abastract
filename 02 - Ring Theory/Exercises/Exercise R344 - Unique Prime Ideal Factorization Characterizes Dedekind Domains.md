@@ -36,7 +36,9 @@ For the unit ideal the factorization is the empty product; prime factors are pro
 
 ## Solution
 
-> [!success]- Independent derivation without assuming the Dedekind properties
+> [!success]- Solution
+> **Proof scope:** Independent derivation without assuming the Dedekind properties
+>
 > Write $A=\mathfrak o$ and $K=\operatorname{Frac}(A)$. We will derive the three conditions in Neukirch's definition: integral closedness, maximality of every nonzero prime, and the Noetherian property. A field satisfies all three; the argument below also covers that case, with no nonzero primes to consider.
 >
 > ### 1. Nonzero integral ideals can be cancelled

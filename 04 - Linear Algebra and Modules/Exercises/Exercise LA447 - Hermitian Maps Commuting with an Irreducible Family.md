@@ -30,7 +30,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > If $E=0$, take $\lambda=0$. Suppose $E\ne0$. The characteristic polynomial of $A$ has a complex root, so choose $v\ne0$ with $Av=\lambda v$. The Hermitian condition, with the inner product linear in its first variable, gives
 >
 > $$

@@ -36,7 +36,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Put $B=S^{-1}A$ and $\mathfrak p_j=\sqrt{\mathfrak q_j}$. Reducedness means both that these primes are pairwise distinct and that no component can be omitted.
 >
 > **The intersection identity.** For finitely many ideals $I_1,\ldots,I_r$,

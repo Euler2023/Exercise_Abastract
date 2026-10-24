@@ -41,7 +41,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent definition and proof with explicit torsion assumptions
+> [!success]- Solution
+> **Proof scope:** Independent definition and proof with explicit torsion assumptions
+>
 > **Definition.** Let $R$ be a commutative ring, let $E,F$ be $R$-modules, and let $d\ge1$. Call a map $f:E\to F$ a normalized polynomial map of degree at most $d$ in the symmetric-multilinear sense if
 >
 > $$

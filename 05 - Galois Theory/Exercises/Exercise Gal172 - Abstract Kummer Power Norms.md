@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since $A^n\subseteq A$ always holds, the hypothesis $A\subseteq A^n$ means $n$-divisibility. Kummer theory gives
 > $$
 > A_K/A_K^n\cong\operatorname{Hom}(G(L/K),\mu_n).

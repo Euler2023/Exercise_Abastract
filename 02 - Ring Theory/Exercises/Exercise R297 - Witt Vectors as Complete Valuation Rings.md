@@ -43,7 +43,9 @@ created: 2026-09-25
 
 ## Solution
 
-> [!success]- Complete derivation from the Chapter VI Witt identities
+> [!success]- Solution
+> **Proof scope:** Complete derivation from the Chapter VI Witt identities
+>
 > **(a) Valuation and completeness.** We use the Witt identities established in Chapter VI: the first-component map $W(k)\to k$ is a ring homomorphism; $V(x_0,x_1,\ldots)=(0,x_0,x_1,\ldots)$; $p=VF$; and a vector is a unit exactly when its first component is nonzero. Because $k$ is perfect, $F$ is an automorphism. It follows that
 >
 > $$

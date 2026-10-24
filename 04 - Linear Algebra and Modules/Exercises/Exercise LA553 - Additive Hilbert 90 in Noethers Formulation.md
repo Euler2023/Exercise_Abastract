@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > First take the finite Galois extension in the setting of Noether's theorem, and write $G=G(L/K)$. The normal basis theorem gives $\theta\in L$ such that $(\theta^\sigma)_{\sigma\in G}$ is a $K$-basis. Its sum $\operatorname{Tr}_{L/K}\theta$ cannot vanish, since that would be a linear relation among the basis vectors with every coefficient equal to $1$. Thus we may set $c=\theta/\operatorname{Tr}\theta$, giving $\sum_\sigma c^\sigma=1$. This also works when the characteristic divides $|G|$.
 >
 > For any additive $1$-cocycle $z:G\to L$, use the book's right-action convention and define

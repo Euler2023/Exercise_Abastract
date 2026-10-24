@@ -56,7 +56,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Write $\Theta(z)=\vartheta(z)$ and use the principal square root, with argument in $(-\pi,\pi]$. For $c\ne0$, $cz+d$ stays in an open half-plane, so this gives a holomorphic branch. When $c=0,d=-1$, take $(-1)^{1/2}=i$. Since $4\mid c$ and $ad-bc=1$, $a,d$ are odd.
 >
 > **The arithmetic input.** We use the classical quadratic Gauss-sum evaluation, in the following exact form:

@@ -38,7 +38,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Clarification of notation.** If $K$ is totally imaginary, the group of totally positive units contains roots of unity and is not free; “$\mathbb Z$-basis” must mean a choice of lifts of a basis for the free quotient by its finite torsion subgroup. If there is a real embedding, the only totally positive root of unity is $1$.
 > (i) Each parameter direction is a continuous homomorphism, so these idèles form a subgroup. The unit parameters have norm $1$ by the preceding exercise, and $\phi_k(y)$ also has absolute value $1$, so their product has norm $1$.
 > (ii) If all parameters are diagonal integers and all $y_j$ are integers, then $\alpha=\prod_i\epsilon_i^{n_i}$ is principal. Conversely, suppose that $\alpha$ is principal, corresponding to $a\in K^\times$. Its finite components are units and its real components are positive, so $a$ is a totally positive unit. Write it as $\zeta\prod_i\epsilon_i^{n_i}$, where $\zeta$ is a root of unity. Put $\lambda_i=(x_i,t_i)$. The finite components give $\prod_i\epsilon_i^{x_i-n_i}=\zeta$. If $\zeta$ has order $w$, raise this equality to the $w$th power and use the profinite independence from the preceding exercise to obtain $w(x_i-n_i)=0$. Thus $x_i=n_i$, and then $\zeta=1$.

@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $r_1$ be the number of real places, and set $E=\mathcal O_K^\times$ and $E_{\mathfrak m'}^+=\{\epsilon\in E:\epsilon>0,\ \epsilon\equiv1\bmod\mathfrak m'\}$. The first kernel is
 > $$
 > \ker(\mathrm{Cl}^\mathfrak m\to\mathrm{Cl})

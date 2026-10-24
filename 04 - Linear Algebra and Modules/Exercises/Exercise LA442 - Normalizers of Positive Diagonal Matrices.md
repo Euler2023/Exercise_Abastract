@@ -44,7 +44,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution with explicit ambient-group conventions
+> [!success]- Solution
+> **Proof scope:** Independent solution with explicit ambient-group conventions
+>
 > Take $n\ge1$ and write
 >
 > $$

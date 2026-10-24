@@ -38,7 +38,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **1. Reduce integrality to integer trace and norm.**
 > Every $x\in K$ has a unique expression $x=a+b\sqrt D$, with $a,b\in\mathbb Q$. Its conjugate is $\overline x=a-b\sqrt D$, so
 > $$

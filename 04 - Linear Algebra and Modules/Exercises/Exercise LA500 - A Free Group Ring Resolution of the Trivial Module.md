@@ -32,7 +32,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent free-basis and exactness proof
+> [!success]- Solution
+> **Proof scope:** Independent free-basis and exactness proof
+>
 > Extend the given diagonal action linearly on $E_i=\mathbb Z[G^{i+1}]$. The identities $1v=v$ and $x(yv)=(xy)v$ hold on every basis tuple, so this makes $E_i$ a left $\mathbb Z[G]$-module.
 >
 > A $\mathbb Z[G]$-basis is

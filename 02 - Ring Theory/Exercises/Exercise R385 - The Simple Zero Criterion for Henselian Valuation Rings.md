@@ -31,7 +31,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > If $K$ is henselian, the reduction of $f$ has the simple root zero because $\bar a_1\ne0$. The factor $X$ is relatively prime to the remaining factor. The source's monic Hensel factorization property, (6.7), printed p. 148 / PDF p. 167, lifts that linear factor to $X-b$ with $b\in\mathfrak p$, proving the forward implication.
 >
 > Here is a converse using the algebraic extension theory, as an alternative to the printed Newton-polygon hint. We import the source's independently proved valuation/prime correspondence and Galois transitivity from II §§8–9: for a finite Galois extension $N/K$, extensions of $v$ correspond to the maximal ideals of the integral closure $B$ of $\mathfrak o$ in $N$, and its Galois group $G$ acts transitively on them. Suppose there is more than one such prime, select $P$, and let $D$ be its stabilizer. CRT for the finitely many distinct maximal ideals gives $b\in B$ with $b\equiv0\pmod P$ and $b\equiv1$ at all other primes. Put $c=\prod_{\sigma\in D}\sigma b$. This element is integral, fixed by $D$, zero modulo $P$ and one modulo every other prime. Any $\tau\notin D$ sends it to an element that is one modulo $P$, hence cannot fix it. Its stabilizer is therefore exactly $D$.

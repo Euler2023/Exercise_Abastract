@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use additive notation for the abstract abelian groups. Let $S$ be the positive integers whose prime factors lie outside $P$, and put $B=S^{-1}A$ and $Z'=S^{-1}Z\subseteq\mathbb Z_P$. Localization makes integers outside $P$ invertible on $B,Z'$. For a finite $P$-group $F$, the groups $H^0,H^{-1}$ are annihilated by $|F|$, so $S^{-1}$ does not change them. Taking fixed groups also commutes with this localization: an element has a finite orbit, and if its fraction is fixed, a single integer in $S$ kills all finitely many discrepancies, yielding a fixed numerator. Therefore
 > $$
 > B_K/N_{L/K}B_L\simeq A_K/N_{L/K}A_L,

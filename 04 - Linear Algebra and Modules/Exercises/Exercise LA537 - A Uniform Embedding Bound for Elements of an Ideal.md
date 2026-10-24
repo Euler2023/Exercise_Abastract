@@ -38,7 +38,9 @@ created: 2026-10-17
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $K$ be a number field of degree $n\ge1$ and signature $(r,s)$, so it has $r$ real embeddings and $s$ conjugate pairs of nonreal embeddings, with $n=r+2s$. Let $d_K\ne0$ be the discriminant of its ring of integers. Set
 > $$
 > \Lambda_K=\left(\frac2\pi\right)^s\sqrt{|d_K|},

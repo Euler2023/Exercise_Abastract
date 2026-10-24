@@ -29,7 +29,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > Write $\|\ \|$ for an extension of the ordinary real absolute value. Since $i^2=-1$, multiplicativity gives $\|i\|^2=1$ and hence $\|i\|=1$. For $z=a+bi$ the triangle inequality gives
 > $$
 > \|z\|\le |a|+|b|\le\sqrt2\sqrt{a^2+b^2}=\sqrt2|z|.

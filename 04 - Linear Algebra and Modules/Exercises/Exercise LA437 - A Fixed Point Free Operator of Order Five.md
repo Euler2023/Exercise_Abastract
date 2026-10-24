@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > If $V=0$, its dimension is $0$, which is divisible by $4$. Suppose $V\ne0$. The fixed-vector hypothesis says $\ker(A-I)=0$. Since $V$ is finite-dimensional, $A-I$ is invertible. Thus
 >
 > $$

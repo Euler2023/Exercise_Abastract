@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Let $\mathcal S$ be the set of pairs $(C,f)$ with $C\subseteq A$ and $f:C\to B$ injective. Order it by $(C,f)\le(D,g)$ if $C\subseteq D$ and $g|_C=f$. It is nonempty because the empty map is allowed.
 >
 > For a chain $\{(C_i,f_i)\}$, let $C=\bigcup_i C_i$ and define $f$ by the union of the graphs of the $f_i$. This is a well-defined map: two values assigned to the same element agree in a chain member extending both. It is injective: if $f(x)=f(y)$, some chain member contains both $x$ and $y$ and its injectivity gives $x=y$. Thus $(C,f)$ is an upper bound. The empty chain also has an upper bound, the empty pair. Zorn's lemma gives a maximal pair $(C,f)$.

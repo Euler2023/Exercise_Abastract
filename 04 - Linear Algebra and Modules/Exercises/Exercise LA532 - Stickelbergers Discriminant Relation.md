@@ -36,7 +36,9 @@ created: 2026-10-11
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Let $n=[K:\mathbb Q]\ge1$, and choose an integral basis $\omega_1,\ldots,\omega_n$ of $\mathcal O_K$. Let $E/\mathbb Q$ be a finite normal closure of $K/\mathbb Q$, and list the $n$ distinct embeddings into $E$ as $\sigma_1,\ldots,\sigma_n$. Characteristic zero makes these extensions separable, so $E/\mathbb Q$ is Galois. Write
 > $$
 > A=(a_{ij})_{1\le i,j\le n},\qquad a_{ij}=\sigma_i(\omega_j).

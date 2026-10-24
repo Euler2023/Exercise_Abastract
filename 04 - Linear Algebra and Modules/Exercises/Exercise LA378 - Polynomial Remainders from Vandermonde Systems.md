@@ -71,7 +71,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Here “entire” means an integral domain, and $d\ge1$.
 >
 > **(a)** Begin with $x^d=\sum_{i=0}^{d-1}a_ix^i$. If $x^n=\sum_{i=0}^{d-1}b_ix^i$ with $b_i\in\mathbb Z[a_0,\ldots,a_{d-1}]$, multiplication by $x$ and substitution for $x^d$ give coefficients

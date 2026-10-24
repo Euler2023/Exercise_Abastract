@@ -42,7 +42,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $k$ be a perfect field, $k^{\mathrm{a}}$ its algebraic closure, and $\sigma \in G(k^{\mathrm{a}}/k)$ an automorphism of infinite order whose fixed field is $(k^{\mathrm{a}})^{\langle \sigma \rangle} = k$.
 >
 > ---

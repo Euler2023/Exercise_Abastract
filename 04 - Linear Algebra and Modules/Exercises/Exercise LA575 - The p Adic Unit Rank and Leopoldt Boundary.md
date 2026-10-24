@@ -38,7 +38,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For each $v\mid p$, the $p$-adic logarithm identifies a sufficiently deep principal unit group with the additive group of $\mathfrak p_v^n$, a free $\mathbb Z_p$-module of rank $[K_v:\mathbb Q_p]$. Passing to a subgroup of finite index and removing finite torsion do not change rank, so
 > $$
 > \operatorname{rank}_{\mathbb Z_p}\prod_{v\mid p}U_v^{(1)}

@@ -46,7 +46,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction of the required decomposition
+> [!success]- Solution
+> **Proof scope:** Independent construction of the required decomposition
+>
 > The inner product identifies $E$ with its dual, so there is a unique linear map $T$ such that $\Omega(x,y)=\langle Tx,y\rangle$. Alternation implies $T^*=-T$, and nondegeneracy of $\Omega$ implies that $T$ is invertible. Thus $S=-T^2=T^*T$ is self-adjoint and
 >
 > $$

@@ -28,7 +28,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Define $\delta:R\to k^n$ by $\delta(A)=(a_{11},\ldots,a_{nn})$, with coordinatewise operations on $k^n$. For upper triangular $A,B$,
 >
 > $$

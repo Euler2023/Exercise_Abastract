@@ -46,7 +46,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > For homogeneous classes $a+A_{i-1}\in R_i$ and $b+A_{j-1}\in R_j$, define
 >
 > $$

@@ -74,7 +74,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent cochain construction and exactness argument
+> [!success]- Solution
+> **Proof scope:** Independent cochain construction and exactness argument
+>
 > Use inhomogeneous cochains $C^q(G,A)=\operatorname{Map}(G^q,A)$ with
 > $$
 > \begin{aligned}

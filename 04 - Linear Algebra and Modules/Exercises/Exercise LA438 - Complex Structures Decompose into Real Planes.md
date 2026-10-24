@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent solution
+> [!success]- Solution
+> **Proof scope:** Independent solution
+>
 > For $a,b\in\mathbb R$, define $(a+bi)v=av+bAv$. The identity $A^2=-I$ gives
 >
 > $$

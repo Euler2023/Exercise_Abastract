@@ -30,7 +30,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $f(X)=X^6+X^3+1$. Since
 > $$
 > (X^3-1)f(X)=X^9-1,

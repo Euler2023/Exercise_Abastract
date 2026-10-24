@@ -37,7 +37,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Since the finite coefficient field $\kappa$ is perfect and $K$ has characteristic $p$, every $f\in K$ has a unique expression $f=\sum_{j=0}^{p-1}b_j^p\pi^j$. Differentiating gives $df=\sum_{j=1}^{p-1}j b_j^p\pi^{j-1}d\pi$, which agrees with the formal Laurent derivative. Thus $\Omega^1_{K/\kappa}=K\,d\pi$, and the usual chain rule for a change of parameter applies to the differential module in the question.
 >
 > Let $u$ be another prime element. There is a series $\pi=f(u)=u c(u)$ with $c(u)=c_0+c_1u+\cdots$ and $c_0\in\kappa^*$. We show, for every integer $r$,

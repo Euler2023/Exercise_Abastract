@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Following the definition in this section of the book, write $I=\operatorname{Ind}_G^{\mathfrak g}(A)$. Its elements are all functions $f:G\to A$ satisfying $f(xh)=f(x)^h$, with right action $f^\sigma(x)=f(\sigma x)$. Use multiplicative notation for the abelian modules and the right-cocycle convention.
 >
 > **1. Evaluation.** For $z\in Z^1(G,I)$, define $c(h)=z(h)(1)$. Since

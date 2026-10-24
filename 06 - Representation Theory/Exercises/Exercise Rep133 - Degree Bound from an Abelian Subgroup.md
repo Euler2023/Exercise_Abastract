@@ -28,7 +28,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation by a cyclic vector
+> [!success]- Solution
+> **Proof scope:** Independent derivation by a cyclic vector
+>
 > Let $V\ne0$ carry an irreducible complex representation $\rho$ of $G$. Each $\rho(a)$, for $a\in A$, is diagonalizable: if $a$ has order $m$, then its minimal polynomial divides $X^m-1$, which has distinct roots over $\mathbb C$.
 >
 > Since $A$ is abelian, these operators commute. They have a common eigenvector $v\ne0$. Indeed, decompose into the eigenspaces of one operator; all the others preserve those spaces, and repeated decomposition gives a common eigenbasis. Their restrictions remain diagonalizable because their minimal polynomials still divide polynomials with distinct roots. The finite set $A$ makes this a finite procedure.

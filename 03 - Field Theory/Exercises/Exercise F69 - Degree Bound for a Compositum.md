@@ -29,7 +29,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Let $e_1,\ldots,e_m$ be a $k$-basis of $E$ and let $V=\sum_iFe_i\subseteq K$. Multiplication of basis elements has coefficients in $k$, so $V$ is closed under multiplication and contains $1,E,F$. For $0\ne v\in V$, multiplication by $v$ is an injective $F$-linear map $V\to V$. Finite dimension makes it surjective; thus $vw=1$ for some $w\in V$. Consequently $V$ is a field and equals $EF$.
 >
 > Hence $[EF:F]\le m=[E:k]$, proving the inequality by the tower law. If $m=[E:k]$ and $n=[F:k]$ are coprime, both divide $D=[EF:k]$. Thus $mn\mid D$, while $D\le mn$. Therefore $D=mn$.

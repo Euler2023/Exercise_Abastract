@@ -53,7 +53,9 @@ created: 2026-08-29
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > **(a)** Since $|0|=|0v|=0$, the kernel contains $0$. If $u,v\in M_0$, then
 >
 > $$

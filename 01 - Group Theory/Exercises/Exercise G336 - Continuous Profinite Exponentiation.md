@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > For each open normal subgroup $N$, put $m_N=\exp(G/N)$. For $a\in\widehat{\mathbb Z}$, define in the finite group
 > $$
 > (\sigma^a)_N=(\sigma N)^{a\bmod m_N}.

@@ -28,7 +28,9 @@ created: 2026-09-06
 
 ## Solution
 
-> [!success]- Solution and proof status
+> [!success]- Solution
+> **Proof scope:** Solution and proof status
+>
 > Eisenstein's criterion at $2$ makes $X^4-2$ irreducible. Hence $E=\mathbb Q(\alpha)$ has basis $1,\alpha,\alpha^2,\alpha^3$ and degree four. Any proper nontrivial intermediate field $M$ has degree two.
 >
 > Substitution $\tau(\alpha)=-\alpha$ defines an automorphism of $E$. Its fixed elements are exactly $\mathbb Q+\mathbb Q\alpha^2=\mathbb Q(\sqrt2)$. Write $M=\mathbb Q(\beta)$ with $\beta^2=d\in\mathbb Q$ and $\beta\notin\mathbb Q$: completing the square in a quadratic minimal polynomial gives such a generator. Since $\tau(\beta)^2=d$, either $\tau(\beta)=\beta$ or $\tau(\beta)=-\beta$.

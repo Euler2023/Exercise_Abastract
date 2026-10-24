@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > We prove the corrected classification: fix a $G$-action on the abelian group $A$, and consider extensions inducing that action, with equivalences fixing both $A$ and $G$.
 >
 > **(a)** Projection to $G$ sends $f(x,y)$ to $xy(xy)^{-1}=1$, so $f$ lies in $A$. Because $A$ is abelian, conjugation by $F(x)$ on $A$ is independent of the representative and defines a genuine action $x\cdot a$. Associativity gives

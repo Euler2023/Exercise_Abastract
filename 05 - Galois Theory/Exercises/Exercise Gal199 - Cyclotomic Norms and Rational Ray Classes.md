@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > By VI.(1.10) of the book (printed p.366/PDF385), we have $C_\mathbb Q/C_\mathbb Q^{(m)}\cong(\mathbb Z/m\mathbb Z)^\times$. In the ideal formulation, the positive generator $a$ of a principal ideal coprime to $m$ is sent to $a\bmod m$.
 > On the other hand, Frobenius in the cyclotomic extension acts at a prime $\ell\nmid m$ by $\zeta\mapsto\zeta^\ell$. Thus global reciprocity on this ray quotient is precisely
 > $$

@@ -27,7 +27,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Put $\kappa=|K|$. Since $K\subseteq\mathbb C$ contains $\mathbb Q$, it is infinite. There are $\kappa$ monic polynomials over $K$ of degrees from $1$ to $n$: a degree-$d$ monic polynomial is determined by $d$ coefficients, so its set has cardinality $\kappa^d=\kappa$, and a nonempty finite union still has size $\kappa$.
 >
 > Let $T_n\subseteq\mathbb C$ be the union of the roots of those polynomials. A nonzero polynomial of degree $d$ has at most $d$ roots in a field, by successive division by $t-\alpha$. Thus $|T_n|\le\kappa n=\kappa$. More explicitly, choose an order on each finite root set and map a root to a chosen polynomial having it as a root and its position in that root set. This bounds the union by the polynomial set times $\{1,\ldots,n\}$.

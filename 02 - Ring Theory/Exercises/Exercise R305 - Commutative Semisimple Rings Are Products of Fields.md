@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from simple ideals and idempotents
+> [!success]- Solution
+> **Proof scope:** Independent derivation from simple ideals and idempotents
+>
 > By the definition of a semisimple ring, $R\ne0$ and its regular left module has a decomposition
 >
 > $$

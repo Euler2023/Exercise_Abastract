@@ -34,7 +34,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from natural tensor isomorphisms
+> [!success]- Solution
+> **Proof scope:** Independent derivation from natural tensor isomorphisms
+>
 > Let $\varphi:A\to B$ denote the given homomorphism.
 >
 > **(a).** For every $B$-module $N$, define

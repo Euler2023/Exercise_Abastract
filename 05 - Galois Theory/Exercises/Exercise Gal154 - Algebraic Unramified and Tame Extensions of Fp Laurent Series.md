@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation and stated source corrections
+> [!success]- Solution
+> **Proof scope:** Independent derivation and stated source corrections
+>
 > The algebraic maximal unramified extension is
 > $$
 > T_{\rm alg}=\bigcup_{r\ge1}\mathbb F_{p^r}((t)),

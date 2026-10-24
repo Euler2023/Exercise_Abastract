@@ -82,7 +82,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Complete independent derivation
+> [!success]- Solution
+> **Proof scope:** Complete independent derivation
+>
 > Here $A$ is commutative and $\mathfrak Z(I)=\{\mathfrak p:I\subseteq\mathfrak p\}$. Ext indices are nonnegative; we set negative Ext groups equal to zero. We first justify the inputs, without assuming a depth theorem.
 >
 > **Support and localization.** For finite $N$,

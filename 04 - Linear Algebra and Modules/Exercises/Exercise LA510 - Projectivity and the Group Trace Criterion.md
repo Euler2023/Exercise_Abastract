@@ -39,7 +39,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the trace criterion
+> [!success]- Solution
+> **Proof scope:** Independent proof of the trace criterion
+>
 > We prove (b); taking $R=\mathbb Z$ then proves (a).
 >
 > **Necessity.** A projective $R[G]$-module $A$ is a direct summand of a free module

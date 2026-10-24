@@ -31,7 +31,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent construction, with the kernel identified
+> [!success]- Solution
+> **Proof scope:** Independent construction, with the kernel identified
+>
 > Use $[g]_G$ for the class of $g$ in $WG(k)$ and $[g]_W$ for its class in $W(k)$. Every element of $WG(k)$ is a formal difference $[g]_G-[h]_G$. Define
 >
 > $$

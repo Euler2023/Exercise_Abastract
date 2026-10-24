@@ -64,7 +64,9 @@ created: 2026-09-26
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Throughout, take $n\ge1$, $d\ge0$, and set $\operatorname{Pol}(n,j)=0$ for $j<0$. Write $\nu!=\prod_i\nu_i!$ and $|\nu|=\sum_i\nu_i$.
 >
 > **(a)** A degree-$d$ monomial corresponds to a nonnegative integer solution of $\nu_1+\cdots+\nu_n=d$. Placing $n-1$ separators among $n+d-1$ positions gives $\binom{n+d-1}{n-1}$ solutions. These monomials form the usual coefficient basis, so this is the dimension.

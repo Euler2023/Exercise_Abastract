@@ -35,7 +35,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > The action on $\mathbb Z/n\mathbb Z$ is trivial. Thus continuous cocycles are continuous homomorphisms, and coboundaries vanish. Evaluation at the arithmetic Frobenius $\varphi_K$ gives a bijection to $\mathbb Z/n\mathbb Z$: the inverse sends $c$ to $m\mapsto mc$ on $\widehat{\mathbb Z}$.
 >
 > Assume $(n,p)=1$. Inflation–restriction and Kummer theory identify $H^1(\Gamma,\mu_n)$ with the kernel of

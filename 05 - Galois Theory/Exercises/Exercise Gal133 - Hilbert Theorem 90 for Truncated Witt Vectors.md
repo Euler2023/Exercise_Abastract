@@ -38,7 +38,9 @@ created: 2026-09-12
 
 ## Solution
 
-> [!success]- Complete Derivation
+> [!success]- Solution
+> **Proof scope:** Complete Derivation
+>
 > Let $K/k$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(K/k)$, and let $W_n(K)$ be the additive group of truncated Witt vectors of length $n$ with entries in $K$.
 >
 > ---

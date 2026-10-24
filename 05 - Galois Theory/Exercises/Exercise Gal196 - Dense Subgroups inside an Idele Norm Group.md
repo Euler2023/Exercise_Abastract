@@ -32,7 +32,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > **Source issue.** The printed $D\subseteq N_{L/K}L^\times$ places $D$ inside the principal idèle subgroup $K^\times$, forcing $K^\times D=K^\times$. This subgroup is discrete and closed in $I_K$, not dense, so the hypotheses cannot hold simultaneously. The intended version with nonvacuous hypotheses should be $D\subseteq N_{L/K}I_L$.
 > For the corrected version, project the density condition to $C_K=I_K/K^\times$. The image of the classes of $D$ is dense in $C_K$ and is contained in $N_{L/K}C_L$. The latter is closed, by closedness of global norm groups for finite extensions, as proved in VI.§6 (6.1). Hence $N_{L/K}C_L=C_K$.
 > The norm-index formula of global class field theory gives $[C_K:N C_L]=[L:K]$, since $L/K$ is abelian. The left side is $1$, so $L=K$. Closedness and the norm-index formula are proved inputs from global class field theory; density alone is not being mistaken for equality.

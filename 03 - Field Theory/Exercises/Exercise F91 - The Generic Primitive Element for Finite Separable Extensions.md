@@ -37,7 +37,7 @@ created: 2026-09-15
 
 ## Solution
 
-> [!solution]-
+> [!success]- Solution
 > ### Step 1: Degree of the extension and embeddings
 > 
 > Let $k(x) = k(x_1, \ldots, x_n)$ be a finite separable extension of $k$, with degree

@@ -29,7 +29,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > By [[03 - Field Theory/Exercises/Exercise F115 - Base Change of a Simple Algebraic Extension|Exercise F115]], there is a $k'$-algebra isomorphism
 > $$
 > k(\alpha)\otimes_k k'\simeq k'[X]/(f).

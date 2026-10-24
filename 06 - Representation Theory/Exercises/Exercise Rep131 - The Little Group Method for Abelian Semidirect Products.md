@@ -48,7 +48,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent proof of the classification
+> [!success]- Solution
+> **Proof scope:** Independent proof of the classification
+>
 > **Weight-space facts.** Every element of $A$ acts on a complex representation by a finite-order operator, hence is diagonalizable: its minimal polynomial divides $X^m-1$, which has distinct roots in $\mathbb C$. Commuting diagonalizable operators are simultaneously diagonalizable, by decomposing into the eigenspaces of one operator and then repeating on the invariant eigenspaces. Thus every $A$-module $V$ decomposes as
 >
 > $$

@@ -29,7 +29,9 @@ created: 2026-09-22
 
 ## Solution
 
-> [!success]- Independently derived solution
+> [!success]- Solution
+> **Proof scope:** Independently derived solution
+>
 > Work in the commutative ring $A$ of the chapter. If $\mathfrak a\subseteq\mathfrak p$, the first alternative already holds. Otherwise choose $a\in\mathfrak a\setminus\mathfrak p$.
 >
 > For every $b\in\mathfrak b$, the element $ab$ belongs to the product ideal $\mathfrak a\mathfrak b$, hence to $\mathfrak p$. Since $\mathfrak p$ is prime and $a\notin\mathfrak p$, we must have $b\in\mathfrak p$. This holds for every $b\in\mathfrak b$, so $\mathfrak b\subseteq\mathfrak p$.

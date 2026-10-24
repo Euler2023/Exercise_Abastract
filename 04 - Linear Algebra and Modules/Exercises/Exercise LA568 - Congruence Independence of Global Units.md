@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Set $E=\mathcal O_K^\times$ and choose a basis of the free quotient $E/\mu(K)\cong\mathbb Z^r$. Let the columns of $B\in M_{r,t}(\mathbb Z)$ be the coordinates of the $\epsilon_i$ in this basis. Independence means that the columns of $B$ are linearly independent over $\mathbb Q$.
 > Given any $n\ge1$, choose integers $a_i\equiv x_i\pmod{2n\widehat{\mathbb Z}}$. The hypothesis implies that $u=\prod_i\epsilon_i^{a_i}$ is a $2n$-th power in every finite completion $K_v$, because $a_i-x_i=2ny_i$ and exponentiation extends continuously on the unit group at a finite place. Applying VI.§1 Exercise 2 with exponent $2n$ gives $u\in K^{\times n}$. If $u=b^n$, then every finite valuation satisfies $v(b)=v(u)/n=0$. Thus $b\in E$ and therefore $Ba\in n\mathbb Z^r$.
 > Thus $Bx\equiv0\pmod n$ for every $n$, so $Bx=0$ in $\widehat{\mathbb Z}^r$. Take a rational left inverse and clear denominators. There are an integer matrix $C$ and a nonzero integer $d$ such that $CB=dI_t$, hence $dx=0$. Since $\widehat{\mathbb Z}=\prod_\ell\mathbb Z_\ell$ is torsion-free, $x=0$.

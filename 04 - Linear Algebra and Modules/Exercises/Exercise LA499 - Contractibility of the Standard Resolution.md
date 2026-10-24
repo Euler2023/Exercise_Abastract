@@ -35,7 +35,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent calculation of the augmented contraction
+> [!success]- Solution
+> **Proof scope:** Independent calculation of the augmented contraction
+>
 > For $i\ge0$, let $E_i=\mathbb Z[S^{i+1}]$. Define
 > $$
 > d_i(x_0,\ldots,x_i)=\sum_{j=0}^i(-1)^j(x_0,\ldots,\widehat{x_j},\ldots,x_i)

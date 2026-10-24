@@ -37,7 +37,9 @@ created: 2026-09-29
 
 ## Solution
 
-> [!success]- Independent derivation from the universal properties
+> [!success]- Solution
+> **Proof scope:** Independent derivation from the universal properties
+>
 > Let $I$ be the indexing set, write $L=\varinjlim_iE_i$, and let $\iota_i:E_i\to L$ be the structure maps. Put
 >
 > $$

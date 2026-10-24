@@ -33,7 +33,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Use Neukirch's convention here: every ray modulus includes positivity conditions at all real places, so $\mathrm{Cl}_K^1$ is the narrow ideal class group. Set $E_+=\mathcal O_{K,+}^\times$ and $E_\mathfrak m=E_+\cap(1+\mathfrak m)$.
 > By the preceding exercise, every $\bar u\in(\mathcal O_K/\mathfrak m)^\times$ has a totally positive lift $u$. Define $\bar u\mapsto[(u)]_\mathfrak m$. If $u'$ is another totally positive lift, then $u/u'$ is totally positive and congruent to $1$. The two principal ideals therefore have the same ray class. This makes the map well-defined and a homomorphism.
 > Its kernel is exactly $\operatorname{im}E_+$. Indeed, if $(u)$ is trivial in the ray class group, there is a totally positive $b\equiv1\pmod{\mathfrak m}$ with $(u)=(b)$, hence $u/b\in E_+$. The converse follows directly. The kernel of the map from $E_+$ to the residue unit group is $E_\mathfrak m$, giving injectivity on the left.

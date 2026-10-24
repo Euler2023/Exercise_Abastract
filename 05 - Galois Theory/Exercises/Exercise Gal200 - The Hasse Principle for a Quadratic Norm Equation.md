@@ -30,7 +30,9 @@ created: '2026-10-23'
 
 ## Solution
 
-> [!success]- Independent derivation
+> [!success]- Solution
+> **Proof scope:** Independent derivation
+>
 > Here $K$ is the number field of this chapter. A global solution gives local solutions by embedding into every $K_v$. Conversely, if $a=c^2\in K^{\times2}$, take
 > $$
 > x=\frac{b+1}{2},\qquad y=\frac{1-b}{2c};
