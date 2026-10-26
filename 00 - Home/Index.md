@@ -73,6 +73,10 @@ GROUP BY true
 - [[00 - Home/Neukirch Algebraic Number Theory Exercise Archive|Neukirch Algebraic Number Theory Exercise Archive]]
 - [[00 - Home/Diamond-Shurman Modular Forms Exercise Archive|Diamond–Shurman Modular Forms Exercise Archive]]
 
+### Research Paper Adaptations
+
+- [[00 - Home/Research Paper Exercise Ledger|Research Paper Exercise Ledger]]
+
 ## Study Progress
 
 ![[Study Progress.base]]

@@ -81,6 +81,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Quotient Modules|Quotient Modules]]
 
 ### Structure Theory
+- [[04 - Linear Algebra and Modules/Concepts/Invariants Coinvariants and Weak Semisimplicity|Invariants, Coinvariants, and Weak Semisimplicity]]
 - [[04 - Linear Algebra and Modules/Concepts/Free Modules|Free Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Finitely Generated Modules|Finitely Generated Modules]]
 - [[04 - Linear Algebra and Modules/Concepts/Projective Modules and Grothendieck Groups|Projective Modules and Grothendieck Groups]]

@@ -24,6 +24,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Ideals|Ideals]]
 
 ### Structure Theory
+- [[02 - Ring Theory/Concepts/Delta Rings and Frobenius Lifts|Delta Rings and Frobenius Lifts]]
 - [[02 - Ring Theory/Concepts/Clifford Algebras|Clifford Algebras]]
 - [[02 - Ring Theory/Concepts/Universal Derivations and Kahler Differentials|Universal Derivations and Kahler Differentials]]
 - [[02 - Ring Theory/Concepts/Quotient Rings|Quotient Rings]]
@@ -50,6 +51,7 @@ Ring theory studies algebraic structures with two operations: addition and multi
 - [[02 - Ring Theory/Concepts/Product Rings and the Chinese Remainder Theorem|Product Rings and the Chinese Remainder Theorem]]
 - [[02 - Ring Theory/Concepts/Prime Splitting in Quadratic Fields|Prime Splitting in Quadratic Fields]]
 - [[02 - Ring Theory/Concepts/Ideal Classes and Class Groups|Ideal Classes and Class Groups]]
+- [[02 - Ring Theory/Concepts/Reduced Positive Definite Binary Quadratic Forms|Reduced Positive Definite Binary Quadratic Forms]]
 - [[02 - Ring Theory/Concepts/Units in Real Quadratic Fields|Units in Real Quadratic Fields]]
 - [[02 - Ring Theory/Concepts/Nilpotent and Idempotent Elements|Nilpotent and Idempotent Elements]]
 - [[02 - Ring Theory/Concepts/Symmetric Polynomials and Newton Identities|Symmetric Polynomials and Newton Identities]]
