@@ -20,7 +20,7 @@ This dashboard records the archival coverage of the numbered exercises in Fred D
 > An exercise is **archived** when an exercise note is identified with its original numbered source exercise. This differs from the note’s learning `status`; adding an archive entry does not mark an exercise started or completed.
 
 > [!note] Source audit
-> **354 numbered exercises, 9 chapters, 70 sections: 69 exercise groups and one section with no numbered exercises (§2.5).** Chapter totals are **36, 23, 51, 57, 55, 28, 46, 35, 23**. The original exercise pages were rendered at 200 dpi and inspected on 2026-10-23 to verify the ordered labels and printed/PDF anchors below. This verifies source coverage, not complete transcriptions, formulas, appendix hints or solutions.
+> **354 numbered exercises, 9 chapters, 70 sections: 69 exercise groups and one section with no numbered exercises (§2.5).** Chapter totals are **36, 23, 51, 57, 55, 28, 46, 35, 23**. The source-label ledger was audited on 2026-10-23; the chapter archival passes through 2026-10-28 rechecked the bounded original exercise pages at 200 dpi, with prerequisite and appendix pages inspected where used. The source arrays below preserve the exact expected labels and printed/PDF anchors. Source coverage and the scope of independently supplied proofs are distinct, as explained in the completion record.
 >
 > This page establishes navigation and the source ledger. Existing notes without numbered provenance appear separately under source matching and do not increase numbered-exercise coverage.
 
@@ -30,9 +30,18 @@ This dashboard records the archival coverage of the numbered exercises in Fred D
 > [!note] Chapter 1 complete — 36/36 — 2026-10-24
 > All 36 ordered source labels were rechecked on the original exercise pages at 200 dpi and reconciled one-to-one with 36 complete exercise notes: §1.1, 1.1.1–1.1.9 (9/9); §1.2, 1.2.1–1.2.11 (11/11); §1.3, 1.3.1–1.3.3 (3/3); §1.4, 1.4.1–1.4.5 (5/5); §1.5, 1.5.1–1.5.8 (8/8). The printed/PDF page ranges are respectively 7–10/22–25, 21–24/36–39, 31/46, 36–37/51–52, and 42–44/57–59. The section label arrays below retain the exact expected set, including every original subpart within its numbered exercise.
 >
-> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed Chapter 1 locators 0**. The note ranges are MF14–MF34 (21), LA582–LA587 (6), AG65–AG69 (5), G347–G349 (3), and R425 (1), routed by the principal proof toolkit. All learning states remain `not-started`. Whole-book numbered coverage is now **42/354**, with 312 labels still unarchived and no duplicate, unexpected or unparsed source mappings.
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed Chapter 1 locators 0**. The note ranges are MF14–MF34 (21), LA582–LA587 (6), AG65–AG69 (5), G347–G349 (3), and R425 (1), routed by the principal proof toolkit. All learning states remain `not-started`. At the Chapter 1 checkpoint, whole-book numbered coverage was **42/354**, with 312 labels then unarchived and no duplicate, unexpected or unparsed source mappings.
 >
 > Each note contains its complete English problem, progressive hints and a complete independent solution with named imported inputs. Source/proof boundaries and printed defects are visible: the derivative in 1.1.9; the growth exponent and limit needed in 1.2.6; the lemma/hint references in 1.2.11; the exact-order boundary in 1.5.4 at N=1; and the auxiliary double-d generator sum referenced by 1.5.8. The weight-two endpoint, literal equality in 1.5.7, meromorphic domains and the two discriminant normalizations are explicitly distinguished. Figure 1.1, printed p. 11 / PDF p. 26, is retained as a direct crop; the original Weil-pairing square is faithfully transcribed.
+
+> [!note] Whole book complete — 354/354 — 2026-10-28
+> Chapters 1–9 now reconcile one-to-one with all **354 numbered source exercises**: **36, 23, 51, 57, 55, 28, 46, 35, 23**. The final pass has **missing labels 0; duplicate mappings 0; unexpected labels 0; unparsed locators 0**. All ten live coverage scripts were executed against the vault's actual exercise metadata. Section 2.5 has no numbered exercises; Appendix A contains hints and answers and adds no numbered exercise set.
+>
+> The final batch adds **291 complete English notes in Chapters 3–9**, preserving all 63 pre-existing source-mapped notes, including 3.5.4, 5.2.5, 5.8.3 and 5.8.7. Each addition retains all original subparts, progressive hints, a full independent derivation, exact printed/PDF provenance and `not-started` learning status. Every new exercise and both new concepts received a non-author mathematical review. The exercise and concept notes distinguish imported theorems, independently proved steps, finite computational checks and visibly corrected source claims.
+>
+> Notable qualifications include the duplicated vertex in 3.1.4; the weight-one normalization and negative odd-weight functional equation in Chapter 4; the Eisenstein-space dimension and bad-prime adjoint defects in Chapter 5; matrix-center multiplicities in 6.3.1; the missing Weber coordinate in 7.7.3; characteristic and localization hypotheses in Chapter 8; and the noncube and residual-irreducibility conditions in Chapter 9. Their original statements, corrections, counterexamples and proof boundaries remain in the corresponding notes. Riemann–Roch, Abel's theorem, the period theorem, Strong Multiplicity One, Chebotarev and Langlands–Tunnell are named inputs where used, rather than claimed as elementary proofs of these exercises.
+>
+> Added shared prerequisites: [[08 - Arithmetic Geometry/Concepts/Divisors and Riemann-Roch on Compact Curves|Divisors and Riemann–Roch on Compact Curves]] and [[08 - Arithmetic Geometry/Concepts/Jacobians and Functorial Maps|Jacobians and Functorial Maps]], with dynamic exercise backlinks. Figures 3.1 and 5.1 are retained as verified direct crops; purely algebraic arrow diagrams are transcribed as searchable mathematics. The final checks cover source mapping, metadata, links, English text, formula syntax and Study Progress discovery; they do not constitute an Obsidian reading-view render test.
 
 ## Quick Navigation
 
@@ -537,8 +546,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Dimension Formulas** — 51 numbered exercises.
 
-> [!note] Chapter 3 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 51 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §3.1, 3.1.1–3.1.6, printed pp. 69–71 / PDF pp. 83–85; §3.2, 3.2.1–3.2.6, printed pp. 76–77 / PDF pp. 90–91; §3.3, 3.3.1–3.3.6, printed pp. 82–83 / PDF pp. 96–97; §3.4, 3.4.1–3.4.3, printed p. 85 / PDF p. 99; §3.5, 3.5.1–3.5.5, printed pp. 88–89 / PDF pp. 102–103; §3.6, 3.6.1–3.6.5, printed p. 92 / PDF p. 106; §3.7, 3.7.1–3.7.7, printed pp. 97–98 / PDF pp. 111–112; §3.8, 3.8.1–3.8.8, printed p. 106 / PDF p. 120; §3.9, 3.9.1–3.9.5, printed p. 108 / PDF p. 122. Existing mappings are retained.
+> [!note] Chapter 3 source reconciliation complete
+> **Complete — 51/51 — 2026-10-28.** All 51 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Anchors: §3.1, 3.1.1–3.1.6, printed pp. 69–71 / PDF pp. 83–85; §3.2, 3.2.1–3.2.6, printed pp. 76–77 / PDF pp. 90–91; §3.3, 3.3.1–3.3.6, printed pp. 82–83 / PDF pp. 96–97; §3.4, 3.4.1–3.4.3, printed p. 85 / PDF p. 99; §3.5, 3.5.1–3.5.5, printed pp. 88–89 / PDF pp. 102–103; §3.6, 3.6.1–3.6.5, printed p. 92 / PDF p. 106; §3.7, 3.7.1–3.7.7, printed pp. 97–98 / PDF pp. 111–112; §3.8, 3.8.1–3.8.8, printed p. 106 / PDF p. 120; §3.9, 3.9.1–3.9.5, printed p. 108 / PDF p. 122.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -662,8 +673,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Eisenstein Series** — 57 numbered exercises.
 
-> [!note] Chapter 4 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 57 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §4.1, 4.1.1–4.1.2, printed 111 / PDF 125; §4.2, 4.2.1–4.2.6, printed 115–116 / PDF 129–130; §4.3, 4.3.1–4.3.4, printed 119–120 / PDF 133–134; §4.4, 4.4.1–4.4.6, printed 123–126 / PDF 137–140; §4.5, 4.5.1–4.5.3, printed 130 / PDF 144; §4.6, 4.6.1–4.6.4, printed 133 / PDF 147; §4.7, 4.7.1–4.7.5, printed 137–138 / PDF 151–152; §4.8, 4.8.1–4.8.7, printed 142–143 / PDF 156–157; §4.9, 4.9.1–4.9.6, printed 146–147 / PDF 160–161; §4.10, 4.10.1–4.10.8, printed 153–155 / PDF 167–169; §4.11, 4.11.1–4.11.6, printed 161–162 / PDF 175–176.
+> [!note] Chapter 4 source reconciliation complete
+> **Complete — 57/57 — 2026-10-28.** All 57 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Printed/PDF anchors: §4.1, 4.1.1–4.1.2, printed 111 / PDF 125; §4.2, 4.2.1–4.2.6, printed 115–116 / PDF 129–130; §4.3, 4.3.1–4.3.4, printed 119–120 / PDF 133–134; §4.4, 4.4.1–4.4.6, printed 123–126 / PDF 137–140; §4.5, 4.5.1–4.5.3, printed 130 / PDF 144; §4.6, 4.6.1–4.6.4, printed 133 / PDF 147; §4.7, 4.7.1–4.7.5, printed 137–138 / PDF 151–152; §4.8, 4.8.1–4.8.7, printed 142–143 / PDF 156–157; §4.9, 4.9.1–4.9.6, printed 146–147 / PDF 160–161; §4.10, 4.10.1–4.10.8, printed 153–155 / PDF 167–169; §4.11, 4.11.1–4.11.6, printed 161–162 / PDF 175–176.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -789,8 +802,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Hecke Operators** — 55 numbered exercises.
 
-> [!note] Chapter 5 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 55 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §5.1, 5.1.1–5.1.6, printed 167–168 / PDF 181–182; §5.2, 5.2.1–5.2.10, printed 176–179 / PDF 190–193; §5.3, 5.3.1–5.3.4, printed 181 / PDF 195; §5.4, 5.4.1–5.4.4, printed 184 / PDF 198; §5.5, 5.5.1–5.5.1, printed 188 / PDF 202; §5.6, 5.6.1–5.6.3, printed 190 / PDF 204; §5.7, 5.7.1–5.7.8, printed 195–196 / PDF 209–210; §5.8, 5.8.1–5.8.7, printed 200 / PDF 214; §5.9, 5.9.1–5.9.7, printed 207–208 / PDF 221–222; §5.10, 5.10.1–5.10.2, printed 210 / PDF 224; §5.11, 5.11.1–5.11.3, printed 213–214 / PDF 227–228. Existing mappings are retained.
+> [!note] Chapter 5 source reconciliation complete
+> **Complete — 55/55 — 2026-10-28.** All 55 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Printed/PDF anchors: §5.1, 5.1.1–5.1.6, printed 167–168 / PDF 181–182; §5.2, 5.2.1–5.2.10, printed 176–179 / PDF 190–193; §5.3, 5.3.1–5.3.4, printed 181 / PDF 195; §5.4, 5.4.1–5.4.4, printed 184 / PDF 198; §5.5, 5.5.1–5.5.1, printed 188 / PDF 202; §5.6, 5.6.1–5.6.3, printed 190 / PDF 204; §5.7, 5.7.1–5.7.8, printed 195–196 / PDF 209–210; §5.8, 5.8.1–5.8.7, printed 200 / PDF 214; §5.9, 5.9.1–5.9.7, printed 207–208 / PDF 221–222; §5.10, 5.10.1–5.10.2, printed 210 / PDF 224; §5.11, 5.11.1–5.11.3, printed 213–214 / PDF 227–228.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -916,8 +931,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Jacobians and Abelian Varieties** — 28 numbered exercises.
 
-> [!note] Chapter 6 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 28 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §6.1, 6.1.1–6.1.4, printed pp. 220–221 / PDF pp. 234–235; §6.2, 6.2.1–6.2.8, printed pp. 228–230 / PDF pp. 242–244; §6.3, 6.3.1–6.3.1, printed p. 234 / PDF p. 248; §6.4, 6.4.1–6.4.5, printed pp. 236–237 / PDF pp. 250–251; §6.5, 6.5.1–6.5.5, printed pp. 243–244 / PDF pp. 257–258; §6.6, 6.6.1–6.6.5, printed p. 251 / PDF p. 265. Existing mappings are retained.
+> [!note] Chapter 6 source reconciliation complete
+> **Complete — 28/28 — 2026-10-28.** All 28 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Anchors: §6.1, 6.1.1–6.1.4, printed pp. 220–221 / PDF pp. 234–235; §6.2, 6.2.1–6.2.8, printed pp. 228–230 / PDF pp. 242–244; §6.3, 6.3.1–6.3.1, printed p. 234 / PDF p. 248; §6.4, 6.4.1–6.4.5, printed pp. 236–237 / PDF pp. 250–251; §6.5, 6.5.1–6.5.5, printed pp. 243–244 / PDF pp. 257–258; §6.6, 6.6.1–6.6.5, printed p. 251 / PDF p. 265.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -1038,8 +1055,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Modular Curves as Algebraic Curves** — 46 numbered exercises.
 
-> [!note] Chapter 7 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 46 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §7.1, 7.1.1–7.1.5, printed pp. 259–261 / PDF pp. 272–274; §7.2, 7.2.1–7.2.12, printed pp. 270–272 / PDF pp. 283–285; §7.3, 7.3.1–7.3.5, printed pp. 278–279 / PDF pp. 291–292; §7.4, 7.4.1–7.4.3, printed p. 282 / PDF p. 295; §7.5, 7.5.1–7.5.7, printed pp. 289–290 / PDF pp. 302–303; §7.6, 7.6.1–7.6.2, printed p. 294 / PDF p. 307; §7.7, 7.7.1–7.7.3, printed pp. 298–299 / PDF pp. 311–312; §7.8, 7.8.1–7.8.5, printed pp. 302–304 / PDF pp. 315–317; §7.9, 7.9.1–7.9.4, printed pp. 310–312 / PDF pp. 323–325. Existing mappings are retained.
+> [!note] Chapter 7 source reconciliation complete
+> **Complete — 46/46 — 2026-10-28.** All 46 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Anchors: §7.1, 7.1.1–7.1.5, printed pp. 259–261 / PDF pp. 272–274; §7.2, 7.2.1–7.2.12, printed pp. 270–272 / PDF pp. 283–285; §7.3, 7.3.1–7.3.5, printed pp. 278–279 / PDF pp. 291–292; §7.4, 7.4.1–7.4.3, printed p. 282 / PDF p. 295; §7.5, 7.5.1–7.5.7, printed pp. 289–290 / PDF pp. 302–303; §7.6, 7.6.1–7.6.2, printed p. 294 / PDF p. 307; §7.7, 7.7.1–7.7.3, printed pp. 298–299 / PDF pp. 311–312; §7.8, 7.8.1–7.8.5, printed pp. 302–304 / PDF pp. 315–317; §7.9, 7.9.1–7.9.4, printed pp. 310–312 / PDF pp. 323–325.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -1163,8 +1182,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **The Eichler–Shimura Relation and L-functions** — 35 numbered exercises.
 
-> [!note] Chapter 8 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 35 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §8.1, 8.1.1–8.1.6, printed 318–320 / PDF 331–333; §8.2, 8.2.1–8.2.3, printed 326 / PDF 339; §8.3, 8.3.1–8.3.7, printed 331–333 / PDF 344–346; §8.4, 8.4.1–8.4.5, printed 340 / PDF 353; §8.5, 8.5.1–8.5.9, printed 350–351 / PDF 363–364; §8.6, 8.6.1–8.6.1, printed 353 / PDF 366; §8.7, 8.7.1–8.7.2, printed 359–360 / PDF 372–373; §8.8, 8.8.1–8.8.2, printed 368–369 / PDF 381–382. Existing mappings are retained.
+> [!note] Chapter 8 source reconciliation complete
+> **Complete — 35/35 — 2026-10-28.** All 35 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Printed/PDF anchors: §8.1, 8.1.1–8.1.6, printed 318–320 / PDF 331–333; §8.2, 8.2.1–8.2.3, printed 326 / PDF 339; §8.3, 8.3.1–8.3.7, printed 331–333 / PDF 344–346; §8.4, 8.4.1–8.4.5, printed 340 / PDF 353; §8.5, 8.5.1–8.5.9, printed 350–351 / PDF 363–364; §8.6, 8.6.1–8.6.1, printed 353 / PDF 366; §8.7, 8.7.1–8.7.2, printed 359–360 / PDF 372–373; §8.8, 8.8.1–8.8.2, printed 368–369 / PDF 381–382.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -1287,8 +1308,10 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Galois Representations** — 23 numbered exercises.
 
-> [!note] Chapter 9 source audit — 2026-10-28
-> **Source-audited; archival reconciliation pending.** All 23 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §9.1, 9.1.1–9.1.3, printed 378–379 / PDF 390–391; §9.2, 9.2.1–9.2.3, printed 383 / PDF 395; §9.3, 9.3.1–9.3.7, printed 389–390 / PDF 401–402; §9.4, 9.4.1–9.4.4, printed 393–394 / PDF 405–406; §9.5, 9.5.1–9.5.2, printed 402 / PDF 414; §9.6, 9.6.1–9.6.4, printed 409–411 / PDF 421–423. Existing mappings are retained.
+> [!note] Chapter 9 source reconciliation complete
+> **Complete — 23/23 — 2026-10-28.** All 23 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below retain the verified source set. Printed/PDF anchors: §9.1, 9.1.1–9.1.3, printed 378–379 / PDF 390–391; §9.2, 9.2.1–9.2.3, printed 383 / PDF 395; §9.3, 9.3.1–9.3.7, printed 389–390 / PDF 401–402; §9.4, 9.4.1–9.4.4, printed 393–394 / PDF 405–406; §9.5, 9.5.1–9.5.2, printed 402 / PDF 414; §9.6, 9.6.1–9.6.4, printed 409–411 / PDF 421–423.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed chapter locators 0**. Every numbered exercise maps to exactly one note. Original subparts and source issues are retained; the independent solutions identify their imported inputs. Learning states remain `not-started`.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -1419,7 +1442,7 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 - **Language and scope:** archived problem statements, hints, independent solutions and source/proof notes for this book are written in English. Each exercise note contains its complete original numbered exercise; the earlier independently composed practice questions are excluded.
 - **Provenance:** a generic book title is insufficient to count an exercise. The queries recognize numbered full-book citations and stable structured source references. Readable source fields should retain the complete author/title/edition and printed/PDF anchors.
 - **Reconciliation:** missing labels are expected before archival. “Complete” requires all expected labels mapped, no duplicate or unexpected mappings, and no outstanding source-matching notes in the corresponding scope. Notes without an identifiable chapter remain a whole-book reconciliation issue and do not block an independently reconciled chapter or section. The coverage ledger does not certify proof completeness or alter learning status.
-- **Next source group:** Chapter 3, §3.1, Exercises 3.1.1–3.1.6, printed pp. 69–71 / PDF pp. 83–85. Chapters 1 and 2 are complete; preserve the existing Chapter 3 mapping when continuing.
+- **Next source group:** None. All numbered exercises in Chapters 1–9 are archived and reconciled. Further work can focus on study progress or explicitly requested revisions; archival completion does not advance learning status or the Exercise Manager queue.
 
 ## Related Navigation
 

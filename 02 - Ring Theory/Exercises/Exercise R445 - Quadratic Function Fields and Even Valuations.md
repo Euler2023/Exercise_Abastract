@@ -23,7 +23,7 @@ created: 2026-10-28
 
 > **Context and notation.** Equation (7.6) is the quadratic-field expression $F=yF_1(x)+F_2(x)$ with $F_1,F_2\in\bar k(x)$. The curve is nonsingular and has characteristic zero.
 
-> [!warning] Source issue
+> [!note] Valuation convention
 > The valuation conclusion in (b) concerns nonzero rational functions. The zero function has valuation $+\infty$ by definition and is excluded from the statement that an integer valuation is even.
 
 ## Hints

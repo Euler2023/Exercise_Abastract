@@ -61,7 +61,7 @@ created: 2026-10-28
 > f_{Q^\sigma}=a_{\sigma,Q}f_Q^\sigma,\qquad
 > g_{Q^\sigma}=b_{\sigma,Q}g_Q^\sigma
 > $$
-> for nonzero constants. The printed equalities are obtained by using the conjugated functions as the compatible choices. They may also be enforced simultaneously by normalizing their leading Laurent coefficients in a parameter at $0_E$ defined over $k$; for $Q\ne0$ the pole orders there are $N$ and $1$, and for $Q=0$ choose the constants $1$. The relation $f_Q\circ[N]=g_Q^N$ can be restored by a scalar normalization depending only on the leading term of $[N]$ at the origin. All these choices leave the pairing unchanged.
+> for nonzero constants. The printed equalities are obtained by using the conjugated functions as the compatible choices. They may also be enforced simultaneously by normalizing their leading Laurent coefficients in a parameter at $0_E$ defined over $k$; for $Q\ne0$ the pole orders there are $N$ and $1$, and for $Q=0$ choose the constants $1$. More explicitly, in characteristic zero the leading term of $[N]$ in this parameter is $Nt$. If initially both leading Laurent coefficients are $1$, the constant ratio $(f_Q\circ[N])/g_Q^N$ is $N^{-N}$. Replacing $f_Q$ by $N^Nf_Q$ restores the exact relation. This scalar belongs to $k$ and is independent of $Q$, so both Galois covariance and the pairing are unchanged.
 >
 > Indeed the scalar multiplying $g_Q$ cancels in $g_Q(X+P)/g_Q(X)$. Thus, independently of normalization,
 > $$
