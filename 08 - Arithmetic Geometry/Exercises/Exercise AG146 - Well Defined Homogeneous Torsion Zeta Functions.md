@@ -26,6 +26,9 @@ created: 2026-10-28
 > F_1^{\bar v}\bigl(\mathbb C/\Lambda,(\omega_1/N+\Lambda,\omega_2/N+\Lambda)\bigr)=Z_\Lambda((c\omega_1+d\omega_2)/N)-(c\eta_1+d\eta_2)/N.
 > $$
 
+> [!warning] Source issue
+> The displayed torsion-zeta construction requires a nonzero marked torsion point. At $N=1$ the order-one vector is zero, so its argument lies in the lattice and $Z$ has a pole; the displayed finite difference is not defined. The intended construction and proof use $N>1$.
+
 ## Hints
 
 > [!hint]- Hint 1

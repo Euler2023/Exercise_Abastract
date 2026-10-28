@@ -35,7 +35,7 @@ created: 2026-10-28
 > [!success]- Solution
 > **Proof provenance:** Independent derivation. Imported results are named at their point of use.
 >
-> Write $A=k[C]$ and $S=A\setminus\mathfrak m$. The intended prime ideals are prime ideals of $A$ contained in $\mathfrak m$, and prime ideals of $S^{-1}A$ contained in $M=S^{-1}\mathfrak m$.
+> Write $A=k[C]$ and $S=A\setminus\mathfrak m$. The intended prime ideals are prime ideals of $A$ contained in $\mathfrak m$, and prime ideals of $S^{-1}A$ contained in $M=S^{-1}\mathfrak m$. The extension–contraction argument works for every affine integral curve. For the subsequent deduction using a DVR, assume that $C$ is nonsingular, as in the surrounding discussion, so the chosen maximal ideal below is a nonsingular point. For a singular integral curve the same maximality conclusion instead follows from its dimension-one property; that more general case does not follow from the DVR step alone.
 >
 > For a prime $I\subset\mathfrak m$, $I\cap S=\varnothing$. The quotient $S^{-1}A/S^{-1}I\simeq S^{-1}(A/I)$ is a nonzero domain, hence $S^{-1}I$ is prime. If $a/1\in S^{-1}I$, some $s\in S$ satisfies $sa\in I$. Since $s\notin I$ and $I$ is prime, $a\in I$. Thus contraction returns $I$.
 >

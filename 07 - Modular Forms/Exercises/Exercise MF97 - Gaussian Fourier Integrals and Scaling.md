@@ -25,6 +25,9 @@ created: 2026-10-28
 >
 > (d) For $h\in L^1(\mathbb R^l)$ and $r>0$, show that the Fourier transform of $h(rx)$ is $r^{-l}\widehat h(x/r)$.
 
+> [!warning] Source issue
+> Part (c) needs the one-dimensional factors to be integrable, or the product to be nonzero almost everywhere in the product sense so that integrability forces this. For instance $f_1=0$, $f_2=1$ gives an integrable zero product on $\mathbb R^2$, but $\widehat f_2$ is undefined as an $L^1$ Fourier integral. The proof uses the corrected hypothesis $f_j\in L^1(\mathbb R)$.
+
 ## Hints
 
 > [!hint]- Hint 1
@@ -46,7 +49,7 @@ created: 2026-10-28
 > $$
 > Thus $I=1$.
 >
-> **(c)** For integrable factors, absolute integrability permits Fubini and separates the exponential into the product of $l$ one-dimensional exponentials, giving the assertion. The usual statement assumes each $f_j\in L^1(\mathbb R)$; if only the product is specified to be integrable and nonzero almost everywhere in the product sense, Tonelli applied to $\prod|f_j|$ forces all factor norms finite and positive. If a factor is zero almost everywhere, the product transform is zero and the assertion is understood using integrable representatives; otherwise an undefined transform of a nonintegrable unused factor would not be a meaningful expression.
+> **(c)** For integrable factors, absolute integrability permits Fubini and separates the exponential into the product of $l$ one-dimensional exponentials, giving the assertion. The usual statement assumes each $f_j\in L^1(\mathbb R)$; if only the product is specified to be integrable and nonzero almost everywhere in the product sense, Tonelli applied to $\prod|f_j|$ forces all factor norms finite and positive. If a factor is zero almost everywhere, the product transform is zero; the stated right side still requires every factor transform to be defined, which is exactly the missing hypothesis identified above.
 >
 > **(d)** Substitute $y=rx$ in the defining integral. The Jacobian is $r^{-l}$ and the phase becomes $e^{-2\pi i\langle y,\xi/r\rangle}$, so the transform at $\xi$ is $r^{-l}\widehat h(\xi/r)$.
 >

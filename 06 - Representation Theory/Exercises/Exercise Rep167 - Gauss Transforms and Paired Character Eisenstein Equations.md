@@ -31,6 +31,9 @@ created: 2026-10-28
 >
 > (c) Define $b$ and $E_k^{\psi,\phi}$ by $a=(g(\overline\phi)/v)b$ and $G_k^{\psi,\phi}=(g(\overline\phi)/v)E_k^{\psi,\phi}$. Show $G_k^b=E_k^{\psi,\phi}+E_k^{\phi,\psi}$.
 
+> [!warning] Source issue
+> The finite-sum identities (a)–(c) are valid. If the final functional-equation conclusion is applied to negative odd $k$, Theorem 4.10.2 requires the sign correction proved in [[07 - Modular Forms/Exercises/Exercise MF104 - Analytic Continuation in Zero and Negative Weight|Exercise 4.10.6]]; the printed combination then has root number $-1$.
+
 ## Hints
 
 > [!hint]- Hint 1
@@ -61,7 +64,7 @@ created: 2026-10-28
 > $$
 > \psi(-1)\frac{g(\psi)g(\overline\psi)}u=\psi(-1)^2=1.
 > $$
-> Primitive Gauss sums are nonzero, so the normalizations are legitimate, including the trivial character of conductor one. This proves the symmetric identity. Theorem4.10.2 applies to its completion, giving the stated two-series functional equation.
+> Primitive Gauss sums are nonzero, so the normalizations are legitimate, including the trivial character of conductor one. This proves the symmetric identity. For $k>0$ or negative even $k$, Theorem4.10.2 gives a symmetric completed two-series equation. For negative odd $k$, the printed algebraic identity remains valid, but the corrected analysis of Exercise 4.10.6 gives an antisymmetric equation for this printed combination. Thus the coefficient identity in (c) holds in every stated parity, while unconditional negative odd-weight symmetry does not.
 
 ## Related Concepts
 

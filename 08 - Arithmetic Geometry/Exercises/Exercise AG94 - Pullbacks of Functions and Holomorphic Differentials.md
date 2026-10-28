@@ -64,7 +64,7 @@ created: 2026-10-28
 ## Notes
 
 - **Source status:** The complete numbered exercise and every original subpart were checked on the original 200 dpi page images at the printed/PDF anchors in the source field.
-- **Source issue / convention:** The printed statement allows $g=0$. Orders as integers are defined only for nonzero meromorphic functions; the proof states that hypothesis or uses the explicitly declared infinite-order convention.
+- **Order convention:** The source uses $\nu(0)=\infty$. The integer-valued local-order argument assumes $g\ne0$; the zero case follows using that convention.
 - **Imported input:** The local form $r\circ h=q^{e_x}$ for a nonconstant holomorphic map is the local mapping theorem.
 - **Routing:** Local parameters, vanishing orders and differential compatibility are geometric tools.
 - **Learning status:** The status remains `not-started`.

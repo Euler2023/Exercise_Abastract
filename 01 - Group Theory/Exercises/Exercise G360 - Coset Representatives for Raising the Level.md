@@ -27,6 +27,12 @@ created: 2026-10-28
 > \Gamma_0(p^eM)\backslash\Gamma_0(M)=\Bigl(\bigcup_j\Gamma_0(p^eM)\alpha_j\Bigr)\cup\Bigl(\bigcup_j\Gamma_0(p^eM)\beta_j\Bigr).
 > $$
 
+> **Continuation of the source exercise.** Iterating this construction gives representatives for $\Gamma_0(N)\backslash\operatorname{SL}_2(\mathbb Z)$, where $N=\prod p^e$, including the representatives used to locate the elliptic points. For example, if representatives for $\Gamma_0(p^eq^f)\backslash\Gamma_0(q^f)$ are $\{\alpha_j,\beta_j\}$ of the indicated ranges, and those for $\Gamma_0(q^f)\backslash\operatorname{SL}_2(\mathbb Z)$ are $\{\alpha_j',\beta_j'\}$, then the $p^e(1+1/p)q^f(1+1/q)$ products
+> $$
+> \{\alpha_j\alpha_{j'}',\ \alpha_j\beta_{j'}',\ \beta_j\alpha_{j'}',\ \beta_j\beta_{j'}'\}
+> $$
+> are representatives for $\Gamma_0(p^eq^f)\backslash\operatorname{SL}_2(\mathbb Z)$.
+
 ## Hints
 
 > [!hint]- Hint 1
@@ -43,6 +49,8 @@ created: 2026-10-28
 > Both matrix families have determinant one and lower-left entry divisible by $M$; the displayed upper-right entry of $\beta_j$ is integral by $m_jp\equiv1\pmod M$. For $g,h\in\Gamma_0(M)$, their left cosets modulo $\Gamma_0(p^eM)$ agree exactly when their primitive bottom rows are proportional by a unit modulo $p^e$. To see this, $gh^{-1}$ already has lower-left entry divisible by $M$; divisibility also by $p^e$ is equivalent to vanishing of the determinant of the two bottom rows modulo $p^e$. Since each row is unimodular over this local ring, determinant zero is equivalent to unit proportionality. Coprimality of $M,p$ then gives divisibility by $p^eM$.
 >
 > Every primitive row modulo $p^e$ has one of two unique normalizations. If its second entry is a unit, it is $(x,1)$ for a unique $x\pmod{p^e}$. The rows of $\alpha_j$ are $(Mj,1)$ and run through all such rows because $M$ is invertible modulo $p^e$. If its second entry is a nonunit, its first entry must be a unit; it normalizes to $(1,py)$ with a unique $y\pmod{p^{e-1}}$. The row of $\beta_j$, normalized by $M^{-1}$, is $(1,pM^{-1}(m+jM))=(1,p(M^{-1}m+j))$, and runs through all such rows. The types cannot overlap because unit status of the second coordinate is preserved under unit scaling. Consequently the listed $p^e+p^{e-1}$ representatives are pairwise distinct and cover every coset, proving the stated decomposition.
+>
+> The iteration follows from the elementary coset product rule: for $H\subset K\subset G$, if $K=\bigsqcup_iHa_i$ and $G=\bigsqcup_jKb_j$, then $G=\bigsqcup_{i,j}Ha_ib_j$. If two product cosets coincide, first their $K$ cosets force the same $j$, and then their $H$ cosets force the same $i$. Apply this at each prime-power step; the product counts multiply as stated.
 
 ## Related Concepts
 

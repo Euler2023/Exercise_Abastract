@@ -24,6 +24,12 @@ created: 2026-10-28
 > \sigma_0^{\bar v}(n)=\sum_{\substack{m\mid n\\n/m\equiv c\ (N)}}\operatorname{sgn}(m)\mu_N^{dm},\qquad
 > G_1^{\bar v}=\delta(c)\zeta^{\bar d}(1)+(C_1/N)\sum_{n\ge1}\sigma_0^{\bar v}(n)q_N^n.
 > $$
+> The normalization from printed p. 139 / PDF p. 153 is
+> $$
+> g_1^{\bar v}(\tau)=\frac1N Z_{\Lambda_\tau}\left(\frac{c\tau+d}{N}\right)-\frac{c\eta_1(\Lambda_\tau)+d\eta_2(\Lambda_\tau)}{N^2}.
+> $$
+> Here $\eta_j$ is the increment of $Z$ under the lattice period $\omega_j$, with $(\omega_1,\omega_2)=(\tau,1)$. Thus $g_1$ is $F_1/N$, rather than $F_1$ itself.
+>
 > The target formula is $g_1^{\bar v}=G_1^{\bar v}-(C_1/N)(c/N-1/2)$. Divisors $m$ in the displayed definition may have either sign; $\delta(c)$ is one if $c=0$ and zero otherwise.
 
 ## Hints

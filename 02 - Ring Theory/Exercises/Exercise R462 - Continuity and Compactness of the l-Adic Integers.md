@@ -19,9 +19,12 @@ created: 2026-10-28
 > [!question] Original Exercise 9.2.1
 > (a) Show that the ring operations of $\mathbb Z_\ell$ are continuous under the $\ell$-adic topology.
 >
-> (b) Show that this topology makes $\mathbb Z_\ell$ a topological subgroup of $P=\prod_{n=1}^{\infty}\mathbb Z/\ell^n\mathbb Z$. The product is compact by Tychonov's theorem. For $P_n=\prod_{m=1}^n\mathbb Z/\ell^m\mathbb Z$ and its projection $\pi_n:P\to P_n$, show $P_n$ contains a closed subgroup $C_n$ of compatible elements such that $\mathbb Z_\ell=\bigcap_{n=1}^{\infty}\pi_n^{-1}(C_n)$. Deduce compactness. (A hint for this exercise is at the end of the book.)
+> (b) Show that this topology makes $\mathbb Z_\ell$ a topological subgroup of $P=\prod_{n=1}^{\infty}\mathbb Z/\ell^n\mathbb Z$. The product is compact by Tychonov's theorem. For $P_n=\prod_{m=1}^n\mathbb Z/\ell^n\mathbb Z$ and its projection $\pi_n:P\to P_n$, show $P_n$ contains a closed subgroup $C_n$ of compatible elements such that $\mathbb Z_\ell=\bigcap_{n=1}^{\infty}\pi_n^{-1}(C_n)$. Deduce compactness. (A hint for this exercise is at the end of the book.)
 >
 > (c) Show that the field operations of $\mathbb Q_\ell$ are continuous under the $\ell$-adic topology.
+
+> [!warning] Source issue
+> The printed finite product repeats $\ell^n$ in every factor (printed p.383 / PDF395). To be the stated coordinate projection of $P$, it must be $P_n=\prod_{m=1}^n\mathbb Z/\ell^m\mathbb Z$. The solution uses this corrected product; compatibility then means reduction from the $(m+1)$st coordinate to the $m$th.
 
 ## Hints
 

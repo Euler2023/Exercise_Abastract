@@ -19,6 +19,9 @@ created: 2026-10-28
 > [!question] Original Exercise 4.10.7
 > What does Theorem4.10.2 say when $a$ picks off one vector, i.e. $a=a_v$ with $a_v(w)=1$ if $w=v$ and zero otherwise?
 
+> [!warning] Source issue
+> Theorem 4.10.2 has a negative odd-weight sign issue, derived in [[07 - Modular Forms/Exercises/Exercise MF104 - Analytic Continuation in Zero and Negative Weight|Exercise 4.10.6]]. Its printed coefficient combination has root number $(-1)^k$ when $k<0$, rather than unconditional symmetry. The point-mass calculation below uses the corrected scope.
+
 ## Hints
 
 > [!hint]- Hint 1
@@ -40,7 +43,7 @@ created: 2026-10-28
 > $$
 > (\pi/N)^{-s}\Gamma(|k|/2+s)\left[G_k^v(\tau,s-k/2)+\frac{(-1)^k}{N}\sum_w\mu_N^{\langle v,wS\rangle}G_k^w(\tau,s-k/2)\right]
 > $$
-> therefore extends invariantly under $s\mapsto1-s$ and is entire for $k\ne0$. At $k=0$ its residues at zero and one are respectively $-C,C$, with $C=\mathbf1_{v=0}+1/N$, by the constant-term calculation of4.10.6; thus both are genuine simple poles in this point-mass case. This is a scalar symmetric combination. It does not assert that the single unsymmetrized residue-class series alone is invariant under $s\mapsto1-s$.
+> is entire for $k\ne0$. It is invariant under $s\mapsto1-s$ for $k>0$ and for negative even $k$; for negative odd $k$ it instead changes sign. This is the corrected negative-weight conclusion proved in Exercise 4.10.6. At $k=0$ its residues at zero and one are respectively $-C,C$, with $C=\mathbf1_{v=0}+1/N$, by the constant-term calculation of4.10.6; thus both are genuine simple poles in this point-mass case. For $k<0$, replacing the printed factor $(-1)^k/N$ by $1/N$ gives a scalar symmetric combination in every negative weight. It does not assert that the single unsymmetrized residue-class series alone is invariant under $s\mapsto1-s$.
 
 ## Related Concepts
 
