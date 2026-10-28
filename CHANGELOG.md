@@ -2,6 +2,10 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-10-28 (Diamond-Shurman Remaining Chapters Exercise Archive)
+
+- Source audit and scope: Continuing the approved archival method through all 291 missing source numbers in Chapters 3–9, preserving the four pre-existing mappings in those chapters and all earlier chapter notes. Chapter source labels, multipart statements, printed/PDF anchors and necessary figures are being rechecked against bounded original pages at 200 dpi before writing. Completion will be recorded only after one-to-one reconciliation and proof/content validation.
+
 ### 2026-10-28 (Diamond-Shurman Chapter 2 Exercise Archive)
 
 - Added: 21 complete English exercise notes, one per previously missing Chapter 2 source number: G351–G357, LA592–LA599, MF35–MF39, and AG70. Every original subpart is retained with progressive collapsed hints, a complete independent solution, exact S7 structured provenance and printed/PDF anchors, and a not-started learning state. Preserved 2.3.2 → LA580 and 2.3.5 → MF2 without rewriting them. Chapter 2 is now 23/23; whole-book numbered coverage is 63/354, with 291 source labels still unarchived.

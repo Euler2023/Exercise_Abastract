@@ -49,6 +49,8 @@ Arithmetic Geometry lies at the intersection of algebraic geometry and number th
 - [[03 - Field Theory/Concepts/Function Fields|Function Fields]]
 - [[08 - Arithmetic Geometry/Concepts/Riemann Surfaces|Riemann Surfaces]]
 - [[08 - Arithmetic Geometry/Concepts/Branch Points and Monodromy|Branch Points and Monodromy]]
+- [[08 - Arithmetic Geometry/Concepts/Divisors and Riemann-Roch on Compact Curves|Divisors and Riemann-Roch on Compact Curves]]
+- [[08 - Arithmetic Geometry/Concepts/Jacobians and Functorial Maps|Jacobians and Functorial Maps]]
 
 ### Rational Points
 - [[08 - Arithmetic Geometry/Concepts/Rational Points|Rational Points]]

@@ -537,6 +537,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Dimension Formulas** — 51 numbered exercises.
 
+> [!note] Chapter 3 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 51 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §3.1, 3.1.1–3.1.6, printed pp. 69–71 / PDF pp. 83–85; §3.2, 3.2.1–3.2.6, printed pp. 76–77 / PDF pp. 90–91; §3.3, 3.3.1–3.3.6, printed pp. 82–83 / PDF pp. 96–97; §3.4, 3.4.1–3.4.3, printed p. 85 / PDF p. 99; §3.5, 3.5.1–3.5.5, printed pp. 88–89 / PDF pp. 102–103; §3.6, 3.6.1–3.6.5, printed p. 92 / PDF p. 106; §3.7, 3.7.1–3.7.7, printed pp. 97–98 / PDF pp. 111–112; §3.8, 3.8.1–3.8.8, printed p. 106 / PDF p. 120; §3.9, 3.9.1–3.9.5, printed p. 108 / PDF p. 122. Existing mappings are retained.
+
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
 const allExercises = Array.from(dv.pages("#exercise"));
@@ -658,6 +661,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 ## Chapter 4
 
 **Eisenstein Series** — 57 numbered exercises.
+
+> [!note] Chapter 4 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 57 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §4.1, 4.1.1–4.1.2, printed 111 / PDF 125; §4.2, 4.2.1–4.2.6, printed 115–116 / PDF 129–130; §4.3, 4.3.1–4.3.4, printed 119–120 / PDF 133–134; §4.4, 4.4.1–4.4.6, printed 123–126 / PDF 137–140; §4.5, 4.5.1–4.5.3, printed 130 / PDF 144; §4.6, 4.6.1–4.6.4, printed 133 / PDF 147; §4.7, 4.7.1–4.7.5, printed 137–138 / PDF 151–152; §4.8, 4.8.1–4.8.7, printed 142–143 / PDF 156–157; §4.9, 4.9.1–4.9.6, printed 146–147 / PDF 160–161; §4.10, 4.10.1–4.10.8, printed 153–155 / PDF 167–169; §4.11, 4.11.1–4.11.6, printed 161–162 / PDF 175–176.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -783,6 +789,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Hecke Operators** — 55 numbered exercises.
 
+> [!note] Chapter 5 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 55 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §5.1, 5.1.1–5.1.6, printed 167–168 / PDF 181–182; §5.2, 5.2.1–5.2.10, printed 176–179 / PDF 190–193; §5.3, 5.3.1–5.3.4, printed 181 / PDF 195; §5.4, 5.4.1–5.4.4, printed 184 / PDF 198; §5.5, 5.5.1–5.5.1, printed 188 / PDF 202; §5.6, 5.6.1–5.6.3, printed 190 / PDF 204; §5.7, 5.7.1–5.7.8, printed 195–196 / PDF 209–210; §5.8, 5.8.1–5.8.7, printed 200 / PDF 214; §5.9, 5.9.1–5.9.7, printed 207–208 / PDF 221–222; §5.10, 5.10.1–5.10.2, printed 210 / PDF 224; §5.11, 5.11.1–5.11.3, printed 213–214 / PDF 227–228. Existing mappings are retained.
+
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
 const allExercises = Array.from(dv.pages("#exercise"));
@@ -907,6 +916,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Jacobians and Abelian Varieties** — 28 numbered exercises.
 
+> [!note] Chapter 6 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 28 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §6.1, 6.1.1–6.1.4, printed pp. 220–221 / PDF pp. 234–235; §6.2, 6.2.1–6.2.8, printed pp. 228–230 / PDF pp. 242–244; §6.3, 6.3.1–6.3.1, printed p. 234 / PDF p. 248; §6.4, 6.4.1–6.4.5, printed pp. 236–237 / PDF pp. 250–251; §6.5, 6.5.1–6.5.5, printed pp. 243–244 / PDF pp. 257–258; §6.6, 6.6.1–6.6.5, printed p. 251 / PDF p. 265. Existing mappings are retained.
+
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
 const allExercises = Array.from(dv.pages("#exercise"));
@@ -1025,6 +1037,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 ## Chapter 7
 
 **Modular Curves as Algebraic Curves** — 46 numbered exercises.
+
+> [!note] Chapter 7 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 46 numbered source exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Anchors: §7.1, 7.1.1–7.1.5, printed pp. 259–261 / PDF pp. 272–274; §7.2, 7.2.1–7.2.12, printed pp. 270–272 / PDF pp. 283–285; §7.3, 7.3.1–7.3.5, printed pp. 278–279 / PDF pp. 291–292; §7.4, 7.4.1–7.4.3, printed p. 282 / PDF p. 295; §7.5, 7.5.1–7.5.7, printed pp. 289–290 / PDF pp. 302–303; §7.6, 7.6.1–7.6.2, printed p. 294 / PDF p. 307; §7.7, 7.7.1–7.7.3, printed pp. 298–299 / PDF pp. 311–312; §7.8, 7.8.1–7.8.5, printed pp. 302–304 / PDF pp. 315–317; §7.9, 7.9.1–7.9.4, printed pp. 310–312 / PDF pp. 323–325. Existing mappings are retained.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
@@ -1148,6 +1163,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **The Eichler–Shimura Relation and L-functions** — 35 numbered exercises.
 
+> [!note] Chapter 8 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 35 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §8.1, 8.1.1–8.1.6, printed 318–320 / PDF 331–333; §8.2, 8.2.1–8.2.3, printed 326 / PDF 339; §8.3, 8.3.1–8.3.7, printed 331–333 / PDF 344–346; §8.4, 8.4.1–8.4.5, printed 340 / PDF 353; §8.5, 8.5.1–8.5.9, printed 350–351 / PDF 363–364; §8.6, 8.6.1–8.6.1, printed 353 / PDF 366; §8.7, 8.7.1–8.7.2, printed 359–360 / PDF 372–373; §8.8, 8.8.1–8.8.2, printed 368–369 / PDF 381–382. Existing mappings are retained.
+
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
 const allExercises = Array.from(dv.pages("#exercise"));
@@ -1268,6 +1286,9 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 ## Chapter 9
 
 **Galois Representations** — 23 numbered exercises.
+
+> [!note] Chapter 9 source audit — 2026-10-28
+> **Source-audited; archival reconciliation pending.** All 23 numbered exercises were verified on original 200 dpi page images. The ordered label arrays below are the expected source set. Printed/PDF anchors: §9.1, 9.1.1–9.1.3, printed 378–379 / PDF 390–391; §9.2, 9.2.1–9.2.3, printed 383 / PDF 395; §9.3, 9.3.1–9.3.7, printed 389–390 / PDF 401–402; §9.4, 9.4.1–9.4.4, printed 393–394 / PDF 405–406; §9.5, 9.5.1–9.5.2, printed 402 / PDF 414; §9.6, 9.6.1–9.6.4, printed 409–411 / PDF 421–423. Existing mappings are retained.
 
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
