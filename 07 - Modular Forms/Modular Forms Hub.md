@@ -22,6 +22,7 @@ Modular forms are complex analytic functions on the upper half-plane that satisf
 - [[07 - Modular Forms/Concepts/Fundamental Domain|Fundamental Domain]]
 - [[07 - Modular Forms/Concepts/Congruence Subgroups|Congruence Subgroups]]
 - [[07 - Modular Forms/Concepts/Modular Curves and Moduli|Modular Curves and Moduli]]
+- [[07 - Modular Forms/Concepts/Modular Curve Charts and Cusp Widths|Modular Curve Charts and Cusp Widths]]
 
 ### Basic Definitions
 - [[07 - Modular Forms/Concepts/Modular Forms Definition|Modular Forms Definition]]

@@ -55,7 +55,7 @@ A parameter $\tau$ records a lattice shape. Integral basis changes produce isomo
 
 ## Source and Proof Status
 
-The definitions, theorem, homogeneous formulas and the original exercise pages were checked on 200 dpi page images. The source proves Theorem 1.5.1(b) and assigns (a),(c) as Exercise 1.5.1; the vault's completion and all Exercise 1.5.2–1.5.8 solutions are independent. The source's Fricke exact-order statement needs $N>1$, and its auxiliary $F_0$ generator sum applies $d$ twice; those defects are preserved and explained in the corresponding exercise notes. No fine moduli scheme, universal family or algebraic model is constructed here. The analytic curve structure and compactification belong to Chapter 2.
+The definitions, theorem, homogeneous formulas and the original exercise pages were checked on 200 dpi page images. The source proves Theorem 1.5.1(b) and assigns (a),(c) as Exercise 1.5.1; the vault's completion and all Exercise 1.5.2–1.5.8 solutions are independent. The source's Fricke exact-order statement needs $N>1$, and its auxiliary $F_0$ generator sum applies $d$ twice; those defects are preserved and explained in the corresponding exercise notes. No fine moduli scheme, universal family or algebraic model is constructed here. For the analytic curve structure and compactification from Chapter 2, see [[07 - Modular Forms/Concepts/Modular Curve Charts and Cusp Widths|Modular Curve Charts and Cusp Widths]].
 
 ## Exercises
 

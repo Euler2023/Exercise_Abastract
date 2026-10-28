@@ -412,6 +412,13 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 
 **Modular Curves as Riemann Surfaces** — 23 numbered exercises.
 
+> [!note] Chapter 2 complete — 23/23 — 2026-10-28
+> All **23 ordered source labels** were rechecked on original 200 dpi exercise-page images and reconciled with 23 complete exercise notes: §2.1, 2.1.1–2.1.3 (3/3), printed p. 47 / PDF p. 62; §2.2, 2.2.1–2.2.5 (5/5), printed p. 52 / PDF p. 67; §2.3, 2.3.1–2.3.8 (8/8), printed pp. 56–57 / PDF pp. 71–72; §2.4, 2.4.1–2.4.7 (7/7), printed pp. 62–63 / PDF pp. 77–78. The ordered label arrays below retain the exact expected set. Section 2.5 has no numbered exercises.
+>
+> Final reconciliation: **missing 0; duplicate mappings 0; unexpected labels 0; unparsed Chapter 2 locators 0**. The 21 additions are G351–G357 (7), LA592–LA599 (8), MF35–MF39 (5), and AG70 (1), routed by their principal proof tools. Existing mappings 2.3.2 → LA580 and 2.3.5 → MF2 are retained. All 23 learning states remain `not-started`. Whole-book numbered coverage after this chapter is **63/354**, leaving 291 labels unarchived, with no duplicate, unexpected, or unparsed book mappings.
+>
+> Each new note contains the complete original exercise, all subparts, progressive hints, and an independent full solution with named imported inputs. The common analytic definitions and quotient charts are connected through [[07 - Modular Forms/Concepts/Modular Curve Charts and Cusp Widths|Modular Curve Charts and Cusp Widths]]. The proofs distinguish effective periods from matrix orders, use the trace congruence modulo $N^2$ at the small principal levels, and establish positive integer local exponents at elliptic points and cusps. Source qualifications are visible: Lemma 2.3.1 has finitely many possible larger heights, although horizontal translations give infinitely many transformed points; the cusp-chart sentence on printed p. 61 / PDF p. 76 must refer to $X(\Gamma)$, rather than $Y(\Gamma)$. The previously recorded inverse-direction correction for $s(\tau)$ in 2.3.5(b) remains in MF2. The PID torsion-free module theorem and the complex Open Mapping Theorem are named imported inputs, not presented as proved in these notes.
+
 ```dataviewjs
 const bookName = /(?:Diamond[^;]*Shurman|Shurman[^;]*Diamond|A First Course in Modular Forms)/i;
 const allExercises = Array.from(dv.pages("#exercise"));
@@ -1391,7 +1398,7 @@ else dv.paragraph("No source-numbered exercises from this chapter have been arch
 - **Language and scope:** archived problem statements, hints, independent solutions and source/proof notes for this book are written in English. Each exercise note contains its complete original numbered exercise; the earlier independently composed practice questions are excluded.
 - **Provenance:** a generic book title is insufficient to count an exercise. The queries recognize numbered full-book citations and stable structured source references. Readable source fields should retain the complete author/title/edition and printed/PDF anchors.
 - **Reconciliation:** missing labels are expected before archival. “Complete” requires all expected labels mapped, no duplicate or unexpected mappings, and no outstanding source-matching notes in the corresponding scope. Notes without an identifiable chapter remain a whole-book reconciliation issue and do not block an independently reconciled chapter or section. The coverage ledger does not certify proof completeness or alter learning status.
-- **Next source group:** Chapter 2, §2.1, Exercises 2.1.1–2.1.3, printed p. 47 / PDF p. 62. Chapter 2 already has 2.3.2 and 2.3.5 archived; preserve those mappings when continuing.
+- **Next source group:** Chapter 3, §3.1, Exercises 3.1.1–3.1.6, printed pp. 69–71 / PDF pp. 83–85. Chapters 1 and 2 are complete; preserve the existing Chapter 3 mapping when continuing.
 
 ## Related Navigation
 
