@@ -58,6 +58,8 @@ tags:
 
 2. [ ] [[01 - Group Theory/Exercises/Exercise G242 - Every Finite Group Is Finitely Presented|Exercise G242: Every Finite Group Is Finitely Presented]] <!-- exercise-manager:systematic-unit 16018493a7754f5038042f19b771e8aab91664961046a77449202e1a92a6177a -->
 
+
+
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 7, Section 10, Ex. 10.3, printed p. 225, PDF p. 237
 
    > [!question] Exercise 10.3
