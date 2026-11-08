@@ -175,6 +175,12 @@ Canvas files use JSON format. When creating:
 - Weekly/review decks are derived artifacts in `Attachments/`; follow `AGENTS.md` §12 (self-contained source, auto page references, zero Overfull/Underfull, rendered-page inspection).
 - The plugin source is the junction `.obsidian/plugins/exercise_manager` → `E:\project\tools\exercise_manager`; do not modify it as part of ordinary vault work.
 
+### 11. Temporary File Cleanup (REQUIRED)
+
+- Delete temporary build files, logs, PDF page renders, image crops, extraction dumps, one-off scripts, and caches as soon as their last use ends, and no later than the final handoff.
+- Work in the system temp directory or the vault's existing `tmp/`; never leave scratch output in topic folders, `Attachments/`, `00 - Home/`, the generated daily-list folder, or the repository root.
+- Delete only paths the current task created (resolve and verify the absolute path first); keep durable deliverables only in their proper folders; confirm the scratch path is absent before handoff, record the cleanup in `CHANGELOG.md`, and report (do not hide) any leftover blocked by locks or permissions. Full rule: `AGENTS.md` §10 *Temporary files and prompt cleanup*.
+
 ## Quick Reference
 
 ### New Exercise Checklist
@@ -199,7 +205,7 @@ Canvas files use JSON format. When creating:
 - [ ] Did not edit Exercise Manager managed blocks, checkboxes, or daily-state files
 - [ ] Re-read today's list at delivery time; recorded which dates and sections are covered
 - [ ] Deck source is self-contained and all page references are `\pageref` (no `??`)
-- [ ] Zero Overfull/Underfull; rendered pages inspected; scratch files removed
+- [ ] Zero Overfull/Underfull; rendered pages inspected; scratch files removed and scratch path confirmed absent (see `AGENTS.md` §10 *Temporary files and prompt cleanup*)
 - [ ] **`CHANGELOG.md` updated; README's latest three entries synchronized**
 
 @AGENTS.md

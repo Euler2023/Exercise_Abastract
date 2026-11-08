@@ -176,11 +176,22 @@ Before delivery, verify at least:
 - the problem statement, notation, and page anchors match the PDF;
 - external proof inputs and source ambiguities are explicitly labeled;
 - new exercises are discoverable by the Study Progress tag filter;
-- temporary PDF renders and crops have been cleaned up;
+- temporary files (PDF renders, crops, build intermediates, scratch scripts and directories) have been cleaned up and the scratch path is confirmed absent (see *Temporary files and prompt cleanup* below);
 - when the task depends on a generated daily list: its managed blocks and state file were not hand-edited, and the current file was re-read at delivery time;
 - for PDF/deck deliverables: no unresolved `\pageref` and no `??`, no overfull/underfull boxes, and the rendered pages were inspected;
 - `CHANGELOG.md` has been updated and the README Changelog shows exactly its latest three entries;
 - Git status contains no unintended modifications.
+
+### Temporary files and prompt cleanup
+
+Every task that creates temporary artifacts must remove them promptly; leaving cleanup to an optional final step is not acceptable.
+
+1. **Clean as soon as the file stops being needed.** Delete scratch build directories, auxiliary/log files, PDF page renders, image crops, extraction dumps, downloaded sources, one-off scripts, and caches immediately after the check that required them, and no later than the final handoff.
+2. **Work outside durable folders.** Put temporary files in the system temp directory or the vault's existing `tmp/` directory, never in topic folders, `Attachments/`, `00 - Home/`, the generated daily-list folder, or the repository root.
+3. **Delete only task-owned paths.** Resolve and verify the absolute target path before deleting; never remove pre-existing user files, runtime state, generated lists, or anything the current task did not create. If a scratch path already holds user content, use a new subdirectory instead of clearing it.
+4. **Keep only durable deliverables.** Temporary output becomes durable only when it is an intended vault artifact (an exercise or concept note, a deck, a verified figure asset) stored in its proper folder with a stable name. Do not retain intermediate versions, logs, or renders "just in case".
+5. **Verify before delivery.** Confirm the scratch path no longer exists (for example `Test-Path` returns `False`) and that no temporary file remains in the vault; record the cleanup in `CHANGELOG.md` when the repository changed.
+6. **Report leftovers instead of hiding them.** If a lock, permission problem, or interruption prevents deletion, remove everything else and state the exact remaining path in `CHANGELOG.md` and the final handoff; never claim cleanup was done when it was not.
 
 ## 11. User-Facing Handoff
 
@@ -193,12 +204,12 @@ Before delivery, verify at least:
 ## 12. Derived Review Decks and Large Builds
 
 - A review deck, weekly recap, or similar summary is a derived artifact: its data source is the generated daily lists plus the existing exercise notes. Do not modify exercise notes, frontmatter, status, hubs, Bases, or Canvas while producing it. Record which dates and which list sections (Random Review vs Systematic Progress) are covered; generated lists can change later, so the deck is a snapshot.
-- Store deliverables in `Attachments/` with a range-bearing name such as `daily-exercise-weekly-review-2026-10-12-to-18.tex/.pdf`. The `.tex` must be self-contained (no `\input` of scratch fragments); keep build intermediates and scratch renders outside the vault or delete them before delivery.
+- Store deliverables in `Attachments/` with a range-bearing name such as `daily-exercise-weekly-review-2026-10-12-to-18.tex/.pdf`. The `.tex` must be self-contained (no `\input` of scratch fragments); keep build intermediates and scratch renders outside the vault or delete them before delivery (see *Temporary files and prompt cleanup* in §10).
 - For a detailed deck, every exercise gets: exact statement with a precise printed/PDF locator; a one-line strategy; a step-by-step derivation showing the intermediate equations; and at least one concrete verification or counterexample. Do not hide steps behind "obvious", "standard", or "easy to check"; name imported standard results and show every `Source issue`.
 - Verify inherited claims. Task briefs, older decks, and even this file can contain false mathematical statements; test them against examples or computation, correct them in the new artifact, and mention the correction in `CHANGELOG.md`. Never copy a false claim forward.
 - Verify quantitative claims independently where feasible (for example Python permutation enumeration or linear algebra) and state what was checked. Cite computational verification only for checks that were actually run.
 - Build with `xelatex` at least three passes. Use `\label`/`\pageref` for all page references; never hard-code page numbers. Before delivery require zero errors, zero `Overfull \vbox`/`\hbox`, zero `Underfull`, zero missing characters, no undefined references, and no `??` in the extracted PDF text. Set PDF title/subject/author with `\hypersetup` (and `\title` for beamer).
 - House Beamer style: 16:9 `ctexbeamer`, `Microsoft YaHei`, the ink/accent palette, collapsible blocks, `\scriptsize` for dense derivations. Do not begin a frame body with a bare `{...}` group: beamer parses it as a subtitle and the vault's custom title template drops it; start with `\leavevmode` or text. Split an overflowing frame instead of shrinking below legibility.
 - Render the finished PDF to PNGs and inspect the pages (at least every changed page; for a from-scratch deck, every page) for clipping, overlap, table overflow, and footer collisions. Fix and re-render; log checks alone are not enough.
-- For long decks, split authoring into disjoint section fragments with one writer per fragment and a shared preamble; each fragment must compile standalone with zero overfull before integration. The lead assembles, recompiles, and revalidates the final file; never let two writers edit the same file. Remove scratch directories afterward.
+- For long decks, split authoring into disjoint section fragments with one writer per fragment and a shared preamble; each fragment must compile standalone with zero overfull before integration. The lead assembles, recompiles, and revalidates the final file; never let two writers edit the same file. Remove scratch directories immediately after integration (§10).
 - When superseding a previous deck, name the new file for the full covered range, record "supersedes ... (Git history retains the old version)" in `CHANGELOG.md`, remove only the superseded artifact, and never delete user-authored files.
