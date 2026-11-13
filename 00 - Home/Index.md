@@ -72,6 +72,7 @@ GROUP BY true
 - [[00 - Home/Lang Algebra Exercise Archive|Lang Algebra Exercise Archive]]
 - [[00 - Home/Neukirch Algebraic Number Theory Exercise Archive|Neukirch Algebraic Number Theory Exercise Archive]]
 - [[00 - Home/Diamond-Shurman Modular Forms Exercise Archive|Diamond–Shurman Modular Forms Exercise Archive]]
+- [[00 - Home/Hall Lie Groups Exercise Archive|Hall Lie Groups Exercise Archive]]
 
 ### Research Paper Adaptations
 

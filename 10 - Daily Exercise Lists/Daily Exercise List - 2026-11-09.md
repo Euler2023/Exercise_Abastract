@@ -11,55 +11,65 @@ tags:
 ## Random Review
 
 <!-- exercise-manager:exercises:start -->
-1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA97 - Strict Inclusion of Sequence Spaces lp|Exercise LA97: Strict Inclusion $\ell^p\subsetneq\ell^{p+1}$]] <!-- exercise-manager:unit cf241b418002042e1eb7e0c0ff70a7f45cabc39ec1aee097c15b5cbb12f729f7 -->
+1. [ ] [[03 - Field Theory/Exercises/Exercise F28 - The Quadratic Subfield Q Sqrt 2|Exercise F28: The Quadratic Subfield $\mathbb Q(\sqrt2)$]] <!-- exercise-manager:unit c36b42083483c99d6610974d1608340a0989d057d71985936690216b765b22f5 -->
 
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 3, Section 6, Ex. 6.3, printed p. 101, PDF p. 113
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 3, Section 1, Ex. 1.1, printed p. 98, PDF p. 110
 
-   > [!question] Exercise 6.3
-   > For every positive integer $p$, let $\ell^p$ be the space of sequences $(a_i)$ such that $\sum_i|a_i|^p<\infty$. Prove that $\ell^p$ is a proper subspace of $\ell^{p+1}$.
+   > [!question] Exercise 1.1
+   > Prove that the numbers of the form $a+b\sqrt2$, where $a,b\in\mathbb Q$, form a subfield of $\mathbb C$.
 
-2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA140 - Similarity of AB and BA When A Is Invertible|Exercise LA140: Similarity of AB and BA When A Is Invertible]] <!-- exercise-manager:unit 13029692d9088ae6bed1ffe9b1a3333c2d312d78e9082d778676294e880c68df -->
+2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA163 - Rotation Matrices from Axis and Angle|Exercise LA163: Rotation Matrices from Axis and Angle]] <!-- exercise-manager:unit 1cfb23acf595d83a1a0160981e7a0a9431dead9b1c708b5c4d5473ecc679c779 -->
 
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 4, §6, Ex. 6.7, printed p. 129, PDF p. 141
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 5, §1, Ex. 1.1, printed p. 150, PDF p. 162
 
-   > [!question] Exercise 6.7
-   > If $A,B$ are $n\times n$ and $A$ is nonsingular, prove that $AB$ is similar to $BA$.
-
-3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA158 - One-Sided Inverses Rank and Linear Maps|Exercise LA158: One-Sided Inverses, Rank, and Linear Maps]] <!-- exercise-manager:unit 449abc382815cc7e4cbeafdbe29f5941e5ae4d9bde9df152309165840546b43d -->
-
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 4, Miscellaneous Problems, Ex. M.5, printed p. 130, PDF p. 142
-
-   > [!question] Exercise M.5
-   > Let $\varphi:F^n\to F^m$ be left multiplication by an $m\times n$ matrix $A$.
+   > [!question] Exercise 1.1
+   > Determine the matrices that represent the following rotations of $\mathbb R^3$:
    >
-   > (a) Prove equivalence of: $A$ has a right inverse $B$ with $AB=I$; $\varphi$ is surjective; $\operatorname{rank}A=m$.
+   > (a) angle $\theta$, the axis $e_2$;
    >
-   > (b) Prove equivalence of: $A$ has a left inverse $B$ with $BA=I$; $\varphi$ is injective; $\operatorname{rank}A=n$.
+   > (b) angle $2\pi/3$, axis contains the vector $(1,1,1)^t$;
+   >
+   > (c) angle $\pi/2$, axis contains the vector $(1,1,0)^t$.
+
+3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA148 - Jordan Forms for Two Eigenvalues|Exercise LA148: Jordan Forms for Two Eigenvalues]] <!-- exercise-manager:unit 9c67c292c1cb00739c589b3e70f54849c66564602057e0ef1cc2c18da3359c46 -->
+
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 4, §7, Ex. 7.4, printed p. 129, PDF p. 141
+
+   > [!question] Exercise 7.4
+   > (a) Determine all Jordan forms with characteristic polynomial $(t+2)^2(t-5)^3$.
+   >
+   > (b) The printed exercise asks for the possibilities when “the space of eigenvectors with eigenvalue $2$ is one-dimensional” and the eigenspace for $5$ is two-dimensional.
 <!-- exercise-manager:exercises:end -->
 
 ## Systematic Progress
 
 <!-- exercise-manager:systematic:start -->
-1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA202 - Maximal Entries of a Positive Definite Matrix|Exercise LA202: Maximal Entries of a Positive Definite Matrix]] <!-- exercise-manager:systematic-unit 6282fde762121311e217b942670685a6192d576cf01a4315082103cd93b7b8ae -->
+1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA205 - Real and Imaginary Parts of a Hermitian Form|Exercise LA205: Real and Imaginary Parts of a Hermitian Form]] <!-- exercise-manager:systematic-unit 2eb39eeb40c4007912a5805eb87e1a9168ba5c05dde71d1f6fb4b3646f18149d -->
 
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 2, Ex. 2.1, printed p. 254, PDF p. 266
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 3, Ex. 3.2, printed p. 254, PDF p. 266
 
-   > [!question] Exercise 2.1
-   > Prove that the maximal entries of a positive definite, symmetric, real matrix are on the diagonal.
+   > [!question] Exercise 3.2
+   > Let $(\ ,\ )$ be a positive definite Hermitian form on a complex vector space $V$, and let $\{\ ,\ \}$ and $[\ ,\ ]$ be its real and imaginary parts, the real-valued forms defined by
+   >
+   > $$
+   > (v,w)=\{v,w\}+[v,w]i.
+   > $$
+   >
+   > Prove that when $V$ is made into a real vector space by restricting scalars to $\mathbb R$, $\{\ ,\ \}$ is a positive definite symmetric form, and $[\ ,\ ]$ is a skew-symmetric form.
 
-2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA203 - Rank under Congruence|Exercise LA203: Rank under Congruence]] <!-- exercise-manager:systematic-unit 4c2c98f865d96d8ecb6f195ef486d0295aed93e7d261abe592628f280f30196e -->
+2. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA206 - A Basis for Hermitian Matrices|Exercise LA206: A Basis for Hermitian Matrices]] <!-- exercise-manager:systematic-unit 75cfd0eb2eb7abf49468d980eb2a81fb22c1ca70de252adebd947595845827a1 -->
 
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 2, Ex. 2.2, printed p. 254, PDF p. 266
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 3, Ex. 3.3, printed p. 254, PDF p. 266
 
-   > [!question] Exercise 2.2
-   > Let $A$ and $A'$ be symmetric matrices related by $A'=P^{\mathsf T}AP$, where $P$ is invertible. Is it true that the ranks of $A$ and of $A'$ are equal?
+   > [!question] Exercise 3.3
+   > The set of $n\times n$ Hermitian matrices forms a real vector space. Find a basis for this space.
 
-3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA204 - Reality Criterion for Hermitian Matrices|Exercise LA204: Reality Criterion for Hermitian Matrices]] <!-- exercise-manager:systematic-unit 6829fcf642f2834fd0016d3a9a62b0e921b43ce347a54c479625abebc8b6a970 -->
+3. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA207 - Positivity of the Gram Matrix A Star A|Exercise LA207: Positivity of the Gram Matrix A Star A]] <!-- exercise-manager:systematic-unit 993e420ec97bc9a287db80b73969150f005dd10dc2f62a9de3e23f338d7892b2 -->
 
-   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 3, Ex. 3.1, printed p. 254, PDF p. 266
+   **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 3, Ex. 3.4, printed p. 254, PDF p. 266
 
-   > [!question] Exercise 3.1
-   > Is a complex $n\times n$ matrix $A$ such that $X^*AX$ is real for all $X$ Hermitian?
+   > [!question] Exercise 3.4
+   > Prove that if $A$ is an invertible matrix, then $A^*A$ is Hermitian and positive definite.
 <!-- exercise-manager:systematic:end -->
 
 <!-- Continue the source in order here. This section is preserved on re-export. -->
