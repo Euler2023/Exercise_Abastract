@@ -346,7 +346,7 @@ const audits = [
     "pdf": "409–411"
   }
 ];
-const reconciledChapters = new Set([1]);
+const reconciledChapters = new Set([1, 2]);
 const bookName = /(?:Brian\s+C\.\s+Hall|Lie Groups,\s*Lie Algebras,\s*and Representations)/i;
 function list(value) {
   if (value == null) return [];
@@ -490,6 +490,8 @@ SORT number(regexreplace(locator, ".*Exercise ([0-9]+),.*", "$1")) ASC
 ### Chapter 2
 
 **The Matrix Exponential** — [S10, Ch. 2, §2.6, Exercises 1–11, printed pp. 46–48, PDF pp. 58–60].
+
+**Source recheck — 2026-11-17:** all three original exercise pages and the following Chapter 3 boundary were re-inspected at 200 dpi before the archival pass. The ordered keys 2.1–2.11 and the total 11 agree with the source ledger. All eleven keys now reconcile one-to-one with LA668–LA678; the completion record below states the proof and validation boundaries.
 
 **Expected ordered keys:** 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 2.10, 2.11.
 
@@ -787,9 +789,9 @@ SORT number(regexreplace(locator, ".*Exercise ([0-9]+),.*", "$1")) ASC
 
 ## Source Issues and Figure Boundaries
 
-The following were noticed during the source-label audit. They are **visible source issues or candidates for later checking**, not a claim that the unarchived exercises have received a full solution audit.
+The following were noticed during the source-label audit. The archived Chapter 2 item has been resolved explicitly in its note; the remaining entries are **visible source issues or candidates for later checking**, not a claim that the unarchived exercises have received a full solution audit.
 
-- **Chapter 2, Exercise 5 hint**, printed p. 47 / PDF p. 59: the displayed power of an upper triangular matrix has bottom-right entry $b^m$, although the original matrix has bottom-right entry $d$. Check and preserve the printed defect when archiving; the diagonal entry should be $d^m$.
+- **Chapter 2, Exercise 5 hint**, printed p. 47 / PDF p. 59: the displayed power of an upper triangular matrix has bottom-right entry $b^m$, although the original matrix has bottom-right entry $d$. [[04 - Linear Algebra and Modules/Exercises/Exercise LA672 - The Exponential of a Two by Two Triangular Matrix|LA672]] preserves the original hint, gives an $m=1$ counterexample, and proves the corrected formula with $d^m$. The exponential formula itself remains valid, including the repeated-diagonal limit.
 - **Chapter 5, Exercise 14(b)**, printed p. 137 / PDF p. 147: the target of a Lie group homomorphism is printed as the Lie algebra $\mathrm{gl}(N;\mathbb C)$; the apparent intended target is $GL(N;\mathbb C)$.
 - **Chapter 12, Exercise 3**, printed p. 371 / PDF p. 375: after introducing maps from $V$ to $W$, one occurrence reverses the Hom arguments to $\operatorname{Hom}(W,V)$. Reconcile the domains against the action before supplying a solution.
 - **Chapter 12, Exercise 9**, printed p. 372 / PDF p. 376: the Vandermonde product includes $j=k$ in the printed index range; these factors vanish. Check the intended strict inequality $j<k$.
@@ -817,9 +819,17 @@ All 18 learning statuses remain `not-started`. Whole-book coverage at this check
 
 Validation covered note metadata, filenames and numbering, source/page reconciliation, path-qualified links and chapter anchors, balanced Obsidian mathematics, the English-only scan of all 2,581 exercise/concept notes, and discovery by the Study Progress exercise-tag filter. The live coverage JavaScript was executed against actual vault metadata and exercised with duplicate, unexpected, mismatched, missing-readable, ambiguous-segment, wrong-edition, and malformed-reference cases. These are source, proof, and static/runtime-script checks, not an Obsidian reading-view render test. No exercise-manager state, generated list, Base, or Canvas was edited.
 
+**Chapter 2 complete — 11/11 — 2026-11-17.** The ordered source keys 2.1–2.11 reconcile one-to-one with **LA668–LA678**, all in Linear Algebra and Modules. Final Chapter 2 exceptions: **missing labels 0; duplicate mappings 0; unexpected labels 0; unparsed locators 0**. The complete source statements, original hints, and printed/PDF anchors were checked on the original exercise pages, with Definition 2.2, Example 2.5, equation (2.6), the local logarithm results, and Appendix A.4–A.5 checked where used. The structured S10 references agree with the readable citations.
+
+The notes give complete independent derivations, including all parts of Exercise 9, and each received non-author mathematical review. Theorem A.4 triangularization and Theorem A.5 generalized-eigenspace decomposition are named imported inputs: the inspected appendix states them without full proofs. Theorem 2.8 is used only with its precise local hypotheses; the global nilpotent and invertible-complex-matrix results are proved in the exercise notes, rather than falsely attributed to a source-written proof of Theorem 2.10. Exercise 5 visibly preserves and corrects its hint defect; Exercise 8 specifies forward time and the exceptional stable line.
+
+Added shared prerequisites: [[04 - Linear Algebra and Modules/Concepts/Hilbert-Schmidt Norm|Hilbert–Schmidt Norm]] and [[04 - Linear Algebra and Modules/Concepts/Matrix Logarithms|Matrix Logarithms]], each with dynamic exercise backlinks and an entry in the existing topic hub. They distinguish Hall's inner-product convention, the identity norm $\|I_n\|=\sqrt n$, local inverse conditions, terminating nilpotent series, complex existence, and nonuniqueness. Figure 2.1 was checked with Exercise 8; it is illustrative and supplies no required figure-specific data, so no raster asset is retained.
+
+All 11 new learning statuses remain `not-started`. Whole-book coverage is now **29/170**, leaving **141** source keys unarchived, with no duplicate, unexpected, or unparsed Hall mappings. Chapters 3–13 remain source-audited but unarchived. Validation covered numbering, YAML, page anchors, links, balanced Obsidian mathematics, dynamic backlinks, the Study Progress exercise-tag filter, and an English-only scan of all **2,594** exercise/concept files. Exact symbolic checks covered the noncommuting product rule, complex unitary norm invariance, triangular powers and exponentials, the trace-zero and explicit $2\times2$ formulas, both flow equations and eigenpairs, and the nilpotent inverse identities for Jordan sizes 1–5. Finite checks supplement the written proofs. The live coverage script was executed against actual vault metadata; these checks do not constitute an Obsidian reading-view render test.
+
 ## Next Archive Target
 
-**Chapter 2 — The Matrix Exponential**, §2.6, Exercises 1–11: printed pp. 46–48 / PDF pp. 58–60. Its complete ordered source set is audited above; no Chapter 2 exercise has yet been archived. The Exercise 5 hint defect must remain visible in the future note.
+**Chapter 3 — Lie Algebras**, §3.9, Exercises 1–22: printed pp. 73–75 / PDF pp. 85–87. Its ordered source set is audited above; no Chapter 3 exercise has yet been archived. Routing must follow the principal proof toolkit of each exercise rather than the chapter title.
 
 ## Related Navigation
 

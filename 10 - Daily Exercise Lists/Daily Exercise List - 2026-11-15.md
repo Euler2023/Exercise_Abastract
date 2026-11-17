@@ -10,7 +10,8 @@ tags:
 
 ## Random Review
 
-<!-- exercise-manager:exercises:start -->
+<! -- exercise-manager:exercises:start -- >
+
 1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA134 - Trace and Determinant from Eigenvalues|Exercise LA134: Trace and Determinant from Eigenvalues]] <!-- exercise-manager:unit 72c76f856996645bf4f9524a4ede0a2894e264db11f7cb929b423badb3a48d7d -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 4, §6, Ex. 6.1, printed p. 128, PDF p. 140
@@ -37,7 +38,7 @@ tags:
 
 ## Systematic Progress
 
-<!-- exercise-manager:systematic:start -->
+< !-- exercise-manager:systematic:start -- >
 1. [ ] [[04 - Linear Algebra and Modules/Exercises/Exercise LA220 - Orthogonal Complement Identities|Exercise LA220: Orthogonal Complement Identities]] <!-- exercise-manager:systematic-unit 95285ae1d2a5fadcd37d23d641da56d70cb063c2e1b3ff4f670335234ac8370f -->
 
    **Source:** Michael Artin, Algebra, 2nd ed., Ch. 8, Section 4, Ex. 4.11, printed p. 255, PDF p. 267
@@ -76,6 +77,6 @@ tags:
    > **(b)** Answer the same question for the form defined by $(A,B)=\operatorname{trace}(AB)$.
 <!-- exercise-manager:systematic:end -->
 
-<!-- Continue the source in order here. This section is preserved on re-export. -->
+<! -- Continue the source in order here. This section is preserved on re-export. -- >
 
 ## Notes

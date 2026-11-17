@@ -53,6 +53,8 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation#Elementary Matrices|Elementary Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Infinite Matrices|Infinite Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Centralizers and Similarity|Matrix Centralizers and Similarity]]
+- [[04 - Linear Algebra and Modules/Concepts/Hilbert-Schmidt Norm|Hilbert-Schmidt Norm]]
+- [[04 - Linear Algebra and Modules/Concepts/Matrix Logarithms|Matrix Logarithms]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Vandermonde Matrices and Polynomial Interpolation|Vandermonde Matrices and Polynomial Interpolation]]
 - [[04 - Linear Algebra and Modules/Concepts/Polynomial Resultants|Polynomial Resultants]]
