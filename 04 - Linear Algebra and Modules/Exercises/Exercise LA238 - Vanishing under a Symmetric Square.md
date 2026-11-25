@@ -27,7 +27,7 @@ created: 2026-08-24
 ## Solution
 
 > [!success]- Solution
-> Proposition 8.6.9 gives $(Tx,y)=(x,Ty)$. Taking $x=v$ and $y=Tv$,
+> **Proof scope:** Independent application of Artin's Proposition 8.6.9(a), the symmetric-operator characterization on a Euclidean space. It gives $(Tx,y)=(x,Ty)$ for all $x,y$. Taking $x=v$ and $y=Tv$,
 >
 > $$
 > (Tv,Tv)=(v,T^2v)=0.
@@ -46,4 +46,5 @@ created: 2026-08-24
 
 - Equivalently, a symmetric operator has $\ker T^2=\ker T$.
 - **Source status:** Verified at [S1, Ch. 8, §6, Ex. 6.2, printed p. 256, PDF p. 268]. The proof is independent.
+- **Exact input:** Proposition 8.6.9(a) is on printed p. 245 / PDF p. 257. It is a characterization of symmetry, distinct from Theorem 8.6.10. This proof uses that characterization and positive definiteness directly; it does not need spectral diagonalization.
 

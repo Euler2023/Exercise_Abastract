@@ -23,7 +23,8 @@ created: 2026-08-24
 
 > [!hint]- Hint 1
 > Compare $\det(-I)=(-1)^n$ in odd and even dimensions.
->
+
+
 > [!hint]- Hint 2
 > For even $n$, compare centers (and treat $n=2$ separately if desired).
 

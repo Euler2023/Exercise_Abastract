@@ -187,7 +187,9 @@ SORT file.name ASC
 > where $r \geq 0$ and $a_1 | a_2 | \cdots | a_n$ (invariant factors).
 
 > [!abstract] Spectral Theorem
-> A symmetric (or Hermitian) matrix is orthogonally (or unitarily) diagonalizable.
+> A **real symmetric** matrix is diagonalizable by a real orthogonal change of basis (Artin, Theorem 8.6.10). A complex Hermitian matrix is unitarily diagonalizable with real eigenvalues (Corollary 8.6.7); more generally, a complex normal matrix is unitarily diagonalizable (Theorem 8.6.6).
+>
+> See [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem|the precise statements and complete proof chain]], including the unitary case (Corollary 8.6.8) and the positive-definite hypotheses.
 
 > [!abstract] Symplectic Determinant Theorem
 > Every matrix $P$ satisfying $P^{\mathsf T}JP=J$ has determinant $1$.

@@ -1,0 +1,925 @@
+% !TEX program = xelatex
+% weekly review deck 2026-11-16 to 11-22, self-contained
+\documentclass[aspectratio=169,10pt,fontset=none]{ctexbeamer}
+\usepackage{fontspec}
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\graphicspath{{./}{Attachments/}{../Attachments/}{../../Attachments/}{../../../Attachments/}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+% ---------- 配色（沿用库内讲义配色） ----------
+\definecolor{ink}{HTML}{1F3864}
+\definecolor{accent}{HTML}{C00000}
+\definecolor{gold}{HTML}{BF8F00}
+\definecolor{greenink}{HTML}{2E6B2E}
+\definecolor{paper}{HTML}{F5F7FA}
+
+\usetheme{default}
+\usecolortheme[named=ink]{structure}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{structure}{fg=ink}
+\setbeamercolor{frametitle}{fg=ink}
+\setbeamercolor{block title}{bg=ink!12,fg=ink}
+\setbeamercolor{block body}{bg=ink!4,fg=black}
+\setbeamercolor{block title alerted}{bg=accent!12,fg=accent}
+\setbeamercolor{block body alerted}{bg=accent!4,fg=black}
+\setbeamercolor{block title example}{bg=greenink!14,fg=greenink}
+\setbeamercolor{block body example}{bg=greenink!5,fg=black}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamerfont{footline}{size=\scriptsize}
+\addtobeamertemplate{block begin}{\vspace{-2.5pt}}{}
+\addtobeamertemplate{block end}{}{\vspace{-2.5pt}}
+\addtobeamertemplate{block alerted begin}{\vspace{-2.5pt}}{}
+\addtobeamertemplate{block alerted end}{}{\vspace{-2.5pt}}
+\addtobeamertemplate{block example begin}{\vspace{-2.5pt}}{}
+\addtobeamertemplate{block example end}{}{\vspace{-2.5pt}}
+\setbeamertemplate{frametitle}{\vskip3pt\insertframetitle\par\vskip1.5pt%
+  \textcolor{accent}{\rule{\textwidth}{0.7pt}}\vskip-3pt}
+\setbeamertemplate{footline}{%
+  \hbox to \paperwidth{\hspace{8pt}%
+    \textcolor{ink!55}{本周 Daily Exercise 回顾\ \ ·\ \ 11-16 -- 11-22\ \ ·\ \ 42 题详解版}\hfill
+    \textcolor{ink!55}{\insertframenumber\,/\,\inserttotalframenumber}\hspace{9pt}}\vskip5pt}
+\setbeamersize{text margin left=0.75cm,text margin right=0.75cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\AtBeginDocument{%
+  \setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}%
+  \setlength{\abovedisplayshortskip}{2pt}\setlength{\belowdisplayshortskip}{2pt}}
+
+% 题号标记
+\newcommand{\ex}[1]{\textcolor{accent}{\footnotesize\bfseries #1}}
+\newcommand{\key}[1]{\textcolor{ink}{\bfseries #1}}
+
+\hypersetup{pdftitle={本周 Daily Exercise 回顾（2026-11-16 至 11-22，42 题详解版）},
+  pdfsubject={Artin Algebra 2e, Ch. 3-6 random review and Ch. 8 Sections 4-6: 42 exercises weekly review},
+  pdfauthor={exercise\_abstract}}
+\title{本周 Daily Exercise 回顾（2026-11-16 至 11-22，42 题详解版）}
+\author{exercise\_abstract}
+
+\begin{document}
+% ============================================================ 1 标题页
+\begin{frame}[plain]
+\pdfbookmark[1]{封面}{bm:cover}
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[ink] (current page.north west) rectangle ([yshift=-4.75cm]current page.north east);
+    \node[anchor=north west,text=white,font=\fontsize{25}{29}\selectfont\bfseries]
+      at ([xshift=1.0cm,yshift=-0.92cm]current page.north west) {本周 Daily Exercise 回顾};
+    \node[anchor=north west,text=white!90]
+      at ([xshift=1.02cm,yshift=-2.08cm]current page.north west)
+      {\large 覆盖 2026-11-16 -- 11-22（7 份清单，42 题）\quad·\quad 逐题详解版};
+    \node[anchor=north west,text=white!75]
+      at ([xshift=1.02cm,yshift=-2.86cm]current page.north west)
+      {\small Artin \textit{Algebra} 2e：Ch.~3--6 复习抽查 + Ch.~8 \S4--\S6 系统推进\quad·\quad 线代 41 + 群论 1\quad·\quad 难度 9/22/11};
+    \node[anchor=north east,text=white!60,font=\small]
+      at ([xshift=-1.0cm,yshift=-0.92cm]current page.north east) {exercise\_abstract};
+    \node[anchor=west,text=white!55,font=\tiny]
+      at ([xshift=1.02cm,yshift=-4.45cm]current page.north west)
+      {数据来源：\texttt{10 - Daily Exercise Lists} 的 7 份清单（11-21 由插件「补齐最近一周题单」补生成）；题面取自 42 篇习题笔记并经原书 PDF 核对；数学结论经独立复核与程序验算；快照 2026-11-22};
+  \end{tikzpicture}
+  \vspace*{4.9cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.50\textwidth}
+      \begin{block}{两条主线（本周清单的两区）}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \key{Random Review（21 题，Ch.~3--6 复习抽查）}\\
+                直和判据与子空间计数、外积基与秩一分解、特征多项式与 Jordan 型、矩阵指数与微分系统、$O_n$ 的直积分解、旋转合成的轴、滑移反射共轭类
+          \item \key{Systematic Progress（21 题，Ch.~8 \S4--\S6，LA223--LA243）}\\
+                行列成对操作对角化、正交投影三例、Sylvester 判据与惯性定律、Schwarz 不等式、双重正交补、Householder 反射、酉矩阵谱、对称/正规算子判定
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{这一版的用法与边界}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item 每题：完整题面 → 一句思路 → \textbf{显示中间式的推导} → 具体验算/反例
+          \item 7 份清单齐全（11-21 经插件补齐后生成），共 42 题，互不重复
+          \item 这是\textbf{快照}：题单若之后变化，以库内文件为准
+          \item 计算型结论经 NumPy 独立验算（17 项全部通过）；LA188 的原书印刷问题按字面/意图双读法报告
+          \item 第 \pageref{sec:answers} 页起是 42 题速查表、方法卡、易错点与自测
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 2 本周概览
+\begin{frame}[t]{一、本周概览：7 份题单、42 题、两个独立队列}
+  \label{sec:overview}
+\pdfbookmark[1]{一、本周概览}{bm:sec-overview}
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.12}
+  \begin{tabular}{@{}l l l@{}}
+    \toprule
+    日期 & Random Review（3 题） & Systematic Progress（3 题）\\
+    \midrule
+    11-16（一） & LA94，LA178，LA188 & LA223，LA224，LA225\\
+    11-17（二） & LA143，LA85，LA106 & LA226，LA227，LA228\\
+    11-18（三） & LA162，LA165，LA191 & LA229，LA230，LA231\\
+    11-19（四） & LA147，LA177，G20 & LA232，LA233，LA234\\
+    11-20（五） & LA91，LA81，LA175 & LA235，LA236，LA237\\
+    \rowcolor{ink!7} 11-21（六） & LA131，LA170，LA154 & LA241，LA242，LA243\\
+    \rowcolor{ink!7} 11-22（日） & LA179，LA136，LA126 & LA238，LA239，LA240\\
+    \midrule
+    合计 & \textbf{21} 题（Ch.~3--6） & \textbf{21} 题（Ch.~8 \S4--\S6）\\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.35em}
+  \raggedright
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{exampleblock}{\footnotesize 数据观察}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \textbf{7 天题单齐全}：11-16 至 11-22 每天两区各 3 题；42 题互不重复。11-21 清单原缺失，由用户经插件「补齐最近一周题单」生成后纳入。
+          \item 系统区本周按清单日期呈现 \S4（Ex.~4.14--4.21）$\to$ \S5（Ex.~5.1--5.6）$\to$ \S6（Ex.~6.1--6.7）的推进；随机区为 Ch.~3--6 分层抽查。
+          \item Random 与 Systematic 是两条独立队列；本讲义不改动任何学习状态。
+        \end{itemize}
+      \end{exampleblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 难度、来源与快照}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item 难度分布：beginner 9 / intermediate 22 / advanced 11；题材：线代 41、群论 1（G20）。
+          \item 全部 42 题源自 Artin \textit{Algebra} 2e；本讲义逐帧标注 printed/PDF 页码。
+          \item 快照读取于 2026-11-22；笔记 \texttt{status} 未被本任务改动。
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ Random Review
+\begin{frame}[t]{二、Random Review 逐题详解：LA94}
+\pdfbookmark[1]{二、Random Review}{bm:sec-random}
+  \pdfbookmark[2]{LA94 · Ch.3 §5 Ex.5.3}{bm:la94}
+  \leavevmode\ex{LA94 · Ch.~3 §5 Ex.~5.3 · printed p.~100 / PDF p.~112 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $W_1,\ldots,W_k\le V$ with $V=\sum_iW_i$. Assume $W_1\cap W_2=0$, $(W_1+W_2)\cap W_3=0$, \ldots, $(W_1+\cdots+W_{k-1})\cap W_k=0$. Prove $V=W_1\oplus\cdots\oplus W_k$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：逐项“剥掉最后一个”证明表示唯一}
+    \scriptsize
+    设 $w_1+\cdots+w_k=0$（$w_i\in W_i$）。则
+    $$w_k=-(w_1+\cdots+w_{k-1})\in W_k\cap(W_1+\cdots+W_{k-1}),$$
+    由假设 $w_k=0$。对 $k-1,k-2,\ldots,2$ 重复同一论证得每个 $w_i=0$，故零向量表示唯一，和为直和；又已设普通和等于 $V$，故 $V=W_1\oplus\cdots\oplus W_k$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算与边界}
+    \scriptsize 条件是「逐前缀交为零」，弱于两两交为零的说法（$k\ge3$ 时两两交为零不保证总直和的递推使用）；也不能只检查最后一个前缀交。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA178 与 LA126（两道特征向量小题）}
+  \pdfbookmark[2]{LA178 · Ch.5 §4 Ex.4.3}{bm:la178}
+  \pdfbookmark[2]{LA126 · Ch.4 §5 Ex.5.3}{bm:la126}
+  \leavevmode\ex{LA178 · Ch.~5 §4 Ex.~4.3 · printed p.~152 / PDF p.~164 · beginner}\quad
+  \ex{LA126 · Ch.~4 §5 Ex.~5.3 · printed p.~127 / PDF p.~139 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA178：}$AX=\lambda X$：(a)~若 $A$ 可逆，证明 $X$ 是 $A^{-1}$ 的特征向量，特征值 $\lambda^{-1}$；(b)~证明 $X$ 是 $e^A$ 的特征向量，特征值 $e^\lambda$。\\
+    \textbf{LA126：}若 (a)~$T^r=I$ 或 (b)~$T^2-5T+6I=0$，$T$ 可能有哪些复特征值？
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA178(a)：}$AX=\lambda X,\ X\ne0$ 且 $A$ 可逆 $\Rightarrow\lambda\ne0$；左乘 $A^{-1}$ 得 $A^{-1}X=\lambda^{-1}X$。\\
+    \textbf{LA178(b)：}$A^kX=\lambda^kX$ 对一切 $k\ge0$，指数级数逐项作用：
+    $$e^AX=\sum_{k\ge0}\frac{A^kX}{k!}=\Big(\sum_{k\ge0}\frac{\lambda^k}{k!}\Big)X=e^\lambda X.\ \square$$
+    \textbf{LA126：}把算子恒等式作用到特征向量 $v\ne0$ 上：(a) $(\lambda^r-1)v=0\Rightarrow\lambda$ 是 $r$ 次单位根；(b) $(\lambda-2)(\lambda-3)v=0\Rightarrow\lambda\in\{2,3\}$。反之这些值都可实现（取对角阵）。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）}
+    \scriptsize LA178：$A=\bigl(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\bigr)$ 特征值 $1,3$；矩阵指数（scaling--squaring）的特征值为 $e,e^3$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA188}
+  \pdfbookmark[2]{LA188 · Ch.5 M.5}{bm:la188}
+  \leavevmode\ex{LA188 · Ch.~5 Misc.\ M.5 · printed pp.~152--153 / PDF pp.~164--165 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Fibonacci 数满足 $f_n=f_{n-1}+f_{n-2}$，$f_0=0$，$f_1=1$。(a)~证明 $f_n=\frac1\alpha\big[\big(\tfrac{1+\alpha}2\big)-\big(\tfrac{1-\alpha}2\big)^2\big]$，$\alpha=\sqrt5$。(b)~若 $a_n=\frac12(a_{n-1}+a_{n-2})$，用 $a_0,a_1$ 表示 $\lim a_n$。
+  \end{block}
+  \begin{alertblock}{\footnotesize Source issue：印刷公式右端与 $n$ 无关}
+    \scriptsize 字面公式的右端不含 $n$，不可能对一切 $n$ 等于 $f_n$。原书意图几乎必然是 Binet 公式 $f_n=\frac1\alpha\big[\big(\tfrac{1+\alpha}2\big)^n-\big(\tfrac{1-\alpha}2\big)^n\big]$（首个指数被吞、第二个印成 $2$）。按惯例双读法报告，不静默改题；下面按修正版求解。
+  \end{alertblock}
+  \begin{exampleblock}{\footnotesize 推导：特征方程法}
+    \scriptsize
+    (a) 特征方程 $r^2=r+1$ 的根 $\phi=\tfrac{1+\sqrt5}2,\ \psi=\tfrac{1-\sqrt5}2$，故 $f_n=C\phi^n+D\psi^n$；由 $f_0=0,f_1=1$ 得 $C=-D=\tfrac1{\sqrt5}$，即 Binet 公式。\\
+    (b) 特征方程 $r^2=\tfrac12(r+1)$，根 $1$ 与 $-\tfrac12$，故 $a_n=C+D(-\tfrac12)^n$；由 $a_0=C+D,\ a_1=C-\tfrac D2$ 解得
+    $$C=\frac{a_0+2a_1}{3},\qquad \lim_{n\to\infty}a_n=\frac{a_0+2a_1}{3}.\ \square$$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）}
+    \scriptsize 程序核对 $n\le11$ 的 Binet 公式误差 $<10^{-9}$；$(a_0,a_1)=(1,2),(3,-1),(0,5)$ 迭代 60 步后极限均为 $(a_0+2a_1)/3$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA143 与 LA85}
+  \pdfbookmark[2]{LA143 · Ch.4 §6 Ex.6.10}{bm:la143}
+  \pdfbookmark[2]{LA85 · Ch.3 §3 Ex.3.7}{bm:la85}
+  \leavevmode\ex{LA143 · Ch.~4 §6 Ex.~6.10 · printed p.~129 / PDF p.~141 · intermediate}\quad
+  \ex{LA85 · Ch.~3 §3 Ex.~3.7 · printed p.~100 / PDF p.~112 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA143：}For $M=\mathrm{diag}(A,D)$, prove $M$ diagonalizable $\iff$ $A,D$ diagonalizable.\\
+    \textbf{LA85：}Do the $mn$ matrices $X_iY_j^t$ form a basis of $\mathbb R^{m\times n}$ when the $X_i$, $Y_j$ are bases?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA143（$\Leftarrow$ 合并特征基；$\Rightarrow$ 最小多项式）：}若 $A,D$ 各有特征基，其并集是 $M$ 在直和空间上的特征基。反之，两个坐标和都是 $M$-不变子空间且限制分别为 $A,D$；可对角化 $\iff$ 最小多项式无重根，而限制的最小多项式整除整体的最小多项式，故也无重根，各限制可对角化。（外部标准输入：无重根判据。）$\square$\\[2pt]
+    \textbf{LA85（可逆线性替换）：}设 $P=(X_1\cdots X_m)$、$Q=(Y_1\cdots Y_n)$ 可逆，则 $X_iY_j^t=P(e_ie_j^t)Q^t$；映射 $T(A)=PAQ^t$ 是 $\mathbb R^{m\times n}$ 的可逆线性自同构，把矩阵单位基 $\{e_ie_j^t\}$（$mn$ 个）映为 $\{X_iY_j^t\}$，故后者也是基。答案：是。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 边界}
+    \scriptsize LA143 的逆方向也可用谱投影多项式限制到各坐标和；LA85 关键在于左右同时换基保持可逆性。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA106 与 LA81}
+  \pdfbookmark[2]{LA106 · Ch.4 §1 Ex.1.4}{bm:la106}
+  \pdfbookmark[2]{LA81 · Ch.3 §3 Ex.3.3}{bm:la81}
+  \leavevmode\ex{LA106 · Ch.~4 §1 Ex.~1.4 · printed p.~125 / PDF p.~137 · intermediate}\quad
+  \ex{LA81 · Ch.~3 §3 Ex.~3.3 · printed p.~99 / PDF p.~111 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA106：}Prove every rank-1 $m\times n$ matrix has the form $A=XY^t$. How uniquely determined are $X,Y$?\\
+    \textbf{LA81：}Prove that $x^2$, $\cos x$, $e^x$ are linearly independent.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA106：}取 $A$ 的一个非零列 $X$。秩 1 使每列都是一维列空间的倍数：第 $j$ 列 $=y_jX$（$y_j$ 唯一）。令 $Y=(y_1,\ldots,y_n)^t$，则 $XY^t$ 的第 $j$ 列恰为 $y_jX$，故 $A=XY^t$。唯一性：若又有 $A=X'Y'^t$（四向量非零），则 $X'=cX$（$c\ne0$ 唯一），比较得 $Y'=c^{-1}Y$——reciprocal 缩放是唯一自由度。$\square$\\[2pt]
+    \textbf{LA81（在 $0$ 点取值与导数）：}设 $ax^2+b\cos x+ce^x\equiv0$。取 $x=0$ 得 $b+c=0$；求导再取 $x=0$ 得 $c=0\Rightarrow b=0$；于是 $ax^2\equiv0\Rightarrow a=0$。仅零组合。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 备注}
+    \scriptsize LA81 也可用 Wronskian 或渐近行为；求值--求导法最快。LA106 与 LA85 呼应：秩一矩阵恰是基外积的标量倍。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA162}
+  \pdfbookmark[2]{LA162 · Ch.4 M.9}{bm:la162}
+  \leavevmode\ex{LA162 · Ch.~4 Misc.\ M.9 · printed p.~131 / PDF p.~143 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $K=\ker T$, $W=\operatorname{im}T$. (a)~$T$ is a projection onto $W$ ($T^2=T$) iff $T|_W=I_W$; (b)~if $T$ is a projection, prove $V=W\oplus K$; (c)~prove $\operatorname{tr}T=\operatorname{rank}T$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：分解 $v=Tv+(v-Tv)$；取适配基}
+    \scriptsize
+    \textbf{(a)} 若 $T^2=T$，则对任意 $w=Tv\in W$ 有 $Tw=T^2v=Tv=w$。反之若 $T$ 在 $W$ 上为恒等，则 $T^2v=T(Tv)=Tv$。\\
+    \textbf{(b)} 每个 $v=Tv+(v-Tv)$，前者 $\in W$，后者满足 $T(v-Tv)=Tv-T^2v=0$ 即 $\in K$；若 $x\in W\cap K$，则 $x=Tx=0$。故 $V=W\oplus K$。\\
+    \textbf{(c)} 取 $W$ 与 $K$ 的基合并，$T$ 的矩阵为 $\operatorname{diag}(I_r,0)$，$r=\dim W=\operatorname{rank}T$，迹 $=r$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）}
+    \scriptsize 随机秩 2 的 $4\times4$ 对称幂等矩阵：$\operatorname{tr}=\operatorname{rank}=2$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA165}
+  \pdfbookmark[2]{LA165 · Ch.5 §1 Ex.1.3}{bm:la165}
+  \leavevmode\ex{LA165 · Ch.~5 §1 Ex.~1.3 · printed p.~150 / PDF p.~162 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Is $O_n$ isomorphic to the product group $SO_n\times\{\pm I\}$?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：比较 $\det(-I)=(-1)^n$；偶维时比较中心}
+    \scriptsize
+    \textbf{$n$ 奇：}$-I$ 的行列式为 $-1$，每个 $Q\in O_n$ 唯一写成 $S$ 或 $-S$（$S\in SO_n$）。$-I$ 居中心，故
+    $$SO_n\times\{\pm I\}\to O_n,\qquad (S,\varepsilon I)\mapsto\varepsilon S$$
+    是群同构。答案：是（含 $n=1$）。\\[2pt]
+    \textbf{$n$ 偶：}$-I\in SO_n$，上述映射不再单射，且两群并非抽象同构：$n=2$ 时 $SO_2\times C_2$ 交换而 $O_2$ 不交换；偶 $n\ge4$ 时 $Z(O_n)=\{\pm I\}$ 只有 2 元，而 $Z(SO_n\times C_2)\supseteq\{\pm I\}\times C_2$ 至少 4 元。答案：否。
+  \end{exampleblock}
+  \begin{block}{\footnotesize 外部输入与边界}
+    \scriptsize 中心计算 $Z(O_n)=\{\pm I\}$（$n\ge2$）为外部标准事实（可用坐标反射与置换交换性证）。结论：分解恰在 $n$ 奇时成立。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA191}
+  \pdfbookmark[2]{LA191 · Ch.5 M.8}{bm:la191}
+  \leavevmode\ex{LA191 · Ch.~5 Misc.\ M.8 · printed p.~153 / PDF p.~165 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Find a geometric way to determine the axis of rotation for the composition of two three-dimensional rotations.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：每个旋转 = 过其轴两平面反射之积；选一个公共反射面}
+    \scriptsize
+    设两轴为过原点的直线 $\ell_1,\ell_2$，取包含二者的平面 $\Pi$（两轴重合时另议）。绕轴旋转等于过该轴两平面反射之积，转角为两面夹角的两倍。选 $\Pi_1\supset\ell_1$、$\Pi_2\supset\ell_2$ 使
+    $$R_1=s_\Pi s_{\Pi_1},\qquad R_2=s_{\Pi_2}s_\Pi,$$
+    则公共反射相消：
+    $$R_2R_1=s_{\Pi_2}s_\Pi s_\Pi s_{\Pi_1}=s_{\Pi_2}s_{\Pi_1}.$$
+    两平面反射之积是绕其交线的旋转，故\textbf{合成轴 $=\Pi_1\cap\Pi_2$}。若 $\Pi_1=\Pi_2$ 合成为恒等，轴不定。该几何作图与代数求 $\ker(R_2R_1-I)$ 一致。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 备注}
+    \scriptsize 与上周 LA167 互补：那里从矩阵元素读出单次旋转的轴，这里给出合成旋转轴的尺规式构造。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA147 与 LA136}
+  \pdfbookmark[2]{LA147 · Ch.4 §7 Ex.7.3}{bm:la147}
+  \pdfbookmark[2]{LA136 · Ch.4 §6 Ex.6.3}{bm:la136}
+  \leavevmode\ex{LA147 · Ch.~4 §7 Ex.~7.3 · printed p.~129 / PDF p.~141 · advanced}\quad
+  \ex{LA136 · Ch.~4 §6 Ex.~6.3 · printed p.~128 / PDF p.~140 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA147：}$\dim V=5$，$p_T(t)=(t-\lambda)^5$，$\operatorname{rank}(T-\lambda I)=2$：可能的 Jordan 型？\\
+    \textbf{LA136：}若 $T$ 有两个线性无关的特征向量同属特征值 $\lambda$，证明 $\lambda$ 是特征多项式的重根。
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA147：}幂零情形 $\operatorname{rank}=\sum(s_i-1)=5-(\text{块数})$，秩 2 $\Rightarrow$ 3 块。5 的三部分分拆：$3+1+1$ 与 $2+2+1$：
+    $$J_3(\lambda)\oplus[\lambda]\oplus[\lambda],\qquad J_2(\lambda)\oplus J_2(\lambda)\oplus[\lambda].\ \square$$
+    \textbf{LA136：}以两特征向量开头扩充基，矩阵呈块上三角 $\bigl(\begin{smallmatrix}\lambda I_2&*\\0&C\end{smallmatrix}\bigr)$，故
+    $$p_T(t)=(t-\lambda)^2\det(tI-C),$$
+    $\lambda$ 至少为二重根。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过 LA147）}
+    \scriptsize 两个分拆的 $T-\lambda I$ 秩均为 2。LA136 是 LA149（上周）的定量加强：几何重数 $\le$ 代数重数。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA177 与 LA175}
+  \pdfbookmark[2]{LA177 · Ch.5 §4 Ex.4.2}{bm:la177}
+  \pdfbookmark[2]{LA175 · Ch.5 §3 Ex.3.4}{bm:la175}
+  \leavevmode\ex{LA177 · Ch.~5 §4 Ex.~4.2 · printed p.~152 / PDF p.~164 · beginner}\quad
+  \ex{LA175 · Ch.~5 §3 Ex.~3.4 · printed p.~151 / PDF p.~163 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA177：}Prove $e^{\operatorname{tr}A}=\det(e^A)$.\\
+    \textbf{LA175：}Solve $X'=AX+B$ ($A$ invertible, constant) in terms of solutions of $X'=AX$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA177（上三角化）：}取 $P$ 使 $T=P^{-1}AP$ 上三角，对角元 $\lambda_j$。级数与相似交换：$e^T=P^{-1}e^AP$；$e^T$ 上三角、对角元 $e^{\lambda_j}$，故
+    $$\det(e^A)=\det(e^T)=\prod_je^{\lambda_j}=e^{\sum_j\lambda_j}=e^{\operatorname{tr}A}.$$
+    实矩阵视为复矩阵即可。$\square$\\[2pt]
+    \textbf{LA175（常数特解）：}$X_p=-A^{-1}B$ 满足 $AX_p+B=0$。若 $Y'=AY$ 则 $X=Y-A^{-1}B$ 解原方程；反之任何解 $X$ 给出 $Y=X+A^{-1}B$。配初值 $X(0)=X_0$：
+    $$X(t)=e^{tA}(X_0+A^{-1}B)-A^{-1}B.\ \square$$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过 LA177）}
+    \scriptsize 矩阵指数（scaling--squaring）验证 $\det(e^A)=e^{\operatorname{tr}A}$，含特征值 $\pm i$ 的样本。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：G20}
+  \pdfbookmark[2]{G20 · Ch.6 §3 Ex.3.4}{bm:g20}
+  \leavevmode\ex{G20 · Ch.~6 §3 Ex.~3.4 · printed p.~188 / PDF p.~200 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Prove that a conjugate in the plane isometry group $M$ of a glide reflection is again a glide reflection, and that the two glide vectors have the same length.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：$m=t_vr_\ell$，共轭分别作用于平移与反射因子}
+    \scriptsize
+    写滑移反射为 $m=t_vr_\ell$（$v\ne0$ 平行于滑移线 $\ell$），任取 $g=t_aq\in M$（$q\in O_2$ 为正交部分）。共轭分配到乘积上：
+    $$gmg^{-1}=(gt_vg^{-1})(gr_\ell g^{-1}).$$
+    直接计算：$gt_vg^{-1}=t_{q(v)}$（$g$ 与 $g^{-1}$ 中的平移相消，只余 $q$ 作用在 $v$ 上）；而 $gr_\ell g^{-1}$ 是关于像直线 $g(\ell)$ 的反射（固定 $g(\ell)$ 每点、交换两侧）。由 $v\parallel\ell$ 得 $q(v)\parallel g(\ell)$ 且非零，故
+    $$gmg^{-1}=t_{q(v)}r_{g(\ell)}$$
+    是滑移反射，滑移向量 $q(v)$；正交算子保长，$\lVert q(v)\rVert=\lVert v\rVert$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 备注}
+    \scriptsize 共轭 = 换坐标：滑移线随几何移动，滑移向量只被正交部分作用。这是壁纸群分类中「滑移反射构成共轭不变类」的代数根据。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA91}
+  \pdfbookmark[2]{LA91 · Ch.3 §4 Ex.4.5}{bm:la91}
+  \leavevmode\ex{LA91 · Ch.~3 §4 Ex.~4.5 · printed p.~100 / PDF p.~112 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize How many subspaces of each dimension are there in (a)~$\mathbb F_p^3$ and (b)~$\mathbb F_p^4$?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：数有序无关组，除以 $\mathbb F_p^k$ 的有序基个数（Gauss 二项式）}
+    \scriptsize
+    $k$ 维子空间个数为 Gauss 二项式系数
+    $${n\brack k}_p=\prod_{i=0}^{k-1}\frac{p^n-p^i}{p^k-p^i}.$$
+    $n=3$：维数 $0,1,2,3$ 的个数
+    $$1,\qquad p^2+p+1,\qquad p^2+p+1,\qquad1$$
+    （$k$ 与 $n-k$ 对称）。$n=4$：维数 $0,1,2,3,4$
+    $$1,\quad p^3+p^2+p+1,\quad(p^2+1)(p^2+p+1),\quad p^3+p^2+p+1,\quad1.\ \square$$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（暴力枚举通过）}
+    \scriptsize $p=2,3$ 时枚举 $\mathbb F_p^3$ 全部行空间（RREF 规范型）：维数 1 的子空间 $7,13$ 个、维数 2 的 $7,13$ 个，与公式 $p^2+p+1$ 一致。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA131 与 LA154}
+  \pdfbookmark[2]{LA131 · Ch.4 §5 Ex.5.8}{bm:la131}
+  \pdfbookmark[2]{LA154 · Ch.4 M.1}{bm:la154}
+  \leavevmode\ex{LA131 · Ch.~4 §5 Ex.~5.8 · printed p.~128 / PDF p.~140 · intermediate}\quad
+  \ex{LA154 · Ch.~4 Misc.\ M.1 · printed p.~130 / PDF p.~142 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA131：}$A=(a_{ij})$ 为 $3\times3$：证明特征多项式的 $t$ 系数 $=$ 三个对称 $2\times2$ 主子式之和。\\
+    \textbf{LA154：}行向量 $v$ 的全部 $n!$ 个置换排成 $n!\times n$ 矩阵 $M$：可能的秩？
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA131：}展开 $\det(tI-A)$，取 $t$ 恰一次的项：从对角位置 $3,2,1$ 之一取 $t$，余下因子分别恰为主子式 $\det A_{\{1,2\}},\det A_{\{1,3\}},\det A_{\{2,3\}}$，符号均为正。$\square$\\[2pt]
+    \textbf{LA154：}记 $s=\sum a_i$。$v=0$：秩 $0$；$v$ 非零常向量：各行相同，秩 $1$。$v$ 非常：对 $a_i\ne a_j$，把相差一个对换的两行相减得 $e_i-e_j$ 的倍数，再置换得整个零和超平面 $H$；若 $s=0$ 行全在 $H$，秩 $n-1$；若 $s\ne0$，全行平均产生非常向量，与 $H$ 合成满秩。可能秩 $\{0,1,n-1,n\}$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）}
+    \scriptsize LA131：随机整数矩阵 3 组，$t$ 系数 $=$ 主子式之和（误差 $<10^{-8}$）。LA154：$n=3$ 四类向量 $(0,0,0),(2,2,2),(1,-1,0),(1,2,3)$ 秩为 $0,1,2,3$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA170}
+  \pdfbookmark[2]{LA170 · Ch.5 §2 Ex.2.3}{bm:la170}
+  \leavevmode\ex{LA170 · Ch.~5 §2 Ex.~2.3 · printed p.~151 / PDF p.~163 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $T(M)=AM-MA$ on $\mathbb C^{n\times n}$. (a)~Prove $\operatorname{rank}T\le n^2-n$. (b)~Determine the eigenvalues of $T$ in terms of the eigenvalues $\lambda_1,\ldots,\lambda_n$ of $A$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：(a) Jordan 型块内多项式给核；(b) 三角化后在矩阵单位基上看对角}
+    \scriptsize
+    \textbf{(a)} 相似 $A\mapsto P^{-1}AP$ 诱导 $T$ 的相似，故可设 $A$ 为 Jordan 型。对每个块 $J_r(\lambda)=\lambda I+N$，把 $I,N,\ldots,N^{r-1}$ 放进该块、其余块取零的矩阵与 $A$ 交换且线性无关；各块合计 $n$ 个 $\ker T$ 中无关向量，故 $\operatorname{rank}T=n^2-\dim\ker T\le n^2-n$。\\
+    \textbf{(b)} 三角化 $A$（对角元 $\lambda_1,\ldots,\lambda_n$）。在适当的矩阵单位排序下 $T$ 三角，对角元为
+    $$\lambda_i-\lambda_j\qquad(1\le i,j\le n),$$
+    这 $n^2$ 个差（计代数重数）即 $T$ 的全部特征值。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）与对比}
+    \scriptsize 样本 $A=\bigl(\begin{smallmatrix}2&1&0\\0&2&1\\0&0&3\end{smallmatrix}\bigr)$：$T$ 的 9 个特征值恰为 $\{\lambda_i-\lambda_j\}$。与 LA115 对照：那里只证 $T$ 奇异，这里给出核维下界与全谱。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{二、Random Review：LA179}
+  \pdfbookmark[2]{LA179 · Ch.5 §4 Ex.4.4}{bm:la179}
+  \leavevmode\ex{LA179 · Ch.~5 §4 Ex.~4.4 · printed p.~152 / PDF p.~164 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $AB=BA$. Expand $e^{A+B}$ and $e^Ae^B$ into double sums of multiples of $A^iB^j$ and prove the two sums are the same.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：交换性 $\Rightarrow$ 二项式定理，再按 $i,j$ 重新组合}
+    \scriptsize
+    由 $AB=BA$，
+    $$(A+B)^k=\sum_{i=0}^k\binom kiA^iB^{k-i}.$$
+    代入指数级数并令 $j=k-i$：
+    $$e^{A+B}=\sum_{k\ge0}\sum_{i=0}^k\frac{A^iB^{k-i}}{i!(k-i)!}=\sum_{i,j\ge0}\frac{A^iB^j}{i!\,j!}.$$
+    另一方面逐项相乘：$e^Ae^B=\big(\sum_{i\ge0}\tfrac{A^i}{i!}\big)\big(\sum_{j\ge0}\tfrac{B^j}{j!}\big)=\sum_{i,j\ge0}\tfrac{A^iB^j}{i!\,j!}$。
+    重排由任意矩阵范数下的绝对收敛保证。故 $e^{A+B}=e^Ae^B$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 边界}
+    \scriptsize 交换性不可去：不交换时可差一个交换子修正。与 LA177、LA178 同属矩阵指数工具箱。
+  \end{block}
+\end{frame}
+
+% ============================================================ Systematic Progress
+\begin{frame}[t]{三、Systematic Progress 逐题详解：LA223}
+\pdfbookmark[1]{三、Systematic Progress}{bm:sec-systematic}
+  \pdfbookmark[2]{LA223 · Ch.8 §4 Ex.4.14}{bm:la223}
+  \leavevmode\ex{LA223 · Ch.~8 §4 Ex.~4.14 · printed p.~255 / PDF p.~267 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Prove by row and column operations: if $A$ is real symmetric, there is invertible $P$ with $P^{\mathsf T}AP$ diagonal.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：每列操作配同款行操作（保对称与合同）；对角全零时先造非零对角}
+    \scriptsize
+    对 $n$ 归纳。若某对角元非零，同步换行列放到 $(1,1)$。对每个 $j>1$ 做成对操作
+    $$C_j\leftarrow C_j-\frac{a_{1j}}{a_{11}}C_1,\qquad R_j\leftarrow R_j-\frac{a_{1j}}{a_{11}}R_1,$$
+    即以初等矩阵 $E$ 把 $A$ 换成 $E^{\mathsf T}AE$，清空第一行列得 $\mathrm{diag}(a_{11},A_1)$，$A_1$ 对称，归纳。\\
+    若对角全零但 $A\ne0$：取 $a_{ij}\ne0$，把 $e_i$ 换成 $e_i+e_j$（$C_j$ 加到 $C_i$、$R_j$ 加到 $R_i$），新 $(i,i)$ 元为
+    $$a_{ii}+2a_{ij}+a_{jj}=2a_{ij}\ne0,$$
+    化归前一种情形。全部初等矩阵之积即所求 $P$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 边界}
+    \scriptsize 行列必须成对操作（普通行变换不代表型的换基）；造 $2a_{ij}$ 用到 $\operatorname{char}F\ne2$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA224 与 LA225}
+  \pdfbookmark[2]{LA224 · Ch.8 §4 Ex.4.15}{bm:la224}
+  \pdfbookmark[2]{LA225 · Ch.8 §4 Ex.4.16}{bm:la225}
+  \leavevmode\ex{LA224 · Ch.~8 §4 Ex.~4.15 · printed p.~255 / PDF p.~267 · intermediate}\quad
+  \ex{LA225 · Ch.~8 §4 Ex.~4.16 · printed p.~255 / PDF p.~267 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA224：}Project $(1,0,0)^{\mathsf T}$ orthogonally to $W=\operatorname{span}\{(1,1,0)^{\mathsf T},(0,1,1)^{\mathsf T}\}$.\\
+    \textbf{LA225：}With $(A,B)=\operatorname{trace}(A^{\mathsf T}B)$ on $3\times3$ matrices, project $M=\bigl(\begin{smallmatrix}1&2&0\\0&0&1\\1&3&0\end{smallmatrix}\bigr)$ to the skew-symmetric subspace.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA224（法方程）：}设 $\pi_W(x)=cu+dv$，残差正交于 $u,v$ 给 $\bigl(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\bigr)\binom cd=\binom10$，解得 $c=\tfrac23,d=-\tfrac13$：
+    $$\pi_W(x)=\tfrac23u-\tfrac13v=\bigl(\tfrac23,\tfrac13,-\tfrac13\bigr)^{\mathsf T}.\ \square$$
+    \textbf{LA225（对称/反对称正交分解）：}$M=\tfrac{M+M^{\mathsf T}}2+\tfrac{M-M^{\mathsf T}}2$；若 $S^{\mathsf T}=S,\ K^{\mathsf T}=-K$，则 $\operatorname{trace}(S^{\mathsf T}K)=\operatorname{trace}(SK)=-\operatorname{trace}(SK)=0$，两子空间 Frobenius 正交，故
+    $$\pi_W(M)=\frac{M-M^{\mathsf T}}2=\begin{pmatrix}0&1&-\tfrac12\\-1&0&-1\\\tfrac12&1&0\end{pmatrix}.\ \square$$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）与提醒}
+    \scriptsize 程序验证两答案。LA224 两生成向量\textbf{不}正交，不能分别套单向量投影公式；对称侧投影为 $\tfrac{M+M^{\mathsf T}}2$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA226 与 LA227}
+  \pdfbookmark[2]{LA226 · Ch.8 §4 Ex.4.17}{bm:la226}
+  \pdfbookmark[2]{LA227 · Ch.8 §4 Ex.4.18}{bm:la227}
+  \leavevmode\ex{LA226 · Ch.~8 §4 Ex.~4.17 · printed p.~255 / PDF p.~267 · intermediate}\quad
+  \ex{LA227 · Ch.~8 §4 Ex.~4.18 · printed p.~255 / PDF p.~267 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA226：}Compute coordinates of $(x_1,x_2,x_3)^{\mathsf T}$ in the basis $\mathcal B$ of Example 8.4.14 and compare with the projection formula.\\
+    \textbf{LA227：}Find a projection $\pi:\mathbb R^3\to\mathbb R^2$ whose images of the standard basis form an equilateral triangle, with $\pi(e_1)$ along the $x$-axis.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA226：}Example 8.4.14 的正交基 $v_1=(1,1,1)^t,v_2=(1,-1,0)^t,v_3=(1,1,-2)^t$，平方长度 $3,2,6$。求逆矩阵得
+    $$[X]_{\mathcal B}=B^{-1}X=\Big(\tfrac{x_1+x_2+x_3}3,\ \tfrac{x_1-x_2}2,\ \tfrac{x_1+x_2-2x_3}6\Big)^{\mathsf T},$$
+    与投影公式 $c_i=\tfrac{v_i\cdot X}{v_i\cdot v_i}$ 逐项一致。$\square$\\[2pt]
+    \textbf{LA227：}取等长三向量互成 $120^\circ$、第一个沿 $x$ 轴，两行取正交归一：
+    $$\pi=\begin{pmatrix}\sqrt{2/3}&-1/\sqrt6&-1/\sqrt6\\[1pt]0&1/\sqrt2&-1/\sqrt2\end{pmatrix},\qquad \pi\pi^{\mathsf T}=I_2,$$
+    三列两两距离平方全为 $2$（等边三角形），核为 $\operatorname{span}(1,1,1)^{\mathsf T}$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过）}
+    \scriptsize 程序验证 $B^{-1}$、$\pi\pi^{\mathsf T}=I_2$ 与三个距离平方 $=2$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA228}
+  \pdfbookmark[2]{LA228 · Ch.8 §4 Ex.4.19}{bm:la228}
+  \leavevmode\ex{LA228 · Ch.~8 §4 Ex.~4.19 · printed p.~255 / PDF p.~267 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize For the orthogonal projection $\pi$ of $\mathbb R^3$ onto a plane $W$ with orthonormal basis, let $(a_i,b_i)^{\mathsf T}$ be the coordinates of $\pi(e_i)$. Prove $(a_1,a_2,a_3)$ and $(b_1,b_2,b_3)$ are orthogonal unit vectors.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：$\pi(e_i)$ 的坐标就是基向量与 $e_i$ 的内积}
+    \scriptsize
+    设 $(w_1,w_2)$ 为 $W$ 的正交归一基。投影公式给
+    $$\pi(e_i)=(w_1\cdot e_i)\,w_1+(w_2\cdot e_i)\,w_2,\qquad\text{即}\qquad a_i=w_1\cdot e_i,\quad b_i=w_2\cdot e_i.$$
+    由于 $(e_1,e_2,e_3)$ 是标准正交基，行向量 $a=(a_1,a_2,a_3)$、$b=(b_1,b_2,b_3)$ 恰是 $w_1,w_2$ 的标准坐标，故
+    $$a\cdot a=w_1\cdot w_1=1,\qquad b\cdot b=w_2\cdot w_2=1,\qquad a\cdot b=w_1\cdot w_2=0.\ \square$$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 矩阵语言}
+    \scriptsize 投影的坐标矩阵 $Q\in M_{2\times3}$ 满足 $QQ^{\mathsf T}=I_2$——正是 LA227 中两行正交归一的一般根据。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA229}
+  \pdfbookmark[2]{LA229 · Ch.8 §4 Ex.4.20}{bm:la229}
+  \leavevmode\ex{LA229 · Ch.~8 §4 Ex.~4.20 · printed p.~256 / PDF p.~268 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Prove the criterion of Theorem 8.4.19: a real symmetric $A$ is positive definite iff all leading principal minors are positive. Does it carry over to Hermitian matrices?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：对坐标标志做不归一化的 Gram--Schmidt，主子式 $=$ 对角元累乘}
+    \scriptsize
+    设 $\Delta_k=\det A_k$（$k$ 阶顺序主子式，$\Delta_0=1$）。\\
+    \textbf{必要性：}$A>0$ 限制到 $V_k=\operatorname{span}(e_1,\ldots,e_k)$ 仍正定，取正交基合同于 $I_k$，$\Delta_k=(\det P_k)^{-2}>0$。\\
+    \textbf{充分性：}对 $e_1,\ldots,e_n$ 逐个正交化（不归一化），得 $u_k\in V_k$、单位上三角换基阵，记 $d_k=(u_k,u_k)$。在每个 $V_k$ 上合同于 $\operatorname{diag}(d_1,\ldots,d_k)$ 且换基行列式为 1，故
+    $$\Delta_k=d_1d_2\cdots d_k\ \Longrightarrow\ d_k=\frac{\Delta_k}{\Delta_{k-1}}>0.$$
+    正交基下型为 $\sum_kd_kx_k^2$，全 $d_k>0$，正定。$\square$\\
+    \textbf{Hermite 推广：}同一论证用 $P^*AP$，行列式变化 $|\det P|^2>0$，且 Hermite 阵主子式全为实数——判据原样成立。
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算与边界}
+    \scriptsize NumPy：正定样本 $\bigl(\begin{smallmatrix}2&1&0\\1&2&1\\0&1&2\end{smallmatrix}\bigr)$ 顺序主子式全正；$\bigl(\begin{smallmatrix}1&2\\2&1\end{smallmatrix}\bigr)$ 不定，$\Delta_2=-3<0$。注意是\textbf{顺序}主子式，不是任意主子式。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA230}
+  \pdfbookmark[2]{LA230 · Ch.8 §4 Ex.4.21}{bm:la230}
+  \leavevmode\ex{LA230 · Ch.~8 §4 Ex.~4.21 · printed p.~256 / PDF p.~268 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Prove Sylvester's Law of Inertia (see 8.4.17). \textbf{Hint from source:} if the form is positive definite on $W_1$ and negative semidefinite on $W_2$, then $W_1,W_2$ are independent.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：正定 vs 半负定子空间无关；两对角化比较正/负子空间维数}
+    \scriptsize
+    \textbf{预备：}若型在 $W_1$ 正定、在 $W_2$ 半负定，则 $W_1\cap W_2=\{0\}$（非零交向量将同时有 $(x,x)>0$ 与 $\le0$），故 $\dim W_1+\dim W_2\le\dim V$。\\
+    设两个正交基分别给出 $V=P\oplus N\oplus Z=P'\oplus N'\oplus Z'$（正/负/零空间，维数 $(p,m,z)$、$(p',m',z')$）。型在 $N'\oplus Z'$ 半负定，用于 $P$：
+    $$p+(m'+z')\le n\ \Longrightarrow\ p\le p';$$
+    交换两分解得 $p'\le p$，故 $p=p'$。同理用 $P'\oplus Z'$（半正定）对 $N$ 比较得 $m=m'$，进而 $z=n-p-m=z'$。正、负、零对角元个数与基无关；非退化时符号差 $(p,m)$ 良定。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 定位}
+    \scriptsize 这是上周 LA221「迹型符号差 $(\tfrac{n(n+1)}2,\tfrac{n(n-1)}2)$」良定性的理论根据；速查表中各符号差均由此不变性背书。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA231}
+  \pdfbookmark[2]{LA231 · Ch.8 §5 Ex.5.1}{bm:la231}
+  \leavevmode\ex{LA231 · Ch.~8 §5 Ex.~5.1 · printed p.~256 / PDF p.~268 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $V$ be Euclidean. (a)~Prove the Schwarz inequality $|(v,w)|\le|v||w|$; (b)~the parallelogram law $|v+w|^2+|v-w|^2=2|v|^2+2|w|^2$; (c)~if $|v|=|w|$ then $(v+w)\perp(v-w)$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：配平方非负；展开；直接内积}
+    \scriptsize
+    \textbf{(a)} $w=0$ 平凡；否则取 $c=\tfrac{(w,v)}{|w|^2}$，则
+    $$0\le|v-cw|^2=|v|^2-\frac{(v,w)^2}{|w|^2}\ \Longrightarrow\ |(v,w)|\le|v|\,|w|.$$
+    \textbf{(b)} 双线性与对称给 $|v\pm w|^2=|v|^2\pm2(v,w)+|w|^2$，两式相加即得平行四边形恒等式。\\
+    \textbf{(c)} $(v+w,v-w)=|v|^2-(v,w)+(w,v)-|w|^2=|v|^2-|w|^2=0$（当 $|v|=|w|$，实情形交叉项相消）。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 应用}
+    \scriptsize (a) 是本周 LA229 论证与一切「内积控制」估计的基石；(c) 正是 Householder 反射（LA233）能把等长向量互换的几何原因。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA232 与 LA236}
+  \pdfbookmark[2]{LA232 · Ch.8 §5 Ex.5.2}{bm:la232}
+  \pdfbookmark[2]{LA236 · Ch.8 §5 Ex.5.6}{bm:la236}
+  \leavevmode\ex{LA232 · Ch.~8 §5 Ex.~5.2 · printed p.~256 / PDF p.~268 · beginner}\quad
+  \ex{LA236 · Ch.~8 §5 Ex.~5.6 · printed p.~256 / PDF p.~268 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA232：}Prove $W=W^{\perp\perp}$ in a Euclidean space.\\
+    \textbf{LA236：}What complex numbers might occur as eigenvalues of a unitary matrix?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA232：}$W$ 中向量与 $W^\perp$ 全体正交给 $W\subseteq W^{\perp\perp}$。正定性给正交分解 $V=W\oplus W^\perp$，故 $\dim W^\perp=n-\dim W$；对 $W^\perp$ 再用一次：
+    $$\dim W^{\perp\perp}=n-\dim W^\perp=\dim W,$$
+    包含加等维得 $W=W^{\perp\perp}$。$\square$（有限维与非退化必要——对照上周 LA220 的一般包含关系。）\\[2pt]
+    \textbf{LA236：}$PX=\lambda X$，$X\ne0$，酉性保范数：
+    $$\lVert X\rVert=\lVert PX\rVert=|\lambda|\,\lVert X\rVert\ \Longrightarrow\ |\lambda|=1.$$
+    反之 $|\lambda|=1$ 时 $1\times1$ 阵 $[\lambda]$ 即酉，故恰为单位圆 $\{|\lambda|=1\}$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 备注}
+    \scriptsize LA236 蕴含酉矩阵没有零特征值；LA235（下一帧）将叠加不同特征值正交性。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA233}
+  \pdfbookmark[2]{LA233 · Ch.8 §5 Ex.5.3}{bm:la233}
+  \leavevmode\ex{LA233 · Ch.~8 §5 Ex.~5.3 · printed p.~256 / PDF p.~268 · advanced}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize Let $\lVert w\rVert=1$, $U=w^\perp$，reflection $r_w(cw+u)=-cw+u$. (a)~Prove $P=I-2ww^{\mathsf T}$ orthogonal; (b)~multiplication by $P$ is reflection about $U$; (c)~for $\lVert u\rVert=\lVert v\rVert$, find $w$ with $Pu=v$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{(a)} $P$ 对称，且 $w^{\mathsf T}w=1$：
+    $$P^{\mathsf T}P=P^2=I-4ww^{\mathsf T}+4w(w^{\mathsf T}w)w^{\mathsf T}=I.$$
+    \textbf{(b)} 若 $x=cw+z$（$z\perp w$），则 $w^{\mathsf T}x=c$，故 $Px=x-2cw=-cw+z$，恰为关于 $U$ 的反射。\\
+    \textbf{(c)} $u\ne v$ 时取
+    $$\boxed{w=\frac{u-v}{\lVert u-v\rVert}};$$
+    等长条件使 $2w(w^{\mathsf T}u)=u-v$（即 $(u+v)\perp(u-v)$，LA231(c)），故 $Pu=u-(u-v)=v$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算与边界（NumPy 通过）}
+    \scriptsize 程序验证随机等长对：$P^{\mathsf T}P=I$ 且 $Pu=v$。边界：$u=v\ne0$ 时需取 $w\perp u$（$n=1$ 时不存在这种超平面反射）。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA234 与 LA238}
+  \pdfbookmark[2]{LA234 · Ch.8 §5 Ex.5.4}{bm:la234}
+  \pdfbookmark[2]{LA238 · Ch.8 §6 Ex.6.2}{bm:la238}
+  \leavevmode\ex{LA234 · Ch.~8 §5 Ex.~5.4 · printed p.~256 / PDF p.~268 · intermediate}\quad
+  \ex{LA238 · Ch.~8 §6 Ex.~6.2 · printed p.~256 / PDF p.~268 · beginner}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA234：}For real symmetric $A$：prove $V=(\ker T)\oplus(\operatorname{im}T)$；且 $T$ 是到 $\operatorname{im}T$ 的正交投影 $\iff$ 再加 $A^2=A$。\\
+    \textbf{LA238：}Using Prop.~8.6.9, prove for symmetric $T$：$T^2v=0\Rightarrow Tv=0$.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA234(a)：}$y=Tx\in\operatorname{im}T$，$z\in\ker T$：对称性给 $(y,z)=(Tx,z)=(x,Tz)=0$，故 $\operatorname{im}T\subseteq(\ker T)^\perp$；秩零化度使两空间同维，等号成立，$V$ 为正交直和。(b) 正交投影在像上恒等、在正交核上为零 $\iff T^2=T$；反之 $A^2=A$ 时 $x=(x-Tx)+Tx$ 结合 (a) 即正交分解，$T$ 取像分量。$\square$\\[2pt]
+    \textbf{LA238：}Prop.~8.6.9(a) 给 $(Tx,y)=(x,Ty)$。取 $x=v,y=Tv$：
+    $$(Tv,Tv)=(v,T^2v)=0,$$
+    正定性迫使 $Tv=0$（即 $\ker T^2=\ker T$）。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 对比}
+    \scriptsize 幂等只给出斜投影（LA162）；对称性才使核与像正交。LA238 无需谱分解，仅用对称刻画与正定性。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA235 与 LA237}
+  \pdfbookmark[2]{LA235 · Ch.8 §5 Ex.5.5}{bm:la235}
+  \pdfbookmark[2]{LA237 · Ch.8 §6 Ex.6.1}{bm:la237}
+  \leavevmode\ex{LA235 · Ch.~8 §5 Ex.~5.5 · printed p.~256 / PDF p.~268 · intermediate}\quad
+  \ex{LA237 · Ch.~8 §6 Ex.~6.1 · printed p.~256 / PDF p.~268 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA235：}For unitary $P$ with eigenvectors $X_1,X_2$ ($\lambda_1\ne\lambda_2$)，prove $X_1\perp X_2$ in the standard Hermitian form.\\
+    \textbf{LA237：}Prove Prop.~8.6.3(c),(d)：(c)~$T$ Hermitian $\iff(Tv,w)=(v,Tw)$；(d)~$T$ unitary $\iff(Tv,Tw)=(v,w)$。
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA235（保内积 + 模长夹特征值）：}酉性给 $\lVert X_i\rVert=\lVert PX_i\rVert=|\lambda_i|\lVert X_i\rVert$，故 $|\lambda_i|=1$。保 Hermite 内积：
+    $$(X_1,X_2)=(PX_1,PX_2)=\overline{\lambda_1}\lambda_2(X_1,X_2)$$
+    （第一变元共轭线性）。若 $(X_1,X_2)\ne0$ 则 $\lambda_2=\lambda_1$，矛盾；故 $(X_1,X_2)=0$。$\square$\\[2pt]
+    \textbf{LA237（伴随恒等式 + 非退化性）：}(c) $T^*=T$ 给 $(Tv,w)=(v,T^*w)=(v,Tw)$；反向与伴随恒等式比较，非退化性给 $T^*w=Tw$。(d) 酉（$T^*T=I$）给 $(Tv,Tw)=(v,T^*Tw)=(v,w)$；反向比较得 $T^*T=I$。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 定位}
+    \scriptsize LA235 是 Hermite 版「不同特征值正交」（对照实对称情形）；LA237 是正规谱定理链条的前置刻画，LA238 用的 Prop.~8.6.9(a) 即 (c) 的实对称版本。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA239}
+  \pdfbookmark[2]{LA239 · Ch.8 §6 Ex.6.3}{bm:la239}
+  \leavevmode\ex{LA239 · Ch.~8 §6 Ex.~6.3 · printed p.~256 / PDF p.~268 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize What does the Spectral Theorem tell us about a real $3\times3$ matrix that is both symmetric and orthogonal?
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路：实对称谱定理给实特征正交基；正交性夹住特征值}
+    \scriptsize
+    实对称谱定理（Thm.~8.6.10(b)）给实正交阵 $P$ 使 $P^{\mathsf T}AP=\operatorname{diag}(\lambda_1,\lambda_2,\lambda_3)$，$\lambda_i\in\mathbb R$。正交性保范数，对实特征向量 $v_i$：
+    $$\lVert v_i\rVert=\lVert Av_i\rVert=|\lambda_i|\,\lVert v_i\rVert\ \Longrightarrow\ |\lambda_i|=1,$$
+    实值使 $\lambda_i\in\{1,-1\}$。故
+    $$\boxed{A=P\operatorname{diag}(\varepsilon_1,\varepsilon_2,\varepsilon_3)P^{\mathsf T},\qquad \varepsilon_i=\pm1,}$$
+    特别地 $A^2=I$：$A$ 是正交对合，固定一个特征面并翻转其正交补。反之每个这种形状都对称且正交（$A^{\mathsf T}=A$，$A^{\mathsf T}A=PD^2P^{\mathsf T}=I$）。$\square$
+  \end{exampleblock}
+  \begin{block}{\footnotesize 备注}
+    \scriptsize 行列式 $=(-1)^m$，$m$ 为 $-1$ 特征空间维数；需要\textbf{实}对称谱定理，仅复酉对角化不足以给出实正交 $P$。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA240 与 LA243}
+  \pdfbookmark[2]{LA240 · Ch.8 §6 Ex.6.4}{bm:la240}
+  \pdfbookmark[2]{LA243 · Ch.8 §6 Ex.6.7}{bm:la243}
+  \leavevmode\ex{LA240 · Ch.~8 §6 Ex.~6.4 · printed p.~256 / PDF p.~268 · intermediate}\quad
+  \ex{LA243 · Ch.~8 §6 Ex.~6.7 · printed p.~256 / PDF p.~268 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA240：}What can be said about a matrix $A$ such that $A^*A$ is diagonal?\\
+    \textbf{LA243：}Let $P$ be real, normal, with real eigenvalues. Prove $P$ is symmetric.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA240：}$(A^*A)_{ij}=a_i^*a_j$（列内积），故 $A^*A$ 对角 $\iff$ 列两两正交；对角元为 $\lVert a_i\rVert^2\ge0$。把非零列归一化并扩充为正交归一基，方阵情形得
+    $$A=UD,\qquad U\ \text{酉},\ D=\operatorname{diag}(\lVert a_1\rVert,\ldots),$$
+    零列对应零对角元；列全非零时 $A$ 可逆且 $U=AD^{-1}$。这是无需右换基的极分解特例。$\square$\\[2pt]
+    \textbf{LA243：}$P$ 正规 $\Rightarrow P=UDU^*$（酉对角化）；特征值全实使 $D^*=D$，故 $P^*=UD^*U^*=P$，即 Hermite；$P$ 实故 $P^{\mathsf T}=P$。$\square$（正规性不可去：实 Jordan 块可有实谱而不对称。）
+  \end{exampleblock}
+  \begin{block}{\footnotesize 呼应}
+    \scriptsize LA240 与上周 LA210（正交列求逆）、LA212（Gram 半正定）同一条主线；LA243 与 LA239 互为补充。
+  \end{block}
+\end{frame}
+
+\begin{frame}[t]{三、Systematic Progress：LA241 与 LA242}
+  \pdfbookmark[2]{LA241 · Ch.8 §6 Ex.6.5}{bm:la241}
+  \pdfbookmark[2]{LA242 · Ch.8 §6 Ex.6.6}{bm:la242}
+  \leavevmode\ex{LA241 · Ch.~8 §6 Ex.~6.5 · printed p.~256 / PDF p.~268 · intermediate}\quad
+  \ex{LA242 · Ch.~8 §6 Ex.~6.6 · printed p.~256 / PDF p.~268 · intermediate}
+  \begin{block}{\footnotesize 题面}
+    \scriptsize \textbf{LA241：}Prove $iA$ Hermitian for real skew-symmetric $A$; what does the Spectral Theorem say about $A$?\\
+    \textbf{LA242：}Prove an invertible $A$ is normal $\iff$ $A^*A^{-1}$ is unitary.
+  \end{block}
+  \begin{exampleblock}{\footnotesize 思路与推导}
+    \scriptsize
+    \textbf{LA241：}$(iA)^*=\overline i\,A^{\mathsf T}=(-i)(-A)=iA$。谱定理给酉 $U$、实 $\mu_j$：$U^*(iA)U=\operatorname{diag}(\mu_j)$，故
+    $$U^*AU=\operatorname{diag}(-i\mu_1,\ldots,-i\mu_n),$$
+    即实反对称阵正规、复可酉对角化、特征值纯虚；实特征多项式使非零特征值成对 $\pm i\mu$。$\square$（更强实标准形为 $2\times2$ 旋转块。）\\[2pt]
+    \textbf{LA242：}令 $U=A^*A^{-1}$，则 $U^*=(A^{-1})^*A$，
+    $$U^*U=(A^{-1})^*AA^*A^{-1}.$$
+    正规时 $AA^*=A^*A$ 给 $U^*U=I$。反之 $U^*U=I$ 时左乘 $A^*$ 右乘 $A$ 得 $AA^*=A^*A$。$\square$（可逆性用于定义 $A^{-1}$。）
+  \end{exampleblock}
+  \begin{block}{\footnotesize 验算（NumPy 通过 LA241）}
+    \scriptsize 随机 $3\times3$ 反对称阵：$(iA)^*=iA$ 且特征值实部为 0。
+  \end{block}
+\end{frame}
+
+% ============================================================ 四、速查表
+\begin{frame}[t]{四、42 题速查表（1/2）：Random Review}
+  \label{sec:answers}
+\pdfbookmark[1]{四、速查表}{bm:sec-answers}
+  \centering\scriptsize
+  \setlength{\tabcolsep}{3.0pt}
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabular}{@{}l l l@{}}
+    \toprule
+    题 & 定位 & 一句话结论\\
+    \midrule
+    LA94 & Ch.~3 \S5 Ex.~5.3 & 逐前缀交为零 $\Rightarrow$ 剥尾归纳给直和\\
+    LA178 & Ch.~5 \S4 Ex.~4.3 & $A^{-1}X=\lambda^{-1}X$；$e^AX=e^\lambda X$\\
+    LA188 & Ch.~5 M.5 & 印刷式误漏指数；Binet + 极限 $(a_0{+}2a_1)/3$\\
+    LA143 & Ch.~4 \S6 Ex.~6.10 & 块对角可对角化 $\iff$ 各块可；最小多项式无重根\\
+    LA85 & Ch.~3 \S3 Ex.~3.7 & 是：$T(A)=PAQ^t$ 可逆，矩阵单位映为 $X_iY_j^t$\\
+    LA106 & Ch.~4 \S1 Ex.~1.4 & $A=XY^t$；唯一到 reciprocal 缩放 $(cX,c^{-1}Y)$\\
+    LA162 & Ch.~4 M.9 & $V=W\oplus K$；迹 $=$ 秩（基下 $\mathrm{diag}(I_r,0)$）\\
+    LA165 & Ch.~5 \S1 Ex.~1.3 & 奇 $n$：同构；偶 $n$：中心/交换性否决\\
+    LA191 & Ch.~5 M.8 & 公共反射面相消，轴 $=\Pi_1\cap\Pi_2$\\
+    LA147 & Ch.~4 \S7 Ex.~7.3 & 秩 2 $\Rightarrow$ 3 块：$3{+}1{+}1$ 或 $2{+}2{+}1$\\
+    LA177 & Ch.~5 \S4 Ex.~4.2 & 三角化后 $\det(e^A)=\prod e^{\lambda_j}=e^{\operatorname{tr}A}$\\
+    G20 & Ch.~6 \S3 Ex.~3.4 & 共轭滑移反射 $=t_{q(v)}r_{g(\ell)}$，$|q(v)|=|v|$\\
+    LA91 & Ch.~3 \S4 Ex.~4.5 & Gauss 二项式 ${n\brack k}_p$；$n{=}3$：$1,p^2{+}p{+}1,p^2{+}p{+}1,1$\\
+    LA81 & Ch.~3 \S3 Ex.~3.3 & 取值 + 求导在 $0$：$b{+}c=0,\ c=0\Rightarrow a=b=c=0$\\
+    LA175 & Ch.~5 \S3 Ex.~3.4 & $X(t)=e^{tA}(X_0{+}A^{-1}B)-A^{-1}B$\\
+    LA131 & Ch.~4 \S5 Ex.~5.8 & $t$ 系数 $=$ 三个 $2\times2$ 主子式之和\\
+    LA170 & Ch.~5 \S2 Ex.~2.3 & 核 $\ge n$；谱 $=\{\lambda_i-\lambda_j\}$（$n^2$ 个）\\
+    LA154 & Ch.~4 M.1 & 可能秩 $\{0,1,n-1,n\}$（非常向量分 $s=0$ 两支）\\
+    LA179 & Ch.~5 \S4 Ex.~4.4 & 双重和重排：$e^{A+B}=e^Ae^B$（需 $AB=BA$）\\
+    LA136 & Ch.~4 \S6 Ex.~6.3 & 两无关特征向量 $\Rightarrow(t-\lambda)^2\mid p_T$\\
+    LA126 & Ch.~4 \S5 Ex.~5.3 & $r$ 次单位根；$\lambda\in\{2,3\}$\\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}[t]{四、42 题速查表（2/2）：Systematic Progress}
+  \centering\scriptsize
+  \setlength{\tabcolsep}{2.5pt}
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabular}{@{}l l l@{}}
+    \toprule
+    题 & 定位 & 一句话结论\\
+    \midrule
+    LA223 & \S4 Ex.~4.14 & 成对行列操作；对角全零时 $e_i{+}e_j$ 造 $2a_{ij}$\\
+    LA224 & \S4 Ex.~4.15 & 法方程解 $(2/3,1/3,-1/3)^{\mathsf T}$\\
+    LA225 & \S4 Ex.~4.16 & 对称/反对称正交分解：$(M{-}M^{\mathsf T})/2$\\
+    LA226 & \S4 Ex.~4.17 & $B^{-1}X$ 与 $c_i=(v_i{\cdot}X)/(v_i{\cdot}v_i)$ 一致\\
+    LA227 & \S4 Ex.~4.18 & 两行正交归一、三列成等边三角形（边长$^2=2$）\\
+    LA228 & \S4 Ex.~4.19 & $a,b$ 即 $w_1,w_2$ 坐标：$QQ^{\mathsf T}=I_2$\\
+    LA229 & \S4 Ex.~4.20 & 顺序主子式全正 $\iff$ 正定；Hermite 同理\\
+    LA230 & \S4 Ex.~4.21 & 正定 vs 半负定无关 $\Rightarrow(p,m,z)$ 不变\\
+    LA231 & \S5 Ex.~5.1 & Schwarz、平行四边形、菱形对角线正交\\
+    LA232 & \S5 Ex.~5.2 & $V=W\oplus W^\perp$ + 等维 $\Rightarrow W^{\perp\perp}=W$\\
+    LA233 & \S5 Ex.~5.3 & $P=I-2ww^{\mathsf T}$；$w=(u{-}v)/\lVert u{-}v\rVert$\\
+    LA234 & \S5 Ex.~5.4 & 对称给正交分解；$+$ 幂等 $\iff$ 正交投影\\
+    LA235 & \S5 Ex.~5.5 & 保内积 + $|\lambda_i|=1$ $\Rightarrow$ 不同特征值正交\\
+    LA236 & \S5 Ex.~5.6 & 恰为单位圆 $\{|\lambda|=1\}$\\
+    LA237 & \S6 Ex.~6.1 & 伴随恒等式 + 非退化性识别 Hermite/酉\\
+    LA238 & \S6 Ex.~6.2 & $(Tv,Tv)=(v,T^2v)=0\Rightarrow Tv=0$\\
+    LA239 & \S6 Ex.~6.3 & $A=P\,\mathrm{diag}(\pm1)\,P^{\mathsf T}$，$A^2=I$\\
+    LA240 & \S6 Ex.~6.4 & 列两两正交 $\iff A^*A$ 对角；$A=UD$\\
+    LA241 & \S6 Ex.~6.5 & $iA$ Hermite；谱纯虚、成对 $\pm i\mu$\\
+    LA242 & \S6 Ex.~6.6 & $U^*U=(A^{-1})^*AA^*A^{-1}$；正规 $\iff$ 酉\\
+    LA243 & \S6 Ex.~6.7 & 正规 + 实谱 $\Rightarrow D^*=D\Rightarrow P^*=P$ 实对称\\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+% ============================================================ 五、方法卡
+\begin{frame}[t]{五、方法卡：本周反复出现的五类工具}
+\pdfbookmark[1]{五、方法卡}{bm:sec-methods}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 1. 矩阵指数工具箱}
+        \scriptsize
+        逐项作用特征向量（LA178）、三角化取行列式（LA177）、交换时二项式重排（LA179）、常数特解平移（LA175）。核心纪律：级数与相似/直和交换，重排靠绝对收敛。
+      \end{block}
+      \begin{block}{\footnotesize 2. 秩--分拆--重数三联}
+        \scriptsize
+        幂零秩 $=\sum(s_i{-}1)$（LA147）；几何重数 $\le$ 代数重数（LA136、上周 LA149）；置换轨道矩阵按「常向量和 $s$」分类（LA154）。
+      \end{block}
+      \begin{block}{\footnotesize 3. 正交投影的三种求法}
+        \scriptsize
+        法方程（LA224，生成元不正交时）、正交分解（LA225 对称/反对称）、坐标 $=$ 内积比值（LA226、LA228）。$A^*A$ 对角 $\iff$ 列正交（LA240）。
+      \end{block}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{block}{\footnotesize 4. 子空间的维数对偶}
+        \scriptsize
+        $V=W\oplus W^\perp$ + 等维论证（LA232）；正定 vs 半负定子空间无关（LA230 惯性定律）；$\mathbb F_p^n$ 子空间计数 $=$ Gauss 二项式（LA91，配 LA90 的 $|GL_2|$）。
+      \end{block}
+      \begin{block}{\footnotesize 5. 谱定理的「夹特征值」读法}
+        \scriptsize
+        正规 $\Rightarrow$ 酉对角化；再叠加额外条件夹住特征值：酉 $|\lambda|=1$（LA236）、实对称正交 $\lambda=\pm1$（LA239）、实谱正规 $\Rightarrow$ 对称（LA243）、实反对称纯虚谱（LA241）。
+      \end{block}
+      \begin{exampleblock}{\footnotesize 程序验算范围（NumPy，17 项全部通过）}
+        \scriptsize
+        LA188（Binet + 极限）、LA91（$p=2,3$ 子空间枚举）、LA224/225/226/227、LA170、LA154、LA147、LA178/177（scaling--squaring 矩阵指数）、LA131、LA233、LA229、LA241、LA162。解析证明仍以笔记内独立推导为准。
+      \end{exampleblock}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 六、易错点
+\begin{frame}[t]{六、易错点与边界条件}
+\pdfbookmark[1]{六、易错点}{bm:sec-pitfalls}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize 概念混淆}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \textbf{逐元素 vs 矩阵指数}：数值软件的 \texttt{exp(A)} 是逐元素的；$\det(e^A)=e^{\operatorname{tr}A}$ 只对矩阵指数成立（LA177，本次验算即踩过此坑）。
+          \item \textbf{$e^{A+B}=e^Ae^B$ 需交换}（LA179）；不交换时可差一个交换子修正。
+          \item \textbf{直和判据}：两两交为零 $\ne$ 逐前缀交为零（LA94）；幂等 $\ne$ 正交投影，差一个对称性（LA162 vs LA234）。
+        \end{itemize}
+      \end{alertblock}
+      \begin{alertblock}{\footnotesize 隐藏前提}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item LA229 用的是\textbf{顺序}主子式，非任意主子式；Hermite 情形主子式为实数才可谈正负。
+          \item LA223 的 $2a_{ij}$ 步骤要求 $\operatorname{char}F\ne2$；LA165 的偶维否决依赖 $n\ge4$ 的中心计算与 $n=2$ 的交换性特判。
+          \item LA233(c) 的 $w=(u{-}v)/\lVert u{-}v\rVert$ 仅对 $u\ne v$；LA240 的 $A=UD$ 在有零列时 $D$ 退化。
+        \end{itemize}
+      \end{alertblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{alertblock}{\footnotesize 原书问题（不静默修改）}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item \textbf{LA188 (a)}：印刷公式的右端不含 $n$（首项指数被吞、次项印成平方），不可能等于 $f_n$；笔记与讲义均按字面 + 意图（Binet）双读法报告，修正版标注为推断。
+        \end{itemize}
+      \end{alertblock}
+      \begin{block}{\footnotesize 记号提醒}
+        \scriptsize
+        \begin{itemize}\setlength{\itemsep}{1pt}
+          \item Artin 的 Hermite 型\textbf{第一变元共轭线性}（LA235 中出现 $\overline{\lambda_1}\lambda_2$）。
+          \item 合同（$P^{\mathsf T}AP$，LA223）vs 相似（$P^{-1}AP$，LA143/LA170）vs $*$-相似（LA241）。
+          \item $e_i$ 在不同帧中既是标准基（LA228）也是矩阵单位指标（LA85），按上下文区分。
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================ 七、自测
+\begin{frame}[t]{七、自测：下周初快速回顾的十问}
+\pdfbookmark[1]{七、自测}{bm:sec-selftest}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.49\textwidth}
+      \begin{exampleblock}{\footnotesize 问题（答案见对应帧）}
+        \scriptsize
+        \begin{enumerate}\setlength{\itemsep}{1pt}
+          \item 三个子空间的直和判据要检查哪几个交？（LA94）
+          \item Binet 公式的两个底数是什么？平均递归的极限？（LA188）
+          \item 秩一分解 $A=XY^t$ 的自由度有多大？（LA106）
+          \item $O_n\cong SO_n\times\{\pm I\}$ 何时成立？偶维为何失败？（LA165）
+          \item 两个三维旋转的合成轴如何尺规作出？（LA191）
+        \end{enumerate}
+      \end{exampleblock}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \begin{exampleblock}{\footnotesize 问题（续）}
+        \scriptsize
+        \begin{enumerate}\setlength{\itemsep}{1pt}\setcounter{enumi}{5}
+          \item Sylvester 判据检查哪些 minors？Hermite 版成立吗？（LA229）
+          \item 把等长向量 $u$ 映到 $v$ 的 Householder 反射 $w=$？（LA233）
+          \item $W^{\perp\perp}=W$ 在欧氏空间为何成立？一般型呢？（LA232）
+          \item 实对称正交 $3\times3$ 矩阵的谱与平方？（LA239）
+          \item $A^*A$ 对角等价于列的什么性质？分解形式？（LA240）
+        \end{enumerate}
+      \end{exampleblock}
+      \begin{block}{\footnotesize 收尾}
+        \scriptsize
+        本讲义为派生快照：不改动任何笔记、状态或题单；下周系统区将从 Ch.~8 \S6 之后继续。速查表起于第 \pageref{sec:answers} 页。
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}

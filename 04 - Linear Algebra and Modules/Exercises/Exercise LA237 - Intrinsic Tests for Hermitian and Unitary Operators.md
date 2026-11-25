@@ -19,6 +19,13 @@ created: 2026-08-24
 > [!question] Exercise 6.1
 > Prove Proposition 8.6.3(c), (d).
 
+**Referenced proposition.** Let $T$ be a linear operator on a finite-dimensional Hermitian space $V$ with a positive definite form, conjugate linear in the first variable.
+
+- **(c)** $T$ is Hermitian if and only if $(Tv,w)=(v,Tw)$ for every $v,w\in V$.
+- **(d)** $T$ is unitary if and only if $(Tv,Tw)=(v,w)$ for every $v,w\in V$.
+
+These are the exact two assertions assigned by the exercise. [S1, Proposition 8.6.3(c)–(d), printed p. 243, PDF p. 255]
+
 ## Hints
 
 > [!hint]- Hint 1
@@ -30,6 +37,8 @@ created: 2026-08-24
 ## Solution
 
 > [!success]- Solution
+> **Proof scope:** Independent derivation of the assigned adjoint characterizations. Unitary diagonalization is not assumed.
+>
 > **(c)** If $T^*=T$, then
 >
 > $$
@@ -62,4 +71,5 @@ created: 2026-08-24
 ## Notes
 
 - **Source status:** The exercise was verified at [S1, Ch. 8, §6, Ex. 6.1, printed p. 256, PDF p. 268] and Proposition 8.6.3 at printed p. 243/PDF p. 255. The proof is independent.
+- **Theory connection:** The adjoint characterizations are a prerequisite for the normal spectral theorem. Their full context and the subsequent proof chain are in [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem#Characterizations|the spectral-theorem characterizations]].
 

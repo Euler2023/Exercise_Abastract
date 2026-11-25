@@ -81,6 +81,7 @@ For matrix $A \in M_n(F)$:
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]] (orthogonal diagonalization)
+- [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem|Normal Operators and the Spectral Theorem]] (precise hypotheses and orthonormal-eigenbasis proofs)
 
 ## Exercises
 
@@ -94,4 +95,4 @@ WHERE contains(file.outlinks, this.file.link)
 
 This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
 
-The base-field condition in the minimal-polynomial criterion was checked against [S2, Ch. XIV, Ex. 13(a)-(b), printed pp. 568-569, PDF pp. 583-584] on 2026-09-29. The exercise states the criterion; its full independent proof, including invariant subspaces and simultaneous diagonalization, is in [[04 - Linear Algebra and Modules/Exercises/Exercise LA429 - Diagonalizability and Simultaneous Diagonalization|Exercise LA429]]. The split-field condition for Jordan form follows from [S2, Ch. XIV, §2, Theorem 2.4 and Corollary 2.5, printed pp. 558-559, PDF pp. 573-574]. The spectral theorem above remains a named external input in this note.
+The base-field condition in the minimal-polynomial criterion was checked against [S2, Ch. XIV, Ex. 13(a)-(b), printed pp. 568-569, PDF pp. 583-584] on 2026-09-29. The exercise states the criterion; its full independent proof, including invariant subspaces and simultaneous diagonalization, is in [[04 - Linear Algebra and Modules/Exercises/Exercise LA429 - Diagonalizability and Simultaneous Diagonalization|Exercise LA429]]. The split-field condition for Jordan form follows from [S2, Ch. XIV, §2, Theorem 2.4 and Corollary 2.5, printed pp. 558-559, PDF pp. 573-574]. The spectral theorem is invoked here; its precise normal, Hermitian, unitary and real symmetric statements and expanded proofs are supplied in [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem|the spectral-theorem note]], checked against [S1, §8.6, printed pp. 242–245, PDF pp. 254–257].
