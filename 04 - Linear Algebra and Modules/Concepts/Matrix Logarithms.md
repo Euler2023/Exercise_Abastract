@@ -9,7 +9,7 @@ tags:
   - definition
   - linear-algebra
   - matrix-functions
-source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations: An Elementary Introduction, 2nd ed., corrected publication, GTM 222, Springer, 2015, Ch. 2, Section 2.3, Definition 2.7, Theorem 2.8, Proposition 2.9 and Theorem 2.10, printed pp. 37–39, PDF pp. 49–51"
+source: "Brian C. Hall, Lie Groups, Lie Algebras, and Representations: An Elementary Introduction, 2nd ed., corrected publication, GTM 222, Springer, 2015, Ch. 2, Section 2.3, Definition 2.7, Theorem 2.8, Proposition 2.9 and Theorem 2.10, printed pp. 37–39, PDF pp. 49–51; Ch. 3, Theorem 3.42 and Corollary 3.44, printed pp. 68–70, PDF pp. 80–82"
 source_status: verified
 created: 2026-11-17
 ---
@@ -43,6 +43,16 @@ Hall's Theorem 2.8 states:
 Here the norm is Hilbert–Schmidt and $\log2$ is the scalar natural logarithm. The estimate $\|e^X-I\|\le\sum_{m\ge1}\|X\|^m/m!=e^{\|X\|}-1$ proves the stated convergence bound. Hall's proof reduces the inverse identities to scalar ones for diagonalizable matrices and then uses approximation by diagonalizable matrices and continuity. [S10, Theorem 2.8 and proof, printed pp. 38–39, PDF pp. 50–51]
 
 **Dependency boundary:** the density assertion in that proof is Hall's assigned Exercise 4, independently supplied in [[04 - Linear Algebra and Modules/Exercises/Exercise LA671 - Density of Diagonalizable Complex Matrices|the diagonalizable-approximation proof]]. The existence theorem for an arbitrary invertible complex matrix is stated as Theorem 2.10, with its proof delegated to Exercises 9–10; it is not presented in the source as a complete stand-alone proof on that page.
+
+## Logarithms in a Matrix Lie Algebra
+
+Let $G\subseteq GL_n(\mathbb C)$ be a matrix Lie group with Lie algebra $\mathfrak g$. Hall's Theorem 3.42 gives a group-dependent $\varepsilon\in(0,\log 2)$ such that on the neighborhood $V_\varepsilon=\{\exp X:\|X\|_{\mathrm{HS}}<\varepsilon\}$ of $I$,
+
+$$
+A\in G\quad\Longleftrightarrow\quad\log A\in\mathfrak g.
+$$
+
+The implication from right to left uses $A=e^{\log A}$. The other implication is Hall's local subgroup theorem. In its proof, $M_n(\mathbb C)$ is a real inner product space, and the orthogonal decomposition $M_n(\mathbb C)=\mathfrak g\oplus\mathfrak g^\perp$ is used to study $e^Xe^Y$ for $X\in\mathfrak g$ and $Y\in\mathfrak g^\perp$. The theorem gives the logarithm as the inverse of the exponential on corresponding neighborhoods in $G$ and $\mathfrak g$ (Corollary 3.44). The larger condition $\|A-I\|_{\mathrm{HS}}<1$ guarantees convergence and allows the logarithm to lie outside $\mathfrak g$, as Exercise 7 of §3.9 illustrates.
 
 ## A Useful Remainder Estimate
 
@@ -79,6 +89,7 @@ Every $A\in GL_n(\mathbb C)$ has a logarithm: decompose into generalized-eigenva
 - [[04 - Linear Algebra and Modules/Concepts/Hilbert-Schmidt Norm|Hilbert-Schmidt Norm]]
 - [[04 - Linear Algebra and Modules/Concepts/Jordan Canonical Form|Jordan Canonical Form]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]]
+- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces#Orthogonal Complement|Orthogonal Complement]]
 - [[06 - Representation Theory/Concepts/Exponential Map|Exponential Map]]
 
 ## Exercises
@@ -92,3 +103,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 The source pages for Definition 2.7, Theorem 2.8 and its proof, Proposition 2.9, and the stated Theorem 2.10 were visually checked at 200 dpi. The explicit remainder bound and examples above are independently verified deductions. The nilpotent and global inverse statements are assigned exercises in Hall; the vault supplies independent proofs, naming the local inverse theorem and generalized-eigenspace decomposition where used. No globally single-valued logarithm on all of $GL_n(\mathbb C)$ is asserted.
+
+Hall proves the local subgroup theorem and its local-inverse corollary in Chapter 3 [S10, §§3.7–3.8, Theorem 3.42 and Corollary 3.44, printed pp. 68–70, PDF pp. 80–82]. The exercise on the larger convergence ball is [S10, Ch. 3, §3.9, Exercise 7, printed p. 74, PDF p. 86].

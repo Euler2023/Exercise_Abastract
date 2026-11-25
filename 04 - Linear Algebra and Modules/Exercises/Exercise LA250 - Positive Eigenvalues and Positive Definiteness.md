@@ -2,13 +2,13 @@
 title: "Exercise LA250: Positive Eigenvalues and Positive Definiteness"
 topic: linear-algebra
 difficulty: beginner
-status: not-started
+status: done
 tags:
   - exercise
   - linear-algebra
   - positive-definite-matrices
   - eigenvalues
-source: "Michael Artin, Algebra, 2nd ed., Ch. 8, Section 6, Ex. 6.14, printed p. 257, PDF p. 269"
+source: Michael Artin, Algebra, 2nd ed., Ch. 8, Section 6, Ex. 6.14, printed p. 257, PDF p. 269
 created: 2026-08-24
 ---
 

@@ -41,6 +41,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Cyclic Vectors and Companion Matrices|Cyclic Vectors and Companion Matrices]]
 - [[04 - Linear Algebra and Modules/Concepts/Jordan Canonical Form|Jordan Canonical Form]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+  - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces#Orthogonal Complement|Orthogonal Complement]]
 - [[04 - Linear Algebra and Modules/Concepts/Normal Operators and the Spectral Theorem|Normal Operators and the Spectral Theorem]]
 - [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]
 

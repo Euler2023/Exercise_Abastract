@@ -346,7 +346,7 @@ const audits = [
     "pdf": "409–411"
   }
 ];
-const reconciledChapters = new Set([1, 2]);
+const reconciledChapters = new Set([1, 2, 3]);
 const bookName = /(?:Brian\s+C\.\s+Hall|Lie Groups,\s*Lie Algebras,\s*and Representations)/i;
 function list(value) {
   if (value == null) return [];
@@ -789,9 +789,11 @@ SORT number(regexreplace(locator, ".*Exercise ([0-9]+),.*", "$1")) ASC
 
 ## Source Issues and Figure Boundaries
 
-The following were noticed during the source-label audit. The archived Chapter 2 item has been resolved explicitly in its note; the remaining entries are **visible source issues or candidates for later checking**, not a claim that the unarchived exercises have received a full solution audit.
+These entries record issues clarified in archived notes and candidates to check when later chapters are archived.
 
 - **Chapter 2, Exercise 5 hint**, printed p. 47 / PDF p. 59: the displayed power of an upper triangular matrix has bottom-right entry $b^m$, although the original matrix has bottom-right entry $d$. [[04 - Linear Algebra and Modules/Exercises/Exercise LA672 - The Exponential of a Two by Two Triangular Matrix|LA672]] preserves the original hint, gives an $m=1$ counterexample, and proves the corrected formula with $d^m$. The exponential formula itself remains valid, including the repeated-diagonal limit.
+- **Chapter 3, Definition 3.15**, printed p. 54 / PDF p. 66. Hall calls the descending commutator sequence the “upper central series.” [[04 - Linear Algebra and Modules/Exercises/Exercise LA679 - Nilpotence of Strictly Upper Triangular Matrices|LA679]] specifies the recurrence and gives the usual lower-central-series terminology.
+- **Chapter 3, Exercise 15 hint**, printed p. 75 / PDF p. 87. The printed phrase omits the verb defining $B_k=A_{j_k}$. [[04 - Linear Algebra and Modules/Exercises/Exercise LA685 - Compact Matrix Groups Have Finitely Many Components|LA685]] preserves the printed hint and introduces the subsequence explicitly in the proof.
 - **Chapter 5, Exercise 14(b)**, printed p. 137 / PDF p. 147: the target of a Lie group homomorphism is printed as the Lie algebra $\mathrm{gl}(N;\mathbb C)$; the apparent intended target is $GL(N;\mathbb C)$.
 - **Chapter 12, Exercise 3**, printed p. 371 / PDF p. 375: after introducing maps from $V$ to $W$, one occurrence reverses the Hom arguments to $\operatorname{Hom}(W,V)$. Reconcile the domains against the action before supplying a solution.
 - **Chapter 12, Exercise 9**, printed p. 372 / PDF p. 376: the Vandermonde product includes $j=k$ in the printed index range; these factors vanish. Check the intended strict inequality $j<k$.
@@ -825,11 +827,17 @@ The notes give complete independent derivations, including all parts of Exercise
 
 Added shared prerequisites: [[04 - Linear Algebra and Modules/Concepts/Hilbert-Schmidt Norm|Hilbert–Schmidt Norm]] and [[04 - Linear Algebra and Modules/Concepts/Matrix Logarithms|Matrix Logarithms]], each with dynamic exercise backlinks and an entry in the existing topic hub. They distinguish Hall's inner-product convention, the identity norm $\|I_n\|=\sqrt n$, local inverse conditions, terminating nilpotent series, complex existence, and nonuniqueness. Figure 2.1 was checked with Exercise 8; it is illustrative and supplies no required figure-specific data, so no raster asset is retained.
 
-All 11 new learning statuses remain `not-started`. Whole-book coverage is now **29/170**, leaving **141** source keys unarchived, with no duplicate, unexpected, or unparsed Hall mappings. Chapters 3–13 remain source-audited but unarchived. Validation covered numbering, YAML, page anchors, links, balanced Obsidian mathematics, dynamic backlinks, the Study Progress exercise-tag filter, and an English-only scan of all **2,594** exercise/concept files. Exact symbolic checks covered the noncommuting product rule, complex unitary norm invariance, triangular powers and exponentials, the trace-zero and explicit $2\times2$ formulas, both flow equations and eigenpairs, and the nilpotent inverse identities for Jordan sizes 1–5. Finite checks supplement the written proofs. The live coverage script was executed against actual vault metadata; these checks do not constitute an Obsidian reading-view render test.
+All 11 new learning statuses remain `not-started`. Whole-book coverage at that checkpoint was **29/170**, leaving **141** source keys unarchived, with no duplicate, unexpected, or unparsed Hall mappings. Chapters 3–13 still awaited archival at that checkpoint. Validation covered numbering, YAML, page anchors, links, balanced Obsidian mathematics, dynamic backlinks, the Study Progress exercise-tag filter, and an English-only scan of all **2,594** exercise/concept files. Exact symbolic checks covered the noncommuting product rule, complex unitary norm invariance, triangular powers and exponentials, the trace-zero and explicit $2\times2$ formulas, both flow equations and eigenpairs, and the nilpotent inverse identities for Jordan sizes 1–5. Finite checks supplement the written proofs. The live coverage script was executed against actual vault metadata; these checks do not constitute an Obsidian reading-view render test.
+
+**Chapter 3 complete — 22/22 — 2026-11-25.** The ordered source keys 3.1–3.22 reconcile one-to-one with **LA679–LA691** (13 notes), **Rep168–Rep175** (8 notes), and **G380** (1 note). Final Chapter 3 exceptions are **missing labels 0, duplicate mappings 0, unexpected labels 0, and unparsed locators 0**. The original §3.9 pages (printed pp. 73–75, PDF pp. 85–87) and the Chapter 4 boundary were re-inspected at 200 dpi before writing. Exercise 15 includes its continued hint and both page numbers. No exercise requires a source figure.
+
+All notes preserve the printed problems and hints, supply progressive hints and complete independent derivations, and received a non-author mathematical review. The notes name Hall's local subgroup logarithm, exponential generation, and Lie-group differential results where used. The unitary spectral theorem is a named input, and Exercise 22 uses the real Jordan form under the permission in its printed hint. The two existing concept notes [[06 - Representation Theory/Concepts/Lie Algebras|Lie Algebras]] and [[04 - Linear Algebra and Modules/Concepts/Matrix Logarithms|Matrix Logarithms]] now cover the lower central series, real forms, and the group-dependent logarithm neighborhood.
+
+All 22 learning statuses are `not-started`. Whole-book coverage is **51/170**, with **119** source keys remaining and no duplicate, unexpected, or unparsed Hall mappings. Validation covered English prose, exercise metadata, path-qualified links, section anchors, Obsidian formula delimiters, and Study Progress tag discovery. The live ledger was executed against the actual exercise metadata. Exact symbolic checks verified strict upper triangular support, the finite-subgroup logarithm example, Lorentz blocks, Lie brackets, iterated commutators, and representative exponential formulas.
 
 ## Next Archive Target
 
-**Chapter 3 — Lie Algebras**, §3.9, Exercises 1–22: printed pp. 73–75 / PDF pp. 85–87. Its ordered source set is audited above; no Chapter 3 exercise has yet been archived. Routing must follow the principal proof toolkit of each exercise rather than the chapter title.
+**Chapter 4 — Basic Representation Theory**, §4.9, Exercises 1–14, printed pp. 105–107 / PDF pp. 116–118. Its ordered source set is audited above.
 
 ## Related Navigation
 

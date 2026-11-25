@@ -63,7 +63,7 @@ created: 2026-08-24
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Bilinear and Hermitian Forms]]
-- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces#Orthogonal Complement|Orthogonal Complement]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 
 ## Notes

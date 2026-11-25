@@ -2,6 +2,19 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-11-25 (Hall Chapter 3 Exercise Archive)
+
+- Archived all 22 numbered exercises in Hall §3.9 as LA679–LA691, Rep168–Rep175, and G380. Each English note preserves the original problem and printed hint, gives progressive hints and a complete independent proof, and includes matching readable and S10 source locators. All learning statuses are `not-started`.
+- Rechecked printed pp. 73–75 / PDF pp. 85–87 and the Chapter 4 boundary at 200 dpi. The one-to-one audit found zero missing, duplicate, unexpected, or unparsed Chapter 3 mappings. Whole-book coverage is 51/170. The next target is Chapter 4, §4.9, Exercises 1–14.
+- Clarified Hall's lower-central-series terminology and the wording of the printed hint to Exercise 15. Expanded the existing Lie Algebras and Matrix Logarithms concepts with the series, complexification, and the local subgroup logarithm. Linked the latter to the orthogonal complement used in Hall's proof.
+- Completed non-author proof review, exact symbolic checks, and metadata, provenance, Wikilink, MathJax, and study-tracker validation. Removed task-owned page renders and confirmed their scratch paths are absent.
+
+### 2026-11-25 (Artin Orthogonal Complements)
+
+- Expanded the existing Orthogonal Complement section with searchable aliases, Artin's notation for a subspace or a vector, the hypotheses for double complements and orthogonal sums, and a worked example comparing two forms.
+- Linked LA220, LA232, LA233, LA251, LA258, LA279, Bilinear and Hermitian Forms, and the Linear Algebra and Modules hub directly to the section. The Dataview exercise list matches both section and whole-note links.
+- Checked the definition, results, and exercise anchors against Artin's original rendered pages. Removed the task's page renders and confirmed both scratch paths were absent.
+
 ### 2026-11-22 (Weekly Review Deck 2026-11-16 to 11-22)
 
 - Added: `Attachments/daily-exercise-weekly-review-2026-11-16-to-22.tex/.pdf` — a ~40-page self-contained Beamer deck covering all 42 unique exercises from the seven daily lists of 2026-11-16 to 11-22 (Random Review 21: LA94, LA178, LA188, LA143, LA85, LA106, LA162, LA165, LA191, LA147, LA177, G20, LA91, LA81, LA175, LA131, LA170, LA154, LA179, LA136, LA126; Systematic Progress 21: LA223–LA243, Artin Ch. 8 §4 Ex. 4.14–4.21, §5, §6). Every exercise gets its exact statement with printed/PDF locators, a one-line strategy, a step-by-step derivation with intermediate equations, and a concrete verification or counterexample; plus overview, two quick-reference tables, five method cards, pitfall/boundary notes, a ten-question self-test, and per-exercise PDF bookmarks. LA188's printed Binet-formula defect (right side independent of n) is reported under both literal and intended readings, not silently corrected.

@@ -1,12 +1,15 @@
 ---
 title: Inner Product Spaces
+aliases:
+  - Orthogonal Complement
+  - Orthogonal Space
 topic: linear-algebra
 tags:
   - concept
   - definition
   - linear-algebra
 created: 2026-01-19
-source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.3–8.6, printed pp. 232–245, PDF pp. 244–257"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 8, §§8.3–8.6, printed pp. 232–245, PDF pp. 244–257; Exs. 4.11 and 5.2, printed pp. 255–256, PDF pp. 267–268"
 source_status: partially-verified
 status: not-started
 ---
@@ -81,14 +84,23 @@ This note uses the **first-variable-linear** complex convention. The linked [[04
 
 ## Orthogonal Complement
 
-> [!info] Definition
-> For [[04 - Linear Algebra and Modules/Concepts/Subspaces|subspace]] $W \subseteq V$:
+> [!info] Definition (Orthogonal Complement)
+> Let $B$ be a [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|symmetric bilinear or Hermitian form]] on $V$, and let $W$ be a [[04 - Linear Algebra and Modules/Concepts/Subspaces|subspace]] of $V$. The **orthogonal complement**, called the **orthogonal space** by Artin, is
+>
 > $$
-> W^\perp = \{v \in V : \langle v, w \rangle = 0 \text{ for all } w \in W\}
+> W^\perp = \{v \in V : B(v,w)=0 \text{ for all } w\in W\}.
 > $$
 
-> [!abstract] Theorem
-> For finite-dimensional $V$: $V = W \oplus W^\perp$ and $\dim W + \dim W^\perp = \dim V$.
+Read $v\perp W$ as “$v$ is orthogonal to every vector in $W$.” The notation $w^\perp$ for a single vector means $(\operatorname{span}\{w\})^\perp$. To compute $W^\perp$, impose $B(v,w_i)=0$ for each basis vector $w_i$ of $W$. Linearity or conjugate linearity extends these equations to every vector in $W$.
+
+### Identities and hypotheses
+
+- **Any symmetric bilinear or Hermitian form.** Taking orthogonal complements reverses inclusions, $(W_1+W_2)^\perp=W_1^\perp\cap W_2^\perp$, and $W\subseteq(W^\perp)^\perp$. The inclusion follows from symmetry or conjugate symmetry. These facts also hold for degenerate forms.
+- **Nondegenerate form on a finite-dimensional $V$.** Then $\dim W^\perp=\dim V-\dim W$ and $(W^\perp)^\perp=W$. The equations for a basis of $W$ are independent by nondegeneracy, so their common kernel has codimension $\dim W$. Applying the dimension formula twice makes $W\subseteq(W^\perp)^\perp$ an equality.
+- **Orthogonal direct sum in finite dimension.** The identity $V=W\oplus W^\perp$ holds exactly when the restriction $B|_{W\times W}$ is nondegenerate. Its radical is $W\cap W^\perp$. If the restriction is nondegenerate, its Gram matrix is invertible, so for each $v\in V$ the equations $B(v-u,w_i)=0$ determine a unique $u\in W$. Thus $v=u+(v-u)$ lies in $W+W^\perp$. Positive definiteness guarantees this condition for every $W$.
+
+> [!example] The complement depends on the form
+> Take $W=\operatorname{span}\{(1,1)\}$ in $\mathbb R^2$. For the dot product, $x+y=0$ gives $W^\perp=\operatorname{span}\{(1,-1)\}$. For the nondegenerate form $B((x,y),(s,t))=xs-yt$, the equation is $x-y=0$, so $W^\perp=W$. The second form is degenerate on $W$, and $W+W^\perp=W$.
 
 ## Orthogonal Projection
 
@@ -114,11 +126,13 @@ For an orthonormal basis this simplifies to $\pi_W(v)=\sum_i\langle v,w_i\rangle
 ```dataview
 TABLE status,difficulty,source
 FROM #exercise
-WHERE contains(file.outlinks, this.file.link)
+WHERE any(file.outlinks, (outlink) => meta(outlink).path = this.file.path)
 ```
 
 ## Source and Proof Status
 
 This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
+
+Artin defines $W^\perp$ in [S1, Ch. 8, §8.4, (8.4.1), printed p. 236, PDF p. 248], proves the direct-sum criterion in Theorem 8.4.5(a) [printed p. 237, PDF p. 249], and gives the positive-definite case in Corollary 8.5.1 [printed p. 242, PDF p. 254]. Exercises 4.11 and 5.2 [printed pp. 255–256, PDF pp. 267–268] ask for the basic identities and the Euclidean double-complement identity. The rank argument and the two-form example above are independent derivations.
 
 The projection formula was corrected on 2026-09-29 to match this note's first-variable-linear convention; its verification above is an independent derivation.

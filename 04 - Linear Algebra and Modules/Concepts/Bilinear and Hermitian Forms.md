@@ -203,6 +203,7 @@ For a Hermitian form $H=R+iI$, restriction of scalars from $\mathbb C$ to $\math
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces#Orthogonal Complement|Orthogonal Complement]]
 - [[04 - Linear Algebra and Modules/Concepts/Quadratic Forms|Quadratic Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Skew-Symmetric Bilinear Forms|Skew-Symmetric Bilinear Forms]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]

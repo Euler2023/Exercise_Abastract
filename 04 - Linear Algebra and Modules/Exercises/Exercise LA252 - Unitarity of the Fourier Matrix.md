@@ -2,13 +2,13 @@
 title: "Exercise LA252: Unitarity of the Fourier Matrix"
 topic: linear-algebra
 difficulty: intermediate
-status: not-started
+status: done
 tags:
   - exercise
   - linear-algebra
   - fourier-matrix
   - unitary-matrices
-source: "Michael Artin, Algebra, 2nd ed., Ch. 8, Section 6, Ex. 6.16, printed p. 257, PDF p. 269"
+source: Michael Artin, Algebra, 2nd ed., Ch. 8, Section 6, Ex. 6.16, printed p. 257, PDF p. 269
 created: 2026-08-24
 ---
 

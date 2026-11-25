@@ -74,7 +74,7 @@ created: 2026-08-24
 
 ## Related Concepts
 
-- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces#Orthogonal Complement|Orthogonal Complement]]
 - [[04 - Linear Algebra and Modules/Concepts/Classical Linear Groups|Classical Linear Groups]]
 - [[01 - Group Theory/Concepts/Rotations Reflections and Glide Reflections|Rotations Reflections and Glide Reflections]]
 

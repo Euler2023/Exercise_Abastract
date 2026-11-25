@@ -7,19 +7,21 @@ tags:
   - representation-theory
   - lie-theory
 created: 2026-01-19
-source: "Michael Artin, Algebra, 2nd ed., Ch. 9, §9.6, printed pp. 275–277, PDF pp. 287–289"
+source: "Michael Artin, Algebra, 2nd ed., Ch. 9, §9.6, printed pp. 275–277, PDF pp. 287–289; Brian C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Ch. 3, Definitions 3.13–3.15 and Section 3.6, printed pp. 54, 65–66, PDF pp. 66, 77–78"
 source_status: partially-verified
 status: not-started
 ---
 
 # Lie Algebras
 
+The structural results below concern finite-dimensional Lie algebras over a field of characteristic zero.
+
 ## Definition
 
 > [!info] Definition (Lie Algebra)
 > A **Lie algebra** over a field $F$ is a vector space $\mathfrak{g}$ equipped with a bilinear operation $[\cdot, \cdot]: \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$ (the **Lie bracket**) satisfying:
 >
-> 1. **Antisymmetry**: $[X, Y] = -[Y, X]$
+> 1. **Alternation**: $[X,X]=0$ for every $X$. Over a field of characteristic zero this is equivalent to $[X,Y]=-[Y,X]$.
 > 2. **Jacobi identity**: $[X, [Y, Z]] + [Y, [Z, X]] + [Z, [X, Y]] = 0$
 
 ## Examples
@@ -44,13 +46,21 @@ status: not-started
 
 ### The Fundamental Example: $\mathfrak{sl}_2$
 
-$$\mathfrak{sl}_2 = \text{span}\{e, f, h\}$$
+$$
+\mathfrak{sl}_2 = \text{span}\{e, f, h\}.
+$$
 
-where:
-$$e = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad f = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad h = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
+The basis matrices are
 
-**Bracket relations**:
-$$[h, e] = 2e, \quad [h, f] = -2f, \quad [e, f] = h$$
+$$
+e = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \quad f = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \quad h = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
+$$
+
+Their bracket relations are
+
+$$
+[h, e] = 2e, \quad [h, f] = -2f, \quad [e, f] = h.
+$$
 
 ### Abstract Lie Algebras
 
@@ -78,24 +88,40 @@ $$[h, e] = 2e, \quad [h, f] = -2f, \quad [e, f] = h$$
 ## Homomorphisms
 
 > [!info] Definition
-> A **Lie algebra homomorphism** $\phi: \mathfrak{g} \to \mathfrak{h}$ is a linear map satisfying:
-> $$\phi([X, Y]) = [\phi(X), \phi(Y)]$$
+> A **Lie algebra homomorphism** $\phi: \mathfrak{g} \to \mathfrak{h}$ is a linear map satisfying
+> $$
+> \phi([X, Y]) = [\phi(X), \phi(Y)].
+> $$
 
 The kernel is always an ideal.
+
+## Complexification and Real Forms
+
+For a real Lie algebra $\mathfrak g$, its **complexification** $\mathfrak g_{\mathbb C}$ consists of formal sums $X+iY$ with $X,Y\in\mathfrak g$. Multiplication by $i$ sends $X+iY$ to $-Y+iX$. Complex bilinearity extends the original bracket uniquely:
+
+$$
+[X+iY,U+iV]=[X,U]-[Y,V]+i([X,V]+[Y,U]).
+$$
+
+The Jacobi expression is complex trilinear, so its vanishing on the real subspace $\mathfrak g$, which spans $\mathfrak g_{\mathbb C}$ over $\mathbb C$, proves Jacobi for the extension. If $\mathfrak g$ is a real matrix Lie algebra in $M_n(\mathbb C)$, evaluating $X+iY$ as a matrix identifies $\mathfrak g_{\mathbb C}$ with $\mathfrak g+i\mathfrak g$ exactly when $\mathfrak g\cap i\mathfrak g=\{0\}$. Indeed, $X+iY=0$ as a matrix is equivalent to $X=-iY$ lying in the intersection.
+
+A **real form** of a complex Lie algebra is a real Lie algebra whose complexification is isomorphic to it. For example, $\mathfrak{su}(2)$ and $\mathfrak{sl}(2,\mathbb R)$ are both real forms of $\mathfrak{sl}(2,\mathbb C)$. Comparing their adjoint operators distinguishes their real Lie algebra structures in Exercise 11 of §3.9.
 
 ## Structure Theory
 
 ### Solvable and Nilpotent
 
 > [!info] Definition
-> - $\mathfrak{g}$ is **solvable** if the derived series terminates: $\mathfrak{g}^{(n)} = 0$.
-> - $\mathfrak{g}$ is **nilpotent** if the lower central series terminates: $\mathfrak{g}^n = 0$.
+> Write $[U,V]$ for the linear span of all brackets of elements of the two subspaces.
+> - $\mathfrak g$ is **solvable** if its derived series $D^0=\mathfrak g$, $D^{j+1}=[D^j,D^j]$ reaches zero.
+> - $\mathfrak g$ is **nilpotent** if its lower central series $C^0=\mathfrak g$, $C^{j+1}=[\mathfrak g,C^j]$ reaches zero.
 
-$$\text{nilpotent} \Rightarrow \text{solvable}$$
+Hall calls the descending sequence $C^j$ the “upper central series” in Definition 3.15. The recurrence specifies the sequence independently of this terminology. Induction gives $D^j\subseteq C^j$ because $D^j\subseteq\mathfrak g$ and $D^j\subseteq C^j$ imply $[D^j,D^j]\subseteq[\mathfrak g,C^j]$. Thus nilpotence implies solvability.
 
-> [!example]
-> The Heisenberg algebra is nilpotent (hence solvable).
-> Upper triangular matrices form a solvable (but not nilpotent for $n > 2$) Lie algebra.
+> [!example] Strictly upper triangular and upper triangular matrices
+> A product of $k$ strictly upper triangular $n\times n$ matrices can have nonzero entries only at least $k$ places above the diagonal. The lower central series of their Lie algebra therefore reaches zero, as in Exercise 3 of §3.9. The Heisenberg algebra is the $3\times3$ case.
+>
+> For the full upper triangular Lie algebra, every commutator has zero diagonal, so its first derived algebra lies in the strictly upper triangular one and the derived series reaches zero. For $n\ge2$, $[E_{11},E_{12}]=E_{12}$ keeps $E_{12}$ in every term of the lower central series, showing that the full algebra is solvable and fails to be nilpotent.
 
 ### Semisimple and Simple
 
@@ -109,8 +135,10 @@ $$\text{nilpotent} \Rightarrow \text{solvable}$$
 ### The Killing Form
 
 > [!info] Definition
-> The **Killing form** is:
-> $$\kappa(X, Y) = \text{tr}(\text{ad}_X \circ \text{ad}_Y)$$
+> The **Killing form** is given by
+> $$
+> \kappa(X, Y) = \text{tr}(\text{ad}_X \circ \text{ad}_Y)
+> $$
 > where $\text{ad}_X(Y) = [X, Y]$.
 
 > [!abstract] Cartan's Criterion
@@ -120,13 +148,13 @@ $$\text{nilpotent} \Rightarrow \text{solvable}$$
 ## Universal Enveloping Algebra
 
 > [!info] Definition
-> The **universal enveloping algebra** $U(\mathfrak{g})$ is the associative algebra:
-> $$U(\mathfrak{g}) = T(\mathfrak{g}) / \langle X \otimes Y - Y \otimes X - [X, Y] \rangle$$
+> The **universal enveloping algebra** $U(\mathfrak{g})$ is the associative algebra
+> $$
+> U(\mathfrak{g}) = T(\mathfrak{g}) / \langle X \otimes Y - Y \otimes X - [X, Y] \rangle.
+> $$
 
 > [!abstract] PBW Theorem
-> If $\{X_1, \ldots, X_n\}$ is a basis of $\mathfrak{g}$, then:
-> $$\{X_1^{a_1} \cdots X_n^{a_n} : a_i \geq 0\}$$
-> is a basis of $U(\mathfrak{g})$.
+> If $\{X_1, \ldots, X_n\}$ is a basis of $\mathfrak{g}$, then the ordered monomials $X_1^{a_1} \cdots X_n^{a_n}$ with $a_i \geq 0$ form a basis of $U(\mathfrak{g})$.
 
 Representations of $\mathfrak{g}$ correspond to $U(\mathfrak{g})$-modules.
 
@@ -165,3 +193,5 @@ WHERE contains(file.outlinks, this.file.link)
 ## Source and Proof Status
 
 This note has a named source with printed-page and physical-PDF-page provenance, and the cited bounded slice was checked for the core definitions or results used here. Because the note may also contain independent exposition or claims beyond that slice, its overall status remains partially verified unless a claim-level audit is recorded.
+
+The two descending series and the $3\times3$ example were checked in [S10, Ch. 3, Definitions 3.13–3.15 and Proposition 3.16, printed p. 54, PDF p. 66]. The complexification and matrix realization are proved in [S10, §3.6, Definition 3.36 and Propositions 3.37–3.38, printed pp. 65–66, PDF pp. 77–78]. The full upper triangular comparison above is an independent derivation. The general strictly upper triangular result and the distinction between the two real forms are Hall's assigned exercises, with independent proofs in the exercise notes.
