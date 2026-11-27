@@ -116,6 +116,7 @@ For an orthonormal basis this simplifies to $\pi_W(v)=\sum_i\langle v,w_i\rangle
 
 - [[04 - Linear Algebra and Modules/Concepts/Vector Spaces|Vector Spaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Diagonalization|Diagonalization]] (spectral theorem)
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]] (adjoint operators)
 - [[04 - Linear Algebra and Modules/Concepts/Perfect Pairings over Finite Local Rings|Perfect Pairings over Finite Local Rings]]

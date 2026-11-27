@@ -86,6 +86,7 @@ $$\text{tr}(A) = \sum_{i=1}^n \lambda_i$$
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Eigenvalues and Eigenvectors|Eigenvalues and Eigenvectors]]
 - [[04 - Linear Algebra and Modules/Concepts/Linear Transformations|Linear Transformations]]
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]

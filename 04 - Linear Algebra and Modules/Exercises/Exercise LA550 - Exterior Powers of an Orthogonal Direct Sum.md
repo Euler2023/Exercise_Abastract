@@ -66,6 +66,7 @@ created: '2026-10-23'
 - [[04 - Linear Algebra and Modules/Concepts/Metrized Modules and Determinant Metrics|Metrized Modules and Determinant Metrics]]
 
 - [[04 - Linear Algebra and Modules/Concepts/Exterior Algebra|Exterior Algebra]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Tensor Product|Tensor Product]]
 - [[04 - Linear Algebra and Modules/Concepts/Bilinear and Hermitian Forms|Hermitian Forms]]
 

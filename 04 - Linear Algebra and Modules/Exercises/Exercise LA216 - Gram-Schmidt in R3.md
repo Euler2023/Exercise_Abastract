@@ -68,6 +68,7 @@ created: 2026-08-24
 ## Related Concepts
 
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Basis and Dimension|Basis and Dimension]]
 - [[04 - Linear Algebra and Modules/Concepts/Linear Independence|Linear Independence]]
 

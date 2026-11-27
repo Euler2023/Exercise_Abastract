@@ -60,6 +60,7 @@ created: 2026-08-24
 
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Representation|Matrix Representation]]
 
 ## Notes

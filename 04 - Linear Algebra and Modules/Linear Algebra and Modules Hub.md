@@ -57,6 +57,7 @@ This section covers linear algebra (vector spaces over fields) and its generaliz
 - [[04 - Linear Algebra and Modules/Concepts/Hilbert-Schmidt Norm|Hilbert-Schmidt Norm]]
 - [[04 - Linear Algebra and Modules/Concepts/Matrix Logarithms|Matrix Logarithms]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 - [[04 - Linear Algebra and Modules/Concepts/Vandermonde Matrices and Polynomial Interpolation|Vandermonde Matrices and Polynomial Interpolation]]
 - [[04 - Linear Algebra and Modules/Concepts/Polynomial Resultants|Polynomial Resultants]]
 - [[04 - Linear Algebra and Modules/Concepts/Rank and Nullity|Rank and Nullity]]

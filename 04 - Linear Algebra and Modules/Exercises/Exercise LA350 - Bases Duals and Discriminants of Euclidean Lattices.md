@@ -89,6 +89,7 @@ created: 2026-08-28
 - [[04 - Linear Algebra and Modules/Concepts/Lattices in Euclidean Space|Lattices in Euclidean Space]]
 - [[04 - Linear Algebra and Modules/Concepts/Inner Product Spaces|Inner Product Spaces]]
 - [[04 - Linear Algebra and Modules/Concepts/Determinants|Determinants]]
+- [[04 - Linear Algebra and Modules/Concepts/Gram Determinants|Gram Determinants]]
 
 ## Notes
 

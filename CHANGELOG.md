@@ -2,6 +2,12 @@
 
 Complete change history for the Abstract Algebra Exercises vault, newest first. The [README](README.md#changelog) displays only the latest three entries.
 
+### 2026-11-27 (Gram Determinants)
+
+- Added a linear algebra concept note on Gram matrices and determinants, including the independence criterion, the Gram-Schmidt product, volume and distance formulas, the sum of squared minors, and the induced exterior-power norm.
+- Linked the note from the topic hub, Determinants, Inner Product Spaces, and six existing exercises. The concept page uses Dataview to list linked exercises.
+- Verified original page images for Artin's Hermitian form conventions and Gram-Schmidt construction, Neukirch's volume and exterior-power formulas, and Hall's definition and rank-two computation. Recorded their printed and physical page anchors and identified the independent derivations. Confirmed the task-owned textbook renders and preview scratch path were absent.
+
 ### 2026-11-25 (Hall Chapter 3 Exercise Archive)
 
 - Archived all 22 numbered exercises in Hall §3.9 as LA679–LA691, Rep168–Rep175, and G380. Each English note preserves the original problem and printed hint, gives progressive hints and a complete independent proof, and includes matching readable and S10 source locators. All learning statuses are `not-started`.
